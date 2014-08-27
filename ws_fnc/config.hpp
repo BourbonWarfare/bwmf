@@ -23,14 +23,11 @@ class WS
 			class createTripflare {};
 			class createLightning {};
 			class createCAS {};
-			class createOrdnance {};
+			
 		};
 		class misc
 		{
 			file = "ws_fnc\misc";
-			class switchLights {};
-			class attachLight {};
-			class attachChem {};
 			class attachIR {};
 			class broadcast {};
 			class showIntro {};

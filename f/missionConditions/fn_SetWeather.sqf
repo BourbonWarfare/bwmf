@@ -33,7 +33,7 @@ switch (_weather) do
 // Clear (Calm)
 	case 0:
 	{
-		_MissionOvercast = 0;
+		_MissionOvercast = 0.15;
 		_MissionRain = 0;
 		_MissionRainbow = 0;
 		_MissionLightnings = 0;
@@ -42,10 +42,10 @@ switch (_weather) do
 		_MissionWaves = 0;
 		_MissionHumidity = 0;
 	};
-// Clear (Light Winds)
+// Clear (Cloudy & Light Winds)
 	case 1:
 	{
-		_MissionOvercast = 0.01;
+		_MissionOvercast = 0.35;
 		_MissionRain = 0;
 		_MissionRainbow = 0;
 		_MissionLightnings = 0;
@@ -54,10 +54,10 @@ switch (_weather) do
 		_MissionWaves = 0.25;
 		_MissionHumidity = 0.2;
 	};
-// Clear (Strong Winds)
+// Clear (Cloudy & Strong Winds)
 	case 2:
 	{
-		_MissionOvercast = 0.01;
+		_MissionOvercast = 0.35;
 		_MissionRain = 0;
 		_MissionRainbow = 0;
 		_MissionLightnings = 0;
