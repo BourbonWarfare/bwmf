@@ -15,8 +15,6 @@ if (!isDedicated && (isNull player)) then
 
 private ["_unitfaction"];
 
-waitUntil {!isnil "f_var_debugMode"};
-
 // ====================================================================================
 
 // DETECT PLAYER FACTION
