@@ -74,14 +74,6 @@ _unit setVariable ["f_var_assignGear_done",false,true];
 // If the unitfaction is different from the group leader's faction and the unit is not a vehicle, the latters faction is used
 if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _unit)))) then {_faction = toLower (faction (leader group _unit))};
 
-// DEBUG
-if (f_var_debugMode == 1) then
-{
-	_unit sideChat format ["DEBUG (assignGear.sqf): unit faction: %1",_faction];
-};
-
-// ====================================================================================
-
 // ====================================================================================
 
 // GEAR: BLUFOR > NATO
@@ -131,19 +123,12 @@ if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
 
 _unit setVariable ["f_var_assignGear_done",true,true];
 
-// DEBUG
-
-// ====================================================================================
-
 // ERROR CHECKING
 // If the faction of the unit cannot be defined, the script exits with an error.
 
 if (isNil "_carbine") then { //_carbine should exist unless no faction has been called
 	player globalchat format ["DEBUG (assignGear.sqf): Faction %1 is not defined.",_faction];
-} else {
- 	if (f_var_debugMode == 1) then	{
-		player sideChat format ["DEBUG (assignGear.sqf): Gear for %1: %1 slot selected.",_unit,_faction,_typeofUnit];
-	};
+
 };
 
 // ====================================================================================

@@ -105,7 +105,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // ====================================================================================
 // F3 - AI Unit Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+f_var_debugMode = 0;
 [30] spawn f_fnc_cInit;
 
 // Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:

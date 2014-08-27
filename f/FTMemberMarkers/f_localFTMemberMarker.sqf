@@ -25,7 +25,7 @@ _mkrBorder = createMarkerLocal [_mkrborderName,_pos];
 _mkrBorder setMarkerShapeLocal "ICON";
 _mkrBorder setMarkerTypeLocal "MIL_TRIANGLE";
 _mkrBorder setMarkerColorLocal "ColorBlack";
-_mkrBorder setMarkerSizeLocal [0.60, 0.60];
+_mkrBorder setMarkerSizeLocal [0.90, 0.90];
 _mkrBorder setMarkerDirLocal (direction _unit);
 
 // This marker is the real marker
@@ -33,7 +33,7 @@ _mkr = createMarkerLocal [_mkrName,_pos];
 _mkr setMarkerShapeLocal "ICON";
 _mkr setMarkerTypeLocal "MIL_TRIANGLE";
 _mkr setMarkerColorLocal (_unit getvariable ["assignedTeam","ColorWhite"]);
-_mkr setMarkerSizeLocal [0.45, 0.45];
+_mkr setMarkerSizeLocal [0.75, 0.75];
 _mkr setMarkerDirLocal (direction _unit);
 
 

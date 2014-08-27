@@ -44,29 +44,4 @@ _sleep = 6; 				// The time to sleep between checking
 
 [_range, _sleep] spawn f_fnc_cTracker;
 
-// Start the debug tracker
-if (f_var_debugMode == 1) then {
-	player globalchat format ["f_fnc_cInit DBG: Starting to track %1 groups, %2 range, %3 sleep",count allGroups,_range,_sleep];
-
-	[_sleep] spawn {
-
-	// Giving the tracker a head start
-	sleep (_this select 0 * 1.1);
-
-		while {true} do {
-			_str1 = "f_fnc_cache DBG:<br/>";
-			_str2 = format["Total groups: %1<br/>",count allGroups];
-			_str3 = format ["Cached groups:%1<br/>",{_x getvariable "f_cached"} count allGroups];
-			_str4 = format ["Activated groups:%1<br/>",{!(_x getvariable "f_cached")} count allGroups];
-			_str5 = format ["Excluded groups:%1<br/>",{(_x getvariable "f_cacheExcl")} count allGroups];
-
-			hintsilent parseText (_str1+_str2+_str3+_str4+_str5);
-			diag_log (_str1+_str2+_str3+_str4+_str5);
-
-			sleep (_this select 0);
-		};
-	};
-};
-
-
 true
