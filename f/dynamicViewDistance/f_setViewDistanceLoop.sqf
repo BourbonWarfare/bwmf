@@ -1,5 +1,5 @@
 // F3 - Dynamic View Distance
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: Modified by Zerith -  Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
 // PLAYER-ONLY COMPONENT
@@ -20,47 +20,23 @@ if (!isDedicated && (isNull player)) then
 
 // DECLARE VARIABLES AND FUNCTIONS
 
-private ["_veh","_vd","_seat","_sleep"];
+private ["_sleep"];
 
 // ====================================================================================
 
 // SETUP KEY VARIABLES
 // The sleep governs how often the scripts checks if the player has changed the vehicle
 
-_sleep = 3;
+_sleep = 30;
 
 // ====================================================================================
 
 // SET VIEW DISTANCE
-// If the player is in a cargo position, the default view distance is set. If the
-// player is in a non-cargo position within an actual vehicle, the appropriate view
-// distance is set.
-
-while {!isNull player} do {
-	_veh = vehicle player;
-	_seat = "";
-	_vd = f_var_viewDistance_default;
-
-	if (_veh != player) then {
-		if (_veh isKindOf "Car") then {_vd = f_var_viewDistance_car;};
-		if (_veh isKindOf "Tank") then {_vd = f_var_viewDistance_tank;};
-		if (_veh isKindOf "Helicopter_Base_F") then {_vd = f_var_viewDistance_rotaryWing;};
-		if (_veh isKindOf "Plane") then {_vd = f_var_viewDistance_fixedWing;};
-
-		_seat = (assignedVehicleRole player select 0);
-		if (_seat == "CARGO" && f_var_viewDistance_crewOnly) then {_vd = f_var_viewDistance_default;};
-	};
-
-	setViewDistance _vd;
 
 
+	setViewDistance f_var_viewDistance_default;
 
-	// Wait until player changes the vehicle or changes seats. Sleep 1s between every check.
-	while {_veh == vehicle player} do {
 
-		// Check if the player has changed seats.
-		if (_veh != player && {_seat != (assignedVehicleRole player select 0)}) exitWith {};
+	sleep _sleep;
 
-		sleep _sleep;
-	};
-};
+

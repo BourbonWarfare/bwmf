@@ -7,9 +7,6 @@ isAIcontroller = ((isServer and !isDedicated) || (ws_param_hc == 0 && isServer) 
 
 // ====================================================================================
 
-//DAC Init
-//DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
-
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -71,12 +68,7 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 // F3 - Dynamic View Distance
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_var_viewDistance_default = 2250;
-f_var_viewDistance_tank = 2000;
-f_var_viewDistance_car = 2000;
-f_var_viewDistance_rotaryWing = 2500;
-f_var_viewDistance_fixedWing = 5000;
-f_var_viewDistance_crewOnly = true;
+f_var_viewDistance_default = 2500;
 [] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
 
 
@@ -128,33 +120,15 @@ f_var_cachingAggressiveness = 2;
 [] execVM "f\radios\radio_init.sqf";
 
 
-//PABST: setup custom freqs automaticly for people
+//PABST: setup custom freqs automatically for people
 [] execVM "pabst\pabst_setupRadioChannels.sqf";
 
-// Disables thermals for all weapons/vehicles.
-[] spawn {
-	while {true} do {
-		{
-			if !(_x getVariable ["thermalsDisabled", false])	then {
-				_x setVariable ["thermalsDisabled", true];
-				_x disableTIEquipment true;
-			};
-		} forEach vehicles;  sleep 3;
-	};
-};
+// PABST: Disables thermals for all weapons/vehicles.
+[] execVM "pabst\pabst_disableThermals.sqf";
 
-// DAC Debug Params
+// BWMF: DAC Debug Params
 
-if ((!isNil "f_param_dacdebug") && {f_param_dacdebug == 1}) then {
-
-	DAC_Com_Values		= [1,2,0,0];
-	DAC_Marker = 2;
-	}
-
-  else {
-	DAC_Com_Values		= [0,0,0,0];
-	DAC_Marker = 0;
-};
+[] execVM "DAC\bwmf_dacParams.sqf";
 
 
 

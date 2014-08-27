@@ -1,16 +1,7 @@
 class WS
 	{
 
-		class debug
-		{
-			file = "ws_fnc\dbg";
-			class debugText {};
-			class typeCheck {};
-			class clipboardCode {};
-			class copyPos {};
-			class countUnits {};
-			class debugTriggers {postInit = 1;};
-		};
+		
 		class tools
 		{
 			file = "ws_fnc\tools";
