@@ -49,9 +49,7 @@ ENEMY FORCES
 <br/>
 *** Insert information about enemy forces here.***
 <br/><br/>
-FRIENDLY FORCES
-<br/>
-*** Insert information about friendly forces here.***
+
 "]];
 
 // ====================================================================================
