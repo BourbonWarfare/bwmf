@@ -1,0 +1,261 @@
+// Pabst - Spectator
+#include "pabst\gui_common.hpp"
+#include "pabst\gui_spectator.hpp"
+
+// ============================================================================================
+
+// F3 - Mission Header
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 405;
+};
+
+// ============================================================================================
+
+// F3 - Loading Screen
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+onLoadName = "*** Insert mission name here. ***";
+onLoadMission = "Made with the F3 Mission Development Framework - Modified by BourbonWarfare.com";
+author = "*** Insert mission author name here. ***";
+loadScreen = "bwbannersmall.jpg";
+
+// ============================================================================================
+
+// F3 - Debug Console
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+enableDebugConsole = 1;
+
+// ============================================================================================
+
+// F3 - Respawn Settings
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+respawn = "GROUP";
+respawndelay = 3;
+respawnOnStart = 0;
+respawnTemplates[] = {"PabstSpectator"};
+
+// ============================================================================================
+
+// ============================================================================================
+
+// F3 - Start of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+class Params
+{
+
+	// ============================================================================================
+
+	// F3 - Debug Mode
+	// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+	// WARNING: DO NOT DISABLE THIS COMPONENT
+
+	class f_param_debugMode
+	{
+		title = "$STR_f_param_debugMode";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+		code = "f_var_debugMode = %1";
+	};
+
+
+	// ============================================================================================
+
+	// F3 - Radio Systems Support
+	// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+	class f_param_radios
+	{
+		title = "Radio System";
+		values[] = {0,1,2};
+		texts[] = {"Off","ACRE", "TFR"};
+		default = 2;
+		code = "f_var_radios = %1";
+	};
+
+
+	// ============================================================================================
+
+	// F3 - Mission Conditions Selector
+	// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+	class f_param_weather
+	{
+		title = "$STR_f_param_weather";
+		values[] = {0,1,2,3,4,5,6,7,8};
+		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8};
+		default = 0;
+		function = "f_fnc_setWeather";		// This function is called to apply the values
+		isGlobal = 0;						// Execute this only on the server
+		code = "f_param_weather = %1";
+	};
+
+	class f_param_fog
+	{
+		title = "Fog";
+		values[] = {0,1,2};
+		texts[] = {"None","Light","Heavy"};
+		default = 0;
+		function = "f_fnc_SetFog";			// This function is called to apply the values
+		isGlobal = 0;						// Execute this only on the server
+		code = "f_param_fog = %1";
+	};
+
+    class f_param_timeOfDay
+	{
+		title = "$STR_f_param_timeOfDay";
+		values[] = {0,1,2,3,4,5,6,7};
+		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
+		default = 4;
+		function = "f_fnc_setTime";			// This function is called to apply the values
+ 		isGlobal = 0;						// Execute this only on the server
+ 		code = "f_param_timeOfDay = %1";
+	};
+
+// ============================================================================================
+
+// F3 - Caching
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+	class f_param_caching
+	{
+		title = "Cache AI outside distance (m)";
+		values[] = {0,600,800,1000,1500,2000};
+		default = 0;
+		code = "f_param_caching = %1";
+	};
+
+	class f_param_dacdebug
+	{
+		title = "DAC Debug";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 1;
+		code = "f_param_dacdebug = %1";
+	};
+
+	class ws_param_hc
+	{
+		title = "Headless client";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+		code = "ws_param_hc = %1";
+	};
+
+
+	// F3 - End of Params code blocks.
+	// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+};
+
+// ============================================================================================
+// Pabst - Respawn
+
+
+class CfgRespawnTemplates
+{
+
+
+	class PabstSpectator
+	{
+		onPlayerRespawn = "pabst\pabst_spectator.sqf";
+	};
+};
+
+// ============================================================================================
+
+// F3 - Menu components
+// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+//I do what I want
+
+// ============================================================================================
+
+// F3 - Functions
+// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+
+class CfgFunctions
+{
+#include "ws_fnc\config.hpp"
+	class F // Defines the "owner"
+	{
+		class common // category
+		{
+			file = "f\common";
+			// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
+			class processParamsArray
+			{
+				preInit = 1;
+				postInit = 1;
+			};
+
+			class nearPlayer{};
+		};
+		class assignGear
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\assignGear";
+			class assignGear{};
+		};
+		class setGroupID
+		{
+			file = "f\setGroupID";
+			class setGroupID{};
+		};
+		class missionConditions
+		{
+			file = "f\missionConditions";
+			class SetTime{};
+			class SetFog{};
+			class SetWeather{};
+		};
+		class cache
+		{
+			file = "f\cache";
+			class cInit {};
+			class cTracker {};
+			class gCache {};
+			class gUncache {};
+		};
+		class groupMarkers {
+			file = "f\groupMarkers";
+			class localGroupMarker{};
+			class localSpecialistMarker{};
+		};
+		class FTMemberMarkers
+		{
+			file = "f\FTMemberMarkers";
+			class SetLocalFTMemberMarkers{};
+			class GetMarkerColor{};
+			class LocalFTMarkerSync{};
+		};
+		class nametag
+		{
+			file = "f\nametag";
+			class drawNameTag{};
+		};
+		class radios
+		{
+			file = "f\radios";
+			class acre_removeRadios{};
+			class acre_addRadios{};
+			class acre_setRadioFrequencies{};
+			class acre_configureSpectatorChat{};
+			class tfr_removeRadios{};
+			class tfr_addRadios{};
+			class tfr_setRadioFrequencies{};
+			class tfr_configureSpectatorChat{};
+		};
+
+	};
+};
+
+// ============================================================================================
