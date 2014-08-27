@@ -28,7 +28,6 @@ class WS
 		class misc
 		{
 			file = "ws_fnc\misc";
-			class attachIR {};
 			class broadcast {};
 			class showIntro {};
 		};

@@ -36,7 +36,7 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 
 if (_unitfaction == "blu_f") exitwith {
 
-#include "f\briefing\f_briefing_nato.sqf"
+#include "f_briefing_nato.sqf"
 
 };
 
@@ -48,7 +48,7 @@ if (_unitfaction == "blu_f") exitwith {
 
 if (_unitfaction in ["blu_g_f","ind_g_f","opf_g_f"]) exitwith {
 
-#include "f\briefing\f_briefing_fia.sqf"
+#include "f_briefing_fia.sqf"
 
 };
 
@@ -60,7 +60,7 @@ if (_unitfaction in ["blu_g_f","ind_g_f","opf_g_f"]) exitwith {
 
 if (_unitfaction == "opf_f") exitwith {
 
-#include "f\briefing\f_briefing_csat.sqf"
+#include "f_briefing_csat.sqf"
 
 };
 // ====================================================================================
@@ -71,7 +71,7 @@ if (_unitfaction == "opf_f") exitwith {
 
 if (_unitfaction == "ind_f") exitwith {
 
-#include "f\briefing\f_briefing_aaf.sqf"
+#include "f_briefing_aaf.sqf"
 
 
 };
@@ -84,7 +84,7 @@ if (_unitfaction == "ind_f") exitwith {
 
 if (_unitfaction == "civ_f") exitwith {
 
-#include "f\briefing\f_briefing_civ.sqf"
+#include "f_briefing_civ.sqf"
 
 
 };
