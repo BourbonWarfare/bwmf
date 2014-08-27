@@ -8,7 +8,7 @@ isAIcontroller = ((isServer and !isDedicated) || (ws_param_hc == 0 && isServer) 
 // ====================================================================================
 
 //DAC Init
-DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
+//DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
 
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
