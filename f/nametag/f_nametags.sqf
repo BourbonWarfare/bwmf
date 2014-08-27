@@ -66,7 +66,6 @@ F_KEYDOWN_NAMETAG = {
 // A section is added to the player's briefing to inform them about name tags being available.
 
 [] spawn {
-waitUntil {scriptDone f_script_briefing};
 
 _bstr = format ["<br/>Toggle nametags for friendly units by pressing %1. This displays nametags for units within %3 m.<br/><br/>
 
