@@ -41,18 +41,32 @@ switch (_CampTyp) do
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
-//-------------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------Generic camp-----------------------------------------------------------
 	case 2:
 	{
-		_campBasic     = ["NULL"];
-		_campAmmo      = [];
-		_campStatic    = [];
+		_campBasic     = ["Flag_CSAT_F",["Land_Camping_Light_F",15,14,0],["Land_BagBunker_Large_F",10,0,90],["Logic",10,15,0],0];
+		_campAmmo      = [["Box_East_Wps_F",20,2,0],["Box_East_WpsSpecial_F",20,0,0],["Box_East_Ammo_F",20,-2,0],["Box_East_Support_F",20,-4,0]];
+		_campStatic    = [["O_HMG_01_A_F",-7,25,0,"O_Soldier_F"],["O_Mortar_01_F",25,25,0,"O_Soldier_F"]];
 		_campAddUnit   = [];
-		_campUserObj   = [];
+		_campUserObj   = [["O_MRAP_02_hmg_F",17,10,90],["CamoNet_OPFOR_F",22,0,0],["Land_Cargo20_sand_F",17,16,0],["O_Truck_02_fuel_F",24,8,0]];
 		_campRandomObj = [];
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
+//------------------------------------Radio Com station-----------------------------------------------------------
+	case 3:
+	{
+		_campBasic     = ["Land_Antenna",["Land_Camping_Light_F",15,14,0],["PowGen_Big",10,0,90],["Logic",10,15,0],0];
+		_campAmmo      = [["Box_East_Wps_F",20,2,0],["Box_East_WpsSpecial_F",20,0,0],["Box_East_Ammo_F",20,-2,0],["Box_East_Support_F",20,-4,0]];
+		_campStatic    = [["O_MRAP_02_hmg_F",-7,25,0,"O_Soldier_F"]];
+		_campAddUnit   = [];
+		_campUserObj   = [["B_G_Offroad_01_armed_F",17,9,90],["CamoNet_OPFOR_open_F",10,0,0],["Land_PaperBox_open_full_F",17,5,0],["O_Truck_03_transport_F",24,8,70]];
+		_campRandomObj = [];
+		_campWall      = [];
+		_campObjInit   = [[],[],[],[],[],[],[]];
+	};
+
 //-------------------------------------------------------------------------------------------------------------------------
 	Default {
 				if(DAC_Basic_Value != 5) then
