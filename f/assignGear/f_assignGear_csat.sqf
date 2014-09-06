@@ -179,8 +179,8 @@ _MMG = "LMG_Zafir_F";
 _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
-_RAT = "mas_launch_RPG18_F";
-_RATmag = "mas_PG18";
+_RAT = "launch_RPG32_F";
+_RATmag = "RPG32_F";
 
 
 // Sniper

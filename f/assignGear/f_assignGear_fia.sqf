@@ -184,8 +184,8 @@ _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Rifleman AT
-_RAT = "mas_launch_M136_F";
-_RATmag = "mas_M136";
+_RAT = "launch_RPG32_F";
+_RATmag = "RPG32_F";
 
 
 

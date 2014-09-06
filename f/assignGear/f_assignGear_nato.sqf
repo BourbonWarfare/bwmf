@@ -181,8 +181,8 @@ _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Rifleman AT
-_RAT = "mas_launch_M136_F";
-_RATmag = "mas_M136";
+_RAT = "launch_NLAW_F";
+_RATmag = "NLAW_F";
 
 // Sniper
 _SNrifle = "srifle_mas_m107";
