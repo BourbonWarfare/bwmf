@@ -32,12 +32,33 @@ case ("m"): {
 		[_unit, "AGM_Bloodbag", 2] call _addToBackpack;
 		[_unit, "AGM_Bandage", 	31] call _addToBackpack;
 	};
+
 case ("ar"): {
 		[_unit, "AGM_SpareBarrel", 1] call _addToBackpack;
 	};
+
 case ("aar"): {
 		[_unit, "AGM_SpareBarrel", 1] call _addToBackpack;
 	};
+
+case ("co"): {
+		[_unit, "AGM_Maptools", 1] call _addToBackpack;
+	};
+
+case ("dc"): {
+		[_unit, "AGM_MapTools", 1] call _addToBackpack;
+	};
+
+case ("eng"): {
+		[_unit, "AGM_Clacker", 1] call _addToBackpack;
+		[_unit, "AGM_DefusalKit", 1] call _addToBackpack;
+	};
+
+case ("engm"): {
+		[_unit, "AGM_Clacker", 1] call _addToBackpack;
+		[_unit, "AGM_DefusalKit", 1] call _addToBackpack;
+	};
+
 
 case ("v_tr"): {
 
