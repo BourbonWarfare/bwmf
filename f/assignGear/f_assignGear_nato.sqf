@@ -181,8 +181,8 @@ _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Rifleman AT
-_RAT = "mas_launch_M136_F";
-_RATmag = "mas_M136";
+_RAT = "launch_NLAW_F";
+_RATmag = "NLAW_F";
 
 // Sniper
 _SNrifle = "srifle_mas_m107";
@@ -303,7 +303,7 @@ if (_isMan) then {
 		_unit unassignItem _nvg;
 		_unit removeItem _nvg;
 	};
-	// uncomment to remove nvgoogles
+	// comment to remove nvgoogles
 	_unit linkItem _nvg;					// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)

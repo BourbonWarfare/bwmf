@@ -29,13 +29,6 @@ if (isNil "ws_game_a3") then {
 if !(ws_game_a3) then {
 	if (isnil "bis_fnc_init") then {_fm = createGroup sideLogic;_fm createUnit ["FunctionsManager", [0,0,0], [],0,"NONE"];};
 
-	//Debug Functions
-	ws_fnc_debugText = compile preprocessFile "ws_fnc\dbg\fn_debugText.sqf";
-	ws_fnc_clipBoardCode = compile preprocessFile "ws_fnc\dbg\fn_clipBoardCode.sqf";
-	ws_fnc_countUnits = compile preprocessFile "ws_fnc\dbg\fn_countUnits.sqf";
-	ws_fnc_debugText = compile preprocessFile "ws_fnc\dbg\fn_debugText.sqf";
-	ws_fnc_typecheck = compile preprocessFile "ws_fnc\dbg\fn_typecheck.sqf";
-	call compile preprocessFile "ws_fnc\dbg\fn_debugTriggers.sqf";
 
 	//Tool Functions
 	ws_fnc_selectRandom = compile preprocessfile "ws_fnc\tools\fn_selectRandom.sqf";
@@ -47,9 +40,8 @@ if !(ws_game_a3) then {
 	ws_fnc_listPlayers = compile preprocessfile "ws_fnc\tools\fn_listPlayers.sqf";
 	ws_fnc_nearPlayer = compile preprocessfile "ws_fnc\tools\fn_nearPlayer.sqf";
 
-	//Misc Functions
-	ws_fnc_switchLights = compile preprocessfile "ws_fnc\misc\fn_switchLights.sqf";
-	ws_fnc_attachLight = compile preprocessfile "ws_fnc\misc\fn_attachLight.sqf";
+
+
 
 	//GetPos Functions
 	ws_fnc_getPos = compile preprocessfile "ws_fnc\getPos\fn_getPos.sqf";

@@ -1,16 +1,7 @@
 class WS
 	{
 
-		class debug
-		{
-			file = "ws_fnc\dbg";
-			class debugText {};
-			class typeCheck {};
-			class clipboardCode {};
-			class copyPos {};
-			class countUnits {};
-			class debugTriggers {postInit = 1;};
-		};
+		
 		class tools
 		{
 			file = "ws_fnc\tools";
@@ -32,15 +23,11 @@ class WS
 			class createTripflare {};
 			class createLightning {};
 			class createCAS {};
-			class createOrdnance {};
+			
 		};
 		class misc
 		{
 			file = "ws_fnc\misc";
-			class switchLights {};
-			class attachLight {};
-			class attachChem {};
-			class attachIR {};
 			class broadcast {};
 			class showIntro {};
 		};

@@ -34,13 +34,14 @@ switch (_CampTyp) do
 	{
 		_campBasic     = ["Flag_NATO_F",["FirePlace_burning_f",15,10,0],["Land_BagBunker_Tower_F",10,0,0],["Logic",10,15,0],0];
 		_campAmmo      = [["Box_NATO_Ammo_F",20,2,0],["Box_NATO_Wps_F",20,0,0],["Box_NATO_AmmoOrd_F",20,-2,0],["Box_NATO_WpsSpecial_F",20,-4,0]];
-		_campStatic    = [["B_G_Mortar_01_F",-7,25,0,"B_G_Soldier_F"],["B_G_Mortar_01_F",25,25,0,"B_G_Soldier_F"],["B_G_Mortar_01_F",25,-20,180,"B_G_Soldier_F"],["B_G_Mortar_01_F",-7,-20,180,"B_G_Soldier_F"]];
+		_campStatic    = [["B_Mortar_01_F",-7,25,0,"B_Soldier_F"],["B_Mortar_01_F",25,25,0,"B_Soldier_F"],["B_Mortar_01_F",25,-20,180,"B_Soldier_F"],["B_Mortar_01_F",-7,-20,180,"B_Soldier_F"]];
 		_campAddUnit   = [];
 		_campUserObj   = [];
 		_campRandomObj = [];
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
+
 //--------------------------------Generic camp-----------------------------------------------------------
 	case 2:
 	{
@@ -65,6 +66,7 @@ switch (_CampTyp) do
 		_campWall      = [];
 		_campObjInit   = [[],[],[],[],[],[],[]];
 	};
+
 //-------------------------------------------------------------------------------------------------------------------------
 	Default {
 				if(DAC_Basic_Value != 5) then

@@ -15,8 +15,6 @@ if (!isDedicated && (isNull player)) then
 
 private ["_unitfaction"];
 
-waitUntil {!isnil "f_var_debugMode"};
-
 // ====================================================================================
 
 // DETECT PLAYER FACTION
@@ -30,12 +28,6 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 
 
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1",_unitfaction];
-	};
-
 // ====================================================================================
 
 // BRIEFING: BLUFOR > NATO
@@ -44,13 +36,8 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 
 if (_unitfaction == "blu_f") exitwith {
 
-#include "f\briefing\f_briefing_nato.sqf"
+#include "f_briefing_nato.sqf"
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================
@@ -61,13 +48,8 @@ if (_unitfaction == "blu_f") exitwith {
 
 if (_unitfaction in ["blu_g_f","ind_g_f","opf_g_f"]) exitwith {
 
-#include "f\briefing\f_briefing_fia.sqf"
+#include "f_briefing_fia.sqf"
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 
 // ====================================================================================
@@ -78,13 +60,8 @@ if (_unitfaction in ["blu_g_f","ind_g_f","opf_g_f"]) exitwith {
 
 if (_unitfaction == "opf_f") exitwith {
 
-#include "f\briefing\f_briefing_csat.sqf"
+#include "f_briefing_csat.sqf"
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
 };
 // ====================================================================================
 
@@ -94,13 +71,9 @@ if (_unitfaction == "opf_f") exitwith {
 
 if (_unitfaction == "ind_f") exitwith {
 
-#include "f\briefing\f_briefing_aaf.sqf"
+#include "f_briefing_aaf.sqf"
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
+
 };
 
 // ====================================================================================
@@ -111,13 +84,9 @@ if (_unitfaction == "ind_f") exitwith {
 
 if (_unitfaction == "civ_f") exitwith {
 
-#include "f\briefing\f_briefing_civ.sqf"
+#include "f_briefing_civ.sqf"
 
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
+
 };
 
 // ====================================================================================

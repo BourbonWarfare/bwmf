@@ -168,59 +168,6 @@ _groups = [
 ["GrpCSAT_TH8","CSAT TH8 -"],
 ["GrpCSAT_AH1","CSAT AH1 -"],
 
-// ====================================================================================
-
-// GROUP IDs: OPFOR > FIA
-// Automatically assigns intelligible names to groups
-
-["GrpOFIA_CO","FIA O CO -"],
-["GrpOFIA_DC","FIA O DC -"],
-
-["GrpOFIA_ASL","FIA O ASL -"],
-["GrpOFIA_A1","FIA O A1 -"],
-["GrpOFIA_A2","FIA O A2 -"],
-["GrpOFIA_A3","FIA O A3 -"],
-
-["GrpOFIA_BSL","FIA O BSL -"],
-["GrpOFIA_B1","FIA O B1 -"],
-["GrpOFIA_B2","FIA O B2 -"],
-["GrpOFIA_B3","FIA O B3 -"],
-
-["GrpOFIA_CSL","FIA O CSL -"],
-["GrpOFIA_C1","FIA O C1 -"],
-["GrpOFIA_C2","FIA O C2 -"],
-["GrpOFIA_C3","FIA O C3 -"],
-
-["GrpOFIA_MMG1","FIA O MMG1 -"],
-["GrpOFIA_HMG1","FIA O HMG1 -"],
-["GrpOFIA_MAT1","FIA O MAT1 -"],
-["GrpOFIA_HAT1","FIA O HAT1 -"],
-["GrpOFIA_MTR1","FIA O MTR1 -"],
-["GrpOFIA_MSAM1","FIA O MSAM1 -"],
-["GrpOFIA_HSAM1","FIA O HSAM1 -"],
-["GrpOFIA_ST1","FIA O ST1 -"],
-["GrpOFIA_DT1","FIA O DT1 -"],
-["GrpOFIA_ENG1","FIA O ENG1 -"],
-
-["GrpOFIA_IFV1","FIA O IFV1 -"],
-["GrpOFIA_IFV2","FIA O IFV2 -"],
-["GrpOFIA_IFV3","FIA O IFV3 -"],
-["GrpOFIA_IFV4","FIA O IFV4 -"],
-["GrpOFIA_IFV5","FIA O IFV5 -"],
-["GrpOFIA_IFV6","FIA O IFV6 -"],
-["GrpOFIA_IFV7","FIA O IFV7 -"],
-["GrpOFIA_IFV8","FIA O IFV8 -"],
-["GrpOFIA_TNK1","FIA O TNK1 -"],
-
-["GrpOFIA_TH1","FIA O TH1 -"],
-["GrpOFIA_TH2","FIA O TH2 -"],
-["GrpOFIA_TH3","FIA O TH3 -"],
-["GrpOFIA_TH4","FIA O TH4 -"],
-["GrpOFIA_TH5","FIA O TH5 -"],
-["GrpOFIA_TH6","FIA O TH6 -"],
-["GrpOFIA_TH7","FIA O TH7 -"],
-["GrpOFIA_TH8","FIA O TH8 -"],
-["GrpOFIA_AH1","FIA O AH1 -"],
 
 // ====================================================================================
 
@@ -274,64 +221,8 @@ _groups = [
 ["GrpAAF_TH6","AAF TH6 -"],
 ["GrpAAF_TH7","AAF TH7 -"],
 ["GrpAAF_TH8","AAF TH8 -"],
-["GrpAAF_AH1","AAF AH1 -"],
+["GrpAAF_AH1","AAF AH1 -"]
 
-
-// ====================================================================================
-
-// GROUP IDs: OPFOR > FIA
-// Automatically assigns intelligible names to groups
-
-["GrpIFIA_CO","FIA I CO -"],
-["GrpIFIA_DC","FIA I DC -"],
-
-["GrpIFIA_ASL","FIA I ASL -"],
-["GrpIFIA_A1","FIA I A1 -"],
-["GrpIFIA_A2","FIA I A2 -"],
-["GrpIFIA_A3","FIA I A3 -"],
-
-["GrpIFIA_BSL","FIA I BSL -"],
-["GrpIFIA_B1","FIA I B1 -"],
-["GrpIFIA_B2","FIA I B2 -"],
-["GrpIFIA_B3","FIA I B3 -"],
-
-["GrpIFIA_CSL","FIA I CSL -"],
-["GrpIFIA_C1","FIA I C1 -"],
-["GrpIFIA_C2","FIA I C2 -"],
-["GrpIFIA_C3","FIA I C3 -"],
-
-["GrpIFIA_MMG1","FIA I MMG1 -"],
-["GrpIFIA_HMG1","FIA I HMG1 -"],
-["GrpIFIA_MAT1","FIA I MAT1 -"],
-["GrpIFIA_HAT1","FIA I HAT1 -"],
-["GrpIFIA_MTR1","FIA I MTR1 -"],
-["GrpIFIA_MSAM1","FIA I MSAM1 -"],
-["GrpIFIA_HSAM1","FIA I HSAM1 -"],
-["GrpIFIA_ST1","FIA I ST1 -"],
-["GrpIFIA_DT1","FIA I DT1 -"],
-["GrpIFIA_ENG1","FIA I ENG1 -"],
-
-["GrpIFIA_IFV1","FIA I IFV1 -"],
-["GrpIFIA_IFV2","FIA I IFV2 -"],
-["GrpIFIA_IFV3","FIA I IFV3 -"],
-["GrpIFIA_IFV4","FIA I IFV4 -"],
-["GrpIFIA_IFV5","FIA I IFV5 -"],
-["GrpIFIA_IFV6","FIA I IFV6 -"],
-["GrpIFIA_IFV7","FIA I IFV7 -"],
-["GrpIFIA_IFV8","FIA I IFV8 -"],
-["GrpIFIA_TNK1","FIA I TNK1 -"],
-
-["GrpIFIA_TH1","FIA I TH1 -"],
-["GrpIFIA_TH2","FIA I TH2 -"],
-["GrpIFIA_TH3","FIA I TH3 -"],
-["GrpIFIA_TH4","FIA I TH4 -"],
-["GrpIFIA_TH5","FIA I TH5 -"],
-["GrpIFIA_TH6","FIA I TH6 -"],
-["GrpIFIA_TH7","FIA I TH7 -"],
-["GrpIFIA_TH8","FIA I TH8 -"],
-["GrpIFIA_AH1","FIA I AH1 -"]
-
-// Always make sure there's no comma after the last entry!
 
 // ====================================================================================
 

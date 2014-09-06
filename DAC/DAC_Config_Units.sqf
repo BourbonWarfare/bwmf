@@ -20,7 +20,7 @@ switch (_TypNumber) do
     _Unit_Pool_S = ["O_crew_F","O_Helipilot_F","O_Soldier_SL_F","O_soldier_AR_F","O_soldier_AR_F","O_soldier_exp_F","O_soldier_GL_F","O_soldier_GL_F","O_soldier_M_F","O_medic_F","O_soldier_AA_F","O_soldier_repair_F","O_Soldier_F","O_Soldier_F","O_soldier_LAT_F","O_soldier_LAT_F","O_soldier_lite_F","O_soldier_TL_F","O_soldier_TL_F"];
     _Unit_Pool_V = ["O_MRAP_02_F","O_MRAP_02_gmg_F","O_MRAP_02_hmg_F"];
     _Unit_Pool_T = ["O_MBT_02_arty_F","I_APC_Wheeled_03_cannon_F","O_APC_Tracked_02_cannon_F","O_APC_Wheeled_02_rcws_F","O_MBT_02_cannon_F","O_APC_Tracked_02_AA_F"];
-	_Unit_Pool_A = ["O_Heli_Attack_02_F","O_Heli_Light_02_F","O_Heli_Light_02_armed_F"];
+  _Unit_Pool_A = ["O_Heli_Attack_02_F","O_Heli_Light_02_F","O_Heli_Light_02_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
 // BLUFOR (A3)
@@ -35,7 +35,7 @@ switch (_TypNumber) do
 // Independent (A3)
   case 2:
   {
-    _Unit_Pool_S = ["I_crew_F","I_helipilot_F","I_officer_F","I_Soldier_AT_F","I_Soldier_AA_F","I_Soldier_M_F","I_Soldier_GL_F","I_Soldier_exp_F","I_engineer_F","I_medic_F","I_Soldier_AR_F","I_Soldier_A_F"];
+    _Unit_Pool_S = ["I_crew_F","I_helipilot_F","I_officer_F","I_Soldier_LAT_F","I_Soldier_LAT_F","I_Soldier_AA_F","I_Soldier_M_F","I_Soldier_GL_F","I_Soldier_exp_F","I_engineer_F","I_medic_F","I_Soldier_AR_F","I_Soldier_A_F"];
     _Unit_Pool_V = ["I_Truck_02_covered_F","I_Truck_02_transport_F","I_MRAP_03_hmg_F","I_MRAP_03_gmg_F","I_MRAP_03_F"];
     _Unit_Pool_T = ["I_MBT_03_cannon_F","I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F"];
     _Unit_Pool_A = ["I_Heli_light_03_F"];
@@ -67,7 +67,7 @@ switch (_TypNumber) do
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   };
-  
+
    // Syrian Arab Army (MEC, Woodland Camo, AK weapons)
   case 6:
   {
@@ -76,7 +76,7 @@ switch (_TypNumber) do
     _Unit_Pool_T = ["SAA_T72","SAA_T55","SAA_BMP1","SAA_BMP2","SAA_ZSU23"];
     _Unit_Pool_A = ["SAA_KA60","SAA_MI48"];
   };
-  
+
       // Quds (MEC, G3/MG3 with MRCO sights)
   case 7:
   {
@@ -85,7 +85,7 @@ switch (_TypNumber) do
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   };
-  
+
    // Generic Middle East (MEC, Desert with AK Weapons)
   case 8:
   {
@@ -94,7 +94,7 @@ switch (_TypNumber) do
     _Unit_Pool_T = ["GME_T55","GME_T55","GME_T72","GME_BMP1","GME_BMP1","GME_BMP1","GME_BMP2","GME_BMP2","GME_BMP2","GME_ZSU23"];
     _Unit_Pool_A = ["GME_KA60","GME_KA60","GME_KA60","GME_MI48"];
   };
-  
+
   // Middle East Irregulars (INDFOR)
   case 9:
   {
@@ -103,8 +103,6 @@ switch (_TypNumber) do
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
   };
-
-
 //-------------------------------------------------------------------------------------------------
   Default
   {
