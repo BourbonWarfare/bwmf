@@ -12,7 +12,7 @@ scalar = "any";DAC_Init_Camps = 0;
 
 waituntil{time > 0.3};
 
-if(isServer) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};
+if(isAIcontroller) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0}} else {if(isnull player) then {DAC_Code = 3} else {DAC_Code = 2}};
 
 //===============|
 // DAC_Settings	 |
