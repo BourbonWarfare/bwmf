@@ -27,15 +27,21 @@ PABST_SPECT_init = {
 	if (isDedicated) exitWith {};
 	if (!isNil "PABST_SPECT_started") exitWith {systemChat format ["spectator already running"];};
 	PABST_SPECT_started = true;
-	
+
 	// ("x39_MedSys_Gui_Overlay_layer" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];	//try and disable xmed's red screen
 	if (!isNil "X39_MedSys_var_ppEffects_ColorCorrections") then {ppEffectDestroy X39_MedSys_var_ppEffects_ColorCorrections;};
 	if (!isNil "X39_MedSys_var_ppEffects_ColorInversion") then {ppEffectDestroy X39_MedSys_var_ppEffects_ColorInversion;};
 	if (!isNil "X39_MedSys_var_ppEffects_ChromAberration") then {ppEffectDestroy X39_MedSys_var_ppEffects_ChromAberration;};
 	if (!isNil "X39_MedSys_var_ppEffects_Blur") then {ppEffectDestroy X39_MedSys_var_ppEffects_Blur;};
-	
+
 	if (!isNil "acre_api_fnc_setSpectator") then {[true] call acre_api_fnc_setSpectator;};
-	
+
+	player setVariable ["AGM_InPain", false];
+	player setVariable ["AGM_Bleeding", false];
+	player setVariable ["AGM_Unconscious", false];
+	"chromAberration" ppEffectEnable false;
+	[false] call AGM_Core_fnc_disableUserInput;
+
 	if (!isNil "AGM_UnconsciousCC") then {
 		AGM_UnconsciousCC ppEffectEnable false;
 		AGM_UnconsciousCC ppEffectCommit 1;
@@ -44,22 +50,22 @@ PABST_SPECT_init = {
 		AGM_UnconsciousRB ppEffectEnable false;
 		AGM_UnconsciousRB ppEffectCommit 1;
 	};
-	
+
 	"chromAberration" ppEffectEnable false;
 	[] spawn {
 		sleep 1;			//solve race condition shit
 		"chromAberration" ppEffectEnable false;
 	};
-	
+
 	BIS_fnc_feedback_allowPP = false;	//disable death blur
-	
+
 	//Script's Global Variables
 	PABST_SPECT_cameraMode 			= CAMERA_MODE_EXTERNAL;
 	PABST_SPECT_cameraTarget 		= if (player == player) then {player} else {allUnits select 0};
 	PABST_SPECT_azimuth				= -1;
 	PABST_SPECT_altitude			= -1;
 	PABST_SPECT_attachTo_distance	= -1;
-	PABST_SPECT_theCamera 			= "camera" camCreate (position PABST_SPECT_cameraTarget); 
+	PABST_SPECT_theCamera 			= "camera" camCreate (position PABST_SPECT_cameraTarget);
 	PABST_SPECT_visionMode			= 0;
 	PABST_SPECT_mapPositionIndex	= 0;
 	PABST_SPECT_keysPressed			= [];
@@ -67,23 +73,23 @@ PABST_SPECT_init = {
 	PABST_SPECT_filterAI			= false;
 	PABST_SPECT_showNameTags 		= true;
 	PABST_SPECT_autoTrackMap		= true;
-	
+
 	PABST_SPECT_theCamera camSetFOV 1.25;
-	
-	
-	
+
+
+
 	_seagull = if (player == player) then {
 		[_this, 0, objNull, [objNull]] call BIS_fnc_PARAM;
 	} else {
 		[_this, 1, objNull, [objNull]] call BIS_fnc_PARAM;
 	};
-	
+
 	_seagull setpos [0,0,0];
 
 	if (count _this > 0) then {//what was this for again??
 		if (!isNull (_this select 0)) then {(_this select 0) setPos [0,0,0];};
 	};
-	
+
 	[] spawn PABST_SPECT_updateGUI;
 	[] spawn PABST_SPECT_updateCameraTrack;
 	// addMissionEventHandler ["Draw3D", PABST_SPECT_onEachFrame];
@@ -98,7 +104,7 @@ PABST_SPECT_init = {
 	// } forEach allunits;
 // };
 
-PABST_SPECT_onEachFrame = {	
+PABST_SPECT_onEachFrame = {
 	// systemChat format ["time is %1", time];
 	if (PABST_SPECT_showNameTags) then {
 		{
@@ -112,19 +118,19 @@ PABST_SPECT_onEachFrame = {
 					_crewCount = count (crew (vehicle _x));
 					_directionToCamera = ([PABST_SPECT_theCamera, _x] call BIS_fnc_dirTo) - (getDir _x);
 
-					
+
 					if (_xDistance < TAGS_RANGE_NAME) then {
 						if (isPlayer _x) then {
 							_xName = (name _x);
 						} else {
 							_xName = format ["*AI* - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
 						};
-						
+
 						if (_crewCount > 1) then {
 							_xName = format ["%1 (+%2)", _xName, ((count (crew (vehicle _x))) - 1)];
 						};
 					};
-					
+
 					if (vehicle _x != _x) then {
 						if (((crew (vehicle _x)) select 0) == _x) then {
 							drawIcon3D [_xIcon, _xColor, _xPosition, 0.75, 0.75, _directionToCamera, _xName, 0, TAGS_TEXTSIZE, "PuristaMedium"];
@@ -140,7 +146,7 @@ PABST_SPECT_onEachFrame = {
 
 
 PABST_SPECT_updateGUI = {
-	disableSerialization; 
+	disableSerialization;
 	waitUntil {
 		//-------Start: UI Display-----------
 		_dialogUpAtStart = dialog;
@@ -150,16 +156,16 @@ PABST_SPECT_updateGUI = {
 			((uiNamespace getVariable "PABST_SPECT_theDialog") displayCtrl 1602) ctrlSetTextColor [0,1,0,1];
 		};
 		_dialog = uiNamespace getVariable "PABST_SPECT_theDialog";
-		
+
 		//Camera Mode: Set Button Status (green text)
-		{	
+		{
 			if (PABST_SPECT_cameraMode == _x) then {
 				(_dialog displayCtrl (IDC_MODE_BASE + _x)) ctrlSetTextColor [0,1,0,1];
 			} else {
 				(_dialog displayCtrl (IDC_MODE_BASE + _x)) ctrlSetTextColor [1,1,1,1];
 			};
 		} forEach [CAMERA_MODE_EXTERNAL, CAMERA_MODE_FREE, CAMERA_MODE_INTERNAL];	//, CAMERA_MODE_TOP
-		
+
 		(_dialog displayCtrl IDC_FILTERAI) ctrlSetTextColor (if (PABST_SPECT_filterAI) then {[0,1,0,1]} else {[1,1,1,1]});
 		(_dialog displayCtrl IDC_NAMETAGS) ctrlSetTextColor (if (PABST_SPECT_showNameTags) then {[0,1,0,1]} else {[1,1,1,1]});
 
@@ -173,7 +179,7 @@ PABST_SPECT_updateGUI = {
 		} else {
 			(_dialog displayCtrl IDC_MAP_TRACK) ctrlSetTextColor [1,1,1,1];
 		};
-		
+
 		//Update Player Listbox, When Needed
 		if ((!_dialogUpAtStart) || ((count PABST_SPECT_targetsAlive) != ({(!PABST_SPECT_filterAI || isPlayer _x) && (alive _x)} count allUnits))) then {
 			lnbClear (_dialog displayCtrl IDC_LISTBOX_ARRAY);
@@ -198,11 +204,11 @@ PABST_SPECT_updateGUI = {
 						} else {
 							(_dialog displayCtrl IDC_LISTBOX_ARRAY) lnbAddRow ["", _xName];
 						};
-					};	
+					};
 				} forEach (units _x);
 			} forEach allGroups;
 		};
-		
+
 		//Update Player Listbox Selection, When Needed
 		_targetIndex = PABST_SPECT_targetsAlive find PABST_SPECT_cameraTarget;
 		if (_targetIndex > 0) then {
@@ -210,7 +216,7 @@ PABST_SPECT_updateGUI = {
 				(_dialog displayCtrl IDC_LISTBOX_ARRAY) lnbSetCurSelRow _targetIndex;
 			};
 		};
-		
+
 		if ((lbSize (_dialog displayCtrl IDC_LISTBOX_XVISION)) == 0) then {
 			{
 				(_dialog displayCtrl IDC_LISTBOX_XVISION) lbAdd format ["%1", _x];
@@ -234,54 +240,54 @@ PABST_SPECT_updateCameraTrack ={
 		if (call _newModeOrTargetCode) then {
 			_currentCameraMode  	= PABST_SPECT_cameraMode;
 			_currentCameraTarget 	= PABST_SPECT_cameraTarget;
-			
+
 			switch (PABST_SPECT_cameraMode) do {
 			case (CAMERA_MODE_INTERNAL): {
 					PABST_SPECT_theCamera cameraEffect ["terminate", "BACK"];
-					PABST_SPECT_theCamera camCommit 0; 
+					PABST_SPECT_theCamera camCommit 0;
 					PABST_SPECT_theCamera attachTo [PABST_SPECT_cameraTarget, [0,0,1.6]];
 
 				};
-				
+
 			case (CAMERA_MODE_EXTERNAL): {
 					detach PABST_SPECT_theCamera;
 					PABST_SPECT_theCamera camCommit 0;
 					PABST_SPECT_azimuth	= DEFAULT_ATTACHTO_AZIMUTH;
 					PABST_SPECT_altitude	= DEFAULT_ATTACHTO_ALTITUDE;
 					PABST_SPECT_attachTo_distance	= DEFAULT_ATTACHTO_DISTANCE;
-					PABST_SPECT_theCamera cameraEffect ["internal","back"];  
+					PABST_SPECT_theCamera cameraEffect ["internal","back"];
 					PABST_SPECT_theCamera camSetTarget PABST_SPECT_cameraTarget;
-					
+
 					cameraEffectEnableHUD true;
-					showCinemaBorder false;		
+					showCinemaBorder false;
 				};
-				
+
 			case (CAMERA_MODE_FREE): {
 					PABST_SPECT_theCamera cameraEffect ["terminate", "BACK"];
-					PABST_SPECT_theCamera camCommit 0; 
+					PABST_SPECT_theCamera camCommit 0;
 					_oldCamPosition = position PABST_SPECT_theCamera;
 					PABST_SPECT_azimuth = direction PABST_SPECT_theCamera;
 					PABST_SPECT_altitude = atan ((vectorDir PABST_SPECT_theCamera) select 2);
 					camDestroy PABST_SPECT_theCamera;
-					
-					PABST_SPECT_theCamera = "camera" camCreate (_oldCamPosition); 
-					PABST_SPECT_theCamera cameraEffect ["internal","back"];  
+
+					PABST_SPECT_theCamera = "camera" camCreate (_oldCamPosition);
+					PABST_SPECT_theCamera cameraEffect ["internal","back"];
 					PABST_SPECT_theCamera setDir PABST_SPECT_azimuth;
 					[PABST_SPECT_theCamera, PABST_SPECT_altitude, 0] call BIS_fnc_setPitchBank;
-					
+
 					cameraEffectEnableHUD true;
-					showCinemaBorder false;		
+					showCinemaBorder false;
 				};
 			};
 		};
-		
+
 		switch (PABST_SPECT_cameraMode) do {
 		case (CAMERA_MODE_INTERNAL) : {
 				if ((cameraon != PABST_SPECT_cameraTarget) && (vehicle PABST_SPECT_cameraTarget == PABST_SPECT_cameraTarget)) then {
 					PABST_SPECT_cameraTarget switchCamera "internal";
 				};
 				if ((cameraon != (vehicle PABST_SPECT_cameraTarget)) && (vehicle PABST_SPECT_cameraTarget != PABST_SPECT_cameraTarget)) then {
-					(vehicle PABST_SPECT_cameraTarget) switchCamera "gunner";//todo					
+					(vehicle PABST_SPECT_cameraTarget) switchCamera "gunner";//todo
 				};
 			};
 		case (CAMERA_MODE_EXTERNAL): {
@@ -337,7 +343,7 @@ PABST_SPECT_UI_mapClick = {
 	_mouseButton = _this select 1;
 	switch (_mouseButton) do {
 	case (0): {//left
-			
+
 			if (PABST_SPECT_cameraMode == CAMERA_MODE_FREE) then {
 				_clickPos = (_this select 0) ctrlMapScreenToWorld [(_this select 2), (_this select 3)];
 				_clickPos set [2, ((getPos PABST_SPECT_theCamera) select 2)];
@@ -350,7 +356,7 @@ PABST_SPECT_UI_mapClick = {
 				ctrlMapAnimClear (_this select 0);
 			};
 		};
-		
+
 	};
 };
 PABST_SPECT_UI_mapTrack = {
@@ -381,7 +387,7 @@ PABST_SPECT_UI_onKeyAction = {
 	_pressed	= _this select 1;
 	_keyNumber		= (_this select 2) select 1;
 	_actionString = "";
-	
+
 	if (_type == 'key') then {
 		_actionString = switch (_keyNumber) do {
 		case (16): {"KEY_Q"};
@@ -404,7 +410,7 @@ PABST_SPECT_UI_onKeyAction = {
 		};
 	};
 	if (_actionString == "") exitWith {};
-	
+
 	if (_pressed) then {
 		if (!(_actionString in PABST_SPECT_keysPressed)) then {
 			PABST_SPECT_keysPressed = PABST_SPECT_keysPressed + [_actionString];
@@ -470,7 +476,7 @@ PABST_SPECT_UI_updateVisionMode = {
 	case 2: {
 			camusenvg false;
 			true SetCamUseTi 0;
-		};	
+		};
 	case 3: {
 			camusenvg false;
 			true SetCamUseTi 1;

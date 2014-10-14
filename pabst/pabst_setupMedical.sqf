@@ -24,6 +24,7 @@ _unit		= _this select 1;
 [_unit, "AGM_Bandage", 4] call _addToBackpack;
 [_unit, "AGM_EarBuds", 1] call _addToBackpack;
 [_unit, "AGM_Morphine", 1] call _addToBackpack;
+[_unit, "AGM_IR_Strobe_Item", 1] call _addToBackpack;
 
 switch (_typeofUnit) do {
 case ("m"): {
