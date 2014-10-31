@@ -176,7 +176,7 @@ _ARmag = "100Rnd_65x39_caseless_mag";
 _ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
 
 // Medium MG
-_MMG = "LMG_mas_M240_F";
+_MMG = "LMG_Zafir_F";
 _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
@@ -185,12 +185,12 @@ _RAT = "launch_NLAW_F";
 _RATmag = "NLAW_F";
 
 // Sniper
-_SNrifle = "srifle_mas_m107";
-_SNrifleMag = "5Rnd_mas_127x99_Stanag";
+_SNrifle = "";  //todo fix masi
+_SNrifleMag = "";  //todo fix masi
 
 // Spotter
-_SPrifle = "srifle_mas_mk17s";
-_SPrifleMag = "20Rnd_mas_762x51_Stanag";
+_SPrifle = "";  //todo fix masi
+_SPrifleMag = "";  //todo fix masi
 
 
 // Medium AT

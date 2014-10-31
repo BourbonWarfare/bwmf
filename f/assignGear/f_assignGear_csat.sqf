@@ -184,8 +184,8 @@ _RATmag = "RPG32_F";
 
 
 // Sniper
-_SNrifle = "srifle_mas_ksvk";
-_SNrifleMag = "5Rnd_mas_127x108_dem_mag";
+_SNrifle = ""; //todo fix masi
+_SNrifleMag = "";  //todo fix masi
 
 
 
