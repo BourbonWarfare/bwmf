@@ -132,3 +132,5 @@ f_var_cachingAggressiveness = 2;
 
 
 
+//PABST: Uncomment to assign gear to all AI, even DAC spawned!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// [] execVM "pabst\pabst_setupGearForSpawned.sqf";
