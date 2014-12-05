@@ -115,8 +115,8 @@ class Params
 	{
 		title = "Headless client";
 		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 0;
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
 		code = "ws_param_hc = %1";
 	};
 
