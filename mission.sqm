@@ -6212,6 +6212,7 @@ class Mission
 					id=396;
 					side="LOGIC";
 					vehicle="HeadlessClient_F";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 					text="HC_SLOT_1";
