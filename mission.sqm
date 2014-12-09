@@ -6730,7 +6730,7 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={562.98303,5,669.38818};
+			position[]={2193.3599,5,3141.2817};
 			a=1500;
 			b=1500;
 			activationBy="LOGIC";

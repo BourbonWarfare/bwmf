@@ -172,7 +172,7 @@ class CfgFunctions
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
-			class assignGear{};
+			class assignGearTest{};
 		};
 		class setGroupID
 		{
