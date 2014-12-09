@@ -193,6 +193,77 @@ switch (_unitfaction) do
 
 // ====================================================================================
 
+// MARKERS: OPFOR > MSV
+// Markers seen by players in MSV slots.
+
+	case "rhs_faction_msv":
+	{
+		["GrpMSV_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_Plt1CO", 0, "1Plt", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_Plt2CO", 0, "2Plt", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_Plt3CO", 0, "3Plt", "ColorYellow"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_ASL", 0, "AS", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_BSL", 0, "BS", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_CSL", 0, "CS", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_DSL", 0, "DS", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_ESL", 0, "ES", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_FSL", 0, "FS", "ColorGreen"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_FOR", 0, "RECON", "ColorBlue"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_MMG1", 2, "MMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MMG2", 2, "MMG2", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MMG3", 2, "MMG3", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MAT2", 3, "MAT2", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MAT3", 3, "MAT3", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_HMG1",  2, "HMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MTR1",  5, "MTR1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MTR2",  5, "MTR2", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_HAT1",  3, "MAT2", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_MSAM1",  3, "SAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_HSAM1",  3, "WSL", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_ENG1",  6, "ENG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpMSV_WV1",  7, "WV1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_WV2",  7, "WV2", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpMSV_TNK1",  8, "TNK1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_TNK2",  8, "TNK2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_TNK3",  8, "TNK3", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpMSV_TH1",  9, "TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_TH2",  9, "TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_AH1",  9, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_AH2",  9, "AH2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_FW1",  9, "CAS", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["UnitMSV_CO_M", 0, "COM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_DC_M", 0, "DCM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_DSL_M", 0, "DM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_ESL_M", 0, "EM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_FSL_M", 0, "FM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+
+		["UnitMSV_CO_VG", 0, "PV", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_ASL_VG", 0, "AV", "ColorRed"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_B1_VG", 0, "BV", "ColorBlue"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_C1_VG", 0, "CV", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_D1_VG", 0, "DV", "ColorRed"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_E1_VG", 0, "EV", "ColorBlue"] spawn f_fnc_localSpecialistMarker;
+		["UnitMSV_F1_VG", 0, "FV", "ColorGreen"] spawn f_fnc_localSpecialistMarker;
+
+	};
+
+// ====================================================================================
+
 // MARKERS: INDEPEDENT > AAF
 // Markers seen by players in AAF slots.
 
