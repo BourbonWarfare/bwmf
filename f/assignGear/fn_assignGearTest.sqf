@@ -51,10 +51,10 @@ _unit addBackpack (_backpack call BIS_fnc_selectRandom);
 		_amt = parseNumber (_arr select 1);
 	};
 	for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-		if (_theUnit canAddItemToBackpack _classname) then {
-			_theUnit addItemToBackpack _classname;
+		if (_unit canAddItemToBackpack _classname) then {
+			_unit addItemToBackpack _classname;
 		} else {
-			_theUnit addItem _classname;
+			_unit addItem _classname;
 		};
 	};
 } foreach _backpackItems;
