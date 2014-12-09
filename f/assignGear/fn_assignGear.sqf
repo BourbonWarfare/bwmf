@@ -16,6 +16,13 @@ _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
 _faction = toLower (faction _unit);
 
+if (true) exitWith {
+
+[_unit] call F_fnc_assignGearTest;
+
+};
+
+
 // ====================================================================================
 
 // DECIDE IF THE SCRIPT SHOULD RUN

@@ -7,7 +7,6 @@ class Mission
 		"a3_characters_f_beta",
 		"A3_Characters_F_INDEP",
 		"A3_Air_F_Beta_Heli_Transport_01",
-		"A3_Characters_F_Civil",
 		"A3_Characters_F_BLUFOR",
 		"A3_Air_F_Heli_Light_02",
 		"A3_Air_F_Beta_Heli_Attack_01",
@@ -6730,7 +6729,7 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={2193.3599,5,3141.2817};
+			position[]={5622.208,5,5344.4336};
 			a=1500;
 			b=1500;
 			activationBy="LOGIC";

@@ -1,10 +1,12 @@
-systemChat format ["Doing the gear thing %1, %2", _unit, _loadout];
+
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 _unit = _this select 0;
 _faction = tolower (faction _unit);
 _loadout = (typeOf _unit);
+
+systemChat format ["Doing the gear thing %1, %2", _unit, _loadout];
 
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 

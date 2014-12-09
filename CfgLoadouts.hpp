@@ -60,7 +60,7 @@ class CfgLoadouts {
 			vest[] = {"V_TacVest_blk","V_TacVest_brn"}; /// randomized
 			headgear[] = {"H_HelmetB","H_HelmetB_plain_mcamo"}; /// randomized
 			backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
-			backpackItems[] = {"AGM_Bandage:3","AGM_Morphine"}
+			backpackItems[] = {"AGM_Bandage:3","AGM_Morphine"};
 			weapons[] = {WEST_RIFLE}; /// randomized
 			launchers[] = {}; /// randomized
 			handguns[] = {}; /// randomized

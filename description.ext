@@ -2,6 +2,8 @@
 #include "pabst\gui_common.hpp"
 #include "pabst\gui_spectator.hpp"
 
+#include "CfgLoadouts.hpp"
+
 // ============================================================================================
 
 // F3 - Mission Header
@@ -173,6 +175,8 @@ class CfgFunctions
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
 			class assignGearTest{};
+			class assignGearTest_vehicle{};
+			class assignGear{};
 		};
 		class setGroupID
 		{
