@@ -107,17 +107,7 @@ f_var_viewDistance_default = 2500;
 
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
-// ====================================================================================
-// F3 - AI Unit Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_var_debugMode = 0;
-[30] spawn f_fnc_cInit;
 
-// Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
-// 1 - cache only non-leaders and non-drivers
-// 2 - cache all non-moving units, always exclude vehicle drivers
-// 3 - cache all units, incl. group leaders and vehicle drivers
-f_var_cachingAggressiveness = 2;
 // ====================================================================================
 
 // F3 - Radio Framework
