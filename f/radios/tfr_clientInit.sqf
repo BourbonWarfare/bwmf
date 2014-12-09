@@ -18,13 +18,13 @@ sleep 3;
 if(alive player) then {
 
   // Remove all existing radios
-  [] call f_fnc_tfr_removeRadios;
+ // [] call f_fnc_tfr_removeRadios;
 
   // Wait for gear assignation to take place
-  waitUntil{(player getVariable ["f_var_assignGear_done", false])};
+  //waitUntil{(player getVariable ["f_var_assignGear_done", false])};
 
   // Add radios to each unit
-  [] call f_fnc_tfr_addRadios;
+ // [] call f_fnc_tfr_addRadios;
 
   // Configure spectator chat
   [] call f_fnc_tfr_configureSpectatorChat;

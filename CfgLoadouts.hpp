@@ -16,7 +16,8 @@ class CfgLoadouts {
 		#define APERS "APERSMine_Range_Mag"
 
 	class blu_f {
-		
+		//Radios
+		#define TF_defaultWestBackpack  "tf_rt1523g"
 		//Rifle
 		#define WEST_RIFLE "arifle_MX_pointer_F"
 		#define WEST_RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
@@ -66,12 +67,13 @@ class CfgLoadouts {
 			handguns[] = {}; /// randomized
 			magazines[] = {WEST_RIFLE_MAG,"HandGrenade:3","MiniGrenade:3","SmokeShell:4"};
 			items[] = {};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemRadio","ItemWatch"};
+			linkedItems[] = {"ItemMap","ItemCompass",,"ItemWatch","itemRadio"};
 			attachments[] = {"optic_Holosight"};
 		};
 		class B_officer_F : B_Soldier_F // CO and DC
 		{
 			weapons[] = {WEST_GLRIFLE};
+			backpack[] = {TF_defaultWestBackpack};
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS"};
@@ -79,6 +81,7 @@ class CfgLoadouts {
 		class B_Soldier_SL_F : B_Soldier_F // SL
 		{
 			weapons[] = {WEST_GLRIFLE};
+			backpack[] = {TF_defaultWestBackpack};
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS"};
