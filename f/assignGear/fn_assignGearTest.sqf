@@ -2,10 +2,15 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 _unit = _this select 0;
-_loadout = _this select 1;
 _faction = tolower (faction _unit);
+_loadout = (typeOf _unit);
+
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
-if(!isClass(_path)) exitWith {systemChat format ["No loadout called %1", _loadout]};
+
+if(!isClass(_path)) exitWith {
+	systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+	["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)] call bis_fnc_error;
+};
 
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
@@ -35,20 +40,20 @@ _unit addBackpack (_backpack call BIS_fnc_selectRandom);
 
 // Backpack Items
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
-    _classname = _arr select 0;
-    _amt = 1;
-    if(count _arr > 1) then
-    {
-        _amt = parseNumber (_arr select 1);
-    };
-    for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-        if (_theUnit canAddItemToBackpack _classname) then {
-            _theUnit addItemToBackpack _classname;
-        } else {
-            _theUnit addItem _classname;
-        };
-    };
+	_arr = [_x,":"] call BIS_fnc_splitString;
+	_classname = _arr select 0;
+	_amt = 1;
+	if(count _arr > 1) then
+	{
+		_amt = parseNumber (_arr select 1);
+	};
+	for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+		if (_theUnit canAddItemToBackpack _classname) then {
+			_theUnit addItemToBackpack _classname;
+		} else {
+			_theUnit addItem _classname;
+		};
+	};
 } foreach _backpackItems;
 
 // ====================================================================================
