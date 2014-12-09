@@ -184,6 +184,55 @@ _groups = [
 ["GrpCSAT_TH8","CSAT TH8 -"],
 ["GrpCSAT_AH1","CSAT AH1 -"],
 
+// GROUP IDs: OPFOR > MSV
+// Automatically assigns intelligible names to groups
+
+["GrpMSV_CO","MSV COY -"],
+["GrpMSV_Plt1CO","MSV 1PLT -"],
+["GrpMSV_Plt2CO","MSV 2PLT -"],
+["GrpMSV_Plt3CO","MSV 3PLT -"],
+
+["GrpMSV_ASL","MSV ASL -"],
+["GrpMSV_BSL","MSV BSL -"],
+["GrpMSV_CSL","MSV CSL -"],
+["GrpMSV_DSL","MSV DSL -"],
+["GrpMSV_ESL","MSV ESL -"],
+["GrpMSV_FSL","MSV FSL -"],
+
+["GrpMSV_FOR","MSV RECON -"],
+
+["GrpMSV_MMG1","MSV MMG1 -"],
+["GrpMSV_MMG2","MSV MMG2 -"],
+["GrpMSV_MMG3","MSV MMG3 -"],
+["GrpMSV_MAT1","MSV MAT1 -"],
+["GrpMSV_MAT2","MSV MAT2 -"],
+["GrpMSV_MAT3","MSV MAT3 -"],
+["GrpMSV_MTR1","MSV MTR1 -"],
+["GrpMSV_MSAM1","MSV MSAM1 -"],
+["GrpMSV_HSAM1","MSV HSAM1 -"],
+["GrpMSV_ST1","MSV ST1 -"],
+["GrpMSV_DT1","MSV DT1 -"],
+["GrpMSV_ENG1","MSV ENG1 -"],
+
+["GrpMSV_IFV1","MSV IFV1 -"],
+["GrpMSV_IFV2","MSV IFV2 -"],
+["GrpMSV_IFV3","MSV IFV3 -"],
+["GrpMSV_IFV4","MSV IFV4 -"],
+["GrpMSV_IFV5","MSV IFV5 -"],
+["GrpMSV_IFV6","MSV IFV6 -"],
+["GrpMSV_IFV7","MSV IFV7 -"],
+["GrpMSV_IFV8","MSV IFV8 -"],
+["GrpMSV_TNK1","MSV TNK1 -"],
+
+["GrpMSV_TH1","MSV TH1 -"],
+["GrpMSV_TH2","MSV TH2 -"],
+["GrpMSV_TH3","MSV TH3 -"],
+["GrpMSV_TH4","MSV TH4 -"],
+["GrpMSV_TH5","MSV TH5 -"],
+["GrpMSV_TH6","MSV TH6 -"],
+["GrpMSV_TH7","MSV TH7 -"],
+["GrpMSV_TH8","MSV TH8 -"],
+["GrpMSV_AH1","MSV AH1 -"],
 
 // ====================================================================================
 

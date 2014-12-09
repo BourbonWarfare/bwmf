@@ -198,7 +198,7 @@ switch (_unitfaction) do
 
 	case "rhs_faction_msv":
 	{
-		["GrpMSV_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpMSV_CO", 0, "COY", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpMSV_Plt1CO", 0, "1Plt", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpMSV_Plt2CO", 0, "2Plt", "ColorYellow"] spawn f_fnc_localGroupMarker;
