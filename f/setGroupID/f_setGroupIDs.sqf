@@ -11,8 +11,9 @@ _groups = [
 // GROUP IDs: BLUFOR > NATO
 // Automatically assigns intelligible names to groups
 
-["GrpNATO_CO","NATO CO -"],
-["GrpNATO_DC","NATO DC -"],
+["GrpNATO_COY","NATO COY -"],
+["GrpNATO_1PLT","NATO 1PLT -"],
+["GrpNATO_2PLT","NATO 2PLT -"],
 
 ["GrpNATO_ASL","NATO ASL -"],
 ["GrpNATO_A1","NATO A1 -"],
@@ -28,6 +29,21 @@ _groups = [
 ["GrpNATO_C1","NATO C1 -"],
 ["GrpNATO_C2","NATO C2 -"],
 ["GrpNATO_C3","NATO C3 -"],
+
+["GrpNATO_DSL","NATO DSL -"],
+["GrpNATO_D1","NATO D1 -"],
+["GrpNATO_D2","NATO D2 -"],
+["GrpNATO_D3","NATO D3 -"],
+
+["GrpNATO_ESL","NATO ESL -"],
+["GrpNATO_E1","NATO E1 -"],
+["GrpNATO_E2","NATO E2 -"],
+["GrpNATO_E3","NATO E3 -"],
+
+["GrpNATO_FSL","NATO FSL -"],
+["GrpNATO_F1","NATO F1 -"],
+["GrpNATO_F2","NATO F2 -"],
+["GrpNATO_F3","NATO F3 -"],
 
 ["GrpNATO_MMG1","NATO MMG1 -"],
 ["GrpNATO_HMG1","NATO HMG1 -"],

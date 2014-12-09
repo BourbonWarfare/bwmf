@@ -36,8 +36,9 @@ switch (_unitfaction) do
 
 	case "blu_f":
 	{
-		["GrpNATO_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_COY", 0, "COY", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_1PLT", 0, "1PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_2PLT", 0, "2PLT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpNATO_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -53,6 +54,21 @@ switch (_unitfaction) do
 		["GrpNATO_C1", 1, "C1", "ColorGreen"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_C2", 1, "C2", "ColorGreen"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_C3", 1, "C3", "ColorGreen"] spawn f_fnc_localGroupMarker;
+
+		["GrpNATO_DSL", 0, "DSL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_D1", 1, "D1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_D2", 1, "D2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_D3", 1, "D3", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpNATO_ESL", 0, "ESL", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_E1", 1, "E1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_E2", 1, "E2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_E3", 1, "E3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+
+		["GrpNATO_FSL", 0, "FSL", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_F1", 1, "F1", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_F2", 1, "F2", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_F3", 1, "F3", "ColorGreen"] spawn f_fnc_localGroupMarker;
 
 		["GrpNATO_MMG1", 2, "MMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
@@ -90,12 +106,18 @@ switch (_unitfaction) do
 
 		["GrpNATO_DT1",  4, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
 
-		["UnitNATO_CO_M", 0, "COM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
-		["UnitNATO_DC_M", 0, "DCM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+
 		["UnitNATO_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_WSL_M", 0, "WM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_COY_M", 0, "COYMed", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_1PLT_M", 0, "1PLTMed", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_2PLT_M", 0, "2PLTMed", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_DSL_M", 0, "DM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_ESL_M", 0, "EM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitNATO_FSL_M", 0, "FM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+
 
 	};
 
