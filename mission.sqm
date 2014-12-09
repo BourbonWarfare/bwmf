@@ -5906,6 +5906,7 @@ class Mission
 					id=366;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="LIEUTENANT";
@@ -5921,6 +5922,7 @@ class Mission
 					id=367;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CO_M";
@@ -5934,6 +5936,7 @@ class Mission
 					id=368;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CO_UAV";
@@ -5947,6 +5950,7 @@ class Mission
 					id=369;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_CO_D";
 					init="GrpMSV_CO = group this; [""vd"",this] call f_fnc_assignGear; ";
@@ -5959,6 +5963,7 @@ class Mission
 					id=370;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_CO_VG";
 					init="GrpMSV_CO = group this; [""vg"",this] call f_fnc_assignGear; ";
@@ -5979,6 +5984,7 @@ class Mission
 					id=371;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="LIEUTENANT";
@@ -5994,6 +6000,7 @@ class Mission
 					id=372;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_Plt1CO_DC";
@@ -6016,6 +6023,7 @@ class Mission
 					id=373;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6032,6 +6040,7 @@ class Mission
 					id=374;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6047,6 +6056,7 @@ class Mission
 					id=375;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6062,6 +6072,7 @@ class Mission
 					id=376;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6077,6 +6088,7 @@ class Mission
 					id=377;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6092,6 +6104,7 @@ class Mission
 					id=378;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_M";
@@ -6106,6 +6119,7 @@ class Mission
 					id=379;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_R";
@@ -6120,6 +6134,7 @@ class Mission
 					id=380;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_GR";
@@ -6134,6 +6149,7 @@ class Mission
 					id=381;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_AGR";
@@ -6155,6 +6171,7 @@ class Mission
 					id=382;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6170,6 +6187,7 @@ class Mission
 					id=383;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6184,6 +6202,7 @@ class Mission
 					id=384;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6198,6 +6217,7 @@ class Mission
 					id=385;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6212,6 +6232,7 @@ class Mission
 					id=386;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6226,6 +6247,7 @@ class Mission
 					id=387;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_BSL_M";
@@ -6239,6 +6261,7 @@ class Mission
 					id=388;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_B2_R";
@@ -6252,6 +6275,7 @@ class Mission
 					id=389;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_B1_GR";
@@ -6265,6 +6289,7 @@ class Mission
 					id=390;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_B2_AGR";
@@ -6286,6 +6311,7 @@ class Mission
 					id=391;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6301,6 +6327,7 @@ class Mission
 					id=392;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6315,6 +6342,7 @@ class Mission
 					id=393;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6329,6 +6357,7 @@ class Mission
 					id=394;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6343,6 +6372,7 @@ class Mission
 					id=395;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6357,6 +6387,7 @@ class Mission
 					id=396;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_CSL_M";
@@ -6370,6 +6401,7 @@ class Mission
 					id=397;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_C2_R";
@@ -6383,6 +6415,7 @@ class Mission
 					id=398;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_C1_GR";
@@ -6396,6 +6429,7 @@ class Mission
 					id=399;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_C2_AGR";
@@ -6417,6 +6451,7 @@ class Mission
 					id=400;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="LIEUTENANT";
@@ -6432,6 +6467,7 @@ class Mission
 					id=401;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_Plt2CO_DC";
@@ -6453,6 +6489,7 @@ class Mission
 					id=402;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6468,6 +6505,7 @@ class Mission
 					id=403;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6482,6 +6520,7 @@ class Mission
 					id=404;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6496,6 +6535,7 @@ class Mission
 					id=405;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6510,6 +6550,7 @@ class Mission
 					id=406;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6524,6 +6565,7 @@ class Mission
 					id=407;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_DSL_M";
@@ -6537,6 +6579,7 @@ class Mission
 					id=408;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_D2_R";
@@ -6550,6 +6593,7 @@ class Mission
 					id=409;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_D1_GR";
@@ -6563,6 +6607,7 @@ class Mission
 					id=410;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_D2_AGR";
@@ -6584,6 +6629,7 @@ class Mission
 					id=411;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6599,6 +6645,7 @@ class Mission
 					id=412;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6613,6 +6660,7 @@ class Mission
 					id=413;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6627,6 +6675,7 @@ class Mission
 					id=414;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6641,6 +6690,7 @@ class Mission
 					id=415;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6655,6 +6705,7 @@ class Mission
 					id=416;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ESL_M";
@@ -6668,6 +6719,7 @@ class Mission
 					id=417;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_E2_R";
@@ -6681,6 +6733,7 @@ class Mission
 					id=418;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_E1_GR";
@@ -6694,6 +6747,7 @@ class Mission
 					id=419;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_E2_AGR";
@@ -6715,6 +6769,7 @@ class Mission
 					id=420;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -6730,6 +6785,7 @@ class Mission
 					id=421;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6744,6 +6800,7 @@ class Mission
 					id=422;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6758,6 +6815,7 @@ class Mission
 					id=423;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_SR";
@@ -6771,6 +6829,7 @@ class Mission
 					id=424;
 					side="EAST";
 					vehicle="rhs_msv_marksman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -6785,6 +6844,7 @@ class Mission
 					id=425;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_M";
@@ -6798,6 +6858,7 @@ class Mission
 					id=426;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_F2_R";
@@ -6811,6 +6872,7 @@ class Mission
 					id=427;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_F1_GR";
@@ -6824,6 +6886,7 @@ class Mission
 					id=428;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_F2_AGR";
@@ -6845,6 +6908,7 @@ class Mission
 					id=429;
 					side="EAST";
 					vehicle="rhs_msv_officer";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="LIEUTENANT";
@@ -6868,6 +6932,7 @@ class Mission
 					id=430;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6883,6 +6948,7 @@ class Mission
 					id=431;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W1_VD";
@@ -6904,6 +6970,7 @@ class Mission
 					id=432;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6919,6 +6986,7 @@ class Mission
 					id=433;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W2_VD";
@@ -6940,6 +7008,7 @@ class Mission
 					id=434;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6955,6 +7024,7 @@ class Mission
 					id=435;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG1_AG";
@@ -6976,6 +7046,7 @@ class Mission
 					id=436;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6991,6 +7062,7 @@ class Mission
 					id=437;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG2_AG";
@@ -7012,6 +7084,7 @@ class Mission
 					id=438;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -7027,6 +7100,7 @@ class Mission
 					id=439;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG3_AG";
@@ -7048,6 +7122,7 @@ class Mission
 					id=440;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -7063,6 +7138,7 @@ class Mission
 					id=441;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT1_AG";
@@ -7084,6 +7160,7 @@ class Mission
 					id=442;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -7099,6 +7176,7 @@ class Mission
 					id=443;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT2_AG";
@@ -7120,6 +7198,7 @@ class Mission
 					id=444;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -7135,6 +7214,7 @@ class Mission
 					id=445;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT3_AG";
@@ -7156,6 +7236,7 @@ class Mission
 					id=446;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -7171,6 +7252,7 @@ class Mission
 					id=447;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_AR";
@@ -7184,6 +7266,7 @@ class Mission
 					id=448;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R";
@@ -7197,6 +7280,7 @@ class Mission
 					id=449;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R1";
@@ -7218,6 +7302,7 @@ class Mission
 					id=450;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -7232,6 +7317,7 @@ class Mission
 					id=451;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A1";
 					init="GrpMSV_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
@@ -7244,6 +7330,7 @@ class Mission
 					id=452;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A2";
 					init="GrpMSV_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
@@ -7256,6 +7343,7 @@ class Mission
 					id=453;
 					side="EAST";
 					vehicle="O_engineer_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A3";
 					init="GrpMSV_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
@@ -7276,6 +7364,7 @@ class Mission
 					id=454;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -7290,6 +7379,7 @@ class Mission
 					id=455;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_G";
@@ -7303,6 +7393,7 @@ class Mission
 					id=456;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_D";
 					init="GrpMSV_TNK1 = group this; [""vd"",this] call f_fnc_assignGear; ";
@@ -7323,6 +7414,7 @@ class Mission
 					id=457;
 					side="EAST";
 					vehicle="rhs_pilot_transport_heli";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -7337,6 +7429,7 @@ class Mission
 					id=458;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_AH1_CP";
@@ -7358,6 +7451,7 @@ class Mission
 					id=459;
 					side="EAST";
 					vehicle="rhs_pilot_transport_heli";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -7372,6 +7466,7 @@ class Mission
 					id=460;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_AH2_CP";
@@ -7393,6 +7488,7 @@ class Mission
 					id=461;
 					side="EAST";
 					vehicle="rhs_pilot_transport_heli";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -7407,6 +7503,7 @@ class Mission
 					id=462;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH1_CP";
@@ -7428,6 +7525,7 @@ class Mission
 					id=463;
 					side="EAST";
 					vehicle="rhs_pilot_transport_heli";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -7442,6 +7540,7 @@ class Mission
 					id=464;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH2_CP";
@@ -7463,6 +7562,7 @@ class Mission
 					id=465;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
 					rank="SERGEANT";
@@ -7478,6 +7578,7 @@ class Mission
 					id=466;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D2";
@@ -7491,6 +7592,7 @@ class Mission
 					id=467;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D1";
@@ -7504,6 +7606,7 @@ class Mission
 					id=468;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -7518,6 +7621,7 @@ class Mission
 					id=469;
 					side="EAST";
 					vehicle="rhs_msv_crew";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -7532,6 +7636,7 @@ class Mission
 					id=470;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -7546,6 +7651,7 @@ class Mission
 					id=471;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SR1";
@@ -7559,6 +7665,7 @@ class Mission
 					id=472;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SR2";
@@ -7572,6 +7679,7 @@ class Mission
 					id=473;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -7586,6 +7694,7 @@ class Mission
 					id=474;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -7600,6 +7709,7 @@ class Mission
 					id=475;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_M1";
@@ -7613,6 +7723,7 @@ class Mission
 					id=476;
 					side="EAST";
 					vehicle="rhs_msv_medic";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_M2";
@@ -7626,6 +7737,7 @@ class Mission
 					id=477;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_R2";
@@ -7639,6 +7751,7 @@ class Mission
 					id=478;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_R1";
@@ -7652,6 +7765,7 @@ class Mission
 					id=479;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_GR2";
@@ -7665,6 +7779,7 @@ class Mission
 					id=480;
 					side="EAST";
 					vehicle="rhs_msv_at";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_GR1";
@@ -7678,6 +7793,7 @@ class Mission
 					id=481;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AGR1";
@@ -7691,6 +7807,7 @@ class Mission
 					id=482;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
+					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AGR2";
