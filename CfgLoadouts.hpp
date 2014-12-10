@@ -1,19 +1,20 @@
 class CfgLoadouts {
 
+	// BEST TO USE THE CLASSNAMES FOR GRENADES AND EXPLOSIVES INSTEAD OF THE DEFINES
 		// Grenades
-		#define GRENADE_HE "HandGrenade"
-		#define GRENADE_SMOKE "SmokeShell"
-		//Chemlights
-		#define CHEM_GREEN "Chemlight_green"
-		#define CHEM_RED "Chemlight_red"
-		#define CHEM_BLUE "Chemlight_blue"
-		#define CHEM_YELLOW "Chemlight_yellow"
-		// Explosives (Mines and Charges)
-		#define AT_MINE "ATMine_Range_Mag"
-		#define DEMO_CHARGE "DemoCharge_Remote_Mag"
-		#define SATCHEL_CHARGE "SatchelCharge_Remote_Mag"
-		#define APERS_BOUNDING "APERSBoundingMine_Range_Mag"
-		#define APERS "APERSMine_Range_Mag"
+		// #define GRENADE_HE "HandGrenade"
+		// #define GRENADE_SMOKE "SmokeShell"
+		// //Chemlights
+		// #define CHEM_GREEN "Chemlight_green"
+		// #define CHEM_RED "Chemlight_red"
+		// #define CHEM_BLUE "Chemlight_blue"
+		// #define CHEM_YELLOW "Chemlight_yellow"
+		// // Explosives (Mines and Charges)
+		// #define AT_MINE "ATMine_Range_Mag"
+		// #define DEMO_CHARGE "DemoCharge_Remote_Mag"
+		// #define SATCHEL_CHARGE "SatchelCharge_Remote_Mag"
+		// #define APERS_BOUNDING "APERSBoundingMine_Range_Mag"
+		// #define APERS "APERSMine_Range_Mag"
 
 	class blu_f {
 		//Radios
@@ -26,7 +27,7 @@ class CfgLoadouts {
 		#define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
 		#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 		#define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
-		#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:3","UGL_FlareRed_F:3","UGL_FlareYellow_F:3","UGL_FlareGreen_F:3"
+		#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:2","UGL_FlareRed_F:2","UGL_FlareYellow_F:2","UGL_FlareGreen_F:2"
 		//Carbine
 		#define WEST_CARBINE "arifle_MXC_F"
 		#define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
@@ -65,7 +66,7 @@ class CfgLoadouts {
 			weapons[] = {WEST_RIFLE}; /// randomized
 			launchers[] = {}; /// randomized
 			handguns[] = {}; /// randomized
-			magazines[] = {WEST_RIFLE_MAG,"HandGrenade:3","MiniGrenade:3","SmokeShell:4"};
+			magazines[] = {WEST_RIFLE_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			items[] = {};
 			linkedItems[] = {"ItemMap","ItemCompass",,"ItemWatch","itemRadio"};
 			attachments[] = {"optic_Holosight"};
@@ -74,7 +75,7 @@ class CfgLoadouts {
 		{
 			weapons[] = {WEST_GLRIFLE};
 			backpack[] = {TF_defaultWestBackpack};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS"};
 		};
@@ -82,20 +83,20 @@ class CfgLoadouts {
 		{
 			weapons[] = {WEST_GLRIFLE};
 			backpack[] = {TF_defaultWestBackpack};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS"};
 		};
 		class B_Soldier_TL_F : B_Soldier_F // FTL
 		{
 			weapons[] = {WEST_GLRIFLE};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS"};
 		};
 		class B_Soldier_AR_F : B_Soldier_F // AR
 		{
 			weapons[] = {WEST_AR};
-			magazines[] = {WEST_AR_MAG,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG};
+			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			
 		};
@@ -108,7 +109,7 @@ class CfgLoadouts {
 		class B_Soldier_LAT_F : B_Soldier_F // RAT
 		{
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,GRENADE_HE,GRENADE_SMOKE,WEST_AT_MAG};
+			magazines[] = {WEST_CARBINE_MAG,WEST_AT_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			launchers[] = {WEST_AT}; /// randomized
 			
 		};
