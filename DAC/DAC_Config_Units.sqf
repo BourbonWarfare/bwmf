@@ -59,13 +59,13 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["B_Heli_Light_01_armed_F","B_Heli_Transport_01_camo_F","B_Heli_Light_01_F"];
   };
 
-  // Middle-east Rebels (CAF_AG)
+// Russian MSV (RHS: Russian Armed Forces)
   case 5:
   {
-    _Unit_Pool_S = ["CAF_AG_ME_T_AK47","CAF_AG_ME_T_AK47","CAF_AG_ME_T_AK47","CAF_AG_ME_T_AK47","CAF_AG_ME_T_RPK74","CAF_AG_ME_T_RPG","CAF_AG_ME_T_PKM","CAF_AG_ME_T_AK47","CAF_AG_ME_T_AK47","CAF_AG_ME_T_RPG","CAF_AG_ME_T_AK47"];
-    _Unit_Pool_V = ["CAF_AG_ME_T_Offroad_armed_01","CAF_AG_ME_T_Offroad_armed_01","CAF_AG_ME_T_van_01"];
-    _Unit_Pool_T = [];
-    _Unit_Pool_A = [];
+    _Unit_Pool_S = ["rhs_msv_crew","rhs_pilot_combat_heli","rhs_msv_officer","rhs_msv_machinegunner","rhs_msv_machinegunner","rhs_msv_grenadier","rhs_msv_grenadier","rhs_msv_medic","rhs_msv_rifleman","rhs_msv_rifleman","rhs_msv_LAT","rhs_msv_LAT","rhs_msv_sergeant","rhs_msv_sergeant"];
+    _Unit_Pool_V = ["rhs_tigr_msv","RHS_Ural_msv_01","RHS_Ural_Open_msv_01"];
+    _Unit_Pool_T = ["rhs_btr80_msv","rhs_2s3_tv","rhs_t80","rhs_bmp2_msv"];
+  _Unit_Pool_A = ["RHS_Mi24P_vvsc","RHS_Mi8mt_vvsc","RHS_Mi8AMTSh_vvsc"];
   };
 
    // Syrian Arab Army (MEC, Woodland Camo, AK weapons)
@@ -102,6 +102,15 @@ switch (_TypNumber) do
     _Unit_Pool_V = ["dri_Offroad_01_F","dri_Offroad_01_F","dri_Offroad_01_armed_F","dri_Offroad_01_armed_F","dri_Offroad_01_armed_F","dri_Truck_02_logistic_F","dri_Truck_02_covered_F"];
     _Unit_Pool_T = [];
     _Unit_Pool_A = [];
+  };
+
+  // US Army Woodland (RHS: United States Armed Forces)
+  case 10:
+  {
+    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ocp_squadleader","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_medic","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_medic","rhsusf_army_ocp_engineer","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_riflemanl","rhsusf_army_ocp_teamleader","rhsusf_army_ocp_teamleader"];
+    _Unit_Pool_V = ["rhsusf_m998_w_2dr_fulltop","rhsusf_m998_w_2dr_halftop","rhsusf_m998_w_2dr"];
+    _Unit_Pool_T = ["rhsusf_m113_usarmy","RHS_M2A2_wd","RHS_M2A2_BUSKI_WD","RHS_M2A3_BUSKIII_wd","rhsusf_m1a2sep1tuskiwd_usarmy","rhsusf_m109_usarmy"];
+    _Unit_Pool_A = ["RHS_UH60M","RHS_UH60M_MEV","RHS_AH64D_wd"];
   };
 //-------------------------------------------------------------------------------------------------
   Default
