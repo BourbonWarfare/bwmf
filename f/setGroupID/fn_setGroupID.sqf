@@ -12,5 +12,6 @@ if(!isnil (_this select 0)) then {
 	_grp = call compile format ["%1",_this select 0];
 	_name = _this select 1;
 
+	_grp setVariable ["f_var_grpIdSet",true];
 	_grp setGroupId [format ["%1",_name],"GroupColor0"];
 };

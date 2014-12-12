@@ -7894,8 +7894,8 @@ class Mission
 					id=489;
 					side="WEST";
 					vehicle="B_Soldier_AAR_F";
-					skill=0.60000002;
 					player="PLAY CDG";
+					skill=0.60000002;
 					description="JIP Assistant Automatic Rifleman";
 				};
 				class Item7
@@ -7904,8 +7904,8 @@ class Mission
 					id=490;
 					side="WEST";
 					vehicle="B_Soldier_LAT_F";
-					skill=0.60000002;
 					player="PLAY CDG";
+					skill=0.60000002;
 					description="JIP Rifleman (AT)";
 				};
 				class Item8
@@ -7915,10 +7915,10 @@ class Mission
 					id=491;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Platoon Commander";
 				};
 				class Item9
@@ -7928,9 +7928,9 @@ class Mission
 					id=492;
 					side="WEST";
 					vehicle="B_officer_F";
+					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Platoon Commander";
 				};
 				class Item10
@@ -7939,9 +7939,9 @@ class Mission
 					id=493;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Squad Leader";
 				};
 				class Item11
@@ -7950,9 +7950,9 @@ class Mission
 					id=494;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Medic";
 				};
 				class Item12
@@ -7961,9 +7961,9 @@ class Mission
 					id=495;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Squad Leader";
 				};
 				class Item13
@@ -7972,9 +7972,9 @@ class Mission
 					id=496;
 					side="WEST";
 					vehicle="B_medic_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Medic";
 				};
 				class Item14
@@ -7983,9 +7983,9 @@ class Mission
 					id=497;
 					side="WEST";
 					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Helo Pilot";
 				};
 				class Item15
@@ -7994,9 +7994,9 @@ class Mission
 					id=498;
 					side="WEST";
 					vehicle="B_Helipilot_F";
+					player="PLAY CDG";
 					rank="CAPTAIN";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Helo Pilot";
 				};
 				class Item16
@@ -8005,9 +8005,9 @@ class Mission
 					id=499;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Transport Helo 1 Crew Chief (Repair)";
 				};
 				class Item17
@@ -8016,9 +8016,9 @@ class Mission
 					id=500;
 					side="WEST";
 					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Transport Helo 1 Crew Chief (Repair)";
 				};
 				class Item18
@@ -8027,9 +8027,9 @@ class Mission
 					id=501;
 					side="WEST";
 					vehicle="B_soldier_exp_F";
+					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					player="PLAY CDG";
 					description="JIP Engineer Team 1 Leader (Demo)";
 				};
 				class Item19
@@ -8038,8 +8038,8 @@ class Mission
 					id=502;
 					side="WEST";
 					vehicle="B_soldier_exp_F";
-					skill=0.60000002;
 					player="PLAY CDG";
+					skill=0.60000002;
 					description="JIP Engineer Team 1 Assistant (Demo)";
 				};
 				class Item20
@@ -8048,8 +8048,8 @@ class Mission
 					id=503;
 					side="WEST";
 					vehicle="B_support_MG_F";
-					skill=0.60000002;
 					player="PLAY CDG";
+					skill=0.60000002;
 					description="JIP Medium MG Team 1 Gunner";
 				};
 				class Item21
@@ -8058,8 +8058,8 @@ class Mission
 					id=504;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
-					skill=0.60000002;
 					player="PLAY CDG";
+					skill=0.60000002;
 					description="JIP Medium MG Team 1 Spotter";
 				};
 			};

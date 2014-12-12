@@ -83,14 +83,14 @@ class CfgLoadouts {
 		{
 			weapons[] = {WEST_GLRIFLE};
 			backpack[] = {TF_defaultWestBackpack};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2",WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS"};
 		};
 		class B_Soldier_TL_F : B_Soldier_F // FTL
 		{
 			weapons[] = {WEST_GLRIFLE};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,GRENADE_HE,GRENADE_SMOKE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS"};
 		};
 		class B_Soldier_AR_F : B_Soldier_F // AR
