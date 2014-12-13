@@ -78,7 +78,10 @@ switch (_unitfaction) do {
            ["UnitNATO_2PLT_M","2PLTM"],
     	["UnitNATO_ASL_M","AM"],
     	["UnitNATO_BSL_M","BM"],
-    	["UnitNATO_CSL_M","CM"]
+    	["UnitNATO_CSL_M","CM"],
+           ["UnitNATO_DSL_M","DM"],
+           ["UnitNATO_ESL_M","EM"],
+           ["UnitNATO_FSL_M","FM"]
     	];
     	{
     		_style = [_x select 1] call F_fnc_getGroupMarkerStyle;
