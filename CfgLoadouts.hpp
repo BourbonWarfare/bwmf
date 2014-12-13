@@ -1,9 +1,6 @@
 class CfgLoadouts {
 
 	// BEST TO USE THE CLASSNAMES FOR GRENADES AND EXPLOSIVES INSTEAD OF THE DEFINES
-		// Grenades
-		// #define GRENADE_HE "HandGrenade"
-		// #define GRENADE_SMOKE "SmokeShell"
 		// //Chemlights
 		// #define CHEM_GREEN "Chemlight_green"
 		// #define CHEM_RED "Chemlight_red"
@@ -45,7 +42,7 @@ class CfgLoadouts {
 		#define WEST_MAT_MAG "NLAW_F:3"
 		// SAM
 		#define WEST_SAM "CUP_launch_FIM92Stinger"
-		#define WEST_SAM_MAG "CUP_Stinger_M"
+		#define WEST_SAM_MAG "CUP_Stinger_M:2"
 		// Sniper Rifle
 		#define WEST_SNIPER ""
 		#define WEST_SNIPER_MAG ""
@@ -74,6 +71,8 @@ class CfgLoadouts {
 		class B_officer_F : B_Soldier_F // CO and DC
 		{
 			weapons[] = {WEST_GLRIFLE};
+			vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
+			headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
 			backpack[] = {TF_defaultWestBackpack};
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
@@ -86,11 +85,13 @@ class CfgLoadouts {
 		class B_Soldier_TL_F : B_Soldier_F // FTL
 		{
 			weapons[] = {WEST_GLRIFLE};
+			headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS"};
 		};
 		class B_Soldier_AR_F : B_Soldier_F // AR
 		{
+			vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
 			weapons[] = {WEST_AR};
 			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
@@ -99,7 +100,8 @@ class CfgLoadouts {
 		class B_Soldier_AAR_F : B_Soldier_F // AAR
 		{
 			
-			backpackItems[] = {WEST_AR_MAG};			
+			backpackItems[] = {WEST_AR_MAG};
+			attachments[] = {"optic_arco"};			
 			
 		};
 		class B_Soldier_LAT_F : B_Soldier_F // RAT
@@ -143,25 +145,53 @@ class CfgLoadouts {
 			backpackItems[] = {WEST_MAT_MAG};			
 			
 		};
+		class B_soldier_AA_F : B_Soldier_F // SAM Gunner
+		{
+			weapons[] = {WEST_CARBINE};
+			magazines[] = {WEST_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			launchers[] = {WEST_SAM}; /// randomized
+			backpackItems[] = {WEST_SAM_MAG};
+			
+		};
+		class B_Soldier_AAA_F : B_Soldier_F // SAM Spotter/Ammo Bearer
+		{
+			
+			backpackItems[] = {WEST_SAM_MAG};			
+			
+		};
+		class B_support_Mort_F : B_Soldier_F // Mortar Gunner
+		{
+			weapons[] = {WEST_CARBINE};
+			magazines[] = {WEST_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
+			
+		};
+		class B_support_AMort_F : B_Soldier_F // Assistant Mortar
+		{
+			
+			backpack[] = {"B_Mortar_01_support_F"}; /// randomized			
+			
+		};
 		class B_Helipilot_F // Pilot
 		{
 			uniform[] = {"U_B_HeliPilotCoveralls"};  /// randomized
 			vest[] = {"V_TacVest_blk"}; /// randomized
 			headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
-			backpack[] = {}; /// randomized
-			backpackItems[] = {};
 			weapons[] = {WEST_SMG}; /// randomized
-			launchers[] = {}; /// randomized
-			handguns[] = {}; /// randomized
 			magazines[] = {WEST_SMG_MAG,"SmokeShell:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
-			linkedItems[] = {"ItemMap","ItemCompass",,"ItemWatch","itemRadio","itemGPS"};
-			attachments[] = {"optic_Holosight"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
+			
 		};
-		class B_crew_F : B_Helipilot_F // Crew
+		class B_crew_F // Crew
 		{
-			uniform[] = {"U_B_CombatUniform_mcam_vest"};  /// randomized
-			headgear[] = {"H_HelmetCrew_B"}; /// randomized
+			uniform[] = {"rhs_uniform_cu_ocp"};  // randomized
+			vest[] = {"rhsusf_iotv_ocp"}; // randomized
+			headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized			
+			weapons[] = {WEST_CARBINE}; /// randomized
+			magazines[] = {WEST_CARBINE_MAG,"SmokeShell:2"};
+			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
 			
 		};
 		class B_soldier_repair_F : B_crew_F // Repair Specialist
@@ -169,6 +199,9 @@ class CfgLoadouts {
 			
 			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit"};
+			vest[] = {"rhsusf_iotv_ocp_repair"}; /// randomized
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio"};
+
 		};
 		class B_soldier_exp_F : B_soldier_repair_F // Explosive Specialist
 		{

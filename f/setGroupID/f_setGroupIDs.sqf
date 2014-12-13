@@ -46,8 +46,10 @@ _groups = [
 ["GrpNATO_F3","NATO F3 -"],
 
 ["GrpNATO_MMG1","NATO MMG1 -"],
+["GrpNATO_MMG2","NATO MMG2 -"],
 ["GrpNATO_HMG1","NATO HMG1 -"],
 ["GrpNATO_MAT1","NATO MAT1 -"],
+["GrpNATO_MAT2","NATO MAT2 -"],
 ["GrpNATO_HAT1","NATO HAT1 -"],
 ["GrpNATO_MTR1","NATO MTR1 -"],
 ["GrpNATO_MSAM1","NATO MSAM1 -"],
@@ -75,60 +77,6 @@ _groups = [
 ["GrpNATO_TH7","NATO TH7 -"],
 ["GrpNATO_TH8","NATO TH8 -"],
 ["GrpNATO_AH1","NATO AH1 -"],
-
-// ====================================================================================
-
-// GROUP IDs: BLUFOR > FIA
-// Automatically assigns intelligible names to groups
-
-["GrpFIA_CO","FIA CO -"],
-["GrpFIA_DC","FIA DC -"],
-
-["GrpFIA_ASL","FIA ASL -"],
-["GrpFIA_A1","FIA A1 -"],
-["GrpFIA_A2","FIA A2 -"],
-["GrpFIA_A3","FIA A3 -"],
-
-["GrpFIA_BSL","FIA BSL -"],
-["GrpFIA_B1","FIA B1 -"],
-["GrpFIA_B2","FIA B2 -"],
-["GrpFIA_B3","FIA B3 -"],
-
-["GrpFIA_CSL","FIA CSL -"],
-["GrpFIA_C1","FIA C1 -"],
-["GrpFIA_C2","FIA C2 -"],
-["GrpFIA_C3","FIA C3 -"],
-
-["GrpFIA_MMG1","FIA MMG1 -"],
-["GrpFIA_HMG1","FIA HMG1 -"],
-["GrpFIA_MAT1","FIA MAT1 -"],
-["GrpFIA_HAT1","FIA HAT1 -"],
-["GrpFIA_MTR1","FIA MTR1 -"],
-["GrpFIA_MSAM1","FIA MSAM1 -"],
-["GrpFIA_HSAM1","FIA HSAM1 -"],
-["GrpFIA_ST1","FIA ST1 -"],
-["GrpFIA_DT1","FIA DT1 -"],
-["GrpFIA_ENG1","FIA ENG1 -"],
-
-["GrpFIA_IFV1","FIA IFV1 -"],
-["GrpFIA_IFV2","FIA IFV2 -"],
-["GrpFIA_IFV3","FIA IFV3 -"],
-["GrpFIA_IFV4","FIA IFV4 -"],
-["GrpFIA_IFV5","FIA IFV5 -"],
-["GrpFIA_IFV6","FIA IFV6 -"],
-["GrpFIA_IFV7","FIA IFV7 -"],
-["GrpFIA_IFV8","FIA IFV8 -"],
-["GrpFIA_TNK1","FIA TNK1 -"],
-
-["GrpFIA_TH1","FIA TH1 -"],
-["GrpFIA_TH2","FIA TH2 -"],
-["GrpFIA_TH3","FIA TH3 -"],
-["GrpFIA_TH4","FIA TH4 -"],
-["GrpFIA_TH5","FIA TH5 -"],
-["GrpFIA_TH6","FIA TH6 -"],
-["GrpFIA_TH7","FIA TH7 -"],
-["GrpFIA_TH8","FIA TH8 -"],
-["GrpFIA_AH1","FIA AH1 -"],
 
 // ====================================================================================
 

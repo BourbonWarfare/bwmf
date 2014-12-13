@@ -2612,7 +2612,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_C";
-					init="GrpNATO_IFV1 = group this; [""vc"",this] call f_fnc_assignGear; this moveInCommander VehNATO_IFV1;";
+					init="GrpNATO_IFV1 = group this; [""eng"",this] call f_fnc_assignGear;";
 					description="NATO IFV 1 Commander";
 				};
 				class Item1
@@ -2625,7 +2625,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_G";
-					init="GrpNATO_IFV1 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV1;";
+					init="GrpNATO_IFV1 = group this; [""eng"",this] call f_fnc_assignGear;";
 					description="NATO IFV 1 Gunner";
 				};
 				class Item2
@@ -2637,7 +2637,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_D";
-					init="GrpNATO_IFV1 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV1;";
+					init="GrpNATO_IFV1 = group this; [""eng"",this] call f_fnc_assignGear;";
 					description="NATO IFV 1 Driver (Repair)";
 				};
 			};
@@ -2659,7 +2659,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_C";
-					init="GrpNATO_IFV2 = group this; [""vc"",this] call f_fnc_assignGear; this moveInCommander VehNATO_IFV2;";
+					init="GrpNATO_IFV2 = group this; ";
 					description="NATO IFV 2 Commander";
 				};
 				class Item1
@@ -2672,7 +2672,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_G";
-					init="GrpNATO_IFV2 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV2;";
+					init="GrpNATO_IFV2 = group this; ";
 					description="NATO IFV 2 Gunner";
 				};
 				class Item2
@@ -2684,7 +2684,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_D";
-					init="GrpNATO_IFV2 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV2;";
+					init="GrpNATO_IFV2 = group this; ";
 					description="NATO IFV 2 Driver (Repair)";
 				};
 			};
@@ -2706,7 +2706,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_C";
-					init="GrpNATO_IFV3 = group this; [""vc"",this] call f_fnc_assignGear; this moveInCommander VehNATO_IFV3;";
+					init="GrpNATO_IFV3 = group this; ";
 					description="NATO IFV 3 Commander";
 				};
 				class Item1
@@ -2719,7 +2719,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_G";
-					init="GrpNATO_IFV3 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV3;";
+					init="GrpNATO_IFV3 = group this; ";
 					description="NATO IFV 3 Gunner";
 				};
 				class Item2
@@ -2731,7 +2731,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_D";
-					init="GrpNATO_IFV3 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV3;";
+					init="GrpNATO_IFV3 = group this; ";
 					description="NATO IFV 3 Driver (Repair)";
 				};
 			};
@@ -2753,7 +2753,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_C";
-					init="GrpNATO_IFV4 = group this; [""vc"",this] call f_fnc_assignGear; this moveInCommander VehNATO_IFV4;";
+					init="GrpNATO_IFV4 = group this; ";
 					description="NATO IFV 4 Commander";
 				};
 				class Item1
@@ -2766,7 +2766,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_G";
-					init="GrpNATO_IFV4 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_IFV4;";
+					init="GrpNATO_IFV4 = group this; ";
 					description="NATO IFV 4 Gunner";
 				};
 				class Item2
@@ -2778,7 +2778,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_D";
-					init="GrpNATO_IFV4 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_IFV4;";
+					init="GrpNATO_IFV4 = group this; ";
 					description="NATO IFV 4 Driver (Repair)";
 				};
 			};
@@ -2800,7 +2800,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_C";
-					init="GrpNATO_TNK1 = group this; [""vc"",this] call f_fnc_assignGear; this moveInCommander VehNATO_TNK1;";
+					init="GrpNATO_TNK1 = group this; ";
 					description="NATO Tank 1 Commander";
 				};
 				class Item1
@@ -2813,7 +2813,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_G";
-					init="GrpNATO_TNK1 = group this; [""vg"",this] call f_fnc_assignGear; this moveInGunner VehNATO_TNK1;";
+					init="GrpNATO_TNK1 = group this; ";
 					description="NATO Tank 1 Gunner";
 				};
 				class Item2
@@ -2825,7 +2825,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_D";
-					init="GrpNATO_TNK1 = group this; [""vd"",this] call f_fnc_assignGear; this moveInDriver VehNATO_TNK1;";
+					init="GrpNATO_TNK1 = group this;";
 					description="NATO Tank 1 Driver (Repair)";
 				};
 			};
@@ -2847,7 +2847,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_AH1_P";
-					init="GrpNATO_AH1 = group this; [""pp"",this] call f_fnc_assignGear; this moveInDriver VehNATO_AH1;";
+					init="GrpNATO_AH1 = group this; ";
 					description="NATO Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -2860,7 +2860,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_AH1_CP";
-					init="GrpNATO_AH1 = group this; [""pcc"",this] call f_fnc_assignGear; this moveInTurret [VehNATO_AH1,[0]];";
+					init="GrpNATO_AH1 = group this; ";
 					description="NATO Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -4842,7 +4842,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_FTL";
 					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Leader (Demo)";
+					description="NATO Leader Explosive Specialist";
 				};
 				class Item1
 				{
@@ -4854,7 +4854,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A1";
 					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Demo)";
+					description="NATO Explosive Specialist";
 				};
 				class Item2
 				{
@@ -4866,7 +4866,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A2";
 					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Mines)";
+					description="NATO Engineer";
 				};
 				class Item3
 				{
@@ -4878,7 +4878,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A3";
 					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Mines)";
+					description="NATO Engineer ";
 				};
 			};
 		};
