@@ -113,6 +113,7 @@ class CfgLoadouts {
 		};
 		class B_medic_F : B_Soldier_F // Medic
 		{
+			vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
 			weapons[] = {WEST_CARBINE};
 			magazines[] = {WEST_CARBINE_MAG,"smokeShell:6"};
 			backpackItems = ["AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"]
