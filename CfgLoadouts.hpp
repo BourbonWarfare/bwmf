@@ -2,7 +2,7 @@ class CfgLoadouts {
 
 	class blu_f {
 		//Radios
-		#define TF_defaultWestBackpack  "tf_rt1523g_big"
+		#define TF_defaultWestBackpack  "tf_rt1523g_rhs"
 		//Rifle
 		#define WEST_RIFLE "CUP_arifle_Mk16_STD"
 		#define WEST_RIFLE_MAG "CUP_30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Red:2"
