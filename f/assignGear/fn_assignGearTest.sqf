@@ -93,8 +93,12 @@ _unit addBackpack (_backpack call BIS_fnc_selectRandom);
 	{
 		_amt = parseNumber (_arr select 1);
 	};
-	for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-		_unit linkItem _classname;
+	if ("Binocular" in ([(configFile >> "CfgWeapons" >> _classname), true] call BIS_fnc_returnParents)) then {
+		_unit addWeapon _classname;
+	} else {
+		for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+			_unit linkItem _classname;
+		};
 	};
 } foreach _linkedItems;
 
