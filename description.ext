@@ -164,6 +164,7 @@ class CfgFunctions
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
+			class assGearInit {postInit = 1;};
 			class assignGearTest{};
 			class assignGearTest_vehicle{};
 			class assignGear{};

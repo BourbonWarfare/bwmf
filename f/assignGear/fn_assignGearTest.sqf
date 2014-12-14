@@ -4,7 +4,7 @@
 // ====================================================================================
 _unit = _this select 0;
 _faction = tolower (faction _unit);
-_loadout = (typeOf _unit);
+_loadout = _unit getVariable ["F_Gear", (typeOf _unit)];  //Check variable f_gear, otherwise default to typeof
 
 systemChat format ["Doing the gear thing %1, %2", _unit, _loadout];
 
