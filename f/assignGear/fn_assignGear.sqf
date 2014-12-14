@@ -18,7 +18,7 @@ _faction = toLower (faction _unit);
 
 if (true) exitWith {
 
-[_unit] call F_fnc_assignGearTest;
+// [_unit] call F_fnc_assignGearTest;
 
 };
 
