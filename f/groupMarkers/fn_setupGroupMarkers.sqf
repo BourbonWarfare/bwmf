@@ -45,7 +45,7 @@ switch (_unitfaction) do {
         ["UnitNATO_DC_M","DCM"],
         ["UnitNATO_ASL_M","AM"],
         ["UnitNATO_BSL_M","BM"],
-        ["UnitNATO_CSL_M","CM"]
+        ["UnitNATO_CSL_M","CM"],
         ["UnitNATO_DSL_M","DM"],
         ["UnitNATO_ESL_M","EM"],
         ["UnitNATO_FSL_M","FM"]

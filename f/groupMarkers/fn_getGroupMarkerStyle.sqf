@@ -33,7 +33,7 @@ _input = _this select 0;
 _texture = _unknown;
 _color = [1,1,1,1];
 switch true do {
-    case (_input in ["COY","1PLT","2PLT"]): {
+    case (_input in ["COY","1PLT","2PLT","CO","DC"]): {
     	_texture = _hq;
     	_color = _yellow;
     };
@@ -96,11 +96,6 @@ switch true do {
     {
         _texture = _fireteam;
         _color = _green;
-    };
-    case (_input in ["MMG1","MMG2","MMG3"]):
-    {
-        _texture = _support;
-        _color = _oranage;
     };
     case (_input in ["MMG1","MMG2","MMG3"]):
     {
