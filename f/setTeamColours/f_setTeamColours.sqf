@@ -56,15 +56,15 @@ if ((faction _unit) in ["rhs_faction_msv"]) then {
 	//Pabst: set ft color based on ftl number
 	{
 		if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_red = _red + ["_AR","_AAR"];};
-	} forEach ["_A1_", "_B1_", "_C1_"];
+	} forEach ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
 
 	{
 		if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_blue = _blue + ["_AR","_AAR"];};
-	} forEach ["_A2_", "_B2_", "_C2_"];
+	} forEach ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
 
 	{
 		if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_green = _green + ["_AR","_AAR"];};
-	} forEach ["_A3_", "_B3_", "_C3_"];
+	} forEach ["_A3_", "_B3_", "_C3_","_D3_", "_E3_", "_F3_"];
 };
 
 
