@@ -186,6 +186,8 @@ class CfgFunctions
 			class addGroupMarker{};
 			class drawGroupMarkers{};
 			class getGroupMarkerStyle{};
+			class findGroupMarkerID{};
+			class setupGroupMarkers{};
 		};
 		class FTMemberMarkers
 		{
