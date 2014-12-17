@@ -1,6 +1,6 @@
 //START: TFR Settings (PabstMirror) [2014/06/14] [Updated for F3 1.0 RC5]
-#define SIDE_ARRAY 				["GrpNATO", "GrpCSAT", "GrpAAF", "GrpFIA"]
-#define CHANNELS_ARRAYS			[["ASL","A1", "A2","A3"], ["BSL","B1", "B2","B3"], ["CSL","C1", "C2","C3"], ["1PLT"], ["DSL","D1", "D2","D3"], ["ESL","E1", "E2","E3"],["FSL","F1", "F2","F3"],["2PLT"],["COY"]]
+#define SIDE_ARRAY 				["GrpNATO", "GrpCSAT", "GrpAAF", "GrpMSV"]
+#define CHANNELS_ARRAYS			[["ASL","A1", "A2","A3"], ["BSL","B1", "B2","B3"], ["CSL","C1", "C2","C3"], ["1PLT"],["COY"], ["DSL","D1", "D2","D3"], ["ESL","E1", "E2","E3"],["FSL","F1", "F2","F3"],["2PLT"]]
 
 	[] spawn {
 		if (!hasInterface) exitWith {};
