@@ -167,7 +167,7 @@ class CfgFunctions
 			class assGearInit {postInit = 1;};
 			class assignGearTest{};
 			class assignGearTest_vehicle{};
-			class assignGear{};
+
 		};
 		class setGroupID
 		{
