@@ -4,7 +4,7 @@
 
 // WAIT FOR F3 COMMON LOCAL VARIABLES
 
-waitUntil {scriptDone f_script_setLocalVars};
+//waitUntil {scriptDone f_script_setLocalVars};
 
 // ====================================================================================
 
