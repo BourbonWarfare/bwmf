@@ -55,7 +55,7 @@ class CfgLoadouts {
 			handguns[] = {}; /// randomized
 			magazines[] = {WEST_RIFLE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
 			items[] = {};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","NVgoggles"};
 			attachments[] = {"optic_Holosight"};
 		};
 		class B_officer_F : B_Soldier_F // CO and DC
@@ -197,7 +197,7 @@ class CfgLoadouts {
 			weapons[] = {WEST_SMG}; /// randomized
 			magazines[] = {WEST_SMG_MAG,"SmokeShell:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
 		};
 		class B_crew_F // Crew
 		{
