@@ -230,7 +230,6 @@ class CfgLoadouts {
 			
 			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit","AGM_DefusalKit","AGM_Clacker","MineDetector"};
-			
 			magazines[] = {WEST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
 		};
 		class B_engineer_F : B_soldier_repair_F // Mine Specialist
@@ -466,16 +465,16 @@ class ind_f {
 		class I_soldier_exp_F : I_soldier_repair_F // Explosive Specialist
 		{
 			
-			backpack[] = {"I_Carryall_mcamo"};
+			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit","AGM_DefusalKit","AGM_Clacker","MineDetector"};
-			magazines[] = {IND_SMG_MAG,"ATMine_Range_Mag:2","DemoCharge_Remote_Mag:2","SatchelCharge_Remote_Mag","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
+			magazines[] = {IND_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
 		};
 		class I_engineer_F : I_soldier_repair_F // Explosive Specialist
 		{
 			
-			backpack[] = {"I_Carryall_mcamo"};
+			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit","AGM_DefusalKit","AGM_Clacker","MineDetector"};
-			magazines[] = {IND_SMG_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
+			magazines[] = {IND_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
 		};
 		
 	};
@@ -711,16 +710,16 @@ class ind_f {
 		class O_soldier_exp_F : O_soldier_repair_F // Explosive Specialist
 		{
 			
-			backpack[] = {"O_Carryall_mcamo"};
+			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit","AGM_DefusalKit","AGM_Clacker","MineDetector"};
-			magazines[] = {EAST_SMG_MAG,"ATMine_Range_Mag:2","DemoCharge_Remote_Mag:2","SatchelCharge_Remote_Mag","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
+			magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
 		};
 		class O_engineer_F : O_soldier_repair_F // Explosive Specialist
 		{
 			
-			backpack[] = {"O_Carryall_mcamo"};
+			backpack[] = {"B_Carryall_mcamo"};
 			backpackItems[] = {"Toolkit","AGM_DefusalKit","AGM_Clacker","MineDetector"};
-			magazines[] = {EAST_SMG_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
+			magazines[] = {EAST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
 		};
 		
 	};
