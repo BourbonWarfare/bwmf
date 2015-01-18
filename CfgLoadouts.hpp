@@ -205,6 +205,16 @@ class CfgLoadouts {
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
 		};
+		class B_helicrew_F // Pilot
+		{
+			uniform[] = {"U_B_HeliPilotCoveralls"};  /// randomized
+			vest[] = {"V_TacVest_blk"}; /// randomized
+			headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
+			weapons[] = {WEST_SMG}; /// randomized
+			magazines[] = {WEST_SMG_MAG,"SmokeShell:2"};
+			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
+		};
 		class B_crew_F // Crew
 		{
 			uniform[] = {"rhs_uniform_cu_ocp"};  // randomized
