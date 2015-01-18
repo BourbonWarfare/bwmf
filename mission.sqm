@@ -5017,7 +5017,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A2";
 					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer";
+					description="NATO Mine Specialist";
 				};
 				class Item3
 				{
@@ -5029,7 +5029,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A3";
 					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer ";
+					description="NATO Mine Specialist ";
 				};
 			};
 		};
