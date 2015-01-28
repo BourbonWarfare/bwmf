@@ -5886,14 +5886,14 @@ class Mission
 				class Item3
 				{
 					position[]={405.06213,5,202.3309};
-					azimut=-2.502717;
+					azimut=-2.5027201;
 					id=365;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_CO_D";
-					init="GrpMSV_CO = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_CO = group this; this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Company Driver ";
 				};
 				class Item4
@@ -5958,7 +5958,7 @@ class Mission
 				class Item0
 				{
 					position[]={387.68494,5,199.64456};
-					azimut=10.255774;
+					azimut=10.2558;
 					special="NONE";
 					id=369;
 					side="EAST";
@@ -5975,7 +5975,7 @@ class Mission
 				class Item1
 				{
 					position[]={389.133,5,199.50259};
-					azimut=10.255774;
+					azimut=10.2558;
 					special="NONE";
 					id=370;
 					side="EAST";
@@ -5991,7 +5991,7 @@ class Mission
 				class Item2
 				{
 					position[]={390.66989,5,199.57565};
-					azimut=10.255774;
+					azimut=10.2558;
 					special="NONE";
 					id=371;
 					side="EAST";
@@ -6001,7 +6001,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ASL_VD";
-					init="GrpMSV_ASL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_ASL = group this; this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Alpha Squad Driver";
 				};
 				class Item3
@@ -6138,7 +6138,7 @@ class Mission
 				class Item2
 				{
 					position[]={395.93307,5,199.17238};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=380;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6147,7 +6147,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_B1_VD";
-					init="GrpMSV_BSL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_BSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Bravo Squad Driver";
 				};
 				class Item3
@@ -6278,7 +6278,7 @@ class Mission
 				class Item2
 				{
 					position[]={401.69604,5,199.24776};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=389;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6287,7 +6287,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_C1_VD";
-					init="GrpMSV_CSL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_CSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Charlie Squad Driver";
 				};
 				class Item3
@@ -6456,7 +6456,7 @@ class Mission
 				class Item2
 				{
 					position[]={410.04901,5,198.9747};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=400;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6465,7 +6465,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_D1_VD";
-					init="GrpMSV_DSL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_DSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Delta Squad Driver";
 				};
 				class Item3
@@ -6543,7 +6543,7 @@ class Mission
 				class Item8
 				{
 					position[]={409.97659,5,195.3737};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=406;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
@@ -6565,7 +6565,7 @@ class Mission
 				class Item0
 				{
 					position[]={412.2189,5,198.97122};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=407;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
@@ -6596,7 +6596,7 @@ class Mission
 				class Item2
 				{
 					position[]={415.19104,5,198.92682};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=409;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6605,7 +6605,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_E1_VD";
-					init="GrpMSV_ESL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_ESL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Echo Squad Driver";
 				};
 				class Item3
@@ -6736,7 +6736,7 @@ class Mission
 				class Item2
 				{
 					position[]={421.58374,5,198.77521};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=418;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6745,7 +6745,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_F1_VD";
-					init="GrpMSV_FSL = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_FSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Foxtrot Squad Driver";
 				};
 				class Item3
@@ -6844,7 +6844,7 @@ class Mission
 				class Item0
 				{
 					position[]={369.46167,5,206.16972};
-					azimut=-7.0813417;
+					azimut=-7.0813398;
 					id=425;
 					side="EAST";
 					vehicle="rhs_msv_officer";
@@ -6854,7 +6854,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_Plt3CO_CO";
-					init="GrpMSV_Plt3CO = group this; [""co"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_Plt3CO = group this; ";
 					description="Russian Weapons Platoon Commander";
 				};
 			};
@@ -6868,7 +6868,7 @@ class Mission
 				class Item0
 				{
 					position[]={366.77634,5,203.41766};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=426;
 					side="EAST";
 					vehicle="rhs_msv_crew";
@@ -6878,13 +6878,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_W1_VG";
-					init="GrpMSV_WV1 = group this; [""vg"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_WV1 = group this; ";
 					description="Russian Weapon Squad Gunner 1";
 				};
 				class Item1
 				{
 					position[]={368.1705,5,203.43837};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=427;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6892,7 +6892,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W1_VD";
-					init="GrpMSV_WV1 = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_WV1 = group this; ";
 					description="Russian Weapon Squad Driver 1";
 				};
 			};
@@ -6906,7 +6906,7 @@ class Mission
 				class Item0
 				{
 					position[]={371.03732,5,203.435};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=428;
 					side="EAST";
 					vehicle="rhs_msv_crew";
@@ -6916,13 +6916,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_W2_VG";
-					init="GrpMSV_WV2 = group this; [""vg"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_WV2 = group this; ";
 					description="Russian Weapon Squad Gunner 2";
 				};
 				class Item1
 				{
 					position[]={372.42331,5,203.4514};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=429;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6930,7 +6930,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W2_VD";
-					init="GrpMSV_WV2 = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="GrpMSV_WV2 = group this; ";
 					description="Russian Weapon Squad Driver 2";
 				};
 			};
@@ -6944,7 +6944,7 @@ class Mission
 				class Item0
 				{
 					position[]={366.76385,5,201.5247};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=430;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
@@ -6954,13 +6954,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG1_G";
-					init="GrpMSV_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""];  GrpMSV_MMG1 = group this;";
 					description="Russian Machine Gunner";
 				};
 				class Item1
 				{
 					position[]={368.21982,5,201.53941};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=431;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
@@ -6968,7 +6968,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG1_AG";
-					init="GrpMSV_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""]; GrpMSV_MMG1 = group this;";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -6982,7 +6982,7 @@ class Mission
 				class Item0
 				{
 					position[]={366.75623,5,198.21211};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=432;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
@@ -6992,13 +6992,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG2_G";
-					init="GrpMSV_MMG2 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""]; GrpMSV_MMG2 = group this;";
 					description="Russian Machine Gunner";
 				};
 				class Item1
 				{
 					position[]={368.19803,5,198.24428};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=433;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
@@ -7006,7 +7006,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG2_AG";
-					init="GrpMSV_MMG2 = group this; [""mmgag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""]; GrpMSV_MMG2 = group this;";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -7020,7 +7020,7 @@ class Mission
 				class Item0
 				{
 					position[]={366.48599,5,195.98354};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=434;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner";
@@ -7030,13 +7030,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG3_G";
-					init="GrpMSV_MMG3 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""]; GrpMSV_MMG3 = group this;";
 					description="Russian Machine Gunner";
 				};
 				class Item1
 				{
 					position[]={367.92361,5,195.94264};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=435;
 					side="EAST";
 					vehicle="rhs_msv_machinegunner_assistant";
@@ -7044,7 +7044,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG3_AG";
-					init="GrpMSV_MMG3 = group this; [""mmgag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""];  GrpMSV_MMG3 = group this;";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -7058,7 +7058,7 @@ class Mission
 				class Item0
 				{
 					position[]={371.14969,5,201.57269};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=436;
 					side="EAST";
 					vehicle="rhs_msv_at";
@@ -7068,13 +7068,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT1_G";
-					init="GrpMSV_MAT1 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT1 = group this;";
 					description="Russian ATGM Operator";
 				};
 				class Item1
 				{
 					position[]={372.59109,5,201.60794};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=437;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
@@ -7082,7 +7082,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT1_AG";
-					init="GrpMSV_MAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT1 = group this;";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -7096,7 +7096,7 @@ class Mission
 				class Item0
 				{
 					position[]={370.98993,5,198.23228};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=438;
 					side="EAST";
 					vehicle="rhs_msv_at";
@@ -7106,13 +7106,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT2_G";
-					init="GrpMSV_MAT2 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT2 = group this;";
 					description="Russian ATGM Operator";
 				};
 				class Item1
 				{
 					position[]={372.44083,5,198.22827};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=439;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
@@ -7120,7 +7120,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT2_AG";
-					init="GrpMSV_MAT2 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT2 = group this;";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -7134,7 +7134,7 @@ class Mission
 				class Item0
 				{
 					position[]={371.36591,5,195.87047};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=440;
 					side="EAST";
 					vehicle="rhs_msv_at";
@@ -7144,13 +7144,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT3_G";
-					init="GrpMSV_MAT3 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT3 = group this;";
 					description="Russian ATGM Operator";
 				};
 				class Item1
 				{
 					position[]={372.81641,5,195.92711};
-					azimut=8.5988531;
+					azimut=8.5988503;
 					id=441;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
@@ -7158,7 +7158,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT3_AG";
-					init="GrpMSV_MAT3 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT3 = group this;";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -7172,7 +7172,7 @@ class Mission
 				class Item0
 				{
 					position[]={377.01654,5,198.18654};
-					azimut=7.724453;
+					azimut=7.7244501;
 					id=442;
 					side="EAST";
 					vehicle="rhs_msv_junior_sergeant";
@@ -7182,13 +7182,13 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_FOR_SL";
-					init="GrpMSV_FOR = group this; [""sfl"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sfl""]; GrpMSV_FOR = group this;";
 					description="Russian Spetsnaz Leader ";
 				};
 				class Item1
 				{
 					position[]={378.4906,5,198.20834};
-					azimut=7.724453;
+					azimut=7.7244501;
 					id=443;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
@@ -7196,13 +7196,13 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_AR";
-					init="GrpMSV_FOR = group this; [""sf"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
 					description="Russian Spetsnaz Member";
 				};
 				class Item2
 				{
 					position[]={379.93347,5,198.2567};
-					azimut=7.724453;
+					azimut=7.7244501;
 					id=444;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
@@ -7210,13 +7210,13 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R";
-					init="GrpMSV_FOR = group this; [""sf"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
 					description="Russian Spetsnaz Member";
 				};
 				class Item3
 				{
 					position[]={381.66882,5,198.30241};
-					azimut=7.724453;
+					azimut=7.7244501;
 					id=445;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
@@ -7224,7 +7224,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R1";
-					init="GrpMSV_FOR = group this; [""sf"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
 					description="Russian Spetsnaz Member";
 				};
 			};
@@ -7237,56 +7237,56 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={377.33371,5,204.30013};
-					azimut=1.3057718;
+					position[]={377.30975,5,204.30013};
+					azimut=1.30577;
 					id=446;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_FTL";
-					init="GrpMSV_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_exp""]; GrpMSV_ENG1 = group this;";
 					description="Russian Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
 				{
 					position[]={378.6636,5,203.31171};
-					azimut=1.3057718;
+					azimut=1.30577;
 					id=447;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A1";
-					init="GrpMSV_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_exp""]; GrpMSV_ENG1 = group this;";
 					description="Russian Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
 				{
 					position[]={380.21451,5,203.33899};
-					azimut=1.3057718;
+					azimut=1.30577;
 					id=448;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A2";
-					init="GrpMSV_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpMSV_ENG1 = group this;";
 					description="Russian Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
 				{
 					position[]={381.7467,5,203.39432};
-					azimut=1.3057718;
+					azimut=1.30577;
 					id=449;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A3";
-					init="GrpMSV_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpMSV_ENG1 = group this;";
 					description="Russian Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -7329,14 +7329,14 @@ class Mission
 				class Item2
 				{
 					position[]={356.46552,5,188.59433};
-					azimut=-0.83751792;
+					azimut=-0.83751798;
 					id=452;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_D";
-					init="GrpMSV_TNK1 = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Tank 1 Driver (Repair)";
 				};
 			};
@@ -7514,7 +7514,7 @@ class Mission
 				class Item1
 				{
 					position[]={340.22064,5,184.04301};
-					azimut=9.4433069;
+					azimut=9.4433098;
 					id=462;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -7522,13 +7522,13 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D2";
-					init="GrpMSV_JIP = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian JIP Vehicle Driver";
 				};
 				class Item2
 				{
 					position[]={339.15488,5,184.00885};
-					azimut=9.4433069;
+					azimut=9.4433098;
 					id=463;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -7536,7 +7536,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D1";
-					init="GrpMSV_JIP = group this; [""vd"",this] call f_fnc_assignGear; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian JIP Vehicle Driver";
 				};
 				class Item3
@@ -7673,7 +7673,7 @@ class Mission
 				class Item12
 				{
 					position[]={335.45529,5,181.51712};
-					azimut=9.4433069;
+					azimut=9.4433098;
 					id=473;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
@@ -7682,12 +7682,12 @@ class Mission
 					skill=0.60000002;
 					text="UnitMSV_JIP_R2";
 					init="GrpMSV_JIP = group this; [""s"",this] call f_fnc_assignGear; ";
-					description="Russian JIP Marksman";
+					description="Russian JIP Rifleman";
 				};
 				class Item13
 				{
 					position[]={334.2963,5,181.46272};
-					azimut=9.4433069;
+					azimut=9.4433098;
 					id=474;
 					side="EAST";
 					vehicle="rhs_msv_rifleman";
@@ -7743,7 +7743,7 @@ class Mission
 				class Item17
 				{
 					position[]={339.88763,5,181.55103};
-					azimut=9.4433069;
+					azimut=9.4433098;
 					id=478;
 					side="EAST";
 					vehicle="rhs_msv_strelok_rpg_assist";
@@ -7751,7 +7751,6 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AGR2";
-					init="GrpMSV_JIP = group this; [""aar"",this] call f_fnc_assignGear; ";
 					description="Russian JIP Assistant Grenadier";
 				};
 			};
