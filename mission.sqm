@@ -44,7 +44,8 @@ class Mission
 		"RHS_A2_AirImport",
 		"rhs_c_bmp",
 		"rhs_c_cars",
-		"AGM_Logistics"
+		"AGM_Logistics",
+		"rhs_c_a2port_air"
 	};
 	addOnsAuto[]=
 	{
@@ -76,7 +77,7 @@ class Mission
 		"A3_Soft_F_EPC_Truck_03",
 		"RDS_StaticWeapons_Core",
 		"rhs_c_tanks",
-		"RHS_A2_AirImport",
+		"rhs_c_a2port_air",
 		"rhs_c_bmp",
 		"rhs_c_cars",
 		"AGM_Logistics",
@@ -6022,11 +6023,11 @@ class Mission
 				class Item4
 				{
 					position[]={389.2605,5,197.66208};
-					azimut=10.255774;
+					azimut=10.2558;
 					special="NONE";
 					id=373;
 					side="EAST";
-					vehicle="rhs_msv_marksman";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6307,10 +6308,10 @@ class Mission
 				class Item4
 				{
 					position[]={400.3118,5,197.36826};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=391;
 					side="EAST";
-					vehicle="rhs_msv_marksman";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
