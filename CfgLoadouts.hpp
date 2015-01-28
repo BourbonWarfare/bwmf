@@ -89,7 +89,7 @@ class CfgLoadouts {
 		{
 			vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
 			weapons[] = {WEST_AR};
-			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			
 		};
@@ -119,7 +119,7 @@ class CfgLoadouts {
 		class B_support_MG_F : B_Soldier_F // MMG
 		{
 			weapons[] = {WEST_MMG};
-			magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			
 		};
@@ -306,7 +306,7 @@ class ind_f {
 			handguns[] = {}; /// randomized
 			magazines[] = {IND_RIFLE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
 			items[] = {};
-			linkedItems[] = {"ItemMap","ItemCompass",,"ItemWatch","itemRadio"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio"};
 			attachments[] = {"optic_Holosight"};
 		};
 		class I_officer_F : I_Soldier_F // CO and DC
@@ -336,7 +336,7 @@ class ind_f {
 		{
 			vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
 			weapons[] = {IND_AR};
-			magazines[] = {IND_AR_MAG,IND_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {IND_AR_MAG,IND_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {IND_PISTOL}; /// randomized
 			
 		};
@@ -360,13 +360,13 @@ class ind_f {
 			vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
 			weapons[] = {IND_CARBINE};
 			magazines[] = {IND_CARBINE_MAG,"smokeShell:6"};
-			backpackItems = ["AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"]
+			backpackItems = ["AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"];
 			
 		};
 		class I_support_MG_F : I_Soldier_F // MMG
 		{
 			weapons[] = {IND_MMG};
-			magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {IND_PISTOL}; /// randomized
 			
 		};
@@ -581,7 +581,7 @@ class ind_f {
 		{
 			//vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
 			weapons[] = {EAST_AR};
-			magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {EAST_PISTOL}; /// randomized
 			
 		};
@@ -611,7 +611,7 @@ class ind_f {
 		class O_support_MG_F : O_Soldier_F // MMG
 		{
 			weapons[] = {EAST_MMG};
-			magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {EAST_PISTOL}; /// randomized
 			
 		};
