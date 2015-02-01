@@ -735,7 +735,7 @@ class ind_f {
 	};
 class rhs_faction_msv {
 		//Radios
-		#define TF_defaultMSVBackpack  "tf_rt1523g_big_rhs"
+		#define TF_defaultMSVBackpack  "tf_mr3000_rhs"
 		//Rifle
 		#define MSV_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
 		#define MSV_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
