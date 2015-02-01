@@ -42,6 +42,9 @@ if ((count _vests) > 0) then {_unit addVest (_vests call BIS_fnc_selectRandom);}
 if ((count _headgears) > 0) then {_unit addHeadgear (_headgears call BIS_fnc_selectRandom);};
 if ((count _backpack) > 0) then {_unit addBackpack (_backpack call BIS_fnc_selectRandom);};
 
+//Clear backpack
+clearAllItemsFromBackpack _unit;
+
 // Backpack Items
 {
 	_arr = [_x,":"] call BIS_fnc_splitString;
