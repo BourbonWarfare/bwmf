@@ -6,15 +6,23 @@
 
 _unit = _this select 0;
 
-_loadout = (typeOf _unit);
+_typeOf = typeOf _unit;
+_loadout = _unit getVariable ["F_Gear", _typeOf]; 
 _faction = tolower (faction _unit);
+
+//Leave default gear when "F_Gear" is "Default"
+if (_loadout == "default") exitWith {};
 
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if(!isClass(_path)) then {
+    _transportSoldier = getNumber (configFile >> "CfgVehicles" >> (_typeOf) >> "transportSoldier");
+    
     _loadout = switch (true) do {
+    // case ((_unit isKindOf "Car") && (_transportSoldier < 6)): {"Car";}; //????
+    
     case (_unit isKindOf "Car"): {"Car";};
-    case (_unit isKindOf "Tank"): {"Tank";};
+    case (_unit isKindOf "Tank"): {"Tank";};  //ToDo: How to tell APC from TANK???
     case (_unit isKindOf "Helicopter"): {"Helicopter";};
     case (_unit isKindOf "Plane"): {"Plane";};
     case (_unit isKindOf "Ship"): {"Ship";};
@@ -23,6 +31,11 @@ if(!isClass(_path)) then {
     _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 };
 
+//Clean out starting inventory (even if there is no class)
+clearWeaponCargoGlobal _unit;
+clearMagazineCargoGlobal _unit;
+clearItemCargoGlobal _unit;
+clearBackpackCargoGlobal _unit;
 
 if(!isClass(_path)) exitWith {
     systemChat format ["No loadout found for %1 (typeOf %2) (kindOf %3)", _unit, (typeof _unit), _loadout];
@@ -31,11 +44,6 @@ if(!isClass(_path)) exitWith {
 _TransportMagazines = getArray(_path >> "TransportMagazines");
 _TransportItems = getArray(_path >> "TransportItems");
 _TransportWeapons = getArray(_path >> "TransportWeapons");
-
-clearWeaponCargoGlobal _unit;
-clearMagazineCargoGlobal _unit;
-clearItemCargoGlobal _unit;
-clearBackpackCargoGlobal _unit;
 
 // ====================================================================================
 // _TransportMagazines
