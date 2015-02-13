@@ -371,7 +371,7 @@ class ind_f {
 			weapons[] = {IND_CARBINE};
 			magazines[] = {IND_CARBINE_MAG,"smokeShell:6"};
 			backpack[] = {"B_Carryall_oli"};
-			backpackItems = ["AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"];
+			backpackItems[] = {"AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"};
 			
 		};
 		class I_support_MG_F : I_Soldier_F // MMG
