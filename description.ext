@@ -7,6 +7,37 @@
 
 // ============================================================================================
 
+
+// PABST: Disables thermals for all weapons/vehicles.
+class Extended_InitPost_EventHandlers {
+    class Tank {
+        class DisableThermals {
+            init = "(_this select 0) disableTIEquipment true";
+        };
+    };
+    class Car {
+        class DisableThermals {
+            init = "(_this select 0) disableTIEquipment true";
+        };
+    };
+    class Helicopter {
+        class DisableThermals {
+            init = "(_this select 0) disableTIEquipment true";
+        };
+    };
+    class Plane {
+        class DisableThermals {
+            init = "(_this select 0) disableTIEquipment true";
+        };
+    };
+    class Ship_F {
+        class DisableThermals {
+            init = "(_this select 0) disableTIEquipment true";
+        };
+    };
+};
+
+
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 

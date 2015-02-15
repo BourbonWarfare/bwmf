@@ -118,8 +118,6 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 //PABST: setup custom freqs automatically for people
 [] execVM "pabst\pabst_setupRadioChannels.sqf";
 
-// PABST: Disables thermals for all weapons/vehicles.
-[] execVM "pabst\pabst_disableThermals.sqf";
 
 // BWMF: DAC Debug Params
 
