@@ -1,6 +1,7 @@
 private ["_unitfaction","_style"];
 
 // ====================================================================================
+if (!hasInterface) exitWith {};
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 

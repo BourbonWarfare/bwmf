@@ -1,6 +1,9 @@
 // F3 - Buddy Team Colours
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
+
+if (!hasInterface) exitWith {};
+
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 if (!isDedicated && (isNull player)) then
 {
@@ -18,7 +21,6 @@ private ["_unit","_isFireteam","_white","_red","_blue","_yellow","_green"];
 _leaders = ["_FTL", "_SL"];
 
 // ====================================================================================
-
 sleep 10;	// WAIT UNTIL 10 SECONDS AFTER INITIALIZING
 
 _unit = player;
@@ -40,7 +42,6 @@ _yellow = [];
 _green = [];
 
 if ((faction _unit) in ["rhs_faction_msv"]) then {
-	systemChat "using soviet";
 	_white = ["_SL","_FTL","_AR"];
 	_red = ["_GR","_AGR"];
 	_blue = ["_M","_R"];

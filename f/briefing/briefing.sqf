@@ -2,6 +2,8 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
+if (!hasInterface) exitWith {};
+
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 
 if (!isDedicated && (isNull player)) then

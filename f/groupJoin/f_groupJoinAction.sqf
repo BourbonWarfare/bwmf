@@ -6,7 +6,7 @@
 // The boolean indicates whether players are allowed to join groups on different side.
 
 // Only run this for players
-if (isDedicated) exitWith{};
+if (!hasInterface) exitWith{};
 
 // ====================================================================================
 
@@ -39,18 +39,17 @@ while {true} do {
 
 		// Using curly braces makes the if statement cheaper to evaluate, but requires OA 1.62
 		if (alive _nearUnit && group player != _nearGroup && _nearUnit == leader _nearGroup && _nearUnit in playableUnits) then {
-			if (_allowDifferentSide || side player == side _nearGroup) then {
+			if (((side player) == (side _nearGroup)) || _allowDifferentSide) then {
 				_actionString = format["Join group: %1", _nearGroup];
 
 				f_groupJoinAction = player addAction [_actionString, {
 					[player] joinSilent (_this select 3);
 					["JIP",[format ["You have joined %1.",(_this select 3)]]] call BIS_fnc_showNotification;
-					_unit = player;
 					{
 						if (isPlayer _x) then {
-							[["JIP",[format ["%1 has joined your group.",name _unit]]],"BIS_fnc_showNotification",_x] spawn BIS_fnc_MP;
+							[format ["%1 has joined your group.", name player], "systemChat", _x] spawn BIS_fnc_MP;
 						};
-					} forEach (units (_this select 3) - [_unit]);
+					} forEach (units (_this select 3) - [player]);
 				}, _nearGroup, 0, false, true, "", "_this == player"];
 
 				// Once player leaves the group leader's vicinity, remove action

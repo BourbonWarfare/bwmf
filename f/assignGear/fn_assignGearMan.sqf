@@ -6,17 +6,16 @@ _unit = _this select 0;
 
 if (!local _unit) exitWith {};
 
+if (_unit getVariable ["F_gearAssigned", false]) exitWith {}; //if already assigned, exit
+_unit setVariable ["F_gearAssigned", true, true];
+
 _faction = tolower (faction _unit);
 _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];  //Check variable f_gear, otherwise default to typeof
-
-// systemChat format ["Doing the gear thing %1, %2", _unit, _loadout];
 
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if(!isClass(_path)) exitWith {
 	systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
-	["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)] call bis_fnc_error;
-	_unit setVariable ["F_gearAssigned", true, true];
 };
 
 _uniforms = getArray(_path >> "uniform");
@@ -122,4 +121,3 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
 	};
 } foreach _attachments;
 
-_unit setVariable ["F_gearAssigned", true, true];

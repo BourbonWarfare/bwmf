@@ -7,38 +7,30 @@
 
 // ============================================================================================
 
-
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
     class CAManBase {
-        class AssignGear {//Assign Gear Loadout
-            init = "_this call F_fnc_assignGearTest;";
-        };
-    };
-    class Tank {
-        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
-            init = "(_this select 0) disableTIEquipment true;";
-        };
+        class AssignGear { init = "_this call F_fnc_assignGearMan;"; };
     };
     class Car {
-        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
-            init = "(_this select 0) disableTIEquipment true;";
-        };
+        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Tank {
+        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
     };
     class Helicopter {
-        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
-            init = "(_this select 0) disableTIEquipment true;";
-        };
+        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
     };
     class Plane {
-        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
-            init = "(_this select 0) disableTIEquipment true;";
-        };
+        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
     };
     class Ship_F {
-        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
-            init = "(_this select 0) disableTIEquipment true;";
-        };
+        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
     };
 };
 
@@ -46,11 +38,10 @@ class Extended_InitPost_EventHandlers {
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-class Header
-{
-	gameType = Coop;
-	minPlayers = 1;
-	maxPlayers = 405;
+class Header {
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 405;
 };
 
 // ============================================================================================
@@ -87,163 +78,137 @@ respawnTemplates[] = {"PabstSpectator"};
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
-class Params
-{
+class Params {
+    // ============================================================================================
 
-	// ============================================================================================
+    // F3 - Mission Conditions Selector
+    // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-	// F3 - Mission Conditions Selector
-	// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+    class f_param_weather {
+        title = "$STR_f_param_weather";
+        values[] = {0,1,2,3,4,5,6,7,8};
+        texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8};
+        default = 0;
+        function = "f_fnc_setWeather";		// This function is called to apply the values
+        isGlobal = 0;						// Execute this only on the server
+        code = "f_param_weather = %1";
+    };
 
-	class f_param_weather
-	{
-		title = "$STR_f_param_weather";
-		values[] = {0,1,2,3,4,5,6,7,8};
-		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8};
-		default = 0;
-		function = "f_fnc_setWeather";		// This function is called to apply the values
-		isGlobal = 0;						// Execute this only on the server
-		code = "f_param_weather = %1";
-	};
+    class f_param_fog {
+        title = "Fog";
+        values[] = {0,1,2};
+        texts[] = {"None","Light","Heavy"};
+        default = 0;
+        function = "f_fnc_SetFog";			// This function is called to apply the values
+        isGlobal = 0;						// Execute this only on the server
+        code = "f_param_fog = %1";
+    };
 
-	class f_param_fog
-	{
-		title = "Fog";
-		values[] = {0,1,2};
-		texts[] = {"None","Light","Heavy"};
-		default = 0;
-		function = "f_fnc_SetFog";			// This function is called to apply the values
-		isGlobal = 0;						// Execute this only on the server
-		code = "f_param_fog = %1";
-	};
+    class f_param_timeOfDay {
+        title = "$STR_f_param_timeOfDay";
+        values[] = {0,1,2,3,4,5,6,7};
+        texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
+        default = 4;
+        function = "f_fnc_setTime";			// This function is called to apply the values
+        isGlobal = 0;						// Execute this only on the server
+        code = "f_param_timeOfDay = %1";
+    };
 
-    class f_param_timeOfDay
-	{
-		title = "$STR_f_param_timeOfDay";
-		values[] = {0,1,2,3,4,5,6,7};
-		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
-		default = 4;
-		function = "f_fnc_setTime";			// This function is called to apply the values
- 		isGlobal = 0;						// Execute this only on the server
- 		code = "f_param_timeOfDay = %1";
-	};
+    // ============================================================================================
 
-// ============================================================================================
+    class f_param_dacdebug {
+        title = "DAC Debug";
+        values[] = {0,1};
+        texts[] = {"Off","On"};
+        default = 1;
+        code = "f_param_dacdebug = %1";
+    };
 
-	class f_param_dacdebug
-	{
-		title = "DAC Debug";
-		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 1;
-		code = "f_param_dacdebug = %1";
-	};
+    class ws_param_hc {
+        title = "Headless client";
+        values[] = {0,1};
+        texts[] = {"Off","Auto-Detect"};
+        default = 1;
+        code = "ws_param_hc = %1";
+    };
 
-	class ws_param_hc
-	{
-		title = "Headless client";
-		values[] = {0,1};
-		texts[] = {"Off","Auto-Detect"};
-		default = 1;
-		code = "ws_param_hc = %1";
-	};
-
-
-	// F3 - End of Params code blocks.
-	// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
+    // F3 - End of Params code blocks.
+    // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 };
 
 // ============================================================================================
 // Pabst - Respawn
 
-
-class CfgRespawnTemplates
-{
-	class PabstSpectator
-	{
-		onPlayerRespawn = "pabst\pabst_spectator.sqf";
-	};
+class CfgRespawnTemplates {
+    class PabstSpectator {
+        onPlayerRespawn = "pabst\pabst_spectator.sqf";
+    };
 };
-
-// ============================================================================================
-
-// F3 - Menu components
-// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
-//I do what I want
 
 // ============================================================================================
 
 // F3 - Functions
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
-class CfgFunctions
-{
+class CfgFunctions {
 #include "ws_fnc\config.hpp"
-	class F // Defines the "owner"
-	{
-		class common // category
-		{
-			file = "f\common";
-			// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
-			class processParamsArray
-			{
-				preInit = 1;
-				postInit = 1;
-			};
 
-			class nearPlayer{};
-		};
-		class assignGear
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\assignGear";
-			class assignGearTest{};
-			class assignGearTest_vehicle{};
-
-		};
-		class setGroupID
-		{
-			file = "f\setGroupID";
-			class setGroupID{};
-		};
-		class missionConditions
-		{
-			file = "f\missionConditions";
-			class SetTime{};
-			class SetFog{};
-			class SetWeather{};
-		};
-		class groupMarkers {
-			file = "f\groupMarkers";
-			class addGroupMarker{};
-			class drawGroupMarkers{};
-			class getGroupMarkerStyle{};
-			class findGroupMarkerID{};
-			class setupGroupMarkers{};
-		};
-		class FTMemberMarkers
-		{
-			file = "f\FTMemberMarkers";
-			class SetLocalFTMemberMarkers{};
-			class GetMarkerColor{};
-			class LocalFTMarkerSync{};
-		};
-		class nametag
-		{
-			file = "f\nametag";
-			class drawNameTag{};
-		};
-		class radios
-		{
-			file = "f\radios";
-			class tfr_removeRadios{};
-			class tfr_addRadios{};
-			class tfr_setRadioFrequencies{};
-			class tfr_configureSpectatorChat{};
-		};
-
-	};
+    class F {  // Defines the "owner"
+        class Pabst {
+            file = "pabst";
+            class setupRadioChannels {};
+        };
+        class common {  // category
+            file = "f\common";
+            // Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
+            class processParamsArray {
+                preInit = 1;
+                postInit = 1;
+            };
+            class nearPlayer{};
+        };
+        class assignGear {
+            // Defines the functions to preInit the compling of the assignGear function used by units.
+            file = "f\assignGear";
+            class assignGearMan {};
+            class assignGearVehicle {};
+        };
+        class setGroupID {
+            file = "f\setGroupID";
+            class setGroupID {};
+        };
+        class missionConditions {
+            file = "f\missionConditions";
+            class SetTime {};
+            class SetFog {};
+            class SetWeather {};
+        };
+        class groupMarkers {
+            file = "f\groupMarkers";
+            class addGroupMarker {};
+            class drawGroupMarkers {};
+            class getGroupMarkerStyle {};
+            class findGroupMarkerID {};
+            class setupGroupMarkers {};
+        };
+        class FTMemberMarkers {
+            file = "f\FTMemberMarkers";
+            class SetLocalFTMemberMarkers {};
+            class GetMarkerColor {};
+            class LocalFTMarkerSync {};
+        };
+        class nametag {
+            file = "f\nametag";
+            class drawNameTag {};
+        };
+        class radios {
+            file = "f\radios";
+            class tfr_removeRadios {};
+            class tfr_addRadios {};
+            class tfr_setRadioFrequencies {};
+            class tfr_configureSpectatorChat {};
+        };
+    };
 };
 
 // ============================================================================================

@@ -43,6 +43,23 @@ class CfgLoadouts {
 		#define WEST_PISTOL "hgun_Pistol_heavy_01_F"
 		#define WEST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
+        class Car {
+            TransportMagazines[] = {WEST_CARBINE_MAG, WEST_AR_MAG};
+        };      
+        class Tank {
+            TransportMagazines[] = {};
+        };      
+        class Helicopter {
+            TransportMagazines[] = {};
+        };       
+        class Plane {
+            TransportMagazines[] = {};
+        };     
+        class Ship_F {
+            TransportMagazines[] = {};
+        };
+        
+        
 		class B_Soldier_F // rifleman
 		{
 			uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized

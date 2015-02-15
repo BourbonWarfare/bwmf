@@ -3,15 +3,13 @@
 // ====================================================================================
 
 // DECLARE VARIABLES
-private ["_grp","_name"];
+private ["_groupVarName", "_groupIDName", "_grp"];
 
-// Check first if the group exists
-if(!isnil (_this select 0)) then {
+_groupVarName = _this select 0;
+_groupIDName = _this select 1;
 
-	// Compile a variable from the parsed string
-	_grp = call compile format ["%1",_this select 0];
-	_name = _this select 1;
-
-	_grp setVariable ["f_var_grpIdSet",true];
-	_grp setGroupId [format ["%1",_name],"GroupColor0"];
+_grp = missionNameSpace getVariable [_groupVarName, grpNull];
+if (!isNull _grp) then {
+    _grp setVariable ["f_var_grpIdSet",true];
+    _grp setGroupId [_groupIDName, "GroupColor0"];
 };
