@@ -45,7 +45,8 @@ class Mission
 		"rhs_c_bmp",
 		"rhs_c_cars",
 		"AGM_Logistics",
-		"rhs_c_a2port_air"
+		"rhs_c_a2port_air",
+		"lop_c_men"
 	};
 	addOnsAuto[]=
 	{
@@ -54,6 +55,7 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
+		"lop_c_men",
 		"dac_source",
 		"agm_medical",
 		"rhs_c_troops",

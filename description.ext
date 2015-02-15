@@ -8,31 +8,36 @@
 // ============================================================================================
 
 
-// PABST: Disables thermals for all weapons/vehicles.
+//Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class AssignGear {//Assign Gear Loadout
+            init = "_this call F_fnc_assignGearTest;";
+        };
+    };
     class Tank {
-        class DisableThermals {
-            init = "(_this select 0) disableTIEquipment true";
+        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
+            init = "(_this select 0) disableTIEquipment true;";
         };
     };
     class Car {
-        class DisableThermals {
-            init = "(_this select 0) disableTIEquipment true";
+        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
+            init = "(_this select 0) disableTIEquipment true;";
         };
     };
     class Helicopter {
-        class DisableThermals {
-            init = "(_this select 0) disableTIEquipment true";
+        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
+            init = "(_this select 0) disableTIEquipment true;";
         };
     };
     class Plane {
-        class DisableThermals {
-            init = "(_this select 0) disableTIEquipment true";
+        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
+            init = "(_this select 0) disableTIEquipment true;";
         };
     };
     class Ship_F {
-        class DisableThermals {
-            init = "(_this select 0) disableTIEquipment true";
+        class DisableThermals {// PABST: Disables thermals for all weapons/vehicles.
+            init = "(_this select 0) disableTIEquipment true;";
         };
     };
 };
@@ -155,8 +160,6 @@ class Params
 
 class CfgRespawnTemplates
 {
-
-
 	class PabstSpectator
 	{
 		onPlayerRespawn = "pabst\pabst_spectator.sqf";
@@ -195,7 +198,6 @@ class CfgFunctions
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
-			class assGearInit {postInit = 1;};
 			class assignGearTest{};
 			class assignGearTest_vehicle{};
 
