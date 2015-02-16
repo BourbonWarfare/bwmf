@@ -1028,8 +1028,22 @@ class rhs_faction_msv {
 		};
 		
 	};	
-};
 
+class rhs_faction_vvs {
+
+	class rhs_pilot_transport_heli // Pilot
+		{
+			uniform[] = {"rhs_uniform_df15"};  /// randomized
+			vest[] = {"V_TacVest_blk"}; /// randomized
+			headgear[] = {"rhs_zsh7a"}; /// randomized
+			weapons[] = {MSV_SMG}; /// randomized
+			magazines[] = {MSV_SMG_MAG,"SmokeShell:2"};
+			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
+		};
+
+	};
+};
 
 
 
