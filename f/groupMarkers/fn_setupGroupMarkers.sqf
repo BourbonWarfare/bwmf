@@ -70,13 +70,15 @@ switch (_unitfaction) do {
         ["UnitAAF_CSL_M","CM"]
         ];
     };
-    case "blu_g_f": {
+    case "rhs_faction_msv": {
         _units = [
-        ["UnitFIA_CO_M","COM"],
-        ["UnitFIA_DC_M","DCM"],
-        ["UnitFIA_ASL_M","AM"],
-        ["UnitFIA_BSL_M","BM"],
-        ["UnitFIA_CSL_M","CM"]
+        ["UnitMSV_ASL_VD","AV"],
+        ["UnitMSV_BSL_VD","BV"],
+        ["UnitMSV_CSL_VD","CV"],
+        ["UnitMSV_DSL_VD","DV"],
+        ["UnitMSV_ESL_VD","EV"],
+        ["UnitMSV_FSL_VD","FV"]
+
         ];
     };
 };
