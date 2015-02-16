@@ -6488,10 +6488,10 @@ class Mission
 				class Item4
 				{
 					position[]={408.63422,5,197.0506};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=402;
 					side="EAST";
-					vehicle="rhs_msv_marksman";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -6767,10 +6767,10 @@ class Mission
 				class Item4
 				{
 					position[]={420.17743,5,196.87425};
-					azimut=10.255774;
+					azimut=10.2558;
 					id=420;
 					side="EAST";
-					vehicle="rhs_msv_marksman";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
