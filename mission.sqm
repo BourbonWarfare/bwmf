@@ -8297,7 +8297,7 @@ class Mission
 			azimut=1.0050527;
 			id=536;
 			side="EMPTY";
-			vehicle="RDS_Metis_OPFOR";
+			vehicle="RDS_Metis_CSAT";
 			skill=0.60000002;
 		};
 		class Item44
@@ -8306,7 +8306,7 @@ class Mission
 			azimut=1.0050527;
 			id=537;
 			side="EMPTY";
-			vehicle="RDS_Metis_OPFOR";
+			vehicle="RDS_Metis_CSAT";
 			skill=0.60000002;
 		};
 		class Item45
@@ -8315,7 +8315,7 @@ class Mission
 			azimut=1.0050527;
 			id=538;
 			side="EMPTY";
-			vehicle="RDS_Metis_OPFOR";
+			vehicle="RDS_Metis_CSAT";
 			skill=0.60000002;
 		};
 		class Item46
