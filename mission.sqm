@@ -1961,7 +1961,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_P";
-					init="GrpCSAT_TH1 = group this;  this moveInDriver VehCSAT_TH1;";
+					init="GrpCSAT_TH1 = group this;  ";
 					description="CSAT Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -1974,7 +1974,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_CP";
-					init="GrpCSAT_TH1 = group this;  this moveInTurret [VehCSAT_TH1,[0]];";
+					init="GrpCSAT_TH1 = group this; ";
 					description="CSAT Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -3001,7 +3001,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH1_P";
-					init="GrpAAF_TH1 = group this;  this moveInDriver VehAAF_TH1;";
+					init="GrpAAF_TH1 = group this;  ";
 					description="AAF Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -3014,7 +3014,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH1_CP";
-					init="GrpAAF_TH1 = group this;  this moveInTurret [VehAAF_TH1,[0]];";
+					init="GrpAAF_TH1 = group this; ";
 					description="AAF Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -3036,7 +3036,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH2_P";
-					init="GrpAAF_TH2 = group this;  this moveInDriver VehAAF_TH2;";
+					init="GrpAAF_TH2 = group this;  ";
 					description="AAF Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -3049,7 +3049,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH2_CP";
-					init="GrpAAF_TH2 = group this;  this moveInTurret [VehAAF_TH2,[0]];";
+					init="GrpAAF_TH2 = group this;  ";
 					description="AAF Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -3071,7 +3071,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_P";
-					init="GrpCSAT_TH2 = group this;  this moveInDriver VehCSAT_TH2;";
+					init="GrpCSAT_TH2 = group this;  ";
 					description="CSAT Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -3084,7 +3084,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_CP";
-					init="GrpCSAT_TH2 = group this;  this moveInTurret [VehCSAT_TH2,[0]];";
+					init="GrpCSAT_TH2 = group this;  ";
 					description="CSAT Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -3106,7 +3106,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_P";
-					init="GrpCSAT_TH3 = group this;  this moveInDriver VehCSAT_TH3;";
+					init="GrpCSAT_TH3 = group this;";
 					description="CSAT Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -3119,7 +3119,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_CP";
-					init="GrpCSAT_TH3 = group this;  this moveInTurret [VehCSAT_TH3,[0]];";
+					init="GrpCSAT_TH3 = group this; ";
 					description="CSAT Transport Helo 3 Co-Pilot (Repair)";
 				};
 			};
@@ -3141,7 +3141,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_P";
-					init="GrpCSAT_TH4 = group this;  this moveInDriver VehCSAT_TH4;";
+					init="GrpCSAT_TH4 = group this;  ";
 					description="CSAT Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -3154,7 +3154,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_CP";
-					init="GrpCSAT_TH4 = group this;  this moveInTurret [VehCSAT_TH4,[0]];";
+					init="GrpCSAT_TH4 = group this; ";
 					description="CSAT Transport Helo 4 Co-Pilot (Repair)";
 				};
 			};
@@ -3176,7 +3176,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_C";
-					init="GrpCSAT_IFV1 = group this;  this moveInCommander VehCSAT_IFV1;";
+					init="GrpCSAT_IFV1 = group this; ";
 					description="CSAT IFV 1 Commander";
 				};
 				class Item1
@@ -3189,7 +3189,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_G";
-					init="GrpCSAT_IFV1 = group this;  this moveInGunner VehCSAT_IFV1;";
+					init="GrpCSAT_IFV1 = group this; ";
 					description="CSAT IFV 1 Gunner";
 				};
 				class Item2
@@ -3201,7 +3201,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_D";
-					init="GrpCSAT_IFV1 = group this;  this moveInDriver VehCSAT_IFV1;";
+					init="GrpCSAT_IFV1 = group this; ";
 					description="CSAT IFV 1 Driver (Repair)";
 				};
 			};
@@ -3223,7 +3223,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_C";
-					init="GrpCSAT_IFV2 = group this;  this moveInCommander VehCSAT_IFV2;";
+					init="GrpCSAT_IFV2 = group this; ";
 					description="CSAT IFV 2 Commander";
 				};
 				class Item1
@@ -3236,7 +3236,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_G";
-					init="GrpCSAT_IFV2 = group this;  this moveInGunner VehCSAT_IFV2;";
+					init="GrpCSAT_IFV2 = group this; ";
 					description="CSAT IFV 2 Gunner";
 				};
 				class Item2
@@ -3248,7 +3248,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_D";
-					init="GrpCSAT_IFV2 = group this;  this moveInDriver VehCSAT_IFV2;";
+					init="GrpCSAT_IFV2 = group this; ";
 					description="CSAT IFV 2 Driver (Repair)";
 				};
 			};
@@ -3270,7 +3270,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_C";
-					init="GrpCSAT_IFV3 = group this;  this moveInCommander VehCSAT_IFV3;";
+					init="GrpCSAT_IFV3 = group this; ";
 					description="CSAT IFV 3 Commander";
 				};
 				class Item1
@@ -3283,7 +3283,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_G";
-					init="GrpCSAT_IFV3 = group this;  this moveInGunner VehCSAT_IFV3;";
+					init="GrpCSAT_IFV3 = group this; ";
 					description="CSAT IFV 3 Gunner";
 				};
 				class Item2
@@ -3295,7 +3295,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_D";
-					init="GrpCSAT_IFV3 = group this;  this moveInDriver VehCSAT_IFV3;";
+					init="GrpCSAT_IFV3 = group this;  ";
 					description="CSAT IFV 3 Driver (Repair)";
 				};
 			};
@@ -3317,7 +3317,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_C";
-					init="GrpCSAT_IFV4 = group this;  this moveInCommander VehCSAT_IFV4;";
+					init="GrpCSAT_IFV4 = group this;  ";
 					description="CSAT IFV 4 Commander";
 				};
 				class Item1
@@ -3330,7 +3330,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_G";
-					init="GrpCSAT_IFV4 = group this;  this moveInGunner VehCSAT_IFV4;";
+					init="GrpCSAT_IFV4 = group this;  ";
 					description="CSAT IFV 4 Gunner";
 				};
 				class Item2
@@ -3342,7 +3342,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_D";
-					init="GrpCSAT_IFV4 = group this;  this moveInDriver VehCSAT_IFV4;";
+					init="GrpCSAT_IFV4 = group this; ";
 					description="CSAT IFV 4 Driver (Repair)";
 				};
 			};
@@ -3364,7 +3364,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_C";
-					init="GrpCSAT_TNK1 = group this;  this moveInCommander VehCSAT_TNK1;";
+					init="GrpCSAT_TNK1 = group this; ";
 					description="CSAT Tank 1 Commander";
 				};
 				class Item1
@@ -3377,7 +3377,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_G";
-					init="GrpCSAT_TNK1 = group this;  this moveInGunner VehCSAT_TNK1;";
+					init="GrpCSAT_TNK1 = group this;  ";
 					description="CSAT Tank 1 Gunner";
 				};
 				class Item2
@@ -3389,7 +3389,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_D";
-					init="GrpCSAT_TNK1 = group this;  this moveInDriver VehCSAT_TNK1;";
+					init="GrpCSAT_TNK1 = group this;  ";
 					description="CSAT Tank 1 Driver (Repair)";
 				};
 			};
@@ -3411,7 +3411,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_P";
-					init="GrpCSAT_AH1 = group this;  this moveInDriver VehCSAT_AH1;";
+					init="GrpCSAT_AH1 = group this;  ";
 					description="CSAT Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3424,7 +3424,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_CP";
-					init="GrpCSAT_AH1 = group this;  this moveInTurret [VehCSAT_AH1,[0]];";
+					init="GrpCSAT_AH1 = group this;  ";
 					description="CSAT Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -3446,7 +3446,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_C";
-					init="GrpAAF_IFV1 = group this;  this moveInCommander VehAAF_IFV1;";
+					init="GrpAAF_IFV1 = group this; ";
 					description="AAF IFV 1 Commander";
 				};
 				class Item1
@@ -3459,7 +3459,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_G";
-					init="GrpAAF_IFV1 = group this;  this moveInGunner VehAAF_IFV1;";
+					init="GrpAAF_IFV1 = group this; ";
 					description="AAF IFV 1 Gunner";
 				};
 				class Item2
@@ -3471,7 +3471,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_D";
-					init="GrpAAF_IFV1 = group this;  this moveInDriver VehAAF_IFV1;";
+					init="GrpAAF_IFV1 = group this;  ";
 					description="AAF IFV 1 Driver (Repair)";
 				};
 			};
@@ -3493,7 +3493,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_C";
-					init="GrpAAF_IFV2 = group this;  this moveInCommander VehAAF_IFV2;";
+					init="GrpAAF_IFV2 = group this; ";
 					description="AAF IFV 2 Commander";
 				};
 				class Item1
@@ -3506,7 +3506,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_G";
-					init="GrpAAF_IFV2 = group this;  this moveInGunner VehAAF_IFV2;";
+					init="GrpAAF_IFV2 = group this;  ";
 					description="AAF IFV 2 Gunner";
 				};
 				class Item2
@@ -3518,7 +3518,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_D";
-					init="GrpAAF_IFV2 = group this;  this moveInDriver VehAAF_IFV2;";
+					init="GrpAAF_IFV2 = group this; ";
 					description="AAF IFV 2 Driver (Repair)";
 				};
 			};
@@ -3540,7 +3540,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_C";
-					init="GrpAAF_IFV3 = group this;  this moveInCommander VehAAF_IFV3;";
+					init="GrpAAF_IFV3 = group this;  ";
 					description="AAF IFV 3 Commander";
 				};
 				class Item1
@@ -3553,7 +3553,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_G";
-					init="GrpAAF_IFV3 = group this;  this moveInGunner VehAAF_IFV3;";
+					init="GrpAAF_IFV3 = group this; ";
 					description="AAF IFV 3 Gunner";
 				};
 				class Item2
@@ -3565,7 +3565,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_D";
-					init="GrpAAF_IFV3 = group this;  this moveInDriver VehAAF_IFV3;";
+					init="GrpAAF_IFV3 = group this; ";
 					description="AAF IFV 3 Driver (Repair)";
 				};
 			};
@@ -3587,7 +3587,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_C";
-					init="GrpAAF_IFV4 = group this;  this moveInCommander VehAAF_IFV4;";
+					init="GrpAAF_IFV4 = group this;  ";
 					description="AAF IFV 4 Commander";
 				};
 				class Item1
@@ -3600,7 +3600,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_G";
-					init="GrpAAF_IFV4 = group this;  this moveInGunner VehAAF_IFV4;";
+					init="GrpAAF_IFV4 = group this; ";
 					description="AAF IFV 4 Gunner";
 				};
 				class Item2
@@ -3612,7 +3612,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_D";
-					init="GrpAAF_IFV4 = group this;  this moveInDriver VehAAF_IFV4;";
+					init="GrpAAF_IFV4 = group this;  ";
 					description="AAF IFV 4 Driver (Repair)";
 				};
 			};
@@ -3634,7 +3634,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_C";
-					init="GrpAAF_TNK1 = group this;  this moveInCommander VehAAF_TNK1;";
+					init="GrpAAF_TNK1 = group this; ";
 					description="AAF Tank 1 Commander";
 				};
 				class Item1
@@ -3647,7 +3647,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_G";
-					init="GrpAAF_TNK1 = group this;  this moveInGunner VehAAF_TNK1;";
+					init="GrpAAF_TNK1 = group this;  ";
 					description="AAF Tank 1 Gunner";
 				};
 				class Item2
@@ -3659,7 +3659,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_D";
-					init="GrpAAF_TNK1 = group this;  this moveInDriver VehAAF_TNK1;";
+					init="GrpAAF_TNK1 = group this; ";
 					description="AAF Tank 1 Driver (Repair)";
 				};
 			};
@@ -3681,7 +3681,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_AH1_P";
-					init="GrpAAF_AH1 = group this;  this moveInDriver VehAAF_AH1;";
+					init="GrpAAF_AH1 = group this;  ";
 					description="AAF Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3694,7 +3694,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_AH1_CP";
-					init="GrpAAF_AH1 = group this;  this moveInTurret [VehAAF_AH1,[0]];";
+					init="GrpAAF_AH1 = group this;  ";
 					description="AAF Attack Helo 1 Co-Pilot (Repair)";
 				};
 			};
