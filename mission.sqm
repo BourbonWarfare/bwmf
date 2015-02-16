@@ -3724,7 +3724,7 @@ class Mission
 					position[]={182.07596,5,186.8457};
 					id=232;
 					side="EAST";
-					vehicle="O_Soldier_AR_F";
+					vehicle="O_support_MG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MMG1_G";
@@ -3761,8 +3761,8 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_HMG1_FTL";
-					init="GrpCSAT_HMG1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					text="UnitCSAT_MMG2_FTL";
+					init="GrpCSAT_MMG2 = group this; [""ftl"",this] call f_fnc_assignGear;";
 					description="CSAT Medium MG Team 2 Leader";
 				};
 				class Item1
@@ -3770,11 +3770,11 @@ class Mission
 					position[]={182.45682,5,175.81445};
 					id=235;
 					side="EAST";
-					vehicle="O_Soldier_AR_F";
+					vehicle="O_support_MG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_HMG1_G";
-					init="GrpCSAT_HMG1 = group this; [""mmgg"",this] call f_fnc_assignGear;";
+					text="UnitCSAT_MMG2_G";
+					init="GrpCSAT_MMG2 = group this; [""mmgg"",this] call f_fnc_assignGear;";
 					description="CSAT Medium MG Team 2 Gunner";
 				};
 				class Item2
@@ -3782,11 +3782,11 @@ class Mission
 					position[]={185.12186,5,174.94238};
 					id=236;
 					side="EAST";
-					vehicle="O_Soldier_AAR_F";
+					vehicle="O_Soldier_A_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_HMG1_AG";
-					init="GrpCSAT_HMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;";
+					text="UnitCSAT_MMG2_AG";
+					init="GrpCSAT_MMG2 = group this; [""mmgag"",this] call f_fnc_assignGear;";
 					description="CSAT Medium MG Team 2 Spotter";
 				};
 			};
@@ -3853,8 +3853,8 @@ class Mission
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_HAT1_FTL";
-					init="GrpCSAT_HAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					text="UnitCSAT_MAT2_FTL";
+					init="GrpCSAT_MAT2 = group this; [""matag"",this] call f_fnc_assignGear; ";
 					description="CSAT Medium AT Team 2 Leader";
 				};
 				class Item1
@@ -3865,8 +3865,8 @@ class Mission
 					vehicle="O_Soldier_AT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_HAT1_G";
-					init="GrpCSAT_HAT1 = group this; [""matg"",this] call f_fnc_assignGear;";
+					text="UnitCSAT_MAT2_G";
+					init="GrpCSAT_MAT2 = group this; [""matg"",this] call f_fnc_assignGear;";
 					description="CSAT Medium AT Team 2 Gunner";
 				};
 				class Item2
@@ -3877,8 +3877,8 @@ class Mission
 					vehicle="O_Soldier_AAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_HAT1_AG";
-					init="GrpCSAT_HAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					text="UnitCSAT_MAT2_AG";
+					init="GrpCSAT_MAT2 = group this; [""matag"",this] call f_fnc_assignGear; ";
 					description="CSAT Medium AT Team 2 Spotter ";
 				};
 			};
