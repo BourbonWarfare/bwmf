@@ -1,3 +1,24 @@
+// F3 - Loading Screen
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+onLoadName = "*** Insert mission name here. ***";
+onLoadMission = "Made with the F3 Mission Development Framework - Modified by BourbonWarfare.com";
+author = "*** Insert mission author name here. ***";
+loadScreen = "bwbannersmall.jpg";
+
+// ============================================================================================
+
+// F3 - Mission Header
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+class Header {
+    gameType = Coop;
+    minPlayers = 1;
+    maxPlayers = 405;
+};
+
+// ============================================================================================
+
 // Pabst - Spectator
 #include "pabst\gui_common.hpp"
 #include "pabst\gui_spectator.hpp"
@@ -35,27 +56,6 @@ class Extended_InitPost_EventHandlers {
 };
 
 
-// F3 - Mission Header
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-class Header {
-    gameType = Coop;
-    minPlayers = 1;
-    maxPlayers = 405;
-};
-
-// ============================================================================================
-
-// F3 - Loading Screen
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3 Mission Development Framework - Modified by BourbonWarfare.com";
-author = "*** Insert mission author name here. ***";
-loadScreen = "bwbannersmall.jpg";
-
-// ============================================================================================
-
 // F3 - Debug Console
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -73,13 +73,11 @@ respawnTemplates[] = {"PabstSpectator"};
 
 // ============================================================================================
 
-// ============================================================================================
-
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 class Params {
-    // ============================================================================================
+
 
     // F3 - Mission Conditions Selector
     // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
