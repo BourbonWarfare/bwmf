@@ -73,11 +73,11 @@ switch (_unitfaction) do {
     case "rhs_faction_msv": {
         _units = [
         ["UnitMSV_ASL_VD","AV"],
-        ["UnitMSV_BSL_VD","BV"],
-        ["UnitMSV_CSL_VD","CV"],
-        ["UnitMSV_DSL_VD","DV"],
-        ["UnitMSV_ESL_VD","EV"],
-        ["UnitMSV_FSL_VD","FV"]
+        ["UnitMSV_B1_VD","BV"],
+        ["UnitMSV_C1_VD","CV"],
+        ["UnitMSV_D1_VD","DV"],
+        ["UnitMSV_E1_VD","EV"],
+        ["UnitMSV_F1_VD","FV"]
 
         ];
     };
