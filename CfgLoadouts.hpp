@@ -881,7 +881,7 @@ class rhs_faction_msv {
 		linkedItems[] += {"Binocular"};
 		
 		};
-		class rhs_msv_medic_F : rhs_msv_rifleman // Medic
+		class rhs_msv_medic : rhs_msv_rifleman // Medic
 		{
 			vest[] = {"rhs_6b23_medic"}; /// randomized
 			weapons[] = {MSV_CARBINE};
