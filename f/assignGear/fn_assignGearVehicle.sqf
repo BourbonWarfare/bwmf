@@ -66,9 +66,7 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     {
         _amt = parseNumber (_arr select 1);
     };
-    for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-        _theVehicle addItemCargoGlobal [_classname,_amt];;
-    };
+    _theVehicle addItemCargoGlobal [_classname,_amt];;
 } foreach _transportItems;
 // ====================================================================================
 // _transportItems
@@ -80,7 +78,5 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     {
         _amt = parseNumber (_arr select 1);
     };
-    for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-        _theVehicle addWeaponCargoGlobal [_classname,_amt];
-    };
+    _theVehicle addWeaponCargoGlobal [_classname,_amt];
 } foreach _transportWeapons;
