@@ -44,13 +44,16 @@ class CfgLoadouts {
 		#define WEST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
         class Car {
-            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Tank {
-            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Helicopter {
-            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };       
         class Plane {
             TransportMagazines[] = {};
@@ -313,10 +316,12 @@ class ind_f {
 		#define IND_PISTOL_MAG "CUP_18Rnd_9x19_Phantom:2"
 		
 		class Car {
-            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Tank {
-            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Helicopter {
             TransportMagazines[] = {};
@@ -574,10 +579,12 @@ class ind_f {
 		#define EAST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
 class Car {
-            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Tank {
-            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Helicopter {
             TransportMagazines[] = {};
@@ -845,13 +852,15 @@ class rhs_faction_msv {
 		#define MSV_PISTOL_MAG "rhs_mag_9x19_17:2"
 		
 		class Car {
-            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Tank {
-            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Helicopter {
-            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {};
         };       
         class Plane {
             TransportMagazines[] = {};
@@ -1080,7 +1089,8 @@ class rhs_faction_msv {
 class rhs_faction_vvs {
 
 	    class Helicopter {
-            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG};
+            TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };
 
 	class rhs_pilot_transport_heli // Pilot
