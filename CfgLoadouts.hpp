@@ -1,6 +1,6 @@
 class CfgLoadouts {
 
-	class blu_f {
+class blu_f {
 		//Radios
 		#define TF_defaultWestBackpack  "tf_rt1523g_big_rhs"
 		//Rifle
@@ -225,15 +225,9 @@ class CfgLoadouts {
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
 		};
-		class B_helicrew_F // Pilot
+		class B_helicrew_F : B_Helipilot_F // Pilot
 		{
-			uniform[] = {"U_B_HeliPilotCoveralls"};  /// randomized
-			vest[] = {"V_TacVest_blk"}; /// randomized
-			headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
-			weapons[] = {WEST_SMG}; /// randomized
-			magazines[] = {WEST_SMG_MAG,"SmokeShell:2"};
-			items[] = {"AGM_Bandage:3","AGM_Morphine"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
+			
 		};
 		class B_crew_F // Crew
 		{
@@ -534,7 +528,7 @@ class ind_f {
 		};
 		
 	};
-	class opf_f {
+class opf_f {
 		//Radios
 		#define TF_defaultWestBackpack  "tf_anprc155"
 		//Rifle
@@ -578,7 +572,7 @@ class ind_f {
 		#define EAST_PISTOL "hgun_Pistol_heavy_01_F"
 		#define EAST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
-class Car {
+		class Car {
             TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG};
             TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };      
@@ -1093,7 +1087,7 @@ class rhs_faction_vvs {
             TransportItems[] = {"AGM_Bandage:12","AGM_Morphine:4"};
         };
 
-	class rhs_pilot_transport_heli // Pilot
+		class rhs_pilot_transport_heli // Pilot
 		{
 			uniform[] = {"rhs_uniform_df15"};  /// randomized
 			vest[] = {"V_TacVest_blk"}; /// randomized
