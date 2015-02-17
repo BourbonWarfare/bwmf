@@ -4,18 +4,17 @@
 // ====================================================================================
 _unit = _this select 0;
 
-if (!local _unit) exitWith {};
-
-if (_unit getVariable ["F_gearAssigned", false]) exitWith {}; //if already assigned, exit
-_unit setVariable ["F_gearAssigned", true, true];
+if (!(local _unit)) exitWith {};
 
 _faction = tolower (faction _unit);
-_loadout = _unit getVariable ["F_Gear", (typeOf _unit)];  //Check variable f_gear, otherwise default to typeof
+//Check variable f_gear, otherwise default to typeof
+_loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
 
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if(!isClass(_path)) exitWith {
-	systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+    _unit getVariable ["f_var_assignGear_done", true, true];
+    systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
 _uniforms = getArray(_path >> "uniform");
@@ -32,9 +31,12 @@ _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
 
 
-removeBackpack _unit;
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
+removeHeadgear _unit;
+removeUniform _unit;
+removeVest _unit;
+removeBackpack _unit;
 removeAllItemsWithMagazines _unit;
 
 // ====================================================================================
@@ -49,55 +51,55 @@ clearAllItemsFromBackpack _unit;
 
 // Backpack Items
 {
-	_arr = [_x,":"] call BIS_fnc_splitString;
-	if ((count _arr) > 0) then {
-		_classname = _arr select 0;
-		_amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-		for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-			if (_unit canAddItemToBackpack _classname) then {
-				_unit addItemToBackpack _classname;
-			} else {
-				_unit addItem _classname;
-			};
-		};
-	};
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    if ((count _arr) > 0) then {
+        _classname = _arr select 0;
+        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+            if (_unit canAddItemToBackpack _classname) then {
+                _unit addItemToBackpack _classname;
+            } else {
+                _unit addItem _classname;
+            };
+        };
+    };
 } foreach _backpackItems;
 
 // ====================================================================================
 // Magazines
 {
-	_arr = [_x,":"] call BIS_fnc_splitString;
-	if ((count _arr) > 0) then {
-		_classname = _arr select 0;
-		_amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-		_unit addMagazines [_classname, _amt];
-	};
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    if ((count _arr) > 0) then {
+        _classname = _arr select 0;
+        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+        _unit addMagazines [_classname, _amt];
+    };
 } foreach _magazines;
 // ====================================================================================
 // Items
 {
-	_arr = [_x,":"] call BIS_fnc_splitString;
-	if ((count _arr) > 0) then {
-		_classname = _arr select 0;
-		_amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-		for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-			_unit additem _classname;
-		};
-	};
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    if ((count _arr) > 0) then {
+        _classname = _arr select 0;
+        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+            _unit additem _classname;
+        };
+    };
 } foreach _items;
 {
-	_arr = [_x,":"] call BIS_fnc_splitString;
-	if ((count _arr) > 0) then {
-		_classname = _arr select 0;
-		_amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-		if ("Binocular" in ([(configFile >> "CfgWeapons" >> _classname), true] call BIS_fnc_returnParents)) then {
-			_unit addWeapon _classname;
-		} else {
-			for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-				_unit linkItem _classname;
-			};
-		};
-	};
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    if ((count _arr) > 0) then {
+        _classname = _arr select 0;
+        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+        if ("Binocular" in ([(configFile >> "CfgWeapons" >> _classname), true] call BIS_fnc_returnParents)) then {
+            _unit addWeapon _classname;
+        } else {
+            for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+                _unit linkItem _classname;
+            };
+        };
+    };
 } foreach _linkedItems;
 
 // ====================================================================================
@@ -109,15 +111,16 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
 // ====================================================================================
 // attachments
 {
-	_arr = [_x,":"] call BIS_fnc_splitString;
-	if ((count _arr) > 0) then {
-		_classname = _arr select 0;
-		_amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-		for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-			_unit addPrimaryWeaponItem _classname;
-			_unit addSecondaryWeaponItem _classname;
-			_unit addHandgunItem _classname;
-		};
-	};
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    if ((count _arr) > 0) then {
+        _classname = _arr select 0;
+        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
+            _unit addPrimaryWeaponItem _classname;
+            _unit addSecondaryWeaponItem _classname;
+            _unit addHandgunItem _classname;
+        };
+    };
 } foreach _attachments;
 
+_unit setVariable ["f_var_assignGear_done", true, true];

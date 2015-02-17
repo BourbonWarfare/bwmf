@@ -88,7 +88,6 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="";
 		overviewText="*** Insert mis58sion description here. ***";
 		resistanceWest=0;
 		startWeather=0;
@@ -117,7 +116,7 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={2116.6794,5,634.69971};
+					position[]={2119.4241,5,632.95117};
 					id=0;
 					side="WEST";
 					vehicle="B_officer_F";
@@ -131,7 +130,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={2118.324,5,631.81006};
+					position[]={2118.7273,5,632.36816};
 					id=1;
 					side="WEST";
 					vehicle="B_medic_F";
@@ -139,12 +138,12 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_Coy_M";
-					init="GrpNATO_Coy = group this; ";
+					init="GrpNATO_Coy = group this;";
 					description="NATO Company Medic";
 				};
 				class Item2
 				{
-					position[]={2121.7253,5,631.28955};
+					position[]={2120.3215,5,632.22852};
 					id=2;
 					side="WEST";
 					vehicle="B_officer_F";
@@ -152,7 +151,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_CoyXO";
-					init="GrpNATO_Coy = group this; ";
+					init="GrpNATO_Coy = group this;";
 					description="NATO Company Executive Officer";
 				};
 			};
@@ -5630,7 +5629,7 @@ class Mission
 					position[]={493.51971,5,502.07782};
 					class args
 					{
-						items=12;
+						items=15;
 						class Item0
 						{
 							value="1.2";
@@ -5702,6 +5701,24 @@ class Mission
 							value="1";
 							parentCls="AGM_ModuleMedical";
 							typeName="EnableOverdosing";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="AGM_ModuleMedical";
+							typeName="RequireMEDEVAC";
+						};
+						class Item13
+						{
+							value="1";
+							parentCls="AGM_ModuleMedical";
+							typeName="AutomaticWakeup";
+						};
+						class Item14
+						{
+							value="0";
+							parentCls="AGM_ModuleMedical";
+							typeName="DisableScreams";
 						};
 					};
 					id=353;
