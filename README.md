@@ -1,9 +1,10 @@
-BWMF Version 4.0 RC1
--New gear loadouts based on .hpp
--Increased Blufor to company level
--Added Russian company
--New group markers based on drawicon3d
--Several other performance improvements, cleanup, etc.
+## BWMF Version 4.0 RC1 ##
+
+*New gear loadouts based on .hpp
+*Increased Blufor to company level
+*Added Russian company
+*New group markers based on drawicon3d
+*Several other performance improvements, cleanup, etc.
 
 Sorry Fer, I cut out F2/BAF changelogs to save space. (Please don't hurt me.) If people are interested they can be found at https://github.com/ferstaberinde/F3
 
