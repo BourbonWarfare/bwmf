@@ -44,13 +44,13 @@ class CfgLoadouts {
 		#define WEST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
         class Car {
-            TransportMagazines[] = {WEST_CARBINE_MAG, WEST_AR_MAG};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Tank {
-            TransportMagazines[] = {};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
         };      
         class Helicopter {
-            TransportMagazines[] = {};
+            TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,"AGM_Bandage:12","AGM_Morphine:4"};
         };       
         class Plane {
             TransportMagazines[] = {};
@@ -270,7 +270,7 @@ class CfgLoadouts {
 	};
 class ind_f {
 		//Radios
-		#define TF_defaultIndBackpack  "tf_rt1523g_big_bwmod"
+		#define TF_defaultIndBackpack  "tf_anprc155"
 		//Rifle
 		#define IND_RIFLE "RH_Hk416"
 		#define IND_RIFLE_MAG "RH_30Rnd_556x45_M855A1:8","30Rnd_556x45_Stanag_Tracer_Red:2"
@@ -312,6 +312,22 @@ class ind_f {
 		#define IND_PISTOL "CUP_hgun_Phantom"
 		#define IND_PISTOL_MAG "CUP_18Rnd_9x19_Phantom:2"
 		
+		class Car {
+            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Tank {
+            TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Helicopter {
+            TransportMagazines[] = {};
+        };       
+        class Plane {
+            TransportMagazines[] = {};
+        };     
+        class Ship_F {
+            TransportMagazines[] = {};
+        };
+
 		class I_Soldier_F // rifleman
 		{
 			uniform[] = {"MNP_CombatUniform_ASA_GC", "MNP_CombatUniform_ASA_GC3","MNP_CombatUniform_ASA_GC2"};  /// randomized
@@ -557,6 +573,22 @@ class ind_f {
 		#define EAST_PISTOL "hgun_Pistol_heavy_01_F"
 		#define EAST_PISTOL_MAG "11Rnd_45ACP_Mag:2"
 		
+class Car {
+            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Tank {
+            TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE,EAST_AT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Helicopter {
+            TransportMagazines[] = {};
+        };       
+        class Plane {
+            TransportMagazines[] = {};
+        };     
+        class Ship_F {
+            TransportMagazines[] = {};
+        };
+
 		class O_Soldier_F // rifleman
 		{
 			uniform[] = {"LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01_slv"};  /// randomized
@@ -812,6 +844,22 @@ class rhs_faction_msv {
 		#define MSV_PISTOL "rhs_weap_pya"
 		#define MSV_PISTOL_MAG "rhs_mag_9x19_17:2"
 		
+		class Car {
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Tank {
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,MSV_GLRIFLE_MAG_HE,MSV_AT_MAG,MSV_LAT_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };      
+        class Helicopter {
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };       
+        class Plane {
+            TransportMagazines[] = {};
+        };     
+        class Ship_F {
+            TransportMagazines[] = {};
+        };
+
 		class rhs_msv_rifleman // rifleman
 		{
 			uniform[] = {"rhs_uniform_flora"};  /// randomized
@@ -1030,6 +1078,10 @@ class rhs_faction_msv {
 	};	
 
 class rhs_faction_vvs {
+
+	    class Helicopter {
+            TransportMagazines[] = {MSV_RIFLE_MAG,MSV_RIFLE_MAG,MSV_CARBINE_MAG,MSV_AR_MAG,MSV_AR_MAG,"AGM_Bandage:12","AGM_Morphine:4"};
+        };
 
 	class rhs_pilot_transport_heli // Pilot
 		{
