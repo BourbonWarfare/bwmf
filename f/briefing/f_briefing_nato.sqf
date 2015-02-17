@@ -47,7 +47,7 @@ _sit = player createDiaryRecord ["diary", ["Situation","
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+*** Insert information about enemy forces here. (Uniform, etc.)***
 <br/><br/>
 "]];
 
