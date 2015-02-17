@@ -66,7 +66,7 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     {
         _amt = parseNumber (_arr select 1);
     };
-    _theVehicle addItemCargoGlobal [_classname,_amt];;
+    _theVehicle addItemCargoGlobal [_classname,_amt];
 } foreach _transportItems;
 // ====================================================================================
 // _transportItems
