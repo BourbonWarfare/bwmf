@@ -25,10 +25,6 @@ f_script_briefing = [] execVM "f\briefing\briefing.sqf";
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 
-// F3 - Fireteam Member Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] spawn f_fnc_SetLocalFTMemberMarkers;
-
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT

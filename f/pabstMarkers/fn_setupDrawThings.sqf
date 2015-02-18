@@ -1,18 +1,7 @@
 #include "defines_unitsAndGroups.hpp"
 
-_factionMap = [
-["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],
-// ["blu_f"],
-["ind_f"],
-["opf_f"],
-["rhs_faction_msv", "rhs_faction_vvs"]
-];
-
-_drawNonPlayerGroups = true;
 
 F_Markers_thingsToDraw = [];
-
-if ((player != player) || {!alive player}) exitWith {};
 
 _playerFaction = toLower (faction player);
 _showTheseFactions = [];
@@ -20,7 +9,7 @@ _showTheseFactions = [];
     if (_playerFaction in _x) exitWith {
         _showTheseFactions = _x;
     };
-} forEach _factionMap;
+} forEach F_Markers_factionMap;
 
 
 {
@@ -44,7 +33,7 @@ _showTheseFactions = [];
 
     _groupFaction = toLower (faction (leader _x));
     if (_groupFaction in _showTheseFactions) then {
-        if (_drawNonPlayerGroups || {({isPlayer _x} count (units _x)) > 0}) then {
+        if (F_Markers_drawNonPlayerGroups || {({isPlayer _x} count (units _x)) > 0}) then {
             F_Markers_thingsToDraw pushBack _x;
             //If it doesn't have settings, just give a default:
             if ((_x getVariable ["f_var_drawSettings", []]) isEqualTo []) then {
@@ -60,8 +49,7 @@ _showTheseFactions = [];
     if (!isNull _unit) then {
         _unitFaction = toLower (faction _unit);
         if (_unitFaction in _showTheseFactions) then {
-            _settings = _unit getVariable ["f_var_drawSettings", []];
-            if ((count _settings) == 0) then {
+            if ((_unit getVariable ["f_var_drawSettings", []]) isEqualTo []) then {
                 _shortName = (_x select 1);
                 _style = [_shortName] call F_Markers_fnc_getGroupMarkerStyle;
                 _unit setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [], -1000]];

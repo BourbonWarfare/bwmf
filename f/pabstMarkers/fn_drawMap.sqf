@@ -1,5 +1,7 @@
 _mapControl = _this select 0;
 
+if ((player != player) || {!alive player}) exitWith {};
+
 if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
     [] call F_Markers_fnc_setupDrawThings;
     F_Markers_lastUpdate = diag_tickTime;
@@ -32,3 +34,23 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
         _mapControl drawIcon [_texture,_color,_pos,_sizeX,_sizeY,0,_text,1,_textsize,'TahomaB',"right"];
     };
 } foreach F_Markers_thingsToDraw;
+
+
+#define TRI_MARKER "\A3\ui_f\data\map\markers\military\start_CA.paa"
+if((ctrlMapScale _mapControl) < 0.5) then {
+    {
+        _color = switch (assignedTeam _x) do {
+        case "RED": {[0.9,0,0,1]};
+        case "YELLOW": {[0.9,0,0,1]};
+        case "GREEN": {[0,0.8,0,1]};
+        case "BLUE": {[0,0,1,1]};
+            default {[1,1,1,1]}
+        };
+        _textsize = if((ctrlMapScale _mapControl) < 0.005) then {0.02} else {0};
+        _pos = getPos _x;
+        _dir = getDir _x;
+        _text = if (alive _x) then {name _x} else {""};
+        _mapControl drawIcon [TRI_MARKER, _color, _pos, 12, 12, _dir, _text, 1, _textsize, 'TahomaB', "left"];
+
+    } forEach (units (group player));
+};

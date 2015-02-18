@@ -189,12 +189,6 @@ class CfgFunctions {
             class SetFog {};
             class SetWeather {};
         };
-        class FTMemberMarkers {
-            file = "f\FTMemberMarkers";
-            class SetLocalFTMemberMarkers {};
-            class GetMarkerColor {};
-            class LocalFTMarkerSync {};
-        };
         class nametag {
             file = "f\nametag";
             class drawNameTag {};

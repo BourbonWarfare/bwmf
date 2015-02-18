@@ -1,6 +1,24 @@
-F_Markers_lastUpdate = -1000;
-F_Markers_thingsToDraw = [];
+//Marker Settings:
+
+//How often the map markers are updated:
 F_Markers_delay = 3;
+
+//Set to false to only show markers with players in them
+F_Markers_drawNonPlayerGroups = true;
+
+//Faction map, to show other faction's markers, but them in the same array
+F_Markers_factionMap = [
+["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],
+// ["blu_f"],
+["ind_f"],
+["opf_f"],
+["rhs_faction_msv", "rhs_faction_vvs"]
+];
+
+
+//====================================Internal Variables====================================
+F_Markers_thingsToDraw = [];
+F_Markers_lastUpdate = -1000;
 
 if (!hasInterface) exitWith {};
 
@@ -40,7 +58,7 @@ if (!hasInterface) exitWith {};
 
     [12] call _fnc_installMapEvents;
 
-    waitUntil {sleep 1;!isNull (uiNamespace getVariable "RscMiniMap")};
+    waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
     ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_fnc_drawMap}];
     // systemChat "GPS Added";
 };
