@@ -21,10 +21,6 @@ enableSentences false;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_briefing = [] execVM "f\briefing\briefing.sqf";
 
-// F3 - F3 Folk ARPS Group IDs
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
-
 // F3 - Buddy Team Colours
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
@@ -32,10 +28,6 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // F3 - Fireteam Member Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 [] spawn f_fnc_SetLocalFTMemberMarkers;
-
-// F3 - F3 Folk ARPS Group Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_initGroupMarkers.sqf";
 
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
