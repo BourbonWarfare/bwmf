@@ -51,6 +51,7 @@ _showTheseFactions = [];
 {
     _unit = missionNameSpace getVariable [(_x select 0), objNull];
     if (!isNull _unit) then {
+        systemChat format ["Found %1", _unit];
         _unitFaction = toLower (faction _unit);
         if (_unitFaction in _showTheseFactions) then {
 
@@ -60,7 +61,7 @@ _showTheseFactions = [];
                 _style = [_shortName] call F_fnc_getGroupMarkerStyle;
                 _unit setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [], -1000]];
             };
-            f_var_drawSettings pushBack _unit;
+            F_Markers_thingsToDraw pushBack _unit;
         };
     };
 } foreach UNIT_MARKERS;
