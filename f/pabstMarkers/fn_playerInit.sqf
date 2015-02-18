@@ -1,17 +1,17 @@
-F_marker_updateTicks = 999;
-F_marker_thingsToDraw = [];
-
+F_Markers_lastUpdate = -1000;
+F_Markers_thingsToDraw = [];
+F_Markers_delay = 3;
 
 if (!hasInterface) exitWith {};
 
 [] spawn {
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
-    
+
     _fnc_installMapEvents = {
         _d = _this select 0;
-       systemChat format ["Installing Draw EH on %1", _d]; 
-        ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {[] call F_fnc_drawMap;}];
+        systemChat format ["Installing Draw EH on %1", _d];
+        ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
     };
 
     // Wait until the briefing map is detected
@@ -24,7 +24,6 @@ if (!hasInterface) exitWith {};
 
     if (isNull findDisplay 12) then {
         // Install event handlers on the map control of the briefing screen (control = 51)
-        GVAR(drawing_syncMarkers) = true;
         if (!isNull findDisplay 52) then {
             [52] call _fnc_installMapEvents;
         } else {

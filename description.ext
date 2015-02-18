@@ -32,6 +32,7 @@ class Header {
 class Extended_InitPost_EventHandlers {
     class CAManBase {
         class AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
     };
     class Car {
         class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
@@ -118,7 +119,7 @@ class Params {
         title = "DAC Debug";
         values[] = {0,1};
         texts[] = {"Off","On"};
-        default = 1;
+        default = 0;
         code = "f_param_dacdebug = %1";
     };
 
@@ -150,6 +151,16 @@ class CfgRespawnTemplates {
 
 class CfgFunctions {
 #include "ws_fnc\config.hpp"
+
+    class F_Markers {
+        class F_Markers {
+            file = "f\pabstMarkers";
+            class drawMap {};
+            class playerInit {};
+            class serverSetupGroupID {};
+            class setupDrawThings {};
+        };
+    };
 
     class F {  // Defines the "owner"
         class Pabst {

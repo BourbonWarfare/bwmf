@@ -49,7 +49,7 @@ f_var_viewDistance_default = 2500;
 
 // F3 - ORBAT Notes
 // Credits: PabstMirror
-[] execVM "f\briefing\f_orbatNotes.sqf";
+// [] execVM "f\briefing\f_orbatNotes.sqf";
 
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -68,3 +68,4 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // BWMF: DAC Debug Params
 [] execVM "DAC\bwmf_dacParams.sqf";
 
+[] call F_Markers_fnc_playerInit;
