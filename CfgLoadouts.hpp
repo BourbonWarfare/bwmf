@@ -349,8 +349,7 @@ class ind_f {
 			backpack[] = {TF_defaultIndBackpack};
 			magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {IND_PISTOL}; /// randomized
-			items[] = {"Binocular"};
-			linkedItems[] += {"ItemGPS"};
+			linkedItems[] += {"ItemGPS","Binocular"};
 			attachments[] = {"rhsusf_acc_compm4"};
 		};
 		class I_Soldier_SL_F : I_Officer_F // SL
