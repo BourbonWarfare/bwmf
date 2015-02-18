@@ -368,8 +368,7 @@ class ind_f {
 			weapons[] = {IND_GLRIFLE};
 			headgear[] = {"H_HelmetB_plain_mcamo","MNP_Helmet_OD"}; /// randomized
 			magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
-			items[] = {"Binocular"};
-			linkedItems[] += {"ItemGPS"};
+			linkedItems[] += {"ItemGPS","Binocular"};
 			attachments[] = {"rhsusf_acc_compm4"};
 		};
 		class I_Soldier_AR_F : I_Soldier_F // AR
@@ -385,7 +384,7 @@ class ind_f {
 			
 			backpackItems[] = {IND_AR_MAG2};
 			attachments[] = {"RH_ta01nsn"};	
-			items[] = {"Binocular"};				
+			linkeditems[] += {"Binocular"};				
 			
 		};
 		class I_Soldier_LAT_F : I_Soldier_F // RAT
@@ -416,7 +415,7 @@ class ind_f {
 		{
 			
 			backpackItems[] = {IND_MMG_MAG};
-			items[] = {"Rangefinder"};			
+			linkeditems[] += {"Rangefinder"};			
 			
 		};
 		class I_soldier_AT_F : I_Soldier_F // MAT Gunner
@@ -432,7 +431,7 @@ class ind_f {
 		{
 			backpack[] = {"B_Carryall_oli"};
 			backpackItems[] = {IND_MAT_MAG};
-			items[] = {"Rangefinder"};			
+			linkeditems[] += {"Rangefinder"};			
 			
 		};
 		class I_soldier_AA_F : I_Soldier_F // SAM Gunner
@@ -447,7 +446,7 @@ class ind_f {
 		{
 			
 			backpackItems[] = {IND_SAM_MAG};	
-			items[] = {"Rangefinder"};		
+			linkeditems[] += {"Rangefinder"};		
 			
 		};
 		class I_support_Mort_F : I_Soldier_F // Mortar Gunner
@@ -461,7 +460,7 @@ class ind_f {
 		{
 			
 			backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-			items[] += {"Rangefinder"};				
+			linkeditems[] += {"Rangefinder"};				
 			
 		};
 		class I_spotter_F // Spotter
@@ -469,8 +468,8 @@ class ind_f {
 			uniform[] = {"U_BG_Guerrilla_6_1"};  /// randomized
 			weapons[] = {IND_SPOTTER}; /// randomized
 			magazines[] = {IND_SPOTTER_MAG,"SmokeShell:2"};
-			items[] = {"AGM_Bandage:3","AGM_Morphine","LaserDesignator"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
+			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","LaserDesignator"};
 			attachments[] = {"RH_eotech553mag"};
 			
 		};
