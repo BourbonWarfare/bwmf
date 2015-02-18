@@ -10,7 +10,7 @@ if (!hasInterface) exitWith {};
 
     _fnc_installMapEvents = {
         _d = _this select 0;
-        systemChat format ["Installing Draw EH on %1", _d];
+        // systemChat format ["Installing Draw EH on %1", _d];
         ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
     };
 
@@ -42,5 +42,5 @@ if (!hasInterface) exitWith {};
 
     waitUntil {sleep 1;!isNull (uiNamespace getVariable "RscMiniMap")};
     ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_fnc_drawMap}];
-    systemChat "GPS Added";
+    // systemChat "GPS Added";
 };
