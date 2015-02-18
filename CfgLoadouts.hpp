@@ -530,7 +530,7 @@ class ind_f {
 	};
 class opf_f {
 		//Radios
-		#define TF_defaultWestBackpack  "tf_anprc155"
+		#define TF_defaultEastBackpack  "tf_anprc155"
 		//Rifle
 		#define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
 		#define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -610,7 +610,7 @@ class opf_f {
 			weapons[] = {EAST_GLRIFLE};
 			//vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
 			//headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-			//backpack[] = {TF_defaultEASTBackpack};
+			backpack[] = {TF_defaultEastBackpack};
 			magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {EAST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Binocular"};
