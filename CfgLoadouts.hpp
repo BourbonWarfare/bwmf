@@ -751,7 +751,7 @@ class opf_f {
 		};
 		class O_Helipilot_F // Pilot
 		{
-			uniform[] = {"U_O_HeliPilotCoveralls"};  /// randomized
+			uniform[] = {"U_O_PilotCoveralls"};  /// randomized
 			vest[] = {"V_TacVest_blk"}; /// randomized
 			headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
 			weapons[] = {EAST_SMG}; /// randomized
