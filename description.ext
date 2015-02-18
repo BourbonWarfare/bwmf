@@ -156,6 +156,7 @@ class CfgFunctions {
         class F_Markers {
             file = "f\pabstMarkers";
             class drawMap {};
+            class getGroupMarkerStyle {};
             class playerInit {};
             class serverSetupGroupID {};
             class setupDrawThings {};
@@ -182,23 +183,11 @@ class CfgFunctions {
             class assignGearMan {};
             class assignGearVehicle {};
         };
-        class setGroupID {
-            file = "f\setGroupID";
-            class setGroupID {};
-        };
         class missionConditions {
             file = "f\missionConditions";
             class SetTime {};
             class SetFog {};
             class SetWeather {};
-        };
-        class groupMarkers {
-            file = "f\groupMarkers";
-            class addGroupMarker {};
-            class drawGroupMarkers {};
-            class getGroupMarkerStyle {};
-            class findGroupMarkerID {};
-            class setupGroupMarkers {};
         };
         class FTMemberMarkers {
             file = "f\FTMemberMarkers";
