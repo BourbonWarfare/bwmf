@@ -6028,7 +6028,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_B1_VG";
+					text="UnitMSV_BSL_VG";
 					init="GrpMSV_BSL = group this;  ";
 					description="Russian Bravo Squad Gunner";
 				};
@@ -6043,7 +6043,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_B1_VD";
+					text="UnitMSV_BSL_VD";
 					init="GrpMSV_BSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Bravo Squad Driver";
 				};
@@ -6073,7 +6073,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_B2_AR";
+					text="UnitMSV_BSL_AR";
 					init="GrpMSV_BSL = group this;  ";
 					description="Russian Bravo Squad Marksman";
 				};
@@ -6101,7 +6101,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_B2_R";
+					text="UnitMSV_BSL_R";
 					init="GrpMSV_BSL = group this;  ";
 					description="Russian Bravo Squad Automatic Rifleman";
 				};
@@ -6115,7 +6115,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_B1_GR";
+					text="UnitMSV_BSL_GR";
 					init="GrpMSV_BSL = group this;  ";
 					description="Russian Bravo Squad Grenadier";
 				};
@@ -6129,7 +6129,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_B2_AGR";
+					text="UnitMSV_BSL_AGR";
 					init="GrpMSV_BSL = group this;  ";
 					description="Russian Bravo Squad Assistant Grenadier";
 				};
@@ -6168,7 +6168,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_C1_VG";
+					text="UnitMSV_CSL_VG";
 					init="GrpMSV_CSL = group this;  ";
 					description="Russian Charlie Squad Gunner";
 				};
@@ -6183,7 +6183,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_C1_VD";
+					text="UnitMSV_CSL_VD";
 					init="GrpMSV_CSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Charlie Squad Driver";
 				};
@@ -6213,7 +6213,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_C2_AR";
+					text="UnitMSV_CSL_AR";
 					init="GrpMSV_CSL = group this;  ";
 					description="Russian Charlie Squad Rifleman";
 				};
@@ -6241,7 +6241,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_C2_R";
+					text="UnitMSV_CSL_R";
 					init="GrpMSV_CSL = group this;  ";
 					description="Russian Charlie Squad Automatic Rifleman";
 				};
@@ -6255,7 +6255,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_C1_GR";
+					text="UnitMSV_CSL_GR";
 					init="GrpMSV_CSL = group this;  ";
 					description="Russian Charlie Squad Grenadier";
 				};
@@ -6269,7 +6269,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_C2_AGR";
+					text="UnitMSV_CSL_AGR";
 					init="GrpMSV_CSL = group this;  ";
 					description="Russian Charlie Squad Assistant Grenadier";
 				};
@@ -6346,7 +6346,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_D1_VG";
+					text="UnitMSV_DSL_VG";
 					init="GrpMSV_DSL = group this;  ";
 					description="Russian Delta Squad Gunner";
 				};
@@ -6361,7 +6361,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_D1_VD";
+					text="UnitMSV_DSL_VD";
 					init="GrpMSV_DSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Delta Squad Driver";
 				};
@@ -6391,7 +6391,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_D2_AR";
+					text="UnitMSV_DSL_AR";
 					init="GrpMSV_DSL = group this;  ";
 					description="Russian Delta Squad Rifleman";
 				};
@@ -6419,7 +6419,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_D2_R";
+					text="UnitMSV_DSL_R";
 					init="GrpMSV_DSL = group this;  ";
 					description="Russian Delta Squad Automatic Rifleman";
 				};
@@ -6433,7 +6433,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_D1_GR";
+					text="UnitMSV_DSL_GR";
 					init="GrpMSV_DSL = group this;  ";
 					description="Russian Delta Squad Grenadier";
 				};
@@ -6447,7 +6447,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_D2_AGR";
+					text="UnitMSV_DSL_AGR";
 					init="GrpMSV_DSL = group this;  ";
 					description="Russian Delta Squad Assistant Grenadier";
 				};
@@ -6486,7 +6486,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_E1_VG";
+					text="UnitMSV_ESL_VG";
 					init="GrpMSV_ESL = group this;  ";
 					description="Russian Echo Squad Gunner";
 				};
@@ -6501,7 +6501,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_E1_VD";
+					text="UnitMSV_ESL_VD";
 					init="GrpMSV_ESL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Echo Squad Driver";
 				};
@@ -6531,7 +6531,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_E2_AR";
+					text="UnitMSV_ESL_AR";
 					init="GrpMSV_ESL = group this;  ";
 					description="Russian Echo Squad Marksman";
 				};
@@ -6559,7 +6559,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_E2_R";
+					text="UnitMSV_ESL_R";
 					init="GrpMSV_ESL = group this;  ";
 					description="Russian Echo Squad Automatic Rifleman";
 				};
@@ -6573,7 +6573,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_E1_GR";
+					text="UnitMSV_ESL_GR";
 					init="GrpMSV_ESL = group this;  ";
 					description="Russian Echo Squad Grenadier";
 				};
@@ -6587,7 +6587,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_E2_AGR";
+					text="UnitMSV_ESL_AGR";
 					init="GrpMSV_ESL = group this;  ";
 					description="Russian Echo Squad Assistant Grenadier";
 				};
@@ -6626,7 +6626,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_F1_VG";
+					text="UnitMSV_FSL_VG";
 					init="GrpMSV_FSL = group this;  ";
 					description="Russian Foxtrot Squad Gunner";
 				};
@@ -6641,7 +6641,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_F1_VD";
+					text="UnitMSV_FSL_VD";
 					init="GrpMSV_FSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
 					description="Russian Foxtrot Squad Driver";
 				};
@@ -6670,7 +6670,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitMSV_F2_AR";
+					text="UnitMSV_FSL_AR";
 					init="GrpMSV_FSL = group this;  ";
 					description="Russian Foxtrot Squad Rifleman";
 				};
@@ -6698,7 +6698,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_F2_R";
+					text="UnitMSV_FSL_R";
 					init="GrpMSV_FSL = group this;  ";
 					description="Russian Foxtrot Squad Automatic Rifleman";
 				};
@@ -6712,7 +6712,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_F1_GR";
+					text="UnitMSV_FSL_GR";
 					init="GrpMSV_FSL = group this;  ";
 					description="Russian Foxtrot Squad Grenadier";
 				};
@@ -6726,7 +6726,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitMSV_F2_AGR";
+					text="UnitMSV_FSL_AGR";
 					init="GrpMSV_FSL = group this;  ";
 					description="Russian Foxtrot Squad Assistant Grenadier";
 				};
