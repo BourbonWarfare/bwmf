@@ -124,7 +124,7 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitNATO_CoyCO";
+					text="UnitNATO_Coy_CO";
 					init="GrpNATO_Coy = group this;";
 					description="NATO Company Commander";
 				};
@@ -150,7 +150,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_CoyXO";
+					text="UnitNATO_Coy_XO";
 					init="GrpNATO_Coy = group this;";
 					description="NATO Company Executive Officer";
 				};
@@ -173,7 +173,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitNATO_1PLT";
+					text="UnitNATO_1PLT_CO";
 					init="GrpNATO_1PLT = group this; ";
 					description="NATO 1 Platoon Commander";
 				};
@@ -224,7 +224,7 @@ class Mission
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitNATO_2PLT";
+					text="UnitNATO_2PLT_CO";
 					init="GrpNATO_2PLT = group this; ";
 					description="NATO 2 Platoon Commander";
 				};
@@ -1168,7 +1168,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitOPFOR_CO";
+					text="UnitOPFOR_CO_CO";
 					init="GrpOPFOR_CO = group this; ";
 					description="OPFOR Commander";
 				};
@@ -1229,7 +1229,7 @@ class Mission
 					lock="UNLOCKED";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitOPFOR_DC";
+					text="UnitOPFOR_DC_CO";
 					init="GrpOPFOR_DC = group this; ";
 					description="OPFOR Deputy Commander";
 				};
@@ -2263,7 +2263,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="UnitIND_CO";
+					text="UnitIND_CO_CO";
 					init="GrpIND_CO = group this; ";
 					description="IND Commander";
 				};
@@ -2320,7 +2320,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					text="UnitIND_DC";
+					text="UnitIND_DC_CO";
 					init="GrpIND_DC = group this; ";
 					description="IND Deputy Commander";
 				};
