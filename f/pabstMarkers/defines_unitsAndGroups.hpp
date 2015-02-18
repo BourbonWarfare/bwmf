@@ -1,6 +1,7 @@
 #define UNIT_MARKERS [ \
-    ["UnitNATO_CO_M","COM"], \
-    ["UnitNATO_DC_M","DCM"], \
+    ["UnitNATO_COY_M","COM"], \
+    ["UnitNATO_1PLT_M","P1M"], \
+    ["UnitNATO_2PLT_M","P2M"], \
     ["UnitNATO_ASL_M","AM"], \
     ["UnitNATO_BSL_M","BM"], \
     ["UnitNATO_CSL_M","CM"], \
