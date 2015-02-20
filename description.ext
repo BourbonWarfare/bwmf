@@ -31,28 +31,28 @@ class Header {
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
     class CAManBase {
-        class AssignGear { init = "_this call F_fnc_assignGearMan;"; };
-        class ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
     };
     class Car {
-        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
     };
     class Tank {
-        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
     };
     class Helicopter {
-        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
     };
     class Plane {
-        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
     };
     class Ship_F {
-        class DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
     };
 };
 
@@ -162,12 +162,21 @@ class CfgFunctions {
             class setupDrawThings {};
         };
     };
-
-    class F {  // Defines the "owner"
-        class Pabst {
+    class F_Pabst {
+        class F_Pabst {
             file = "pabst";
             class setupRadioChannels {};
         };
+    };
+    class F_DAC {
+        class F_DAC {
+            file = "DAC";
+            class setupDacParams {};
+        };
+    };
+    
+    
+    class F {  // Defines the "owner"
         class common {  // category
             file = "f\common";
             // Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).

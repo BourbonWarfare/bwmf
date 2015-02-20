@@ -125,7 +125,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_Coy_CO";
-					init="GrpNATO_Coy = group this;";
+					
 					description="NATO Company Commander";
 				};
 				class Item1
@@ -138,7 +138,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_Coy_M";
-					init="GrpNATO_Coy = group this;";
+					
 					description="NATO Company Medic";
 				};
 				class Item2
@@ -151,7 +151,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_Coy_XO";
-					init="GrpNATO_Coy = group this;";
+					
 					description="NATO Company Executive Officer";
 				};
 				class Item3
@@ -164,7 +164,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_COY_UAV";
-					init="GrpNATO_COY = group this;";
+					
 					description="NATO UAV Operator";
 				};
 			};
@@ -187,7 +187,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_1PLT_CO";
-					init="GrpNATO_1PLT = group this; ";
+					
 					description="NATO 1 Platoon Commander";
 				};
 				class Item1
@@ -201,7 +201,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_1PLT_M";
-					init="GrpNATO_1PLT = group this; ";
+					
 					description="NATO 1 Platoon Medic";
 				};
 				class Item2
@@ -215,7 +215,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_1PLT_SGT";
-					init="GrpNATO_1PLT = group this; ";
+					
 					description="NATO 1 Platoon Sergeant";
 				};
 			};
@@ -238,7 +238,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_2PLT_CO";
-					init="GrpNATO_2PLT = group this; ";
+					
 					description="NATO 2 Platoon Commander";
 				};
 				class Item1
@@ -252,7 +252,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_2PLT_M";
-					init="GrpNATO_2PLT = group this; ";
+					
 					description="NATO 2 Platoon Medic";
 				};
 				class Item2
@@ -266,7 +266,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_2PLT_SGT";
-					init="GrpNATO_2PLT = group this; ";
+					
 					description="NATO 2 Platoon Sergeant";
 				};
 			};
@@ -288,7 +288,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_ASL_SL";
-					init="GrpNATO_ASL = group this; ";
+					
 					description="NATO Alpha Squad Leader";
 				};
 				class Item1
@@ -301,7 +301,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
-					init="GrpNATO_ASL = group this; ";
+					
 					description="NATO Alpha Medic";
 				};
 			};
@@ -323,7 +323,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A1_FTL";
-					init="GrpNATO_A1 = group this; ";
+					
 					description="NATO Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -335,7 +335,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AR";
-					init="GrpNATO_A1 = group this; ";
+					
 					description="NATO Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -347,7 +347,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AAR";
-					init="GrpNATO_A1 = group this; ";
+					
 					description="NATO Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -359,7 +359,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AT";
-					init="GrpNATO_A1 = group this; ";
+					
 					description="NATO Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -381,7 +381,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A2_FTL";
-					init="GrpNATO_A2 = group this; ";
+					
 					description="NATO Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -393,7 +393,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AR";
-					init="GrpNATO_A2 = group this; ";
+					
 					description="NATO Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -405,7 +405,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AAR";
-					init="GrpNATO_A2 = group this; ";
+					
 					description="NATO Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -417,7 +417,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AT";
-					init="GrpNATO_A2 = group this; ";
+					
 					description="NATO Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -439,7 +439,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A3_FTL";
-					init="GrpNATO_A3 = group this; ";
+					
 					description="NATO Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -451,7 +451,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AR";
-					init="GrpNATO_A3 = group this; ";
+					
 					description="NATO Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -463,7 +463,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AAR";
-					init="GrpNATO_A3 = group this; ";
+					
 					description="NATO Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -475,7 +475,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AT";
-					init="GrpNATO_A3 = group this; ";
+					
 					description="NATO Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -497,7 +497,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_BSL_SL";
-					init="GrpNATO_BSL = group this; ";
+					
 					description="NATO Bravo Squad Leader";
 				};
 				class Item1
@@ -510,7 +510,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_BSL_M";
-					init="GrpNATO_BSL = group this; ";
+					
 					description="NATO Bravo Medic";
 				};
 			};
@@ -532,7 +532,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B1_FTL";
-					init="GrpNATO_B1 = group this; ";
+					
 					description="NATO Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -544,7 +544,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AR";
-					init="GrpNATO_B1 = group this; ";
+					
 					description="NATO Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -556,7 +556,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AAR";
-					init="GrpNATO_B1 = group this; ";
+					
 					description="NATO Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -568,7 +568,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AT";
-					init="GrpNATO_B1 = group this; ";
+					
 					description="NATO Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -590,7 +590,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B2_FTL";
-					init="GrpNATO_B2 = group this; ";
+					
 					description="NATO Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -602,7 +602,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AR";
-					init="GrpNATO_B2 = group this; ";
+					
 					description="NATO Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -614,7 +614,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AAR";
-					init="GrpNATO_B2 = group this; ";
+					
 					description="NATO Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -626,7 +626,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AT";
-					init="GrpNATO_B2 = group this; ";
+					
 					description="NATO Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -648,7 +648,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B3_FTL";
-					init="GrpNATO_B3 = group this; ";
+					
 					description="NATO Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -660,7 +660,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AR";
-					init="GrpNATO_B3 = group this; ";
+					
 					description="NATO Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -672,7 +672,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AAR";
-					init="GrpNATO_B3 = group this; ";
+					
 					description="NATO Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -684,7 +684,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AT";
-					init="GrpNATO_B3 = group this; ";
+					
 					description="NATO Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -706,7 +706,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_CSL_SL";
-					init="GrpNATO_CSL = group this; ";
+					
 					description="NATO Charlie Squad Leader";
 				};
 				class Item1
@@ -719,7 +719,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_CSL_M";
-					init="GrpNATO_CSL = group this; ";
+					
 					description="NATO Charlie Medic";
 				};
 			};
@@ -741,7 +741,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C1_FTL";
-					init="GrpNATO_C1 = group this; ";
+					
 					description="NATO Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -753,7 +753,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AR";
-					init="GrpNATO_C1 = group this; ";
+					
 					description="NATO Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -765,7 +765,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AAR";
-					init="GrpNATO_C1 = group this; ";
+					
 					description="NATO Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -777,7 +777,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AT";
-					init="GrpNATO_C1 = group this; ";
+					
 					description="NATO Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -799,7 +799,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C2_FTL";
-					init="GrpNATO_C2 = group this; ";
+					
 					description="NATO Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -811,7 +811,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AR";
-					init="GrpNATO_C2 = group this; ";
+					
 					description="NATO Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -823,7 +823,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AAR";
-					init="GrpNATO_C2 = group this; ";
+					
 					description="NATO Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -835,7 +835,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AT";
-					init="GrpNATO_C2 = group this; ";
+					
 					description="NATO Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -857,7 +857,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C3_FTL";
-					init="GrpNATO_C3 = group this; ";
+					
 					description="NATO Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -869,7 +869,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AR";
-					init="GrpNATO_C3 = group this; ";
+					
 					description="NATO Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -881,7 +881,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AAR";
-					init="GrpNATO_C3 = group this; ";
+					
 					description="NATO Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -893,7 +893,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AT";
-					init="GrpNATO_C3 = group this; ";
+					
 					description="NATO Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -915,7 +915,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH1_P";
-					init="GrpNATO_TH1 = group this; ";
+					
 					description="NATO Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -928,7 +928,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH1_CP";
-					init="GrpNATO_TH1 = group this; ";
+					
 					description="NATO Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -941,7 +941,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH1_G1";
-					init="GrpNATO_TH1 = group this; ";
+					
 					description="NATO Transport Helo 1 Crew Chief (Repair)";
 				};
 				class Item3
@@ -954,7 +954,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH1_G2";
-					init="GrpNATO_TH1 = group this; ";
+					
 					description="NATO Transport Helo 1 Gunner";
 				};
 			};
@@ -976,7 +976,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH2_P";
-					init="GrpNATO_TH2 = group this; ";
+					
 					description="NATO Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -989,7 +989,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH2_CP";
-					init="GrpNATO_TH2 = group this; ";
+					
 					description="NATO Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -1002,7 +1002,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH2_G1";
-					init="GrpNATO_TH2 = group this; ; ";
+					
 					description="NATO Transport Helo 2 Crew Chief (Repair)";
 				};
 				class Item3
@@ -1015,7 +1015,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH2_G2";
-					init="GrpNATO_TH2 = group this; ";
+					
 					description="NATO Transport Helo 2 Gunner";
 				};
 			};
@@ -1037,7 +1037,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH3_P";
-					init="GrpNATO_TH3 = group this; ";
+					
 					description="NATO Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -1050,7 +1050,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH3_CP";
-					init="GrpNATO_TH3 = group this; ";
+					
 					description="NATO Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -1063,7 +1063,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH3_G1";
-					init="GrpNATO_TH3 = group this; ";
+					
 					description="NATO Transport Helo 3 Crew Chief (Repair)";
 				};
 				class Item3
@@ -1076,7 +1076,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH3_G2";
-					init="GrpNATO_TH3 = group this; ";
+					
 					description="NATO Transport Helo 3 Gunner";
 				};
 			};
@@ -1098,7 +1098,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH4_P";
-					init="GrpNATO_TH4 = group this; ";
+					
 					description="NATO Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -1111,7 +1111,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH4_CP";
-					init="GrpNATO_TH4 = group this; ";
+					
 					description="NATO Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -1124,7 +1124,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH4_G1";
-					init="GrpNATO_TH4 = group this; ";
+					
 					description="NATO Transport Helo 4 Crew Chief (Repair)";
 				};
 				class Item3
@@ -1137,7 +1137,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH4_G2";
-					init="GrpNATO_TH4 = group this; ";
+					
 					description="NATO Transport Helo 4 Gunner";
 				};
 			};
@@ -1160,7 +1160,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_CO_CO";
-					init="GrpOPFOR_CO = group this; ";
+					
 					description="OPFOR Commander";
 				};
 				class Item1
@@ -1173,7 +1173,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_CO_M";
-					init="GrpOPFOR_CO = group this; ";
+					
 					description="OPFOR Medic";
 				};
 				class Item2
@@ -1186,7 +1186,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_CO_UAV";
-					init="GrpOPFOR_CO = group this; ";
+					
 					description="OPFOR UAV Operator";
 				};
 				class Item3
@@ -1198,7 +1198,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_CO_D";
-					init="GrpOPFOR_CO = group this; ";
+					
 					description="OPFOR Driver (Repair)";
 				};
 			};
@@ -1221,7 +1221,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_DC_CO";
-					init="GrpOPFOR_DC = group this; ";
+					
 					description="OPFOR Deputy Commander";
 				};
 				class Item1
@@ -1235,7 +1235,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_DC_M";
-					init="GrpOPFOR_DC = group this; ";
+					
 					description="OPFOR Medic";
 				};
 				class Item2
@@ -1248,7 +1248,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_DC_UAV";
-					init="GrpOPFOR_DC = group this; ";
+					
 					description="OPFOR UAV Operator";
 				};
 				class Item3
@@ -1260,7 +1260,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_DC_D";
-					init="GrpOPFOR_DC = group this; ";
+					
 					description="OPFOR Driver (Repair)";
 				};
 			};
@@ -1283,7 +1283,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_ASL_SL";
-					init="GrpOPFOR_ASL = group this; ";
+					
 					description="OPFOR Alpha Squad Leader";
 				};
 				class Item1
@@ -1297,7 +1297,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_ASL_M";
-					init="GrpOPFOR_ASL = group this; ";
+					
 					description="OPFOR Alpha Medic";
 				};
 			};
@@ -1320,7 +1320,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_A1_FTL";
-					init="GrpOPFOR_A1 = group this; ";
+					
 					description="OPFOR Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -1333,7 +1333,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A1_AR";
-					init="GrpOPFOR_A1 = group this; ";
+					
 					description="OPFOR Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1346,7 +1346,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A1_AAR";
-					init="GrpOPFOR_A1 = group this; ";
+					
 					description="OPFOR Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1359,7 +1359,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A1_AT";
-					init="GrpOPFOR_A1 = group this; ";
+					
 					description="OPFOR Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -1382,7 +1382,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_A2_FTL";
-					init="GrpOPFOR_A2 = group this; ";
+					
 					description="OPFOR Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -1395,7 +1395,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A2_AR";
-					init="GrpOPFOR_A2 = group this; ";
+					
 					description="OPFOR Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1408,7 +1408,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A2_AAR";
-					init="GrpOPFOR_A2 = group this; ";
+					
 					description="OPFOR Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1421,7 +1421,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A2_AT";
-					init="GrpOPFOR_A2 = group this; ";
+					
 					description="OPFOR Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -1444,7 +1444,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_A3_FTL";
-					init="GrpOPFOR_A3 = group this; ";
+					
 					description="OPFOR Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -1457,7 +1457,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A3_AR";
-					init="GrpOPFOR_A3 = group this; ";
+					
 					description="OPFOR Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1470,7 +1470,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A3_AAR";
-					init="GrpOPFOR_A3 = group this; ";
+					
 					description="OPFOR Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1483,7 +1483,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_A3_AT";
-					init="GrpOPFOR_A3 = group this; ";
+					
 					description="OPFOR Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -1506,7 +1506,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_BSL_SL";
-					init="GrpOPFOR_BSL = group this; ";
+					
 					description="OPFOR Bravo Squad Leader";
 				};
 				class Item1
@@ -1520,7 +1520,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_BSL_M";
-					init="GrpOPFOR_BSL = group this; ";
+					
 					description="OPFOR Bravo Medic";
 				};
 			};
@@ -1543,7 +1543,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_B1_FTL";
-					init="GrpOPFOR_B1 = group this; ";
+					
 					description="OPFOR Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -1556,7 +1556,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B1_AR";
-					init="GrpOPFOR_B1 = group this; ";
+					
 					description="OPFOR Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1569,7 +1569,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B1_AAR";
-					init="GrpOPFOR_B1 = group this; ";
+					
 					description="OPFOR Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1582,7 +1582,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B1_AT";
-					init="GrpOPFOR_B1 = group this; ";
+					
 					description="OPFOR Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -1605,7 +1605,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_B2_FTL";
-					init="GrpOPFOR_B2 = group this; ";
+					
 					description="OPFOR Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -1618,7 +1618,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B2_AR";
-					init="GrpOPFOR_B2 = group this; ";
+					
 					description="OPFOR Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1631,7 +1631,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B2_AAR";
-					init="GrpOPFOR_B2 = group this; ";
+					
 					description="OPFOR Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1644,7 +1644,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B2_AT";
-					init="GrpOPFOR_B2 = group this; ";
+					
 					description="OPFOR Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -1667,7 +1667,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_B3_FTL";
-					init="GrpOPFOR_B3 = group this; ";
+					
 					description="OPFOR Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -1680,7 +1680,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B3_AR";
-					init="GrpOPFOR_B3 = group this; ";
+					
 					description="OPFOR Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1693,7 +1693,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B3_AAR";
-					init="GrpOPFOR_B3 = group this; ";
+					
 					description="OPFOR Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1706,7 +1706,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_B3_AT";
-					init="GrpOPFOR_B3 = group this; ";
+					
 					description="OPFOR Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -1729,7 +1729,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_CSL_SL";
-					init="GrpOPFOR_CSL = group this; ";
+					
 					description="OPFOR Charlie Squad Leader";
 				};
 				class Item1
@@ -1743,7 +1743,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_CSL_M";
-					init="GrpOPFOR_CSL = group this; ";
+					
 					description="OPFOR Charlie Medic";
 				};
 			};
@@ -1766,7 +1766,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_C1_FTL";
-					init="GrpOPFOR_C1 = group this; ";
+					
 					description="OPFOR Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -1779,7 +1779,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C1_AR";
-					init="GrpOPFOR_C1 = group this; ";
+					
 					description="OPFOR Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1792,7 +1792,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C1_AAR";
-					init="GrpOPFOR_C1 = group this; ";
+					
 					description="OPFOR Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1805,7 +1805,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C1_AT";
-					init="GrpOPFOR_C1 = group this; ";
+					
 					description="OPFOR Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -1828,7 +1828,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_C2_FTL";
-					init="GrpOPFOR_C2 = group this; ";
+					
 					description="OPFOR Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -1841,7 +1841,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C2_AR";
-					init="GrpOPFOR_C2 = group this; ";
+					
 					description="OPFOR Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1854,7 +1854,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C2_AAR";
-					init="GrpOPFOR_C2 = group this; ";
+					
 					description="OPFOR Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1867,7 +1867,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C2_AT";
-					init="GrpOPFOR_C2 = group this; ";
+					
 					description="OPFOR Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -1890,7 +1890,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_C3_FTL";
-					init="GrpOPFOR_C3 = group this; ";
+					
 					description="OPFOR Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -1903,7 +1903,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C3_AR";
-					init="GrpOPFOR_C3 = group this; ";
+					
 					description="OPFOR Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1916,7 +1916,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C3_AAR";
-					init="GrpOPFOR_C3 = group this; ";
+					
 					description="OPFOR Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1929,7 +1929,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitOPFOR_C3_AT";
-					init="GrpOPFOR_C3 = group this; ";
+					
 					description="OPFOR Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -1951,7 +1951,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitOPFOR_TH1_P";
-					init="GrpOPFOR_TH1 = group this;  ";
+					
 					description="OPFOR Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -1964,7 +1964,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_TH1_CP";
-					init="GrpOPFOR_TH1 = group this; ";
+					
 					description="OPFOR Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -1986,7 +1986,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_C";
-					init="GrpNATO_IFV1 = group this; ";
+					
 					description="NATO IFV 1 Commander";
 				};
 				class Item1
@@ -1999,7 +1999,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_G";
-					init="GrpNATO_IFV1 = group this; ";
+					
 					description="NATO IFV 1 Gunner";
 				};
 				class Item2
@@ -2011,7 +2011,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_D";
-					init="GrpNATO_IFV1 = group this; ";
+					
 					description="NATO IFV 1 Driver (Repair)";
 				};
 			};
@@ -2033,7 +2033,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_C";
-					init="GrpNATO_IFV2 = group this; ";
+					
 					description="NATO IFV 2 Commander";
 				};
 				class Item1
@@ -2046,7 +2046,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_G";
-					init="GrpNATO_IFV2 = group this; ";
+					
 					description="NATO IFV 2 Gunner";
 				};
 				class Item2
@@ -2058,7 +2058,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_D";
-					init="GrpNATO_IFV2 = group this; ";
+					
 					description="NATO IFV 2 Driver (Repair)";
 				};
 			};
@@ -2080,7 +2080,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_C";
-					init="GrpNATO_IFV3 = group this; ";
+					
 					description="NATO IFV 3 Commander";
 				};
 				class Item1
@@ -2093,7 +2093,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_G";
-					init="GrpNATO_IFV3 = group this; ";
+					
 					description="NATO IFV 3 Gunner";
 				};
 				class Item2
@@ -2105,7 +2105,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_D";
-					init="GrpNATO_IFV3 = group this; ";
+					
 					description="NATO IFV 3 Driver (Repair)";
 				};
 			};
@@ -2127,7 +2127,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_C";
-					init="GrpNATO_IFV4 = group this; ";
+					
 					description="NATO IFV 4 Commander";
 				};
 				class Item1
@@ -2140,7 +2140,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_G";
-					init="GrpNATO_IFV4 = group this; ";
+					
 					description="NATO IFV 4 Gunner";
 				};
 				class Item2
@@ -2152,7 +2152,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_D";
-					init="GrpNATO_IFV4 = group this; ";
+					
 					description="NATO IFV 4 Driver (Repair)";
 				};
 			};
@@ -2174,7 +2174,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_C";
-					init="GrpNATO_TNK1 = group this; ";
+					
 					description="NATO Tank 1 Commander";
 				};
 				class Item1
@@ -2187,7 +2187,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_G";
-					init="GrpNATO_TNK1 = group this; ";
+					
 					description="NATO Tank 1 Gunner";
 				};
 				class Item2
@@ -2199,7 +2199,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_D";
-					init="GrpNATO_TNK1 = group this;";
+					
 					description="NATO Tank 1 Driver (Repair)";
 				};
 			};
@@ -2221,7 +2221,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_AH1_P";
-					init="GrpNATO_AH1 = group this; ";
+					
 					description="NATO Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -2234,7 +2234,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_AH1_CP";
-					init="GrpNATO_AH1 = group this; ";
+					
 					description="NATO Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -2255,7 +2255,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_CO_CO";
-					init="GrpIND_CO = group this; ";
+					
 					description="IND Commander";
 				};
 				class Item1
@@ -2267,7 +2267,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_CO_M";
-					init="GrpIND_CO = group this; ";
+					
 					description="IND Medic";
 				};
 				class Item2
@@ -2279,7 +2279,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_CO_UAV";
-					init="GrpIND_CO = group this; ";
+					
 					description="IND UAV Operator";
 				};
 				class Item3
@@ -2291,7 +2291,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_CO_D";
-					init="GrpIND_CO = group this; ";
+					
 					description="IND Driver (Repair)";
 				};
 			};
@@ -2312,7 +2312,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_DC_CO";
-					init="GrpIND_DC = group this; ";
+					
 					description="IND Deputy Commander";
 				};
 				class Item1
@@ -2324,7 +2324,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_DC_M";
-					init="GrpIND_DC = group this; ";
+					
 					description="IND Medic";
 				};
 				class Item2
@@ -2336,7 +2336,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_DC_UAV";
-					init="GrpIND_DC = group this; ";
+					
 					description="IND UAV Operator";
 				};
 				class Item3
@@ -2348,7 +2348,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_DC_D";
-					init="GrpIND_DC = group this; ";
+					
 					description="IND Driver (Repair)";
 				};
 			};
@@ -2369,7 +2369,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_ASL_SL";
-					init="GrpIND_ASL = group this; ";
+					
 					description="IND Alpha Squad Leader";
 				};
 				class Item1
@@ -2381,7 +2381,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_ASL_M";
-					init="GrpIND_ASL = group this; ";
+					
 					description="IND Alpha Medic";
 				};
 			};
@@ -2403,7 +2403,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_A1_FTL";
-					init="GrpIND_A1 = group this; ";
+					
 					description="IND Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -2415,7 +2415,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A1_AR";
-					init="GrpIND_A1 = group this; ";
+					
 					description="IND Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -2427,7 +2427,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A1_AAR";
-					init="GrpIND_A1 = group this; ";
+					
 					description="IND Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2439,7 +2439,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A1_AT";
-					init="GrpIND_A1 = group this; ";
+					
 					description="IND Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -2461,7 +2461,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_A2_FTL";
-					init="GrpIND_A2 = group this; ";
+					
 					description="IND Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -2473,7 +2473,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A2_AR";
-					init="GrpIND_A2 = group this; ";
+					
 					description="IND Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -2485,7 +2485,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A2_AAR";
-					init="GrpIND_A2 = group this; ";
+					
 					description="IND Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2497,7 +2497,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A2_AT";
-					init="GrpIND_A2 = group this; ";
+					
 					description="IND Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -2519,7 +2519,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_A3_FTL";
-					init="GrpIND_A3 = group this; ";
+					
 					description="IND Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -2531,7 +2531,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A3_AR";
-					init="GrpIND_A3 = group this; ";
+					
 					description="IND Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -2543,7 +2543,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A3_AAR";
-					init="GrpIND_A3 = group this; ";
+					
 					description="IND Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2555,7 +2555,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A3_AT";
-					init="GrpIND_A3 = group this; ";
+					
 					description="IND Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -2576,7 +2576,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_BSL_SL";
-					init="GrpIND_BSL = group this; ";
+					
 					description="IND Bravo Squad Leader";
 				};
 				class Item1
@@ -2588,7 +2588,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_BSL_M";
-					init="GrpIND_BSL = group this; ";
+					
 					description="IND Bravo Medic";
 				};
 			};
@@ -2610,7 +2610,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_B1_FTL";
-					init="GrpIND_B1 = group this; ";
+					
 					description="IND Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -2622,7 +2622,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B1_AR";
-					init="GrpIND_B1 = group this; ";
+					
 					description="IND Bravo 1 Automatic Riflemen";
 				};
 				class Item2
@@ -2634,7 +2634,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B1_AAR";
-					init="GrpIND_B1 = group this; ";
+					
 					description="IND Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2646,7 +2646,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B1_AT";
-					init="GrpIND_B1 = group this; ";
+					
 					description="IND Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -2668,7 +2668,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_B2_FTL";
-					init="GrpIND_B2 = group this; ";
+					
 					description="IND Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -2680,7 +2680,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B2_AR";
-					init="GrpIND_B2 = group this; ";
+					
 					description="IND Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -2692,7 +2692,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B2_AAR";
-					init="GrpIND_B2 = group this; ";
+					
 					description="IND Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2704,7 +2704,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B2_AT";
-					init="GrpIND_B2 = group this; ";
+					
 					description="IND Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -2726,7 +2726,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_B3_FTL";
-					init="GrpIND_B3 = group this; ";
+					
 					description="IND Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -2738,7 +2738,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B3_AR";
-					init="GrpIND_B3 = group this; ";
+					
 					description="IND Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -2750,7 +2750,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B3_AAR";
-					init="GrpIND_B3 = group this; ";
+					
 					description="IND Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2762,7 +2762,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_B3_AT";
-					init="GrpIND_B3 = group this; ";
+					
 					description="IND Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -2783,7 +2783,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_CSL_SL";
-					init="GrpIND_CSL = group this; ";
+					
 					description="IND Charlie Squad Leader";
 				};
 				class Item1
@@ -2795,7 +2795,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_CSL_M";
-					init="GrpIND_CSL = group this; ";
+					
 					description="IND Charlie Medic";
 				};
 			};
@@ -2817,7 +2817,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_C1_FTL";
-					init="GrpIND_C1 = group this; ";
+					
 					description="IND Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -2829,7 +2829,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C1_AR";
-					init="GrpIND_C1 = group this; ";
+					
 					description="IND Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -2841,7 +2841,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C1_AAR";
-					init="GrpIND_C1 = group this; ";
+					
 					description="IND Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2853,7 +2853,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C1_AT";
-					init="GrpIND_C1 = group this; ";
+					
 					description="IND Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -2875,7 +2875,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_C2_FTL";
-					init="GrpIND_C2 = group this; ";
+					
 					description="IND Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -2887,7 +2887,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C2_AR";
-					init="GrpIND_C2 = group this; ";
+					
 					description="IND Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -2899,7 +2899,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C2_AAR";
-					init="GrpIND_C2 = group this; ";
+					
 					description="IND Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2911,7 +2911,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C2_AT";
-					init="GrpIND_C2 = group this; ";
+					
 					description="IND Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -2933,7 +2933,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_C3_FTL";
-					init="GrpIND_C3 = group this; ";
+					
 					description="IND Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -2945,7 +2945,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C3_AR";
-					init="GrpIND_C3 = group this; ";
+					
 					description="IND Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -2957,7 +2957,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C3_AAR";
-					init="GrpIND_C3 = group this; ";
+					
 					description="IND Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2969,7 +2969,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_C3_AT";
-					init="GrpIND_C3 = group this; ";
+					
 					description="IND Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -2991,7 +2991,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitIND_TH1_P";
-					init="GrpIND_TH1 = group this;  ";
+					
 					description="IND Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -3004,7 +3004,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitIND_TH1_CP";
-					init="GrpIND_TH1 = group this; ";
+					
 					description="IND Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -3026,7 +3026,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitIND_TH2_P";
-					init="GrpIND_TH2 = group this;  ";
+					
 					description="IND Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -3039,7 +3039,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitIND_TH2_CP";
-					init="GrpIND_TH2 = group this;  ";
+					
 					description="IND Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -3061,7 +3061,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitOPFOR_TH2_P";
-					init="GrpOPFOR_TH2 = group this;  ";
+					
 					description="OPFOR Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -3074,7 +3074,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_TH2_CP";
-					init="GrpOPFOR_TH2 = group this;  ";
+					
 					description="OPFOR Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -3096,7 +3096,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitOPFOR_TH3_P";
-					init="GrpOPFOR_TH3 = group this;";
+					
 					description="OPFOR Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -3109,7 +3109,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_TH3_CP";
-					init="GrpOPFOR_TH3 = group this; ";
+					
 					description="OPFOR Transport Helo 3 Co-Pilot (Repair)";
 				};
 			};
@@ -3131,7 +3131,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitOPFOR_TH4_P";
-					init="GrpOPFOR_TH4 = group this;  ";
+					
 					description="OPFOR Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -3144,7 +3144,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_TH4_CP";
-					init="GrpOPFOR_TH4 = group this; ";
+					
 					description="OPFOR Transport Helo 4 Co-Pilot (Repair)";
 				};
 			};
@@ -3166,7 +3166,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV1_C";
-					init="GrpOPFOR_IFV1 = group this; ";
+					
 					description="OPFOR IFV 1 Commander";
 				};
 				class Item1
@@ -3179,7 +3179,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV1_G";
-					init="GrpOPFOR_IFV1 = group this; ";
+					
 					description="OPFOR IFV 1 Gunner";
 				};
 				class Item2
@@ -3191,7 +3191,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV1_D";
-					init="GrpOPFOR_IFV1 = group this; ";
+					
 					description="OPFOR IFV 1 Driver (Repair)";
 				};
 			};
@@ -3213,7 +3213,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV2_C";
-					init="GrpOPFOR_IFV2 = group this; ";
+					
 					description="OPFOR IFV 2 Commander";
 				};
 				class Item1
@@ -3226,7 +3226,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV2_G";
-					init="GrpOPFOR_IFV2 = group this; ";
+					
 					description="OPFOR IFV 2 Gunner";
 				};
 				class Item2
@@ -3238,7 +3238,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV2_D";
-					init="GrpOPFOR_IFV2 = group this; ";
+					
 					description="OPFOR IFV 2 Driver (Repair)";
 				};
 			};
@@ -3260,7 +3260,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV3_C";
-					init="GrpOPFOR_IFV3 = group this; ";
+					
 					description="OPFOR IFV 3 Commander";
 				};
 				class Item1
@@ -3273,7 +3273,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV3_G";
-					init="GrpOPFOR_IFV3 = group this; ";
+					
 					description="OPFOR IFV 3 Gunner";
 				};
 				class Item2
@@ -3285,7 +3285,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV3_D";
-					init="GrpOPFOR_IFV3 = group this;  ";
+					
 					description="OPFOR IFV 3 Driver (Repair)";
 				};
 			};
@@ -3307,7 +3307,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV4_C";
-					init="GrpOPFOR_IFV4 = group this;  ";
+					
 					description="OPFOR IFV 4 Commander";
 				};
 				class Item1
@@ -3320,7 +3320,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV4_G";
-					init="GrpOPFOR_IFV4 = group this;  ";
+					
 					description="OPFOR IFV 4 Gunner";
 				};
 				class Item2
@@ -3332,7 +3332,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_IFV4_D";
-					init="GrpOPFOR_IFV4 = group this; ";
+					
 					description="OPFOR IFV 4 Driver (Repair)";
 				};
 			};
@@ -3354,7 +3354,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_TNK1_C";
-					init="GrpOPFOR_TNK1 = group this; ";
+					
 					description="OPFOR Tank 1 Commander";
 				};
 				class Item1
@@ -3367,7 +3367,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_TNK1_G";
-					init="GrpOPFOR_TNK1 = group this;  ";
+					
 					description="OPFOR Tank 1 Gunner";
 				};
 				class Item2
@@ -3379,7 +3379,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_TNK1_D";
-					init="GrpOPFOR_TNK1 = group this;  ";
+					
 					description="OPFOR Tank 1 Driver (Repair)";
 				};
 			};
@@ -3401,7 +3401,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_P";
-					init="GrpOPFOR_AH1 = group this;  ";
+					
 					description="OPFOR Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3414,7 +3414,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitOPFOR_AH1_CP";
-					init="GrpOPFOR_AH1 = group this;  ";
+					
 					description="OPFOR Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -3436,7 +3436,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_IFV1_C";
-					init="GrpIND_IFV1 = group this; ";
+					
 					description="IND IFV 1 Commander";
 				};
 				class Item1
@@ -3449,7 +3449,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_IFV1_G";
-					init="GrpIND_IFV1 = group this; ";
+					
 					description="IND IFV 1 Gunner";
 				};
 				class Item2
@@ -3461,7 +3461,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_IFV1_D";
-					init="GrpIND_IFV1 = group this;  ";
+					
 					description="IND IFV 1 Driver (Repair)";
 				};
 			};
@@ -3483,7 +3483,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_IFV2_C";
-					init="GrpIND_IFV2 = group this; ";
+					
 					description="IND IFV 2 Commander";
 				};
 				class Item1
@@ -3496,7 +3496,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_IFV2_G";
-					init="GrpIND_IFV2 = group this;  ";
+					
 					description="IND IFV 2 Gunner";
 				};
 				class Item2
@@ -3508,7 +3508,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_IFV2_D";
-					init="GrpIND_IFV2 = group this; ";
+					
 					description="IND IFV 2 Driver (Repair)";
 				};
 			};
@@ -3530,7 +3530,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_IFV3_C";
-					init="GrpIND_IFV3 = group this;  ";
+					
 					description="IND IFV 3 Commander";
 				};
 				class Item1
@@ -3543,7 +3543,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_IFV3_G";
-					init="GrpIND_IFV3 = group this; ";
+					
 					description="IND IFV 3 Gunner";
 				};
 				class Item2
@@ -3555,7 +3555,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_IFV3_D";
-					init="GrpIND_IFV3 = group this; ";
+					
 					description="IND IFV 3 Driver (Repair)";
 				};
 			};
@@ -3577,7 +3577,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_IFV4_C";
-					init="GrpIND_IFV4 = group this;  ";
+					
 					description="IND IFV 4 Commander";
 				};
 				class Item1
@@ -3590,7 +3590,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_IFV4_G";
-					init="GrpIND_IFV4 = group this; ";
+					
 					description="IND IFV 4 Gunner";
 				};
 				class Item2
@@ -3602,7 +3602,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_IFV4_D";
-					init="GrpIND_IFV4 = group this;  ";
+					
 					description="IND IFV 4 Driver (Repair)";
 				};
 			};
@@ -3624,7 +3624,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_TNK1_C";
-					init="GrpIND_TNK1 = group this; ";
+					
 					description="IND Tank 1 Commander";
 				};
 				class Item1
@@ -3637,7 +3637,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_TNK1_G";
-					init="GrpIND_TNK1 = group this;  ";
+					
 					description="IND Tank 1 Gunner";
 				};
 				class Item2
@@ -3649,7 +3649,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_TNK1_D";
-					init="GrpIND_TNK1 = group this; ";
+					
 					description="IND Tank 1 Driver (Repair)";
 				};
 			};
@@ -3671,7 +3671,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitIND_AH1_P";
-					init="GrpIND_AH1 = group this;  ";
+					
 					description="IND Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3684,7 +3684,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitIND_AH1_CP";
-					init="GrpIND_AH1 = group this;  ";
+					
 					description="IND Attack Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -3706,7 +3706,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG1_FTL";
-					init="GrpOPFOR_MMG1 = group this; ";
+					
 					description="OPFOR Medium MG Team 1 Leader";
 				};
 				class Item1
@@ -3718,7 +3718,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG1_G";
-					init="GrpOPFOR_MMG1 = group this; ";
+					
 					description="OPFOR Medium MG Team 1 Gunner";
 				};
 				class Item2
@@ -3730,7 +3730,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG1_AG";
-					init="GrpOPFOR_MMG1 = group this; ";
+					
 					description="OPFOR Medium MG Team 1 Spotter";
 				};
 			};
@@ -3752,7 +3752,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG2_FTL";
-					init="GrpOPFOR_MMG2 = group this; ";
+					
 					description="OPFOR Medium MG Team 2 Leader";
 				};
 				class Item1
@@ -3764,7 +3764,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG2_G";
-					init="GrpOPFOR_MMG2 = group this; ";
+					
 					description="OPFOR Medium MG Team 2 Gunner";
 				};
 				class Item2
@@ -3776,7 +3776,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG2_AG";
-					init="GrpOPFOR_MMG2 = group this; ";
+					
 					description="OPFOR Medium MG Team 2 Spotter";
 				};
 			};
@@ -3798,7 +3798,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT1_FTL";
-					init="GrpOPFOR_MAT1 = group this;  ";
+					
 					description="OPFOR Medium AT Team 1 Leader";
 				};
 				class Item1
@@ -3810,7 +3810,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT1_G";
-					init="GrpOPFOR_MAT1 = group this; ";
+					
 					description="OPFOR Medium AT Team 1 Gunner";
 				};
 				class Item2
@@ -3822,7 +3822,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT1_AG";
-					init="GrpOPFOR_MAT1 = group this;  ";
+					
 					description="OPFOR Medium AT Team 1 Spotter";
 				};
 			};
@@ -3844,7 +3844,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT2_FTL";
-					init="GrpOPFOR_MAT2 = group this;  ";
+					
 					description="OPFOR Medium AT Team 2 Leader";
 				};
 				class Item1
@@ -3856,7 +3856,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT2_G";
-					init="GrpOPFOR_MAT2 = group this; ";
+					
 					description="OPFOR Medium AT Team 2 Gunner";
 				};
 				class Item2
@@ -3868,7 +3868,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MAT2_AG";
-					init="GrpOPFOR_MAT2 = group this;  ";
+					
 					description="OPFOR Medium AT Team 2 Spotter ";
 				};
 			};
@@ -3890,7 +3890,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MTR1_FTL";
-					init="GrpOPFOR_MTR1 = group this;  ";
+					
 					description="OPFOR Mortar Team 1 Leader";
 				};
 				class Item1
@@ -3902,7 +3902,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MTR1_G";
-					init="GrpOPFOR_MTR1 = group this; ";
+					
 					description="OPFOR Mortar Team 1 Gunner";
 				};
 				class Item2
@@ -3914,7 +3914,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MTR1_AG";
-					init="GrpOPFOR_MTR1 = group this;  ";
+					
 					description="OPFOR Mortar Team 1 Spotter";
 				};
 			};
@@ -3936,7 +3936,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_MSAM1_FTL";
-					init="GrpOPFOR_MSAM1 = group this;  ";
+					
 					description="OPFOR Medium SAM Team 1 Leader";
 				};
 				class Item1
@@ -3948,7 +3948,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MSAM1_G";
-					init="GrpOPFOR_MSAM1 = group this; ";
+					
 					description="OPFOR Medium SAM Team 1 Gunner";
 				};
 				class Item2
@@ -3960,7 +3960,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MSAM1_AG";
-					init="GrpOPFOR_MSAM1 = group this;  ";
+					
 					description="OPFOR Medium SAM Team 1 Spotter";
 				};
 			};
@@ -3982,7 +3982,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitOPFOR_WSL_SL";
-					init="GrpOPFOR_HSAM1 = group this;  ";
+					
 					description="OPFOR Weapon Squad Leader";
 				};
 				class Item1
@@ -3994,7 +3994,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_WSL_M";
-					init="GrpOPFOR_HSAM1 = group this; ";
+					
 					description="OPFOR Weapon Squad Medic";
 				};
 			};
@@ -4016,7 +4016,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_ST1_SP";
-					init="GrpOPFOR_ST1 = group this;  ";
+					
 					description="OPFOR Sniper Team 1 Spotter ";
 				};
 				class Item1
@@ -4028,7 +4028,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ST1_SN";
-					init="GrpOPFOR_ST1 = group this; ";
+					
 					description="OPFOR Sniper Team 1 Sniper";
 				};
 			};
@@ -4050,7 +4050,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_FTL";
-					init="GrpOPFOR_ENG1 = group this; ";
+					
 					description="OPFOR Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -4062,7 +4062,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_A1";
-					init="GrpOPFOR_ENG1 = group this; ";
+					
 					description="OPFOR Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -4074,7 +4074,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_A2";
-					init="GrpOPFOR_ENG1 = group this; ";
+					
 					description="OPFOR Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -4086,7 +4086,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_A3";
-					init="GrpOPFOR_ENG1 = group this; ";
+					
 					description="OPFOR Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -4109,7 +4109,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MMG1_FTL";
-					init="GrpIND_MMG1 = group this;   ";
+					
 					description="IND Medium MG Team 1 Leader";
 				};
 				class Item1
@@ -4121,7 +4121,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG1_G";
-					init="GrpIND_MMG1 = group this;   ";
+					
 					description="IND Medium MG Team 1 Gunner";
 				};
 				class Item2
@@ -4134,7 +4134,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG1_AG";
-					init="GrpIND_MMG1 = group this;   ";
+					
 					description="IND Medium MG Team 1 Spotter";
 				};
 			};
@@ -4157,7 +4157,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MMG2_FTL";
-					init="GrpIND_MMG2 = group this;   ";
+					
 					description="IND Medium MG Team 2 Leader";
 				};
 				class Item1
@@ -4169,7 +4169,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG2_G";
-					init="GrpIND_MMG2 = group this;   ";
+					
 					description="IND Medium MG Team 2 Gunner";
 				};
 				class Item2
@@ -4182,7 +4182,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG2_AG";
-					init="GrpIND_MMG2 = group this;   ";
+					
 					description="IND Medium MG Team 2 Spotter";
 				};
 			};
@@ -4204,7 +4204,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MAT1_FTL";
-					init="GrpIND_MAT1 = group this;  ";
+					
 					description="IND Medium AT Team 1 Leader";
 				};
 				class Item1
@@ -4216,7 +4216,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MAT1_G";
-					init="GrpIND_MAT1 = group this;  ";
+					
 					description="IND Medium AT Team 1 Gunner";
 				};
 				class Item2
@@ -4228,7 +4228,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MAT1_AG";
-					init="GrpIND_MAT1 = group this;  ";
+					
 					description="IND Medium AT Team 1 Spotter";
 				};
 			};
@@ -4250,7 +4250,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MAT2_FTL";
-					init="GrpIND_MAT2 = group this;  ";
+					
 					description="IND Medium AT Team 2 Leader";
 				};
 				class Item1
@@ -4262,7 +4262,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MAT2_G";
-					init="GrpIND_MAT2 = group this;  ";
+					
 					description="IND Medium AT Team 2 Gunner";
 				};
 				class Item2
@@ -4274,7 +4274,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MAT2_AG";
-					init="GrpIND_MAT2 = group this;  ";
+					
 					description="IND Medium AT Team 2 Spotter ";
 				};
 			};
@@ -4296,7 +4296,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MTR1_FTL";
-					init="GrpIND_MTR1 = group this;  ";
+					
 					description="IND Mortar Team 1 Leader";
 				};
 				class Item1
@@ -4308,7 +4308,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MTR1_G";
-					init="GrpIND_MTR1 = group this;  ";
+					
 					description="IND Mortar Team 1 Gunner";
 				};
 				class Item2
@@ -4320,7 +4320,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MTR1_AG";
-					init="GrpIND_MTR1 = group this;  ";
+					
 					description="IND Mortar Team 1 Spotter";
 				};
 			};
@@ -4342,7 +4342,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_MSAM1_FTL";
-					init="GrpIND_MSAM1 = group this;  ";
+					
 					description="IND Medium SAM Team 1 Leader";
 				};
 				class Item1
@@ -4354,7 +4354,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MSAM1_G";
-					init="GrpIND_MSAM1 = group this;  ";
+					
 					description="IND Medium SAM Team 1 Gunner";
 				};
 				class Item2
@@ -4366,7 +4366,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MSAM1_AG";
-					init="GrpIND_MSAM1 = group this;  ";
+					
 					description="IND Medium SAM Team 1 Spotter";
 				};
 			};
@@ -4388,7 +4388,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitIND_WSL_SL";
-					init="GrpIND_HSAM1 = group this;  ";
+					
 					description="IND Weapon Squad Leader";
 				};
 				class Item1
@@ -4400,7 +4400,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_WSL_M";
-					init="GrpIND_HSAM1 = group this;  ";
+					
 					description="IND Weapon Squad Medic";
 				};
 			};
@@ -4422,7 +4422,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_ST1_SP";
-					init="GrpIND_ST1 = group this;  ";
+					
 					description="IND Sniper Team 1 Spotter";
 				};
 				class Item1
@@ -4434,7 +4434,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_ST1_SN";
-					init="GrpIND_ST1 = group this;  ";
+					
 					description="IND Sniper Team 1 Sniper";
 				};
 			};
@@ -4455,7 +4455,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitIND_ENG1_FTL";
-					init="GrpIND_ENG1 = group this;  ";
+					
 					description="IND Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -4467,7 +4467,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_ENG1_A1";
-					init="GrpIND_ENG1 = group this;  ";
+					
 					description="IND Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -4479,7 +4479,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_ENG1_A2";
-					init="GrpIND_ENG1 = group this;  ";
+					
 					description="IND Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -4491,7 +4491,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_ENG1_A3";
-					init="GrpIND_ENG1 = group this;  ";
+					
 					description="IND Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -4513,7 +4513,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_FTL";
-					init="GrpNATO_MMG1 = group this;       ";
+					
 					description="NATO Medium MG Team 1 Leader";
 				};
 				class Item1
@@ -4525,7 +4525,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_G";
-					init="GrpNATO_MMG1 = group this;  ";
+					
 					description="NATO Medium MG Team 1 Gunner";
 				};
 				class Item2
@@ -4537,7 +4537,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_AG";
-					init="GrpNATO_MMG1 = group this;       ";
+					
 					description="NATO Medium MG Team 1 Spotter";
 				};
 			};
@@ -4559,7 +4559,6 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MMG2_FTL";
-					init="GrpNATO_MMG2 = group this;       ";
 					description="NATO Medium MG Team 2 Leader";
 				};
 				class Item1
@@ -4571,7 +4570,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG2_G";
-					init="GrpNATO_MMG2 = group this;  ";
+					
 					description="NATO Medium MG Team 2 Gunner";
 				};
 				class Item2
@@ -4583,7 +4582,6 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG2_AG";
-					init="GrpNATO_MMG2 = group this;       ";
 					description="NATO Medium MG Team 2 Spotter";
 				};
 			};
@@ -4605,7 +4603,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MAT1_FTL";
-					init="GrpNATO_MAT1 = group this;  ";
+					
 					description="NATO Medium AT Team 1 Leader";
 				};
 				class Item1
@@ -4618,7 +4616,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MAT1_G";
-					init="GrpNATO_MAT1 = group this;  ";
+					
 					description="NATO Medium AT Team 1 Gunner";
 				};
 				class Item2
@@ -4630,7 +4628,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MAT1_AG";
-					init="GrpNATO_MAT1 = group this;  ";
+					
 					description="NATO Medium AT Team 1 Spotter";
 				};
 			};
@@ -4652,7 +4650,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MAT2_FTL";
-					init="GrpNATO_MAT2 = group this;  ";
+					
 					description="NATO Medium AT Team 2 Leader";
 				};
 				class Item1
@@ -4665,7 +4663,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MAT2_G";
-					init="GrpNATO_MAT2 = group this;  ";
+					
 					description="NATO Medium AT Team 2 Gunner";
 				};
 				class Item2
@@ -4677,7 +4675,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MAT2_AG";
-					init="GrpNATO_MAT2 = group this;  ";
+					
 					description="NATO Medium AT Team 2 Spotter ";
 				};
 			};
@@ -4699,7 +4697,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MTR1_FTL";
-					init="GrpNATO_MTR1 = group this;  ";
+					
 					description="NATO Mortar Team 1 Leader";
 				};
 				class Item1
@@ -4712,7 +4710,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MTR1_G";
-					init="GrpNATO_MTR1 = group this;  ";
+					
 					description="NATO Mortar Team 1 Gunner";
 				};
 				class Item2
@@ -4724,7 +4722,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MTR1_AG";
-					init="GrpNATO_MTR1 = group this;  ";
+					
 					description="NATO Mortar Team 1 Spotter";
 				};
 			};
@@ -4746,7 +4744,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MSAM1_FTL";
-					init="GrpNATO_MSAM1 = group this;  ";
+					
 					description="NATO Medium SAM Team 1 Leader";
 				};
 				class Item1
@@ -4759,7 +4757,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MSAM1_G";
-					init="GrpNATO_MSAM1 = group this;  ";
+					
 					description="NATO Medium SAM Team 1 Gunner";
 				};
 				class Item2
@@ -4771,7 +4769,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MSAM1_AG";
-					init="GrpNATO_MSAM1 = group this;  ";
+					
 					description="NATO Medium SAM Team 1 Spotter";
 				};
 			};
@@ -4793,7 +4791,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_WSL_SL";
-					init="GrpNATO_WSL = group this;  ";
+					
 					description="NATO Weapon Squad Leader";
 				};
 				class Item1
@@ -4806,7 +4804,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_WSL_M";
-					init="GrpNATO_WSL = group this;  ";
+					
 					description="NATO Weapon Squad Medic";
 				};
 			};
@@ -4828,7 +4826,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ST1_SP";
-					init="GrpNATO_ST1 = group this;  ";
+					
 					description="NATO Sniper Team 1 Spotter";
 				};
 				class Item1
@@ -4841,7 +4839,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_ST1_SN";
-					init="GrpNATO_ST1 = group this;  ";
+					
 					description="NATO Sniper Team 1 Sniper";
 				};
 			};
@@ -4863,7 +4861,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_FTL";
-					init="GrpNATO_ENG1 = group this; ";
+					
 					description="NATO Leader Explosive Specialist";
 				};
 				class Item1
@@ -4875,7 +4873,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A1";
-					init="GrpNATO_ENG1 = group this; ";
+					
 					description="NATO Explosive Specialist";
 				};
 				class Item2
@@ -4887,7 +4885,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A2";
-					init="GrpNATO_ENG1 = group this; ";
+					
 					description="NATO Mine Specialist";
 				};
 				class Item3
@@ -4899,7 +4897,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A3";
-					init="GrpNATO_ENG1 = group this; ";
+					
 					description="NATO Mine Specialist ";
 				};
 			};
@@ -4958,7 +4956,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_DSL_SL";
-					init="GrpNATO_DSL = group this; ";
+					
 					description="NATO Delta Squad Leader";
 				};
 				class Item1
@@ -4972,7 +4970,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DSL_M";
-					init="GrpNATO_DSL = group this; ";
+					
 					description="NATO Delta Medic";
 				};
 			};
@@ -4995,7 +4993,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_D1_FTL";
-					init="GrpNATO_D1 = group this; ";
+					
 					description="NATO Delta 1 Fireteam Leader";
 				};
 				class Item1
@@ -5008,7 +5006,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D1_AR";
-					init="GrpNATO_D1 = group this; ";
+					
 					description="NATO Delta 1 Automatic Rifleman";
 				};
 				class Item2
@@ -5021,7 +5019,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D1_AAR";
-					init="GrpNATO_D1 = group this; ";
+					
 					description="NATO Delta 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5034,7 +5032,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D1_AT";
-					init="GrpNATO_D1 = group this; ";
+					
 					description="NATO Delta 1 Rifleman (AT)";
 				};
 			};
@@ -5057,7 +5055,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_D2_FTL";
-					init="GrpNATO_D2 = group this; ";
+					
 					description="NATO Delta 2 Fireteam Leader";
 				};
 				class Item1
@@ -5070,7 +5068,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D2_AR";
-					init="GrpNATO_D2 = group this; ";
+					
 					description="NATO Delta 2 Automatic Rifleman";
 				};
 				class Item2
@@ -5083,7 +5081,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D2_AAR";
-					init="GrpNATO_D2 = group this; ";
+					
 					description="NATO Delta 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5096,7 +5094,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D2_AT";
-					init="GrpNATO_D2 = group this; ";
+					
 					description="NATO Delta 2 Rifleman (AT)";
 				};
 			};
@@ -5119,7 +5117,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_D3_FTL";
-					init="GrpNATO_D3 = group this; ";
+					
 					description="NATO Delta 3 Fireteam Leader";
 				};
 				class Item1
@@ -5132,7 +5130,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D3_AR";
-					init="GrpNATO_D3 = group this; ";
+					
 					description="NATO Delta 3 Automatic Rifleman";
 				};
 				class Item2
@@ -5145,7 +5143,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D3_AAR";
-					init="GrpNATO_D3 = group this; ";
+					
 					description="NATO Delta 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5158,7 +5156,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_D3_AT";
-					init="GrpNATO_D3 = group this; ";
+					
 					description="NATO Delta 3 Rifleman (AT)";
 				};
 			};
@@ -5181,7 +5179,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_ESL_SL";
-					init="GrpNATO_ESL = group this; ";
+					
 					description="NATO Echo Squad Leader";
 				};
 				class Item1
@@ -5195,7 +5193,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ESL_M";
-					init="GrpNATO_ESL = group this; ";
+					
 					description="NATO Echo Medic";
 				};
 			};
@@ -5218,7 +5216,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_E1_FTL";
-					init="GrpNATO_E1 = group this; ";
+					
 					description="NATO Echo 1 Fireteam Leader";
 				};
 				class Item1
@@ -5231,7 +5229,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E1_AR";
-					init="GrpNATO_E1 = group this; ";
+					
 					description="NATO Echo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -5244,7 +5242,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E1_AAR";
-					init="GrpNATO_E1 = group this; ";
+					
 					description="NATO Echo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5257,7 +5255,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E1_AT";
-					init="GrpNATO_E1 = group this; ";
+					
 					description="NATO Echo 1 Rifleman (AT)";
 				};
 			};
@@ -5280,7 +5278,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_E2_FTL";
-					init="GrpNATO_E2 = group this; ";
+					
 					description="NATO Echo 2 Fireteam Leader";
 				};
 				class Item1
@@ -5293,7 +5291,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E2_AR";
-					init="GrpNATO_E2 = group this; ";
+					
 					description="NATO Echo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -5306,7 +5304,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E2_AAR";
-					init="GrpNATO_E2 = group this; ";
+					
 					description="NATO Echo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5319,7 +5317,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E2_AT";
-					init="GrpNATO_E2 = group this; ";
+					
 					description="NATO Echo 2 Rifleman (AT)";
 				};
 			};
@@ -5342,7 +5340,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_E3_FTL";
-					init="GrpNATO_E3 = group this; ";
+					
 					description="NATO Echo 3 Fireteam Leader";
 				};
 				class Item1
@@ -5355,7 +5353,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E3_AR";
-					init="GrpNATO_E3 = group this; ";
+					
 					description="NATO Echo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -5368,7 +5366,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E3_AAR";
-					init="GrpNATO_E3 = group this; ";
+					
 					description="NATO Echo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5381,7 +5379,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E3_AT";
-					init="GrpNATO_E3 = group this; ";
+					
 					description="NATO Echo 3 Rifleman (AT)";
 				};
 			};
@@ -5404,7 +5402,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_fsl_SL";
-					init="GrpNATO_fsl = group this; ";
+					
 					description="NATO Foxtrot Squad Leader";
 				};
 				class Item1
@@ -5418,7 +5416,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_fsl_M";
-					init="GrpNATO_fsl = group this; ";
+					
 					description="NATO Foxtrot Medic";
 				};
 			};
@@ -5441,7 +5439,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_F1_FTL";
-					init="GrpNATO_F1 = group this; ";
+					
 					description="NATO Foxtrot 1 Fireteam Leader";
 				};
 				class Item1
@@ -5454,7 +5452,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F1_AR";
-					init="GrpNATO_F1 = group this; ";
+					
 					description="NATO Foxtrot 1 Automatic Rifleman";
 				};
 				class Item2
@@ -5467,7 +5465,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F1_AAR";
-					init="GrpNATO_F1 = group this; ";
+					
 					description="NATO Foxtrot 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5480,7 +5478,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F1_AT";
-					init="GrpNATO_F1 = group this; ";
+					
 					description="NATO Foxtrot 1 Rifleman (AT)";
 				};
 			};
@@ -5503,7 +5501,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_F2_FTL";
-					init="GrpNATO_F2 = group this; ";
+					
 					description="NATO Foxtrot 2 Fireteam Leader";
 				};
 				class Item1
@@ -5516,7 +5514,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F2_AR";
-					init="GrpNATO_F2 = group this; ";
+					
 					description="NATO Foxtrot 2 Automatic Rifleman";
 				};
 				class Item2
@@ -5529,7 +5527,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F2_AAR";
-					init="GrpNATO_F2 = group this; ";
+					
 					description="NATO Foxtrot 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5542,7 +5540,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F2_AT";
-					init="GrpNATO_F2 = group this; ";
+					
 					description="NATO Foxtrot 2 Rifleman (AT)";
 				};
 			};
@@ -5565,7 +5563,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_F3_FTL";
-					init="GrpNATO_F3 = group this; ";
+					
 					description="NATO Foxtrot 3 Fireteam Leader";
 				};
 				class Item1
@@ -5578,7 +5576,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F3_AR";
-					init="GrpNATO_F3 = group this; ";
+					
 					description="NATO Foxtrot 3 Automatic Rifleman";
 				};
 				class Item2
@@ -5591,7 +5589,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F3_AAR";
-					init="GrpNATO_F3 = group this; ";
+					
 					description="NATO Foxtrot 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -5604,7 +5602,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_F3_AT";
-					init="GrpNATO_F3 = group this; ";
+					
 					description="NATO Foxtrot 3 Rifleman (AT)";
 				};
 			};
@@ -5740,7 +5738,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_CO";
-					init="GrpMSV_CO = group this; ";
+					
 					description="Russian Company Commander";
 				};
 				class Item1
@@ -5754,7 +5752,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CO_M";
-					init="GrpMSV_CO = group this;  ";
+					
 					description="Russian Political Officer";
 				};
 				class Item2
@@ -5768,7 +5766,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CO_UAV";
-					init="GrpMSV_CO = group this;  ";
+					
 					description="Russian First Seargent";
 				};
 				class Item3
@@ -5781,7 +5779,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_CO_D";
-					init="GrpMSV_CO = group this; this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Company Driver ";
 				};
 				class Item4
@@ -5794,7 +5792,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_CO_VG";
-					init="GrpMSV_CO = group this;  ";
+					
 					description="Russian Company Gunner";
 				};
 			};
@@ -5818,7 +5816,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_Plt1CO_CO";
-					init="GrpMSV_Plt1CO = group this;  ";
+					
 					description="Russian First Platoon Commander";
 				};
 				class Item1
@@ -5832,7 +5830,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_Plt1CO_DC";
-					init="GrpMSV_Plt1CO = group this;  ";
+					
 					description="Russian First Platoon Assistant Leader";
 				};
 			};
@@ -5857,7 +5855,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_ASL_SL";
-					init="GrpMSV_ASL = group this; ";
+					
 					description="Russian Alpha Squad Leader/Commander";
 				};
 				class Item1
@@ -5873,7 +5871,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ASL_VG";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Gunner";
 				};
 				class Item2
@@ -5889,7 +5887,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ASL_VD";
-					init="GrpMSV_ASL = group this; this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Alpha Squad Driver";
 				};
 				class Item3
@@ -5905,7 +5903,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ASL_SR";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Senior Rifleman";
 				};
 				class Item4
@@ -5921,7 +5919,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ASL_AR";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Rifleman";
 				};
 				class Item5
@@ -5936,7 +5934,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_M";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Rifleman/Medic";
 				};
 				class Item6
@@ -5951,7 +5949,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_R";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Automatic Rifleman";
 				};
 				class Item7
@@ -5966,7 +5964,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_GR";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Grenadier";
 				};
 				class Item8
@@ -5981,7 +5979,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ASL_AGR";
-					init="GrpMSV_ASL = group this;  ";
+					
 					description="Russian Alpha Squad Assistant Grenadier";
 				};
 			};
@@ -6005,7 +6003,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_BSL_SL";
-					init="GrpMSV_BSL = group this; ";
+					
 					description="Russian Bravo Squad Leader/Commander";
 				};
 				class Item1
@@ -6020,7 +6018,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_BSL_VG";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Gunner";
 				};
 				class Item2
@@ -6035,7 +6033,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_BSL_VD";
-					init="GrpMSV_BSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Bravo Squad Driver";
 				};
 				class Item3
@@ -6050,7 +6048,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_BSL_SR";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Senior Rifleman";
 				};
 				class Item4
@@ -6065,7 +6063,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_BSL_AR";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Marksman";
 				};
 				class Item5
@@ -6079,7 +6077,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_BSL_M";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Rifleman/Medic";
 				};
 				class Item6
@@ -6093,7 +6091,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_BSL_R";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Automatic Rifleman";
 				};
 				class Item7
@@ -6107,7 +6105,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_BSL_GR";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Grenadier";
 				};
 				class Item8
@@ -6121,7 +6119,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_BSL_AGR";
-					init="GrpMSV_BSL = group this;  ";
+					
 					description="Russian Bravo Squad Assistant Grenadier";
 				};
 			};
@@ -6145,7 +6143,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_CSL_SL";
-					init="GrpMSV_CSL = group this; ";
+					
 					description="Russian Charlie Squad Leader/Commander";
 				};
 				class Item1
@@ -6160,7 +6158,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CSL_VG";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Gunner";
 				};
 				class Item2
@@ -6175,7 +6173,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CSL_VD";
-					init="GrpMSV_CSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Charlie Squad Driver";
 				};
 				class Item3
@@ -6190,7 +6188,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CSL_SR";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Senior Rifleman";
 				};
 				class Item4
@@ -6205,7 +6203,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_CSL_AR";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Rifleman";
 				};
 				class Item5
@@ -6219,7 +6217,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_CSL_M";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Rifleman/Medic";
 				};
 				class Item6
@@ -6233,7 +6231,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_CSL_R";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Automatic Rifleman";
 				};
 				class Item7
@@ -6247,7 +6245,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_CSL_GR";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Grenadier";
 				};
 				class Item8
@@ -6261,7 +6259,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_CSL_AGR";
-					init="GrpMSV_CSL = group this;  ";
+					
 					description="Russian Charlie Squad Assistant Grenadier";
 				};
 			};
@@ -6285,7 +6283,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_Plt2CO_CO";
-					init="GrpMSV_Plt2CO = group this;  ";
+					
 					description="Russian Second Platoon Commander";
 				};
 				class Item1
@@ -6299,7 +6297,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_Plt2CO_DC";
-					init="GrpMSV_Plt2CO = group this;  ";
+					
 					description="Russian Second Platoon Assistant Leader";
 				};
 			};
@@ -6323,7 +6321,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_DSL_SL";
-					init="GrpMSV_DSL = group this; ";
+					
 					description="Russian Delta Squad Leader/Commander";
 				};
 				class Item1
@@ -6338,7 +6336,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_DSL_VG";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Gunner";
 				};
 				class Item2
@@ -6353,7 +6351,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_DSL_VD";
-					init="GrpMSV_DSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Delta Squad Driver";
 				};
 				class Item3
@@ -6368,7 +6366,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_DSL_SR";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Senior Rifleman";
 				};
 				class Item4
@@ -6383,7 +6381,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_DSL_AR";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Rifleman";
 				};
 				class Item5
@@ -6397,7 +6395,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_DSL_M";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Rifleman/Medic";
 				};
 				class Item6
@@ -6411,7 +6409,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_DSL_R";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Automatic Rifleman";
 				};
 				class Item7
@@ -6425,7 +6423,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_DSL_GR";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Grenadier";
 				};
 				class Item8
@@ -6439,7 +6437,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_DSL_AGR";
-					init="GrpMSV_DSL = group this;  ";
+					
 					description="Russian Delta Squad Assistant Grenadier";
 				};
 			};
@@ -6463,7 +6461,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_ESL_SL";
-					init="GrpMSV_ESL = group this; ";
+					
 					description="Russian Echo Squad Leader/Commander";
 				};
 				class Item1
@@ -6478,7 +6476,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ESL_VG";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Gunner";
 				};
 				class Item2
@@ -6493,7 +6491,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ESL_VD";
-					init="GrpMSV_ESL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Echo Squad Driver";
 				};
 				class Item3
@@ -6508,7 +6506,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ESL_SR";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Senior Rifleman";
 				};
 				class Item4
@@ -6523,7 +6521,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ESL_AR";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Marksman";
 				};
 				class Item5
@@ -6537,7 +6535,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ESL_M";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Rifleman/Medic";
 				};
 				class Item6
@@ -6551,7 +6549,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ESL_R";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Automatic Rifleman";
 				};
 				class Item7
@@ -6565,7 +6563,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ESL_GR";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Grenadier";
 				};
 				class Item8
@@ -6579,7 +6577,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_ESL_AGR";
-					init="GrpMSV_ESL = group this;  ";
+					
 					description="Russian Echo Squad Assistant Grenadier";
 				};
 			};
@@ -6603,7 +6601,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_FSL_SL";
-					init="GrpMSV_FSL = group this; ";
+					
 					description="Russian Foxtrot Squad Leader/Commander";
 				};
 				class Item1
@@ -6618,7 +6616,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_FSL_VG";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Gunner";
 				};
 				class Item2
@@ -6633,7 +6631,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_FSL_VD";
-					init="GrpMSV_FSL = group this;this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Foxtrot Squad Driver";
 				};
 				class Item3
@@ -6647,7 +6645,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_SR";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Senior Rifleman";
 				};
 				class Item4
@@ -6662,7 +6660,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_FSL_AR";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Rifleman";
 				};
 				class Item5
@@ -6676,7 +6674,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_M";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Rifleman/Medic";
 				};
 				class Item6
@@ -6690,7 +6688,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_R";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Automatic Rifleman";
 				};
 				class Item7
@@ -6704,7 +6702,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_GR";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Grenadier";
 				};
 				class Item8
@@ -6718,7 +6716,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FSL_AGR";
-					init="GrpMSV_FSL = group this;  ";
+					
 					description="Russian Foxtrot Squad Assistant Grenadier";
 				};
 			};
@@ -6742,7 +6740,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_Plt3CO_CO";
-					init="GrpMSV_Plt3CO = group this; ";
+					
 					description="Russian Weapons Platoon Commander";
 				};
 			};
@@ -6766,7 +6764,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_W1_VG";
-					init="GrpMSV_WV1 = group this; ";
+					
 					description="Russian Weapon Squad Gunner 1";
 				};
 				class Item1
@@ -6780,7 +6778,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W1_VD";
-					init="GrpMSV_WV1 = group this; ";
+					
 					description="Russian Weapon Squad Driver 1";
 				};
 			};
@@ -6804,7 +6802,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_W2_VG";
-					init="GrpMSV_WV2 = group this; ";
+					
 					description="Russian Weapon Squad Gunner 2";
 				};
 				class Item1
@@ -6818,7 +6816,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_W2_VD";
-					init="GrpMSV_WV2 = group this; ";
+					
 					description="Russian Weapon Squad Driver 2";
 				};
 			};
@@ -6842,7 +6840,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG1_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""];  GrpMSV_MMG1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""];  ";
 					description="Russian Machine Gunner";
 				};
 				class Item1
@@ -6856,7 +6854,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG1_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""]; GrpMSV_MMG1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""];";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -6880,7 +6878,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG2_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""]; GrpMSV_MMG2 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""];";
 					description="Russian Machine Gunner";
 				};
 				class Item1
@@ -6894,7 +6892,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG2_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""]; GrpMSV_MMG2 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""];";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -6918,7 +6916,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MMG3_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""]; GrpMSV_MMG3 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmg""];";
 					description="Russian Machine Gunner";
 				};
 				class Item1
@@ -6932,7 +6930,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MMG3_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""];  GrpMSV_MMG3 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mmgag""];  ";
 					description="Russian Machine Gunner Assistant";
 				};
 			};
@@ -6956,7 +6954,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT1_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""];";
 					description="Russian ATGM Operator";
 				};
 				class Item1
@@ -6970,7 +6968,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT1_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""];";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -6994,7 +6992,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT2_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT2 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""];";
 					description="Russian ATGM Operator";
 				};
 				class Item1
@@ -7008,7 +7006,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT2_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT2 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""];";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -7032,7 +7030,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_MAT3_G";
-					init="this setVariable [""F_Gear"", ""rhs_msv_mat""]; GrpMSV_MAT3 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_mat""];";
 					description="Russian ATGM Operator";
 				};
 				class Item1
@@ -7046,7 +7044,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_MAT3_AG";
-					init="this setVariable [""F_Gear"", ""rhs_msv_matag""]; GrpMSV_MAT3 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_matag""];";
 					description="Russian ATGM Assistant";
 				};
 			};
@@ -7070,7 +7068,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_FOR_SL";
-					init="this setVariable [""F_Gear"", ""rhs_msv_sfl""]; GrpMSV_FOR = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sfl""];";
 					description="Russian Spetsnaz Leader ";
 				};
 				class Item1
@@ -7084,7 +7082,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_AR";
-					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""];";
 					description="Russian Spetsnaz Member";
 				};
 				class Item2
@@ -7098,7 +7096,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R";
-					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""];";
 					description="Russian Spetsnaz Member";
 				};
 				class Item3
@@ -7112,7 +7110,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_FOR_R1";
-					init="this setVariable [""F_Gear"", ""rhs_msv_sf""]; GrpMSV_FOR = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_sf""];";
 					description="Russian Spetsnaz Member";
 				};
 			};
@@ -7135,7 +7133,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_FTL";
-					init="this setVariable [""F_Gear"", ""rhs_msv_exp""]; GrpMSV_ENG1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_exp""];";
 					description="Russian Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -7148,7 +7146,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A1";
-					init="this setVariable [""F_Gear"", ""rhs_msv_exp""]; GrpMSV_ENG1 = group this;";
+					init="this setVariable [""F_Gear"", ""rhs_msv_exp""];";
 					description="Russian Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -7161,7 +7159,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A2";
-					init="GrpMSV_ENG1 = group this;";
+					
 					description="Russian Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -7174,7 +7172,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_ENG1_A3";
-					init="GrpMSV_ENG1 = group this;";
+					
 					description="Russian Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -7197,7 +7195,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_C";
-					init="GrpMSV_TNK1 = group this; ";
+					
 					description="Russian Tank 1 Commander";
 				};
 				class Item1
@@ -7211,7 +7209,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_G";
-					init="GrpMSV_TNK1 = group this;  ";
+					
 					description="Russian Tank 1 Gunner";
 				};
 				class Item2
@@ -7224,7 +7222,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitMSV_TNK1_D";
-					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Tank 1 Driver (Repair)";
 				};
 			};
@@ -7247,7 +7245,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitMSV_AH1_P";
-					init="GrpMSV_AH1 = group this;  ";
+					
 					description="Russian Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -7261,7 +7259,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_AH1_CP";
-					init="GrpMSV_AH1 = group this;  ";
+					
 					description="Russian Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -7284,7 +7282,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitMSV_AH2_P";
-					init="GrpMSV_AH2 = group this;  ";
+					
 					description="Russian Attack Helo 2 Pilot";
 				};
 				class Item1
@@ -7298,7 +7296,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_AH2_CP";
-					init="GrpMSV_AH2 = group this;  ";
+					
 					description="Russian Attack Helo 2 Gunner (Repair)";
 				};
 			};
@@ -7321,7 +7319,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitMSV_TH1_P";
-					init="GrpMSV_TH1 = group this;  ";
+					
 					description="Russian Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -7335,7 +7333,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH1_CP";
-					init="GrpMSV_TH1 = group this; ";
+					
 					description="Russian Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -7358,7 +7356,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitMSV_TH2_P";
-					init="GrpMSV_TH2 = group this;  ";
+					
 					description="Russian Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -7372,7 +7370,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH2_CP";
-					init="GrpMSV_TH2 = group this; ";
+					
 					description="Russian Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -7396,7 +7394,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SL1";
-					init="GrpMSV_JIP = group this; ";
+					
 					description="Russian JIP Squad Leader";
 				};
 				class Item1
@@ -7410,7 +7408,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D2";
-					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian JIP Vehicle Driver";
 				};
 				class Item2
@@ -7424,7 +7422,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_D1";
-					init="this setVariable [""F_Gear"", ""rhs_msv_repair""]; ";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian JIP Vehicle Driver";
 				};
 				class Item3
@@ -7439,7 +7437,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_JIP_G2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Vehicle Gunner";
 				};
 				class Item4
@@ -7454,7 +7452,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_JIP_G1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Vehicle Gunner";
 				};
 				class Item5
@@ -7469,7 +7467,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SL2";
-					init="GrpMSV_JIP = group this; ";
+					
 					description="Russian JIP Squad Leader";
 				};
 				class Item6
@@ -7483,7 +7481,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SR1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Senior Rifleman";
 				};
 				class Item7
@@ -7497,7 +7495,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_SR2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Senior Rifleman";
 				};
 				class Item8
@@ -7512,7 +7510,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AR1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Automatic Rifleman";
 				};
 				class Item9
@@ -7527,7 +7525,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AR2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Automatic Rifleman";
 				};
 				class Item10
@@ -7541,7 +7539,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_M1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Rifleman/Medic";
 				};
 				class Item11
@@ -7555,7 +7553,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_M2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Rifleman/Medic";
 				};
 				class Item12
@@ -7569,7 +7567,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_R2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Rifleman";
 				};
 				class Item13
@@ -7583,7 +7581,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_R1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Rifleman";
 				};
 				class Item14
@@ -7597,7 +7595,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_GR2";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Grenadier";
 				};
 				class Item15
@@ -7611,7 +7609,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_GR1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Grenadier";
 				};
 				class Item16
@@ -7625,7 +7623,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitMSV_JIP_AGR1";
-					init="GrpMSV_JIP = group this;  ";
+					
 					description="Russian JIP Assistant Grenadier";
 				};
 				class Item17
