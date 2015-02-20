@@ -21,21 +21,9 @@ enableSentences false;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_briefing = [] execVM "f\briefing\briefing.sqf";
 
-// F3 - F3 Folk ARPS Group IDs
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
-
 // F3 - Buddy Team Colours
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
-
-// F3 - Fireteam Member Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] spawn f_fnc_SetLocalFTMemberMarkers;
-
-// F3 - F3 Folk ARPS Group Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_initGroupMarkers.sqf";
 
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -57,7 +45,7 @@ f_var_viewDistance_default = 2500;
 
 // F3 - ORBAT Notes
 // Credits: PabstMirror
-[] execVM "f\briefing\f_orbatNotes.sqf";
+// [] execVM "f\briefing\f_orbatNotes.sqf";
 
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -76,3 +64,4 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // BWMF: DAC Debug Params
 [] execVM "DAC\bwmf_dacParams.sqf";
 
+[] call F_Markers_fnc_playerInit;

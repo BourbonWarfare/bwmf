@@ -2,7 +2,7 @@
 
 if (!hasInterface) exitWith {};
 
-waitUntil {scriptDone f_script_setGroupIDs};
+uiSleep 5;
 
 //private ["_diaryHyperlinkedText", "_groups", "_precompileGroups"];
 
