@@ -9,15 +9,10 @@ enableSentences false;
 [] call F_fnc_showOrbatNotes;
 
 // F3 - Buddy Team Colours
-f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
+[] call F_fnc_setTeamColours;
 
-// F3 - F3 Common Local Variables
-// WARNING: DO NOT DISABLE THIS COMPONENT
-f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
-
-// F3 - Dynamic View Distance
-f_var_viewDistance_default = 2500;
-[] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
+// F3 - View Distance
+setViewDistance 2500;
 
 // F3 - Name Tags
 [10] execVM "f\nametag\f_nametags.sqf";
@@ -37,8 +32,6 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // BWMF: DAC Debug Params
 [] call F_DAC_fnc_setupDacParams;
-
-x = time;
 
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;
