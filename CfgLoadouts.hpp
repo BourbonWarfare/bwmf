@@ -87,6 +87,7 @@ class blu_f {
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Rangefinder"};
+            items[] += {"AGM_MapTools"};
 		};
 		class B_Soldier_SL_F : B_Officer_F // SL
 		{
@@ -351,6 +352,7 @@ class ind_f {
 			handguns[] = {IND_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Binocular"};
 			attachments[] = {"rhsusf_acc_compm4"};
+            items[] += {"AGM_MapTools"};
 		};
 		class I_Soldier_SL_F : I_Officer_F // SL
 		{
@@ -612,6 +614,7 @@ class opf_f {
 			magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {EAST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Binocular"};
+            items[] += {"AGM_MapTools"};
 		};
 		class O_soldier_SL_F : O_Officer_F // SL
 		{
@@ -885,6 +888,7 @@ class rhs_faction_msv {
 			magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_GLRIFLE_MAG_FLARE,MSV_PISTOL_MAG,"HandGrenade:2","SmokeShell:2"};
 			handguns[] = {MSV_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Rangefinder"};
+            items[] += {"AGM_MapTools"};
 		};
 		class rhs_msv_sergeant : rhs_msv_Officer // SL
 		{
