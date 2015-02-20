@@ -1,5 +1,5 @@
 //START: TFR Auto Channel(PabstMirror) [2015/02/14]
-#define SIDE_ARRAY          ["GrpNATO", "GrpCSAT", "GrpAAF", "GrpMSV"]
+#define SIDE_ARRAY          ["GrpNATO", "GrpOPFOR", "GrpIND", "GrpMSV"]
 #define CHANNELS_ARRAYS	 [ \
     ["ASL","A1", "A2","A3"], \
     ["BSL","B1", "B2","B3"], \
