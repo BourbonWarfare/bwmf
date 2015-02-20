@@ -62,6 +62,10 @@ _this spawn {
     ["F3 Nametags",
     "Toggle F3 Name Tags",
     {
+        if ((!isNil "AGM_NameTags_ShowNamesTime") && {profileNamespace getVariable ["AGM_showPlayerNames", true]}) exitWith {
+            hintSilent "AGM Nametags Already On\nDisable To Turn On F3 Tags";
+            false
+        };
         F_DRAW_NAMETAGS = !F_DRAW_NAMETAGS;
 
         // Return false so it doesn't block other actions
@@ -77,6 +81,7 @@ _this spawn {
 
     // ====================================================================================
     // the real code.
+
 
     addMissionEventHandler ["Draw3D", {
         if (!alive player) exitWith {};
