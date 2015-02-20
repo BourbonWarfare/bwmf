@@ -14,7 +14,7 @@ loadScreen = "bwbannersmall.jpg";
 class Header {
     gameType = Coop;
     minPlayers = 1;
-    maxPlayers = 405;
+    maxPlayers = 491;
 };
 
 // ============================================================================================
@@ -78,8 +78,6 @@ respawnTemplates[] = {"PabstSpectator"};
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 class Params {
-
-
     // F3 - Mission Conditions Selector
     // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -92,7 +90,6 @@ class Params {
         isGlobal = 0;						// Execute this only on the server
         code = "f_param_weather = %1";
     };
-
     class f_param_fog {
         title = "Fog";
         values[] = {0,1,2};
@@ -102,7 +99,6 @@ class Params {
         isGlobal = 0;						// Execute this only on the server
         code = "f_param_fog = %1";
     };
-
     class f_param_timeOfDay {
         title = "$STR_f_param_timeOfDay";
         values[] = {0,1,2,3,4,5,6,7};
@@ -112,9 +108,7 @@ class Params {
         isGlobal = 0;						// Execute this only on the server
         code = "f_param_timeOfDay = %1";
     };
-
     // ============================================================================================
-
     class f_param_dacdebug {
         title = "DAC Debug";
         values[] = {0,1};
@@ -122,7 +116,6 @@ class Params {
         default = 0;
         code = "f_param_dacdebug = %1";
     };
-
     class ws_param_hc {
         title = "Headless client";
         values[] = {0,1};
@@ -130,28 +123,21 @@ class Params {
         default = 1;
         code = "ws_param_hc = %1";
     };
-
     // F3 - End of Params code blocks.
     // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 };
 
 // ============================================================================================
 // Pabst - Respawn
-
 class CfgRespawnTemplates {
     class PabstSpectator {
         onPlayerRespawn = "pabst\pabst_spectator.sqf";
     };
 };
 
-// ============================================================================================
-
 // F3 - Functions
-// DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
-
 class CfgFunctions {
 #include "ws_fnc\config.hpp"
-
     class F_Markers {
         class F_Markers {
             file = "f\pabstMarkers";
@@ -174,9 +160,12 @@ class CfgFunctions {
             class setupDacParams {};
         };
     };
-    
-    
     class F {  // Defines the "owner"
+        class briefing {
+            file = "f\briefing";
+            class showBriefing;
+            class showOrbatNotes;
+        };
         class common {  // category
             file = "f\common";
             // Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
@@ -211,5 +200,4 @@ class CfgFunctions {
         };
     };
 };
-
 // ============================================================================================

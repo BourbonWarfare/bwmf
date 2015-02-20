@@ -1,5 +1,4 @@
 //START: TFR Auto Channel(PabstMirror) [2015/02/14]
-#define SIDE_ARRAY          ["GrpNATO", "GrpOPFOR", "GrpIND", "GrpMSV"]
 #define CHANNELS_ARRAYS	 [ \
     ["ASL","A1", "A2","A3"], \
     ["BSL","B1", "B2","B3"], \
@@ -15,41 +14,43 @@
 if (!hasInterface) exitWith {};
 
 [] spawn {
-    waitUntil {player == player};
+    if (player != player) then {waitUntil {player == player};};
+    if (!alive player) then {waitUntil {alive player};};
+    sleep 1;
 
-    _groupFreqIndex = -1;//Figure out what channel the player's group uses
-    {
-        _theSide = _x;
-        {
-            _theGroupArrayIndex = _forEachIndex;
+    if (isNil "TFAR_fnc_radiosListSorted") exitWith {
+        ["TFR Func Missing"] call BIS_fnc_error;
+    };
+
+    _groupID = (group player) getVariable ["F3_GroupID", "-1"];
+    _groupFreqIndex = -1;
+
+    if (_groupID != "-1") then {
+        _splitName = [_groupID, " "] call BIS_fnc_splitString;
+        if ((count _splitName) > 2) then {
+            _groupName = (_splitName select 1);
             {
-                if ((group player) == (missionNameSpace getVariable [(format ["%1_%2", _theSide, _x]), grpNull])) then {
-                    _groupFreqIndex = _theGroupArrayIndex;
-                };
-            } forEach _x;
-        } forEach CHANNELS_ARRAYS;
-        if (_groupFreqIndex != -1) exitWith {};
-    } forEach SIDE_ARRAY;
+                if (_groupName in _x) exitWith { _groupFreqIndex = _forEachIndex; };
+            } forEach CHANNELS_ARRAYS;
+        };
+    };
 
     if (_groupFreqIndex == -1) then {
-        systemChat format ["I have no idea what group you are in"];
+        systemChat format ["Unknown Group (Using Default) [%1]", _groupID];
         _groupFreqIndex = 0;
     };
-    waitUntil {time > 1};
 
     waitUntil {
-        sleep 1;
+        sleep 0.1;
         _swRadioList = player call TFAR_fnc_radiosListSorted;
         (!isNil "_swRadioList") && {(count _swRadioList) > 0}
     };
-    sleep 1;
-    _swRadioList = player call TFAR_fnc_radiosListSorted;
+    sleep 0.5;
 
     {
         [_x, _groupFreqIndex] call TFAR_fnc_setSwChannel;
         systemChat format ["SR Radio [%1] is set to [CH %2]", _x, (_groupFreqIndex + 1)];
-
-    } forEach _swRadioList;
+    } forEach (player call TFAR_fnc_radiosListSorted);
 
     _lrChannel = switch (_groupFreqIndex) do {
     case (0): {3}; //Alpha

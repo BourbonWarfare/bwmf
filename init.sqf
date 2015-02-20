@@ -5,7 +5,8 @@ enableSaving [false, false];
 enableSentences false;
 
 // F3 - Briefing
-[] execVM "f\briefing\briefing.sqf";
+[] call F_fnc_showBriefing;
+[] call F_fnc_showOrbatNotes;
 
 // F3 - Buddy Team Colours
 f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
@@ -21,9 +22,6 @@ f_var_viewDistance_default = 2500;
 // F3 - Name Tags
 [10] execVM "f\nametag\f_nametags.sqf";
 
-// Pabst - ORBAT Notes
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
 // F3 - Join Group Action
 // [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
@@ -35,10 +33,12 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 [] execVM "f\radios\radio_init.sqf";
 
 //PABST: setup custom freqs automatically for people
-[] call F_fnc_setupRadioChannels;
+[] call F_Pabst_fnc_setupRadioChannels;
 
 // BWMF: DAC Debug Params
 [] call F_DAC_fnc_setupDacParams;
+
+x = time;
 
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;

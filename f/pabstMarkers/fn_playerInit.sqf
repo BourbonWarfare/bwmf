@@ -8,8 +8,8 @@ F_Markers_drawNonPlayerGroups = true;
 
 //Faction map, to show other faction's markers, but them in the same array
 F_Markers_factionMap = [
-["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],
-// ["blu_f"],
+// ["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],  //uncomment to show all markers
+["blu_f"],
 ["ind_f"],
 ["opf_f"],
 ["rhs_faction_msv", "rhs_faction_vvs"]
@@ -25,6 +25,8 @@ if (!hasInterface) exitWith {};
 [] spawn {
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
+
+    [] call F_Markers_fnc_setupDrawThings;
 
     _fnc_installMapEvents = {
         _d = _this select 0;
