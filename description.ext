@@ -190,6 +190,7 @@ class CfgFunctions {
         class nametag {
             file = "f\nametag";
             class drawNameTag {};
+            class setupNameTags {};
         };    
         class setTeamColours {
             file = "f\setTeamColours";

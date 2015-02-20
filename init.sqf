@@ -15,7 +15,7 @@ enableSentences false;
 setViewDistance 2500;
 
 // F3 - Name Tags
-[10] execVM "f\nametag\f_nametags.sqf";
+[10] call F_fnc_setupNameTags;
 
 // F3 - Join Group Action
 // [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
