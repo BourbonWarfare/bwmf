@@ -16,7 +16,7 @@ private ["_timeOfDay","_year","_month","_day","_hour","_minute","_transition"];
 // We interpret the values parsed to the script. If the function was called from the parameters those values are used.
 
 _timeOfDay = _this select 0;
-
+if (_timeOfDay == -1) exitWith {};
 // ====================================================================================
 
 // SET DEFAULT VALUES
