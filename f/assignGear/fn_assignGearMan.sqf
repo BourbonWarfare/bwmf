@@ -13,7 +13,7 @@ _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if(!isClass(_path)) exitWith {
-    _unit getVariable ["f_var_assignGear_done", true, true];
+    // _unit setVariable ["f_var_assignGear_done", true, true];
     systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
@@ -123,4 +123,4 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
     };
 } foreach _attachments;
 
-_unit setVariable ["f_var_assignGear_done", true, true];
+// _unit setVariable ["f_var_assignGear_done", true, true];
