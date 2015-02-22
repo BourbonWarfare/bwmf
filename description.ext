@@ -148,10 +148,11 @@ class CfgFunctions {
             class setupDrawThings {};
         };
     };
-    class F_Pabst {
-        class F_Pabst {
-            file = "pabst";
+    class F_Radios {
+        class F_Radios {
+            file = "f\radios";
             class setupRadioChannels {};
+            class tfrRadioSetup {};
         };
     };
     class F_DAC {
@@ -191,17 +192,10 @@ class CfgFunctions {
             file = "f\nametag";
             class drawNameTag {};
             class setupNameTags {};
-        };    
+        };
         class setTeamColours {
             file = "f\setTeamColours";
             class setTeamColours {};
-        };
-        class radios {
-            file = "f\radios";
-            class tfr_removeRadios {};
-            class tfr_addRadios {};
-            class tfr_setRadioFrequencies {};
-            class tfr_configureSpectatorChat {};
         };
     };
 };

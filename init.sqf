@@ -25,10 +25,10 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // F3 - Radio Framework
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] execVM "f\radios\radio_init.sqf";
+[] call F_Radios_fnc_tfrRadioSetup;
 
 //PABST: setup custom freqs automatically for people
-[] call F_Pabst_fnc_setupRadioChannels;
+[] call F_Radios_fnc_setupRadioChannels;
 
 // BWMF: DAC Debug Params
 [] call F_DAC_fnc_setupDacParams;
