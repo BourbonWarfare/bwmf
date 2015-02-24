@@ -7,6 +7,10 @@ private ["_u","_pos","_suffix","_color","_str","_height"];
 // Declare variables
 _u = _this select 0;
 _pos = _this select 1;
+
+//If the unit is dead, exit.
+if (!alive _u) exitWith {};
+
 _height = f_height_standing_Nametags;
 switch (stance _u) do {
 case "CROUCH": {
@@ -19,10 +23,6 @@ case "PRONE": {
 _suffix = if (count _this > 2) then {_this select 2} else {""};
 
 _str = name _u + _suffix;
-
-//If the unit is dead, exit.
-if (!alive _u) exitWith {};
-
 
 _icon = "";
 _size = 0;
