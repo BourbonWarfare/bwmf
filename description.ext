@@ -33,6 +33,7 @@ class Extended_InitPost_EventHandlers {
     class CAManBase {
         class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
         class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+        class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
     };
     class Car {
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
