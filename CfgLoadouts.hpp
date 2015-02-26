@@ -18,6 +18,7 @@ class blu_f {
 		// AR
 		#define WEST_AR "CUP_lmg_M249"
 		#define WEST_AR_MAG "CUP_200Rnd_TE4_Red_Tracer_556x45_M249:2"
+		#define WEST_AR_MAG2 "CUP_200Rnd_TE4_Red_Tracer_556x45_M249:2"
 		// AT
 		#define WEST_AT "rhs_weap_M136"
 		#define WEST_AT_MAG "rhs_m136_mag"
@@ -117,7 +118,7 @@ class blu_f {
 		class B_Soldier_AAR_F : B_Soldier_F // AAR
 		{
 			
-			backpackItems[] = {WEST_AR_MAG};
+			backpackItems[] = {WEST_AR_MAG2};
 			attachments[] = {"CUP_optic_ACOG"};	
 			linkedItems[] += {"Binocular"};		
 			
