@@ -67,12 +67,17 @@ clearAllItemsFromBackpack _unit;
 
 // ====================================================================================
 // Magazines
+_magazinesNotAdded = [];
 {
     _arr = [_x,":"] call BIS_fnc_splitString;
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
         _unit addMagazines [_classname, _amt];
+        _notAdded = _amt - ({_x == _classname} count (magazines _unit));
+        for "_index" from 0 to (_notAdded - 1) do {
+            _magazinesNotAdded pushBack _classname;
+        };
     };
 } foreach _magazines;
 // ====================================================================================
@@ -122,5 +127,14 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
         };
     };
 } foreach _attachments;
+
+//Try to add missing magazines:
+{
+    if (_unit canAdd _x) then {
+        _unit addMagazines [_x, 1];
+    } else {
+        systemChat format ["Failed To add Magazine %1 to %2", _x, _unit];
+    };
+} forEach _magazinesNotAdded
 
 // _unit setVariable ["f_var_assignGear_done", true, true];
