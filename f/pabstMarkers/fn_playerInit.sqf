@@ -61,6 +61,6 @@ if (!hasInterface) exitWith {};
     [12] call _fnc_installMapEvents;
 
     waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
-    ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_fnc_drawMap}];
+    ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
     // systemChat "GPS Added";
 };
