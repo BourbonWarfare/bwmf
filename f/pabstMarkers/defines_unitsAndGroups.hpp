@@ -22,13 +22,19 @@
     ["UnitAAF_CSL_M","CM"], \
     \
     ["UnitMSV_ASL_VD","AV"], \
-    ["UnitMSV_B1_VD","BV"], \
-    ["UnitMSV_C1_VD","CV"], \
-    ["UnitMSV_D1_VD","DV"], \
-    ["UnitMSV_E1_VD","EV"], \
-    ["UnitMSV_F1_VD","FV"] \
+    ["UnitMSV_BSL_VD","BV"], \
+    ["UnitMSV_CSL_VD","CV"], \
+    ["UnitMSV_DSL_VD","DV"], \
+    ["UnitMSV_ESL_VD","EV"], \
+    ["UnitMSV_FSL_VD","FV"], \
+    ["UnitMSV_ASL_SR","ASR"], \
+    ["UnitMSV_BSL_SR","BSR"], \
+    ["UnitMSV_CSL_SR","CSR"], \
+    ["UnitMSV_DSL_SR","DSR"], \
+    ["UnitMSV_ESL_SR","ESR"], \
+    ["UnitMSV_FSL_SR","FSR"] \
     ]
-
+    
 #define WEST_GROUPS [ \
     ["UnitNATO_COY", "NATO COY -"], \
     ["UnitNATO_1PLT", "NATO 1PLT -"], \

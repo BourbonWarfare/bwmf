@@ -42,7 +42,7 @@ switch true do {
     	_texture = _hq;
     	_color = _red;
 	};
-    case (_input in ["A1","A2","A3"]):
+    case (_input in ["A1","A2","A3","ASR"]):
     {
     	_texture = _fireteam;
     	_color = _red;
@@ -52,7 +52,7 @@ switch true do {
     	_texture = _hq;
     	_color = _blue;
 	};
-    case (_input in ["B1","B2","B3"]):
+    case (_input in ["B1","B2","B3","BSR"]):
     {
     	_texture = _fireteam;
     	_color = _blue;
@@ -62,7 +62,7 @@ switch true do {
     	_texture = _hq;
     	_color = _green;
 	};
-    case (_input in ["C1","C2","C3"]):
+    case (_input in ["C1","C2","C3","CSR"]):
     {
     	_texture = _fireteam;
     	_color = _green;
@@ -72,7 +72,7 @@ switch true do {
         _texture = _hq;
         _color = _red;
     };
-    case (_input in ["D1","D2","D3"]):
+    case (_input in ["D1","D2","D3","DSR"]):
     {
         _texture = _fireteam;
         _color = _red;
@@ -82,7 +82,7 @@ switch true do {
         _texture = _hq;
         _color = _blue;
     };
-    case (_input in ["E1","E2","E3"]):
+    case (_input in ["E1","E2","E3","ESR"]):
     {
         _texture = _fireteam;
         _color = _blue;
@@ -92,7 +92,7 @@ switch true do {
         _texture = _hq;
         _color = _green;
     };
-    case (_input in ["F1","F2","F3"]):
+    case (_input in ["F1","F2","F3","FSR"]):
     {
         _texture = _fireteam;
         _color = _green;
@@ -203,6 +203,8 @@ switch true do {
         _color = _pink;
         _size = [16,16];
     };
+	
+	
     case (_input)
 };
 [_texture,_color,_size];
