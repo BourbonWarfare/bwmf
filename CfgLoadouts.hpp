@@ -67,14 +67,14 @@ class blu_f {
 		class B_Soldier_F // rifleman
 		{
 			uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
-			vest[] = {"rhsusf_iotv_ocp_Rifleman"}; /// randomized
-			headgear[] = {"rhsusf_ach_helmet_ocp"}; /// randomized
+			vest[] = {"rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Teamleader"}; /// randomized
+			headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
 			backpack[] = {"rhsusf_assault_eagleaiii_ocp"}; /// randomized
 			backpackItems[] = {"AGM_Bandage:3","AGM_Morphine","AGM_IR_Strobe_Item"};
 			weapons[] = {WEST_RIFLE}; /// randomized
 			launchers[] = {}; /// randomized
 			handguns[] = {}; /// randomized
-			magazines[] = {WEST_RIFLE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_RIFLE_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			items[] = {};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","NVgoggles"};
 			attachments[] = {"optic_Holosight"};
@@ -85,8 +85,9 @@ class blu_f {
 			vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
 			headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
 			backpack[] = {TF_defaultWestBackpack};
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2","rhs_mag_m18_green:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
+			backpackItems[] = {"AGM_item_key_west"};
 			linkedItems[] += {"ItemGPS","Rangefinder"};
             items[] += {"AGM_MapTools"};
 		};
@@ -96,22 +97,22 @@ class blu_f {
 		};
 		class B_soldier_UAV_F : B_Soldier_F
 		{
-			backpack[] = {"B_UAV_01_backpack_F"}; /// randomized
+			backpack[] = {"B_rhsusf_B_BACKPACK"}; /// randomized
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
-			linkedItems[] += {"B_uavterminal"};
 		};
 		class B_Soldier_TL_F : B_Soldier_F // FTL
 		{
 			weapons[] = {WEST_GLRIFLE};
 			headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
-			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,"rhs_mag_m18_green:2","rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2","rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2"};
+			backpackItems[] = {"AGM_item_key_west"};
 			linkedItems[] += {"ItemGPS","Binocular"};
 		};
 		class B_Soldier_AR_F : B_Soldier_F // AR
 		{
 			vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
 			weapons[] = {WEST_AR};
-			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,"rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			
 		};
@@ -126,7 +127,7 @@ class blu_f {
 		class B_Soldier_LAT_F : B_Soldier_F // RAT
 		{
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,WEST_AT_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_CARBINE_MAG,WEST_AT_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			launchers[] = {WEST_AT}; /// randomized
 			
 		};
@@ -134,14 +135,14 @@ class blu_f {
 		{
 			vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,"smokeShell:6"};
+			magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:6"};
 			backpackItems[] = {"AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"};
 			
 		};
 		class B_support_MG_F : B_Soldier_F // MMG
 		{
 			weapons[] = {WEST_MMG};
-			magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,"rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
 			
 		};
@@ -155,7 +156,7 @@ class blu_f {
 		class B_soldier_AT_F : B_Soldier_F // MAT Gunner
 		{
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			launchers[] = {WEST_MAT}; /// randomized
 			backpackItems[] = {WEST_MAT_MAG};
 			
@@ -170,7 +171,7 @@ class blu_f {
 		class B_soldier_AA_F : B_Soldier_F // SAM Gunner
 		{
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			launchers[] = {WEST_SAM}; /// randomized
 			backpackItems[] = {WEST_SAM_MAG};
 			
@@ -185,7 +186,7 @@ class blu_f {
 		class B_support_Mort_F : B_Soldier_F // Mortar Gunner
 		{
 			weapons[] = {WEST_CARBINE};
-			magazines[] = {WEST_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
+			magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
 			backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
 			
 		};
@@ -201,7 +202,7 @@ class blu_f {
 			uniform[] = {"U_B_GhillieSuit"};  /// randomized
 			vest[] = {"rhsusf_iotv_ocp"}; /// randomized
 			weapons[] = {WEST_SPOTTER}; /// randomized
-			magazines[] = {WEST_SPOTTER_MAG,"SmokeShell:2"};
+			magazines[] = {WEST_SPOTTER_MAG,"rhs_mag_an_m8hc:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","LaserDesignator"};
 			attachments[] = {"optic_dms"};
@@ -212,7 +213,7 @@ class blu_f {
 			uniform[] = {"U_B_GhillieSuit"};  /// randomized
 			vest[] = {"rhsusf_iotv_ocp"}; /// randomized
 			weapons[] = {WEST_SNIPER}; /// randomized
-			magazines[] = {WEST_SNIPER_MAG,"SmokeShell:2"};
+			magazines[] = {WEST_SNIPER_MAG,"rhs_mag_an_m8hc:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
 			attachments[] = {"optic_dms"};
@@ -223,7 +224,7 @@ class blu_f {
 			vest[] = {"V_TacVest_blk"}; /// randomized
 			headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
 			weapons[] = {WEST_SMG}; /// randomized
-			magazines[] = {WEST_SMG_MAG,"SmokeShell:2"};
+			magazines[] = {WEST_SMG_MAG,"rhs_mag_an_m8hc:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
 		};
@@ -237,8 +238,9 @@ class blu_f {
 			vest[] = {"rhsusf_iotv_ocp"}; // randomized
 			headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized			
 			weapons[] = {WEST_CARBINE}; /// randomized
-			magazines[] = {WEST_CARBINE_MAG,"SmokeShell:2"};
+			magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			backpackItems[] = {"AGM_item_key_west"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
 			
 		};
@@ -269,7 +271,7 @@ class blu_f {
 	};
 class ind_f {
 		//Radios
-		#define TF_defaultIndBackpack  "tf_anprc155"
+		#define TF_defaultIndBackpack  "tf_anprc155_coyote"
 		//Rifle
 		#define IND_RIFLE "RH_Hk416"
 		#define IND_RIFLE_MAG "RH_30Rnd_556x45_M855A1:8","30Rnd_556x45_Stanag_Tracer_Red:2"
@@ -331,10 +333,10 @@ class ind_f {
 
 		class I_Soldier_F // rifleman
 		{
-			uniform[] = {"MNP_CombatUniform_ASA_GC", "MNP_CombatUniform_ASA_GC3","MNP_CombatUniform_ASA_GC2"};  /// randomized
-			vest[] = {"MNP_Vest_ASA_2","MNP_Vest_ASA_1","MNP_Vest_OD_A"}; /// randomized
-			headgear[] = {"H_HelmetB_plain_mcamo","rhsusf_ach_helmet_M81","MNP_Helmet_OD","MNP_Helmet_USMC","rhsusf_ach_bare_wood_ess"}; /// randomized
-			backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+			uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
+			vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
+			headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
+			backpack[] = {"MNP_B_RU1_FP"}; /// randomized
 			backpackItems[] = {"AGM_Bandage:3","AGM_Morphine","AGM_IR_Strobe_Item"};
 			weapons[] = {IND_RIFLE}; /// randomized
 			launchers[] = {}; /// randomized
@@ -347,12 +349,12 @@ class ind_f {
 		class I_officer_F : I_Soldier_F // CO and DC
 		{
 			weapons[] = {IND_GLRIFLE};
-			headgear[] = {"H_HelmetB_plain_mcamo","MNP_Helmet_OD"}; /// randomized
 			backpack[] = {TF_defaultIndBackpack};
 			magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {IND_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Binocular"};
 			attachments[] = {"rhsusf_acc_compm4"};
+			backpackItems[] = {"AGM_item_key_indp"};
             items[] += {"AGM_MapTools"};
 		};
 		class I_Soldier_SL_F : I_Officer_F // SL
@@ -372,6 +374,7 @@ class ind_f {
 			headgear[] = {"H_HelmetB_plain_mcamo","MNP_Helmet_OD"}; /// randomized
 			magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS","Binocular"};
+			backpackItems[] = {"AGM_item_key_indp"};
 			attachments[] = {"rhsusf_acc_compm4"};
 		};
 		class I_Soldier_AR_F : I_Soldier_F // AR
@@ -403,20 +406,21 @@ class ind_f {
 		{
 			weapons[] = {IND_CARBINE};
 			magazines[] = {IND_CARBINE_MAG,"smokeShell:6"};
-			backpack[] = {"B_Carryall_oli"};
+			backpack[] = {"MNP_B_RU1_CA"};
 			backpackItems[] = {"AGM_Bandage:31","AGM_Epipen:8","AGM_Bloodbag:2","AGM_Morphine:14"};
 			
 		};
 		class I_support_MG_F : I_Soldier_F // MMG
 		{
 			weapons[] = {IND_MMG};
+			backpack[] = {"MNP_B_RU1_CA"}; /// randomized
 			magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {IND_PISTOL}; /// randomized
 			
 		};
 		class I_Soldier_A_F : I_Soldier_F // MMG Spotter/Ammo Bearer
 		{
-			
+			backpack[] = {"MNP_B_RU1_CA"}; /// randomized
 			backpackItems[] = {IND_MMG_MAG};
 			linkeditems[] += {"Rangefinder"};			
 			
@@ -424,7 +428,7 @@ class ind_f {
 		class I_soldier_AT_F : I_Soldier_F // MAT Gunner
 		{
 			weapons[] = {IND_CARBINE};
-			backpack[] = {"B_Carryall_oli"};
+			backpack[] = {"MNP_B_RU1_CA"};
 			magazines[] = {IND_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
 			launchers[] = {IND_MAT}; /// randomized
 			backpackItems[] = {IND_MAT_MAG};
@@ -432,7 +436,7 @@ class ind_f {
 		};
 		class I_Soldier_AAT_F : I_Soldier_F // MAT Spotter/Ammo Bearer
 		{
-			backpack[] = {"B_Carryall_oli"};
+			backpack[] = {"MNP_B_RU1_CA"};
 			backpackItems[] = {IND_MAT_MAG};
 			linkeditems[] += {"Rangefinder"};			
 			
@@ -440,6 +444,7 @@ class ind_f {
 		class I_soldier_AA_F : I_Soldier_F // SAM Gunner
 		{
 			weapons[] = {IND_CARBINE};
+			backpack[] = {"MNP_B_RU1_CA"};
 			magazines[] = {IND_CARBINE_MAG,"HandGrenade:2","MiniGrenade:1","SmokeShell:2"};
 			launchers[] = {IND_SAM}; /// randomized
 			backpackItems[] = {IND_SAM_MAG};
@@ -449,7 +454,8 @@ class ind_f {
 		{
 			
 			backpackItems[] = {IND_SAM_MAG};	
-			linkeditems[] += {"Rangefinder"};		
+			linkeditems[] += {"Rangefinder"};	
+			backpack[] = {"MNP_B_RU1_CA"};			
 			
 		};
 		class I_support_Mort_F : I_Soldier_F // Mortar Gunner
@@ -501,6 +507,7 @@ class ind_f {
 			headgear[] = {"rhsusf_ach_bare"}; /// randomized			
 			weapons[] = {IND_SMG}; /// randomized
 			magazines[] = {IND_CARBINE_MAG,"SmokeShell:2"};
+			backpackItems[] = {"AGM_item_key_indp"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
 			
@@ -531,7 +538,7 @@ class ind_f {
 	};
 class opf_f {
 		//Radios
-		#define TF_defaultEastBackpack  "tf_anprc155"
+		#define TF_defaultEastBackpack  "tf_mr3000_rhs"
 		//Rifle
 		#define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
 		#define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -593,10 +600,10 @@ class opf_f {
 
 		class O_Soldier_F // rifleman
 		{
-			uniform[] = {"LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01_slv"};  /// randomized
-			vest[] = {"V_TacVest_camo","MNP_Vest_M81","rhs_6b23_ML_6sh92_headset","rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_radio"}; /// randomized
-			headgear[] = {"H_Shemag_olive","H_ShemagOpen_khk","H_Shemag_olive","H_ShemagOpen_khk","H_Booniehat_dgtl","H_Cap_blk_Raven","rhs_6b27m_green","rhs_6b27m_green_ess_bala","rhs_6b27m_green_ess","rhs_6b27m","rhs_6b27m_bala","rhs_6b27m_ess","rhs_6b28_green","rhs_6b28_green_ess"}; /// randomized
-			backpack[] = {"B_AssaultPack_rgr","B_Kitbag_rgr","LOP_FieldPack_OLV_medic","B_AssaultPack_dgtl","rhs_sidor","rhs_assault_umbts"}; /// randomized
+			uniform[] = {"MNP_CombatUniform_DPR_A","MNP_CombatUniform_DPR_A","MNP_CombatUniform_DPR_A","MNP_CombatUniform_DPR_B"};  /// randomized
+			vest[] = {"MNP_Vest_RUMED","MNP_Vest_RUMED_B","MNP_Vest_RUMED","MNP_Vest_RUMED_B","MNP_Vest_RUMED","MNP_Vest_RUMED_B","MNP_Vest_RU_T","MNP_Vest_RU_T2","V_I_G_resistanceLeader_F"}; /// randomized
+			headgear[] = {"rhs_6b27m_green_bala","rhs_6b26_bala_green","rhs_6b26_ess_bala_green","rhs_6b26_ess_bala_green","rhs_6b28_green_bala"}; /// randomized
+			backpack[] = {"B_AssaultPack_rgr","MNP_B_RU2_CA","MNP_B_RU2_FP","MNP_B_RU2_FP","rhs_sidor","rhs_assault_umbts"}; /// randomized
 			backpackItems[] = {"AGM_Bandage:3","AGM_Morphine","AGM_IR_Strobe_Item"};
 			weapons[] = {EAST_RIFLE}; /// randomized
 			launchers[] = {}; /// randomized
@@ -615,6 +622,7 @@ class opf_f {
 			magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,"HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			handguns[] = {EAST_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Binocular"};
+				backpackItems[] = {"AGM_item_key_east"};
             items[] += {"AGM_MapTools"};
 		};
 		class O_soldier_SL_F : O_Officer_F // SL
@@ -637,6 +645,7 @@ class opf_f {
 			//headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
 			magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS","Binocular"};
+				backpackItems[] = {"AGM_item_key_east"};
 		};
 		class O_Soldier_AR_F : O_Soldier_F // AR
 		{
@@ -801,7 +810,7 @@ class rhs_faction_msv {
 		//Radios
 		#define TF_defaultMSVBackpack  "tf_mr3000_rhs"
 		//Rifle
-		#define MSV_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
+		#define MSV_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_plummag"
 		#define MSV_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 		//GL Rifle
 		#define MSV_GLRIFLE "rhs_weap_ak74m_gp25"
@@ -810,7 +819,7 @@ class rhs_faction_msv {
 		#define MSV_GLRIFLE_MAG_HE "rhs_VOG25:10"
 		#define MSV_GLRIFLE_MAG_FLARE "rhs_VG40OP_white:2","rhs_VG40OP_red:2","rhs_VG40OP_white:2","rhs_VG40OP_green:2"
 		//Carbine
-		#define MSV_CARBINE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
+		#define MSV_CARBINE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_plummag"
 		#define MSV_CARBINE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 		// AR
 		#define MSV_AR "CUP_arifle_RPK74"
@@ -867,9 +876,9 @@ class rhs_faction_msv {
 
 		class rhs_msv_rifleman // rifleman
 		{
-			uniform[] = {"rhs_uniform_flora"};  /// randomized
-			vest[] = {"rhs_6b23", "rhs_6b23_6sh92_vog","rhs_6b23_6sh92_vog", "rhs_6b23_6sh92_vog_headset","rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper"}; /// randomized
-			headgear[] = {"rhs_6b27m_green","rhs_6b27m_green_ess_bala","rhs_6b27m_green_ess","rhs_6b27m","rhs_6b27m_bala","rhs_6b27m_ess","rhs_6b28_green","rhs_6b28_green_ess","rhs_6b28_flora_ess","rhs_6b28_flora_ess_bala"}; /// randomized
+			uniform[] = {"rhs_uniform_flora","rhs_uniform_flora_patchless_alt"};  /// randomized
+			vest[] = {"rhs_6b23_6sh92_vog","rhs_6b23_6sh92_vog", "rhs_6b23_6sh92_vog_headset","rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper"}; /// randomized
+			headgear[] = {"rhs_6b27m_green","rhs_6b26_ess_bala","rhs_6b26","rhs_6b27m_green_ess_bala","rhs_6b26_ess","rhs_6b26_bala","rhs_6b27m_green_ess","rhs_6b27m","rhs_6b27m_bala","rhs_6b27m_ess","rhs_6b28_green","rhs_6b28_green_ess","rhs_6b28_flora_ess","rhs_6b28_flora_ess_bala"}; /// randomized
 			backpack[] = {"rhs_sidor"}; /// randomized
 			backpackItems[] = {"AGM_Bandage:4","AGM_Morphine","AGM_IR_Strobe_Item"};
 			weapons[] = {MSV_RIFLE}; /// randomized
@@ -889,6 +898,7 @@ class rhs_faction_msv {
 			magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_GLRIFLE_MAG_FLARE,MSV_PISTOL_MAG,"HandGrenade:2","SmokeShell:2"};
 			handguns[] = {MSV_PISTOL}; /// randomized
 			linkedItems[] += {"ItemGPS","Rangefinder"};
+				backpackItems[] = {"AGM_item_key_east"};
             items[] += {"AGM_MapTools"};
 		};
 		class rhs_msv_sergeant : rhs_msv_Officer // SL
@@ -902,6 +912,7 @@ class rhs_faction_msv {
 			headgear[] = {"rhs_6b27m_green_bala"}; /// randomized
 			magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_GLRIFLE_MAG_FLARE,"HandGrenade:1","MiniGrenade:1","SmokeShell:2","HandGrenade:1","MiniGrenade:1","SmokeShell:2"};
 			linkedItems[] += {"ItemGPS","Binocular"};
+				backpackItems[] = {"AGM_item_key_east"};
 		};
 		class rhs_msv_machinegunner : rhs_msv_rifleman // AR
 		{
@@ -1053,6 +1064,7 @@ class rhs_faction_msv {
 			weapons[] = {MSV_CARBINE}; /// randomized
 			magazines[] = {MSV_CARBINE_MAG,"SmokeShell:2"};
 			items[] = {"AGM_Bandage:3","AGM_Morphine"};
+			backpackItems[] = {"AGM_item_key_east"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
 			
 		};
