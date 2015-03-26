@@ -4381,7 +4381,7 @@ class Mission
 					azimut=0.51626098;
 					id=288;
 					side="WEST";
-					vehicle="B_support_AMort_F";
+					vehicle="B_Soldier_A_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG2_AG";
