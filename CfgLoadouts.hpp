@@ -87,7 +87,7 @@ class blu_f {
 			backpack[] = {TF_defaultWestBackpack};
 			magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"rhs_mag_m67:1","MiniGrenade:1","rhs_mag_an_m8hc:2","rhs_mag_m18_green:2"};
 			handguns[] = {WEST_PISTOL}; /// randomized
-			backpackItems[] = {"AGM_item_key_west"};
+			backpackItems[] += {"AGM_item_key_west"};
 			linkedItems[] += {"ItemGPS","Rangefinder"};
             items[] += {"AGM_MapTools"};
 		};
