@@ -1,7 +1,16 @@
 class WS
 	{
 
-		
+		class debug
+		{
+			file = "ws_fnc\dbg";
+			class debugText {};
+			class typeCheck {};
+			class clipboardCode {};
+			class copyPos {};
+			class countUnits {};
+			class debugTriggers {postInit = 1;};
+		};
 		class tools
 		{
 			file = "ws_fnc\tools";
@@ -16,6 +25,7 @@ class WS
 			class showFPS {};
 			class nearPlayer {};
 			class listPlayers {};
+			class setGVar {};
 		};
 		class effects
 		{
@@ -23,11 +33,15 @@ class WS
 			class createTripflare {};
 			class createLightning {};
 			class createCAS {};
-			
+			class createOrdnance {};
 		};
 		class misc
 		{
 			file = "ws_fnc\misc";
+			class switchLights {};
+			class attachLight {};
+			class attachChem {};
+			class attachIR {};
 			class broadcast {};
 			class showIntro {};
 		};
@@ -52,11 +66,21 @@ class WS
 			class taskDefend {};
 			class taskCrew {};
 			class taskAmbush {};
+			class taskArtilleryFire {};
 			class taskLand {};
+			class taskConvoy {};
 			class addWaypoint {};
 			class setAIMode {};
 		};
-		
+		class cache
+		{
+			file = "ws_fnc\cache";
+			class cInit {};
+			class gCache {};
+			class gUncache {};
+			class cTracker {};
+		};
+
 		class init {
 			class init {file = "ws_fnc\ws_fnc_init.sqf";preInit = 1;};
 		};

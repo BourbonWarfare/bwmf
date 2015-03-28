@@ -25,6 +25,10 @@ _arr = [];
 _i = 0;
 _done = false;
 
+if (typeName _this != typeName []) then {
+	_this = [_this];
+};
+
 {
 	while {true} do {
 		_obj = "";
@@ -38,7 +42,7 @@ _done = false;
 		if (isNil _obj || _i > 500) exitWith {_i = 0;};
 
 		// If the object exists, add it to the array
-		call compile format ["_arr set [count _arr,%1]",_obj];
+		call compile format ["_arr append (%1)",_obj];
 		_i = _i + 1;
 	};
 } forEach _this;
