@@ -503,6 +503,7 @@ class ind_f {
 		};
 		class I_crew_F // Crew
 		{
+			uniform[] = {"MNP_CombatUniform_ASA_GC", "MNP_CombatUniform_ASA_GC3","MNP_CombatUniform_ASA_GC2"};  /// randomized
 			vest[] = {"LOP_V_Carrier_WDL"}; // randomized
 			headgear[] = {"rhsusf_ach_bare"}; /// randomized			
 			weapons[] = {IND_SMG}; /// randomized
@@ -514,7 +515,7 @@ class ind_f {
 		};
 		class I_Soldier_repair_F : I_crew_F // Repair Specialist
 		{
-			uniform[] = {"MNP_CombatUniform_ASA_GC", "MNP_CombatUniform_ASA_GC3","MNP_CombatUniform_ASA_GC2"};  /// randomized
+			
 			backpack[] = {"B_Carryall_oli"};
 			backpackItems[] = {"Toolkit"};
 			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio"};
