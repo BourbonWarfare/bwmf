@@ -337,14 +337,11 @@ class CfgLoadouts {
             linkeditems[] += {"Binocular"};
         };
         class I_Soldier_LAT_F: I_Soldier_F {// RAT
-
             weapons[] = {IND_CARBINE};
             backpack[] = {"rhs_rpg_empty"}; /// randomized
             magazines[] = {IND_CARBINE_MAG,IND_AT_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             launchers[] = {IND_AT}; /// randomized
             attachments[] = {""};
-
-
         };
         class I_medic_F: I_Soldier_F {// Medic
             weapons[] = {IND_CARBINE};
@@ -359,51 +356,38 @@ class CfgLoadouts {
             handguns[] = {IND_PISTOL}; /// randomized
         };
         class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
-
             backpack[] = {"B_AssaultPack_rgr"}; /// randomized
             backpackItems[] = {IND_MMG_MAG};
             linkeditems[] += {"Rangefinder"};
-
         };
         class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
-
             weapons[] = {IND_CARBINE};
             backpack[] = {"rhs_rpg_empty"};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             launchers[] = {IND_MAT}; /// randomized
             backpackItems[] = {IND_MAT_MAG};
-
         };
         class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
-
             backpack[] = {"rhs_rpg_empty"};
             backpackItems[] = {IND_MAT_MAG};
             linkeditems[] += {"Rangefinder"};
-
         };
         class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
-
             weapons[] = {IND_CARBINE};
             backpack[] = {"rhs_rpg_empty"};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             launchers[] = {IND_SAM}; /// randomized
             backpackItems[] = {IND_SAM_MAG};
-
         };
         class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
-
-
             backpackItems[] = {IND_SAM_MAG};
             linkeditems[] += {"Rangefinder"};
             backpack[] = {"rhs_rpg_empty"};
-
         };
         class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
-
             weapons[] = {IND_CARBINE};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             backpack[] = {"I_Mortar_01_weapon_F"}; /// randomized
-
         };
         class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
             backpack[] = {"I_Mortar_01_support_F"}; /// randomized
