@@ -2,7 +2,7 @@ class CfgLoadouts {
 
     class blu_f {
         //Radios
-        #define TF_defaultWestBackpack  "tf_rt1523g_big_rhs"
+        //#define TF_defaultWestBackpack  "tf_rt1523g_big_rhs"
         //Rifle
         #define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
         #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
@@ -82,7 +82,6 @@ class CfgLoadouts {
             weapons[] = {WEST_GLRIFLE};
             vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
             headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-            backpack[] = {TF_defaultWestBackpack};
             magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2","rhs_mag_m18_green:2"};
             handguns[] = {WEST_PISTOL}; /// randomized
             backpackItems[] += {"AGM_item_key_west"};
@@ -226,7 +225,7 @@ class CfgLoadouts {
 
     class ind_f {
         //Radios
-        #define TF_defaultIndBackpack  "tf_anprc155_coyote"
+        //#define TF_defaultIndBackpack  "tf_anprc155_coyote"
         //Rifle
         #define IND_RIFLE "hlc_rifle_ak74"
         #define IND_RIFLE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
@@ -301,7 +300,6 @@ class CfgLoadouts {
         };
         class I_officer_F: I_Soldier_F {// CO and DC
             weapons[] = {IND_GLRIFLE};
-            backpack[] = {TF_defaultIndBackpack};
             magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             handguns[] = {IND_PISTOL}; /// randomized
             linkedItems[] += {"ItemGPS","Binocular"};
@@ -456,7 +454,7 @@ class CfgLoadouts {
 
     class opf_f {
         //Radios
-        #define TF_defaultEastBackpack  "tf_mr3000_rhs"
+        //#define TF_defaultEastBackpack  "tf_mr3000_rhs"
         //Rifle
         #define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
         #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -534,7 +532,6 @@ class CfgLoadouts {
             weapons[] = {EAST_GLRIFLE};
             //vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
             //headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-            backpack[] = {TF_defaultEastBackpack};
             magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             handguns[] = {EAST_PISTOL}; /// randomized
             linkedItems[] += {"ItemGPS","Binocular"};
@@ -686,7 +683,7 @@ class CfgLoadouts {
 
     class rhs_faction_msv {
         //Radios
-        #define TF_defaultMSVBackpack  "tf_mr3000_rhs"
+        //#define TF_defaultMSVBackpack  "tf_mr3000_rhs"
         //Rifle
         #define MSV_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_plummag"
         #define MSV_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -770,7 +767,6 @@ class CfgLoadouts {
             weapons[] = {MSV_GLRIFLE};
             vest[] = {"rhs_6b23_6sh92_vog_headset"}; /// randomized
             headgear[] = {"rhs_6b27m_green_ess_bala"}; /// randomized
-            backpack[] = {TF_defaultMSVBackpack};
             magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_GLRIFLE_MAG_FLARE,MSV_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             handguns[] = {MSV_PISTOL}; /// randomized
             linkedItems[] += {"ItemGPS","Rangefinder"};
