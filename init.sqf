@@ -23,12 +23,15 @@ setViewDistance 2500;
 // BWMF - Mission Timer/Safe Start
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
+//ACRE2
+[true, true] call acre_api_fnc_setupMission;
+
 // F3 - Radio Framework
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] call F_Radios_fnc_tfrRadioSetup;
+//[] call F_Radios_fnc_tfrRadioSetup;
 
 //PABST: setup custom freqs automatically for people
-[] call F_Radios_fnc_setupRadioChannels;
+//[] call F_Radios_fnc_setupRadioChannels;
 
 // BWMF: DAC Debug Params
 [] call F_DAC_fnc_setupDacParams;
