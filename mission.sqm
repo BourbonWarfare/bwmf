@@ -6832,7 +6832,7 @@ class Mission
 				class Item1
 				{
 					position[]={928.85974,0,229.79088};
-					azimut=-4.7398405;
+					azimut=-4.73984;
 					id=445;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6840,6 +6840,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_AH1_CP";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -6902,7 +6903,7 @@ class Mission
 				class Item1
 				{
 					position[]={862.37695,0,228.53847};
-					azimut=-5.0912495;
+					azimut=-5.0912499;
 					id=449;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6910,6 +6911,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH1_CP";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -6937,7 +6939,7 @@ class Mission
 				class Item1
 				{
 					position[]={888.69208,0,228.84065};
-					azimut=-5.0912495;
+					azimut=-5.0912499;
 					id=451;
 					side="EAST";
 					vehicle="rhs_msv_engineer";
@@ -6945,6 +6947,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitMSV_TH2_CP";
+					init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
 					description="Russian Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
