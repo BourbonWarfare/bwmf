@@ -149,13 +149,13 @@ class CfgFunctions {
             class setupDrawThings {};
         };
     };
-    class F_Radios {
+   /* class F_Radios {
         class F_Radios {
             file = "f\radios";
             class setupRadioChannels {};
             class tfrRadioSetup {};
-        };
-    };
+        };*/
+    //};
     class F_DAC {
         class F_DAC {
             file = "DAC";
