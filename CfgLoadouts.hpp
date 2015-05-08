@@ -50,11 +50,11 @@ class CfgLoadouts {
         };
         class Tank {
             TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
-            TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4","ACRE_PRC148:2"};
+            TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4","ACRE_PRC117F:2","ACRE_PRC148:2"};
         };
         class Helicopter {
             TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
-            TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4","ACRE_PRC148:2"};
+            TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4","ACRE_PRC117F:2","ACRE_PRC148:2"};
         };
         class Plane {
             TransportMagazines[] = {};
@@ -186,12 +186,14 @@ class CfgLoadouts {
         };
         class B_Helipilot_F {// Pilot
             uniform[] = {"U_B_HeliPilotCoveralls"};  /// randomized
+            backpack[] = {"B_AssaultPack_blk"};
             vest[] = {"V_TacVest_blk"}; /// randomized
             headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
             weapons[] = {WEST_SMG}; /// randomized
             magazines[] = {WEST_SMG_MAG,"rhs_mag_an_m8hc:2"};
+            backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
             items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
-            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","NVgoggles"};
+            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
         };
         class B_helicrew_F: B_Helipilot_F { // Pilot
 
@@ -203,14 +205,14 @@ class CfgLoadouts {
             weapons[] = {WEST_CARBINE}; /// randomized
             magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:2"};
             items[] = {"ACE_fieldDressing:3","ACE_morphine"};
-            backpackItems[] += {"ACE_key_west","ACRE_PRC148"};
-            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
+            backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
+            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC148","itemGPS"};
         };
         class B_soldier_repair_F: B_crew_F {// Repair Specialist
             backpack[] = {"B_Carryall_mcamo"};
             backpackItems[] = {"Toolkit"};
             vest[] = {"rhsusf_iotv_ocp_repair"}; /// randomized
-            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio"};
+            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC148"};
         };
         class B_soldier_exp_F: B_soldier_repair_F {// Explosive Specialist
             backpack[] = {"B_Carryall_mcamo"};
