@@ -90,7 +90,7 @@ class CfgLoadouts {
         };
         class B_Soldier_SL_F: B_Officer_F {// SL
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ItemGPS","Rangefinder"};
-            items[] += {"ACE_MapTools","ACRE_148"};
+            items[] += {"ACE_MapTools","ACRE_PRC148"};
             backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         };
         class B_soldier_UAV_F: B_Soldier_F {
@@ -314,7 +314,7 @@ class CfgLoadouts {
         };
         class I_Soldier_SL_F: I_Officer_F {// SL
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ItemGPS","Binocular"};
-            items[] += {"ACE_MapTools","ACRE_148"};
+            items[] += {"ACE_MapTools","ACRE_PRC148"};
             backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         };
         class I_soldier_UAV_F: I_Soldier_F {
@@ -548,7 +548,7 @@ class CfgLoadouts {
         };
         class O_soldier_SL_F: O_Officer_F { // SL
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ItemGPS","Binocular"};
-            items[] += {"ACE_MapTools","ACRE_148"};
+            items[] += {"ACE_MapTools","ACRE_PRC148"};
             backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         };        
         class O_soldier_UAV_F: O_Soldier_F {
@@ -790,7 +790,7 @@ class CfgLoadouts {
         class rhs_msv_sergeant: rhs_msv_Officer {// SL
 
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ItemGPS","Binocular"};
-            items[] += {"ACE_MapTools","ACRE_148"};
+            items[] += {"ACE_MapTools","ACRE_PRC148"};
             backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
 
         };
