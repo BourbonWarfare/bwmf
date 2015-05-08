@@ -543,7 +543,7 @@ class CfgLoadouts {
             magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             handguns[] = {EAST_PISTOL}; /// randomized
             linkedItems[] += {"ItemGPS","Binocular"};
-            backpackItems[] += {"ACE_key_east","ACRE_PRC117F:1"};
+            backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
             items[] += {"ACE_MapTools","ACRE_PRC148"};
         };
         class O_soldier_SL_F: O_Officer_F { // SL
@@ -889,7 +889,7 @@ class CfgLoadouts {
             headgear[] = {"rhs_Booniehat_flora","rhs_fieldcap"}; /// randomized
             weapons[] = {MSV_SFR}; /// randomized
             magazines[] = {MSV_SFR_MAG,"rhs_mag_rdg2_white:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_148"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","Rangefinder","ACE_DefusalKit","ACE_Clacker"};
             attachments[] = {"hlc_optic_kobra","hlc_muzzle_545SUP_AK"};
         };
