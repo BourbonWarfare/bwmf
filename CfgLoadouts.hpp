@@ -171,7 +171,7 @@ class CfgLoadouts {
             headgear[] = {"rhs_Booniehat_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
             weapons[] = {WEST_SPOTTER}; /// randomized
             magazines[] = {WEST_SPOTTER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","LaserDesignator"};
             attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
         };
@@ -181,7 +181,7 @@ class CfgLoadouts {
             headgear[] = {"rhs_Booniehat_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
             weapons[] = {WEST_SNIPER}; /// randomized
             magazines[] = {WEST_SNIPER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
             attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","RH_m110sd_t"};
         };
@@ -193,7 +193,7 @@ class CfgLoadouts {
             weapons[] = {WEST_SMG}; /// randomized
             magazines[] = {WEST_SMG_MAG,"rhs_mag_an_m8hc:2"};
             backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
         };
         class B_helicrew_F: B_Helipilot_F { // Pilot
@@ -206,7 +206,7 @@ class CfgLoadouts {
             backpack[] = {"B_Carryall_mcamo"};
             weapons[] = {WEST_CARBINE}; /// randomized
             magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             backpackItems[] += {"ACE_key_west","ACRE_PRC148","ACRE_PRC117F"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
         };
