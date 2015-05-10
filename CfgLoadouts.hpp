@@ -133,24 +133,26 @@ class CfgLoadouts {
             attachments[] = {"RH_ta648"};
         };
         class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
-            backpackItems[] = {WEST_MMG_MAG};
+            backpackItems[] += {WEST_MMG_MAG};
             linkedItems[] += {"Rangefinder"};
         };
         class B_soldier_AT_F: B_Soldier_F {// MAT Gunner
             weapons[] = {WEST_CARBINE};
             magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
             launchers[] = {WEST_MAT}; /// randomized
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             backpackItems[] = {WEST_MAT_MAG};
         };
         class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
             backpackItems[] = {WEST_MAT_MAG};
             linkedItems[] += {"Rangefinder"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         };
         class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
             weapons[] = {WEST_CARBINE};
             magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","MiniGrenade:1","rhs_mag_an_m8hc:2"};
             launchers[] = {WEST_SAM}; /// randomized
-            backpackItems[] = {WEST_SAM_MAG};
+            backpackItems[] += {WEST_SAM_MAG};
         };
         class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
             backpackItems[] = {WEST_SAM_MAG};
@@ -159,11 +161,13 @@ class CfgLoadouts {
         class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
             weapons[] = {WEST_CARBINE};
             magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
         };
         class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
             backpack[] = {"B_Mortar_01_support_F"}; /// randomized
             linkedItems[] += {"Rangefinder"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         };
         class B_spotter_F {// Spotter
             uniform[] = {"rhs_uniform_cu_ocp_10th"};  /// randomized
