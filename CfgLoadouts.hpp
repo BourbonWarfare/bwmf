@@ -356,7 +356,7 @@ class CfgLoadouts {
             weapons[] = {IND_CARBINE};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rdg2_white:6"};
             backpack[] = {"B_AssaultPack_rgr"};
-            backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
+            backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
         };
         class I_support_MG_F: I_Soldier_F {// MMG
             weapons[] = {IND_MMG};
@@ -366,7 +366,7 @@ class CfgLoadouts {
         };
         class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
             backpack[] = {"B_AssaultPack_rgr"}; /// randomized
-            backpackItems[] = {IND_MMG_MAG};
+            backpackItems[] += {IND_MMG_MAG};
             linkeditems[] += {"Rangefinder"};
         };
         class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
@@ -374,11 +374,11 @@ class CfgLoadouts {
             backpack[] = {"rhs_rpg_empty"};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             launchers[] = {IND_MAT}; /// randomized
-            backpackItems[] = {IND_MAT_MAG};
+            backpackItems[] += {IND_MAT_MAG};
         };
         class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
             backpack[] = {"rhs_rpg_empty"};
-            backpackItems[] = {IND_MAT_MAG};
+            backpackItems[] += {IND_MAT_MAG};
             linkeditems[] += {"Rangefinder"};
         };
         class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
@@ -386,7 +386,7 @@ class CfgLoadouts {
             backpack[] = {"rhs_rpg_empty"};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
             launchers[] = {IND_SAM}; /// randomized
-            backpackItems[] = {IND_SAM_MAG};
+            backpackItems[] += {IND_SAM_MAG};
         };
         class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
             backpackItems[] = {IND_SAM_MAG};
@@ -396,10 +396,12 @@ class CfgLoadouts {
         class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
             weapons[] = {IND_CARBINE};
             magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             backpack[] = {"I_Mortar_01_weapon_F"}; /// randomized
         };
         class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
             backpack[] = {"I_Mortar_01_support_F"}; /// randomized
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             linkeditems[] += {"Rangefinder"};
         };
         class I_spotter_F {// Spotter
@@ -409,7 +411,7 @@ class CfgLoadouts {
             backpack[] = {"B_AssaultPack_rgr"}; /// randomized
             weapons[] = {IND_SPOTTER}; /// randomized
             magazines[] = {IND_SPOTTER_MAG,"rhs_mag_rdg2_white:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","LaserDesignator"};
             attachments[] = {"rhs_acc_pso1m2"};
         };
@@ -420,7 +422,7 @@ class CfgLoadouts {
             backpack[] = {"B_AssaultPack_rgr"}; /// randomized
             weapons[] = {IND_SNIPER}; /// randomized
             magazines[] = {IND_SNIPER_MAG,"rhs_mag_rdg2_white:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
             attachments[] = {"rhs_acc_pso1m2"};
         };
@@ -431,7 +433,7 @@ class CfgLoadouts {
             backpack[] = {"B_AssaultPack_rgr"};
             weapons[] = {IND_SMG}; /// randomized
             magazines[] = {IND_SMG_MAG,"rhs_mag_rdg2_white:2"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
             backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
         };
@@ -442,7 +444,7 @@ class CfgLoadouts {
             weapons[] = {IND_SMG}; /// randomized
             magazines[] = {IND_SMG_MAG,"rhs_mag_rdg2_white:2"};
             backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
-            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+            items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
             linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
         };
         class I_Soldier_repair_F: I_crew_F {// Repair Specialist
