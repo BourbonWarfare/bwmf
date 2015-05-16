@@ -12,12 +12,46 @@
 
 if (!hasInterface) exitWith {};
 
-diag_log text format ["[BW] - Seting Channels for player"];
-
 [] spawn {
+    diag_log text format ["[BW] - Seting Channels for player"];
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
+
+    diag_log text format ["[BW] - Player Stable, Seting Presets for Side %1", playerside];
+    
+    _languagesPlayerSpeaks = player getVariable ["f_languages", []];
+
+    switch (playerside) do {
+    case west: {
+            if (_languagesPlayerSpeaks isEqualTo []) then {_languagesPlayerSpeaks = ["en"];};
+            ["ACRE_PRC343", "west343"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC148", "west148"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC117F", "west117"] call acre_api_fnc_setPreset;
+        };
+    case east: {
+            if (_languagesPlayerSpeaks isEqualTo []) then {_languagesPlayerSpeaks = ["ru"];};
+            ["ACRE_PRC343", "east343"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC148", "east148"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC117F", "east117"] call acre_api_fnc_setPreset;
+        };
+    case independent: {
+            if (_languagesPlayerSpeaks isEqualTo []) then {_languagesPlayerSpeaks = ["ar"];};
+            ["ACRE_PRC343", "indp343"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC148", "indp148"] call acre_api_fnc_setPreset;
+            ["ACRE_PRC117F", "indp117"] call acre_api_fnc_setPreset;
+        };
+        case civilian: {
+            if (_languagesPlayerSpeaks isEqualTo []) then {_languagesPlayerSpeaks = ["ar"];};
+        };
+    };
+
+    diag_log text format ["[BW] - You speak %1", _languagesPlayerSpeaks];
+    systemChat format ["[BW] - You speak %1", _languagesPlayerSpeaks];
+    
+    _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
+    
     waitUntil {[] call acre_api_fnc_isInitialized};
+    diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1", time];
     systemChat "[ACRE] - init finished";
 
     _groupID = (group player) getVariable ["F3_GroupID", "-1"];

@@ -153,7 +153,7 @@ class CfgFunctions {
         class F_Radios {
             file = "f\radios";
             class acreRadioSetup {};
-            class acreRadioSetChannels {};
+            class acreRadioSetPlayerChannels {};
         };
     };
     class F_DAC {
