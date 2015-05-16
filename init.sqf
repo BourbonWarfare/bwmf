@@ -24,11 +24,11 @@ setViewDistance 2500;
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 //ACRE2
-[true, true] call acre_api_fnc_setupMission;
+// [true, true] call acre_api_fnc_setupMission;
 
 // F3 - Radio Framework
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-//[] call F_Radios_fnc_tfrRadioSetup;
+[] call F_Radios_fnc_acreRadioSetup;
 
 //PABST: setup custom freqs automatically for people
 //[] call F_Radios_fnc_setupRadioChannels;

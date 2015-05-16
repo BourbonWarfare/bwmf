@@ -92,7 +92,6 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="BWMF_4.1";
 		overviewText="*** Insert mission description here. ***";
 		resistanceWest=0;
 		startWeather=0;
@@ -100,8 +99,6 @@ class Mission
 		forecastWeather=0;
 		forecastWind=0;
 		forecastWaves=0;
-		wavesForced=1;
-		windForced=1;
 		year=2035;
 		month=7;
 		day=6;
