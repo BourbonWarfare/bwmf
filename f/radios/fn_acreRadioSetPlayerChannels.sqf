@@ -86,6 +86,11 @@ if (!hasInterface) exitWith {};
         _groupFreqIndex = 0;
     };
 
+    if (_groupLRFreqIndex == -1) then {
+        systemChat format ["Unknown Group (Using Default) [%1]", _groupID];
+        _groupLRFreqIndex = 0;
+    };
+
     _radio343 = ["ACRE_PRC343"] call acre_api_fnc_getRadioByType;
     if ((!isNil "_radio343") && {_radio343 != ""}) then {
         systemChat format ["[%1] is set to CH [%2]", _radio343, (_groupFreqIndex + 1)];
