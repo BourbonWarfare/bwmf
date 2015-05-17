@@ -26,7 +26,7 @@ _str = name _u + _suffix;
 
 _icon = "";
 _size = 0;
-if ((_u getVariable ["f_isSpeaking", false]) && {(vehicle _u) == _u}) then {
+if ((_u getVariable ["tf_isSpeaking", false]) && {(vehicle _u) == _u}) then { //TODO, switch to ACRE
     _icon = "\A3\ui_f\data\igui\rscingameui\rscdisplayvoicechat\microphone_ca.paa";
     _size = 0.5;
 };

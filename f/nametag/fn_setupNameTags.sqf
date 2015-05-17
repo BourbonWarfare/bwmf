@@ -1,14 +1,3 @@
-
-if (isServer) then {
-    //If someone disconnects while speaking, reset their variable
-    addMissionEventHandler ["HandleDisconnect", {
-        _disconnectedPlayer = _this select 0;
-        if (_disconnectedPlayer getVariable ["f_isSpeaking", false]) then {
-            _disconnectedPlayer setVariable ["f_isSpeaking", false, true];
-        };
-    }];
-};
-
 if (!hasInterface) exitWith {};
 
 
@@ -23,16 +12,6 @@ if (!hasInterface) exitWith {};
 _this spawn {
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
-
-
-    [{
-        _oldSetting = player getVariable ["f_isSpeaking", false];
-        _newSetting = (player getVariable ["tf_isSpeaking", false]) || {!(isNull findDisplay 55)};
-        if (!(_oldSetting isEqualTo _newSetting)) then {
-            player setVariable ["f_isSpeaking", _newSetting, true];
-        };
-    }, 0.05, []] call CBA_fnc_addPerFrameHandler;
-
 
     // SET GLOBAL VARIABLES
 
