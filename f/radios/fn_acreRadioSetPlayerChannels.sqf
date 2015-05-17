@@ -10,6 +10,15 @@
     ["2PLT"] \
     ]
 
+#define LR_CHANNELS_ARRAYS  [ \
+    ["1PLT","MMG1","MMG2","MAT1","MAT2", "ASL","A1","A2","A3", "BSL","B1","B2","B3", "CSL","C1", "C2","C3"], \
+    ["2PLT", "DSL","D1", "D2","D3", "ESL","E1", "E2","E3", "FSL","F1", "F2","F3"], \
+    [], \
+    ["COY","TH1", "TH2", "TH3", "TH4", "AH1"], \
+    [], \
+    [] \
+    ]
+
 if (!hasInterface) exitWith {};
 
 [] spawn {
@@ -18,7 +27,7 @@ if (!hasInterface) exitWith {};
     if (!alive player) then {waitUntil {alive player};};
 
     diag_log text format ["[BW] - Player Stable, Seting Presets for Side %1", playerside];
-    
+
     _languagesPlayerSpeaks = player getVariable ["f_languages", []];
 
     switch (playerside) do {
@@ -47,15 +56,16 @@ if (!hasInterface) exitWith {};
 
     diag_log text format ["[BW] - You speak %1", _languagesPlayerSpeaks];
     systemChat format ["[BW] - You speak %1", _languagesPlayerSpeaks];
-    
+
     _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
-    
+
     waitUntil {[] call acre_api_fnc_isInitialized};
     diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1", time];
     systemChat "[ACRE] - init finished";
 
     _groupID = (group player) getVariable ["F3_GroupID", "-1"];
     _groupFreqIndex = -1;
+    _groupLRFreqIndex = -1;
 
     if (_groupID != "-1") then {
         _splitName = [_groupID, " "] call BIS_fnc_splitString;
@@ -64,6 +74,10 @@ if (!hasInterface) exitWith {};
             {
                 if (_groupName in _x) exitWith { _groupFreqIndex = _forEachIndex; };
             } forEach CHANNELS_ARRAYS;
+
+            {
+                if (_groupName in _x) exitWith { _groupLRFreqIndex = _forEachIndex; };
+            } forEach LR_CHANNELS_ARRAYS;
         };
     };
 
@@ -76,6 +90,18 @@ if (!hasInterface) exitWith {};
     if ((!isNil "_radio343") && {_radio343 != ""}) then {
         systemChat format ["[%1] is set to CH [%2]", _radio343, (_groupFreqIndex + 1)];
         [_radio343, (_groupFreqIndex + 1)] call acre_api_fnc_setRadioChannel;
+    };
+
+    _radio148 = ["ACRE_PRC148"] call acre_api_fnc_getRadioByType;
+    if ((!isNil "_radio148") && {_radio148 != ""}) then {
+        systemChat format ["[%1] is set to CH [%2]", _radio148, (_groupLRFreqIndex + 1)];
+        [_radio148, (_groupLRFreqIndex + 1)] call acre_api_fnc_setRadioChannel;
+    };
+
+    _radio117 = ["ACRE_PRC117F"] call acre_api_fnc_getRadioByType;
+    if ((!isNil "_radio117") && {_radio117 != ""}) then {
+        systemChat format ["[%1] is set to CH [%2]", _radio117, (_groupLRFreqIndex + 1)];
+        [_radio117, (_groupLRFreqIndex + 1)] call acre_api_fnc_setRadioChannel;
     };
 
     // {
