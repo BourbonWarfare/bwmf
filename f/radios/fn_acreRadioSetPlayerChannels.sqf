@@ -87,7 +87,7 @@ if (!hasInterface) exitWith {};
     };
 
     if (_groupLRFreqIndex == -1) then {
-        systemChat format ["Unknown Group (Using Default) [%1]", _groupID];
+        systemChat format ["Unknown LR Group (Using Default) [%1]", _groupID];
         _groupLRFreqIndex = 0;
     };
 
