@@ -1,3 +1,7 @@
+//Set Radio Difficulty:
+[false] call acre_api_fnc_setInterference;
+[0.5] call acre_api_fnc_setLossModelScale;
+
 //Setup babble languages:
 ["en", "English"] call acre_api_fnc_babelAddLanguageType;
 ["ru", "Russian"] call acre_api_fnc_babelAddLanguageType;
