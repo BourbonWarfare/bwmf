@@ -129,7 +129,7 @@ class blu_f {
         weapons[] = {WEST_MMG};
         magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,"rhs_mag_m67:1","rhs_mag_an_m8hc:2"};
         handguns[] = {WEST_PISTOL}; /// randomized
-        attachments[] = {"RH_ta648"};
+        attachments[] = {};
     };
     class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
