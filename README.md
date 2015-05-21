@@ -1,4 +1,4 @@
-## BWMF Version 4.0 RC1 ##
+## BWMF Version 4.1 RC1 ##
 
 *New gear loadouts based on .hpp
 *Increased Blufor to company level

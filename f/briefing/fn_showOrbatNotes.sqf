@@ -3,7 +3,7 @@
 if (!hasInterface) exitWith {};
 
 [] spawn {
-    uiSleep 5;
+    uiSleep 10;
 
     //private ["_diaryHyperlinkedText", "_groups", "_precompileGroups"];
 
