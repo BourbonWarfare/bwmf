@@ -1,5 +1,6 @@
 class CfgLoadouts {
-    //For Each faction only include one hpp, use (//) to comment out other files
+    //Only include one hpp per faction!
+    //use (//) to comment out other files
 
     //BLUFOR FACTION:
     #include "Loadouts\bluefor_standard.hpp" //Our Standard "us tan" loadout
@@ -15,10 +16,11 @@ class CfgLoadouts {
 
     //RUSSIAN FACTIONS:
     #include "Loadouts\russian_standard.hpp" //Our standard "commy" loadout
+    // #include "Loadouts\russian_sov-sweedish.hpp" //Soviet's "sweedish" loadout
 
 
 
-
+    //Bonus example civilian loadouts:
     class CIV_F {
         class C_man_1 {
             uniform[] = {"U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite"};  /// randomized
