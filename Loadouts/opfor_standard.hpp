@@ -222,16 +222,16 @@ class opf_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
         attachments[] = {"rhs_acc_dtk"};
     };
-    class O_soldier_exp_F: O_soldier_repair_F {// Explosive Specialist
+    class O_soldier_exp_F: O_soldier_repair_F {// Mines Specialist
         backpack[] = {"B_Carryall_mcamo"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
-        magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
+        magazines[] = {EAST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
         attachments[] = {"rhs_acc_dtk"};
     };
     class O_engineer_F: O_soldier_repair_F {// Explosive Specialist
         backpack[] = {"B_Carryall_mcamo"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
-        magazines[] = {EAST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
+        magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
         attachments[] = {"rhs_acc_dtk"};
     };
 };

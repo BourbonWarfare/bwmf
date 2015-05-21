@@ -3910,7 +3910,7 @@ class Mission
 					position[]={206.4341,0,177.02783};
 					id=256;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="O_soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_A2";
@@ -3921,7 +3921,7 @@ class Mission
 					position[]={209.95949,0,176.90283};
 					id=257;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="O_soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_ENG1_A3";
