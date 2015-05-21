@@ -62,7 +62,7 @@ if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then 
     _unit addVest _toAdd;
 } else {
     if (((count _vests) > 0) && {_originalVest != ""}) then {
-        diag_log text format ["[BW] %1 Vest (%2) not found, readding default (%3)", _loadout, _toAdd, _originalVest]
+        diag_log text format ["[BW] %1 Vest (%2) not found, readding default (%3)", _loadout, _toAdd, _originalVest];
         _unit addVest _originalVest;
     };
 };
