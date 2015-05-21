@@ -174,7 +174,7 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
     } else {
         if (isNil "F_GEAR_ERROR_LOADOUTS") then {F_GEAR_ERROR_LOADOUTS = [];};
         diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
-        if (!_loadout in F_GEAR_ERROR_LOADOUTS) then {
+        if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
             F_GEAR_ERROR_LOADOUTS pushBack _loadout;
             systemChat format ["Failed To add Magazine %1 to %2", _x, _loadout];
         };
