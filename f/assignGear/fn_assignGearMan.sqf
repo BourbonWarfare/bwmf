@@ -179,4 +179,9 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
             systemChat format ["Failed To add Magazine %1 to %2", _x, _loadout];
         };
     };
-} forEach _magazinesNotAdded
+} forEach _magazinesNotAdded;
+
+_a = _path >> "init";
+if (isText _a) then {
+	_unit call compile ("this = _this;"+ getText _a);
+};
