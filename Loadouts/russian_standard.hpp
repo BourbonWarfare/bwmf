@@ -87,7 +87,7 @@ class rhs_faction_msv {
         headgear[] = {"rhs_6b27m_green_ess_bala"}; /// randomized
         magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_GLRIFLE_MAG_FLARE,MSV_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
         handguns[] = {MSV_PISTOL}; /// randomized
-        linkedItems[] += {"ItemGPS","Rangefinder"};
+        linkedItems[] += {"ItemGPS","ACE_Vector"};
         backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
@@ -139,7 +139,7 @@ class rhs_faction_msv {
     };
     class rhs_msv_mmgag: rhs_msv_rifleman {// MMG Spotter/Ammo Bearer
         backpackItems[] += {MSV_MMG_MAG};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
         attachments[] = {"rhs_acc_dtk"};
     };
     class rhs_msv_mat: rhs_msv_rifleman {// MAT Gunner
@@ -151,7 +151,7 @@ class rhs_faction_msv {
     };
     class rhs_msv_matag: rhs_msv_rifleman {// MAT Spotter/Ammo Bearer
         backpackItems[] += {MSV_MAT_MAG};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
     };
     //class rhs_msv_aa: rhs_msv_rifleman {// SAM Gunner
     //  weapons[] = {MSV_CARBINE};
@@ -161,7 +161,7 @@ class rhs_faction_msv {
     //};
     //class rhs_msv_aaag: rhs_msv_rifleman {// SAM Spotter/Ammo Bearer
     //     backpackItems[] = {MSV_SAM_MAG};
-    //     linkedItems[] += {"Rangefinder"};
+    //     linkedItems[] += {"ACE_Vector"};
     //};
     class rhs_msv_support_Mort: rhs_msv_rifleman {// Mortar Gunner
         weapons[] = {MSV_CARBINE};
@@ -172,7 +172,7 @@ class rhs_faction_msv {
     class rhs_msv_support_AMort: rhs_msv_rifleman {// Assistant Mortar
         backpack[] = {"rhs_msv_Mortar_01_support_F"}; /// randomized
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
     };
     class rhs_msv_sfl {// Spetnaz Leader
         uniform[] = {"rhs_uniform_vdv_mflora"};  /// randomized
@@ -193,7 +193,7 @@ class rhs_faction_msv {
         weapons[] = {MSV_SFR}; /// randomized
         magazines[] = {MSV_SFR_MAG,"rhs_mag_rdg2_white:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs", "ACRE_PRC343"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","Rangefinder","ACE_DefusalKit","ACE_Clacker"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","ACE_Vector","ACE_DefusalKit","ACE_Clacker"};
         attachments[] = {"hlc_optic_kobra","hlc_muzzle_545SUP_AK"};
     };
     class rhs_msv_marksman {// Marksman

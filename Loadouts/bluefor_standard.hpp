@@ -84,7 +84,7 @@ class blu_f {
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2","rhs_mag_m18_green:2"};
         handguns[] = {WEST_PISTOL}; /// randomized
         backpackItems[] += {"ACE_key_west", "ACRE_PRC117F"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","Rangefinder"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
     class B_Soldier_SL_F: B_Officer_F {// SL
@@ -133,7 +133,7 @@ class blu_f {
     };
     class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
     };
     class B_soldier_AT_F: B_Soldier_F {// MAT Gunner
         weapons[] = {WEST_CARBINE};
@@ -144,7 +144,7 @@ class blu_f {
     };
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
         backpackItems[] = {WEST_MAT_MAG};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
     };
     class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
@@ -155,7 +155,7 @@ class blu_f {
     };
     class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {WEST_SAM_MAG};
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
     };
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
         weapons[] = {WEST_CARBINE};
@@ -165,7 +165,7 @@ class blu_f {
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
-        linkedItems[] += {"Rangefinder"};
+        linkedItems[] += {"ACE_Vector"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
     };
     class B_spotter_F {// Spotter
