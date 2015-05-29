@@ -41,7 +41,7 @@ if((ctrlMapScale _mapControl) < 0.5) then {
     {
         _color = switch (assignedTeam _x) do {
         case "RED": {[0.9,0,0,1]};
-        case "YELLOW": {[0.9,0,0,1]};
+        case "YELLOW": {[0.9,0.9,0,1]};
         case "GREEN": {[0,0.8,0,1]};
         case "BLUE": {[0,0,1,1]};
             default {[1,1,1,1]}
