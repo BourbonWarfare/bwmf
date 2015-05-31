@@ -44,7 +44,6 @@ class Mission
 		"rhs_c_bmp",
 		"rhs_c_cars",
 		"rhs_c_a2port_air",
-		"lop_c_men",
 		"a3_map_altis",
 		"A3_Characters_F_EPC",
 		"A3_Characters_F_Civil",
@@ -58,7 +57,6 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
-		"lop_c_men",
 		"dac_source",
 		"rhs_c_troops",
 		"A3_Characters_F_EPC",
@@ -7690,7 +7688,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={420.07742,5,556.00879};
+					position[]={422.56418,5,557.6665};
 					class args
 					{
 						items=12;
