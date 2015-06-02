@@ -30,58 +30,58 @@ _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
 
-
-//Save original gear:
-_originalUniform = uniform _unit;
-_originalVest = vest _unit;
-_originalBackpack = backpack _unit;
-_originalHeadgear = headgear _unit;
-
-
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
-removeHeadgear _unit;
-removeUniform _unit;
-removeVest _unit;
-removeBackpack _unit;
 removeAllItemsWithMagazines _unit;
 
 // ====================================================================================
 // Clothes
-_toAdd = _uniforms call BIS_fnc_selectRandom;
-if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
-    _unit forceAddUniform _toAdd;
+//Random Uniform:
+if ((count _uniforms) == 0) then {
+    removeUniform _unit;
 } else {
-    if (((count _uniforms) > 0) && {_originalUniform != ""}) then {
-        diag_log text format ["[BW] %1 Uniform (%2) not found, readding default (%3)", _loadout, _toAdd, _originalUniform];
-        _unit forceAddUniform _originalUniform;
+    _toAdd = _uniforms call BIS_fnc_selectRandom;
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
+        removeUniform _unit;
+        _unit forceAddUniform _toAdd;
+    } else {
+        diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
     };
 };
-_toAdd = _vests call BIS_fnc_selectRandom;
-if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
-    _unit addVest _toAdd;
+//Random Vest:
+if ((count _vests) == 0) then {
+    removeVest _unit;
 } else {
-    if (((count _vests) > 0) && {_originalVest != ""}) then {
-        diag_log text format ["[BW] %1 Vest (%2) not found, readding default (%3)", _loadout, _toAdd, _originalVest];
-        _unit addVest _originalVest;
+    _toAdd = _vests call BIS_fnc_selectRandom;
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
+        removeVest _unit;
+        _unit addVest _toAdd;
+    } else {
+        diag_log text format ["[BW] %1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)];
     };
 };
-_toAdd = _backpack call BIS_fnc_selectRandom;
-if ((!isNil "_toAdd") && {isClass (configFile >> "CfgVehicles" >> _toAdd)}) then {
-    _unit addBackpack _toAdd;
+//Random Backpack:
+if ((count _backpack) == 0) then {
+    removeBackpack _unit;
 } else {
-    if (((count _backpack) > 0) && {_originalBackpack != ""}) then {
-        diag_log text format ["[BW] %1  Backpack (%2) not found, readding default (%3)", _loadout, _toAdd, _originalBackpack];
-        _unit addBackpack _originalBackpack;
+    _toAdd = _backpack call BIS_fnc_selectRandom;
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgVehicles" >> _toAdd)}) then {
+        removeBackpack _unit;
+        _unit addBackpack _toAdd;
+    } else {
+        diag_log text format ["[BW] %1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)];
     };
 };
-_toAdd = _headgears call BIS_fnc_selectRandom;
-if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
-    _unit addHeadgear _toAdd;
+//Random Headgear:
+if ((count _headgears) == 0) then {
+    removeHeadgear _unit;
 } else {
-    if (((count _headgears) > 0) && {_originalHeadgear != ""}) then {
-        diag_log text format ["[BW] %1 Helmet (%2) not found, readding default (%3)", _loadout, _toAdd, _originalHeadgear];
-        _unit addHeadgear _originalHeadgear;
+    _toAdd = _headgears call BIS_fnc_selectRandom;
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
+        removeHeadgear _unit;
+        _unit addHeadgear _toAdd;
+    } else {
+        diag_log text format ["[BW] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
     };
 };
 
@@ -176,12 +176,12 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
         diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
         if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
             F_GEAR_ERROR_LOADOUTS pushBack _loadout;
-            systemChat format ["Failed To add Magazine %1 to %2", _x, _loadout];
+            diag_log text format ["Failed To add Magazine %1 to %2", _x, _loadout];
         };
     };
 } forEach _magazinesNotAdded;
 
 _a = _path >> "init";
 if (isText _a) then {
-	_unit call compile ("this = _this;"+ getText _a);
+    _unit call compile ("this = _this;"+ getText _a);
 };
