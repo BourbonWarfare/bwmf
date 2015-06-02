@@ -119,7 +119,6 @@ class rhs_faction_msv {
         launchers[] = {MSV_AT}; /// randomized
         backpack[] = {"rhs_rpg"};
     };
-
     class rhs_msv_strelok_rpg_assist: rhs_msv_rifleman {// Assistant Grenadier
         backpackItems[] += {MSV_AT_MAG};
         backpack[] = {"rhs_rpg"};
@@ -136,6 +135,7 @@ class rhs_faction_msv {
         vest[] = {"rhs_6b23_6sh92_headset"};
         magazines[] = {MSV_MMG_MAG,MSV_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
         handguns[] = {MSV_PISTOL}; /// randomized
+        attachments[] = {};
     };
     class rhs_msv_mmgag: rhs_msv_rifleman {// MMG Spotter/Ammo Bearer
         backpackItems[] += {MSV_MMG_MAG};

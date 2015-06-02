@@ -131,6 +131,7 @@ class opf_f {
         weapons[] = {EAST_MMG};
         magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
         handguns[] = {EAST_PISTOL}; /// randomized
+        attachments[] = {};
     };
     class O_Soldier_A_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};

@@ -129,6 +129,7 @@ class ind_f {
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
         handguns[] = {IND_PISTOL}; /// randomized
+        attachments[] = {};
     };
     class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
