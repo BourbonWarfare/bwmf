@@ -3562,7 +3562,7 @@ class Mission
 					position[]={199.20949,0,274.68994};
 					id=232;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3605,7 +3605,7 @@ class Mission
 					position[]={199.08644,0,263.53369};
 					id=235;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3648,7 +3648,7 @@ class Mission
 					position[]={199.44972,0,251.46729};
 					id=238;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3691,7 +3691,7 @@ class Mission
 					position[]={199.2505,0,239.39697};
 					id=241;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3734,7 +3734,7 @@ class Mission
 					position[]={199.28957,0,227.47119};
 					id=244;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3777,7 +3777,7 @@ class Mission
 					position[]={199.7505,0,215.55322};
 					id=247;
 					side="EAST";
-					vehicle="O_Soldier_TL_F";
+					vehicle="O_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3939,7 +3939,7 @@ class Mission
 					azimut=1.77231;
 					id=258;
 					side="GUER";
-					vehicle="I_Soldier_TL_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -3984,7 +3984,7 @@ class Mission
 					azimut=1.77231;
 					id=261;
 					side="GUER";
-					vehicle="I_Soldier_TL_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4028,7 +4028,7 @@ class Mission
 					position[]={212.1778,0,1012.3232};
 					id=264;
 					side="GUER";
-					vehicle="I_Soldier_AAT_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4071,7 +4071,7 @@ class Mission
 					position[]={212.33795,0,1000.0068};
 					id=267;
 					side="GUER";
-					vehicle="I_Soldier_AAT_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4114,7 +4114,7 @@ class Mission
 					position[]={212.33795,0,987.8877};
 					id=270;
 					side="GUER";
-					vehicle="I_support_AMort_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4157,7 +4157,7 @@ class Mission
 					position[]={212.12701,0,975.8877};
 					id=273;
 					side="GUER";
-					vehicle="I_Soldier_TL_F";
+					vehicle="I_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4318,7 +4318,7 @@ class Mission
 					azimut=0.51626098;
 					id=284;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4364,7 +4364,7 @@ class Mission
 					azimut=0.51626098;
 					id=287;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4410,7 +4410,7 @@ class Mission
 					azimut=0.51626098;
 					id=290;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4457,7 +4457,7 @@ class Mission
 					azimut=0.51626098;
 					id=293;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4504,7 +4504,7 @@ class Mission
 					azimut=0.51626098;
 					id=296;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -4551,7 +4551,7 @@ class Mission
 					azimut=0.51626098;
 					id=299;
 					side="WEST";
-					vehicle="B_Soldier_TL_F";
+					vehicle="B_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
