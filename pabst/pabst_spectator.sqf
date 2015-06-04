@@ -114,14 +114,18 @@ PABST_SPECT_init = {
 PABST_SPECT_onEachFrame = {
 
 	// Handle BIS camera and handle spectator muting
-	if (!PABST_SPECT_bisCameraEnabled) then {
-		if (ACRE_MUTE_SPECTATORS != PABST_SPECT_muteSpectators) then {
-			ACRE_MUTE_SPECTATORS = PABST_SPECT_muteSpectators;
+	if (!isNil "ACRE_MUTE_SPECTATORS") then {
+
+		if (!PABST_SPECT_bisCameraEnabled) then {
+			if (ACRE_MUTE_SPECTATORS != PABST_SPECT_muteSpectators) then {
+				ACRE_MUTE_SPECTATORS = PABST_SPECT_muteSpectators;
+			};
+		} else {
+			if (ACRE_MUTE_SPECTATORS == true) then {
+				ACRE_MUTE_SPECTATORS = false;
+			};
 		};
-	} else {
-		if (ACRE_MUTE_SPECTATORS == true) then {
-			ACRE_MUTE_SPECTATORS = false;
-		};
+
 	};
 
 	if (PABST_SPECT_showNameTags) then {
