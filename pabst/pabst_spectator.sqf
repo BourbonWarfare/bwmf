@@ -1,4 +1,4 @@
-//		Last Updated:   2014/10/17
+//		Last Updated:   2015/6/3
 
 #define CAMERA_MODE_INTERNAL 				1
 #define CAMERA_MODE_EXTERNAL 				2
@@ -85,6 +85,8 @@ PABST_SPECT_init = {
 	PABST_SPECT_filterAI			= false;
 	PABST_SPECT_showNameTags 		= true;
 	PABST_SPECT_autoTrackMap		= true;
+	PABST_SPECT_muteSpectators		= false;
+	PABST_SPECT_bisCameraEnabled    = false;
 
 	PABST_SPECT_theCamera camSetFOV 1.25;
 
@@ -110,6 +112,18 @@ PABST_SPECT_init = {
 };
 
 PABST_SPECT_onEachFrame = {
+
+	// Handle BIS camera and handle spectator muting
+	if (!PABST_SPECT_bisCameraEnabled) then {
+		if (ACRE_MUTE_SPECTATORS != PABST_SPECT_muteSpectators) then {
+			ACRE_MUTE_SPECTATORS = PABST_SPECT_muteSpectators;
+		};
+	} else {
+		if (ACRE_MUTE_SPECTATORS == true) then {
+			ACRE_MUTE_SPECTATORS = false;
+		};
+	};
+
 	if (PABST_SPECT_showNameTags) then {
 		{
 			if (alive _x) then {
