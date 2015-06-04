@@ -1,4 +1,4 @@
-//		Last Updated:   2014/10/17
+//		Last Updated:   2015/6/3
 
 #define CAMERA_MODE_INTERNAL 				1
 #define CAMERA_MODE_EXTERNAL 				2
@@ -41,6 +41,18 @@ PABST_SPECT_init = {
 	if (!isNil "X39_MedSys_var_ppEffects_Blur") then {ppEffectDestroy X39_MedSys_var_ppEffects_Blur;};
 
 	if (!isNil "acre_api_fnc_setSpectator") then {[true] call acre_api_fnc_setSpectator;};
+
+	// Give spectator the ability to understand all languages
+	if (!isNil "acre_api_fnc_babelSetSpokenLanguages" && {!isNil "f_available_languages"}) then {
+
+		_availableLanguages = [];
+		{
+			_availableLanguages pushBack (_x select 0);
+		} forEach f_available_languages;
+
+		_availableLanguages call acre_api_fnc_babelSetSpokenLanguages;
+
+	};
 
 
 	//player setVariable ["AGM_InPain", false];
