@@ -146,7 +146,9 @@ PABST_SPECT_updateGUI = {
 		//-------Start: UI Display-----------
 		_dialogUpAtStart = dialog;
 		if (!_dialogUpAtStart) then {
-			waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
+			if (!isNil "BIS_DEBUG_CAM") then {
+				waitUntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
+			};
 			sleep 2;		//just to make it easier to get escape menu
 			createDialog "PABST_SPECT_dialog";
 			((uiNamespace getVariable "PABST_SPECT_theDialog") displayCtrl 1602) ctrlSetTextColor [0,1,0,1];
