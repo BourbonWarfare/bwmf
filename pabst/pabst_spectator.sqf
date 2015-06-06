@@ -1,4 +1,4 @@
-//		Last Updated:   2015/6/3
+//		Last Updated:   2015/6/5
 
 #define CAMERA_MODE_INTERNAL 				1
 #define CAMERA_MODE_EXTERNAL 				2
@@ -146,6 +146,7 @@ PABST_SPECT_updateGUI = {
 		//-------Start: UI Display-----------
 		_dialogUpAtStart = dialog;
 		if (!_dialogUpAtStart) then {
+			waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
 			sleep 2;		//just to make it easier to get escape menu
 			createDialog "PABST_SPECT_dialog";
 			((uiNamespace getVariable "PABST_SPECT_theDialog") displayCtrl 1602) ctrlSetTextColor [0,1,0,1];
@@ -232,6 +233,16 @@ PABST_SPECT_updateCameraTrack ={
 	_keysActiveCode = {(count PABST_SPECT_keysPressed) > 0};
 	waitUntil{
 		if (!dialog) then {waitUntil{dialog};};
+
+		if ("KEY_SHIFT" in PABST_SPECT_keysPressed &&
+			{"KEY_CTRL" in PABST_SPECT_keysPressed} &&
+			{"KEY_HOME" in PABST_SPECT_keysPressed}) then {
+
+			closeDialog 0;
+			PABST_SPECT_keysPressed = []; // Reset so we don't get stuck in a loop
+			PABST_SPECT_theCamera call bis_fnc_cameraOld;
+		};
+
 		if (call _newModeOrTargetCode) then {
 			_currentCameraMode  	= PABST_SPECT_cameraMode;
 			_currentCameraTarget 	= PABST_SPECT_cameraTarget;
@@ -385,7 +396,7 @@ PABST_SPECT_UI_onKeyAction = {
 
     if ((_type == "key") && _pressed) then {
         [(_this select 2),'keydown'] call CBA_events_fnc_keyHandler;
-    };   
+    };
     if ((_type == "key") && !_pressed) then {
         [(_this select 2),'keyup'] call CBA_events_fnc_keyHandler;
     };
@@ -394,11 +405,13 @@ PABST_SPECT_UI_onKeyAction = {
 		_actionString = switch (_keyNumber) do {
 		case (16): {"KEY_Q"};
 		case (17): {"KEY_W"};
+		case (29): {"KEY_CTRL"};
 		case (30): {"KEY_A"};
 		case (31): {"KEY_S"};
 		case (32): {"KEY_D"};
 		case (44): {"KEY_Z"};
 		case (42): {"KEY_SHIFT"};
+		case (199): {"KEY_HOME"};
 			default {""};
 		};
 	};
