@@ -3,11 +3,17 @@
 [0.5] call acre_api_fnc_setLossModelScale;
 
 //Setup babble languages:
-["en", "English"] call acre_api_fnc_babelAddLanguageType;
-["ru", "Russian"] call acre_api_fnc_babelAddLanguageType;
-["ar", "Arabic"] call acre_api_fnc_babelAddLanguageType;
-["de", "German"] call acre_api_fnc_babelAddLanguageType;
-["fr", "French"] call acre_api_fnc_babelAddLanguageType;
+f_available_languages = [
+	["en", "English"],
+	["ru", "Russian"],
+	["ar", "Arabic"],
+	["de", "German"],
+	["fr", "French"]
+];
+
+{
+	_x call acre_api_fnc_babelAddLanguageType;
+} forEach f_available_languages;
 
 //Setup radio presets:
 ["ACRE_PRC148", "default3", "west148"] call acre_api_fnc_copyPreset;
