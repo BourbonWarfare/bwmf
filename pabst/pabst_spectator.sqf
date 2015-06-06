@@ -34,12 +34,6 @@ PABST_SPECT_init = {
 
 	//===== Start Stuff To Prevent Screnblur / Enable Spectator in Radio Mods ======
 
-	// ("x39_MedSys_Gui_Overlay_layer" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];	//try and disable xmed's red screen
-	if (!isNil "X39_MedSys_var_ppEffects_ColorCorrections") then {ppEffectDestroy X39_MedSys_var_ppEffects_ColorCorrections;};
-	if (!isNil "X39_MedSys_var_ppEffects_ColorInversion") then {ppEffectDestroy X39_MedSys_var_ppEffects_ColorInversion;};
-	if (!isNil "X39_MedSys_var_ppEffects_ChromAberration") then {ppEffectDestroy X39_MedSys_var_ppEffects_ChromAberration;};
-	if (!isNil "X39_MedSys_var_ppEffects_Blur") then {ppEffectDestroy X39_MedSys_var_ppEffects_Blur;};
-
 	if (!isNil "acre_api_fnc_setSpectator") then {[true] call acre_api_fnc_setSpectator;};
 
 	// Give spectator the ability to understand all languages
@@ -54,22 +48,7 @@ PABST_SPECT_init = {
 
 	};
 
-
-	//player setVariable ["AGM_InPain", false];
-	//player setVariable ["AGM_Bleeding", false];
-	//player setVariable ["AGM_Unconscious", false];
 	"chromAberration" ppEffectEnable false;
-	//[false] call AGM_Core_fnc_disableUserInput;
-
-
-	/*if (!isNil "AGM_UnconsciousCC") then {
-		AGM_UnconsciousCC ppEffectEnable false;
-		AGM_UnconsciousCC ppEffectCommit 1;
-	};
-	if (!isNil "AGM_UnconsciousRB") then {
-		AGM_UnconsciousRB ppEffectEnable false;
-		AGM_UnconsciousRB ppEffectCommit 1;
-	};*/
 
 	"chromAberration" ppEffectEnable false;
 	[] spawn {
