@@ -404,6 +404,13 @@ PABST_SPECT_UI_onKeyAction = {
 	_keyNumber		= (_this select 2) select 1;
 	_actionString = "";
 
+    if ((_type == "key") && _pressed) then {
+        [(_this select 2),'keydown'] call CBA_events_fnc_keyHandler;
+    };   
+    if ((_type == "key") && !_pressed) then {
+        [(_this select 2),'keyup'] call CBA_events_fnc_keyHandler;
+    };
+
 	if (_type == 'key') then {
 		_actionString = switch (_keyNumber) do {
 		case (16): {"KEY_Q"};
