@@ -77,6 +77,16 @@ PABST_SPECT_init = {
 	PABST_SPECT_showNameTags 		= true;
 	PABST_SPECT_autoTrackMap		= true;
 
+	// Enable muting spectators via toggle headset binding
+	if (!isNil "cba_fnc_getKeybind") then {
+		private ["_keybind"];
+		_keybind = ["ACRE2","HeadSet"] call cba_fnc_getKeybind;
+
+		if (!isNil "_keybind") then {
+			PABST_SPECT_muteSpectKey = _keybind;
+		};
+	};
+
 	PABST_SPECT_theCamera camSetFOV 1.25;
 
 
@@ -380,7 +390,10 @@ PABST_SPECT_UI_rightList = {
 PABST_SPECT_UI_onKeyAction = {
 	_type 		= _this select 0;
 	_pressed	= _this select 1;
-	_keyNumber		= (_this select 2) select 1;
+	_keyNumber	= (_this select 2) select 1;
+	_keyCtrl 	= (_this select 2) select 2;
+	_keyShift 	= (_this select 2) select 3;
+	_keyAlt 	= (_this select 2) select 4;
 	_actionString = "";
 
     if ((_type == "key") && _pressed) then {
@@ -400,6 +413,18 @@ PABST_SPECT_UI_onKeyAction = {
 		case (44): {"KEY_Z"};
 		case (42): {"KEY_SHIFT"};
 			default {""};
+		};
+
+		if (!isNil "PABST_SPECT_muteSpectKey") then {
+			if (!_pressed && {_keyNumber == (PABST_SPECT_muteSpectKey select 5) select 0}) then {
+				_ctrl = ((PABST_SPECT_muteSpectKey select 5) select 1) select 0;
+				_shift = ((PABST_SPECT_muteSpectKey select 5) select 1) select 1;
+				_alt = ((PABST_SPECT_muteSpectKey select 5) select 1) select 2;
+
+				if ([_keyCtrl, _keyShift, _keyAlt] isEqualTo [_ctrl, _shift, _alt]) then {
+					[] call (PABST_SPECT_muteSpectKey select 4);
+				};
+			};
 		};
 	};
 	if (_type == 'mouse') then {
