@@ -15,7 +15,7 @@ class blu_f {
     #define WEST_CARBINE "rhs_weap_m4a1_carryhandle_grip"
     #define WEST_CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
     // AR
-    #define WEST_AR "rhs_weap_m249_pip"
+    #define WEST_AR "rhs_weap_m249_pip_L"
     #define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
     #define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
     // AT
