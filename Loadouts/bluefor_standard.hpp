@@ -31,8 +31,8 @@ class blu_f {
     #define WEST_SAM "rhs_weap_fim92"
     #define WEST_SAM_MAG "rhs_fim92_mag:2"
     // Sniper Rifle
-    #define WEST_SNIPER "RH_m110"
-    #define WEST_SNIPER_MAG "RH_20Rnd_762x51_Mk316LR:8"
+    #define WEST_SNIPER "rhs_weap_m14ebrri"
+    #define WEST_SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
     // Spotter Rifle
     #define WEST_SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
     #define WEST_SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
