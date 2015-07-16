@@ -64,7 +64,7 @@ class blu_f {
 
 
     class B_Soldier_F {// rifleman
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
+        uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
         vest[] = {"rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Teamleader"}; /// randomized
         headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
         backpack[] = {"rhsusf_assault_eagleaiii_ocp"}; /// randomized
@@ -169,7 +169,7 @@ class blu_f {
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
     };
     class B_spotter_F {// Spotter
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
+        uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
         vest[] = {"rhsusf_iotv_ocp"}; /// randomized
         headgear[] = {"rhs_Booniehat_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
         weapons[] = {WEST_SPOTTER}; /// randomized
@@ -179,7 +179,7 @@ class blu_f {
         attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
     };
     class B_sniper_F {// Sniper
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
+        uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
         vest[] = {"rhsusf_iotv_ocp"}; /// randomized
         headgear[] = {"rhs_Booniehat_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
         weapons[] = {WEST_SNIPER}; /// randomized
@@ -203,7 +203,7 @@ class blu_f {
 
     };
     class B_crew_F {// Crew
-        uniform[] = {"U_B_CombatUniform_mcam"};  // randomized
+        uniform[] = {"rhs_uniform_cu_ocp"};  // randomized
         vest[] = {"rhsusf_iotv_ocp"}; // randomized
         headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
         backpack[] = {"B_Carryall_mcamo"};
