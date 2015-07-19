@@ -20,10 +20,6 @@ setViewDistance 2500;
 // BWMF - Mission Timer/Safe Start
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
-// F3 - Radio Framework
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] call F_Radios_fnc_acreRadioSetup;
-
 // BWMF: DAC Debug Params
 [] call F_DAC_fnc_setupDacParams;
 
@@ -32,3 +28,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 //You can spawn a garrison by uncommenting below or calling that code (minus the//) in a trigger.
 //[] execVM "garrison.sqf";
+
+waitUntil {time > 0};
+[player] call F_fnc_assignGearMan;
+[] call F_Radios_fnc_acreRadioSetup;

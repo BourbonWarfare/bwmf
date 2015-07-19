@@ -26,8 +26,6 @@ class ACE_Settings {
     };
 };
 
-
-
 // Pabst - Spectator
 #include "pabst\gui_common.hpp"
 #include "pabst\gui_spectator.hpp"
@@ -40,7 +38,7 @@ class ACE_Settings {
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
     class CAManBase {
-        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class F_AssignGear { init = "if ( time > 0 || !isPlayer (_this select 0)) then { _this spawn F_fnc_assignGearMan; };"; };
         class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
         class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
     };
