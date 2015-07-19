@@ -4429,7 +4429,6 @@ class Mission
 					vehicle="B_soldier_AT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_MAT1_G";
 					description="NATO Medium AT Team 1 Gunner";
 				};
@@ -4476,7 +4475,6 @@ class Mission
 					vehicle="B_soldier_AT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_MAT2_G";
 					description="NATO Medium AT Team 2 Gunner";
 				};
@@ -4523,7 +4521,6 @@ class Mission
 					vehicle="B_support_Mort_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_MTR1_G";
 					description="NATO Mortar Team 1 Gunner";
 				};
@@ -4570,7 +4567,6 @@ class Mission
 					vehicle="B_soldier_AA_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_MSAM1_G";
 					description="NATO Medium SAM Team 1 Gunner";
 				};
@@ -4617,7 +4613,6 @@ class Mission
 					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_WSL_M";
 					description="NATO Weapon Squad Medic";
 				};
@@ -4652,7 +4647,6 @@ class Mission
 					vehicle="B_sniper_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					health=0.99000001;
 					text="UnitNATO_ST1_SN";
 					description="NATO Sniper Team 1 Sniper";
 				};
