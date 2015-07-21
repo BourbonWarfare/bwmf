@@ -9,12 +9,14 @@ if (!(local _unit)) exitWith {};
 _faction = tolower (faction _unit);
 //Check variable f_gear, otherwise default to typeof
 _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
-
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
-if(!isClass(_path)) exitWith {
-    // _unit setVariable ["f_var_assignGear_done", true, true];
-    systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+if (!isClass(_path)) then {
+    _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
+};
+
+if (!isClass(_path)) exitWith {
+	systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
 _uniforms = getArray(_path >> "uniform");
