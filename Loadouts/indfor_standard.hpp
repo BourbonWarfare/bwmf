@@ -163,12 +163,12 @@ class ind_f {
     class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
         weapons[] = {IND_CARBINE};
         magazines[] = {IND_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         backpack[] = {"I_Mortar_01_weapon_F"}; /// randomized
     };
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkeditems[] += {"ACE_Vector"};
     };
     class I_spotter_F {// Spotter
