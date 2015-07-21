@@ -163,12 +163,12 @@ class opf_f {
     class O_support_Mort_F: O_Soldier_F {// Mortar Gunner
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         backpack[] = {"O_Mortar_01_weapon_F"}; /// randomized
     };
     class O_support_AMort_F: O_Soldier_F {// Assistant Mortar
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
     };
     class O_spotter_F {// Spotter
