@@ -166,12 +166,12 @@ class rhs_faction_msv {
     class rhs_msv_support_Mort: rhs_msv_rifleman {// Mortar Gunner
         weapons[] = {MSV_CARBINE};
         magazines[] = {MSV_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         backpack[] = {"rhs_msv_Mortar_01_weapon_F"}; /// randomized
     };
     class rhs_msv_support_AMort: rhs_msv_rifleman {// Assistant Mortar
         backpack[] = {"rhs_msv_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
     };
     class rhs_msv_sfl {// Spetnaz Leader
