@@ -16,7 +16,7 @@ if (!isClass(_path)) then {
 };
 
 if (!isClass(_path)) exitWith {
-	systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+    systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
 _uniforms = getArray(_path >> "uniform");
@@ -44,8 +44,11 @@ if ((count _uniforms) == 0) then {
 } else {
     _toAdd = _uniforms call BIS_fnc_selectRandom;
     if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
-        removeUniform _unit;
-        _unit forceAddUniform _toAdd;
+        if (_unit isUniformAllowed _toAdd) then {
+            _unit addUniform _toAdd;
+        } else {
+            _unit forceAddUniform _toAdd;
+        };
     } else {
         diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
     };
@@ -178,7 +181,7 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
         diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
         if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
             F_GEAR_ERROR_LOADOUTS pushBack _loadout;
-            diag_log text format ["Failed To add Magazine %1 to %2", _x, _loadout];
+            diag_log text format ["[BW] Failed To add Magazine %1 to %2", _x, _loadout];
         };
     };
 } forEach _magazinesNotAdded;

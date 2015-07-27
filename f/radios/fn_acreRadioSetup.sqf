@@ -4,15 +4,15 @@
 
 //Setup babble languages:
 f_available_languages = [
-	["en", "English"],
-	["ru", "Russian"],
-	["ar", "Arabic"],
-	["de", "German"],
-	["fr", "French"]
+    ["en", "English"],
+    ["ru", "Russian"],
+    ["ar", "Arabic"],
+    ["de", "German"],
+    ["fr", "French"]
 ];
 
 {
-	_x call acre_api_fnc_babelAddLanguageType;
+    _x call acre_api_fnc_babelAddLanguageType;
 } forEach f_available_languages;
 
 //Setup radio presets:
