@@ -123,7 +123,7 @@ class blu_f {
         vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:6"};
-        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
+        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14", "ACE_earplugs"};
     };
     class B_support_MG_F: B_Soldier_F {// MMG
         weapons[] = {WEST_MMG};
