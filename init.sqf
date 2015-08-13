@@ -15,7 +15,7 @@ enableSentences false;
 setViewDistance 2500;
 
 // F3 - Name Tags
-[10] call F_fnc_setupNameTags;
+// [10] call F_fnc_setupNameTags;
 
 // BWMF - Mission Timer/Safe Start
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
