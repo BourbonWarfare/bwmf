@@ -32,3 +32,4 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 //You can spawn a garrison by uncommenting below or calling that code (minus the//) in a trigger.
 //[] execVM "garrison.sqf";
+
