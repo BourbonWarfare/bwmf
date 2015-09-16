@@ -58,9 +58,14 @@ if (!hasInterface) exitWith {};
     // Wait until the main map display is detected (display = 12)
     waitUntil { !isNull findDisplay 12 };
 
+    //Add markers to the ace_microDAGR
+    ace_microDAGR_miniMapDrawHandlers pushBack {_this call F_Markers_fnc_drawMap};
+    
     [12] call _fnc_installMapEvents;
-
+    diag_log text format ["[BW] - Markers added to main map"];
+    
     waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
     ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
-    // systemChat "GPS Added";
+    
+    diag_log text format ["[BW] - Markers added to vanilla GPS minimap"];
 };

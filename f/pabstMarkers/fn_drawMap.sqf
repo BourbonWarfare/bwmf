@@ -1,4 +1,8 @@
-_mapControl = _this select 0;
+params ["_mapControl"];
+
+//Map's height / Screen height:
+_mapSize = ((ctrlPosition _mapControl) select 3) / (getResolution select 4);
+_sizeFactor = (_mapSize + 1) / 2;
 
 if ((player != player) || {!alive player}) exitWith {};
 
@@ -12,13 +16,12 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
     if (_data isEqualTo []) then {
         diag_log format ["Bad f_var_drawSettings on %1", _x]
     } else {
-        _text = _data select 0;
-        _texture = _data select 1;
-        _color = _data select 2;
-        _size = _data select 3;
-        _pos = _data select 4;
-        _time = _data select 5;
+        _data params ["_text", "_texture", "_color", "_size", "_pos", "_time"];
+        _size params ["_sizeX", "_sizeY"];
 
+        _sizeX = _sizeX * _sizeFactor;
+        _sizeY = _sizeY * _sizeFactor;
+        
         if(((time - _time) > F_Markers_delay) && {!isNull (_x)}) then {
             if(typeName _x == "GROUP") then {_pos = getpos leader _x};
             if(typeName _x == "OBJECT") then {_pos = getpos _x};
@@ -26,12 +29,10 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
             _data set [4,_pos];
             _data set [5,_time];
         };
-        _sizeX = _size select 0;
-        _sizeY = _size select 1;
         _textsize = 0.05;
-        if((ctrlMapScale _mapControl) > 0.1) then {_textsize = 0};
+        if(((ctrlMapScale _mapControl) * _mapSize) > 0.1) then {_textsize = 0};
 
-        _mapControl drawIcon [_texture,_color,_pos,_sizeX,_sizeY,0,_text,1,_textsize,'TahomaB',"right"];
+        _mapControl drawIcon [_texture,_color,_pos,_sizeX,_sizeY,0,_text,1,(_textsize * _sizeFactor),'TahomaB',"right"];
     };
 } foreach F_Markers_thingsToDraw;
 
@@ -46,11 +47,11 @@ if((ctrlMapScale _mapControl) < 0.5) then {
         case "BLUE": {[0,0,1,1]};
             default {[1,1,1,1]}
         };
-        _textsize = if((ctrlMapScale _mapControl) < 0.005) then {0.02} else {0};
+        _textsize = if (((ctrlMapScale _mapControl) * _mapSize) < 0.005) then {0.02} else {0};
         _pos = getPos _x;
         _dir = getDir _x;
         _text = if (alive _x) then {name _x} else {""};
-        _mapControl drawIcon [TRI_MARKER, _color, _pos, 12, 12, _dir, _text, 1, _textsize, 'TahomaB', "left"];
+        _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), _dir, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "left"];
 
     } forEach (units (group player));
 };
