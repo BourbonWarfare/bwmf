@@ -61,31 +61,31 @@ class ind_f {
     };
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
-        headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
-        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {IND_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
         magazines[] = {IND_RIFLE_MAG,"rhs_mag_rgd5:2","SmokeShell:2"};
-        items[] = {"ACRE_PRC343","ACE_MapTools"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
+        items[] = {"ACRE_PRC343"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACE_MapTools"};
         attachments[] = {"rhsusf_acc_compm4"};
     };
     class I_officer_F: I_Soldier_F {// CO and DC
         weapons[] = {IND_GLRIFLE};
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_PISTOL_MAG,"rhs_mag_rgd5:2","SmokeShell:2"};
         handguns[] = {IND_PISTOL}; /// randomized
-        linkedItems[] += {"Binocular"};
+        linkedItems[] += {"ACE_Vector","ItemGPS"};
         attachments[] = {"rhsusf_acc_compm4"};
-        backpackItems[] += {"ACE_key_indp","chemlight_green:2","ACRE_PRC343"};
-        items[] = {"ACRE_PRC148","ACE_microDAGR","ACE_MapTools"};
+        backpackItems[] += {"ACE_key_indp","chemlight_green:2"};
+        items[] = {"ACRE_PRC148","ACE_microDAGR","ACRE_PRC343","ACE_MapTools"};
     };
     class I_Soldier_SL_F: I_Officer_F {// SL
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ACE_Vector"};
-        items[] = {"ACRE_PRC148", "ACRE_PRC343","ACE_microDAGR","ACE_MapTools"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","rhsusf_ANPVS_14","ACE_microDAGR","ACE_Vector"};
+        items[] = {"ACRE_PRC148","ACE_microDAGR""ACRE_PRC343","ACE_MapTools"};
         backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs","chemlight_green:2"};
     };
     class I_soldier_UAV_F: I_Soldier_F {
@@ -97,9 +97,8 @@ class ind_f {
         headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,"rhs_mag_rgd5:2","SmokeShell:2","rhs_mag_nspn_red:2"};
         items[] = {"ACRE_PRC343","ACE_microDAGR","ACE_MapTools"};
-        linkedItems[] += {"Binocular"};
+        linkedItems[] += {"ACE_microDAGR","Binocular"};
         backpackItems[] += {"ACE_key_indp","chemlight_green:2"};
-        attachments[] = {""};
     };
     class I_Soldier_AR_F: I_Soldier_F {// AR
         weapons[] = {IND_AR};
@@ -169,13 +168,12 @@ class ind_f {
     };
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_MapTools"};
         linkeditems[] += {"ACE_Vector"};
     };
     class I_spotter_F {// Spotter
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
-        headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         weapons[] = {IND_SPOTTER}; /// randomized
         magazines[] = {IND_SPOTTER_MAG,"SmokeShell:2"};
@@ -184,9 +182,9 @@ class ind_f {
         attachments[] = {"rhs_acc_pso1m2"};
     };
     class I_sniper_F {// Sniper
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
-        headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         weapons[] = {IND_SNIPER}; /// randomized
         magazines[] = {IND_SNIPER_MAG,"SmokeShell:2"};
@@ -201,14 +199,14 @@ class ind_f {
         backpack[] = {"B_AssaultPack_rgr"};
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,"SmokeShell:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs", "ACRE_PRC343","ACE_MapTools"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs", "ACRE_PRC343"};
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
     class I_crew_F {// Crew
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_UKR_A"}; // randomized
-        headgear[] = {"rhs_tsh4","rhs_tsh4_ess"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,"SmokeShell:2"};
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
@@ -218,7 +216,6 @@ class ind_f {
     class I_Soldier_repair_F: I_crew_F {// Repair Specialist
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACRE_PRC148"};
-        items[] += {"ACRE_PRC343","ACE_MapTools"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
     };
     class I_soldier_exp_F: I_soldier_repair_F {// Explosive Specialist
