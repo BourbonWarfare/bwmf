@@ -1,8 +1,8 @@
-
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
-_unit = _this select 0;
+
+params ["_unit"];
 
 if (!(local _unit)) exitWith {};
 
