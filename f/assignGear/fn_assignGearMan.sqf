@@ -16,7 +16,7 @@ if (!isClass(_path)) then {
 };
 
 if (!isClass(_path)) exitWith {
-    diag_log text format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+    diag_log text format ["[BW] No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
 _uniforms = getArray(_path >> "uniform");
