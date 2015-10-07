@@ -68,7 +68,7 @@ if (!hasInterface) exitWith {};
     _groupLRFreqIndex = -1;
 
     if (_groupID != "-1") then {
-        _splitName = [_groupID, " "] call BIS_fnc_splitString;
+        _splitName = _groupID splitString " ";
         if ((count _splitName) > 2) then {
             _groupName = (_splitName select 1);
             {

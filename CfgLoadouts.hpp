@@ -1,8 +1,12 @@
 class CfgLoadouts {
-    //Single setting to change how vehicle loadouts are filed (so you can easily change for TVTs)
-    //1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty
-    setVehicleLoadouts = 1;
+    //Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
+  
+    //Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
+    allowMagnifiedOptics = 1;
     
+    //Do Vehicle Loadouts
+    //(1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
+    setVehicleLoadouts = 1;
     
     
     //Only include one hpp per faction!

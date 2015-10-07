@@ -67,7 +67,7 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
 // ====================================================================================
 // _transportMagazines
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
     if(count _arr > 1) then
@@ -79,7 +79,7 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
 // ====================================================================================
 // _transportItems
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
     if(count _arr > 1) then
@@ -91,7 +91,7 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
 // ====================================================================================
 // _transportItems
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
     if(count _arr > 1) then

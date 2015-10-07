@@ -19,6 +19,13 @@ if (!isClass(_path)) exitWith {
     diag_log text format ["[BW] No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
+
+_allowMagnifiedOptics = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics")) then {
+    1 == getNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics");
+} else {
+    true
+};
+
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
 _headgears = getArray(_path >> "headgear");
@@ -95,7 +102,7 @@ clearAllItemsFromBackpack _unit;
 
 // Backpack Items
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -112,7 +119,7 @@ clearAllItemsFromBackpack _unit;
 // ====================================================================================
 // Items
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -122,7 +129,7 @@ clearAllItemsFromBackpack _unit;
     };
 } foreach _items;
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -139,7 +146,7 @@ clearAllItemsFromBackpack _unit;
 // Magazines
 _magazinesNotAdded = [];
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -166,13 +173,30 @@ if (!(_attachments isEqualTo [])) then {
     _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
     {
         (_x splitString ":") params [["_classname", ""]]; //count makes no sense for attachments, ignore
-        if (_classname != "") then {
-            switch (true) do {
-                case (_classname in _primaryWeaponAttachables): {_unit addPrimaryWeaponItem _classname;};
-                case (_classname in _secondaryWeaponAttachables): {_unit addSecondaryWeaponItem _classname;};
-                case (_classname in _handgunWeaponAttachables): {_unit addHandgunItem _classname;};
-                default {diag_log text format ["[BW] - Warning, attachment %1 not compatible with weapons %2", _classname, (weapons _unit)];};
+        _config = configFile >> "CfgWeapons" >> _classname;
+        if (isClass _config) then {
+            _addAttachment = true;
+            if (!_allowMagnifiedOptics) then {
+                _minZoom = 999; //FOV, so smaller is more zoomed in
+                {
+                    if (isNumber (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (getNumber (_x >> "opticsZoomMin"));};
+                } forEach configProperties [_config >> "ItemInfo" >> "OpticsModes"];
+                if (_minZoom < 0.25) then {
+                    _addAttachment = false;
+                    diag_log text format ["[BW] - allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom];
+                };
             };
+            if (_addAttachment) then {
+                switch (true) do {
+                    //No guarentees with CBA_fnc_compatibleItems
+                    case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
+                    case (({_x == _classname} count _secondaryWeaponAttachables) > 0): {_unit addSecondaryWeaponItem _classname;};
+                    case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
+                    default {diag_log text format ["[BW] - Warning, attachment %1 not compatible with weapons %2", _classname, (weapons _unit)];};
+                };
+            };
+        } else {
+            diag_log text format ["[BW] - Warning, attachment %1 does not exist", _classname];
         };
     } foreach _attachments;
 };
