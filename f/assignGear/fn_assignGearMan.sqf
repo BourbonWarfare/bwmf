@@ -188,7 +188,6 @@ if (!(_attachments isEqualTo [])) then {
             };
             if (_addAttachment) then {
                 switch (true) do {
-                    //No guarentees with CBA_fnc_compatibleItems
                     case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
                     case (({_x == _classname} count _secondaryWeaponAttachables) > 0): {_unit addSecondaryWeaponItem _classname;};
                     case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
