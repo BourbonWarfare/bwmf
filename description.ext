@@ -90,9 +90,9 @@ class Params {
     // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
     class f_param_weather {
-        title = "$STR_f_param_weather";
+        title = "Weather";
         values[] = {-1,0,1,2,3,4,5,6,7,8};
-        texts[] = {"Leave it the fuck alone", $STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8};
+        texts[] = {"Leave it the fuck alone", "Clear (Calm)", "Cloudy (Light Winds)", "Cloudy (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Storm"};
         default = -1;
         function = "f_fnc_setWeather";		// This function is called to apply the values
         isGlobal = 0;						// Execute this only on the server
@@ -108,9 +108,9 @@ class Params {
         code = "f_param_fog = %1";
     };
     class f_param_timeOfDay {
-        title = "$STR_f_param_timeOfDay";
+        title = "Time of Day";
         values[] = {-1,0,1,2,3,4,5,6,7};
-        texts[] = {"Leave it the fuck alone", $STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
+        texts[] = {"Leave it the fuck alone", "Dawn", "Early Morning", "Morning", "Noon", "Afternoon", "Evening", "Dusk", "Night"};
         default = -1;
         function = "f_fnc_setTime";			// This function is called to apply the values
         isGlobal = 0;						// Execute this only on the server
@@ -145,7 +145,6 @@ class CfgRespawnTemplates {
 
 // F3 - Functions
 class CfgFunctions {
-#include "ws_fnc\config.hpp"
     class F_Markers {
         class F_Markers {
             file = "f\pabstMarkers";
@@ -182,7 +181,6 @@ class CfgFunctions {
                 preInit = 1;
                 postInit = 1;
             };
-            class nearPlayer{};
         };
         class assignGear {
             // Defines the functions to preInit the compling of the assignGear function used by units.
@@ -195,11 +193,6 @@ class CfgFunctions {
             class SetTime {};
             class SetFog {};
             class SetWeather {};
-        };
-        class nametag {
-            file = "f\nametag";
-            class drawNameTag {};
-            class setupNameTags {};
         };
         class setTeamColours {
             file = "f\setTeamColours";

@@ -14,9 +14,6 @@ enableSentences false;
 // F3 - View Distance
 setViewDistance 2500;
 
-// F3 - Name Tags
-// [10] call F_fnc_setupNameTags;
-
 // BWMF - Mission Timer/Safe Start
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
@@ -29,7 +26,3 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;
-
-//You can spawn a garrison by uncommenting below or calling that code (minus the//) in a trigger.
-//[] execVM "garrison.sqf";
-
