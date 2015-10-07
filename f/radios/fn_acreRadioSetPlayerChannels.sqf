@@ -22,10 +22,74 @@
 if (!hasInterface) exitWith {};
 
 [] spawn {
-    diag_log text format ["[BW] - Seting Channels for player"];
+    _addSignalsBreifing = {
+        params ["_groupID", "_languagesPlayerSpeaks", "_groupFreqIndex", "_groupLRFreqIndex"];
+        uiSleep 5;
+
+        _cleanLines = {
+            params ["_array", ["_maxPerLine", 25], ["_newLineSpace", "      "]];
+            _output = "";
+            _charCount = 0;
+            {
+                _charCount = _charCount + count _x;
+                if (_charCount > _maxPerLine) then {
+                    _output = _output + format ["<br/>%1%2, ", _newLineSpace, _x];
+                    _charCount = count _x;
+                } else {
+                    _output = _output + format ["%1, ", _x];
+                };
+            } forEach _array;
+            _output select [0, (count _output - 2)];
+        };
+
+        //Show Spoken Languages:
+        _languageDisplayNames = [];
+        {
+            _playerShortName = _x;
+            _displayName = "err";
+            {
+                _x params ["_xShort", "_xDisplay"];
+                if (_xShort == _playerShortName) exitWith {_languageDisplayNames pushBack _xDisplay};
+            } forEach F_available_languages;
+        } forEach _languagesPlayerSpeaks;
+        _diaryHyperlinkedText = format ["<font size=15>You speak: %1</font><br/>", ([_languageDisplayNames] call _cleanLines)];
+
+        //Show Radio Nets:
+        _hasSR = false;
+        _hasLR = false;
+        {
+            if (_x isKindOf ["ACRE_PRC343", configFile >> "CfgWeapons"]) then {_hasSR = true;};
+            if (_x isKindOf ["ACRE_PRC148", configFile >> "CfgWeapons"]) then {_hasLR = true;};
+            if (_x isKindOf ["ACRE_PRC117F", configFile >> "CfgWeapons"]) then {_hasLR = true;};
+        } forEach (items player);
+
+        diag_log text format ["[BW] - SIGNALS Breifing %1 - [%2,%3]", _this, _hasSR, _hasLR];
+
+        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><font size=15>SR Radio Net (343)</font><br/>";
+        {
+            if (_hasSR && {_groupFreqIndex == _forEachIndex}) then {
+                _diaryHyperlinkedText = _diaryHyperlinkedText + format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+            } else {
+                _diaryHyperlinkedText = _diaryHyperlinkedText + format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+            };
+        } forEach CHANNELS_ARRAYS;
+
+        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><font size=15>LR Radio Net (148/117)</font><br/>";
+        {
+            if (_hasLR && {_groupLRFreqIndex == _forEachIndex}) then {
+                _diaryHyperlinkedText = _diaryHyperlinkedText + format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+            } else {
+                _diaryHyperlinkedText = _diaryHyperlinkedText + format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+            };
+        } forEach LR_CHANNELS_ARRAYS;
+
+        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><br/>Note: Subject to change.";
+
+        player createDiaryRecord ["diary", ["SIGNALS", _diaryHyperlinkedText]];
+    };
+
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
-
     diag_log text format ["[BW] - Player Stable, Seting Presets for Side %1", playerside];
 
     _languagesPlayerSpeaks = player getVariable ["f_languages", []];
@@ -49,21 +113,30 @@ if (!hasInterface) exitWith {};
             ["ACRE_PRC148", "indp148"] call acre_api_fnc_setPreset;
             ["ACRE_PRC117F", "indp117"] call acre_api_fnc_setPreset;
         };
-        case civilian: {
+    case civilian: {
             if (_languagesPlayerSpeaks isEqualTo []) then {_languagesPlayerSpeaks = ["ar"];};
         };
     };
 
-    diag_log text format ["[BW] - You speak %1", _languagesPlayerSpeaks];
+
+    diag_log text format ["[BW] - Player speaks %1", _languagesPlayerSpeaks];
     systemChat format ["[BW] - You speak %1", _languagesPlayerSpeaks];
 
     _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
 
-    waitUntil {[] call acre_api_fnc_isInitialized};
-    diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1", time];
-    systemChat "[ACRE] - init finished";
-
+    //Wait for F3_GroupID from server
     _groupID = (group player) getVariable ["F3_GroupID", "-1"];
+    if (_groupID == "-1") then {
+        _wait = 10;
+        waitUntil {
+            diag_log text ["[BW] waiting on F3_GroupID"];
+            uiSleep 1;
+            _wait = _wait - 1;
+            _groupID = (group player) getVariable ["F3_GroupID", "-1"];
+            (_groupID != "-1") || {_wait < 0}
+        };
+    };
+
     _groupFreqIndex = -1;
     _groupLRFreqIndex = -1;
 
@@ -82,14 +155,19 @@ if (!hasInterface) exitWith {};
     };
 
     if (_groupFreqIndex == -1) then {
-        systemChat format ["Unknown Group (Using Default) [%1]", _groupID];
+        diag_log text format ["[BW] Unknown Group (Using Default) [%1]", _groupID];
         _groupFreqIndex = 0;
     };
-
     if (_groupLRFreqIndex == -1) then {
-        systemChat format ["Unknown LR Group (Using Default) [%1]", _groupID];
+        diag_log text format ["[BW] Unknown LR Group (Using Default) [%1]", _groupID];
         _groupLRFreqIndex = 0;
     };
+    diag_log text format ["[BW] - Channels Ready to Set [SR%1/LR%2] from group %3", (_groupFreqIndex + 1), (_groupLRFreqIndex + 1), _groupID];
+
+    [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBreifing;
+
+    waitUntil {[] call acre_api_fnc_isInitialized};
+    diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1, setting radios", time];
 
     _radio343 = ["ACRE_PRC343"] call acre_api_fnc_getRadioByType;
     if ((!isNil "_radio343") && {_radio343 != ""}) then {
@@ -108,31 +186,4 @@ if (!hasInterface) exitWith {};
         systemChat format ["[%1] is set to CH [%2]", _radio117, (_groupLRFreqIndex + 1)];
         [_radio117, (_groupLRFreqIndex + 1)] call acre_api_fnc_setRadioChannel;
     };
-
-    // {
-    // (["ACRE_PRC117F"] call acre_api_fnc_getRadioByType), 4] call acre_api_fnc_setRadioChanne
-    // [_x, _groupFreqIndex] call TFAR_fnc_setSwChannel;
-    // systemChat format ["SR Radio [%1] is set to [CH %2]", _x, (_groupFreqIndex + 1)];
-    // } forEach (player call TFAR_fnc_radiosListSorted);
-
-    // _lrChannel = switch (_groupFreqIndex) do {
-    // case (0): {3}; //Alpha
-    // case (1): {3}; //Bravo
-    // case (2): {3}; // Charlie
-    // case (3): {4}; // 1PLT
-    // case (4): {4}; // COY
-    // case (5): {8}; // Delta
-    // case (6): {8}; // Echo
-    // case (7): {8}; // Foxtrot
-    // case (8): {4}; // 2PLT
-    // default {0};
-    // };
-
-
-    // _lrRadioArray = player call TFAR_fnc_backpackLR;
-    // if ((count _lrRadioArray) == 2) then {
-    // [(_lrRadioArray select 0), (_lrRadioArray select 1), _lrChannel] call TFAR_fnc_setLrChannel;
-    // };
-    systemChat "-Radio Setup Complete-";
-
 };
