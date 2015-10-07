@@ -30,7 +30,7 @@ if (!hasInterface) exitWith {};
 
     _fnc_installMapEvents = {
         _d = _this select 0;
-        // systemChat format ["Installing Draw EH on %1", _d];
+        diag_log text format ["Installing Draw EH on %1", _d];
         ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
     };
 

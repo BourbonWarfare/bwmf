@@ -98,7 +98,7 @@ class ind_f {
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,"rhs_mag_rgd5:2","SmokeShell:2"};
         backpackItems[] += {"chemlight_green:2","ACRE_PRC343"};
         items[] = {"Binocular","ACE_MapTools"};
-        attachments[] = {""};
+        attachments[] = {};
     };
     class I_Soldier_AR_F: I_Soldier_F {// AR
         weapons[] = {IND_AR};
@@ -116,7 +116,7 @@ class ind_f {
         backpack[] = {"rhs_rpg_empty"}; /// randomized
         magazines[] = {IND_CARBINE_MAG,IND_AT_MAG,"rhs_mag_rgd5:2","SmokeShell:2"};
         launchers[] = {IND_AT}; /// randomized
-        attachments[] = {""};
+        attachments[] = {};
     };
     class I_medic_F: I_Soldier_F {// Medic
         weapons[] = {IND_CARBINE};

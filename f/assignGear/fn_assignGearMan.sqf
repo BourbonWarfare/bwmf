@@ -16,7 +16,7 @@ if (!isClass(_path)) then {
 };
 
 if (!isClass(_path)) exitWith {
-    systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+    diag_log text format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
 _uniforms = getArray(_path >> "uniform");
@@ -159,18 +159,23 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
 
 // ====================================================================================
 // attachments
-{
-    _arr = [_x,":"] call BIS_fnc_splitString;
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-            _unit addPrimaryWeaponItem _classname;
-            _unit addSecondaryWeaponItem _classname;
-            _unit addHandgunItem _classname;
+if (!(_attachments isEqualTo [])) then {
+    //Prevents error from adding incompatible attachments
+    _primaryWeaponAttachables = [primaryWeapon _unit] call CBA_fnc_compatibleItems;
+    _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
+    _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
+    {
+        (_x splitString ":") params [["_classname", ""]]; //count makes no sense for attachments, ignore
+        if (_classname != "") then {
+            switch (true) do {
+                case (_classname in _primaryWeaponAttachables): {_unit addPrimaryWeaponItem _classname;};
+                case (_classname in _secondaryWeaponAttachables): {_unit addSecondaryWeaponItem _classname;};
+                case (_classname in _handgunWeaponAttachables): {_unit addHandgunItem _classname;};
+                default {diag_log text format ["[BW] - Warning, attachment %1 not compatible with weapons %2", _classname, (weapons _unit)];};
+            };
         };
-    };
-} foreach _attachments;
+    } foreach _attachments;
+};
 
 //Try to add missing magazines:
 {
