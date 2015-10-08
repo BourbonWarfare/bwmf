@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Ukraianian - AK rifles
+//Description: Ukrainian - AK rifles
 
 class ind_f {
     //Rifle

@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: US Desert - M4 Rifles
+//Description: US UCP - M4 Rifles
 
 class blu_f {
     //Rifle
