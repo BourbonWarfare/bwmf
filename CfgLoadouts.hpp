@@ -11,24 +11,24 @@ class CfgLoadouts {
     
     //Only include one hpp per faction; use (//) to comment out other files
 
-    //BLUFOR FACTION:
+    //BLUFOR FACTION (blu_f):
     // #include "Loadouts\bluefor_baf.hpp"          //
     // #include "Loadouts\bluefor_standard.hpp"     //Our Standard "us tan" loadout
     // #include "Loadouts\bluefor_swedes.hpp"       //
     #include "Loadouts\blueforacu_standard.hpp"     //
 
-    //INDFOR FACTION:
+    //INDFOR FACTION (ind_f):
     // #include "Loadouts\indfor_desreb.hpp"        //
     // #include "Loadouts\indfor_standard.hpp"      //
     #include "Loadouts\indfor_standard2.hpp"        //Our Standard "ukraine" loadout
 
-    //OPFOR FACTION:
+    //OPFOR FACTION (opf_f):
     // #include "Loadouts\opfor_desreb.hpp"         //Our standard "middle-east" loadout
     #include "Loadouts\opfor_standard.hpp"          //Our standard "middle-east" loadout
 
-    //RUSSIAN FACTIONS:
-    // #include "Loadouts\russian_standard.hpp"     //Our standard "commy" loadout
-    #include "Loadouts\russian_sov-sweedish.hpp"    //Soviet's "sweedish" loadout
+    //RUSSIAN FACTIONS (rhs_faction_msv):
+    #include "Loadouts\russian_standard.hpp"     //Our standard "commy" loadout
+    // #include "Loadouts\russian_sov-sweedish.hpp"    //Soviet's "sweedish" loadout
 
 
 

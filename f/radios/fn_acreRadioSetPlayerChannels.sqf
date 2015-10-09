@@ -129,7 +129,7 @@ if (!hasInterface) exitWith {};
     if (_groupID == "-1") then {
         _wait = 10;
         waitUntil {
-            diag_log text ["[BW] waiting on F3_GroupID"];
+            diag_log text format ["[BW] waiting on F3_GroupID"];
             uiSleep 1;
             _wait = _wait - 1;
             _groupID = (group player) getVariable ["F3_GroupID", "-1"];
