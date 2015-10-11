@@ -4,7 +4,7 @@
 
 if (!hasInterface) exitWith {};
 
-#define FRAMEWORK_VERSION_DATE "2015/10/07"
+#define FRAMEWORK_VERSION_DATE "2015/10/10"
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 [] spawn {
