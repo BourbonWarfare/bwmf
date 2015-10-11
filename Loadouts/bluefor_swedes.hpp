@@ -187,7 +187,7 @@ class blu_f {
         magazines[] = {WEST_SNIPER_MAG,"SmokeShell:2","rhs_mag_m67:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
-        attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","optic_MRCO"};
+        attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side"};
     };
     class B_Helipilot_F {// Pilot
         uniform[] = {"U_B_HeliPilotCoveralls"};  /// randomized
