@@ -60,7 +60,7 @@ if ((count _uniforms) == 0) then {
             _unit forceAddUniform _toAdd;
         };
     } else {
-        [_classname, format ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
+        [_unitClassname, format ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Vest:
