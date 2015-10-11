@@ -6,19 +6,22 @@ params ["_unit"];
 
 if (!(local _unit)) exitWith {};
 
+_startTime = diag_tickTime;
+
 _faction = tolower (faction _unit);
+_unitClassname = typeOf _unit;
 //Check variable f_gear, otherwise default to typeof
-_loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
+_loadout = _unit getVariable ["F_Gear", _unitClassname];
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if (!isClass(_path)) then {
+    [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
     _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
 };
 
 if (!isClass(_path)) exitWith {
-    diag_log text format ["[BW] No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+    [_unitClassname, "No loadout found, using default gear"] call F_fnc_gearErrorLogger;
 };
-
 
 _allowMagnifiedOptics = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics")) then {
     1 == getNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics");
@@ -57,7 +60,7 @@ if ((count _uniforms) == 0) then {
             _unit forceAddUniform _toAdd;
         };
     } else {
-        diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
+        [_classname, format ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Vest:
@@ -69,7 +72,7 @@ if ((count _vests) == 0) then {
         removeVest _unit;
         _unit addVest _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)];
+        [_unitClassname, format ["%1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Backpack:
@@ -81,7 +84,7 @@ if ((count _backpack) == 0) then {
         removeBackpack _unit;
         _unit addBackpack _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)];
+        [_unitClassname, format ["%1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Headgear:
@@ -93,7 +96,7 @@ if ((count _headgears) == 0) then {
         removeHeadgear _unit;
         _unit addHeadgear _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
+        [_unitClassname, format ["%1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 
@@ -183,7 +186,7 @@ if (!(_attachments isEqualTo [])) then {
                 } forEach configProperties [_config >> "ItemInfo" >> "OpticsModes"];
                 if (_minZoom < 0.25) then {
                     _addAttachment = false;
-                    diag_log text format ["[BW] - allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom];
+                    [_unitClassname, format ["allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom]] call F_fnc_gearErrorLogger;
                 };
             };
             if (_addAttachment) then {
@@ -191,11 +194,13 @@ if (!(_attachments isEqualTo [])) then {
                     case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
                     case (({_x == _classname} count _secondaryWeaponAttachables) > 0): {_unit addSecondaryWeaponItem _classname;};
                     case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
-                    default {diag_log text format ["[BW] - Warning, attachment %1 not compatible with weapons %2", _classname, (weapons _unit)];};
+                    default {
+                        [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+                    };
                 };
             };
         } else {
-            diag_log text format ["[BW] - Warning, attachment %1 does not exist", _classname];
+            [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
         };
     } foreach _attachments;
 };
@@ -205,16 +210,14 @@ if (!(_attachments isEqualTo [])) then {
     if (_unit canAdd _x) then {
         _unit addMagazines [_x, 1];
     } else {
-        if (isNil "F_GEAR_ERROR_LOADOUTS") then {F_GEAR_ERROR_LOADOUTS = [];};
-        diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
-        if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
-            F_GEAR_ERROR_LOADOUTS pushBack _loadout;
-            diag_log text format ["[BW] Failed To add Magazine %1 to %2", _x, _loadout];
-        };
+        [_unitClassname, format ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
     };
 } forEach _magazinesNotAdded;
 
+//Run loadout's init code
 _a = _path >> "init";
 if (isText _a) then {
     _unit call compile ("this = _this;"+ getText _a);
 };
+
+[_unitClassname, "Done", (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
