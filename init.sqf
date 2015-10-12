@@ -5,24 +5,44 @@ enableSaving [false, false];
 enableSentences false;
 
 // F3 - Briefing
-[] call F_fnc_showBriefing;
-[] call F_fnc_showOrbatNotes;
+// [] call F_fnc_showBriefing;
+// [] call F_fnc_showOrbatNotes;
 
 // F3 - Buddy Team Colours
-[] call F_fnc_setTeamColours;
+// [] call F_fnc_setTeamColours;
 
 // F3 - View Distance
-setViewDistance 2500;
+// setViewDistance 2500;
 
 // BWMF - Mission Timer/Safe Start
-if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
+// if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // F3 - Radio Framework
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] call F_Radios_fnc_acreRadioSetup;
+// [] call F_Radios_fnc_acreRadioSetup;
 
 // BWMF: DAC Debug Params
-[] call F_DAC_fnc_setupDacParams;
+// [] call F_DAC_fnc_setupDacParams;
 
 // BWMF: Group and FTL Markers
-[] call F_Markers_fnc_playerInit;
+// [] call F_Markers_fnc_playerInit;
+
+PAB_TEST = compile preprocessFileLineNumbers "benchmark.sqf";
+
+[] spawn {
+    waitUntil {player == player};
+    waitUntil {alive player};
+
+    player addAction ["Benchmark blu_F", {
+        ["blu_F"] call PAB_TEST;
+    }];
+    player addAction ["Benchmark ind_f", {
+        ["ind_f"] call PAB_TEST;
+    }];
+    player addAction ["Benchmark opf_f", {
+        ["opf_f"] call PAB_TEST;
+    }];
+    player addAction ["rhs_faction_msv blu_F", {
+        ["rhs_faction_msv"] call PAB_TEST;
+    }];
+};

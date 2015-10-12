@@ -38,9 +38,9 @@ if (isNil "F_gearPEFH") then {
     F_gearPEFH = [{
         params ["_args"];
         _args params ["_startTime"];
-        if (diag_tickTime < (_startTime + 6)) exitWith {};
+        if (diag_tickTime < (_startTime + 15)) exitWith {};
 
-        diag_log text format ["[BW] - Logger Dumping @ %1", diag_tickTime];
+        diag_log text format ["[BW] - Logger Dumping @ %1 (started at %2)", diag_tickTime, _startTime];
 
         [_this select 1] call CBA_fnc_removePerFrameHandler;
         F_gearPEFH = nil;
