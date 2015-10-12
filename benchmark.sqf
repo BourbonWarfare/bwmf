@@ -1,14 +1,21 @@
 params [["_faction", "", [""]]];
 
-if (_faction == "") exitWith {systemChat "bad input"};
+if (_faction == "") exitWith {systemChat "bad input A"};
 
 _loadOuts = [];
 //If it's a unit name just use it, otherwise get the factions
 if (_faction isKindOf "CaManBase") then {
     _loadOuts = [_faction];
 } else {
-    _loadOuts = configProperties [(missionConfigFile >> "CfgLoadouts" >> _faction), "(configName _x) isKindOf 'CaManBase'"];
+    _configs = configProperties [(missionConfigFile >> "CfgLoadouts" >> _faction), "(configName _x) isKindOf 'CaManBase'"];
+    {
+        if ((configName _x) isKindOf "CaManBase") then {
+            _loadOuts pushBack (configName _x);
+        };
+    } forEach _configs;
 };
+
+if (_loadOuts isEqualTo []) exitWith {systemChat "bad input B"};
 
 [{
     params ["_args", "_pfID"];
@@ -34,7 +41,7 @@ if (_faction isKindOf "CaManBase") then {
         PBR_benchmarkUnits = [];
         _group = createGroup west;
         for "_index" from 0 to 119 do {
-            _classname = configName (_loadOuts call BIS_fnc_selectRandom);
+            _classname = (_loadOuts call BIS_fnc_selectRandom);
             systemChat format ["%1 - %2", _index, _classname];
 
             _xIndex = _index % 10;
