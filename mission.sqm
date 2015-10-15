@@ -4650,7 +4650,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={399.38828,5,709.10352};
+					position[]={439.89944,5,744.04346};
 					id=310;
 					side="LOGIC";
 					vehicle="DAC_Source_Extern";
@@ -4667,7 +4667,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={399.94781,5,700.10059};
+					position[]={440.45898,5,735.04053};
 					id=311;
 					side="LOGIC";
 					vehicle="HeadlessClient_F";
@@ -7586,7 +7586,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={420.43204,5,718.22705};
+					position[]={420.08813,5,701.37646};
 					class args
 					{
 						items=13;
@@ -7686,7 +7686,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={410.10541,5,731.2998};
+					position[]={411.13712,5,743.26758};
 					class args
 					{
 						items=8;
@@ -7756,7 +7756,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={420.90823,5,731.20459};
+					position[]={421.93994,5,743.17236};
 					class args
 					{
 						items=8;
@@ -7826,7 +7826,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={400.1438,5,731.51563};
+					position[]={401.17551,5,743.4834};
 					class args
 					{
 						items=10;
@@ -7908,7 +7908,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={409.67929,5,725.52637};
+					position[]={410.711,5,737.49414};
 					class args
 					{
 						items=17;
@@ -8034,7 +8034,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={399.68359,5,725.40186};
+					position[]={400.7153,5,737.36963};
 					class args
 					{
 						items=9;
@@ -8112,7 +8112,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={420.4353,5,724.98193};
+					position[]={421.46701,5,736.94971};
 					class args
 					{
 						items=16;
@@ -8230,7 +8230,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={410.02286,5,718.18213};
+					position[]={409.67896,5,701.33154};
 					class args
 					{
 						items=2;
@@ -8264,7 +8264,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={400.42474,5,717.97803};
+					position[]={400.08084,5,701.12744};
 					class args
 					{
 						items=3;
