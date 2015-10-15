@@ -7829,7 +7829,7 @@ class Mission
 					position[]={400.1438,5,731.51563};
 					class args
 					{
-						items=8;
+						items=10;
 						class Item0
 						{
 							value="false";
@@ -7846,33 +7846,45 @@ class Mission
 						{
 							value="true";
 							parentCls="ALiVE_require";
-							typeName="ALiVE_DISABLESAVE";
+							typeName="ALiVE_AI_DISTRIBUTION";
 						};
 						class Item3
+						{
+							value="true";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_DISABLESAVE";
+						};
+						class Item4
 						{
 							value="1";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_DISABLEMARKERS";
 						};
-						class Item4
+						class Item5
 						{
 							value="0";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_DISABLEADMINACTIONS";
 						};
-						class Item5
+						class Item6
+						{
+							value="0";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_PAUSEMODULES";
+						};
+						class Item7
 						{
 							value="300";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_GC_INTERVAL";
 						};
-						class Item6
+						class Item8
 						{
 							value="100";
 							parentCls="ALiVE_require";
 							typeName="ALiVE_GC_THRESHHOLD";
 						};
-						class Item7
+						class Item9
 						{
 							value="";
 							parentCls="ALiVE_require";
@@ -8118,7 +8130,7 @@ class Mission
 						};
 						class Item2
 						{
-							value="HC";
+							value="server";
 							parentCls="ALiVE_mil_cqb";
 							typeName="CQB_locality_setting";
 						};
