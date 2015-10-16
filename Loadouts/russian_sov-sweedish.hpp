@@ -221,6 +221,8 @@ class rhs_faction_msv {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {MSV_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+
+    class fallback: rhs_msv_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
 
 class rhs_faction_vvs {

@@ -14,8 +14,8 @@ _unitClassname = typeOf _unit;
 _loadout = _unit getVariable ["F_Gear", _unitClassname];
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
-if (!isClass(_path)) then {
-    [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
+if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "useFallback")) == 1}) then {
+    // [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
     _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
 };
 

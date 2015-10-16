@@ -234,4 +234,6 @@ class opf_f {
         magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
         attachments[] = {"rhs_acc_dtk"};
     };
+
+    class fallback: O_Soldier_F {}; //This means any faction member who doesn't match something will use this loadout
 };

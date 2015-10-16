@@ -256,6 +256,8 @@ class rhs_faction_msv {
         magazines[] = {MSV_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
         attachments[] = {"rhs_acc_dtk"};
     };
+
+    class fallback: rhs_msv_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
 
 class rhs_faction_vvs {

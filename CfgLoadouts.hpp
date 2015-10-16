@@ -8,6 +8,8 @@ class CfgLoadouts {
     //(1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
     setVehicleLoadouts = 1;
     
+    //Fallback: use a basic soldiers loadout when the unit's classname isn't found (for Alive spawning random units)
+    useFallback = 1;
     
     //Only include one hpp per faction; use (//) to comment out other files
 

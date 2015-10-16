@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: 
+//Description:
 
 class blu_f {
     //Rifle
@@ -239,4 +239,6 @@ class blu_f {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {WEST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+
+    class fallback: B_Soldier_F {}; //This means any faction member who doesn't match something will use this loadout
 };
