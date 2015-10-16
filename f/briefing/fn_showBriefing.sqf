@@ -12,9 +12,9 @@ if (!hasInterface) exitWith {};
     if (!alive player) then {waitUntil {alive player};};
 
     //Auto add credits from description.ext:
-    local _missionName = getText (missionConfigFile >> "onLoadName");
-    local _authorName = getText (missionConfigFile >> "author");
-    local _worldName = getText (configFile >> "CfgWorlds" >> worldName >> "description");
+    _missionName = getText (missionConfigFile >> "onLoadName");
+    _authorName = getText (missionConfigFile >> "author");
+    _worldName = getText (configFile >> "CfgWorlds" >> worldName >> "description");
     player createDiaryRecord ["diary", ["Credits", format ["
     <font size=16>%1</font><br/>
     <font size=13>by %2</font><br/>
