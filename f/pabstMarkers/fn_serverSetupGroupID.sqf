@@ -1,4 +1,4 @@
-#include "defines_unitsAndGroups.hpp"
+#include "defines_unitsAndGroups.sqf"
 
 _unit = _this select 0;
 _group = group _unit;

@@ -1,4 +1,4 @@
-#include "defines_unitsAndGroups.hpp"
+#include "defines_unitsAndGroups.sqf"
 
 
 F_Markers_thingsToDraw = [];
