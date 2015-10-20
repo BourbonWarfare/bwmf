@@ -1,4 +1,4 @@
-#include "defines_unitsAndGroups.hpp"
+#include "defines_unitsAndGroups.sqf"
 
 _unit = _this select 0;
 _group = group _unit;
@@ -7,13 +7,13 @@ _group = group _unit;
 if ((_group getVariable ["F3_GroupID", "-1"]) != "-1") exitWith {};
 
 _groupNames = switch (side _group) do {
-case (west): {WEST_GROUPS};
-case (east): {EAST_GROUPS};
-case (independent): {INDP_GROUPS};
+    case (west): {WEST_GROUPS};
+    case (east): {EAST_GROUPS};
+    case (independent): {INDP_GROUPS};
     default {[]};
 };
 
-_splitName = [(vehicleVarName _unit), "_"] call BIS_fnc_splitString;
+_splitName = (vehicleVarName _unit) splitString "_";
 if ((count _splitName) < 2) exitWith {};
 _nameToSearch = format ["%1_%2", (_splitName select 0), (_splitName select 1)];
 

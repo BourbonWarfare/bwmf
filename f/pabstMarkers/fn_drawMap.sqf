@@ -14,7 +14,7 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
 {
     _data = _x getVariable ["f_var_drawSettings", []];
     if (_data isEqualTo []) then {
-        diag_log format ["Bad f_var_drawSettings on %1", _x]
+        diag_log format ["[BW] Bad f_var_drawSettings on %1", _x]
     } else {
         _data params ["_text", "_texture", "_color", "_size", "_pos", "_time"];
         _size params ["_sizeX", "_sizeY"];

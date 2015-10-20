@@ -37,12 +37,12 @@ PABST_SPECT_init = {
 	if (!isNil "acre_api_fnc_setSpectator") then {[true] call acre_api_fnc_setSpectator;};
 
 	// Give spectator the ability to understand all languages
-	if (!isNil "acre_api_fnc_babelSetSpokenLanguages" && {!isNil "f_available_languages"}) then {
+	if (!isNil "acre_api_fnc_babelSetSpokenLanguages" && {!isNil "F_available_languages"}) then {
 
 		_availableLanguages = [];
 		{
 			_availableLanguages pushBack (_x select 0);
-		} forEach f_available_languages;
+		} forEach F_available_languages;
 
 		_availableLanguages call acre_api_fnc_babelSetSpokenLanguages;
 
