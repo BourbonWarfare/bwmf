@@ -42,6 +42,9 @@ class blu_f {
     // Pistol
     #define WEST_PISTOL "rhsusf_weap_m1911a1"
     #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+	// Tools & Gear
+	#define WEST_BasicTools "ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"
+	#define WEST_BasicACE "ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"
 
     class Car {
         TransportWeapons[] = {WEST_AT};
@@ -78,32 +81,29 @@ class blu_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"};
         attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
     };
-    class B_officer_F: B_Soldier_F {// CO and DC
+	class B_Soldier_TL_F: B_Soldier_F {// FTL 
         weapons[] = {WEST_GLRIFLE};
-        vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
-        headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_PISTOL_MAG,"rhs_mag_m67:1","SmokeShellGreen:2"};
-        handguns[] = {WEST_PISTOL}; /// randomized
-        backpackItems[] += {"ACE_key_west","ACRE_PRC117F","Chemlight_blue:2","ACRE_PRC343"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ACE_Vector","ItemGPS"};
-        items[] = {"ACRE_PRC148","ACE_microDAGR","ACE_MapTools"};
+        headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
+        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,"SmokeShellGreen:2","rhs_mag_m67:2","SmokeShell:2"};
+        items[] += {"ACE_microDAGR"};
+        backpackItems[] += {"ACE_key_west","Chemlight_blue:2"};
+        linkedItems[] += {"ItemGPS","Binocular"};
     };
-    class B_Soldier_SL_F: B_Officer_F {// SL
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","ACE_Vector"};
-        items[] = {"ACRE_PRC148", "ACRE_PRC343","ACE_microDAGR","ACE_MapTools"};
-        backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs","Chemlight_blue:2"};
+	class B_Soldier_SL_F: B_Soldier_TL_F {// SL inherits from FTL but have to reset linkItems for vector
+		vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
+        headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
+        magazines[] += {WEST_PISTOL_MAG};
+        handguns[] = {WEST_PISTOL}; /// randomized
+		items[] += ("ACRE_PRC148");
+        linkedItems[] = {WEST_BasicTools,"ItemGPS","ACE_Vector"};        
+    };
+    class B_officer_F: B_Soldier_SL_F {// CO and DC inherit from SL but gain a 117 in the backpack
+        backpackItems[] += {"ACRE_PRC117F"};
     };
     class B_soldier_UAV_F: B_Soldier_F {
         backpack[] = {"B_rhsusf_B_BACKPACK"}; /// randomized
         linkedItems[] += {"B_uavterminal"};
-    };
-    class B_Soldier_TL_F: B_Soldier_F {// FTL
-        weapons[] = {WEST_GLRIFLE};
-        headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
-        magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,"SmokeShellGreen:2","rhs_mag_m67:2","SmokeShell:2","rhs_mag_m67:1","SmokeShell:2"};
-        items[] = {"ACRE_PRC343","ACE_microDAGR","ACE_MapTools"};
-        backpackItems[] += {"ACE_key_west","Chemlight_blue:2"};
-        linkedItems[] += {"ItemGPS","Binocular"};
+		items[] = {"ACRE_PRC343","ACE_MapTools","ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
     };
     class B_Soldier_AR_F: B_Soldier_F {// AR
         vest[] = {"rhsusf_iotv_ocp_SAW"}; /// randomized
@@ -141,13 +141,13 @@ class blu_f {
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","SmokeShell:2"};
         launchers[] = {WEST_MAT}; /// randomized
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_MapTools"};
+        items[] += {WEST_BasicACE};
         backpackItems[] = {WEST_MAT_MAG};
     };
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
         backpackItems[] = {WEST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_MapTools"};
+        items[] += {WEST_BasicACE};
     };
     class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
         weapons[] = {WEST_CARBINE};
@@ -162,13 +162,13 @@ class blu_f {
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","SmokeShell:2"};
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_RangeTable_82mm","ACE_MapTools"};
+        items[] += {WEST_BasicACE,"ACE_RangeTable_82mm"};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_MapTools"};
+        items[] += {WEST_BasicACE};
     };
     class B_spotter_F {// Spotter
         uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
@@ -176,8 +176,8 @@ class blu_f {
         headgear[] = {"rhs_Booniehat_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
         weapons[] = {WEST_SPOTTER}; /// randomized
         magazines[] = {WEST_SPOTTER_MAG,"SmokeShell:2","rhs_mag_m67:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343","ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","ACE_Vector"};
+        items[] = {WEST_BasicACE,"ACRE_PRC343","ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
+        linkedItems[] = {WEST_BasicTools,"itemGPS","ACE_Vector"};
         attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
     };
     class B_sniper_F {// Sniper
