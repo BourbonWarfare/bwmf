@@ -116,21 +116,6 @@ class Params {
         isGlobal = 0;						// Execute this only on the server
         code = "f_param_timeOfDay = %1";
     };
-    // ============================================================================================
-    class f_param_dacdebug {
-        title = "DAC Debug";
-        values[] = {0,1};
-        texts[] = {"Off","On"};
-        default = 0;
-        code = "f_param_dacdebug = %1";
-    };
-    class ws_param_hc {
-        title = "Headless client";
-        values[] = {0,1};
-        texts[] = {"Off","Auto-Detect"};
-        default = 1;
-        code = "ws_param_hc = %1";
-    };
     // F3 - End of Params code blocks.
     // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 };
@@ -160,12 +145,6 @@ class CfgFunctions {
             file = "f\radios";
             class acreRadioSetup {};
             class acreRadioSetPlayerChannels {};
-        };
-    };
-    class F_DAC {
-        class F_DAC {
-            file = "DAC";
-            class setupDacParams {};
         };
     };
     class F {  // Defines the "owner"

@@ -21,8 +21,5 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 [] call F_Radios_fnc_acreRadioSetup;
 
-// BWMF: DAC Debug Params
-[] call F_DAC_fnc_setupDacParams;
-
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;
