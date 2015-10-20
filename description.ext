@@ -31,7 +31,7 @@ class ACE_Settings {
 #include "pabst\gui_spectator.hpp"
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
-#include "CfgLoadouts.sqf"
+#include "CfgLoadouts.hpp"
 
 // ============================================================================================
 
