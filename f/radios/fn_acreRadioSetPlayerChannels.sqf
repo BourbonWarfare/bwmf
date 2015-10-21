@@ -118,10 +118,6 @@ if (!hasInterface) exitWith {};
         };
     };
 
-
-    diag_log text format ["[BW] - Player speaks %1", _languagesPlayerSpeaks];
-    systemChat format ["[BW] - You speak %1", _languagesPlayerSpeaks];
-
     _languagesPlayerSpeaks call acre_api_fnc_babelSetSpokenLanguages;
 
     //Wait for F3_GroupID from server

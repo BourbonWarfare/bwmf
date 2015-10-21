@@ -4,7 +4,7 @@
 
 if (!hasInterface) exitWith {};
 
-#define FRAMEWORK_VERSION_DATE "2015/10/10"
+#define FRAMEWORK_VERSION_DATE "2015/10/21"
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 [] spawn {
@@ -50,5 +50,4 @@ if (!hasInterface) exitWith {};
             diag_log text format ["[BW] ERROR (briefing.sqf): Faction %1 is not defined.", _unitfaction];
         };
     };
-
 };
