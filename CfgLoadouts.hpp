@@ -24,6 +24,7 @@ class CfgLoadouts {
     // #include "Loadouts\indfor_desreb.hpp"        //
     // #include "Loadouts\indfor_standard.hpp"      //
     #include "Loadouts\indfor_standard2.hpp"        //Our Standard "ukraine" loadout
+    // #include "Loadouts\indfor_germans.hpp"        //Germans: G36 - Tropen Camo
 
     //OPFOR FACTION (opf_f):
     // #include "Loadouts\opfor_desreb.hpp"         //Our standard "middle-east" loadout
