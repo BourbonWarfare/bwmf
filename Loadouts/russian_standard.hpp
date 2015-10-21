@@ -94,7 +94,7 @@ class rhs_faction_msv {
     };
     class rhs_msv_sergeant: rhs_msv_Officer {// SL
         backpackItems[] = {"ACE_key_east","Chemlight_red:2"};
-		linkedItems[] = {"Binocular","ItemGPS"};
+        linkedItems[] = {"Binocular","ItemGPS"};
     };
     class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
         weapons[] = {MSV_GLRIFLE};

@@ -61,7 +61,7 @@ class ind_f {
     };
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"BWA3_Uniform_Tropen"}; 
+        uniform[] = {"BWA3_Uniform_Tropen"};
         vest[] = {"BWA3_Vest_Tropen", "BWA3_Vest_Rifleman1_Tropen"};
         headgear[] = {"BWA3_M92_Tropen"};
         backpack[] = {"BWA3_AssaultPack_Tropen"};
@@ -171,7 +171,7 @@ class ind_f {
         linkeditems[] += {"ACE_Vector"};
     };
     class I_spotter_F {// Spotter
-        uniform[] = {"BWA3_Uniform_Ghillie_idz_Tropen"}; 
+        uniform[] = {"BWA3_Uniform_Ghillie_idz_Tropen"};
         vest[] = {};
         headgear[] = {};
         backpack[] = {"BWA3_AssaultPack_Tropen"};
@@ -182,7 +182,7 @@ class ind_f {
         attachments[] = {"BWA3_optic_ZO4x30"};
     };
     class I_sniper_F {// Sniper
-        uniform[] = {"BWA3_Uniform_Ghillie_idz_Tropen"}; 
+        uniform[] = {"BWA3_Uniform_Ghillie_idz_Tropen"};
         vest[] = {};
         headgear[] = {};
         backpack[] = {"BWA3_AssaultPack_Tropen"};
@@ -193,7 +193,7 @@ class ind_f {
         attachments[] = {"BWA3_optic_ZO4x30"};
     };
     class I_Helipilot_F {// Pilot
-        uniform[] = {"BWA3_Uniform_Crew_Tropen"}; 
+        uniform[] = {"BWA3_Uniform_Crew_Tropen"};
         vest[] = {"BWA3_Vest_Rifleman1_Tropen"};
         headgear[] = {"BWA3_CrewmanKSK_Tropen_Headset"};
         backpack[] = {"BWA3_AssaultPack_Tropen"};
@@ -204,7 +204,7 @@ class ind_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
     class I_crew_F {// Crew
-        uniform[] = {"BWA3_Uniform_Crew_Tropen"}; 
+        uniform[] = {"BWA3_Uniform_Crew_Tropen"};
         vest[] = {"BWA3_Vest_Rifleman1_Tropen"};
         headgear[] = {"BWA3_CrewmanKSK_Tropen_Headset"};
         backpack[] = {"BWA3_AssaultPack_Tropen"};
@@ -215,7 +215,7 @@ class ind_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","Binocular"};
     };
     class I_Soldier_repair_F: I_crew_F {// Repair Specialist
-        uniform[] = {"BWA3_Uniform2_idz_Tropen"}; 
+        uniform[] = {"BWA3_Uniform2_idz_Tropen"};
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACRE_PRC148"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
