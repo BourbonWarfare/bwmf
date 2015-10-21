@@ -1,12 +1,30 @@
-## BWMF Version 4.1 RC2 ##
+## BWMF Version 4.2 ##
+* Soviet's Loadouts
+* Lots of framework cleanup
+* New SQM
+* setTeamColors
+* Handle incompatible attachments
+* Easy setting to disable vehicle gear
+* Easy setting to disable optics
+* Auto Credits from description.ext
+* Radio Channels on briefing
+* Loadout error logging
+* Replace old RH scopes
+* ALiVE updates
+* Removed local for future 1.54 compatibility
+* Gear fallback
+* GUI Cleanup
+* DAC Removal
 
-*New gear loadouts based on .hpp
-*Increased Blufor to company level
-*Added Russian company
-*New group markers based on drawicon3d
-*Several other performance improvements, cleanup, etc.
+## BWMF Version 4.1 - Forked from F3 3-1-1 ##
 
-Sorry Fer, I cut out F2/BAF changelogs to save space. (Please don't hurt me.) If people are interested they can be found at https://github.com/ferstaberinde/F3
+* New gear loadouts based on .hpp
+* Increased Blufor to company level
+* Added Russian company
+* New group markers based on drawicon3d
+* Several other performance improvements, cleanup, etc.
+
+I cut out F2/BAF changelogs to save space.If people are interested they can be found at https://github.com/ferstaberinde/F3
 
 # F3 README #
 
