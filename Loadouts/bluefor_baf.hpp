@@ -184,7 +184,7 @@ class blu_f {
 		uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};  /// randomized
         vest[] = {"UK3CB_BAF_V_Osprey_Marksman_A"}; /// randomized
         headgear[] = {"UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C"}; /// randomized
-		backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"}
+		backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"};
         weapons[] = {WEST_SPOTTER}; /// randomized
         magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
         items[] = {WEST_BASE_MEDICAL,WEST_BASE_TOOLS,"ACRE_PRC148","ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
