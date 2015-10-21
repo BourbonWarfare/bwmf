@@ -1,4 +1,4 @@
-#include "defines_unitsAndGroups.hpp"
+#include "defines_unitsAndGroups.sqf"
 
 
 F_Markers_thingsToDraw = [];
@@ -20,7 +20,7 @@ _showTheseFactions = [];
             _x setVariable ["f_var_localIDSet", true];
             _x setGroupId [_groupIDName];
 
-            _splitName = [_groupIDName," "] call BIS_fnc_splitString;
+            _splitName = _groupIDName splitString " ";
             if ((count _splitName) >= 2) then {
                 _shortName = _splitName select 1;
                 _style = [_shortName] call F_Markers_fnc_getGroupMarkerStyle;
@@ -52,7 +52,7 @@ _showTheseFactions = [];
             if ((_unit getVariable ["f_var_drawSettings", []]) isEqualTo []) then {
                 _shortName = (_x select 1);
                 _style = [_shortName] call F_Markers_fnc_getGroupMarkerStyle;
-                _unit setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [], -1000]];
+                _unit setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [0,0,0], -1000]];
             };
             F_Markers_thingsToDraw pushBack _unit;
         };

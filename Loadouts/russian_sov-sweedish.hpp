@@ -4,18 +4,18 @@
 class rhs_faction_msv {
     //Rifle
     #define MSV_RIFLE "SAM_AK5C","SAM_AK5C_NOGRIP"
-    #define MSV_RIFLE_MAG "SAM_30Rnd_556x45_Pmag:7","SAM_30Rnd_556x45_Pmag_T:1"
+    #define MSV_RIFLE_MAG "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
     //GL Rifle
     #define MSV_GLRIFLE "SAM_AK5C_GRT"
-    #define MSV_GLRIFLE_MAG "SAM_30Rnd_556x45_Pmag:7","SAM_30Rnd_556x45_Pmag_T:1"
-    #define MSV_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:1","1Rnd_SmokeRed_Grenade_shell:2"
-    #define MSV_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:10"
+    #define MSV_GLRIFLE_MAG "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
+    #define MSV_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
+    #define MSV_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
     //Carbine
     #define MSV_CARBINE "SAM_AK5C","SAM_AK5C_NOGRIP"
-    #define MSV_CARBINE_MAG "SAM_30Rnd_556x45_Pmag:7","SAM_30Rnd_556x45_Pmag_T:1"
+    #define MSV_CARBINE_MAG "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
     // AR
     #define MSV_AR "SAM_KSP90B"
-    #define MSV_AR_MAG "SAM_200Rnd_556x45:4"
+    #define MSV_AR_MAG "SAM_200Rnd_556x45:2"
     #define MSV_AR_MAG2 "SAM_200Rnd_556x45:2"
     // SF Rifle
     #define MSV_SFR "hlc_rifle_aek971"
@@ -59,7 +59,7 @@ class rhs_faction_msv {
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
         magazines[] = {MSV_RIFLE_MAG,"HandGrenade:2","rhs_mag_rdg2_white:2"};
-        items[] = {};
+        items[] = {"ACE_MapTools"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","NVgoggles"};
         attachments[] = {"sam_acco_aimpoint"};
     };
@@ -67,20 +67,19 @@ class rhs_faction_msv {
         weapons[] = {MSV_GLRIFLE};
         magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_PISTOL_MAG,"HandGrenade:2","rhs_mag_rdg2_white:2"};
         handguns[] = {MSV_PISTOL}; /// randomized
-        linkedItems[] += {"ItemGPS","ACE_Vector"};
+        linkedItems[] += {"ACE_microDAGR","ACE_Vector"};
         backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
-        items[] += {"ACE_MapTools","ACRE_PRC148"};
+        items[] += {"ACRE_PRC148","ItemGPS","ACE_MapTools"};
     };
     class rhs_msv_sergeant: rhs_msv_Officer {// SL
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ItemGPS","Binocular"};
-        items[] += {"ACE_MapTools","ACRE_PRC148"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ACRE_PRC343","rhsusf_ANPVS_14","ACE_microDAGR","ACE_Vector"};
+        items[] += {"ACRE_PRC148","ACE_MapTools"};
         backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
     };
     class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
-
         weapons[] = {MSV_GLRIFLE};
         magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,"HandGrenade:2","rhs_mag_rdg2_white:2","rhs_mag_nspn_red:2"};
-        linkedItems[] += {"ItemGPS","Binocular"};
+        linkedItems[] += {"ACE_microDAGR","Binocular"};
         backpackItems[] += {"ACE_key_east"};
     };
     class rhs_msv_machinegunner: rhs_msv_rifleman {// AR
@@ -147,12 +146,12 @@ class rhs_faction_msv {
     class rhs_msv_support_Mort: rhs_msv_rifleman {// Mortar Gunner
         weapons[] = {MSV_CARBINE};
         magazines[] = {MSV_CARBINE_MAG,"rhs_mag_rgd5:2","rhs_mag_rdg2_white:2"};
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_RangeTable_82mm","ACE_MapTools"};
         backpack[] = {"rhs_msv_Mortar_01_weapon_F"}; /// randomized
     };
     class rhs_msv_support_AMort: rhs_msv_rifleman {// Assistant Mortar
         backpack[] = {"rhs_msv_Mortar_01_support_F"}; /// randomized
-        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_MapTools"};
         linkedItems[] += {"ACE_Vector"};
     };
     class rhs_msv_sfl {// Spetnaz Leader
@@ -163,7 +162,7 @@ class rhs_faction_msv {
         weapons[] = {MSV_SFR}; /// randomized
         magazines[] = {MSV_SFR_MAG,"rhs_mag_rdg2_white:2","DemoCharge_Remote_Mag:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","LaserDesignator","ACE_DefusalKit","ACE_Clacker"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS","ACE_Vector","ACE_DefusalKit","ACE_Clacker"};
         attachments[] = {"hlc_optic_kobra","hlc_muzzle_545SUP_AK"};
     };
     class rhs_msv_sf {// Spetnaz Team
@@ -180,7 +179,7 @@ class rhs_faction_msv {
     class rhs_msv_marksman: rhs_msv_rifleman {// Marksman
         weapons[] = {MSV_RIFLE}; /// randomized
         magazines[] = {MSV_RIFLE_MAG,"rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard","ACE_MapTools"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemRadio","itemGPS"};
         attachments[] = {"sam_acco_aimpoint_3x"};
     };
@@ -191,7 +190,7 @@ class rhs_faction_msv {
         backpack[] = {"SAM_Kitbag_rgr"}; /// randomized
         weapons[] = {MSV_SMG}; /// randomized
         magazines[] = {MSV_SMG_MAG,"rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs","ACE_MapTools"};
         backpackItems[] = {"ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
     };
@@ -202,14 +201,15 @@ class rhs_faction_msv {
         backpack[] = {"SAM_Kitbag_rgr"}; /// randomized
         weapons[] = {MSV_CARBINE}; /// randomized
         magazines[] = {MSV_CARBINE_MAG,"rhs_mag_rdg2_white:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        backpackItems[] += {"ACE_key_east","ACRE_PRC148"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC343","ACE_MapTools"};
+        backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio","itemGPS"};
     };
     class rhs_msv_repair: rhs_msv_crew {// Repair Specialist
         backpack[] = {"SAM_Kitbag_rgr"};
         backpackItems[] = {"Toolkit","ACRE_PRC148"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC343","ACE_MapTools"};
     };
     class rhs_msv_exp: rhs_msv_repair {// Explosive Specialist
         backpack[] = {"SAM_Kitbag_rgr"};
@@ -221,6 +221,8 @@ class rhs_faction_msv {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {MSV_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+
+    class fallback: rhs_msv_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
 
 class rhs_faction_vvs {
