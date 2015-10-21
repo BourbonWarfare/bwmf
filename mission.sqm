@@ -2353,7 +2353,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitIND_A1_R2";
-					description="IND Alpha 2 Rifleman";
+					description="IND Alpha 1 Rifleman";
 				};
 				class Item5
 				{
@@ -2364,7 +2364,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_A1_R1";
-					description="IND Alpha 2 Rifleman";
+					description="IND Alpha 1 Rifleman";
 				};
 			};
 		};

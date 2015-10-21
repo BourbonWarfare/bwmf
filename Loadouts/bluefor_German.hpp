@@ -76,7 +76,6 @@ class blu_f {
         TransportMagazines[] = {};
     };
 
-
     class B_Soldier_F {// rifleman
         uniform[] = {"BWA3_Uniform_Fleck","BWA3_Uniform2_Fleck"};  /// randomized
         vest[] = {"BWA3_Vest_Fleck","BWA3_Vest_Marksman_Fleck"}; /// randomized
