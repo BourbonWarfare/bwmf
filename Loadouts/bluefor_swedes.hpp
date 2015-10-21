@@ -1,10 +1,10 @@
 //Author: BWMF
-//Description: Sweedish Feesh
+//Description: Swedish Feesh
 
 class blu_f {
 	//Rifle
     #define WEST_RIFLE "SAM_AK5C","SAM_AK5C_NOGRIP"
-	#define WEST_RIFLE_MAG  "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
+	#define WEST_RIFLE_MAG "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
 	#define WEST_RIFLE_ATTACHMENTS "rhsusf_acc_eotech_552","rhsusf_acc_anpeq15A"
     //GL Rifle
     #define WEST_GLRIFLE "SAM_AK5C_GRT"
@@ -166,13 +166,13 @@ class blu_f {
         linkedItems[] += {"ACE_Vector"};
     };
     class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
-        items[] += {WEST_BASE_MEDICAL,"ACE_RangeTable_82mm"};
+        items[] += {WEST_BASE_MEDICAL};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] += {WEST_BASE_MEDICAL};
+        items[] += {WEST_BASE_MEDICAL,"ACE_RangeTable_82mm"};
     };
     class B_spotter_F {// Spotter
         uniform[] = {"rhs_uniform_cu_ocp"};  /// randomized
@@ -199,7 +199,7 @@ class blu_f {
         headgear[] = {"H_PilotHelmetHeli_B"}; /// randomized
         weapons[] = {WEST_SMG}; /// randomized
         magazines[] = {WEST_SMG_MAG,WEST_CREW_GRENADES};
-        backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
+        backpackItems[] = {"ACE_key_west","ACRE_PRC117F"};
         items[] = {WEST_BASE_MEDICAL,WEST_BASE_TOOLS,"ACRE_PRC148"};
         linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
     };
@@ -219,7 +219,7 @@ class blu_f {
     };
     class B_soldier_repair_F: B_crew_F {// Repair Specialist
         backpack[] = {"B_Carryall_mcamo"};
-        backpackItems[] = {"Toolkit","ACRE_PRC148"};
+        backpackItems[] = {"Toolkit","ACRE_PRC148","ACE_key_west"};
         vest[] = {"rhsusf_iotv_ocp_repair"}; /// randomized
         linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
     };
