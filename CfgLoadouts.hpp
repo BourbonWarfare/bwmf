@@ -18,6 +18,7 @@ class CfgLoadouts {
     // #include "Loadouts\bluefor_standard.hpp"     //Our Standard "us tan" loadout
     // #include "Loadouts\bluefor_swedes.hpp"       //
     #include "Loadouts\blueforacu_standard.hpp"     //
+    // #include "Loadouts\bluefor_German.hpp"       //Germans: G36 - Flecktarn Camo
 
     //INDFOR FACTION (ind_f):
     // #include "Loadouts\indfor_desreb.hpp"        //

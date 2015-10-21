@@ -24,6 +24,10 @@ class ACE_Settings {
     class ace_laserPointer_enabled {
         value = 0;
     };
+    class ace_map_DefaultChannel {//ACE 3.4.0 - https://github.com/acemod/ACE3/pull/2650
+        typeName = "NUMBER";
+        value = 1; //SIDE
+    };
 };
 
 // Pabst - Spectator
