@@ -30,9 +30,6 @@ class ACE_Settings {
     };
 };
 
-// Pabst - Spectator
-#include "pabst\gui_common.hpp"
-#include "pabst\gui_spectator.hpp"
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
@@ -79,10 +76,11 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = "GROUP";
+respawn = 1;
 respawndelay = 3;
+respawnButton = 1;
 respawnOnStart = 0;
-respawnTemplates[] = {"PabstSpectator"};
+respawnTemplates[] = {"Seagull","f_spectator"};
 
 // ============================================================================================
 
@@ -124,13 +122,22 @@ class Params {
     // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 };
 
-// ============================================================================================
-// Pabst - Respawn
-class CfgRespawnTemplates {
-    class PabstSpectator {
-        onPlayerRespawn = "pabst\pabst_spectator.sqf";
+class CfgRespawnTemplates
+{
+	// F3 Spectator Script
+	class f_Spectator
+	{
+		onPlayerRespawn = "f_fnc_CamInit";
+	};
+  	//Overwrite Vanilla Seagull
+    class Seagull
+    {
+        onPlayerRespawn = "";
     };
 };
+
+// ============================================================================================
+#include "f\spect\config.hpp"
 
 // F3 - Functions
 class CfgFunctions {
@@ -182,6 +189,9 @@ class CfgFunctions {
             file = "f\setTeamColours";
             class setTeamColours {};
         };
+		#include "f\spect\functions.hpp"
+		#include "f\respawn\functions.hpp"
     };
 };
-// ============================================================================================
+#include "f\respawn\defines.hpp"
+#include "f\respawn\dialogs.hpp"

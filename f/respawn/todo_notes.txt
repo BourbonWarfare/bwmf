@@ -1,0 +1,22 @@
+--BUGS--
+- SOMEONE LEAVES WHILST BEING SELECTED and AI IS THEN IN SELECTED bit. Need to have the menus refresh in realtime.
+- ACRE2 remove the setspectator the client Init already does this.
+- Spectator options - to disable displaying of AI?, limit third person zoomoutage and freecam?
+   
+LIMITATIONS
+- New groups are made and group variable pointers remain. This may lead to the group limit being reached. Arma engine group limiation is 144?
+- Player slots do get consumed on playerDeath so it may be worth having extra slots if the intention is people to join.
+- GroupMarkers/Briefing and other components are usually disabled in init.sqf, and do not use a variable to track if they have been enabled therefor the assumption is that they have been enabled.
+- Only designed for MP and the spawning of players, AI are not supported.
+   
+PLANNED FEATURES
+- Spectator - Limit spectator options (no freecam/max zoomout distance) <- Insurgency game style
+- Track player data: number of respawns? what team they came from before?
+   
+KNOWN BUGS.
+- Textbox is changed when spectator is changed 'spectating: ...', the ids are different not too sure on this one. 
+
+=======================
+NOTES ON SETTING UP - RESPAWN LOCATIONS
+=============
+They must follow the pattern of f3_respawnPoint1, if you want to spawn them on the Sea not the elevation box for a game logic will be elevation from the bottom of the sea (ground) and not sea level!
