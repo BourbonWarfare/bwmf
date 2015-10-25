@@ -257,13 +257,13 @@ fn_respawnMapLoaded = {
 
 fn_toggleSpectator = {
     if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
-        _isSpectator = [player] call acre_api_fnc_isSpectator;
-        [!_isSpectator] call acre_api_fnc_setSpectator;
-        if (_isSpectator) then {
+        [!isSpec] call acre_api_fnc_setSpectator;
+        if (isSpec) then {
             hint "ACRE: Spectator mode de-activated";  
         } else {
             hint "ACRE: Spectator mode activated";  
         };
+		isSpec = !isSpec;
     };
     
 };

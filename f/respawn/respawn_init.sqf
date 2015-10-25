@@ -11,3 +11,5 @@ if (isServer) then {
     f_serverRespawnPlayerCounter = 1;
     f_serverRespawnGroupCounter = 1;
 };
+
+isSpec = false;
