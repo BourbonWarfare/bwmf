@@ -8,7 +8,7 @@ _oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
 _forced = [_this, 4, false,[false]] call BIS_fnc_param;
 if(isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
 // if they are jip, these are null
-if(isNull _unit ) then {_unit = cameraOn;f_cam_isJIP=true;};
+//if(isNull _unit ) then {_unit = cameraOn;f_cam_isJIP=true;};
 // escape the script if you are not a seagull unless forced
 if (typeof _unit != "seagull" && !_forced || !hasInterface) ExitWith {};
 // disable this to instantly switch to the spectator script.
