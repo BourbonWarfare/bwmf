@@ -36,7 +36,7 @@ fn_respawnMenuInit = {
     _control = ((findDisplay 26893) displayCtrl 26898);
     for [{_i = 0}, {_i < (count respawnMenuGroupNames)}, {_i = _i + 1}] do {
         _groupNameArray = respawnMenuFactions select _i;
-        _control lbAdd (_factionArray select 0);
+        _control lbAdd (_groupNameArray select 0);
     };
     _control lbSetCurSel 0;
 
