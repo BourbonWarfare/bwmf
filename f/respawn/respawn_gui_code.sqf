@@ -204,28 +204,9 @@ fn_respawnMenuRespawnAction = {
     // respawnMenuFactions control.
     _control = ((findDisplay 26893) displayCtrl 26894);
     _faction = lbCurSel _control;
-	
-    _groupPrefix = "";
-	switch (_faction) do {
-        case 0: {
-            _groupPrefix = "NATO ";
-        };
-        case 1:{
-            _groupPrefix = "OPFOR ";
-        };
-        case 2: {
-            _groupPrefix = "IND ";
-        };
-        case 3 : {
-            _groupPrefix = "MSV ";
-        };
-        default {};
-    };
-	
-    _groupIndex = ctrlText ((findDisplay 26893) displayCtrl 26898);
+
     _groupName = (respawnMenuGroupNames select _groupIndex) select 0;
-    if (_groupName == "") exitWith { hint "No group name selected"; };	
-    _groupName = _groupPrefix + _groupName;
+    if (_groupName == "") exitWith { hint "No group name selected"; };
           
     // Hand over control to the map dialog.
     closeDialog 26893;

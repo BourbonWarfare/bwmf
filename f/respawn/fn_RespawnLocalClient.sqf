@@ -23,14 +23,12 @@ _rankName  = switch (_rank) do {
     default {"PRIVATE"};
 };
 
-//Dummy group is required to
+//Dummy group is required
 _dummyGroup = createGroup _side;
-respawn_initComplete = false;
 
 // Create the unit
-_unitName = format["respawnedUnit%1", _number];
-//_init = format[" %1 = this; ['%2',this] call f_fnc_assignGear; if (local this) then { respawn_initComplete = true; }; this setName '%1';",_unitName, (respawnMenuRoles select _typeOfUnit) select 0, name player];
-_init = "";
+_unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
+_init = format ["this setName '%1';", _unitName];
 _oldUnit = player;
 
 _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
@@ -64,9 +62,25 @@ if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
  _groupVarName = format ["GrpRespawn_%1", _groupNum];
 if (_leader) then {
     //Broadcast group var to everyone so people can join.
-    missionNamespace setVariable[_groupVarName,_dummyGroup];
-    _dummyGroup setVariable ["F3_GroupID", _groupName, true];
-    publicVariable _groupVarName;    
+    missionNamespace setVariable[_groupVarName, _dummyGroup];
+    _groupPrefix = "";
+    switch (_faction) do {
+        case "blu_f": {
+            _groupPrefix = "NATO ";
+        };
+        case "opf_f":{
+            _groupPrefix = "OPFOR ";
+        };
+        case "ind_f": {
+            _groupPrefix = "IND ";
+        };
+        case "rhs_faction_msv": {
+            _groupPrefix = "MSV ";
+        };
+        default {};
+    };
+    _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
+    publicVariable _groupVarName;
 }
 else {
     //Wait for group be created by the group leader before joining it.
