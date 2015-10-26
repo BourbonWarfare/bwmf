@@ -11,9 +11,10 @@ fn_respawnMenuInit = {
         {
             deadPlayerList pushBack _x;  
         } forEach allUnits;
-    } else {
+    }
+    else {
         {
-            if (isPlayer _x) then { //not all of them will be players.
+            if (isPlayer _x) then {
                 deadPlayerList pushBack _x;  
             };
         } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
@@ -21,17 +22,24 @@ fn_respawnMenuInit = {
     
     //Faction selection control
     _control = ((findDisplay 26893) displayCtrl 26894);
-    _i = 0;
-    {
-        _control lbAdd (_x select 1);
-        _factionImg = getText (configfile >> "CfgFactionClasses" >> (_x select 0) >> "icon");
+    for [{_i = 0}, {_i < (count respawnMenuFactions)}, {_i = _i + 1}] {
+        _factionArray = respawnMenuFactions select _i;
+        _control lbAdd (_factionArray select 1);
+        _factionImg = getText (configfile >> "CfgFactionClasses" >> (_factionArray select 0) >> "icon");
         if (_factionImg != "") then {
-            _control lbSetPicture[_i,_factionImg]; 
+            _control lbSetPicture[_i, _factionImg];
         };
-        _i = _i + 1;
-    } forEach respawnMenuFactions;
+    };
     _control lbSetCurSel 0;
     
+    //Group name selection control
+    _control = ((findDisplay 26893) displayCtrl 26898);
+    for [{_i = 0}, {_i < (count respawnMenuGroupNames)}, {_i = _i + 1}] {
+        _groupNameArray = respawnMenuFactions select _i;
+        _control lbAdd (_factionArray select 0);
+    };
+    _control lbSetCurSel 0;
+
     //Default Role listbox
     _control = ((findDisplay 26893) displayCtrl 26896);
     {
@@ -85,7 +93,7 @@ fn_update_deadListBox = {
         
         if (!_found) then {
             _deadListBox lbAdd (name _x);
-            _deadListBox lbSetData[_i,""+getPlayerUID _x];
+            _deadListBox lbSetData[_i, str getPlayerUID _x];
             _i = _i + 1;
         };
     } forEach deadPlayerList;
@@ -97,24 +105,25 @@ fn_update_aliveListBox = {
     _groupListBox = ((findDisplay 26893) displayCtrl 26892);
     lbClear _groupListBox;
     _i = 0;
-    {
-        _groupListBox lbAdd format["%1 - %2",name (_x select 1),(respawnMenuRoles select (_x select 2)) select 1];
-       //Set image based on rank
-        switch(_x select 0) do {
+    for [{_i = 0}, {_i < (count selectedRespawnGroup)}, {_i = _i + 1}] {
+        _player = selectedRespawnGroup select _i;
+        _groupListBox lbAdd format["%1 - %2", name (_player select 1), (respawnMenuRoles select (_player select 2)) select 1];
+        //Set image based on rank
+        switch(_player select 0) do {
             case 0 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa"]; };
-            case 1 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\corporal_gs.paa"];};
-            case 2 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa"];};
-            case 3 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\lieutenant_gs.paa"];};
-            case 4 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\captain_gs.paa"];};
-            case 5 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\major_gs.paa"];};
-            case 6 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa"];};
-            default { };
+            case 1 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\corporal_gs.paa"]; };
+            case 2 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa"]; };
+            case 3 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\lieutenant_gs.paa"]; };
+            case 4 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\captain_gs.paa"]; };
+            case 5 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\major_gs.paa"]; };
+            case 6 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa"]; };
+            default { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa"]; };
         };
         _groupListBox lbSetColor [_i, [1, 1, 1, 1]];
         _groupListBox lbSetPictureColor [_i, [1,1,1,0.7]];
         _groupListBox lbSetPictureColorSelected [_i,[1,1,1,1]];
         _i = _i + 1;
-    } forEach selectedRespawnGroup;
+    };
 };
 
 fn_respawnMenuAddAction = {
@@ -133,10 +142,10 @@ fn_respawnMenuAddAction = {
     } forEach deadPlayerList;
     
     if (!(isNull _obj)) then {
-        _role = lbCurSel ((findDisplay 26893) displayCtrl 26896); // Role
-        _rank = lbCurSel ((findDisplay 26893) displayCtrl 26897); // Rank
+        _role = lbCurSel ((findDisplay 26893) displayCtrl 26896);
+        _rank = lbCurSel ((findDisplay 26893) displayCtrl 26897);
         
-        selectedRespawnGroup pushBack [_rank,_obj,_role];
+        selectedRespawnGroup pushBack [_rank, _obj, _role];
     };
     
     [] call fn_update_deadListbox;
@@ -162,8 +171,8 @@ fn_respawnMenuChangeRoleAction = {
     _selection =  (lbCurSel _groupListBox);
     
     _entry = (selectedRespawnGroup select _selection);
-    _entry set [2,((_entry select 2)+1)%(count respawnMenuRoles)];
-    selectedRespawnGroup set [_selection,_entry];
+    _entry set [2, ((_entry select 2) + 1 ) % (count respawnMenuRoles)];
+    selectedRespawnGroup set [_selection, _entry];
     
     [] call fn_update_aliveListBox;
 };
@@ -176,8 +185,8 @@ fn_respawnMenuChangeRankAction = {
     _selection =  (lbCurSel _groupListBox);
     
     _entry = (selectedRespawnGroup select _selection);
-    _entry set [0,((_entry select 0)+1)%7];
-    selectedRespawnGroup set [_selection,_entry];
+    _entry set [0, ((_entry select 0) + 1) % 7];
+    selectedRespawnGroup set [_selection, _entry];
     
     [] call fn_update_aliveListBox;
 };
@@ -186,11 +195,6 @@ fn_respawnMenuChangeRankAction = {
 //
 // This is the function that gets called when the respawn button is clicked.
 //
-
-fn_respawnMenuToggleGroupCheckbox = {
-    respawnMenuCheckBoxChecked = !respawnMenuCheckBoxChecked;
-};
-
 fn_respawnMenuRespawnAction = {
     // Respawn button
     disableSerialization;
@@ -201,13 +205,13 @@ fn_respawnMenuRespawnAction = {
     _control = ((findDisplay 26893) displayCtrl 26894);
     _faction = lbCurSel _control;
 	
-	_groupPrefix = "";
+    _groupPrefix = "";
 	switch (_faction) do {
         case 0: {
             _groupPrefix = "NATO ";
         };
         case 1:{
-			_groupPrefix = "OPFOR ";
+            _groupPrefix = "OPFOR ";
         };
         case 2: {
             _groupPrefix = "IND ";
@@ -218,12 +222,10 @@ fn_respawnMenuRespawnAction = {
         default {};
     };
 	
-    _groupName = ctrlText ((findDisplay 26893) displayCtrl 26898);
-    if (_groupName=="INSERT_GROUP_NAME") then {
-      _groupName = "GSL";
-    };
-	
-	_groupName = _groupPrefix + _groupName;
+    _groupIndex = ctrlText ((findDisplay 26893) displayCtrl 26898);
+    _groupName = (respawnMenuGroupNames select _groupIndex) select 0;
+    if (_groupName == "") exitWith { hint "No group name selected"; };	
+    _groupName = _groupPrefix + _groupName;
           
     // Hand over control to the map dialog.
     closeDialog 26893;
@@ -235,14 +237,16 @@ fn_respawnMenuRespawnAction = {
 
 fn_respawnMapLoaded = {
     disableSerialization;
-    _mapCtrl = ((findDisplay 26950) displayCtrl 26902);//_this select 0;//
+    _mapCtrl = ((findDisplay 26950) displayCtrl 26902);
     _pos = [0,0,0];
     if (alive player) then {
       _pos = getPos player;
-    } else {
+    }
+    else {
         if (count playableUnits > 0) then {
             _pos = getPos (playableUnits select 0);
-        } else {
+        }
+        else {
             if (count allUnits > 0) then {
                 _pos = getPos (allUnits select 0);
             };
@@ -251,8 +255,7 @@ fn_respawnMapLoaded = {
     _mapCtrl ctrlMapAnimAdd [0, 0.1, _pos]; 
     ctrlMapAnimCommit _mapCtrl;
     f3_respawnMousePos = -1;
-    f3_respawnHalo = false;
-    hint "Click on the map or click on respawn location to draft a position. Hit enter to confirm. Spacebar toggles HALO option (only for user defined point).";
+    hint "Click on the map or click on respawn location to draft a position. Hit enter to confirm.";
 };
 
 fn_toggleSpectator = {
@@ -260,22 +263,22 @@ fn_toggleSpectator = {
         [!isSpec] call acre_api_fnc_setSpectator;
         if (isSpec) then {
             hint "ACRE: Spectator mode de-activated";  
-        } else {
+        }
+        else {
             hint "ACRE: Spectator mode activated";  
         };
-		isSpec = !isSpec;
+        isSpec = !isSpec;
     };
-    
 };
 
 fn_respawnMap_onMouseButtonDown = {
-    private["_i","_var","_pos","_found"];
-    params["_fullmapWindow","_type","_x","_y"];
+    private["_i", "_var", "_pos", "_found"];
+    params["_fullmapWindow", "_type", "_x", "_y"];
 	
     if (_type == 0) then { // left click
         _i = 1;
         _found = false;
-        _var = missionNamespace getVariable[format["f3_respawnPoint%1",_i],objNull];
+        _var = missionNamespace getVariable[format["f3_respawnPoint%1", _i], objNull];
         while {!(isNull _var)} do {
             _pos = (position _var);
             if (([_x,_y] distance (_fullmapWindow posWorldToScreen _pos)) < 0.1) then {
@@ -283,41 +286,35 @@ fn_respawnMap_onMouseButtonDown = {
                 _found = true;
             };
             _i = _i + 1;
-            _var = missionNamespace getVariable[format["f3_respawnPoint%1",_i],objNull];
+            _var = missionNamespace getVariable[format["f3_respawnPoint%1", _i], objNull];
         };
-		if (!_found) then {
-			f3_respawnMousePos = _fullmapWindow posScreenToWorld [_x,_y];
-		};
+        if (!_found) then {
+            f3_respawnMousePos = _fullmapWindow posScreenToWorld [_x, _y];
+        };
     };
 };
 
 fn_respawnMap_keyUp = {
-    private["_type","_halo","_position","_var"];
+    private["_type", "_position", "_var"];
     _type = _this select 1;
     //28 = enter key
     if (_type == 28) then {
         if (f3_respawnMousePos isEqualTo -1) then {
             hint "No position selected for respawn. Click on a position then hit enter.";
         }
-		else {
+        else {
             _position = [0,0,0];
-            _halo = false;
             if (typeName f3_respawnMousePos == "ARRAY") then {
-                _position = f3_respawnMousePos;  
-                _halo = f3_respawnHalo;
-            } else {
-                _var = missionNamespace getVariable[format["f3_respawnPoint%1",f3_respawnMousePos],objNull];
+                _position = f3_respawnMousePos;
+            }
+            else {
+                _var = missionNamespace getVariable[format["f3_respawnPoint%1", f3_respawnMousePos], objNull];
                 if (!isNull _var) then {
                     _position = position _var;
                 };
             };
-            if (_halo) then {
-                hint "Group created as HALO group.";
-            }
-			else {
-                hint "Group created on ground.";
-            };
-            [[var2_groupName, _position, var1_faction, selectedRespawnGroup, _halo], "F_fnc_RespawnWaveServer", false] call BIS_fnc_MP;
+            hint "Group created on ground.";
+            [[var2_groupName, _position, var1_faction, selectedRespawnGroup], "F_fnc_RespawnWaveServer", false] call BIS_fnc_MP;
             selectedRespawnGroup = [];
 
             // Close the Map
@@ -325,9 +322,5 @@ fn_respawnMap_keyUp = {
             ((findDisplay 26950) displayCtrl 26902) mapCenterOnCamera false;
             closeDialog 26950;
         };
-    };
-    //SPACEBAR (HALO TOGGLE)
-    if (_type == 57) then {
-        f3_respawnHalo = !f3_respawnHalo;        
     };
 };

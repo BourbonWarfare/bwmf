@@ -5,20 +5,14 @@
 // This code will then wait for that group to return before then notifying all clients of the new group marker.
 //
 
-params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_halo"];
+params ["_groupName", "_position", "_faction", "_selectedRespawnGroup"];
 
 // Loop through each proposed client for respawn.
 {
-    if (_halo) then {
-        _position = _position vectorAdd [10,0,0]; // do position transofmration
-    }
-	else {
-        _position = _position vectorAdd [1,0,0]; // do position transofmration
-    };
+    _position = _position vectorAdd [1,0,0]; // do position transofmration
     
     _x params ["_rank", "_client", "_typeOfUnit"];
     _leader = _forEachIndex == 0;
-
 
     [[f_serverRespawnGroupCounter,
       _position,
@@ -27,8 +21,7 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_halo"]
       _rank,
       f_serverRespawnPlayerCounter,
       _leader,
-	  _halo,
-	  _groupName],
+      _groupName],
       "F_fnc_RespawnLocalClient", _client] call BIS_fnc_MP;
     
     //Setup respawned player to die if he disconnects?
@@ -38,8 +31,7 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_halo"]
         _unitName = format["respawnedUnit%1",(_this select 0)];
         waitUntil{sleep 3;!isNil _unitName};
         _unit = missionNamespace getVariable[_unitName,objNull];
-        while{true} do {
-            if (isNull _unit) exitWith {};
+        while{!isNull _unit} do {
             if (!isPlayer _unit) exitWith {
                 _unit setDamage 1;
                 [_unit] join grpNull;
@@ -51,4 +43,3 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup", "_halo"]
 } forEach _selectedRespawnGroup;
 
 f_serverRespawnGroupCounter = f_serverRespawnGroupCounter + 1;
-_selectedRespawnGroup = nil;

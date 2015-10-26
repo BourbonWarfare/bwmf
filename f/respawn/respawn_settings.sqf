@@ -13,6 +13,45 @@
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
 
+// Group name, SR net, LR net
+respawnMenuGroupNames = [
+    ["", 1, 1],
+    ["ASL", 1, 1],
+    ["A1", 1, 1],
+    ["A2", 1, 1],
+    ["BSL", 2, 1],
+    ["B1", 2, 1],
+    ["B2", 2, 1],
+    ["CSL", 3, 1],
+    ["C1", 3, 1],
+    ["C2", 3, 1],
+    ["DSL", 6, 2],
+    ["D1", 6, 2],
+    ["D2", 6, 2],
+    ["ESL", 7, 2],
+    ["E1", 7, 2],
+    ["E2", 7, 2],
+    ["FSL", 8, 2],
+    ["F1", 8, 2],
+    ["F2", 8, 2],
+    ["MMG1", 4, 4],
+    ["MMG2", 4, 4],
+    ["MAT1", 4, 4],
+    ["MAT2", 4, 4],
+    ["TH1", 5, 4],
+    ["TH2", 5, 4],
+    ["TH3", 5, 4],
+    ["TH4", 5, 4],
+    ["IFV1", 9, 4],
+    ["IFV2", 9, 4],
+    ["IFV3", 9, 4],
+    ["IFV4", 9, 4],
+    ["AH1", 5, 4],
+    ["AH2", 5, 4],
+    ["TNK1", 9, 4],
+    ["TNK2", 9, 4]
+];
+
 respawnMenuRoles = [
 	["sl","Squad Leader"],
 	["sm","Squad Medic"],

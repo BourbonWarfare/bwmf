@@ -11,13 +11,13 @@ $[
 	[1602,"respawnMenuSpawnButton",[1,"Spawn Group",["0.587656 * safezoneW + safezoneX","0.731 * safezoneH + safezoneY","0.0773437 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1603,"respawnMenuChangeRoleButton",[1,"Change Role",["0.684594 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1604,"respawnMenuChangeRankButton",[1,"Change Rank",["0.684594 * safezoneW + safezoneX","0.544 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1001,"respawnMenuGroupNameText",[1,"INSERT_GROUP_NAME",["0.474227 * safezoneW + safezoneX","0.3394 * safezoneH + safezoneY","0.108281 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[1001,"respawnMenuGroupNameCombo",[1,"",["0.474227 * safezoneW + safezoneX","0.3394 * safezoneH + safezoneY","0.108281 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[2100,"respawnMenuSideCombo",[1,"Faction",["0.603125 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0773437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1004,"respawnMenuPlayersText",[1,"Players in Spectator: 0",["0.2525 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.108281 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1605,"RscCloseButton",[1,"Close",["0.716563 * safezoneW + safezoneX","0.3196 * safezoneH + safezoneY","0.0309375 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[2101,"",[1,"Faction",["0.396792 * safezoneW + safezoneX","0.616422 * safezoneH + safezoneY","0.0670312 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[2102,"",[1,"Faction",["0.397248 * safezoneW + safezoneX","0.663533 * safezoneH + safezoneY","0.0670312 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-	[1606,"respawnMenuVOIP",[1,"Toggle Spectator VOIP",["0.365937 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0979687 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Toggles the spectator channel for you (ACRE/TFAR), so that you can talk to dead players if alive.","-1"],[]]
+	[1606,"respawnMenuVOIP",[1,"Toggle Spectator VOIP",["0.365937 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0979687 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Toggles the spectator channel for (ACRE/TFAR), so that you can talk to dead players if alive.","-1"],[]]
 ]
 */
 
@@ -112,10 +112,10 @@ class respawnMenuDialog {
             h = 0.055 * safezoneH;
             action="[] spawn fn_respawnMenuChangeRankAction";
 		};
-		class respawnMenuGroupNameText: respawnMenu_RscEdit
+		class respawnMenuGroupNameCombo: respawnMenu_RscCombo
 		{
 			idc = 26898;
-			text = "INSERT_GROUP_NAME";
+			text = "";
             x = 0.474227 * safezoneW + safezoneX;
             y = 0.3394 * safezoneH + safezoneY;
             w = 0.108281 * safezoneW;
@@ -175,7 +175,7 @@ class respawnMenuDialog {
             y = 0.346 * safezoneH + safezoneY;
             w = 0.0979687 * safezoneW;
             h = 0.022 * safezoneH;
-            tooltip = "Toggles the spectator channel for you (ACRE/TFAR), so that you can talk to dead players if alive.";
+            tooltip = "Toggles the spectator channel for (ACRE/TFAR), so that you can talk to dead players if alive.";
             action = "[] call fn_toggleSpectator";
         };
 	};

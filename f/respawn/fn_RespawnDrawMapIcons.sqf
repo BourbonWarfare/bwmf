@@ -34,9 +34,8 @@ if (isNil "f_cam_blufor_color") then {
 ///f3_respawnPoint1
 _mousePos = f3_respawnMousePos;
 _i = 1;
-while {true} do {
-    _var = missionNamespace getVariable[format["f3_respawnPoint%1",_i],objNull];
-    if (isNull _var) exitWith {};
+_var = missionNamespace getVariable[format["f3_respawnPoint%1",_i],objNull];
+while {!isNull _var} do {
     _pos = (position _var);
     
     if (_i isEqualTo _mousePos) then {
@@ -50,9 +49,6 @@ while {true} do {
 if (typeName _mousePos == "ARRAY") then {
     if (count _mousePos > 1) then {
         _text = "User selected respawn location";
-        if (f3_respawnHalo) then {
-          _text = "User selected respawn location (HALO)";
-        };
         _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,0,0,1],_mousePos,20,20,0,_text,1];
     };
 };
