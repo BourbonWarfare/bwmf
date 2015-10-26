@@ -22,7 +22,7 @@ fn_respawnMenuInit = {
     
     //Faction selection control
     _control = ((findDisplay 26893) displayCtrl 26894);
-    for [{_i = 0}, {_i < (count respawnMenuFactions)}, {_i = _i + 1}] {
+    for [{_i = 0}, {_i < (count respawnMenuFactions)}, {_i = _i + 1}] do {
         _factionArray = respawnMenuFactions select _i;
         _control lbAdd (_factionArray select 1);
         _factionImg = getText (configfile >> "CfgFactionClasses" >> (_factionArray select 0) >> "icon");
@@ -34,7 +34,7 @@ fn_respawnMenuInit = {
     
     //Group name selection control
     _control = ((findDisplay 26893) displayCtrl 26898);
-    for [{_i = 0}, {_i < (count respawnMenuGroupNames)}, {_i = _i + 1}] {
+    for [{_i = 0}, {_i < (count respawnMenuGroupNames)}, {_i = _i + 1}] do {
         _groupNameArray = respawnMenuFactions select _i;
         _control lbAdd (_factionArray select 0);
     };
@@ -105,7 +105,7 @@ fn_update_aliveListBox = {
     _groupListBox = ((findDisplay 26893) displayCtrl 26892);
     lbClear _groupListBox;
     _i = 0;
-    for [{_i = 0}, {_i < (count selectedRespawnGroup)}, {_i = _i + 1}] {
+    for [{_i = 0}, {_i < (count selectedRespawnGroup)}, {_i = _i + 1}] do {
         _player = selectedRespawnGroup select _i;
         _groupListBox lbAdd format["%1 - %2", name (_player select 1), (respawnMenuRoles select (_player select 2)) select 1];
         //Set image based on rank
