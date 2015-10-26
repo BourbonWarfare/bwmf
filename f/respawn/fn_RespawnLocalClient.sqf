@@ -26,7 +26,8 @@ _rankName  = switch (_rank) do {
 //Dummy group is required to
 _dummyGroup = createGroup _side;
 respawn_initComplete = false;
-/// Create the unit
+
+// Create the unit
 _unitName = format["respawnedUnit%1", _number];
 //_init = format[" %1 = this; ['%2',this] call f_fnc_assignGear; if (local this) then { respawn_initComplete = true; }; this setName '%1';",_unitName, (respawnMenuRoles select _typeOfUnit) select 0, name player];
 _init = "";
@@ -40,7 +41,7 @@ waitUntil{!isNil _unitName};
 localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 
 // Exit Spectator
-[] call F_fnc_ForceExit;
+[true] call F_fnc_ForceExit;
 // Ensures the spectator script will create a virtual entity next time.
 f_cam_VirtualCreated = nil; 
 
