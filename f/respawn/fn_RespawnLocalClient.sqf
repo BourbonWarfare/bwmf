@@ -1,4 +1,4 @@
-params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupName"];
+params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupName","_sr","_lr"];
 
 _faction = (respawnMenuFactions select _faction) select 0;
 _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
@@ -51,14 +51,6 @@ deleteVehicle _oldUnit; // Delete the old spectator module
 localRespawnedUnit = nil; // Enable respawn again.
 player setPos (_position);
 
-// Spawn to avoid blocking with waitUntil for assignGear to finish.
-if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
-    [false] call acre_api_fnc_setSpectator;
-    [] spawn { //Intensive don't block execution.
-        [] call F_Radios_fnc_acreRadioSetup;
-    };
-};
-
  _groupVarName = format ["GrpRespawn_%1", _groupNum];
 if (_leader) then {
     //Broadcast group var to everyone so people can join.
@@ -97,3 +89,9 @@ else {
 [] call F_fnc_showBriefing;
 [] call F_fnc_showOrbatNotes;
 [] call F_fnc_setTeamColours;
+
+// Spawn to avoid blocking with waitUntil for assignGear to finish.
+if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
+    [false] call acre_api_fnc_setSpectator;
+    [_sr, _lr] call F_Radios_fnc_acreRadioSetup;
+};
