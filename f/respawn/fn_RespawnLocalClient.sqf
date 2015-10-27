@@ -28,7 +28,7 @@ _dummyGroup = createGroup _side;
 
 // Create the unit
 _unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
-_init = format ["this setName '%1';", _unitName];
+_init = format ["%1 = this; this setName '%1';", _unitName];
 _oldUnit = player;
 
 _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
