@@ -1,6 +1,6 @@
 params ["_srFreqIndex", "_lrFreqIndex"];
 
-#define CHANNELS_ARRAYS	 [ \
+#define CHANNELS_ARRAYS     [ \
     ["ASL","A1", "A2","A3"], \
     ["BSL","B1", "B2","B3"], \
     ["CSL","C1", "C2","C3"], \
@@ -161,12 +161,12 @@ if (!hasInterface) exitWith {};
         diag_log text format ["[BW] Unknown LR Group (Using Default) [%1]", _groupID];
         _groupLRFreqIndex = 0;
     };
-	if (_srFreqIndex != -1) then {
-		_groupFreqIndex = _srFreqIndex - 1;
-	};
-	if (_lrFreqIndex != -1) then {
-		_groupLRFreqIndex = _lrFreqIndex - 1;
-	};
+    if (_srFreqIndex != -1) then {
+        _groupFreqIndex = _srFreqIndex - 1;
+    };
+    if (_lrFreqIndex != -1) then {
+        _groupLRFreqIndex = _lrFreqIndex - 1;
+    };
     diag_log text format ["[BW] - Channels Ready to Set [SR%1/LR%2] from group %3", (_groupFreqIndex + 1), (_groupLRFreqIndex + 1), _groupID];
 
     [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBreifing;

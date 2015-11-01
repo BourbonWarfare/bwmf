@@ -2,10 +2,10 @@
 //Description: German Flekterarian Camo G36
 
 class blu_f {
-		//Rifle
+        //Rifle
     #define WEST_RIFLE "BWA3_G36"
     #define WEST_RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
-	#define WEST_RIFLE_ATTACHMENTS "BWA3_optic_EOTech","BWA3_acc_LLM01_irlaser"
+    #define WEST_RIFLE_ATTACHMENTS "BWA3_optic_EOTech","BWA3_acc_LLM01_irlaser"
     //GL Rifle
     #define WEST_GLRIFLE "BWA3_G36_AG"
     #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
@@ -42,19 +42,19 @@ class blu_f {
     // Pistol
     #define WEST_PISTOL "rhsusf_weap_m1911a1"
     #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
-	// GEAR
-	#define WEST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-	#define WEST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-	#define WEST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-	#define WEST_LEADER_TOOLS "ACE_microDAGR","ACE_key_west","ACE_Flashlight_KSF1"
-	#define WEST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"
-	#define WEST_LEADER_LINKED "ItemGPS"
-	// GRENADES
-	#define WEST_BASE_FRAG "rhs_mag_m67:2"
-	#define WEST_BASE_GRENADES WEST_BASE_FRAG,"SmokeShell:2"
-	#define WEST_LEADER_GRENADES WEST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_blue:2"
-	#define WEST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-	#define WEST_CREW_GRENADES "SmokeShell:2"
+    // GEAR
+    #define WEST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
+    #define WEST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+    #define WEST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
+    #define WEST_LEADER_TOOLS "ACE_microDAGR","ACE_key_west","ACE_Flashlight_KSF1"
+    #define WEST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"
+    #define WEST_LEADER_LINKED "ItemGPS"
+    // GRENADES
+    #define WEST_BASE_FRAG "rhs_mag_m67:2"
+    #define WEST_BASE_GRENADES WEST_BASE_FRAG,"SmokeShell:2"
+    #define WEST_LEADER_GRENADES WEST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_blue:2"
+    #define WEST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
+    #define WEST_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportWeapons[] = {WEST_AT};
@@ -90,20 +90,20 @@ class blu_f {
         linkedItems[] = {WEST_BASE_LINKED};
         attachments[] = {WEST_RIFLE_ATTACHMENTS};
     };
-	class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
+    class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
     };
     class B_Soldier_TL_F: B_Soldier_F {// FTL
-		vest[] = {"BWA3_Vest_Leader_Fleck","BWA3_Vest_Grenadier_Fleck"}; /// randomized
+        vest[] = {"BWA3_Vest_Leader_Fleck","BWA3_Vest_Grenadier_Fleck"}; /// randomized
         weapons[] = {WEST_GLRIFLE};
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
         items[] += {WEST_LEADER_TOOLS};
         linkedItems[] += {WEST_LEADER_LINKED,"Binocular"};
     };
-	class B_Soldier_SL_F: B_Soldier_TL_F {// SL
-		handguns[] = {WEST_PISTOL}; /// randomized
-		magazines[] += {WEST_PISTOL_MAG};
+    class B_Soldier_SL_F: B_Soldier_TL_F {// SL
+        handguns[] = {WEST_PISTOL}; /// randomized
+        magazines[] += {WEST_PISTOL_MAG};
         linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
     };
@@ -159,16 +159,16 @@ class blu_f {
     };
     class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
         launchers[] = {WEST_SAM}; /// randomized
-		items[] += {WEST_MEDIC_MEDICAL};
+        items[] += {WEST_MEDIC_MEDICAL};
         backpackItems[] = {WEST_SAM_MAG,"ACE_Flashlight_KSF1"};
     };
     class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {WEST_SAM_MAG,"ACE_Flashlight_KSF1"};
-		items[] += {WEST_MEDIC_MEDICAL};
+        items[] += {WEST_MEDIC_MEDICAL};
         linkedItems[] += {"ACE_Vector"};
     };
     class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
-		items[] += {WEST_MEDIC_MEDICAL};
+        items[] += {WEST_MEDIC_MEDICAL};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
@@ -217,7 +217,7 @@ class blu_f {
         items[] = {WEST_BASE_MEDICAL,WEST_BASE_TOOLS};
         backpackItems[] = {"ACE_key_west","ACRE_PRC117F"};
         linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,"Binocular"};
-		attachments[] = {WEST_RIFLE_ATTACHMENTS};
+        attachments[] = {WEST_RIFLE_ATTACHMENTS};
     };
     class B_soldier_repair_F: B_crew_F {// Repair Specialist
         backpack[] = {"BWA3_Kitbag_Fleck"};

@@ -12,12 +12,12 @@ switch (_type) do
 case "MouseButtonDown":
 {
 
-	if(_args select 1 == 1 && f_cam_mode != 1) then
-	{
+    if(_args select 1 == 1 && f_cam_mode != 1) then
+    {
         _button = _args select 1;
         f_cam_MouseButton set [_button,true];
 
-	};
+    };
     if(_args select 1 == 1) then
     {
         if(f_cam_mode == 1) then
@@ -29,12 +29,12 @@ case "MouseButtonDown":
 };
 case "MouseButtonUp":
 {
-	if(_args select 1 == 1 && f_cam_mode != 1) then
-	{
+    if(_args select 1 == 1 && f_cam_mode != 1) then
+    {
         _button = _args select 1;
         f_cam_MouseButton set [_button,false];
          [] spawn f_fnc_HandleCamera;
-	};
+    };
     if(_args select 1 == 1) then
     {
         if(f_cam_mode == 1) then

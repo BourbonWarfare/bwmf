@@ -29,7 +29,7 @@ class RscSpectListBox {
     };
     style = 528;
     font = "TahomaB";
-    sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 50) * 1)";
+    sizeEx = "(            (            (            ((safezoneW / safezoneH) min 1.2) / 1.2) / 50) * 1)";
     shadow = 0;
     colorShadow[] = {0, 0, 0, 0.5};
     color[] = {1, 1, 1, 0.1};
@@ -492,7 +492,7 @@ class RscSpectText {
     shadow = 1;
     colorShadow[] = {0, 0, 0, 0.5};
     font = "PuristaLight";
-    SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    SizeEx = "(            (            (            ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     linespacing = 1;
 };
 class RscSpectControlsGroup {
@@ -504,15 +504,15 @@ class RscSpectControlsGroup {
     w = 1;
     h = 1;
     class VScrollbar  {
-    	color[] = {1,1,1,1 };
-    	width = 0.021000;
-    	autoScrollSpeed = -1;
-    	autoScrollDelay = 5;
-    	autoScrollRewind = 0;
+        color[] = {1,1,1,1 };
+        width = 0.021000;
+        autoScrollSpeed = -1;
+        autoScrollDelay = 5;
+        autoScrollRewind = 0;
     };
     class HScrollbar {
-    	color[] = {1, 1, 1, 1};
-    	height = 0.028;
+        color[] = {1, 1, 1, 1};
+        height = 0.028;
     };
     class ListScrollBar  {
         arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
@@ -619,18 +619,18 @@ class RscSpectCombo
 };
 
 class f_spec_dialog {
-	idd = 9228;
-	movingEnable = 1;
+    idd = 9228;
+    movingEnable = 1;
     enableSimulation = 1;
     enableDisplay = 1;
-	fadein = 0;
-	fadeout = 0;
+    fadein = 0;
+    fadeout = 0;
     duration = 2147483647;
     onKeyDown = "[""KeyDown"",_this] call F_fnc_EventHandler";
     onKeyUp= "[""KeyUp"",_this] call F_fnc_EventHandler";
     onUnload = "[] spawn f_fnc_OnUnload";
-	class controlsBackground {
-		class mouseHandler: RscSpectControlsGroup {
+    class controlsBackground {
+        class mouseHandler: RscSpectControlsGroup {
             class ListScrollBar
             {
                 color[] = {1,1,1,0.6};
@@ -641,15 +641,15 @@ class f_spec_dialog {
                 arrowEmpty = "";
                 border = "";
             };
-			onMouseButtonDown = "[""MouseButtonDown"",_this] call F_fnc_EventHandler";
-			onMouseButtonUp = "[""MouseButtonUp"",_this] call F_fnc_EventHandler";
+            onMouseButtonDown = "[""MouseButtonDown"",_this] call F_fnc_EventHandler";
+            onMouseButtonUp = "[""MouseButtonUp"",_this] call F_fnc_EventHandler";
             onMouseZChanged = "[""MouseZChanged"",_this] call F_fnc_EventHandler";
             onMouseMoving = "['MouseMoving',_this] call F_fnc_EventHandler";
-		    idc = 123;
+            idc = 123;
             x = SafeZoneX; y = SafeZoneY;
             w = SafeZoneW; h = SafeZoneH;
-		    colorBackground[] = {0.2, 0.0, 0.0, 0.0};
-		};
+            colorBackground[] = {0.2, 0.0, 0.0, 0.0};
+        };
         class OnEnterBox : RscSpectButton
         {
             idc = 4344;
@@ -700,7 +700,7 @@ class f_spec_dialog {
            // text = "<br /> Use the mouse or the WASD to control the camera, H to show and close the help window.<br /> Press M for the map.<br /> ";
         };
 
-	};
+    };
     class controls {
         class SpectButtonExit: RscSpectButton
         {

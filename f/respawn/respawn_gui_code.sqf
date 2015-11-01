@@ -69,27 +69,27 @@ fn_respawnMenuInit = {
     
     _control lbSetCurSel 0;
     
-    respawnMenuCheckBoxChecked = false;
-    
    [] call fn_update_deadListbox;
     
 };
 
 fn_update_deadListBox = {
     disableSerialization;
+    
+    [] call fn_reloadDeadPlayers;
+    
     _deadListBox = ((findDisplay 26893) displayCtrl 26891);
     lbClear _deadListBox;
      _i = 0;
     {
         _found = false;
         //Check if already selected and thus in the selected respawn listBox.
-        _y = _x;
+        _player = _x;
         {
-            if (_y == (_x select 1)) then {
+            if (_player == (_x select 1)) then {
               _found = true;  
             };
         } forEach selectedRespawnGroup;
-        _x = _y;
         
         if (!_found) then {
             _deadListBox lbAdd (name _x);
@@ -97,7 +97,6 @@ fn_update_deadListBox = {
             _i = _i + 1;
         };
     } forEach deadPlayerList;
-    
 };
 
 fn_update_aliveListBox = {
@@ -136,7 +135,7 @@ fn_respawnMenuAddAction = {
     
     _obj = objNull;
     {
-        if (_selection == name _x) then {
+        if (_selection == (name _x)) then {
             _obj = _x;
         };
     } forEach deadPlayerList;
@@ -204,13 +203,13 @@ fn_respawnMenuRespawnAction = {
     // respawnMenuFactions control.
     _control = ((findDisplay 26893) displayCtrl 26894);
     _faction = lbCurSel _control;
-	
-	// respawnMenuFactions control.
+    
+    // respawnMenuFactions control.
     _control = ((findDisplay 26893) displayCtrl 26898);
     _groupIndex = lbCurSel _control;
     _groupName = (respawnMenuGroupNames select _groupIndex) select 0;
-	_sr = (respawnMenuGroupNames select _groupIndex) select 1;
-	_lr = (respawnMenuGroupNames select _groupIndex) select 2;
+    _sr = (respawnMenuGroupNames select _groupIndex) select 1;
+    _lr = (respawnMenuGroupNames select _groupIndex) select 2;
     if (_groupName == "") exitWith { hint "No group name selected"; };
           
     // Hand over control to the map dialog.
@@ -219,8 +218,17 @@ fn_respawnMenuRespawnAction = {
 
     var1_faction = _faction;
     var2_groupName = _groupName;
-	var3_sr = _sr;
-	var4_lr = _lr;
+    var3_sr = _sr;
+    var4_lr = _lr;
+};
+
+fn_reloadDeadPlayers = {
+    deadPlayerList = [];
+    {
+        if (isPlayer _x) then {
+            deadPlayerList pushBack _x;  
+        };
+    } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
 };
 
 fn_respawnMapLoaded = {
@@ -262,7 +270,7 @@ fn_toggleSpectator = {
 fn_respawnMap_onMouseButtonDown = {
     private["_i", "_var", "_pos", "_found"];
     params["_fullmapWindow", "_type", "_x", "_y"];
-	
+    
     if (_type == 0) then { // left click
         _i = 1;
         _found = false;

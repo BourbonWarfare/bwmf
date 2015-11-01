@@ -93,9 +93,9 @@ else {
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
     [false] call acre_api_fnc_setSpectator;
-	[_sr, _lr] spawn {
-		params["_sr","_lr"];
-		sleep 5; // avoid a crazy 
-		[_sr, _lr] call F_Radios_fnc_acreRadioSetup;
-	};
+    [_sr, _lr] spawn {
+        params["_sr","_lr"];
+        sleep 5; // avoid a crazy 
+        [_sr, _lr] call F_Radios_fnc_acreRadioSetup;
+    };
 };

@@ -34,39 +34,39 @@ _texture = _unknown;
 _color = [1,1,1,1];
 switch true do {
     case (_input in ["COY","1PLT","2PLT","CO","DC"]): {
-    	_texture = _hq;
-    	_color = _yellow;
+        _texture = _hq;
+        _color = _yellow;
     };
     case (_input in ["ASL"]):
     {
-    	_texture = _hq;
-    	_color = _red;
-	};
+        _texture = _hq;
+        _color = _red;
+    };
     case (_input in ["A1","A2","A3","ASR"]):
     {
-    	_texture = _fireteam;
-    	_color = _red;
-	};
+        _texture = _fireteam;
+        _color = _red;
+    };
     case (_input in ["BSL"]):
     {
-    	_texture = _hq;
-    	_color = _blue;
-	};
+        _texture = _hq;
+        _color = _blue;
+    };
     case (_input in ["B1","B2","B3","BSR"]):
     {
-    	_texture = _fireteam;
-    	_color = _blue;
-	};
+        _texture = _fireteam;
+        _color = _blue;
+    };
     case (_input in ["CSL"]):
     {
-    	_texture = _hq;
-    	_color = _green;
-	};
+        _texture = _hq;
+        _color = _green;
+    };
     case (_input in ["C1","C2","C3","CSR"]):
     {
-    	_texture = _fireteam;
-    	_color = _green;
-	};
+        _texture = _fireteam;
+        _color = _green;
+    };
      case (_input in ["DSL"]):
     {
         _texture = _hq;
@@ -203,8 +203,8 @@ switch true do {
         _color = _pink;
         _size = [16,16];
     };
-	
-	
+    
+    
     case (_input)
 };
 [_texture,_color,_size];
