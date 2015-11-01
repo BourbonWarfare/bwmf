@@ -184,8 +184,7 @@ fn_reloadDeadPlayers = {
         };
     } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
     
-    ((findDisplay 26893) displayCtrl 26895) ctrlSetText format["Players in Spectator: %1",count deadPlayerList];
-    _control lbSetCurSel 0;
+    ((findDisplay 26893) displayCtrl 26895) ctrlSetText format["Players in Spectator: %1", count deadPlayerList];
 };
 
 // RESPAWN GROUP BUTTON
