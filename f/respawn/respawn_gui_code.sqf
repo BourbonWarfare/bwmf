@@ -2,23 +2,14 @@ fn_respawnMenuInit = {
     disableSerialization;
     deadPlayerList = [];
     selectedRespawnGroup = [];
+    
     // SelectedRespawnGroup format 
     // Rank: Int (0-6), Object: Player, Role: Int (0 -> count respawnMenuRoles)
-    
-    // Propogate the list of dead players.
-    //TODO Change to just !isMultiplayer.
-    if ((!isMultiplayer) or (isMultiplayer and isServer)) then {
-        {
+    {
+        if (isPlayer _x) then {
             deadPlayerList pushBack _x;  
-        } forEach allUnits;
-    }
-    else {
-        {
-            if (isPlayer _x) then {
-                deadPlayerList pushBack _x;  
-            };
-        } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
-    };
+        };
+    } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
     
     //Faction selection control
     _control = ((findDisplay 26893) displayCtrl 26894);
@@ -65,12 +56,7 @@ fn_respawnMenuInit = {
     _control lbSetPicture[6,"\A3\Ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa"];
     _control lbSetCurSel 0;
     
-    ((findDisplay 26893) displayCtrl 26895) ctrlSetText format["Players in Spectator: %1",count deadPlayerList];
-    
-    _control lbSetCurSel 0;
-    
    [] call fn_update_deadListbox;
-    
 };
 
 fn_update_deadListBox = {
@@ -103,10 +89,11 @@ fn_update_aliveListBox = {
     disableSerialization;
     _groupListBox = ((findDisplay 26893) displayCtrl 26892);
     lbClear _groupListBox;
-    _i = 0;
+
     for [{_i = 0}, {_i < (count selectedRespawnGroup)}, {_i = _i + 1}] do {
         _player = selectedRespawnGroup select _i;
         _groupListBox lbAdd format["%1 - %2", name (_player select 1), (respawnMenuRoles select (_player select 2)) select 1];
+        
         //Set image based on rank
         switch(_player select 0) do {
             case 0 : { _groupListBox lbSetPicture[_i,"\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa"]; };
@@ -120,8 +107,7 @@ fn_update_aliveListBox = {
         };
         _groupListBox lbSetColor [_i, [1, 1, 1, 1]];
         _groupListBox lbSetPictureColor [_i, [1,1,1,0.7]];
-        _groupListBox lbSetPictureColorSelected [_i,[1,1,1,1]];
-        _i = _i + 1;
+        _groupListBox lbSetPictureColorSelected [_i, [1,1,1,1]];
     };
 };
 
@@ -190,10 +176,21 @@ fn_respawnMenuChangeRankAction = {
     [] call fn_update_aliveListBox;
 };
 
+fn_reloadDeadPlayers = {
+    deadPlayerList = [];
+    {
+        if (isPlayer _x) then {
+            deadPlayerList pushBack _x;  
+        };
+    } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
+    
+    ((findDisplay 26893) displayCtrl 26895) ctrlSetText format["Players in Spectator: %1",count deadPlayerList];
+    _control lbSetCurSel 0;
+};
+
 // RESPAWN GROUP BUTTON
 //
 // This is the function that gets called when the respawn button is clicked.
-//
 fn_respawnMenuRespawnAction = {
     // Respawn button
     disableSerialization;
@@ -220,15 +217,6 @@ fn_respawnMenuRespawnAction = {
     var2_groupName = _groupName;
     var3_sr = _sr;
     var4_lr = _lr;
-};
-
-fn_reloadDeadPlayers = {
-    deadPlayerList = [];
-    {
-        if (isPlayer _x) then {
-            deadPlayerList pushBack _x;  
-        };
-    } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
 };
 
 fn_respawnMapLoaded = {
