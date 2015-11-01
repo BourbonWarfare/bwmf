@@ -65,7 +65,7 @@ class opf_f {
     class O_Soldier_F { // rifleman
         uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
         vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
-        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {EAST_RIFLE}; /// randomized
@@ -176,7 +176,7 @@ class opf_f {
     class O_spotter_F {// Spotter
         uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
         vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
-        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         weapons[] = {EAST_SPOTTER}; /// randomized
         magazines[] = {EAST_SPOTTER_MAG,"SmokeShell:2"};
@@ -187,7 +187,7 @@ class opf_f {
     class O_sniper_F {// Sniper
         uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
         vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
-        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         weapons[] = {EAST_SNIPER}; /// randomized
         magazines[] = {EAST_SNIPER_MAG,"SmokeShell:2"};
@@ -198,7 +198,7 @@ class opf_f {
     class O_Helipilot_F {// Pilot
         uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
         vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
-        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         weapons[] = {EAST_SMG}; /// randomized
         magazines[] = {EAST_SMG_MAG,"SmokeShell:2"};
@@ -210,7 +210,7 @@ class opf_f {
     class O_crew_F {// Crew
         uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
         vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
-        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","LOP_H_Shemag_IT","LOP_H_Shemag_IT","LOP_H_Shemag_IT","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive","LOP_H_PASGTHelmet_cover_TRI","LOP_H_PASGTHelmet_cover_RACS"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"}; /// randomized
         backpack[] = {"B_Carryall_mcamo"};
         weapons[] = {EAST_CARBINE}; /// randomized
         magazines[] = {EAST_CARBINE_MAG,"SmokeShell:2"};
