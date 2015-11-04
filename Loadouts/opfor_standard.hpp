@@ -135,7 +135,6 @@ class opf_f {
     };
     class O_medic_F: Fic_Soldier_Carbine {// Medic
         //vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
-        weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_MEDIC_GRENADES};
         backpackItems[] = {EAST_MEDIC_MEDICAL};
     };
@@ -222,8 +221,7 @@ class opf_f {
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS};
         backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"Binocular"};
-		attachments[] = {EAST_RIFLE_ATTACHMENTS};
-        attachments[] = {"rhs_acc_dtk"};
+		attachments[] = {"rhs_acc_dtk"};
     };
     class O_soldier_repair_F: O_crew_F {// Repair Specialist
         backpack[] = {"B_Carryall_mcamo"};
