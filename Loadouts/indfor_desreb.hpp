@@ -1,8 +1,8 @@
 //Author: BWMF
-//Description: Ukrainian - AK rifles
+//Description: Desert Militia - AK rifles
 
 class ind_f {
-	//Rifle
+    //Rifle
     #define IND_RIFLE "hlc_rifle_ak74_dirty"
 	#define IND_RIFLE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
 	#define IND_RIFLE_ATTACHMENTS "rhs_acc_1p63"
@@ -12,8 +12,9 @@ class ind_f {
     #define IND_GLRIFLE_MAG_SMOKE "hlc_GRD_White:2","hlc_GRD_Red:2"
     #define IND_GLRIFLE_MAG_HE "hlc_VOG25_AK:8"
     //Carbine
-    #define IND_CARBINE "hlc_rifle_aks74"
+    #define IND_CARBINE IND_RIFLE
     #define IND_CARBINE_MAG IND_RIFLE_MAG
+	#define IND_CARBINE_MAG2 "hlc_30Rnd_545x39_B_AK:4","hlc_30Rnd_545x39_t_ak:2"
     // AR
     #define IND_AR "hlc_rifle_rpk74n"
     #define IND_AR_MAG "hlc_45Rnd_545x39_t_rpk:9"
@@ -55,7 +56,7 @@ class ind_f {
 	#define IND_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
 	#define IND_CREW_GRENADES "SmokeShell:2"
 
-    class Car {
+	class Car {
         TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
         TransportItems[] = {IND_BASE_MEDICAL,IND_BASE_MEDICAL,IND_BASE_MEDICAL,IND_BASE_MEDICAL};
     };
@@ -74,11 +75,11 @@ class ind_f {
         TransportMagazines[] = {};
     };
 
-    class I_Soldier_F {// rifleman
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
-        headgear[] = {"MNP_Helmet_OD","rhs_beanie_green","H_Bandanna_khk","rhs_beanie"}; /// randomized
-        backpack[] = {"B_Kitbag_rgr"}; /// randomized
+	class I_Soldier_F {// rifleman
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         backpackItems[] = {IND_BASE_MEDICAL};
         weapons[] = {IND_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
@@ -92,8 +93,7 @@ class ind_f {
         weapons[] = {IND_CARBINE};
         magazines[] = {IND_CARBINE_MAG,IND_BASE_GRENADES};
     };
-    class I_Soldier_TL_F: I_Soldier_F {// FTL
-		headgear[] = {"rhs_Booniehat_ocp"}; /// randomized
+	class I_Soldier_TL_F: I_Soldier_F {// FTL
         weapons[] = {IND_GLRIFLE};
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_LEADER_GRENADES};
         items[] += {IND_LEADER_TOOLS};
@@ -120,29 +120,28 @@ class ind_f {
     };
     class I_Soldier_AAR_F: I_Soldier_F {// AAR
         backpackItems[] += {IND_AR_MAG};
-		attachments[] = {"HLC_Optic_1p29"};
+        attachments[] = {"HLC_Optic_1p29"};
         linkeditems[] += {"Binocular"};
     };
     class I_Soldier_LAT_F: Fic_Ind_Soldier_Carbine {// RAT
         backpack[] = {"rhs_rpg_empty"}; /// randomized
-        magazines[] += {IND_AT_MAG};
+        magazines[] = {IND_CARBINE_MAG2,IND_AT_MAG,IND_BASE_GRENADES};
         launchers[] = {IND_AT}; /// randomized
     };
     class I_medic_F: Fic_Ind_Soldier_Carbine {// Medic
-        weapons[] = {IND_CARBINE};
         magazines[] = {IND_CARBINE_MAG,IND_MEDIC_GRENADES};
-        backpack[] = {"B_Kitbag_rgr"};
+        backpack[] = {"B_AssaultPack_rgr"};
         backpackItems[] = {IND_MEDIC_MEDICAL};
     };
     class I_support_MG_F: I_Soldier_F {// MMG
         weapons[] = {IND_MMG};
-        backpack[] = {"B_Kitbag_rgr"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_BASE_GRENADES};
         handguns[] = {IND_PISTOL}; /// randomized
         attachments[] = {};
     };
     class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
-        backpack[] = {"B_Kitbag_rgr"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkeditems[] += {"ACE_Vector"};
     };
@@ -150,41 +149,39 @@ class ind_f {
         backpack[] = {"rhs_rpg_empty"};
         launchers[] = {IND_MAT}; /// randomized
         backpackItems[] = {IND_MAT_MAG};
-		items[] += {IND_BASE_MEDICAL};
-		attachments[] = {"rhs_acc_pgo7v"};
+		items[] += {IND_BASE_MEDIC};
     };
     class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
         backpack[] = {"rhs_rpg_empty"};
-        backpackItems[] = {IND_MAT_MAG};
+        backpackItems[] += {IND_MAT_MAG};
         linkeditems[] += {"ACE_Vector"};
-		items[] += {IND_BASE_MEDICAL};
     };
     class I_soldier_AA_F: Fic_Ind_Soldier_Carbine {// SAM Gunner
         backpack[] = {"rhs_rpg_empty"};
         launchers[] = {IND_SAM}; /// randomized
         backpackItems[] = {IND_SAM_MAG};
-		items[] += {IND_BASE_MEDICAL};
+		items[] += {IND_BASE_MEDIC};
     };
     class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {IND_SAM_MAG};
         linkeditems[] += {"ACE_Vector"};
         backpack[] = {"rhs_rpg_empty"};
-		items[] += {IND_BASE_MEDICAL};
+		items[] += {IND_BASE_MEDIC};
     };
     class I_support_Mort_F: Fic_Ind_Soldier_Carbine {// Mortar Gunner
-        items[] += {IND_BASE_MEDICAL};
+        items[] += {IND_BASE_MEDIC};
         backpack[] = {"I_Mortar_01_weapon_F"}; /// randomized
     };
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-        items[] += {IND_BASE_MEDICAL,"ACE_RangeTable_82mm"};
         linkeditems[] += {"ACE_Vector"};
+		items[] += {IND_BASE_MEDIC,"ACE_RangeTable_82mm"};
     };
     class I_spotter_F {// Spotter
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
-        headgear[] = {"rhs_Booniehat_ocp","rhs_beanie_green"}; /// randomized
-        backpack[] = {"B_Kitbag_rgr"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         weapons[] = {IND_SPOTTER}; /// randomized
         magazines[] = {IND_SPOTTER_MAG,IND_BASE_GRENADES};
         items[] = {IND_BASE_TOOLS,IND_BASE_MEDICAL,"ACRE_PRC148","ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
@@ -192,10 +189,8 @@ class ind_f {
         attachments[] = {"rhs_acc_pso1m2"};
     };
     class I_sniper_F: I_spotter_F {// Sniper
-        vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
-        headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"}; /// randomized
         weapons[] = {IND_SNIPER}; /// randomized
-        magazines[] = {IND_SNIPER_MAG,"SmokeShell:2"};
+        magazines[] = {IND_SNIPER_MAG,IND_BASE_GRENADES};
         items[] = {IND_BASE_TOOLS,IND_BASE_MEDICAL,"ACE_RangeCard"};
         linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
         attachments[] = {"rhs_acc_pso1m2"};
@@ -212,9 +207,9 @@ class ind_f {
         linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
     };
     class I_crew_F {// Crew
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
-        vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
-        headgear[] = {"MNP_Helmet_OD","rhs_beanie_green","H_Bandanna_khk","rhs_beanie"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};  /// randomized
+        vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","V_TacVest_brn","V_TacVest_khk","rhs_6b13"}; /// randomized
+        headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive"}; /// randomized
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,IND_CREW_GRENADES};
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};

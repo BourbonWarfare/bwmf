@@ -75,7 +75,7 @@ class ind_f {
     };
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
+        uniform[] = {"LOP_U_US_Fatigue_02"};  /// randomized
         vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
         headgear[] = {"MNP_Helmet_OD","rhs_beanie_green","H_Bandanna_khk","rhs_beanie"}; /// randomized
         backpack[] = {"B_Kitbag_rgr"}; /// randomized
@@ -181,7 +181,7 @@ class ind_f {
         linkeditems[] += {"ACE_Vector"};
     };
     class I_spotter_F {// Spotter
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
+        uniform[] = {"LOP_U_US_Fatigue_02"};  /// randomized
         vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
         headgear[] = {"rhs_Booniehat_ocp","rhs_beanie_green"}; /// randomized
         backpack[] = {"B_Kitbag_rgr"}; /// randomized
@@ -212,7 +212,7 @@ class ind_f {
         linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
     };
     class I_crew_F {// Crew
-        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
+        uniform[] = {"LOP_U_US_Fatigue_02"};  /// randomized
         vest[] = {"MNP_Vest_OD_A","MNP_Vest_OD_B","LOP_V_Carrier_OLV"}; /// randomized
         headgear[] = {"MNP_Helmet_OD","rhs_beanie_green","H_Bandanna_khk","rhs_beanie"}; /// randomized
         weapons[] = {IND_SMG}; /// randomized
