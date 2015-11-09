@@ -90,7 +90,7 @@ class opf_f {
         linkedItems[] = {EAST_BASE_LINKED};
         attachments[] = {EAST_RIFLE_ATTACHMENTS};
     };
-    class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
+    class Fic_Soldier_Carbine: O_Soldier_F {// carbine-man
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_BASE_GRENADES};
     };
@@ -100,13 +100,13 @@ class opf_f {
         items[] += {EAST_LEADER_TOOLS};
         linkedItems[] += {EAST_LEADER_LINKED,"Binocular"};
     };
-	class O_soldier_SL_F: O_Officer_F { // SL
+	class O_soldier_SL_F: O_Soldier_TL_F { // SL
         handguns[] = {EAST_PISTOL}; /// randomized
 		magazines[] += {EAST_PISTOL_MAG};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
     };
-    class O_officer_F: O_Soldier_F { // CO and DC
+    class O_officer_F: O_Soldier_SL_F { // CO and DC
         vest[] = {"rhs_6b23_ML_6sh92_vog_headset","rhs_6b23_ML_6sh92_vog_headset", "rhs_6b23_ML_6sh92_vog"}; /// randomized
         backpack[] = {"rhs_assault_umbts"}; /// randomized
         items[] += {"ACRE_PRC117F"};
@@ -225,7 +225,6 @@ class opf_f {
         backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"Binocular"};
 		attachments[] = {EAST_RIFLE_ATTACHMENTS};
-        attachments[] = {"rhs_acc_dtk"};
     };
     class O_soldier_repair_F: O_crew_F {// Repair Specialist
         backpack[] = {"B_Carryall_mcamo"};

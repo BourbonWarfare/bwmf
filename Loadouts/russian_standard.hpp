@@ -106,13 +106,13 @@ class rhs_faction_msv {
         items[] += {MSV_LEADER_TOOLS};
         linkedItems[] += {MSV_LEADER_LINKED,"Binocular"};
     };
-	class rhs_msv_sergeant: rhs_msv_Officer {// SL
+	class rhs_msv_sergeant: rhs_msv_junior_sergeant {// SL
         handguns[] = {MSV_PISTOL}; /// randomized
 		magazines[] += {MSV_PISTOL_MAG};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED,"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
     };   
-    class rhs_msv_officer: rhs_msv_rifleman {// CO and DC
+    class rhs_msv_officer: rhs_msv_sergeant {// CO and DC
         vest[] = {"rhs_6b23_digi_6sh92_vog_headset"}; /// randomized
         headgear[] = {"rhs_6b27m_digi_ess_bala"}; /// randomized
         items[] += {"ACRE_PRC117F"};
@@ -179,7 +179,6 @@ class rhs_faction_msv {
     //};
     class rhs_msv_support_Mort: Fic_Soldier_Carbine {// Mortar Gunner
         items[] += {MSV_MEDIC_MEDICAL};
-        backpack[] = {"O_Mortar_01_weapon_F"}; /// randomized
         backpack[] = {"rhs_msv_Mortar_01_weapon_F"}; /// randomized
     };
     class rhs_msv_support_AMort: rhs_msv_rifleman {// Assistant Mortar
