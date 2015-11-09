@@ -2,7 +2,7 @@
 //Description: German Flekterarian Camo G36
 
 class blu_f {
-		//Rifle
+	//Rifle
     #define WEST_RIFLE "BWA3_G36"
     #define WEST_RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
 	#define WEST_RIFLE_ATTACHMENTS "BWA3_optic_EOTech","BWA3_acc_LLM01_irlaser"
@@ -121,7 +121,8 @@ class blu_f {
         handguns[] = {WEST_PISTOL}; /// randomized
     };
     class B_Soldier_AAR_F: B_Soldier_F {// AAR
-        backpackItems[] += {WEST_AR_MAG,"ACE_Flashlight_KSF1"};
+        items[] += {"ACE_Flashlight_KSF1"};
+        backpackItems[] += {WEST_AR_MAG};
         attachments[] = {"BWA3_optic_EOTech_Mag_Off","BWA3_acc_LLM01_irlaser"};
         linkedItems[] += {"Binocular"};
     };
@@ -133,7 +134,8 @@ class blu_f {
         vest[] = {"BWA3_Vest_Medic_Fleck"}; /// randomized
         backpack[] = {"BWA3_Kitbag_Fleck_Medic"}; /// randomized
         magazines[] = {WEST_CARBINE_MAG,WEST_MEDIC_GRENADES};
-        backpackItems[] = {WEST_MEDIC_MEDICAL,"ACE_Flashlight_KSF1"};
+        items[] = {"ACE_Flashlight_KSF1"};
+        backpackItems[] = {WEST_MEDIC_MEDICAL};
     };
     class B_support_MG_F: B_Soldier_F {// MMG
         weapons[] = {WEST_MMG};
@@ -142,39 +144,40 @@ class blu_f {
         attachments[] = {};
     };
     class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
-        backpackItems[] += {WEST_MMG_MAG,"ACE_Flashlight_KSF1"};
+        backpackItems[] += {WEST_MMG_MAG};
+        items[] += {"ACE_Flashlight_KSF1"};
         linkedItems[] += {"ACE_Vector"};
     };
     class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
         launchers[] = {WEST_MAT}; /// randomized
-        items[] += {WEST_BASE_MEDICAL};
-        backpackItems[] = {WEST_MAT_MAG,"ACE_Flashlight_KSF1"};
+        items[] += {WEST_BASE_MEDICAL,"ACE_Flashlight_KSF1"};
+        backpackItems[] = {WEST_MAT_MAG};
         attachments[] = {"BWA3_optic_NSA80"};
     };
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
-        backpackItems[] = {WEST_MAT_MAG,"ACE_Flashlight_KSF1"};
+        backpackItems[] = {WEST_MAT_MAG};
         launchers[] = {WEST_MAT}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] += {WEST_MEDIC_MEDICAL};
+        items[] += {WEST_BASE_MEDICAL,"ACE_Flashlight_KSF1"};
     };
     class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
         launchers[] = {WEST_SAM}; /// randomized
-		items[] += {WEST_MEDIC_MEDICAL};
+		items[] += {WEST_BASE_MEDICAL};
         backpackItems[] = {WEST_SAM_MAG,"ACE_Flashlight_KSF1"};
     };
     class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {WEST_SAM_MAG,"ACE_Flashlight_KSF1"};
-		items[] += {WEST_MEDIC_MEDICAL};
+		items[] += {WEST_BASE_MEDICAL};
         linkedItems[] += {"ACE_Vector"};
     };
     class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
-		items[] += {WEST_MEDIC_MEDICAL};
+		items[] += {WEST_BASE_MEDICAL};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] += {WEST_MEDIC_MEDICAL,"ACE_RangeTable_82mm"};
+        items[] += {WEST_BASE_MEDICAL,"ACE_RangeTable_82mm"};
     };
     class B_spotter_F {// Spotter
         uniform[] = {"BWA3_Uniform_Ghillie_Fleck"};  /// randomized
