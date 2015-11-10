@@ -5,7 +5,7 @@ class opf_f {
     //Rifle
     #define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m"
     #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
-	#define EAST_RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk"
+    #define EAST_RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk"
     //GL Rifle
     #define EAST_GLRIFLE "rhs_weap_ak74m_gp25"
     #define EAST_GLRIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -44,19 +44,19 @@ class opf_f {
     #define EAST_PISTOL "rhs_weap_pya"
     #define EAST_PISTOL_MAG "rhs_mag_9x19_17:2"
     // GEAR
-	#define EAST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-	#define EAST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-	#define EAST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-	#define EAST_LEADER_TOOLS "ACE_microDAGR","ACE_key_EAST","ACE_Flashlight_KSF1"
-	#define EAST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-	#define EAST_LEADER_LINKED "ItemGPS"
-	// GRENADES
-	#define EAST_BASE_FRAG "rhs_mag_rgd5:2"
-	#define EAST_BASE_GRENADES EAST_BASE_FRAG,"SmokeShell:2"
-	#define EAST_LEADER_GRENADES EAST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
-	#define EAST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-	#define EAST_CREW_GRENADES "SmokeShell:2"
-	
+    #define EAST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
+    #define EAST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+    #define EAST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
+    #define EAST_LEADER_TOOLS "ACE_microDAGR","ACE_key_EAST","ACE_Flashlight_KSF1"
+    #define EAST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
+    #define EAST_LEADER_LINKED "ItemGPS"
+    // GRENADES
+    #define EAST_BASE_FRAG "rhs_mag_rgd5:2"
+    #define EAST_BASE_GRENADES EAST_BASE_FRAG,"SmokeShell:2"
+    #define EAST_LEADER_GRENADES EAST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
+    #define EAST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
+    #define EAST_CREW_GRENADES "SmokeShell:2"
+
     class Car {
         TransportWeapons[] = {EAST_AT};
         TransportMagazines[] = {EAST_RIFLE_MAG,EAST_RIFLE_MAG,EAST_CARBINE_MAG,EAST_AR_MAG,EAST_AR_MAG,EAST_GLRIFLE_MAG_HE};
@@ -94,15 +94,15 @@ class opf_f {
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_BASE_GRENADES};
     };
-	class O_Soldier_TL_F: O_Soldier_F {// FTL
+    class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
         magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_LEADER_GRENADES};
         items[] += {EAST_LEADER_TOOLS};
         linkedItems[] += {EAST_LEADER_LINKED,"Binocular"};
     };
-	class O_soldier_SL_F: O_Soldier_TL_F { // SL
+    class O_soldier_SL_F: O_Soldier_TL_F { // SL
         handguns[] = {EAST_PISTOL}; /// randomized
-		magazines[] += {EAST_PISTOL_MAG};
+        magazines[] += {EAST_PISTOL_MAG};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
     };
@@ -110,11 +110,11 @@ class opf_f {
         vest[] = {"rhs_6b23_ML_6sh92_vog_headset","rhs_6b23_ML_6sh92_vog_headset", "rhs_6b23_ML_6sh92_vog"}; /// randomized
         backpack[] = {"rhs_assault_umbts"}; /// randomized
         items[] += {"ACRE_PRC117F"};
-    };    
+    };
     class O_soldier_UAV_F: O_Soldier_F {
         backpack[] = {"O_UAV_01_backpack_F"}; /// randomized
         linkedItems[] += {"O_uavterminal"};
-    }; 
+    };
     class O_soldier_GL_F: O_Soldier_TL_F { // SL
 
     };
@@ -163,12 +163,12 @@ class opf_f {
     };
     class O_soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
         launchers[] = {EAST_SAM}; /// randomized
-		items[] += {EAST_MEDIC_MEDICAL};
+        items[] += {EAST_MEDIC_MEDICAL};
         backpackItems[] = {EAST_SAM_MAG,"ACE_Flashlight_KSF1"};
     };
     class O_Soldier_AAA_F: O_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {EAST_SAM_MAG,"ACE_Flashlight_KSF1"};
-		items[] += {EAST_MEDIC_MEDICAL};
+        items[] += {EAST_MEDIC_MEDICAL};
         linkedItems[] += {"ACE_Vector"};
     };
     class O_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
@@ -224,7 +224,7 @@ class opf_f {
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS};
         backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"Binocular"};
-		attachments[] = {EAST_RIFLE_ATTACHMENTS};
+        attachments[] = {EAST_RIFLE_ATTACHMENTS};
     };
     class O_soldier_repair_F: O_crew_F {// Repair Specialist
         backpack[] = {"B_Carryall_mcamo"};
