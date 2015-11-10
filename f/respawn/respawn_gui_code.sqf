@@ -155,6 +155,8 @@ fn_respawnMenuChangeRoleAction = {
     
     _selection =  (lbCurSel _groupListBox);
     
+    if (_selection < 0 || _selection >= (count selectedRespawnGroup)) exitWith { hint "No soldier selected to cycle roles for."; };
+    
     _entry = (selectedRespawnGroup select _selection);
     _entry set [2, ((_entry select 2) + 1 ) % (count respawnMenuRoles)];
     selectedRespawnGroup set [_selection, _entry];
@@ -168,6 +170,8 @@ fn_respawnMenuChangeRankAction = {
     _groupListBox = ((findDisplay 26893) displayCtrl 26892);
     
     _selection =  (lbCurSel _groupListBox);
+    
+    if (_selection < 0 || _selection >= (count selectedRespawnGroup)) exitWith { hint "No soldier selected to cycle ranks for."; };
     
     _entry = (selectedRespawnGroup select _selection);
     _entry set [0, ((_entry select 0) + 1) % 7];
@@ -222,7 +226,7 @@ fn_respawnMapLoaded = {
     disableSerialization;
     _mapCtrl = ((findDisplay 26950) displayCtrl 26902);
     _pos = [0,0,0];
-    if (alive player) then {
+    if (alive player && !(player isKindOf "VirtualCurator_F")) then {
       _pos = getPos player;
     }
     else {
