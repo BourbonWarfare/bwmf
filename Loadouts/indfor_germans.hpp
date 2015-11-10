@@ -85,7 +85,7 @@ class ind_f {
     };
     class I_Soldier_SL_F: I_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ItemGPS","rhsusf_ANPVS_14","ACE_microDAGR","ACE_Vector"};
-        items[] = {"ACRE_PRC148","ACE_microDAGR""ACRE_PRC343","ACE_MapTools"};
+        items[] = {"ACRE_PRC148","ACE_microDAGR","ACRE_PRC343","ACE_MapTools"};
         backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs","chemlight_green:2"};
     };
     class I_soldier_UAV_F: I_Soldier_F {

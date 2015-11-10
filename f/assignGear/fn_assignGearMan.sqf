@@ -183,6 +183,7 @@ if (!(_attachments isEqualTo [])) then {
                 _minZoom = 999; //FOV, so smaller is more zoomed in
                 {
                     if (isNumber (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (getNumber (_x >> "opticsZoomMin"));};
+                    if (isText (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (call compile getText (_x >> "opticsZoomMin"));};
                 } forEach configProperties [_config >> "ItemInfo" >> "OpticsModes"];
                 if (_minZoom < 0.25) then {
                     _addAttachment = false;
