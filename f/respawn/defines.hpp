@@ -428,7 +428,7 @@ class respawnMenu_RscMapControl
     stickY[] = {0.2,["Gamma",1,1.5]};
     style = 48;
     text = "#(argb,8,8,3)color(1,1,1,1)";
-    type = 101;
+    type = 100;
     w = "SafeZoneWAbs";
     x = "SafeZoneXAbs";
     y = "SafeZoneY + 1.5 *                  (           (           ((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
