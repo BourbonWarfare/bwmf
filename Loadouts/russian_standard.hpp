@@ -5,7 +5,7 @@ class rhs_faction_msv {
     //Rifle
     #define MSV_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_plummag"
     #define MSV_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
-	#define MSV_RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_pkas","rhs_acc_dtk"
+    #define MSV_RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_pkas","rhs_acc_dtk"
     //GL Rifle
     #define MSV_GLRIFLE "rhs_weap_ak74m_gp25"
     #define MSV_GLRIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
@@ -49,19 +49,19 @@ class rhs_faction_msv {
     // Pistol
     #define MSV_PISTOL "rhs_weap_pya"
     #define MSV_PISTOL_MAG "rhs_mag_9x19_17:2"
-	// GEAR
-	#define MSV_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-	#define MSV_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-	#define MSV_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-	#define MSV_LEADER_TOOLS "ACE_microDAGR","ACE_key_east","ACE_Flashlight_KSF1"
-	#define MSV_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-	#define MSV_LEADER_LINKED "ItemGPS"
-	// GRENADES
-	#define MSV_BASE_FRAG "rhs_mag_rgd5:2"
-	#define MSV_BASE_GRENADES MSV_BASE_FRAG,"SmokeShell:2"
-	#define MSV_LEADER_GRENADES MSV_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
-	#define MSV_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-	#define MSV_CREW_GRENADES "SmokeShell:2"
+    // GEAR
+    #define MSV_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
+    #define MSV_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+    #define MSV_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
+    #define MSV_LEADER_TOOLS "ACE_microDAGR","ACE_key_east","ACE_Flashlight_KSF1"
+    #define MSV_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
+    #define MSV_LEADER_LINKED "ItemGPS"
+    // GRENADES
+    #define MSV_BASE_FRAG "rhs_mag_rgd5:2"
+    #define MSV_BASE_GRENADES MSV_BASE_FRAG,"SmokeShell:2"
+    #define MSV_LEADER_GRENADES MSV_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
+    #define MSV_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
+    #define MSV_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportWeapons[] = {MSV_LAT};
@@ -96,22 +96,22 @@ class rhs_faction_msv {
         linkedItems[] = {MSV_BASE_LINKED};
         attachments[] = {MSV_RIFLE_ATTACHMENTS};
     };
-	class Fic_Soldier_Carbine: rhs_msv_rifleman {// carbine-man
+    class Fic_Soldier_Carbine: rhs_msv_rifleman {// carbine-man
         weapons[] = {MSV_CARBINE};
         magazines[] = {MSV_CARBINE_MAG,MSV_BASE_GRENADES};
     };
-	class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
+    class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
         weapons[] = {MSV_GLRIFLE};
         magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,MSV_LEADER_GRENADES};
         items[] += {MSV_LEADER_TOOLS};
         linkedItems[] += {MSV_LEADER_LINKED,"Binocular"};
     };
-	class rhs_msv_sergeant: rhs_msv_junior_sergeant {// SL
+    class rhs_msv_sergeant: rhs_msv_junior_sergeant {// SL
         handguns[] = {MSV_PISTOL}; /// randomized
-		magazines[] += {MSV_PISTOL_MAG};
+        magazines[] += {MSV_PISTOL_MAG};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED,"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
-    };   
+    };
     class rhs_msv_officer: rhs_msv_sergeant {// CO and DC
         vest[] = {"rhs_6b23_digi_6sh92_vog_headset"}; /// randomized
         headgear[] = {"rhs_6b27m_digi_ess_bala"}; /// randomized

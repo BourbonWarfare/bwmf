@@ -16,9 +16,9 @@ if (_fog == -1) exitWith {};
 
 _transition = if (count _this > 1) then {_this select 1} else {0};
 
-_strength = 0;	// Value for fog at base level
-_decay = 0; 	// Decay of fog density with altitude. If set to 0 fog strength is consistent throughout.
-_base = 0; 		// Base altitude of fog (in meters). Up until this height fog does *not* loose density.
+_strength = 0;    // Value for fog at base level
+_decay = 0;     // Decay of fog density with altitude. If set to 0 fog strength is consistent throughout.
+_base = 0;         // Base altitude of fog (in meters). Up until this height fog does *not* loose density.
 
 // ====================================================================================
 
@@ -27,29 +27,29 @@ _base = 0; 		// Base altitude of fog (in meters). Up until this height fog does 
 
 switch (_fog) do
 {
-	//None
-	case 0:
-	{
-		_strength = 0;
-		_decay = 0;
-		_base = 0;
-	};
+    //None
+    case 0:
+    {
+        _strength = 0;
+        _decay = 0;
+        _base = 0;
+    };
 
-	//Light
-	case 1:
-	{
-		_strength = 0.2;
-		_decay = 0;
-		_base = 0;
-	};
+    //Light
+    case 1:
+    {
+        _strength = 0.2;
+        _decay = 0;
+        _base = 0;
+    };
 
-	//Heavy
-	case 2:
-	{
-		_strength = 0.4;
-		_decay = 0;
-		_base = 0;
-	};
+    //Heavy
+    case 2:
+    {
+        _strength = 0.4;
+        _decay = 0;
+        _base = 0;
+    };
 };
 
 // ====================================================================================

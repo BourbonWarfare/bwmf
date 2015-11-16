@@ -21,7 +21,7 @@ if (!hasInterface) exitWith {};
     _leaders = ["_FTL", "_SL"];
 
     // ====================================================================================
-    sleep 10;	// WAIT UNTIL 10 SECONDS AFTER INITIALIZING
+    sleep 10;    // WAIT UNTIL 10 SECONDS AFTER INITIALIZING
 
     _unit = player;
     _isFireteam = false;
