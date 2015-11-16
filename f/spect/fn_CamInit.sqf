@@ -41,6 +41,7 @@ if(isNil "f_cam_VirtualCreated") then
   _newUnit hideObjectGlobal true;
   _newUnit enableSimulationGlobal false;
   _newUnit setpos [0,0,5];
+  _newUnit setVariable ["timeOfDeath", serverTime, true];
   selectPlayer _newUnit;
   waituntil{player == _newUnit};
   deleteVehicle _unit;

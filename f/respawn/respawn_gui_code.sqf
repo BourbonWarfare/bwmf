@@ -72,13 +72,16 @@ fn_update_deadListBox = {
         //Check if already selected and thus in the selected respawn listBox.
         _player = _x;
         {
-            if (_player == (_x select 1)) then {
+            if (_player == (_x select 1)) exitWith {
               _found = true;  
             };
         } forEach selectedRespawnGroup;
         
         if (!_found) then {
-            _deadListBox lbAdd (name _x);
+            _deadTimer = serverTime - (_x getVariable ["timeOfDeath", serverTime]);
+            _minute = ((toString [_deadTimer / 60]) splitString ".") select 0;
+            _second = _deadTimer % 60;
+            _deadListBox lbAdd (format ["%1m %2s - %3", _minute, _second, name _x]);
             _deadListBox lbSetData[_i, str getPlayerUID _x];
             _i = _i + 1;
         };
