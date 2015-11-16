@@ -35,7 +35,7 @@ class RscSpectListBox {
     color[] = {1, 1, 1, 0.1};
     colorDisabled[] = {1, 1, 1, 0.25};
     period = 1.2;
-    maxHistoryDelay = 1;
+    maxHistoryDelay = 99999999999999999;
     autoScrollSpeed = -1;
     autoScrollDelay = 5;
     autoScrollRewind = 0;
@@ -52,8 +52,7 @@ class RscSpectFrame {
     text = "";
 
 };
-class RscSpectMapControl
-{
+class RscSpectMapControl {
     access = 0;
     alphaFadeEndScale = 2;
     alphaFadeStartScale = 2;
@@ -393,8 +392,7 @@ class RscSpectMapControl
         color[] = {1, 1, 1, 1};
     };
 };
-class RscSpectPic
-{
+class RscSpectPic {
     idc = -1;
     type = 0;
     style = 48; //1 2 3...176
@@ -445,8 +443,8 @@ class RscSpectButton {
     w = 0.095589;
     x = 0;
     y = 0;
-    };
-    class RscSpectStructuredText {
+};
+class RscSpectStructuredText {
     access = 0;
     h = 0.035;
     idc = -1;
@@ -528,8 +526,7 @@ class RscSpectControlsGroup {
 };
 
 
-class RscSpectList
-{
+class RscSpectList {
     access = 0;
     rowHeight = 0;
     rowWidth = 0;
@@ -545,22 +542,19 @@ class RscSpectList
     colorText[] = {1,1,1,1};
     font = "TahomaB";
     h = 0.035;
-    maxHistoryDelay = 1;
+    maxHistoryDelay = 99999999999999999;
     shadow = 1;
     sizeEx = "(         (           (           ((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
     soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1};
     soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1};
     soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1};
-  //  style = "0x10 + 0x200";
     type = 5;
-     //   type = 5;
     style = 528;
     w = 0.12;
     wholeHeight = 0.45;
     x = 0;
     y = 0;
-    class ListScrollBar
-    {
+    class ListScrollBar {
         arrowEmpty = "";
         arrowFull = "";
         border = "";
@@ -573,11 +567,9 @@ class RscSpectList
     autoScrollSpeed = 0;
     autoScrollDelay = 0;
     autoScrollRewind = 0;
-
 };
 
-class RscSpectCombo
-{
+class RscSpectCombo {
     access = 0;
     arrowEmpty = "#(argb,8,8,3)color(0.918,0.655,0.141,1)";
     arrowFull = "#(argb,8,8,3)color(0.918,0.655,0.141,1)";
@@ -591,7 +583,7 @@ class RscSpectCombo
     colorText[] = PRIMARYCOLOR;
     font = "PuristaLight";
     h = 0.035;
-    maxHistoryDelay = 1;
+    maxHistoryDelay = 99999999999999999;
     shadow = 0;
     colorBorder[] = PRIMARYCOLOR;
     sizeEx = "(         (           (           ((safezoneW / safezoneH) min 1.0) / 1.0) / 25) * 1)";
@@ -604,8 +596,7 @@ class RscSpectCombo
     wholeHeight = "5 * safezoneH";
     x = 0;
     y = 0;
-    class ComboScrollBar
-    {
+    class ComboScrollBar {
         arrowEmpty = "";
         arrowFull = "";
         border = "";
@@ -615,7 +606,6 @@ class RscSpectCombo
         shadow = 0;
         thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
     };
-
 };
 
 class f_spec_dialog {
@@ -631,8 +621,7 @@ class f_spec_dialog {
     onUnload = "[] spawn f_fnc_OnUnload";
     class controlsBackground {
         class mouseHandler: RscSpectControlsGroup {
-            class ListScrollBar
-            {
+            class ListScrollBar {
                 color[] = {1,1,1,0.6};
                 colorActive[] = {1,1,1,1};
                 colorDisabled[] = {1,1,1,0.0};
@@ -650,15 +639,12 @@ class f_spec_dialog {
             w = SafeZoneW; h = SafeZoneH;
             colorBackground[] = {0.2, 0.0, 0.0, 0.0};
         };
-        class OnEnterBox : RscSpectButton
-        {
+        class OnEnterBox : RscSpectButton {
             idc = 4344;
             x = -0.1 * safezoneW + safezoneX;
             y = -0.1 * safezoneH + safezoneY;
             w = 0.4 * safezoneW;
             h = 0.2 * safezoneH;
-        //    onMouseEnter = "[true] spawn f_fnc_showMenu;f_cam_menuShownTime=time;";
-           // onMouseExit = "[false] spawn f_fnc_showMenu;";
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
             borderSize = 0;
@@ -672,38 +658,31 @@ class f_spec_dialog {
             color[] = {0,0,0,0};
             colorBackground[] = {0,0,0,0};
         };
-        class Devider: RscSpectPic
-        {
+        class Devider: RscSpectPic {
             idc = 4302;
             x = 0.00293747 * safezoneW + safezoneX;
             y = -0.00160002 * safezoneH + safezoneY;
             w = 0.180469 * safezoneW;
             h = 0.02 * safezoneH;
         };
-        class SpectStrText: RscSpectStructuredText
-        {
+        class SpectStrText: RscSpectStructuredText {
             idc = 1310;
             x = 0.341317 * safezoneW + safezoneX;
             y = 0.283882 * safezoneH + safezoneY;
             w = 0.317366 * safezoneW;
             h = 0.375858 * safezoneH;
             text = "";
-           // text = "<br /> Use the mouse or the WASD to control the camera, H to show and close the help window.<br /> Press M for the map.<br /> ";
         };
-        class SpecFrame: RscSpectFrame
-        {
+        class SpecFrame: RscSpectFrame {
             idc = 1300;
             x = 0.341317 * safezoneW + safezoneX;
             y = 0.283882 * safezoneH + safezoneY;
             w = 0.317366 * safezoneW;
             h = 0.375858 * safezoneH;
-           // text = "<br /> Use the mouse or the WASD to control the camera, H to show and close the help window.<br /> Press M for the map.<br /> ";
         };
-
     };
     class controls {
-        class SpectButtonExit: RscSpectButton
-        {
+        class SpectButtonExit: RscSpectButton {
             idc = 1315;
             x = 0.6 * safezoneW + safezoneX;
             y = 0.609136 * safezoneH + safezoneY;
@@ -712,8 +691,7 @@ class f_spec_dialog {
             text = "Okay";
             action = "ctrlShow [1315, !ctrlVisible 1315];ctrlShow [1310, !ctrlVisible 1310];ctrlShow [1300, !ctrlVisible 1300];";
         };
-        class FilterAIButton: RscSpectButton
-        {
+        class FilterAIButton: RscSpectButton {
             idc = 2111;
             x = 0.00046248 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
@@ -725,10 +703,8 @@ class f_spec_dialog {
             onButtonClick = "[_this select 0,0] call f_fnc_HandleMenu";
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
-
         };
-        class SideFilterButton: RscSpectButton
-        {
+        class SideFilterButton: RscSpectButton {
             idc = 2112;
             x = 0.0425375 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
@@ -741,8 +717,7 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
-        class TagsNameButton: RscSpectButton
-        {
+        class TagsNameButton: RscSpectButton {
             idc = 2113;
             x = 0.0846125 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
@@ -755,8 +730,7 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
-        class FirstPersonButton: RscSpectButton
-        {
+        class FirstPersonButton: RscSpectButton {
             idc = 2114;
             x = 0.12679 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
@@ -769,8 +743,7 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
-        class SpecUnitBox: RscSpectList
-        {
+        class SpecUnitBox: RscSpectList {
             idc = 2100;
             x = 0 * safezoneW + safezoneX;
             y = 0.03 * safezoneH + safezoneY;
@@ -778,8 +751,7 @@ class f_spec_dialog {
             h = 0.9 * safezoneH;
             onLBSelChanged = "[""LBListSelChanged"",_this] call F_fnc_EventHandler";
         };
-        class SpecModes: RscSpectCombo
-        {
+        class SpecModes: RscSpectCombo {
             idc = 2101;
             x = 0.178999 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
@@ -790,17 +762,15 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
-        class SpecText: RscSpectText
-        {
+        class SpecText: RscSpectText {
             idc = 1000;
-            text = "Spectating:Unknown"; //--- ToDo: Localize;
+            text = "Spectating:Unknown";
             x = 0.430336 * safezoneW + safezoneX;
             y = 0.00159198 * safezoneH + safezoneY;
             w = 0.800 * safezoneW;
             h = 0.0200 * safezoneH;
         };
-        class SpectMap : RscSpectMapControl
-        {
+        class SpectMap : RscSpectMapControl {
             type = 100;
             idc = 1350;
             x = 0.00640556 * safezoneW + safezoneX;
@@ -811,8 +781,7 @@ class f_spec_dialog {
             onMouseButtonClick = "_this call F_fnc_OnMapClick";
             onDraw = "_this call F_fnc_DrawMarkers";
         };
-        class FullSpectMap : RscSpectMapControl
-        {
+        class FullSpectMap : RscSpectMapControl {
             idc = 1360;
             type = 100;
             x = 0 * safezoneW + safezoneX;
@@ -821,7 +790,6 @@ class f_spec_dialog {
             h = 1 * safezoneH;
             onDraw = "_this call F_fnc_DrawMarkers";
             onMouseButtonClick = "_this call F_fnc_OnMapClick";
-
         };
     };
 };
