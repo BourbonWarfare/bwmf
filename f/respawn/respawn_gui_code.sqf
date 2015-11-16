@@ -3,14 +3,6 @@ fn_respawnMenuInit = {
     deadPlayerList = [];
     selectedRespawnGroup = [];
     
-    // SelectedRespawnGroup format 
-    // Rank: Int (0-6), Object: Player, Role: Int (0 -> count respawnMenuRoles)
-    {
-        if (isPlayer _x) then {
-            deadPlayerList pushBack _x;  
-        };
-    } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
-    
     //Faction selection control
     _control = ((findDisplay 26893) displayCtrl 26894);
     for [{_i = 0}, {_i < (count respawnMenuFactions)}, {_i = _i + 1}] do {
