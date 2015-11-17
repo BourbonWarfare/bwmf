@@ -71,13 +71,20 @@ fn_update_deadListBox = {
         
         if (!_found) then {
             _deadTimer = serverTime - (_x getVariable ["timeOfDeath", serverTime]);
-            _minute = ((toString [_deadTimer / 60]) splitString ".") select 0;
-            _second = _deadTimer % 60;
+            _minute = [(_deadTimer / 60)] call fn_truncateDecimal;
+            _second = [(_deadTimer % 60)] call fn_truncateDecimal;
             _deadListBox lbAdd (format ["%1m %2s - %3", _minute, _second, name _x]);
             _deadListBox lbSetData[_i, str getPlayerUID _x];
             _i = _i + 1;
         };
     } forEach deadPlayerList;
+};
+
+fn_truncateDecimal = {
+    params ["_decimal"];
+    _decToString = str _decimal;
+    _splitDec = _decToString splitString ".";
+    _splitDec select 0;
 };
 
 fn_update_aliveListBox = {
@@ -112,11 +119,11 @@ fn_respawnMenuAddAction = {
     _deadListBox = ((findDisplay 26893) displayCtrl 26891);
     _groupListBox = ((findDisplay 26893) displayCtrl 26892);
     
-    _selection = _deadListBox lbText (lbCurSel _deadListBox);
+    _selection = _deadListBox lbData (lbCurSel _deadListBox);
     
     _obj = objNull;
     {
-        if (_selection == (name _x)) then {
+        if (_selection == (str getPlayerUID _x)) exitWith {
             _obj = _x;
         };
     } forEach deadPlayerList;
@@ -179,7 +186,7 @@ fn_reloadDeadPlayers = {
     deadPlayerList = [];
     {
         if (isPlayer _x) then {
-            deadPlayerList pushBack _x;  
+            deadPlayerList pushBack _x;
         };
     } forEach ([0,0,0] nearEntities ["VirtualCurator_F",500]);
     
