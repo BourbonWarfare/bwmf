@@ -65,16 +65,15 @@ if (isNil "f_cam_blufor_color") then {
 ///f3_respawnPoint1
 _mousePos = f3_respawnMousePos;
 _i = 1;
-_var = missionNamespace getVariable[format["f3_respawnPoint%1",_i], objNull];
-while {!isNull _var} do {
-    _pos = (position _var);
-    
+_pos = markerPos (format["f3_respawnPoint%1", _i]);
+while {!(_pos isEqualTo [0,0,0])} do {
     if (_i isEqualTo _mousePos) then {
         _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,0,0,0.5],_pos,40,40,0];   
     };
     _fullmapWindow drawIcon ["\A3\ui_f\data\map\markers\military\start_CA.paa",[1,1,0,1],_pos,32,32,0,format["Respawn point %1",_i],1];
     
     _i = _i + 1;
+    _pos = markerPos (format["f3_respawnPoint%1", _i]);
 };
 
 if (typeName _mousePos == "ARRAY") then {

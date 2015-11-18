@@ -261,21 +261,19 @@ fn_toggleSpectator = {
 };
 
 fn_respawnMap_onMouseButtonDown = {
-    private["_i", "_var", "_pos", "_found"];
     params["_fullmapWindow", "_type", "_x", "_y"];
     
     if (_type == 0) then { // left click
         _i = 1;
         _found = false;
-        _var = missionNamespace getVariable[format["f3_respawnPoint%1", _i], objNull];
-        while {!(isNull _var)} do {
-            _pos = (position _var);
-            if (([_x,_y] distance (_fullmapWindow posWorldToScreen _pos)) < 0.1) then {
+        _pos = markerPos (format["f3_respawnPoint%1", _i]);
+        while {!(_pos isEqualTo [0,0,0])} do {
+            if (([_x,_y] distance (_fullmapWindow posWorldToScreen _pos)) < 0.1) exitWith {
                 f3_respawnMousePos = _i;
                 _found = true;
             };
             _i = _i + 1;
-            _var = missionNamespace getVariable[format["f3_respawnPoint%1", _i], objNull];
+            _pos = markerPos (format["f3_respawnPoint%1", _i]);
         };
         if (!_found) then {
             f3_respawnMousePos = _fullmapWindow posScreenToWorld [_x, _y];
@@ -284,8 +282,8 @@ fn_respawnMap_onMouseButtonDown = {
 };
 
 fn_respawnMap_keyUp = {
-    private["_type", "_position", "_var"];
-    _type = _this select 1;
+    params["_control", "_type", "_shiftState", "_ctrlState", "_altState"];
+    
     //28 = enter key
     if (_type == 28) then {
         if (f3_respawnMousePos isEqualTo -1) then {
@@ -297,9 +295,9 @@ fn_respawnMap_keyUp = {
                 _position = f3_respawnMousePos;
             }
             else {
-                _var = missionNamespace getVariable[format["f3_respawnPoint%1", f3_respawnMousePos], objNull];
-                if (!isNull _var) then {
-                    _position = position _var;
+                _pos = markerPos (format["f3_respawnPoint%1", f3_respawnMousePos]);
+                if (!(_pos isEqualTo [0,0,0])) then {
+                    _position = _pos;
                 };
             };
             hint "Group created on ground.";
