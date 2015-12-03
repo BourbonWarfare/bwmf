@@ -55,7 +55,7 @@ if(isNull _oldUnit ) then {if(count playableUnits > 0) then {_oldUnit = (playabl
 // Set spectator mode for whichever radio system is in use
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
     [true] call acre_api_fnc_setSpectator;
-    if (!isNil "f_radios_settings_acre2_languages") then {
+    if (!isNil "F_available_languages") then {
         _languages = [];
         {
             _languages pushBack (_x select 0);
@@ -63,7 +63,7 @@ if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
         _languages call acre_api_fnc_babelSetSpokenLanguages;
     };
 };
-    
+
 // ====================================================================================
 
 _listBox = 2100;
