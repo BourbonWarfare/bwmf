@@ -228,7 +228,7 @@ class rhs_faction_msv {
         backpack[] = {"rhs_sidor"}; /// randomized
         weapons[] = {MSV_SMG}; /// randomized
         magazines[] = {MSV_SMG_MAG,MSV_CREW_GRENADES};
-        backpackItems[] = {"ACE_key_MSV","ACRE_PRC117F"};
+        backpackItems[] = {"ACE_key_east","ACRE_PRC117F"};
         items[] = {MSV_BASE_MEDICAL,MSV_BASE_TOOLS,"ACRE_PRC148"};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED};
         attachments[] = {"rhs_acc_dtk"};
@@ -241,7 +241,7 @@ class rhs_faction_msv {
         weapons[] = {MSV_CARBINE}; /// randomized
         magazines[] = {MSV_CARBINE_MAG,MSV_CREW_GRENADES};
         items[] = {MSV_BASE_MEDICAL,MSV_BASE_TOOLS};
-        backpackItems[] = {"ACE_key_MSV","ACRE_PRC117F"};
+        backpackItems[] = {"ACE_key_east","ACRE_PRC117F"};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED,"Binocular"};
         attachments[] = {"rhs_acc_dtk"};
     };
