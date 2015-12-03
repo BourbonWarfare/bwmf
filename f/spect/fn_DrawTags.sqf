@@ -60,7 +60,7 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 						if (isPlayer _x) then {
 							_name = (name _x);
 						} else {
-							_name = format ["*AI* - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
+							_name = format ["AI - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
 						};
 
 						if (_crewCount > 1) then {
