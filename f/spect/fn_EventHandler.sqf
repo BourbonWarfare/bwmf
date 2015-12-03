@@ -194,11 +194,11 @@ case "KeyDown":
     _key = _args select 1;
     _handled = false;
     if(!isNull (findDisplay 49)) exitWith {if(_key == 1) then {true}};
-    
+
     if (!isNil "CBA_events_fnc_keyHandler") then {
         [_args, "keydown"] call CBA_events_fnc_keyHandler;
     };
-    
+
     switch (_key) do
     {
         case 78: // numpad +
@@ -212,7 +212,7 @@ case "KeyDown":
         };
         case f_cam_zeusKey:
         {
-            if(serverCommandAvailable "#kick" || !isNull (getAssignedCuratorLogic player) ) then
+            if(!isNull (getAssignedCuratorLogic player)) then
             {
                 // handler to check when we can return to the spectator system ( when zeus interface is closed and not remoteing controlling)
                 [] spawn {
@@ -231,18 +231,9 @@ case "KeyDown":
                 // force exit
                 [] call F_fnc_ForceExit;
 
+                ["F_ScreenSetup"] call BIS_fnc_blackIn;
+                openCuratorInterface;
 
-                // black out the screen
-                ["F_ScreenSetup",false] call BIS_fnc_blackOut;
-                if(isNull (getAssignedCuratorLogic player)) then
-                {
-                    [[player,true,playableUnits],'f_fnc_zeusInit',false] spawn BIS_fnc_MP;
-                };
-                [] spawn {
-                    waitUntil {!isNull (getAssignedCuratorLogic player)};
-                    ["F_ScreenSetup"] call BIS_fnc_blackIn;
-                    openCuratorInterface;
-                };
                 _handled = true;
             }
             else
@@ -428,11 +419,11 @@ case "KeyUp":
     if(!isNull (findDisplay 49)) exitWith {};
     _key = _args select 1;
     _handled = false;
-    
+
     if (!isNil "CBA_events_fnc_keyHandler") then {
         [_args, "keydown"] call CBA_events_fnc_keyHandler;
     };
-    
+
     switch (_key) do
     {
         case 42:
@@ -524,4 +515,3 @@ case "KeyUp":
 };
 _handled
 };
-
