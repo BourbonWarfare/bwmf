@@ -134,7 +134,7 @@ class blu_f {
         vest[] = {"BWA3_Vest_Medic_Fleck"}; /// randomized
         backpack[] = {"BWA3_Kitbag_Fleck_Medic"}; /// randomized
         magazines[] = {WEST_CARBINE_MAG,WEST_MEDIC_GRENADES};
-        items[] = {"ACE_Flashlight_KSF1"};
+        items[] += {"ACE_Flashlight_KSF1"};
         backpackItems[] = {WEST_MEDIC_MEDICAL};
     };
     class B_support_MG_F: B_Soldier_F {// MMG
