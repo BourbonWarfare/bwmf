@@ -343,22 +343,11 @@ case "KeyDown":
             [] spawn f_fnc_HandleCamera;
              _handled = true;
         };
-        case 25:
+        case 25: // P
         {
             f_cam_muteSpectators = !f_cam_muteSpectators;
-            switch (f_var_radios) do {
-              // ACRE
-              case 1: {
+            if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
                 [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-              // TFR
-              case 2: {
-                [player, f_cam_muteSpectators] call TFAR_fnc_forceSpectator;
-              };
-              case 3: {
-                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-
             };
         };
         case 29: // CTRL
