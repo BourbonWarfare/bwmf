@@ -1,12 +1,3 @@
-params ["_srFreqIndex", "_lrFreqIndex"];
-
-if (isNil "_srFreqIndex") then {
-    _srFreqIndex = -1
-};
-if (isNil "_lrFreqIndex") then {
-    _lrFreqIndex = -1
-};
-
 //Set Radio Difficulty:
 [false] call acre_api_fnc_setInterference;
 [0.5] call acre_api_fnc_setLossModelScale;
@@ -82,5 +73,5 @@ F_available_languages = [
 diag_log text format ["[BW] - ACRE Presets Setup"];
 
 if (hasInterface) then {
-    [_srFreqIndex, _lrFreqIndex] call F_Radios_fnc_acreRadioSetPlayerChannels;
+    [] call F_Radios_fnc_acreRadioSetPlayerChannels;
 };

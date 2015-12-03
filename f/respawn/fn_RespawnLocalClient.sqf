@@ -41,7 +41,7 @@ localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 // Exit Spectator
 [true] call F_fnc_ForceExit;
 // Ensures the spectator script will create a virtual entity next time.
-f_cam_VirtualCreated = nil; 
+f_cam_VirtualCreated = nil;
 
 _name = (name player);
 setPlayable localRespawnedUnit;
@@ -93,9 +93,10 @@ else {
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
     [false] call acre_api_fnc_setSpectator;
-    [_sr, _lr] spawn {
-        params["_sr","_lr"];
-        sleep 5; // avoid a crazy 
-        [_sr, _lr] call F_Radios_fnc_acreRadioSetup;
+    player setVariable ["F_Radio_LR", _lr, false];
+    player setVariable ["F_Radio_SR", _sr, false];
+    [] spawn {
+        sleep 5;
+        [] call F_Radios_fnc_acreRadioSetup;
     };
 };

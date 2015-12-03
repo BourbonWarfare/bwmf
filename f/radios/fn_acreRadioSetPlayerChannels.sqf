@@ -1,5 +1,3 @@
-params ["_srFreqIndex", "_lrFreqIndex"];
-
 #define CHANNELS_ARRAYS     [ \
     ["ASL","A1", "A2","A3"], \
     ["BSL","B1", "B2","B3"], \
@@ -23,8 +21,7 @@ params ["_srFreqIndex", "_lrFreqIndex"];
 
 if (!hasInterface) exitWith {};
 
-[_srFreqIndex, _lrFreqIndex] spawn {
-    params ["_srFreqIndex", "_lrFreqIndex"];
+[] spawn {
     _addSignalsBreifing = {
         params ["_groupID", "_languagesPlayerSpeaks", "_groupFreqIndex", "_groupLRFreqIndex"];
         uiSleep 5;
@@ -55,7 +52,8 @@ if (!hasInterface) exitWith {};
                 if (_xShort == _playerShortName) exitWith {_languageDisplayNames pushBack _xDisplay};
             } forEach F_available_languages;
         } forEach _languagesPlayerSpeaks;
-        _diaryHyperlinkedText = format ["<font size=15>You speak: %1</font><br/>", ([_languageDisplayNames] call _cleanLines)];
+        _diaryBuilder = [];
+        _diaryBuilder pushBack format ["<font size=15>You speak: %1</font><br/>", ([_languageDisplayNames] call _cleanLines)];
 
         //Show Radio Nets:
         _hasSR = false;
@@ -68,31 +66,34 @@ if (!hasInterface) exitWith {};
 
         diag_log text format ["[BW] - SIGNALS Breifing %1 - [%2,%3]", _this, _hasSR, _hasLR];
 
-        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><font size=15>SR Radio Net (343)</font><br/>";
+        _diaryBuilder pushBack "<br/><font size=15>SR Radio Net (343)</font><br/>";
         {
             if (_hasSR && {_groupFreqIndex == _forEachIndex}) then {
-                _diaryHyperlinkedText = _diaryHyperlinkedText + format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+                _diaryBuilder pushBack format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
             } else {
-                _diaryHyperlinkedText = _diaryHyperlinkedText + format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+                _diaryBuilder pushBack format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
             };
         } forEach CHANNELS_ARRAYS;
 
-        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><font size=15>LR Radio Net (148/117)</font><br/>";
+        _diaryBuilder pushBack "<br/><font size=15>LR Radio Net (148/117)</font><br/>";
         {
             if (_hasLR && {_groupLRFreqIndex == _forEachIndex}) then {
-                _diaryHyperlinkedText = _diaryHyperlinkedText + format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+                _diaryBuilder pushBack format [" <font color='#ff0000' size=14>&gt;%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
             } else {
-                _diaryHyperlinkedText = _diaryHyperlinkedText + format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
+                _diaryBuilder pushBack format ["  <font size=14>%1:</font> %2<br/>", (_forEachIndex + 1), ([_x] call _cleanLines)];
             };
         } forEach LR_CHANNELS_ARRAYS;
 
-        _diaryHyperlinkedText = _diaryHyperlinkedText + "<br/><br/>Note: Subject to change.";
+        _diaryBuilder pushBack "<br/><br/>Note: Subject to change.";
 
-        player createDiaryRecord ["diary", ["SIGNALS", _diaryHyperlinkedText]];
+        _diaryBuilder pushBack "<br/><br/><execute expression='[] call F_Radios_fnc_reinitRadio;'>Reinitialize radios</execute>";
+
+        player createDiaryRecord ["diary", ["SIGNALS", _diaryBuilder joinString ""];
     };
 
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
+    waitUntil {player getVariable ["F_Gear_Setup", false]};
     diag_log text format ["[BW] - Player Stable, Seting Presets for Side %1", playerside];
 
     _languagesPlayerSpeaks = player getVariable ["f_languages", []];
@@ -153,6 +154,16 @@ if (!hasInterface) exitWith {};
         };
     };
 
+    _srFreqIndex = player getVariable ["F_Radio_SR", -1];
+    _lrFreqIndex = player getVariable ["F_Radio_LR", -1];
+
+    if (_srFreqIndex != -1) then {
+        _groupFreqIndex = _srFreqIndex - 1;
+    };
+    if (_lrFreqIndex != -1) then {
+        _groupLRFreqIndex = _lrFreqIndex - 1;
+    };
+
     if (_groupFreqIndex == -1) then {
         diag_log text format ["[BW] Unknown Group (Using Default) [%1]", _groupID];
         _groupFreqIndex = 0;
@@ -161,12 +172,7 @@ if (!hasInterface) exitWith {};
         diag_log text format ["[BW] Unknown LR Group (Using Default) [%1]", _groupID];
         _groupLRFreqIndex = 0;
     };
-    if (_srFreqIndex != -1) then {
-        _groupFreqIndex = _srFreqIndex - 1;
-    };
-    if (_lrFreqIndex != -1) then {
-        _groupLRFreqIndex = _lrFreqIndex - 1;
-    };
+
     diag_log text format ["[BW] - Channels Ready to Set [SR%1/LR%2] from group %3", (_groupFreqIndex + 1), (_groupLRFreqIndex + 1), _groupID];
 
     [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBreifing;
