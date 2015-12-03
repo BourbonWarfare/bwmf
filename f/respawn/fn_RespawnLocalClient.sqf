@@ -3,6 +3,14 @@ params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", 
 _faction = (respawnMenuFactions select _faction) select 0;
 _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 
+_factionName = switch (_faction) do {
+  case "blu_f": {"UnitNATO"};
+  case "opf_f": {"UnitOPFOR"};
+  case "ind_f": {"UnitIND"};
+  case "rhs_faction_msv": {"UnitMSV"};
+  default: {"UnitCiv"};
+}
+
 _sideNum = getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
 _side = switch (_sideNum) do {
     case 0: {east};
@@ -28,7 +36,8 @@ _dummyGroup = createGroup _side;
 
 // Create the unit
 _unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
-_init = format ["%1 = this; this setName '%1';", _unitName];
+_editorName = format["%1_%2_%3", _factionName, _groupName, _typeOfUnit];
+_init = format ["%1 = this; this setName '%1'; this setVehicleVarName '%2';", _unitName, _editorName];
 _oldUnit = player;
 
 _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];

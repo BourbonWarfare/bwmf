@@ -2,7 +2,7 @@
     ["ASL","A1", "A2","A3"], \
     ["BSL","B1", "B2","B3"], \
     ["CSL","C1", "C2","C3"], \
-    ["1PLT","MMG1","MMG2","MAT1","MAT2"], \
+    ["1PLT","MMG1","MMG2","MAT1","MAT2","MSAM1"], \
     ["COY","TH1", "TH2", "TH3", "TH4", "AH1"], \
     ["DSL","D1", "D2","D3"], \
     ["ESL","E1", "E2","E3"], \
@@ -11,7 +11,7 @@
     ]
 
 #define LR_CHANNELS_ARRAYS  [ \
-    ["1PLT","MMG1","MMG2","MAT1","MAT2", "ASL","A1","A2","A3", "BSL","B1","B2","B3", "CSL","C1", "C2","C3"], \
+    ["1PLT","MMG1","MMG2","MAT1","MAT2","MSAM1", "ASL","A1","A2","A3", "BSL","B1","B2","B3", "CSL","C1", "C2","C3"], \
     ["2PLT", "DSL","D1", "D2","D3", "ESL","E1", "E2","E3", "FSL","F1", "F2","F3"], \
     [], \
     ["COY","TH1", "TH2", "TH3", "TH4", "AH1"], \
