@@ -1,3 +1,9 @@
+## BWMF Version 4.3 ##
+* Respawn
+* Updated spectate
+* Radio re-init
+* Auto-add units to Zeus (does not work for initial spawn)
+
 ## BWMF Version 4.2 ##
 * Soviet's Loadouts
 * Lots of framework cleanup
@@ -97,7 +103,7 @@ Version | Date | Notes
 
 ### BAS f Credits ###
 
-* Contributors: Fer | Kronzky | Rom | Raedor | Kegetys | eJay | burningtrees | Redkid Joker | Headspace | ViperMaul | zx64 | kevb0 | Mandoble | Red Barron | Jaxobs | Awoihjaweohr | FLEXCopMNPD | Jefke 
+* Contributors: Fer | Kronzky | Rom | Raedor | Kegetys | eJay | burningtrees | Redkid Joker | Headspace | ViperMaul | zx64 | kevb0 | Mandoble | Red Barron | Jaxobs | Awoihjaweohr | FLEXCopMNPD | Jefke
 * Translators: Donnervogel | Serclaes | Messiah2 | Gaia | FireflyPL | Kanotson | Varry | W0lle | Nikita Kaspersky | Rainbow | JanMasterson
 * Documentation: Fer | Kegetys | Serclaes | Messiah2
 * Producers: Fer
@@ -198,7 +204,7 @@ Version | Date
 * Updated F3 Spectator Script:
  * Revised code to reduce load on CPU.
  * Virtual men no longer have visible name tags.
-* Updated Name Tags component: 
+* Updated Name Tags component:
  * Height above unit determined by stance.
  * Offset for passenger name tags fixed.
 * Updated ORBAT Notes component:
@@ -251,7 +257,7 @@ Version | Date
 * Updated Fireteam Member Markers component:
  * Team colours are now assigned in arrays at top of script (easier to modify, same functionality).
 * Updated Join Group Action component: new notifications.
-* Updated ORBAT Notes component: 
+* Updated ORBAT Notes component:
  * ORBAT lists vehicles, crew and any loaded elements.
  * ORBAT lists individual medics (under their element leader).
 * Fixed F3 Spectator Script component:
@@ -290,12 +296,12 @@ Version | Date
  * Ground vehicle drivers and selected helicopter crew members are now able to repair vehicles.
  * Ground vehicle commanders have rangefinders.
  * Fixed AAF DC group assignment.
-* Updated Safe Start component: 
+* Updated Safe Start component:
  * Changed frequency and duration of notifications.
  * Changed name of parameter variable.
 * Fixed ACRE Support component: script path(s).
 * Fixed Debug Mode component: string paths (several were still referring to f\common)
-* Fixed F3 Folk ARPS Assign Gear Script component: 
+* Fixed F3 Folk ARPS Assign Gear Script component:
  * Removed blank between assignGear and ; in unit INIT lines.
  * Removed nul = for unit INIT assignGear call.
 * Fixed F3 Folk ARPS JIP Reinforcement Options component: paths (were still referring to f\common).
@@ -322,7 +328,7 @@ Version | Date
 * Added F3 Premount component:
  * Mission makers can quickly and easily mount multiple groups in multiple vehicles.
  * Mission makers can control use of crew seats and group cohesion across vehicles.
- * Pre-placed modules support easy mounting of squads from pre-placed platoons. 
+ * Pre-placed modules support easy mounting of squads from pre-placed platoons.
 * Added Respawn Templates component:
  * Replaces Respawn INIT component.
 * Added MapClick Teleport component:
@@ -343,7 +349,7 @@ Version | Date
 * Updated Casualties Cap component:
  * Now incorporates Casualties Cap (Advanced) components.
 * Updated Dynamic View Distance component:
- * Mission makers can now control view distances for vehicle passengers. 
+ * Mission makers can now control view distances for vehicle passengers.
 * Updated F3 Folk ARPS Assign Gear Script component:
  * Backpacks parameter renamed to Loadouts.
  * Added UAV operator loadout to all factions.
@@ -561,5 +567,3 @@ Version | Date
 * Removed Trip Flare component.
 * Removed Gear Snippets component.
 * Added Loading Screen component.
-
-
