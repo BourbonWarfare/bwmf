@@ -744,7 +744,7 @@ class f_spec_dialog {
             onMouseMoving = "f_cam_menuShownTime=time";
         };
         class SpecUnitBox: RscSpectList {
-            idc = 2100;
+            idc = 2103;
             x = 0 * safezoneW + safezoneX;
             y = 0.03 * safezoneH + safezoneY;
             w = 0.1 * safezoneW;

@@ -39,7 +39,6 @@ _unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
 _editorName = format["%1_%2_%3", _factionName, _groupName, _typeOfUnit];
 _init = format ["%1 = this; this setName '%1'; this setVehicleVarName '%2';", _unitName, _editorName];
 _oldUnit = player;
-
 _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
 
 // Wait till the unit is created

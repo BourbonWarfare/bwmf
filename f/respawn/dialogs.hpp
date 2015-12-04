@@ -12,7 +12,7 @@ $[
     [1603,"respawnMenuChangeRoleButton",[1,"Change Role",["0.684594 * safezoneW + safezoneX","0.445 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
     [1604,"respawnMenuChangeRankButton",[1,"Change Rank",["0.684594 * safezoneW + safezoneX","0.544 * safezoneH + safezoneY","0.0567187 * safezoneW","0.055 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
     [1001,"respawnMenuGroupNameCombo",[1,"",["0.474227 * safezoneW + safezoneX","0.3394 * safezoneH + safezoneY","0.108281 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
-    [2100,"respawnMenuSideCombo",[1,"Faction",["0.603125 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0773437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+    [2103,"respawnMenuSideCombo",[1,"Faction",["0.603125 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0773437 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
     [1004,"respawnMenuPlayersText",[1,"Players in Spectator: 0",["0.2525 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.108281 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
     [1605,"RscCloseButton",[1,"Close",["0.716563 * safezoneW + safezoneX","0.3196 * safezoneH + safezoneY","0.0309375 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
     [2101,"",[1,"Faction",["0.396792 * safezoneW + safezoneX","0.616422 * safezoneH + safezoneY","0.0670312 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
@@ -28,7 +28,7 @@ class respawnMenuDialog {
     onLoad="[] spawn fn_respawnMenuInit;";
     class controlsBackground {};
     class objects {};
-    class controls { 
+    class controls {
         class respawnGroupFrame: respawnMenu_RscFrame
         {
             idc = -1;
@@ -184,11 +184,11 @@ class respawnMenuDialog {
 class respawnMenuMapDialog {
     idd = 26950;
     movingEnable = 0;
-    class controlsBackground { 
+    class controlsBackground {
     };
-    class objects { 
+    class objects {
     };
-    class controls { 
+    class controls {
         class FullRespawnMap : respawnMenu_RscMapControl
         {
             idc = 26902;
