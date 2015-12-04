@@ -67,7 +67,7 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 							_name = format ["%1 (+%2)", _name, ((count (crew (vehicle _x))) - 1)];
 						};
 
-            drawIcon3D [_icon, _color,[_visPos select 0,_visPos select 1,(_visPos select 2) +3], 0.7, 0.7, _directionToCamera, _name, 1, 0.055];
+            drawIcon3D [_icon, _color,[_visPos select 0,_visPos select 1,(_visPos select 2) +3], 0.7, 0.7, _directionToCamera, _name, 1, 0.05];
         };
     } foreach _drawUnits;
 
