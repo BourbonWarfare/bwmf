@@ -88,7 +88,7 @@ if (!hasInterface) exitWith {};
 
         _diaryBuilder pushBack "<br/><br/><execute expression='[] call F_Radios_fnc_reinitRadio;'>Reinitialize radios</execute>";
 
-        player createDiaryRecord ["diary", ["SIGNALS", _diaryBuilder joinString ""];
+        player createDiaryRecord ["diary", ["SIGNALS", _diaryBuilder joinString ""]];
     };
 
     if (player != player) then {waitUntil {player == player};};

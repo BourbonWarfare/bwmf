@@ -8,8 +8,8 @@ _factionName = switch (_faction) do {
   case "opf_f": {"UnitOPFOR"};
   case "ind_f": {"UnitIND"};
   case "rhs_faction_msv": {"UnitMSV"};
-  default: {"UnitCiv"};
-}
+  default {"UnitCiv"};
+};
 
 _sideNum = getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
 _side = switch (_sideNum) do {

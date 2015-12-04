@@ -4,7 +4,6 @@ if (time < 1) exitWith {
 
 if (isNil "F_Radios_fnc_acreRadioSetup") exitWith {
   hint "The function to reinitialize your radios could not be found";
-}
-else {
-  [] call F_Radios_fnc_acreRadioSetup;
 };
+
+[] call F_Radios_fnc_acreRadioSetup;

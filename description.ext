@@ -42,34 +42,34 @@ class Extended_InitPost_EventHandlers {
         class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
         class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
         class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [_this, true]; };"; };
+        class F_AddToZeus { init = "_this call F_fnc_addUnitToZeus;"; };
     };
     class Car {
         class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [(_this select 0), true]; };"; };
+        class F_AddToZeus { init = "[(_this select 0)] call F_fnc_addUnitToZeus;"; };
     };
     class Tank {
         class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [(_this select 0), true]; };"; };
+        class F_AddToZeus { init = "[(_this select 0)] call F_fnc_addUnitToZeus;"; };
     };
     class Helicopter {
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [(_this select 0), true]; };"; };
+        class F_AddToZeus { init = "[(_this select 0)] call F_fnc_addUnitToZeus;"; };
     };
     class Plane {
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [(_this select 0), true]; };"; };
+        class F_AddToZeus { init = "[(_this select 0)] call F_fnc_addUnitToZeus;"; };
     };
     class Ship_F {
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
-        class F_AddToZeus { init = "if (!isNil 'PABST_ADMIN_zeusModule' && isServer) then { PABST_ADMIN_zeusModule addCuratorEditableObjects [(_this select 0), true]; };"; };
+        class F_AddToZeus { init = "[(_this select 0)] call F_fnc_addUnitToZeus;"; };
     };
 };
 
@@ -198,6 +198,10 @@ class CfgFunctions {
         class setTeamColours {
             file = "f\setTeamColours";
             class setTeamColours {};
+        };
+        class zeus {
+            file = "f\zeus";
+            class addUnitToZeus {};
         };
 		#include "f\spect\functions.hpp"
 		#include "f\respawn\functions.hpp"
