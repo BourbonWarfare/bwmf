@@ -25,6 +25,7 @@ respawnMenuGroupNames = [
     ["CSL", 3, 1],
     ["C1", 3, 1],
     ["C2", 3, 1],
+    ["1PLT", 4, 1],
     ["DSL", 6, 2],
     ["D1", 6, 2],
     ["D2", 6, 2],
@@ -34,25 +35,28 @@ respawnMenuGroupNames = [
     ["FSL", 8, 2],
     ["F1", 8, 2],
     ["F2", 8, 2],
-    ["MMG1", 4, 4],
-    ["MMG2", 4, 4],
-    ["MAT1", 4, 4],
-    ["MAT2", 4, 4],
-    ["TH1", 5, 4],
-    ["TH2", 5, 4],
-    ["TH3", 5, 4],
-    ["TH4", 5, 4],
-    ["IFV1", 9, 4],
-    ["IFV2", 9, 4],
-    ["IFV3", 9, 4],
-    ["IFV4", 9, 4],
-    ["AH1", 5, 4],
-    ["AH2", 5, 4],
-    ["TNK1", 9, 4],
-    ["TNK2", 9, 4]
+    ["2PLT", 9, 2],
+    ["MMG1", 10, 4],
+    ["MMG2", 10, 4],
+    ["MAT1", 10, 4],
+    ["MAT2", 10, 4],
+    ["MSAM1", 10, 4],
+    ["TH1", 12, 4],
+    ["TH2", 12, 4],
+    ["TH3", 12, 4],
+    ["TH4", 12, 4],
+    ["IFV1", 14, 4],
+    ["IFV2", 14, 4],
+    ["IFV3", 14, 4],
+    ["IFV4", 14, 4],
+    ["AH1", 13, 4],
+    ["AH2", 13, 4],
+    ["TNK1", 15, 4],
+    ["TNK2", 15, 4]
 ];
 
 respawnMenuRoles = [
+    ["CO", "Commander"],
     ["SL", "Squad Leader"],
     ["M", "Squad Medic"],
     ["FTL", "Fireteam Leader"],
@@ -71,6 +75,8 @@ respawnMenuRoles = [
     ["MMGAG", "MMG - Assistant"],
     ["MATG", "MAT - Gunner"],
     ["MATAG", "MAT - Assistant"],
+    ["MSAMG", "MSAM - Gunner"],
+    ["MSAMAG", "MSAM - Assistant"],
     ["C", "Crewman - Vehicle Crew"],
     ["D", "Crewman - Vehicle Driver"],
     ["PP", "Aircrewman - Pilot"],
@@ -86,7 +92,7 @@ respawnMenuFactions = [
     ["blu_f", "NATO"],
     ["opf_f", "CSAT"],
     ["ind_f", "AAF"],
-    ["rhs_faction_msv", "MSV"]   
+    ["rhs_faction_msv", "MSV"]
 ];
 
 // Respawn Classes
@@ -97,13 +103,14 @@ fn_respawnSelectClass = {
     params["_faction","_typeOfUnit"];
     //Needed to convert index to unit type string
     _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
-    
+
     //Setup a default value.
     _type = "C_man_1";
 
     switch (_faction) do {
         case "blu_f": {
             switch (_typeOfUnit) do {
+                case "CO": { _type = "B_officer_F"};
                 case "SL": { _type = "B_Soldier_SL_F"};
                 case "M": { _type = "B_medic_F"};
                 case "FTL": { _type = "B_Soldier_TL_F"};
@@ -114,6 +121,8 @@ fn_respawnSelectClass = {
                 case "MMGAG": { _type = "B_Soldier_A_F"};
                 case "MATG": { _type = "B_soldier_AT_F"};
                 case "MATAG": { _type = "B_soldier_AAT_F"};
+                case "MSAMG": { _type = "B_soldier_AA_F"};
+                case "MSAMAG": { _type = "B_soldier_AAA_F"};
                 case "C": { _type = "B_crew_F"};
                 case "D": { _type = "B_soldier_repair_F"};
                 case "PP": { _type = "B_Helipilot_F"};
@@ -123,6 +132,7 @@ fn_respawnSelectClass = {
         };
         case "opf_f":{
             switch (_typeOfUnit) do {
+                case "CO": { _type = "O_officer_F"};
                 case "SL": { _type = "O_Soldier_SL_F"};
                 case "M": { _type = "O_medic_F"};
                 case "FTL": { _type = "O_Soldier_TL_F"};
@@ -133,6 +143,8 @@ fn_respawnSelectClass = {
                 case "MMGAG": { _type = "O_Soldier_A_F"};
                 case "MATG": { _type = "O_soldier_AT_F"};
                 case "MATAG": { _type = "O_soldier_AAT_F"};
+                case "MSAMG": { _type = "O_soldier_AA_F"};
+                case "MSAMAG": { _type = "O_soldier_AAA_F"};
                 case "C": { _type = "O_crew_F"};
                 case "D": { _type = "O_soldier_repair_F"};
                 case "PP": { _type = "O_Helipilot_F"};
@@ -142,6 +154,7 @@ fn_respawnSelectClass = {
         };
         case "ind_f": {
             switch (_typeOfUnit) do {
+                case "CO": { _type = "I_officer_F"};
                 case "SL": { _type = "I_Soldier_SL_F"};
                 case "M": { _type = "I_medic_F"};
                 case "FTL": { _type = "I_Soldier_TL_F"};
@@ -152,6 +165,8 @@ fn_respawnSelectClass = {
                 case "MMGAG": { _type = "I_Soldier_A_F"};
                 case "MATG": { _type = "I_soldier_AT_F"};
                 case "MATAG": { _type = "I_soldier_AAT_F"};
+                case "MSAMG": { _type = "I_soldier_AA_F"};
+                case "MSAMAG": { _type = "I_soldier_AAA_F"};
                 case "C": { _type = "I_crew_F"};
                 case "D": { _type = "I_soldier_repair_F"};
                 case "PP": { _type = "I_Helipilot_F"};
@@ -161,6 +176,7 @@ fn_respawnSelectClass = {
         };
         case "rhs_faction_msv" : {
             switch (_typeOfUnit) do {
+                case "CO": { _type = "rhs_msv_officer"};
                 case "SL": { _type = "rhs_msv_sergeant"};
                 case "M": { _type = "rhs_msv_medic"};
                 case "FTL": { _type = "rhs_msv_junior_sergeant"};
@@ -183,7 +199,7 @@ fn_respawnSelectClass = {
         };
         default {};
     };
-    
+
     // Return the value of _type
     _type
 };

@@ -37,7 +37,10 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
         };
         _str = _x getVariable ["f_cam_nicename",""];
         if(_str == "") then {
-            _str = (toString(toArray(groupID (_x)) - [45]));
+            _str = (_x getVariable ["F3_GroupID", ""]);
+            if(_str == "") then {
+              _str = (toString(toArray(groupID (_x)) - [45]));
+            };
             _x setVariable ["f_cam_nicename",_str];
         };
         drawIcon3D ["\A3\ui_f\data\map\markers\nato\b_inf.paa", _color,[_visPos select 0,_visPos select 1,(_visPos select 2) +30], 1, 1, 0,_str, 2, 0.02];
@@ -49,13 +52,22 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
             _visPos = getPosATLVisual _x;
             if(surfaceIsWater _visPos) then  {_visPos = getPosASLVisual _x;};
             _color set [3,0.6];
-            _str = "";
-            _icon = "\A3\ui_f\data\map\markers\military\dot_CA.paa";
-            if(isPlayer _x) then
-            {
-                _str = name _x;
-            };
-            drawIcon3D [_icon, _color,[_visPos select 0,_visPos select 1,(_visPos select 2) +3], 0.7, 0.7, 0,_str, 1, 0.02];
+            _name = "";
+            _icon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
+					  _crewCount = count (crew (vehicle _x));
+					  _directionToCamera = ([(call f_cam_GetCurrentCam), _x] call BIS_fnc_dirTo) - (getDir _x);
+
+						if (isPlayer _x) then {
+							_name = (name _x);
+						} else {
+							_name = format ["AI - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
+						};
+
+						if (_crewCount > 1) then {
+							_name = format ["%1 (+%2)", _name, ((count (crew (vehicle _x))) - 1)];
+						};
+
+            drawIcon3D [_icon, _color,[_visPos select 0,_visPos select 1,(_visPos select 2) +3], 0.7, 0.7, _directionToCamera, _name, 1, 0.05];
         };
     } foreach _drawUnits;
 

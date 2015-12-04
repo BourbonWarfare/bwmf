@@ -3,6 +3,14 @@ params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", 
 _faction = (respawnMenuFactions select _faction) select 0;
 _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 
+_factionName = switch (_faction) do {
+  case "blu_f": {"UnitNATO"};
+  case "opf_f": {"UnitOPFOR"};
+  case "ind_f": {"UnitIND"};
+  case "rhs_faction_msv": {"UnitMSV"};
+  default {"UnitCiv"};
+};
+
 _sideNum = getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
 _side = switch (_sideNum) do {
     case 0: {east};
@@ -28,9 +36,9 @@ _dummyGroup = createGroup _side;
 
 // Create the unit
 _unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
-_init = format ["%1 = this; this setName '%1';", _unitName];
+_editorName = format["%1_%2_%3", _factionName, _groupName, _typeOfUnit];
+_init = format ["%1 = this; this setName '%1'; this setVehicleVarName '%2';", _unitName, _editorName];
 _oldUnit = player;
-
 _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
 
 // Wait till the unit is created
@@ -41,7 +49,7 @@ localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 // Exit Spectator
 [true] call F_fnc_ForceExit;
 // Ensures the spectator script will create a virtual entity next time.
-f_cam_VirtualCreated = nil; 
+f_cam_VirtualCreated = nil;
 
 _name = (name player);
 setPlayable localRespawnedUnit;
@@ -93,9 +101,10 @@ else {
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
     [false] call acre_api_fnc_setSpectator;
-    [_sr, _lr] spawn {
-        params["_sr","_lr"];
-        sleep 5; // avoid a crazy 
-        [_sr, _lr] call F_Radios_fnc_acreRadioSetup;
+    player setVariable ["F_Radio_LR", _lr, false];
+    player setVariable ["F_Radio_SR", _sr, false];
+    [] spawn {
+        sleep 5;
+        [] call F_Radios_fnc_acreRadioSetup;
     };
 };

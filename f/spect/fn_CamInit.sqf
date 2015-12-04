@@ -34,6 +34,7 @@ if(f_cam_isJIP) then
 // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
 if(isNil "f_cam_VirtualCreated") then
 {
+
   createCenter sideLogic;
   _newGrp = createGroup sideLogic;
   _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
@@ -42,8 +43,9 @@ if(isNil "f_cam_VirtualCreated") then
   _newUnit enableSimulationGlobal false;
   _newUnit setpos [0,0,5];
   _newUnit setVariable ["timeOfDeath", serverTime, true];
+
   selectPlayer _newUnit;
-  waituntil{player == _newUnit};
+  waituntil{ player == _newUnit };
   deleteVehicle _unit;
   f_cam_VirtualCreated = true;
 };
@@ -55,18 +57,18 @@ if(isNull _oldUnit ) then {if(count playableUnits > 0) then {_oldUnit = (playabl
 // Set spectator mode for whichever radio system is in use
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
     [true] call acre_api_fnc_setSpectator;
-    if (!isNil "f_radios_settings_acre2_languages") then {
+    if (!isNil "F_available_languages") then {
         _languages = [];
         {
             _languages pushBack (_x select 0);
-        } forEach f_radios_settings_acre2_languages;
+        } forEach F_available_languages;
         _languages call acre_api_fnc_babelSetSpokenLanguages;
     };
 };
-    
+
 // ====================================================================================
 
-_listBox = 2100;
+_listBox = 2103;
 lbClear _listBox;
 // set inital values.
 #include "macros.hpp"

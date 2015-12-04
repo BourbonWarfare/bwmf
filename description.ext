@@ -20,14 +20,18 @@ class Header {
 // ============================================================================================
 // ACE Settings: (see http://forums.bourbonwarfare.site.nfoservers.com/viewtopic.php?f=8&t=2026)
 class ACE_Settings {
-    //Daylight laser pointer:
-    class ace_laserPointer_enabled {
-        value = 0;
-    };
-    class ace_map_DefaultChannel {//ACE 3.4.0 - https://github.com/acemod/ACE3/pull/2650
-        typeName = "NUMBER";
-        value = 1; //SIDE
-    };
+  //Daylight laser pointer:
+  class ace_laserPointer_enabled {
+    value = 0;
+  };
+  class ace_map_DefaultChannel {//ACE 3.4.0 - https://github.com/acemod/ACE3/pull/2650
+    typeName = "NUMBER";
+    value = 1; //SIDE
+  };
+  class ace_zeus_autoAddObjects {
+    value = 1;
+    typeName = "BOOL";
+  };
 };
 
 // BWMF Gear
@@ -38,31 +42,33 @@ class ACE_Settings {
 
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
-    class CAManBase {
-        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
-        class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
-        class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
-    };
-    class Car {
-        class F_DisableThermals { init = "(_this select 0) allowCrewInImmobile true; (_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Tank {
-        class F_DisableThermals { init = "(_this select 0) allowCrewInImmobile true; (_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Helicopter {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Plane {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Ship_F {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
-    };
+  class CAManBase {
+    class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+    class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+    class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
+  };
+  class Car {
+    class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
+    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+  };
+  class Tank {
+    class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
+    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+  };
+  class Helicopter {
+    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+  };
+  class Plane {
+    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+  };
+  class Ship_F {
+    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+  };
 };
 
 
@@ -155,6 +161,7 @@ class CfgFunctions {
     class F_Radios {
         class F_Radios {
             file = "f\radios";
+            class reinitRadio {};
             class acreRadioSetup {};
             class acreRadioSetPlayerChannels {};
         };

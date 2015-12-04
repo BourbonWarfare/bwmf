@@ -1,7 +1,7 @@
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ==================================================================
-_listBox =  2100;
+_listBox =  2103;
 // updaes values for the units listbox.
 f_cam_checkIndex =
 {

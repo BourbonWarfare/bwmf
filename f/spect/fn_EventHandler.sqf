@@ -114,8 +114,8 @@ case "LBListSelChanged":
             };
         };
     };
-  ctrlEnable [2100, false];
-  ctrlEnable [2100, true];
+  ctrlEnable [2103, false];
+  ctrlEnable [2103, true];
 };
 case "LBListSelChanged_modes":
 {
@@ -194,11 +194,11 @@ case "KeyDown":
     _key = _args select 1;
     _handled = false;
     if(!isNull (findDisplay 49)) exitWith {if(_key == 1) then {true}};
-    
+
     if (!isNil "CBA_events_fnc_keyHandler") then {
         [_args, "keydown"] call CBA_events_fnc_keyHandler;
     };
-    
+
     switch (_key) do
     {
         case 78: // numpad +
@@ -212,7 +212,7 @@ case "KeyDown":
         };
         case f_cam_zeusKey:
         {
-            if(serverCommandAvailable "#kick" || !isNull (getAssignedCuratorLogic player) ) then
+            if(!isNull (getAssignedCuratorLogic player)) then
             {
                 // handler to check when we can return to the spectator system ( when zeus interface is closed and not remoteing controlling)
                 [] spawn {
@@ -231,18 +231,9 @@ case "KeyDown":
                 // force exit
                 [] call F_fnc_ForceExit;
 
+                ["F_ScreenSetup"] call BIS_fnc_blackIn;
+                openCuratorInterface;
 
-                // black out the screen
-                ["F_ScreenSetup",false] call BIS_fnc_blackOut;
-                if(isNull (getAssignedCuratorLogic player)) then
-                {
-                    [[player,true,playableUnits],'f_fnc_zeusInit',false] spawn BIS_fnc_MP;
-                };
-                [] spawn {
-                    waitUntil {!isNull (getAssignedCuratorLogic player)};
-                    ["F_ScreenSetup"] call BIS_fnc_blackIn;
-                    openCuratorInterface;
-                };
                 _handled = true;
             }
             else
@@ -352,22 +343,11 @@ case "KeyDown":
             [] spawn f_fnc_HandleCamera;
              _handled = true;
         };
-        case 25:
+        case 25: // P
         {
             f_cam_muteSpectators = !f_cam_muteSpectators;
-            switch (f_var_radios) do {
-              // ACRE
-              case 1: {
+            if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
                 [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-              // TFR
-              case 2: {
-                [player, f_cam_muteSpectators] call TFAR_fnc_forceSpectator;
-              };
-              case 3: {
-                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-
             };
         };
         case 29: // CTRL
@@ -428,11 +408,11 @@ case "KeyUp":
     if(!isNull (findDisplay 49)) exitWith {};
     _key = _args select 1;
     _handled = false;
-    
+
     if (!isNil "CBA_events_fnc_keyHandler") then {
         [_args, "keydown"] call CBA_events_fnc_keyHandler;
     };
-    
+
     switch (_key) do
     {
         case 42:
@@ -524,4 +504,3 @@ case "KeyUp":
 };
 _handled
 };
-

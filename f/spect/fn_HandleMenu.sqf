@@ -4,7 +4,7 @@ switch (_button) do {
     case 0: { // Toggle AI BUTTON
         f_cam_playersOnly = !f_cam_playersOnly;
         f_cam_listUnits = [];
-        lbClear 2100;
+        lbClear 2103;
         if(f_cam_playersOnly) then { _control ctrlSetText "Players only";}
         else { _control ctrlSetText "All units";};
     };
@@ -21,7 +21,7 @@ switch (_button) do {
             };
             _control ctrlSetText (f_cam_sideNames select f_cam_sideButton);
             f_cam_listUnits = [];
-            lbClear 2100;
+            lbClear 2103;
     };
     case 2: {
         f_cam_toggleTags = !f_cam_toggleTags;
