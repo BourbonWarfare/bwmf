@@ -24,6 +24,7 @@ if (!hasInterface) exitWith {};
 [] spawn {
     _addSignalsBreifing = {
         params ["_groupID", "_languagesPlayerSpeaks", "_groupFreqIndex", "_groupLRFreqIndex"];
+        if (player diarySubjectExists "SIGNALS") exitWith {};
         uiSleep 5;
 
         _cleanLines = {
