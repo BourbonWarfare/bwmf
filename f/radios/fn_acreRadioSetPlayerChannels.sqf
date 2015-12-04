@@ -24,7 +24,7 @@ if (!hasInterface) exitWith {};
 [] spawn {
     _addSignalsBreifing = {
         params ["_groupID", "_languagesPlayerSpeaks", "_groupFreqIndex", "_groupLRFreqIndex"];
-        if (player diarySubjectExists "SIGNALS") exitWith {};
+        if (player getVariable ["F_Signals_Created", false]) exitWith {};
         uiSleep 5;
 
         _cleanLines = {
@@ -90,6 +90,7 @@ if (!hasInterface) exitWith {};
         _diaryBuilder pushBack "<br/><br/><execute expression='[] call F_Radios_fnc_reinitRadio;'>Reinitialize radios</execute>";
 
         player createDiaryRecord ["diary", ["SIGNALS", _diaryBuilder joinString ""]];
+        player setVariable ["F_Signals_Created", true];
     };
 
     if (player != player) then {waitUntil {player == player};};
