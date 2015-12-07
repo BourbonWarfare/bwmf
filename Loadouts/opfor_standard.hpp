@@ -43,19 +43,6 @@ class opf_f {
     // Pistol
     #define EAST_PISTOL "rhs_weap_pya"
     #define EAST_PISTOL_MAG "rhs_mag_9x19_17:2"
-    // GEAR
-    #define EAST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-    #define EAST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-    #define EAST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-    #define EAST_LEADER_TOOLS "ACE_microDAGR","ACE_key_EAST","ACE_Flashlight_KSF1"
-    #define EAST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-    #define EAST_LEADER_LINKED "ItemGPS"
-    // GRENADES
-    #define EAST_BASE_FRAG "rhs_mag_rgd5:2"
-    #define EAST_BASE_GRENADES EAST_BASE_FRAG,"SmokeShell:2"
-    #define EAST_LEADER_GRENADES EAST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
-    #define EAST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-    #define EAST_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportWeapons[] = {EAST_AT};
