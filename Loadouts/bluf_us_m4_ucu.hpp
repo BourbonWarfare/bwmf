@@ -11,7 +11,7 @@ class blu_f {
     #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
     #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-    #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
+    #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
     //Carbine
     #define WEST_CARBINE "rhs_weap_m4a1_carryhandle_grip"
@@ -26,11 +26,11 @@ class blu_f {
     #define WEST_MMG "rhs_weap_m240B"
     #define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
     // MAT
-    #define WEST_MAT "launch_B_Titan_short_F"
-    #define WEST_MAT_MAG "Titan_AT:3"
+    #define WEST_MAT "sam_grg_m86"
+    #define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
     // SAM
     #define WEST_SAM "rhs_weap_fim92"
-    #define WEST_SAM_MAG "rhs_fim92_mag:2"
+    #define WEST_SAM_MAG "rhs_fim92_mag:3"
     // Sniper Rifle
     #define WEST_SNIPER "rhs_weap_m14ebrri"
     #define WEST_SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
@@ -139,6 +139,7 @@ class blu_f {
     class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
         LAUNCHER_GEAR("B_Carryall_mcamo", WEST_MAT_MAG)
         launchers[] = {WEST_MAT};
+        attachments[] += {"sam_acco_m86"};
     };
     class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
         LAUNCHER_GEAR("B_Carryall_mcamo", WEST_MAT_MAG)
