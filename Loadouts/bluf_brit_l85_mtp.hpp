@@ -20,7 +20,7 @@ class blu_f {
     #define WEST_AR "UK3CB_BAF_L110A2"
     #define WEST_AR_MAG "UK3CB_BAF_100Rnd:4"
     // AT
-    #define WEST_AT "launch_NLAW_F"
+    #define WEST_AT "UK3CB_BAF_AT4_AP_Launcher"
     // MMG
     #define WEST_MMG "UK3CB_BAF_L7A2"
     #define WEST_MMG_MAG "UK3CB_BAF_75Rnd:6"
@@ -116,7 +116,7 @@ class blu_f {
         linkedItems[] += {BINOS};
     };
     class B_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
-        magazines[] += {WEST_AT_MAG};
+        //magazines[] += {WEST_AT_MAG};
         launchers[] = {WEST_AT};
     };
     class B_medic_F: Fic_Soldier_Carbine {// Medic
