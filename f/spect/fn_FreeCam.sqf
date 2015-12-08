@@ -3,7 +3,7 @@ private ["_commitTime","_delta","_zLevel","_pos","_visPos","_mode","_currPos","_
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 // Menu shown/hidden
-if (abs (f_cam_menuShownTime - time) <= 0.1 && !f_cam_menuShown) { then // disable due to being a bit wonky
+if (abs (f_cam_menuShownTime - time) <= 0.1 && !f_cam_menuShown) then {// disable due to being a bit wonky
   [true] spawn f_fnc_showMenu;
 };
 if (abs (f_cam_menuShownTime - time) >= 1 && f_cam_menuShown) then { // disable due to being a bit wonky
@@ -26,14 +26,14 @@ switch (f_cam_mode) do {
     f_cam_camera camCommit _commitTime;
   };
   case (1): { // third person
-    if(vehicle cameraOn != cameraOn) then {
+    if (vehicle cameraOn != cameraOn) then {
       _mode = "internal";
       if (gunner (vehicle cameraon) == cameraon) then { _mode = "gunner" };
       if (driver (vehicle cameraon) == cameraon) then { _mode = "gunner" };
       if (commander (vehicle cameraon) == cameraon) then { _mode = "gunner" };
       vehicle cameraOn switchCamera _mode;
     };
-    if(vehicle cameraOn == cameraOn && !f_cam_ads) then {
+    if (vehicle cameraOn == cameraOn && !f_cam_ads) then {
         cameraon switchCamera "internal";
     };
   };

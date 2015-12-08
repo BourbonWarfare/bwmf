@@ -1,5 +1,5 @@
 _pos = (_this select 0) ctrlMapScreenToWorld [(_this select 2), (_this select 3)];
-if (f_cam_mapMode == 2) then
+if (f_cam_mapMode == 2) then {
   if (f_cam_mode == 0 || f_cam_mode == 1) then {
     _chosen = nil;
     _dist = 99999;

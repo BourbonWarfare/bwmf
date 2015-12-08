@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: US OCP - M4 Rifles
+//Description: US UCP - M4 Rifles
 
 class blu_f {
   //Rifle
@@ -67,10 +67,10 @@ class blu_f {
   };
 
   class B_Soldier_F {// rifleman
-    uniform[] = {"rhs_uniform_cu_ocp"};
-    vest[] = {"rhsusf_iotv_ocp_Rifleman"};
-    headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"};
-    backpack[] = {"rhsusf_assault_eagleaiii_ocp"};
+    uniform[] = {"rhs_uniform_cu_ucp"};
+    vest[] = {"rhsusf_iotv_ucp_Rifleman"};
+    headgear[] = {"rhsusf_ach_helmet_ucp","rhsusf_ach_helmet_ESS_ucp"};
+    backpack[] = {"rhsusf_assault_eagleaiii_ucp"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
     launchers[] = {};
@@ -85,15 +85,15 @@ class blu_f {
     magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
-    vest[] = {"rhsusf_iotv_ocp_Grenadier"};
+    vest[] = {"rhsusf_iotv_ucp_Grenadier"};
     weapons[] = {WEST_GLRIFLE};
-    headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"};
+    headgear[] = {"rhsusf_ach_helmet_headset_ess_ucp"};
     magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
     items[] += {WEST_LEADER_TOOLS};
     linkedItems[] += {WEST_LEADER_LINKED,BINOS};
   };
   class B_Soldier_SL_F: B_Soldier_TL_F {// SL
-    headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
+    headgear[] = {"rhsusf_ach_helmet_headset_ucp"};
     handguns[] = {WEST_PISTOL};
     magazines[] += {WEST_PISTOL_MAG};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,RANGE_FINDER};
@@ -107,7 +107,7 @@ class blu_f {
     linkedItems[] += {"B_uavterminal"};
   };
   class B_Soldier_AR_F: B_Soldier_F {// AR
-    vest[] = {"rhsusf_iotv_ocp_SAW"};
+    vest[] = {"rhsusf_iotv_ucp_SAW"};
     weapons[] = {WEST_AR};
     magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
     handguns[] = {WEST_PISTOL};
@@ -122,7 +122,7 @@ class blu_f {
     launchers[] = {WEST_AT};
   };
   class B_medic_F: Fic_Soldier_Carbine {// Medic
-    vest[] = {"rhsusf_iotv_ocp_medic"};
+    vest[] = {"rhsusf_iotv_ucp_medic"};
     magazines[] = {WEST_CARBINE_MAG,MEDIC_GRENADES};
     backpackItems[] = {MEDIC_MEDICAL};
   };
@@ -161,8 +161,8 @@ class blu_f {
     backpack[] = {"B_Mortar_01_support_F"};
   };
   class B_spotter_F: Fic_Spotter {// Spotter
-    vest[] = {"rhsusf_iotv_ocp"};
-    headgear[] = {"rhs_Booniehat_ocp"};
+    vest[] = {"rhsusf_iotv_ucp"};
+    headgear[] = {"rhs_Booniehat_ucp"};
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
@@ -187,7 +187,7 @@ class blu_f {
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot
   class B_crew_F: Fic_Soldier_Carbine {// Crew
-    vest[] = {"rhsusf_iotv_ocp"};
+    vest[] = {"rhsusf_iotv_ucp"};
     headgear[] = {"rhsusf_cvc_green_ess"};
     backpack[] = {"B_Carryall_mcamo"};
     magazines[] = {WEST_CARBINE_MAG,CREW_GRENADES};
@@ -197,11 +197,11 @@ class blu_f {
   class B_soldier_repair_F: B_crew_F {// Repair Specialist
     backpack[] = {"B_Carryall_mcamo"};
     backpackItems[] = {"Toolkit",RADIO_MR,"ACE_key_west"};
-    vest[] = {"rhsusf_iotv_ocp_repair"};
+    vest[] = {"rhsusf_iotv_ucp_repair"};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class Fic_eng: B_soldier_repair_F {
-    headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"};
+    headgear[] = {"rhsusf_ach_helmet_ucp","rhsusf_ach_helmet_ESS_ucp"};
     items[] += {BASE_ENG};
     backpackItems[] = {};
   };
