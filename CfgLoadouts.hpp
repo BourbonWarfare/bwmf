@@ -17,8 +17,8 @@ class CfgLoadouts {
     //Only include one hpp per faction; use (//) to comment out other files
 
     //BLUFOR FACTION (blu_f):
-    // #include "Loadouts\bluf_us_m4_ocp.hpp"        // US: M4 - Tan
-    #include "Loadouts\bluf_us_m4_ucp.hpp"     // US: M4 - Gray/Green
+    #include "Loadouts\bluf_us_m4_ocp.hpp"        // US: M4 - Tan
+    // #include "Loadouts\bluf_us_m4_ucp.hpp"     // US: M4 - Gray/Green
     // #include "Loadouts\bluf_brit_l85_mtp.hpp"  // British: L86 - Multi-Terrain Pattern
     // #include "Loadouts\bluf_swede_ak5_m90.hpp" // Swedish: AK5 - Fish
     // #include "Loadouts\bluf_ger_g36_fleck.hpp" // Germans: G36 - Flecktarn Camo
