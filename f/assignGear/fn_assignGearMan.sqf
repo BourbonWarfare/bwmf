@@ -42,12 +42,12 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
+_secondaryAttachments = getArray(_path >> "secondaryAttachments");
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
 removeAllItemsWithMagazines _unit;
 
-// ====================================================================================
 // Clothes
 //Random Uniform:
 if ((count _uniforms) == 0) then {
@@ -118,9 +118,9 @@ clearAllItemsFromBackpack _unit;
             };
         };
     };
-} foreach _backpackItems;
+    true;
+} count _backpackItems;
 
-// ====================================================================================
 // Items
 {
     _arr = _x splitString ":";
@@ -131,7 +131,10 @@ clearAllItemsFromBackpack _unit;
             _unit additem _classname;
         };
     };
-} foreach _items;
+    true;
+} count _items;
+
+// Linked Items
 {
     _arr = _x splitString ":";
     if ((count _arr) > 0) then {
@@ -145,7 +148,8 @@ clearAllItemsFromBackpack _unit;
             };
         };
     };
-} foreach _linkedItems;
+    true;
+} count _linkedItems;
 
 // Magazines
 _magazinesNotAdded = [];
@@ -160,20 +164,18 @@ _magazinesNotAdded = [];
             _magazinesNotAdded pushBack _classname;
         };
     };
-} foreach _magazines;
+    true;
+} count _magazines;
 
-// ====================================================================================
 // Weapons
 if ((count _weapons) > 0) then {_unit addWeapon (_weapons call BIS_fnc_selectRandom);};
 if ((count _launchers) > 0) then {_unit addWeapon (_launchers call BIS_fnc_selectRandom);};
 if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectRandom);};
 
-// ====================================================================================
 // attachments
 if (!(_attachments isEqualTo [])) then {
     //Prevents error from adding incompatible attachments
     _primaryWeaponAttachables = [primaryWeapon _unit] call CBA_fnc_compatibleItems;
-    _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
     _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
     {
         (_x splitString ":") params [["_classname", ""]]; //count makes no sense for attachments, ignore
@@ -185,7 +187,8 @@ if (!(_attachments isEqualTo [])) then {
                 {
                     if (isNumber (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (getNumber (_x >> "opticsZoomMin"));};
                     if (isText (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (call compile getText (_x >> "opticsZoomMin"));};
-                } forEach configProperties [_config >> "ItemInfo" >> "OpticsModes"];
+                    true;
+                } count configProperties [_config >> "ItemInfo" >> "OpticsModes"];
                 if (_minZoom < 0.25) then {
                     _addAttachment = false;
                     [_unitClassname, format ["allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom]] call F_fnc_gearErrorLogger;
@@ -194,7 +197,6 @@ if (!(_attachments isEqualTo [])) then {
             if (_addAttachment) then {
                 switch (true) do {
                     case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
-                    case (({_x == _classname} count _secondaryWeaponAttachables) > 0): {_unit addSecondaryWeaponItem _classname;};
                     case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
                     default {
                         [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
@@ -204,7 +206,28 @@ if (!(_attachments isEqualTo [])) then {
         } else {
             [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
         };
-    } foreach _attachments;
+        true;
+    } count _attachments;
+};
+
+// Secondary (Launchers) Attachements
+if (!(_secondaryAttachments isEqualTo [])) then {
+    //Prevents error from adding incompatible attachments
+    _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
+    {
+        (_x splitString ":") params [["_classname", ""]];
+        _config = configFile >> "CfgWeapons" >> _classname;
+        if (isClass _config) then {
+            if (({_x == _classname} count _secondaryWeaponAttachables) > 0) then {
+                _unit addSecondaryWeaponItem _classname;
+            } else {
+                [_unitClassname, format ["Secondary attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+            };
+        } else {
+            [_unitClassname, format ["Secondary attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
+        };
+        true;
+    } count _secondaryAttachments;
 };
 
 //Try to add missing magazines:
@@ -214,7 +237,8 @@ if (!(_attachments isEqualTo [])) then {
     } else {
         [_unitClassname, format ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
     };
-} forEach _magazinesNotAdded;
+    true;
+} count _magazinesNotAdded;
 
 //Run loadout's init code
 _a = _path >> "init";

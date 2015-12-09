@@ -43,19 +43,6 @@ class opf_f {
     // Pistol
     #define EAST_PISTOL "rhs_weap_pya"
     #define EAST_PISTOL_MAG "rhs_mag_9x19_17:2"
-    // GEAR
-    #define EAST_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-    #define EAST_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-    #define EAST_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-    #define EAST_LEADER_TOOLS "ACE_microDAGR","ACE_key_EAST","ACE_Flashlight_KSF1"
-    #define EAST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-    #define EAST_LEADER_LINKED "ItemGPS"
-    // GRENADES
-    #define EAST_BASE_FRAG "rhs_mag_rgd5:2"
-    #define EAST_BASE_GRENADES EAST_BASE_FRAG,"SmokeShell:2"
-    #define EAST_LEADER_GRENADES EAST_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
-    #define EAST_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-    #define EAST_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportWeapons[] = {EAST_AT};
@@ -209,7 +196,7 @@ class opf_f {
         backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","B_Kitbag_rgr","rhs_assault_umbts"}; /// randomized
         weapons[] = {EAST_SMG}; /// randomized
         magazines[] = {EAST_SMG_MAG,EAST_CREW_GRENADES};
-        backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS,"ACRE_PRC148"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
         attachments[] = {"rhs_acc_dtk"};
@@ -222,7 +209,7 @@ class opf_f {
         weapons[] = {EAST_CARBINE}; /// randomized
         magazines[] = {EAST_CARBINE_MAG,EAST_CREW_GRENADES};
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS};
-        backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"Binocular"};
         attachments[] = {EAST_RIFLE_ATTACHMENTS};
     };

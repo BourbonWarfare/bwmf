@@ -168,7 +168,7 @@ class opf_f {
     };
     class O_spotter_F {// Spotter
         headgear[] = {"rhs_tsh4","rhs_fieldcap"}; /// randomized
-        uniform[] = {"LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01_slv"};  /// randomized
+        uniform[] = {"MNP_CombatUniform_DPR_B"};  /// randomized
         vest[] = {"V_TacVest_camo","MNP_Vest_M81","rhs_6b23_ML_6sh92_headset","rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_radio"}; /// randomized
         weapons[] = {EAST_SPOTTER}; /// randomized
         magazines[] = {EAST_SPOTTER_MAG,EAST_BASE_GRENADES};
@@ -176,9 +176,8 @@ class opf_f {
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"ACE_Vector"};
         attachments[] = {"rhs_acc_pso1m2"};
     };
-    class O_sniper_F {// Sniper
+    class O_sniper_F:O_spotter_F {// Sniper
         headgear[] = {"rhs_tsh4","rhs_fieldcap"}; /// randomized
-        uniform[] = {"LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01","LOP_U_US_Fatigue_01_slv"};  /// randomized
         vest[] = {"V_TacVest_camo","MNP_Vest_M81","rhs_6b23_ML_6sh92_headset","rhs_6b23_digi_6sh92_vog_headset","rhs_6b23_digi_6sh92_radio"}; /// randomized
         weapons[] = {EAST_SNIPER}; /// randomized
         magazines[] = {EAST_SNIPER_MAG,EAST_BASE_GRENADES};
@@ -193,7 +192,7 @@ class opf_f {
         backpack[] = {"B_AssaultPack_rgr"};
         weapons[] = {EAST_SMG}; /// randomized
         magazines[] = {EAST_SMG_MAG,EAST_CREW_GRENADES};
-        backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS,"ACRE_PRC148"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
         attachments[] = {"rhs_acc_dtk"};
@@ -206,7 +205,7 @@ class opf_f {
         weapons[] = {EAST_CARBINE}; /// randomized
         magazines[] = {EAST_CARBINE_MAG,EAST_CREW_GRENADES};
         items[] = {EAST_BASE_MEDICAL,EAST_BASE_TOOLS};
-        backpackItems[] = {"ACE_key_EAST","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED,"Binocular"};
         attachments[] = {"rhs_acc_dtk"};
     };

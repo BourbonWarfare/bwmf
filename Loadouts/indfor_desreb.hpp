@@ -42,19 +42,6 @@ class ind_f {
     // Pistol
     #define IND_PISTOL "rhs_weap_makarov_pmm"
     #define IND_PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
-    // GEAR
-    #define IND_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-    #define IND_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-    #define IND_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-    #define IND_LEADER_TOOLS "ACE_microDAGR","ACE_key_indp","ACE_Flashlight_KSF1"
-    #define IND_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"
-    #define IND_LEADER_LINKED "ItemGPS"
-    // GRENADES
-    #define IND_BASE_FRAG "rhs_mag_rgd5:2"
-    #define IND_BASE_GRENADES IND_BASE_FRAG,"SmokeShell:2"
-    #define IND_LEADER_GRENADES IND_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","chemlight_green:2"
-    #define IND_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-    #define IND_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
@@ -203,7 +190,7 @@ class ind_f {
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,IND_CREW_GRENADES};
         items[] = {IND_BASE_MEDICAL,IND_BASE_TOOLS,"ACRE_PRC148"};
-        backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
+        backpackItems[] += {KEY_IND,"ACRE_PRC117F"};
         linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
     };
     class I_crew_F {// Crew
@@ -212,7 +199,7 @@ class ind_f {
         headgear[] = {"H_ShemagOpen_tan","H_ShemagOpen_tan","H_ShemagOpen_tan","rhs_6b26_green","H_Shemag_olive","H_Shemag_olive","H_Shemag_olive"}; /// randomized
         weapons[] = {IND_SMG}; /// randomized
         magazines[] = {IND_SMG_MAG,IND_CREW_GRENADES};
-        backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
+        backpackItems[] += {KEY_IND,"ACRE_PRC117F"};
         items[] = {IND_BASE_MEDICAL,IND_BASE_TOOLS};
         linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED,"Binocular"};
         attachments[] = {IND_RIFLE_ATTACHMENTS};

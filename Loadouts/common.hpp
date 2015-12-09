@@ -2,11 +2,17 @@
 
 // FUNCTIONS
 #define LAUNCHER_GEAR(BACKPACK, MAG) backpack[] = {BACKPACK}; backpackItems[] = {MAG}; items[] += {BASE_MEDICAL};
+#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {BASE_MEDICAL,"ACE_RangeTable_82mm"};
 
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
 #define RADIO_MR "ACRE_PRC148"
 #define RADIO_LR "ACRE_PRC117F"
+
+// KEYS
+#define KEY_WEST "ACE_key_west"
+#define KEY_EAST "ACE_key_east"
+#define KEY_IND "ACE_key_indp"
 
 // GEAR
 #define BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
@@ -28,7 +34,7 @@
 // SIDE SPECIFIC GEAR
 
 // WEST GEAR
-#define WEST_LEADER_TOOLS LEADER_TOOLS,"ACE_key_west"
+#define WEST_LEADER_TOOLS LEADER_TOOLS,KEY_WEST
 #define WEST_BASE_LINKED BASE_LINKED,"rhsusf_ANPVS_14"
 
 // WEST GRENADES
@@ -36,8 +42,18 @@
 #define WEST_BASE_GRENADES WEST_BASE_FRAG,BASE_SMOKES
 #define WEST_LEADER_GRENADES WEST_BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 
+// WEST MAT
+#define WEST_MAT "sam_grg_m86"
+#define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
+#define WEST_MAT_OPTIC "sam_acco_m86"
+
+// WEST SAM
+#define WEST_SAM "rhs_weap_fim92"
+#define WEST_SAM_MAG "rhs_fim92_mag:3"
+#define WEST_SAM_MAG2 "rhs_fim92_mag:2"
+
 // IND GEAR
-#define IND_LEADER_TOOLS LEADER_TOOLS,"ACE_key_indp"
+#define IND_LEADER_TOOLS LEADER_TOOLS,KEY_IND
 #define IND_BASE_LINKED BASE_LINKED,"rhsusf_ANPVS_14"
 
 // IND GRENADES
@@ -46,9 +62,8 @@
 #define IND_LEADER_GRENADES IND_BASE_FRAG,LEADER_SMOKES,"chemlight_green:2"
 
 // EAST GEAR
-#define EAST_LEADER_TOOLS "ACE_microDAGR","ACE_key_EAST","ACE_Flashlight_KSF1"
-#define EAST_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-#define EAST_LEADER_LINKED "ItemGPS"
+#define EAST_LEADER_TOOLS LEADER_TOOLS,KEY_EAST
+#define EAST_BASE_LINKED BASE_LINKED,"nvgoggles"
 
 // EAST GRENADES
 #define EAST_BASE_FRAG "rhs_mag_rgd5:2"

@@ -49,19 +49,6 @@ class rhs_faction_msv {
     // Pistol
     #define MSV_PISTOL "rhs_weap_pya"
     #define MSV_PISTOL_MAG "rhs_mag_9x19_17:2"
-    // GEAR
-    #define MSV_BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-    #define MSV_MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-    #define MSV_BASE_TOOLS "ACRE_PRC343","ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-    #define MSV_LEADER_TOOLS "ACE_microDAGR","ACE_key_east","ACE_Flashlight_KSF1"
-    #define MSV_BASE_LINKED "ItemMap","ItemCompass","ItemWatch","nvgoggles"
-    #define MSV_LEADER_LINKED "ItemGPS"
-    // GRENADES
-    #define MSV_BASE_FRAG "rhs_mag_rgd5:2"
-    #define MSV_BASE_GRENADES MSV_BASE_FRAG,"SmokeShell:2"
-    #define MSV_LEADER_GRENADES MSV_BASE_FRAG,"SmokeShell:4","SmokeShellGreen:2","Chemlight_red:2"
-    #define MSV_MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-    #define MSV_CREW_GRENADES "SmokeShell:2"
 
     class Car {
         TransportWeapons[] = {MSV_LAT};
@@ -228,7 +215,7 @@ class rhs_faction_msv {
         backpack[] = {"rhs_sidor"}; /// randomized
         weapons[] = {MSV_SMG}; /// randomized
         magazines[] = {MSV_SMG_MAG,MSV_CREW_GRENADES};
-        backpackItems[] = {"ACE_key_east","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         items[] = {MSV_BASE_MEDICAL,MSV_BASE_TOOLS,"ACRE_PRC148"};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED};
         attachments[] = {"rhs_acc_dtk"};
@@ -241,7 +228,7 @@ class rhs_faction_msv {
         weapons[] = {MSV_CARBINE}; /// randomized
         magazines[] = {MSV_CARBINE_MAG,MSV_CREW_GRENADES};
         items[] = {MSV_BASE_MEDICAL,MSV_BASE_TOOLS};
-        backpackItems[] = {"ACE_key_east","ACRE_PRC117F"};
+        backpackItems[] = {KEY_EAST,"ACRE_PRC117F"};
         linkedItems[] = {MSV_BASE_LINKED,MSV_LEADER_LINKED,"Binocular"};
         attachments[] = {"rhs_acc_dtk"};
     };

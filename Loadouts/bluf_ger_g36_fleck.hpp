@@ -25,12 +25,6 @@ class blu_f {
   // MMG
   #define WEST_MMG "BWA3_MG5"
   #define WEST_MMG_MAG "BWA3_120Rnd_762x51:4"
-  // MAT
-  #define WEST_MAT "sam_grg_m86"
-  #define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
-  // SAM
-  #define WEST_SAM "rhs_weap_fim92"
-  #define WEST_SAM_MAG "rhs_fim92_mag:3"
   // Sniper Rifle
   #define WEST_SNIPER "BWA3_G28_Standard"
   #define WEST_SNIPER_MAG "BWA3_10Rnd_762x51_G28:10"
@@ -46,24 +40,20 @@ class blu_f {
 
   class Car {
     TransportWeapons[] = {WEST_AT};
-    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
+    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
     TransportItems[] = {WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL};
   };
   class Tank {
     TransportWeapons[] = {WEST_AT};
-    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
+    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
     TransportItems[] = {WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL};
   };
   class Helicopter {
     TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
     TransportItems[] = {WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL};
   };
-  class Plane {
-    TransportMagazines[] = {};
-  };
-  class Ship_F {
-    TransportMagazines[] = {};
-  };
+  class Plane {};
+  class Ship_F {};
 
   class B_Soldier_F {// rifleman
     uniform[] = {"BWA3_Uniform_Fleck","BWA3_Uniform2_Fleck"};
@@ -72,8 +62,6 @@ class blu_f {
     backpack[] = {"BWA3_Kitbag_Fleck"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
-    launchers[] = {};
-    handguns[] = {};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
     items[] = {BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
@@ -138,7 +126,7 @@ class blu_f {
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
     LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
     launchers[] = {WEST_MAT};
-    attachments[] += {"sam_acco_m86"};
+    secondaryAttachments[] = {WEST_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
     LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
@@ -151,12 +139,10 @@ class blu_f {
     LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
-    items[] += {BASE_MEDICAL,"ACE_RangeTable_82mm"};
-    backpack[] = {"B_Mortar_01_weapon_F"};
+    MORTAR_GEAR("B_Mortar_01_weapon_F")
   };
   class B_support_AMort_F: Fic_Spotter {// Assistant Mortar
-    items[] += {BASE_MEDICAL,"ACE_RangeTable_82mm"};
-    backpack[] = {"B_Mortar_01_support_F"};
+    MORTAR_GEAR("B_Mortar_01_support_F")
   };
   class B_spotter_F: Fic_Spotter {// Spotter
     uniform[] = {"BWA3_Uniform_Ghillie_Fleck"};
@@ -165,6 +151,7 @@ class blu_f {
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
+    linkedItems[] += {LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
@@ -180,7 +167,7 @@ class blu_f {
     headgear[] = {"H_PilotHelmetHeli_B"};
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
-    backpackItems[] = {"ACE_key_west",RADIO_LR};
+    backpackItems[] = {KEY_WEST,RADIO_LR};
     items[] = {BASE_MEDICAL,BASE_TOOLS,RADIO_MR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
@@ -190,11 +177,11 @@ class blu_f {
     headgear[] = {"BWA3_CrewmanKSK_Fleck_Headset"};
     backpack[] = {"BWA3_Kitbag_Fleck"};
     magazines[] = {WEST_CARBINE_MAG,CREW_GRENADES};
-    backpackItems[] = {"ACE_key_west",RADIO_LR};
+    backpackItems[] = {KEY_WEST,RADIO_LR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,BINOS};
   };
   class B_soldier_repair_F: B_crew_F {// Repair Specialist
-    backpackItems[] = {"Toolkit",RADIO_MR,"ACE_key_west"};
+    backpackItems[] = {"Toolkit",RADIO_MR,KEY_WEST};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class Fic_eng: B_soldier_repair_F {

@@ -80,7 +80,7 @@ class ind_f {
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_PISTOL_MAG,"BWA3_DM51A1:2","SmokeShell:2"};
         handguns[] = {IND_PISTOL};
         linkedItems[] += {"ACE_Vector","ItemGPS"};
-        backpackItems[] += {"ACE_key_indp","chemlight_green:2"};
+        backpackItems[] += {KEY_IND,"chemlight_green:2"};
         items[] = {"ACRE_PRC148","ACE_microDAGR","ACRE_PRC343","ACE_MapTools"};
     };
     class I_Soldier_SL_F: I_Officer_F {// SL
@@ -97,7 +97,7 @@ class ind_f {
         magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,"BWA3_DM51A1:2","SmokeShell:2","BWA3_DM32_Orange:2"};
         items[] = {"ACRE_PRC343","ACE_microDAGR","ACE_MapTools"};
         linkedItems[] += {"ACE_microDAGR","Binocular"};
-        backpackItems[] += {"ACE_key_indp","chemlight_green:2"};
+        backpackItems[] += {KEY_IND,"chemlight_green:2"};
     };
     class I_Soldier_AR_F: I_Soldier_F {// AR
         vest[] = {"BWA3_Vest_Autorifleman_Tropen"};
@@ -200,7 +200,7 @@ class ind_f {
         weapons[] = {IND_SMG};
         magazines[] = {IND_SMG_MAG,"SmokeShell:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148","ACE_earplugs", "ACRE_PRC343"};
-        backpackItems[] = {"ACE_key_indp","ACRE_PRC117F"};
+        backpackItems[] = {KEY_IND,"ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
     class I_crew_F {// Crew
@@ -210,7 +210,7 @@ class ind_f {
         backpack[] = {"BWA3_AssaultPack_Tropen"};
         weapons[] = {IND_SMG};
         magazines[] = {IND_SMG_MAG,"SmokeShell:2"};
-        backpackItems[] = {"ACE_key_indp","ACRE_PRC117F"};
+        backpackItems[] = {KEY_IND,"ACRE_PRC117F"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC343","ACE_earplugs","ACE_MapTools"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","Binocular"};
     };

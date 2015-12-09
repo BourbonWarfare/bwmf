@@ -8,6 +8,7 @@
     ["UnitNATO_DSL_M","DM"], \
     ["UnitNATO_ESL_M","EM"], \
     ["UnitNATO_FSL_M","FM"], \
+    ["UnitNATO_WSL_M","FM"], \
     \
     ["UnitCSAT_CO_M","COM"], \
     ["UnitCSAT_DC_M","DCM"], \
@@ -34,7 +35,7 @@
     ["UnitMSV_ESL_SR","ESR"], \
     ["UnitMSV_FSL_SR","FSR"] \
     ]
-    
+
 #define WEST_GROUPS [ \
     ["UnitNATO_COY", "NATO COY -"], \
     ["UnitNATO_1PLT", "NATO 1PLT -"], \
@@ -82,6 +83,7 @@
     ["UnitNATO_ST1", "NATO ST1 -"], \
     ["UnitNATO_DT1", "NATO DT1 -"], \
     ["UnitNATO_ENG1", "NATO ENG1 -"], \
+    ["UnitNATO_WSL", "NATO WSL -"], \
     \
     ["UnitNATO_IFV1", "NATO IFV1 -"], \
     ["UnitNATO_IFV2", "NATO IFV2 -"], \
