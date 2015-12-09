@@ -8,19 +8,21 @@
     ["UnitNATO_DSL_M","DM"], \
     ["UnitNATO_ESL_M","EM"], \
     ["UnitNATO_FSL_M","FM"], \
-    ["UnitNATO_WSL_M","FM"], \
+    ["UnitNATO_WSL_M","WSM"], \
     \
-    ["UnitCSAT_CO_M","COM"], \
-    ["UnitCSAT_DC_M","DCM"], \
-    ["UnitCSAT_ASL_M","AM"], \
-    ["UnitCSAT_BSL_M","BM"], \
-    ["UnitCSAT_CSL_M","CM"], \
+    ["UnitOPFOR_CO_M","COM"], \
+    ["UnitOPFOR_DC_M","DCM"], \
+    ["UnitOPFOR_ASL_M","AM"], \
+    ["UnitOPFOR_BSL_M","BM"], \
+    ["UnitOPFOR_CSL_M","CM"], \
+    ["UnitOPFOR_WSL_M","WSM"], \
     \
-    ["UnitAAF_CO_M","COM"], \
-    ["UnitAAF_DC_M","DCM"], \
-    ["UnitAAF_ASL_M","AM"], \
-    ["UnitAAF_BSL_M","BM"], \
-    ["UnitAAF_CSL_M","CM"], \
+    ["UnitIND_CO_M","COM"], \
+    ["UnitIND_DC_M","DCM"], \
+    ["UnitIND_ASL_M","AM"], \
+    ["UnitIND_BSL_M","BM"], \
+    ["UnitIND_CSL_M","CM"], \
+    ["UnitIND_WSL_M","WSM"], \
     \
     ["UnitMSV_ASL_VD","AV"], \
     ["UnitMSV_BSL_VD","BV"], \
@@ -106,7 +108,6 @@
     ["UnitNATO_AH1", "NATO AH1 -"], \
     ["UnitNATO_AH2", "NATO AH2 -"] \
     ]\
-    // ====================================================================================
 
 // GROUP IDs: OPFOR > OPFOR
 // Automatically assigns intelligible names to groups
@@ -139,6 +140,7 @@
     ["UnitOPFOR_ST1", "OPFOR ST1 -"], \
     ["UnitOPFOR_DT1", "OPFOR DT1 -"], \
     ["UnitOPFOR_ENG1", "OPFOR ENG1 -"], \
+    ["UnitOPFOR_WSL", "OPFOR WSL -"], \
     \
     ["UnitOPFOR_IFV1", "OPFOR IFV1 -"], \
     ["UnitOPFOR_IFV2", "OPFOR IFV2 -"], \
@@ -237,6 +239,7 @@
     ["UnitIND_ST1", "IND ST1 -"], \
     ["UnitIND_DT1", "IND DT1 -"], \
     ["UnitIND_ENG1", "IND ENG1 -"], \
+    ["UnitIND_WSL", "IND WSL -"], \
     \
     ["UnitIND_IFV1", "IND IFV1 -"], \
     ["UnitIND_IFV2", "IND IFV2 -"], \

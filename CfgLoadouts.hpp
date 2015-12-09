@@ -17,17 +17,17 @@ class CfgLoadouts {
     //Only include one hpp per faction; use (//) to comment out other files
 
     //BLUFOR FACTION (blu_f):
-    #include "Loadouts\bluf_us_m4_ocp.hpp"        // US: M4 - Tan
-    // #include "Loadouts\bluf_us_m4_ucp.hpp"     // US: M4 - Gray/Green
-    // #include "Loadouts\bluf_brit_l85_mtp.hpp"  // British: L86 - Multi-Terrain Pattern
-    // #include "Loadouts\bluf_swede_ak5_m90.hpp" // Swedish: AK5 - Fish
-    // #include "Loadouts\bluf_ger_g36_fleck.hpp" // Germans: G36 - Flecktarn Camo
+    #include "Loadouts\bluf_us_m4_ocp.hpp"            // US: M4 - Tan
+    // #include "Loadouts\bluf_us_m4_ucp.hpp"         // US: M4 - Gray/Green
+    // #include "Loadouts\bluf_brit_l85_mtp.hpp"      // British: L86 - Multi-Terrain Pattern
+    // #include "Loadouts\bluf_swede_ak5_m90.hpp"     // Swedish: AK5 - Fish
+    // #include "Loadouts\bluf_ger_g36_fleck.hpp"     // German: G36 - Flecktarn Camo
 
     //INDFOR FACTION (ind_f):
-    // #include "Loadouts\indfor_desreb.hpp"        //
-    // #include "Loadouts\indfor_standard.hpp"      //
-    // #include "Loadouts\indfor_standard2.hpp"        //Our Standard "ukraine" loadout
-    // #include "Loadouts\indfor_germans.hpp"        //Germans: G36 - Tropen Camo
+    // #include "Loadouts\indf_ukr_ak74_ttsko.hpp"       // Ukraine: AK74 - TTskO
+    // #include "Loadouts\indf_ukr_ak74_ddpm.hpp"     // "Ukraine": AK74 - Desert DPM
+    // #include "Loadouts\indf_reb_ak74_desert.hpp"   // Rebel: AK74 - Mixed Desert
+    #include "Loadouts\indf_ger_g36_tropen.hpp"    // German: G36 - Tropen Camo
 
     //OPFOR FACTION (opf_f):
     // #include "Loadouts\opfor_desreb.hpp"         //Our standard "middle-east" loadout
@@ -38,5 +38,5 @@ class CfgLoadouts {
     // #include "Loadouts\russian_sov-sweedish.hpp"    //Soviet's "sweedish" loadout
 
     //Civilians (mainly for RP missions)
-    // #include "Loadouts\civilians.hpp"               //Bare example of doing civilian loadouts
+    #include "Loadouts\civilians.hpp"               //Bare example of doing civilian loadouts
 };

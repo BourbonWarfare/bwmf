@@ -167,7 +167,7 @@ switch true do {
         _texture = _air;
         _color = _orange ;
     };
-    case (_input in ["COM","DCM","P1M","P2M","AM","BM","CM","DM","EM","FM"]): {
+    case (_input in ["COM","DCM","P1M","P2M","AM","BM","CM","DM","EM","FM","WSM"]): {
         _texture = _med;
         _color = _pink;
         _size = [16,16];

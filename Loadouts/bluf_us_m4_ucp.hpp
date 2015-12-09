@@ -63,10 +63,8 @@ class blu_f {
     backpack[] = {"rhsusf_assault_eagleaiii_ucp"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
-    launchers[] = {};
-    handguns[] = {};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
-    items[] = {BASE_TOOLS};
+    items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
@@ -140,7 +138,7 @@ class blu_f {
     launchers[] = {WEST_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_mcamo", WEST_SAM_MAG)
+    LAUNCHER_GEAR("B_Carryall_mcamo", WEST_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -154,12 +152,12 @@ class blu_f {
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-    linkedItems[] += {LEADER_LINKED};
+    linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
     magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
-    items[] = {BASE_MEDICAL,BASE_TOOLS,"ACE_RangeCard"};
+    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15A"};
   };
@@ -171,7 +169,7 @@ class blu_f {
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
-    items[] = {BASE_MEDICAL,BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,RADIO_MR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot

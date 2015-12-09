@@ -63,7 +63,7 @@ class blu_f {
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
-    items[] = {BASE_TOOLS};
+    items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
@@ -155,7 +155,7 @@ class blu_f {
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-    linkedItems[] += {LEADER_LINKED};
+    linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
@@ -165,14 +165,14 @@ class blu_f {
     attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
   };
   class B_Helipilot_F {// Pilot
-      uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
+    uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
     backpack[] = {"B_AssaultPack_blk"};
     vest[] = {"UK3CB_BAF_V_Pilot_A"};
     headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
-    items[] = {BASE_MEDICAL,BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,RADIO_MR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot

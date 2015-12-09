@@ -32,11 +32,11 @@ class blu_f {
   #define WEST_SPOTTER "BWA3_G36"
   #define WEST_SPOTTER_MAG "BWA3_30Rnd_556x45_G36:8"
   // SMG
-  #define WEST_SMG "hlc_smg_mp5a4"
-  #define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
+  #define IND_SMG "BWA3_MP7"
+  #define IND_SMG_MAG "BWA3_40Rnd_46x30_MP7:6"
   // Pistol
-  #define WEST_PISTOL "rhsusf_weap_m1911a1"
-  #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+  #define IND_PISTOL "BWA3_P8"
+  #define IND_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
@@ -63,7 +63,7 @@ class blu_f {
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
-    items[] = {BASE_TOOLS};
+    items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
@@ -136,7 +136,7 @@ class blu_f {
     launchers[] = {WEST_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG)
+    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -151,7 +151,7 @@ class blu_f {
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-    linkedItems[] += {LEADER_LINKED};
+    linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
@@ -168,7 +168,7 @@ class blu_f {
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
-    items[] = {BASE_MEDICAL,BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,RADIO_MR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot
