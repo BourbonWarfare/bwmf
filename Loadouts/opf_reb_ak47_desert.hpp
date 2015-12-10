@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: ?? - Ak Rifles
+//Description: Rebel: AK47 - Mixed Desert
 
 class opf_f {
   //Rifle

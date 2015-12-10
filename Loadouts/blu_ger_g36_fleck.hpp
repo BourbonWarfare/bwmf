@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: German Flekterarian Camo G36
+//Description: German: G36 - Flecktarn Camo
 
 class blu_f {
   //Rifle

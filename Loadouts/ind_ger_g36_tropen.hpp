@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: German Tropen Camo (WIP)
+//Description: German: G36 - Tropen Camo
 
 class ind_f {
   //Rifle

@@ -1,5 +1,5 @@
 //Author: Soviet
-//Description: Sveedish - AK5 Rifles
+//Description: Swedish: AK5 - M90K (Desert)
 
 class rhs_faction_msv {
   //Rifle

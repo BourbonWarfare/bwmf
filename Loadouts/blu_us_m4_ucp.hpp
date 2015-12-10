@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: US UCP - M4 Rifles
+//Description: US: M4 - Gray/Green
 
 class blu_f {
   //Rifle

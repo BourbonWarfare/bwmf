@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Russians - AK Rifles
+//Description: Russian: AK74 - Digital FLoral Summer
 
 class rhs_faction_msv {
   //Rifle

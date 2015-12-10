@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Ukrainian - AK rifles
+//Description: "Ukraine": AK74 - Desert DPM
 
 class ind_f {
   //Rifle

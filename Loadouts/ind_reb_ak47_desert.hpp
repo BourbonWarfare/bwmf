@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Desert Militia - AK rifles
+//Description: Rebel: AK47 - Mixed Desert
 
 class ind_f {
   //Rifle

@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: ?? - Ak Rifles
+//Description: Russian: AK74 - Floral
 
 class opf_f {
   //Rifle

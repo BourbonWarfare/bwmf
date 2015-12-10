@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Ukrainian - AK rifles
+//Description: Ukraine: AK74 - TTskO (Green)
 
 class ind_f {
   //Rifle

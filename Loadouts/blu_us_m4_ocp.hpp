@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: US OCP - M4 Rifles
+//Description: US: M4 - Tan
 
 class blu_f {
   //Rifle

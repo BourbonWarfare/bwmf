@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Swedish Feesh
+//Description: Swedish: AK5 - M90 (Green)
 
 class blu_f {
   //Rifle
