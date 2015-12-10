@@ -21,7 +21,7 @@ if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "use
 
 if (!isClass(_path)) exitWith {
     [_unitClassname, "No loadout found, using default gear"] call F_fnc_gearErrorLogger;
-    player setVariable ["F_Gear_Setup", true, true];
+    _unit setVariable ["F_Gear_Setup", true, true];
 };
 
 _allowMagnifiedOptics = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics")) then {
