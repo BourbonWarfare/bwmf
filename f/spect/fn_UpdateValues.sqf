@@ -6,8 +6,7 @@ _listBox =  2103;
 f_cam_checkIndex = {
   {
     _x SetVariable ["f_spect_listBoxIndex", _forEachIndex];
-    true;
-  } count f_cam_listUnits;
+  } forEach f_cam_listUnits;
 };
 
 while {true} do {
@@ -36,7 +35,7 @@ while {true} do {
     if (!(_x in f_cam_listUnits) && ({alive _x} count units _x) > 0 ) then {
       _text = toString(toArray(groupID _x) - [45]);
       _index = lbAdd [_listBox,_text];
-      _x SetVariable ["f_spect_listBoxIndex",_index];
+      _x SetVariable ["f_spect_listBoxIndex", _index];
       f_cam_listUnits pushBack _x;
       lbSetColor [_listBox,_index,[side _x,false] call BIS_fnc_sideColor];
       {
@@ -56,33 +55,29 @@ while {true} do {
 
   {
     _index = _x GetVariable ["f_spect_listBoxIndex",-1];
-    if (typeName _x == "GROUP") then
-    {
-      if (_index >= 0 && ({alive _x} count units _x) > 0 && {lbText [_listBox,_index] != (toString(toArray(groupID _x) - [45]))}) then
-      {
+    if (typeName _x == "GROUP") then {
+      if (_index >= 0 && ({alive _x} count units _x) > 0 && {lbText [_listBox,_index] != (toString(toArray(groupID _x) - [45]))}) then {
         // there is no lbSetText, so just punt it out of the list and fix it up there..
         lbDelete [_listBox,_index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
-      if (({alive _x} count units _x) <= 0  && _index >= 0) then
-      {
+      if (({alive _x} count units _x) <= 0  && _index >= 0) then {
         lbDelete [_listBox,_index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
     }
-    else
-    {
-      _val = lbText [_listBox,_index] != "    " + name _x;
+    else {
+      _val = lbText [_listBox, _index] != "    " + name _x;
 
       if (_index >= 0 && alive _x && _val ) then {
-        lbDelete [_listBox,_index];
+        lbDelete [_listBox, _index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
       if (!alive _x && _index >= 0) then {
-        lbDelete [_listBox,_index];
+        lbDelete [_listBox, _index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };

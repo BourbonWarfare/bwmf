@@ -198,6 +198,8 @@
     ["UnitMSV_IFV7", "MSV IFV7 -"], \
     ["UnitMSV_IFV8", "MSV IFV8 -"], \
     ["UnitMSV_TNK1", "MSV TNK1 -"], \
+    ["UnitMSV_W1", "MSV WV1 -"], \
+    ["UnitMSV_W2", "MSV WV2 -"], \
     \
     ["UnitMSV_TH1", "MSV TH1 -"], \
     ["UnitMSV_TH2", "MSV TH2 -"], \
@@ -207,7 +209,8 @@
     ["UnitMSV_TH6", "MSV TH6 -"], \
     ["UnitMSV_TH7", "MSV TH7 -"], \
     ["UnitMSV_TH8", "MSV TH8 -"], \
-    ["UnitMSV_AH1", "MSV AH1 -"] \
+    ["UnitMSV_AH1", "MSV AH1 -"], \
+    ["UnitMSV_AH2", "MSV AH2 -"] \
     ]
 
 #define INDP_GROUPS [ \

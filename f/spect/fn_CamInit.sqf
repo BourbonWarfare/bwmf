@@ -1,20 +1,19 @@
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
+
 // params
 _this spawn {
-  _unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
-  _oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
-  _forced = [_this, 4, false,[false]] call BIS_fnc_param;
+  _unit = [_this, 0, player, [objNull]] call BIS_fnc_param;
+  _oldUnit = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
+  _forced = [_this, 4, false, [false]] call BIS_fnc_param;
 
   // escape the script if you are not a seagull unless forced
-  if (typeof _unit != "seagull" && !_forced || !hasInterface) ExitWith {};
-  // disable this to instantly switch to the spectator script.
-  waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen",true] || isNull (_oldUnit) || _forced };
+  if (typeof _unit != "seagull" && !_forced || !hasInterface) exitWith {};
 
-  if (!isnil "BIS_fnc_feedback_allowPP") then {
-    // disable effects death effects
-    BIS_fnc_feedback_allowPP = false;
+  waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || _forced };
+
+  if (!isNil "BIS_fnc_feedback_allowPP") then {
+    BIS_fnc_feedback_allowPP = false; // disable effects death effects
   };
 
   // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
@@ -29,7 +28,7 @@ _this spawn {
     _newUnit setVariable ["timeOfDeath", serverTime, true];
 
     selectPlayer _newUnit;
-    waituntil{ player == _newUnit };
+    waitUntil { player == _newUnit };
     deleteVehicle _unit;
     f_cam_VirtualCreated = true;
   };
@@ -96,11 +95,9 @@ _this spawn {
   f_cam_shift_down = false;
   f_cam_freecam_buttons = [false,false,false,false,false,false];
   f_cam_forcedExit = false;
-
   f_cam_timestamp = time;
   f_cam_muteSpectators = true;
 
-  // ====================================================================================
   // Menu (Top left)
   f_cam_menuControls = [2111,2112,2113,2114,2101,4302];
   f_cam_menuShownTime = 0;
@@ -108,16 +105,14 @@ _this spawn {
   f_cam_menuWorking = false;
   f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
   f_cam_sideNames = ["All Sides","Blufor","Opfor","Indfor","Civ"];
-  // ====================================================================================
-  // Colors
 
+  // Colors
   f_cam_blufor_color = [BLUFOR] call bis_fnc_sideColor;
   f_cam_opfor_color = [OPFOR] call bis_fnc_sideColor;
   f_cam_indep_color = [independent] call bis_fnc_sideColor;
   f_cam_civ_color = [civilian] call bis_fnc_sideColor;
   f_cam_empty_color = [sideUnknown] call bis_fnc_sideColor;
 
-  // ================================
   // Camera
   f_cam_angle = 360;
   f_cam_zoom = 3;
@@ -125,20 +120,17 @@ _this spawn {
   f_cam_fovZoom = 1.2;
   f_cam_scrollHeight = 0;
   f_cam_cameraMode = 0; // set camera mode (default)
-  // ====================================================================================
 
   f_cam_listUnits = [];
 
   f_cam_ToggleFPCamera = {
     f_cam_toggleCamera = !f_cam_toggleCamera;
-    if(f_cam_toggleCamera) then
-    {
+    if(f_cam_toggleCamera) then {
       f_cam_mode = 1; //(view)
       f_cam_camera cameraEffect ["terminate", "BACK"];
       f_cam_curTarget switchCamera "internal";
     }
-    else
-    {
+    else {
       f_cam_mode = 0;
       f_cam_camera cameraEffect ["internal", "BACK"];
     };
@@ -146,25 +138,19 @@ _this spawn {
   };
   f_cam_GetCurrentCam = {
     _camera = f_cam_camera;
-    switch(f_cam_mode) do
-    {
-      case 0:
-      {
+    switch(f_cam_mode) do {
+      case 0: {
           _camera = f_cam_camera; // Standard
       };
-      case 1:
-      {
+      case 1: {
         _camera = cameraOn; // FP
       };
-      case 3:
-      {
+      case 3: {
         _camera = f_cam_freecamera; // freecam
       };
     };
     _camera
   };
-
-  // =============================================================================
 
   // create the UI
   createDialog "f_spec_dialog";
@@ -193,8 +179,7 @@ _this spawn {
   f_cam_camera camSetFov 1.2;
   f_cam_freecamera camSetFov 1.2;
   f_cam_zeusKey = 21;
-  if( count (actionKeys "curatorInterface") > 0 ) then
-  {
+  if (count (actionKeys "curatorInterface") > 0) then {
       f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
   };
 
@@ -204,11 +189,11 @@ _this spawn {
 
   f_cam_fired = [];
   {
-    _event = _x addEventHandler ["fired",{f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6)}];
-    _x setVariable ["f_cam_fired_eventid",_event];
+    _event = _x addEventHandler ["fired", { f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6) }];
+    _x setVariable ["f_cam_fired_eventid" ,_event];
     true;
   } count (allunits + vehicles);
-  // ====================================================================================
+
   // spawn sub scripts
   call f_fnc_ReloadModes;
   lbSetCurSel [2101,0];

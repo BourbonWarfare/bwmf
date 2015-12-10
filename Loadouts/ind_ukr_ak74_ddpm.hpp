@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: Desert Militia - AK rifles
+//Description: Ukrainian - AK rifles
 
 class ind_f {
   //Rifle
@@ -23,7 +23,7 @@ class ind_f {
   #define IND_AT_MAG "rhs_rpg7_PG7VL_mag:1"
   // MMG
   #define IND_MMG "rhs_weap_pkm"
-  #define IND_MMG_MAG "rhs_100Rnd_762x54mmR:5"
+  #define IND_MMG_MAG "rhs_100Rnd_762x54mmR:3","rhs_100Rnd_762x54mmR_green:2"
   // Sniper Rifle
   #define IND_SNIPER "rhs_weap_svdp"
   #define IND_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:10"
@@ -31,7 +31,7 @@ class ind_f {
   #define IND_SPOTTER "rhs_weap_svdp"
   #define IND_SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:10"
   // SMG
-  #define IND_SMG "hlc_rifle_aks74u"
+  #define IND_SMG IND_CARBINE
   #define IND_SMG_MAG "hlc_30Rnd_545x39_B_AK:8"
   // Pistol
   #define IND_PISTOL "rhs_weap_makarov_pmm"
@@ -44,21 +44,21 @@ class ind_f {
   };
   class Tank {
     TransportWeapons[] = {IND_AT};
-    TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE};
+    TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
     TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
   };
   class Helicopter {
-    TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE,IND_AT_MAG};
+    TransportMagazines[] = {IND_RIFLE_MAG,IND_RIFLE_MAG,IND_CARBINE_MAG,IND_AR_MAG,IND_AR_MAG,IND_GLRIFLE_MAG_HE};
     TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
   };
   class Plane {};
   class Ship_F {};
 
   class I_Soldier_F {// rifleman
-    uniform[] = {"MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA"};
-    vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B","MNP_Vest_UKR_B","V_TacVest_brn","V_TacVest_khk"};
-    headgear[] = {"H_ShemagOpen_tan","H_Shemag_olive"};
-    backpack[] = {"B_AssaultPack_rgr","B_AssaultPack_mcamo","B_AssaultPack_rgr","rhs_assault_umbts"};
+    uniform[] = {"MNP_CombatUniform_DDPMR"};
+    vest[] = {"MNP_Vest_6co_A","MNP_Vest_6co_B"};
+    headgear[] = {"MNP_Helmet_PAGST_US6co","H_Bandanna_cbr","MNP_Boonie_DDPM"};
+    backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {IND_RIFLE};
     magazines[] = {IND_RIFLE_MAG,IND_BASE_GRENADES};
@@ -71,14 +71,13 @@ class ind_f {
     magazines[] = {IND_CARBINE_MAG,IND_BASE_GRENADES};
   };
   class I_Soldier_TL_F: I_Soldier_F {// FTL
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
+    headgear[] = {"MNP_Helmet_PAGST_US6co","MNP_Boonie_DDPM","MNP_MC_US6co"};
     weapons[] = {IND_GLRIFLE};
     magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_LEADER_GRENADES};
     items[] += {IND_LEADER_TOOLS};
     linkedItems[] += {IND_LEADER_LINKED,BINOS};
   };
   class I_Soldier_SL_F: I_Soldier_TL_F {// SL
-    backpack[] = {"B_Kitbag_rgr"};
     handguns[] = {IND_PISTOL};
     magazines[] += {IND_PISTOL_MAG};
     linkedItems[] += {IND_BASE_LINKED,IND_LEADER_LINKED,RANGE_FINDER};
@@ -88,7 +87,6 @@ class ind_f {
     items[] += {RADIO_LR};
   };
   class I_soldier_UAV_F: I_Soldier_F {
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     backpack[] = {"I_UAV_01_backpack_F"};
     linkedItems[] += {"I_uavterminal"};
   };
@@ -109,25 +107,20 @@ class ind_f {
   };
   class I_medic_F: Fic_Soldier_Carbine {// Medic
     magazines[] = {IND_CARBINE_MAG,MEDIC_GRENADES};
-    backpack[] = {"B_Kitbag_rgr"};
     backpackItems[] = {MEDIC_MEDICAL};
   };
   class Fic_Spotter: I_Soldier_F {
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     linkedItems[] += {RANGE_FINDER};
   };
   class I_support_MG_F: I_Soldier_AR_F {// MMG
-    backpack[] = {"B_Kitbag_rgr"};
     weapons[] = {IND_MMG};
     magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_BASE_GRENADES};
     attachments[] = {};
   };
   class I_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-    backpack[] = {"B_Kitbag_rgr"};
     backpackItems[] += {IND_MMG_MAG};
   };
   class I_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG)
     launchers[] = {EAST_MAT};
     secondaryAttachments[] = {EAST_MAT_OPTIC};
@@ -136,7 +129,6 @@ class ind_f {
     LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG2)
   };
   class I_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
     launchers[] = {EAST_SAM};
   };
@@ -144,15 +136,13 @@ class ind_f {
     LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
   };
   class I_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     MORTAR_GEAR("I_Mortar_01_weapon_F")
   };
   class I_support_AMort_F: Fic_Spotter {// Assistant Mortar
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     MORTAR_GEAR("I_Mortar_01_support_F")
   };
   class I_spotter_F: Fic_Spotter {// Spotter
-    backpack[] = {"B_AssaultPack_rgr"};
+    headgear[] = {"H_Booniehat_khk_hs"};
     weapons[] = {IND_SPOTTER};
     magazines[] = {IND_SPOTTER_MAG,IND_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
@@ -179,10 +169,10 @@ class ind_f {
   };
   class I_helicrew_F: I_Helipilot_F {}; // Pilot
   class I_crew_F: Fic_Soldier_Carbine {// Crew
-    vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     magazines[] = {IND_CARBINE_MAG,CREW_GRENADES};
     backpackItems[] += {KEY_IND,RADIO_LR};
     linkedItems[] += {IND_LEADER_LINKED,BINOS};
+    items[] += {BASE_MEDICAL};
   };
   class I_Soldier_repair_F: I_crew_F {// Repair Specialist
     backpack[] = {"B_Carryall_khk"};

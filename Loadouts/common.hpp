@@ -47,6 +47,7 @@
 // WEST MAT
 #define WEST_MAT "sam_grg_m86"
 #define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
+#define WEST_MAT_MAG2 "sam_grg_heat:2","sam_grg_he:2"
 #define WEST_MAT_OPTIC "sam_acco_m86"
 
 // WEST SAM
