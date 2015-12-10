@@ -247,4 +247,4 @@ if (isText _a) then {
 };
 
 [_unitClassname, "Done", (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
-player setVariable ["F_Gear_Setup", true, true];
+_unit setVariable ["F_Gear_Setup", true, true];
