@@ -18,11 +18,11 @@ if (!hasInterface) exitWith {};
           case (civilian): {"#880099"};//[0.6,0,0.75,1]
           default {"#FFFFFF"};
         };
-        _diaryBuilder format ["<br/><font color='%1' size='16'>%2</font><br/>", _color, (groupID _x)];
+        _diaryBuilder pushBack format ["<br/><font color='%1' size='16'>%2</font><br/>", _color, (groupID _x)];
         {
           _xIcon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
           _image = gettext (configfile >> "CfgVehicleIcons" >> _xIcon);
-          _diaryBuilder format ["<img image='%1' width='16' height='16'/><font size='14'>%2</font><br/>", _image, (name _x)];
+          _diaryBuilder pushBack format ["<img image='%1' width='16' height='16'/><font size='14'>%2</font><br/>", _image, (name _x)];
           true;
         } count (units _x);
       };
