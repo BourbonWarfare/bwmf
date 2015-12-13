@@ -32,11 +32,11 @@ class blu_f {
   #define WEST_SPOTTER "BWA3_G36"
   #define WEST_SPOTTER_MAG "BWA3_30Rnd_556x45_G36:8"
   // SMG
-  #define IND_SMG "BWA3_MP7"
-  #define IND_SMG_MAG "BWA3_40Rnd_46x30_MP7:6"
+  #define WEST_SMG "BWA3_MP7"
+  #define WEST_SMG_MAG "BWA3_40Rnd_46x30_MP7:6"
   // Pistol
-  #define IND_PISTOL "BWA3_P8"
-  #define IND_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
+  #define WEST_PISTOL "BWA3_P8"
+  #define WEST_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
