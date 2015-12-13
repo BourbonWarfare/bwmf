@@ -1,3 +1,11 @@
+## BWMF Version 4.4 ##
+* Complete overhaul of the loadouts
+* Updated spectate (hopefully fixing the issue where people never reach spectate)
+* Changed assign gear, so you can add launcher specific optics
+* Changed briefings to be side specific, and updated their naming convention
+* Updated showing the OrBat to build using an array (looped string concatenation is the devil)
+* Fixed numerous issues with markers
+
 ## BWMF Version 4.3 ##
 * Respawn
 * Updated spectate

@@ -64,39 +64,38 @@ _transportMagazines = getArray(_path >> "TransportMagazines");
 _transportItems = getArray(_path >> "TransportItems");
 _transportWeapons = getArray(_path >> "TransportWeapons");
 
-// ====================================================================================
-// _transportMagazines
+// transportMagazines
 {
     _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
-    if(count _arr > 1) then
-    {
+    if (count _arr > 1) then {
         _amt = parseNumber (_arr select 1);
     };
     _theVehicle addMagazineCargoGlobal [_classname,_amt];
-} foreach _transportMagazines;
-// ====================================================================================
-// _transportItems
+    true;
+} count _transportMagazines;
+
+// transportItems
 {
     _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
-    if(count _arr > 1) then
-    {
+    if (count _arr > 1) then {
         _amt = parseNumber (_arr select 1);
     };
-    _theVehicle addItemCargoGlobal [_classname,_amt];
-} foreach _transportItems;
-// ====================================================================================
-// _transportItems
+    _theVehicle addItemCargoGlobal [_classname, _amt];
+    true;
+} count _transportItems;
+
+// transportWeapons
 {
     _arr = _x splitString ":";
     _classname = _arr select 0;
     _amt = 1;
-    if(count _arr > 1) then
-    {
+    if (count _arr > 1) then {
         _amt = parseNumber (_arr select 1);
     };
     _theVehicle addWeaponCargoGlobal [_classname,_amt];
-} foreach _transportWeapons;
+    true;
+} count _transportWeapons;

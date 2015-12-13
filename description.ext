@@ -1,23 +1,18 @@
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with the BW Mission Framework - Based on F3";
 author = "*** Insert your name here. ***";
 loadScreen = "bwbannersmall.jpg";
 
-// ============================================================================================
-
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 class Header {
     gameType = Coop;
     minPlayers = 1;
     maxPlayers = 491;
 };
 
-// ============================================================================================
 // ACE Settings: (see http://forums.bourbonwarfare.site.nfoservers.com/viewtopic.php?f=8&t=2026)
 class ACE_Settings {
   //Daylight laser pointer:
@@ -37,8 +32,6 @@ class ACE_Settings {
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
-
-// ============================================================================================
 
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
@@ -74,30 +67,21 @@ class Extended_InitPost_EventHandlers {
 
 // F3 - Debug Console
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
 enableDebugConsole = 1;
-
-// ============================================================================================
 
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-//respawn = 1;
 respawn = "GROUP";
 respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
-respawnTemplates[] = {"Seagull","f_spectator"};
-
-// ============================================================================================
+respawnTemplates[] = {"f_spectator"};
 
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
 class Params {
     // F3 - Mission Conditions Selector
     // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
     class f_param_weather {
         title = "Weather";
         values[] = {-1,0,1,2,3,4,5,6,7,8};
@@ -129,21 +113,13 @@ class Params {
     // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 };
 
-class CfgRespawnTemplates
-{
+class CfgRespawnTemplates {
 	// F3 Spectator Script
-	class f_Spectator
-	{
+	class f_Spectator {
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
-  	//Overwrite Vanilla Seagull
-    class Seagull
-    {
-        onPlayerRespawn = "";
-    };
 };
 
-// ============================================================================================
 #include "f\spect\config.hpp"
 
 // F3 - Functions

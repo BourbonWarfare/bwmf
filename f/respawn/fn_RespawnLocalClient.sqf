@@ -48,6 +48,7 @@ localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 
 // Exit Spectator
 [true] call F_fnc_ForceExit;
+
 // Ensures the spectator script will create a virtual entity next time.
 f_cam_VirtualCreated = nil;
 
@@ -61,36 +62,36 @@ player setPos (_position);
 
  _groupVarName = format ["GrpRespawn_%1", _groupNum];
 if (_leader) then {
-    //Broadcast group var to everyone so people can join.
-    missionNamespace setVariable[_groupVarName, _dummyGroup];
-    _groupPrefix = "";
-    switch (_faction) do {
-        case "blu_f": {
-            _groupPrefix = "NATO ";
-        };
-        case "opf_f":{
-            _groupPrefix = "OPFOR ";
-        };
-        case "ind_f": {
-            _groupPrefix = "IND ";
-        };
-        case "rhs_faction_msv": {
-            _groupPrefix = "MSV ";
-        };
-        default {};
-    };
-    _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
-    publicVariable _groupVarName;
+  //Broadcast group var to everyone so people can join.
+  missionNamespace setVariable[_groupVarName, _dummyGroup];
+  _groupPrefix = "";
+  switch (_faction) do {
+      case "blu_f": {
+          _groupPrefix = "NATO ";
+      };
+      case "opf_f":{
+          _groupPrefix = "OPFOR ";
+      };
+      case "ind_f": {
+          _groupPrefix = "IND ";
+      };
+      case "rhs_faction_msv": {
+          _groupPrefix = "MSV ";
+      };
+      default {};
+  };
+  _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
+  publicVariable _groupVarName;
 }
 else {
-    //Wait for group be created by the group leader before joining it.
-    [_groupVarName] spawn {
-        params["_groupVarName"];
-        // Wait for group exist.
-        sleep 1; // Ensure that everything is in Sync.
-        waitUntil{!isNil _groupVarName};
-        [player] joinSilent (missionNamespace getVariable[_groupVarName, grpNull]);
-   };
+  //Wait for group be created by the group leader before joining it.
+  [_groupVarName] spawn {
+    params["_groupVarName"];
+    // Wait for group exist.
+    sleep 1; // Ensure that everything is in Sync.
+    waitUntil{ !isNil _groupVarName };
+    [player] joinSilent (missionNamespace getVariable[_groupVarName, grpNull]);
+ };
 };
 
 // Re-run briefing script for our new unit.
@@ -100,11 +101,10 @@ else {
 
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
-    [false] call acre_api_fnc_setSpectator;
-    player setVariable ["F_Radio_LR", _lr, false];
-    player setVariable ["F_Radio_SR", _sr, false];
-    [] spawn {
-        sleep 5;
-        [] call F_Radios_fnc_acreRadioSetup;
-    };
+  [false] call acre_api_fnc_setSpectator;
+  player setVariable ["F_Radio_LR", _lr, false];
+  player setVariable ["F_Radio_SR", _sr, false];
+  [] spawn {
+    [] call F_Radios_fnc_acreRadioSetup;
+  };
 };
