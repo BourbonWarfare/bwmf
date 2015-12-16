@@ -12,7 +12,7 @@ class rhs_faction_msv {
   #define MSV_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
   #define MSV_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
   //Carbine
-  #define MSV_CARBINE "SAM_AK5D","SAM_AK5D_NOGRIP"
+  #define MSV_CARBINE MSV_RIFLE
   #define MSV_CARBINE_MAG MSV_RIFLE_MAG
   // AR
   #define MSV_AR "SAM_KSP90C"
@@ -112,7 +112,7 @@ class rhs_faction_msv {
   class Fic_Spotter: rhs_msv_rifleman {
     linkedItems[] += {EAST_LEADER_LINKED,RANGE_FINDER};
     items[] += {RADIO_MR};
-  }
+  };
   class rhs_msv_mmg: rhs_msv_machinegunner {// MMG
     attachments[] = {};
     weapons[] = {MSV_MMG};

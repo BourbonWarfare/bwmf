@@ -13,7 +13,7 @@ class rhs_faction_msv {
   #define MSV_GLRIFLE_MAG_HE "rhs_VOG25:5"
   #define MSV_GLRIFLE_MAG_FLARE "rhs_VG40OP_red:2"
   //Carbine
-  #define MSV_CARBINE EAST_RIFLE
+  #define MSV_CARBINE MSV_RIFLE
   #define MSV_CARBINE_MAG MSV_RIFLE_MAG
   // AR
   #define MSV_AR "rhs_weap_pkp"
@@ -124,7 +124,7 @@ class rhs_faction_msv {
   class Fic_Spotter: rhs_msv_rifleman {
     linkedItems[] += {EAST_LEADER_LINKED,RANGE_FINDER};
     items[] += {RADIO_MR};
-  }
+  };
   class rhs_msv_mmg: rhs_msv_machinegunner {};// MMG
   class rhs_msv_mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
     backpack[] = {"B_Kitbag_rgr"};
