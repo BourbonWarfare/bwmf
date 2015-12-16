@@ -5296,7 +5296,7 @@ class Mission
 					azimut=-3.4217508;
 					id=355;
 					side="EAST";
-					vehicle="rhs_msv_junior_sergeant";
+					vehicle="rhs_msv_officer";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
