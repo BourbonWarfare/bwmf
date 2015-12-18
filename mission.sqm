@@ -8335,28 +8335,6 @@ class Mission
 			text="VehMSV_IFV9";
 		};
 	};
-	class Markers
-	{
-		items=2;
-		class Item0
-		{
-			position[]={222.02029,-0.1322964,1325.3076};
-			name="TAOR";
-			markerType="RECTANGLE";
-			type="Empty";
-			a=200;
-			b=200;
-		};
-		class Item1
-		{
-			position[]={674.77148,0.05225125,1318.7783};
-			name="Blacklist";
-			markerType="RECTANGLE";
-			type="Empty";
-			a=200;
-			b=200;
-		};
-	};
 };
 class Intro
 {
