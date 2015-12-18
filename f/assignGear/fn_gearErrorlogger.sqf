@@ -81,8 +81,8 @@ if (isNil "F_gearPEFH") then {
 
         [_realErrors] spawn {
             waitUntil {time > 5};
-            hint format ["Check 'Loadout Problems' on breifing\n\n%1 Errors", (_this select 0)];
-            systemChat format ["Check 'Loadout Problems' on breifing - %1 Errors", (_this select 0)];
+            hint format ["Check 'Loadout Problems' on briefing\n\n%1 Errors", (_this select 0)];
+            systemChat format ["Check 'Loadout Problems' on briefing - %1 Errors", (_this select 0)];
         };
     }, 1, [diag_tickTime]] call CBA_fnc_addPerFrameHandler;
 };

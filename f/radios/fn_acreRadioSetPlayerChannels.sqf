@@ -22,7 +22,7 @@
 if (!hasInterface) exitWith {};
 
 [] spawn {
-    _addSignalsBreifing = {
+    _addSignalsBriefing = {
         params ["_groupID", "_languagesPlayerSpeaks", "_groupFreqIndex", "_groupLRFreqIndex"];
         if (player getVariable ["F_Signals_Created", false]) exitWith {};
         uiSleep 5;
@@ -65,7 +65,7 @@ if (!hasInterface) exitWith {};
             if (_x isKindOf ["ACRE_PRC117F", configFile >> "CfgWeapons"]) then {_hasLR = true;};
         } forEach (items player);
 
-        diag_log text format ["[BW] - SIGNALS Breifing %1 - [%2,%3]", _this, _hasSR, _hasLR];
+        diag_log text format ["[BW] - SIGNALS Briefing %1 - [%2,%3]", _this, _hasSR, _hasLR];
 
         _diaryBuilder pushBack "<br/><font size=15>SR Radio Net (343)</font><br/>";
         {
@@ -177,7 +177,7 @@ if (!hasInterface) exitWith {};
 
     diag_log text format ["[BW] - Channels Ready to Set [SR%1/LR%2] from group %3", (_groupFreqIndex + 1), (_groupLRFreqIndex + 1), _groupID];
 
-    [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBreifing;
+    [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBriefing;
 
     waitUntil {[] call acre_api_fnc_isInitialized};
     diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1, setting radios", time];
