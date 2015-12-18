@@ -7,15 +7,15 @@
 
 params ["_theVehicle", "_defaultLoadout"];
 
-_setVehicleLoadouts = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "setVehicleLoadouts")) then {
+private _setVehicleLoadouts = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "setVehicleLoadouts")) then {
     getNumber (missionConfigFile >> "CfgLoadouts" >> "setVehicleLoadouts");
 } else {
     1
 };
 
-_typeOf = typeOf _theVehicle;
-_loadout = _theVehicle getVariable ["F_Gear", _typeOf];
-_faction = tolower (faction _theVehicle);
+private _typeOf = typeOf _theVehicle;
+private _loadout = _theVehicle getVariable ["F_Gear", _typeOf];
+private _faction = toLower faction _theVehicle;
 
 //Leave default gear when "F_Gear" is "Default" or _setVehicleLoadouts is 0
 if ((_setVehicleLoadouts == 0) || {_loadout == "Default"}) exitWith {};
@@ -28,13 +28,13 @@ if ((_setVehicleLoadouts == -1) || {_loadout == "Empty"}) exitWith {
     clearBackpackCargoGlobal _theVehicle;
 };
 
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if (!isClass _path) then {
     //No CfgLoadouts for exact loadout, try default
     if (!isClass _path) then {
-        _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
-        _vehConfigFaction = switch (_vehConfigSide) do {
+        private _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
+        private _vehConfigFaction = switch (_vehConfigSide) do {
             case (west): {"blu_f"};
             case (east): {"rhs_faction_msv"};
             case (independent): {"ind_f"};
@@ -51,7 +51,7 @@ if (!isClass _path) then {
 };
 
 if (!isClass _path) exitWith {
-    diag_log text format ["[BW] - No loadout found for %1 (typeOf %2) (kindOf %3)", _theVehicle, (typeof _theVehicle), _loadout];
+    diag_log text format ["[BW] - No loadout found for %1 (typeOf %2) (kindOf %3)", _theVehicle, typeof _theVehicle, _loadout];
 };
 
 //Clean out starting inventory (even if there is no class)
@@ -60,10 +60,10 @@ clearMagazineCargoGlobal _theVehicle;
 clearItemCargoGlobal _theVehicle;
 clearBackpackCargoGlobal _theVehicle;
 
-_transportMagazines = getArray(_path >> "TransportMagazines");
-_transportItems = getArray(_path >> "TransportItems");
-_transportWeapons = getArray(_path >> "TransportWeapons");
-_transportBackpacks = getArray(_path >> "TransportBackpacks");
+private _transportMagazines = getArray(_path >> "TransportMagazines");
+private _transportItems = getArray(_path >> "TransportItems");
+private _transportWeapons = getArray(_path >> "TransportWeapons");
+private _transportBackpacks = getArray(_path >> "TransportBackpacks");
 
 // transportMagazines
 {
