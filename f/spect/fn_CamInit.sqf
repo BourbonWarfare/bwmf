@@ -3,42 +3,46 @@
 
 // params
 _this spawn {
-  _unit = [_this, 0, player, [objNull]] call BIS_fnc_param;
-  _oldUnit = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
+  _seagull = [_this, 0, player, [objNull]] call BIS_fnc_param;
+  _deadUnit = [_this, 1, objNull, [objNull]] call BIS_fnc_param;
   _forced = [_this, 4, false, [false]] call BIS_fnc_param;
 
   // escape the script if you are not a seagull unless forced
-  if (typeof _unit != "seagull" && !_forced || !hasInterface) exitWith {};
+  if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
 
-  waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || _forced };
+  waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_deadUnit) || _forced };
 
   if (!isNil "BIS_fnc_feedback_allowPP") then {
     BIS_fnc_feedback_allowPP = false; // disable effects death effects
   };
 
-  // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
-  if (isNil "f_cam_VirtualCreated") then {
-    createCenter sideLogic;
-    _newGrp = createGroup sideLogic;
-    _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
-    _newUnit allowDamage false;
-    _newUnit hideObjectGlobal true;
-    _newUnit enableSimulationGlobal false;
-    _newUnit setpos [0,0,5];
-    _newUnit setVariable ["timeOfDeath", serverTime, true];
+  if (isNil "f_spec_unit") then {
+    waitUntil {!(alive player)};
 
-    selectPlayer _newUnit;
-    waitUntil { player == _newUnit };
-    deleteVehicle _unit;
-    f_cam_VirtualCreated = true;
+    while { isNil "f_spec_unit" && !(alive player) } do {
+      if (!isNil "f_spec_unit") then { deleteVehicle f_spec_unit };
+      f_spec_unit = (createGroup sideLogic) createUnit ["VirtualCurator_F", [0,0,0], [], 50, "CAN_COLLIDE"];
+      f_spec_unit allowDamage false;
+      f_spec_unit hideObjectGlobal true;
+      f_spec_unit enableSimulationGlobal false;
+
+      // Wait till the unit is created
+      waitUntil { !isNil "f_spec_unit" };
+
+      f_spec_unit setVariable ["timeOfDeath", serverTime, true];
+      selectPlayer f_spec_unit;
+
+      waitUntil { player == f_spec_unit };
+    };
   };
 
-  if ( isNull _oldUnit ) then {
+  if (!isNil "_seagull") then { camDestroy _seagull; };
+
+  if (isNull _deadUnit) then {
     if (count playableUnits > 0) then {
-      _oldUnit = (playableUnits select 0);
-    }
-    else {
-      _oldUnit = (allUnits select 0);
+      _deadUnit = (playableUnits select 0);
+    } else {
+      _deadUnit = (allUnits select 0);
     };
   };
 
@@ -125,7 +129,7 @@ _this spawn {
 
   f_cam_ToggleFPCamera = {
     f_cam_toggleCamera = !f_cam_toggleCamera;
-    if(f_cam_toggleCamera) then {
+    if (f_cam_toggleCamera) then {
       f_cam_mode = 1; //(view)
       f_cam_camera cameraEffect ["terminate", "BACK"];
       f_cam_curTarget switchCamera "internal";
@@ -166,21 +170,21 @@ _this spawn {
   f_cam_helptext = "<t color='#EAA724'><br />Hold right-click to pan the camera<br />Use the scroll wheel or numpad+/- to zoom in and out.<br />Use ctrl + rightclick to fov zoom<br /><br />Press H to show and close the help window.<br />Press M to toggle between no map,minimap and full size map.<br />T for switching on tracers on the map<br/>Space to switch to freecam <br/>Press H to close this window</t>";
   ((findDisplay 9228) displayCtrl 1310) ctrlSetStructuredText parseText (f_cam_helptext);
   // create the camera and set it up.
-  f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
-
-  f_cam_fakecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
-
-  f_cam_curTarget = _oldUnit;
-  f_cam_freecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
+  f_cam_camera = "camera" camCreate [position _deadUnit select 0, position _deadUnit select 1, 3];
+  f_cam_fakecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
+  f_cam_curTarget = _deadUnit;
+  f_cam_freecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
   f_cam_camera camCommit 0;
   f_cam_fakecamera camCommit 0;
   f_cam_camera cameraEffect ["internal","back"];
   f_cam_camera camSetTarget f_cam_fakecamera;
   f_cam_camera camSetFov 1.2;
   f_cam_freecamera camSetFov 1.2;
-  f_cam_zeusKey = 21;
-  if (count (actionKeys "curatorInterface") > 0) then {
-      f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
+  f_cam_getZeusKey = {
+    _key = 21;
+    _curatorKeys = actionKeys "curatorInterface";
+    if (count _curatorKeys > 0) then { _key = _curatorKeys select 0; };
+    _key
   };
 
   f_cam_MouseMoving = false;

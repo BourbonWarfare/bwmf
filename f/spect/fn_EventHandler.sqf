@@ -157,7 +157,7 @@ switch (_type) do {
       case 1: {
         _handled = false;
       };
-      case f_cam_zeusKey: {
+      case ([] call f_cam_getZeusKey): { // zeus key
         if (!isNull (getAssignedCuratorLogic player)) then {
           // handler to check when we can return to the spectator system ( when zeus interface is closed and not remoteing controlling)
           [] spawn {
@@ -178,10 +178,6 @@ switch (_type) do {
 
           _handled = true;
         }
-        else
-        {
-          _handled = true;
-        };
       };
       case 74: { // numpad -
         f_cam_zoom = f_cam_zoom + 1;

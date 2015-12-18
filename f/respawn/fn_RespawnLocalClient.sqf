@@ -1,6 +1,7 @@
 params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupName","_sr","_lr"];
 
 _faction = (respawnMenuFactions select _faction) select 0;
+_typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
 _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 
 _factionName = switch (_faction) do {
@@ -33,7 +34,6 @@ _rankName  = switch (_rank) do {
 
 //Dummy group is required
 _dummyGroup = createGroup _side;
-
 // Create the unit
 _unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
 _editorName = format["%1_%2_%3", _factionName, _groupName, _typeOfUnit];
@@ -44,21 +44,15 @@ _class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
 // Wait till the unit is created
 waitUntil{!isNil _unitName};
 
-localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
+_localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 
 // Exit Spectator
 [true] call F_fnc_ForceExit;
 
-// Ensures the spectator script will create a virtual entity next time.
-f_cam_VirtualCreated = nil;
-
 _name = (name player);
-setPlayable localRespawnedUnit;
-selectPlayer localRespawnedUnit;
-
-deleteVehicle _oldUnit; // Delete the old spectator module
-localRespawnedUnit = nil; // Enable respawn again.
-player setPos (_position);
+selectPlayer _localRespawnedUnit;
+deleteVehicle _oldUnit;
+f_spec_unit = nil;
 
  _groupVarName = format ["GrpRespawn_%1", _groupNum];
 if (_leader) then {
