@@ -35,9 +35,9 @@ if (!isClass _path) then {
     if (!isClass _path) then {
         _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
         _vehConfigFaction = switch (_vehConfigSide) do {
-        case (west): {"blu_f"};
-        case (east): {"rhs_faction_msv"};
-        case (independent): {"ind_f"};
+            case (west): {"blu_f"};
+            case (east): {"rhs_faction_msv"};
+            case (independent): {"ind_f"};
             default {"CIV_F"};
         };
         _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
@@ -63,39 +63,32 @@ clearBackpackCargoGlobal _theVehicle;
 _transportMagazines = getArray(_path >> "TransportMagazines");
 _transportItems = getArray(_path >> "TransportItems");
 _transportWeapons = getArray(_path >> "TransportWeapons");
+_transportBackpacks = getArray(_path >> "TransportBackpacks");
 
 // transportMagazines
 {
-    _arr = _x splitString ":";
-    _classname = _arr select 0;
-    _amt = 1;
-    if (count _arr > 1) then {
-        _amt = parseNumber (_arr select 1);
-    };
-    _theVehicle addMagazineCargoGlobal [_classname,_amt];
-    true;
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    _theVehicle addMagazineCargoGlobal [_classname, parseNumber _amount];
+    nil
 } count _transportMagazines;
 
 // transportItems
 {
-    _arr = _x splitString ":";
-    _classname = _arr select 0;
-    _amt = 1;
-    if (count _arr > 1) then {
-        _amt = parseNumber (_arr select 1);
-    };
-    _theVehicle addItemCargoGlobal [_classname, _amt];
-    true;
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    _theVehicle addItemCargoGlobal [_classname, parseNumber _amount];
+    nil
 } count _transportItems;
 
 // transportWeapons
 {
-    _arr = _x splitString ":";
-    _classname = _arr select 0;
-    _amt = 1;
-    if (count _arr > 1) then {
-        _amt = parseNumber (_arr select 1);
-    };
-    _theVehicle addWeaponCargoGlobal [_classname,_amt];
-    true;
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    _theVehicle addWeaponCargoGlobal [_classname, parseNumber _amount];
+    nil
 } count _transportWeapons;
+
+// transportBackpacks
+{
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    _theVehicle addBackpackCargoGlobal [_classname, parseNumber _amount];
+    nil
+} count _transportBackpacks;
