@@ -61,6 +61,14 @@ if (f_cam_tracerOn) then {
       _markerTexture = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
       _fullmapWindow drawEllipse  [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture];
     };
+    case "ICON": {
+      if (_markerType != "Empty") then {
+        _multiplier = 20;
+        _markerText = markerText _x;
+        _markerIcon = getText (configfile >> "CfgMarkers" >> _markerType >> "icon");
+        _fullmapWindow drawIcon [_markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1];
+      };
+    };
   };
   nil;
 } count allMapMarkers;
