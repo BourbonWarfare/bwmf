@@ -172,7 +172,7 @@ class blu_f {
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
-    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,WEST_LEADER_TOOLS,RADIO_MR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot

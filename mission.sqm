@@ -49,7 +49,8 @@ class Mission
 		"acre_api",
 		"a3_map_stratis",
 		"ace_finger",
-		"ace_mk6mortar"
+		"ace_mk6mortar",
+		"rhs_c_heavyweapons"
 	};
 	addOnsAuto[]=
 	{
@@ -86,6 +87,7 @@ class Mission
 		"rhs_c_a2port_air",
 		"rhs_c_bmp",
 		"rhs_c_cars",
+		"rhs_c_heavyweapons",
 		"map_vr"
 	};
 	randomSeed=11823142;
@@ -7721,7 +7723,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=61;
+		items=64;
 		class Item0
 		{
 			position[]={691.50702,0.026544452,847.75342};
@@ -8333,6 +8335,30 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehMSV_IFV9";
+		};
+		class Item61
+		{
+			position[]={689.3205,5,413.99316};
+			id=568;
+			side="EMPTY";
+			vehicle="rhs_Metis_9k115_2_msv";
+			skill=0.60000002;
+		};
+		class Item62
+		{
+			position[]={689.37299,5,410.66992};
+			id=569;
+			side="EMPTY";
+			vehicle="rhs_Metis_9k115_2_msv";
+			skill=0.60000002;
+		};
+		class Item63
+		{
+			position[]={689.3205,5,408.0293};
+			id=570;
+			side="EMPTY";
+			vehicle="rhs_Metis_9k115_2_msv";
+			skill=0.60000002;
 		};
 	};
 };
