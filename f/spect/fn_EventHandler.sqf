@@ -337,33 +337,15 @@ switch (_type) do {
         f_cam_ctrl_down = false;
         _handled = true;
       };
-      case 203: {
-        _handled = true;
-      };
-      case 205: {
-        _handled = true;
-      };
-      case 24: {
-        _handled = true;
-      };
-      case 28: {
-        _handled = true;
-      };
-      case 49: {
-        _handled = true;
-      };
-      case 200: {
-        _handled = true;
-      };
-      case 208: {
-        _handled = true;
-      };
-      case 74: {
-        _handled = true;
-      };
-      case 78: {
-        _handled = true;
-      };
+      case 203:
+      case 205:
+      case 24:
+      case 28:
+      case 49:
+      case 200:
+      case 208:
+      case 74: 
+      case 78:
       case 57: {
         _handled = true;
       };
