@@ -105,7 +105,7 @@ class opf_f {
     linkedItems[] += {BINOS};
   };
   class O_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
-    magazinesp[] += {EAST_AT_MAG};
+    magazines[] += {EAST_AT_MAG};
     launchers[] = {EAST_AT};
   };
   class O_medic_F: Fic_Soldier_Carbine {// Medic
