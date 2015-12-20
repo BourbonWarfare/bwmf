@@ -27,8 +27,8 @@ switch (_type) do {
     };
     if (_args select 1 == 1) then {
       if (f_cam_mode == 1) then {
-          f_cam_ads = false;
-          f_cam_curTarget switchCamera "internal";
+        f_cam_ads = false;
+        f_cam_curTarget switchCamera "internal";
       };
     };
   };
@@ -91,16 +91,16 @@ switch (_type) do {
     _index =  (_args select 1);
     switch (_index) do {
       case f_cam_lb_toggletiWHIndex: {
-          f_cam_tiWHOn = !f_cam_tiWHOn;
-          if( f_cam_tiWHOn) then {
-            f_cam_tiBHOn = false;
-            f_cam_nvOn = false;
-            true setCamUseTi 0;
-          }
-          else {
-            camUseNVG false;
-            false setCamUseTi 0;
-          };
+        f_cam_tiWHOn = !f_cam_tiWHOn;
+        if( f_cam_tiWHOn) then {
+          f_cam_tiBHOn = false;
+          f_cam_nvOn = false;
+          true setCamUseTi 0;
+        }
+        else {
+          camUseNVG false;
+          false setCamUseTi 0;
+        };
       };
       case f_cam_lb_toggletiBHIndex:  {
         f_cam_tiBHOn = !f_cam_tiBHOn;
@@ -231,8 +231,8 @@ switch (_type) do {
         _handled = true;
       };
       case 44: { // Z
-          f_cam_freecam_buttons set [5,true];
-          _handled = true;
+        f_cam_freecam_buttons set [5,true];
+        _handled = true;
       };
       case 57: { // SPACE
         f_cam_freecamOn = !f_cam_freecamOn;
@@ -257,16 +257,16 @@ switch (_type) do {
       };
 
       case 35: { //  H
-          ctrlShow [1315, !ctrlVisible 1315];
-          ctrlShow [1310, !ctrlVisible 1310];
-          ctrlShow [1300, !ctrlVisible 1300];
-          ctrlShow [1305, !ctrlVisible 1305];
-           _handled = true;
+        ctrlShow [1315, !ctrlVisible 1315];
+        ctrlShow [1310, !ctrlVisible 1310];
+        ctrlShow [1300, !ctrlVisible 1300];
+        ctrlShow [1305, !ctrlVisible 1305];
+        _handled = true;
       };
       case 42: { // SHIFT
-          f_cam_shift_down = true;
-          [] spawn f_fnc_HandleCamera;
-           _handled = true;
+        f_cam_shift_down = true;
+        [] spawn f_fnc_HandleCamera;
+        _handled = true;
       };
       case 25: { // P
         f_cam_muteSpectators = !f_cam_muteSpectators;
@@ -277,7 +277,7 @@ switch (_type) do {
       case 29: { // CTRL
         f_cam_ctrl_down = true;
         [] spawn f_fnc_HandleCamera;
-         _handled = true;
+        _handled = true;
       };
       case 50: { // M
         f_cam_mapMode = f_cam_mapMode +1;

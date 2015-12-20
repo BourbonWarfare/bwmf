@@ -27,29 +27,29 @@ _base = 0;         // Base altitude of fog (in meters). Up until this height fog
 
 switch (_fog) do
 {
-    //None
-    case 0:
-    {
-        _strength = 0;
-        _decay = 0;
-        _base = 0;
-    };
+  //None
+  case 0:
+  {
+    _strength = 0;
+    _decay = 0;
+    _base = 0;
+  };
 
-    //Light
-    case 1:
-    {
-        _strength = 0.2;
-        _decay = 0;
-        _base = 0;
-    };
+  //Light
+  case 1:
+  {
+    _strength = 0.2;
+    _decay = 0;
+    _base = 0;
+  };
 
-    //Heavy
-    case 2:
-    {
-        _strength = 0.4;
-        _decay = 0;
-        _base = 0;
-    };
+  //Heavy
+  case 2:
+  {
+    _strength = 0.4;
+    _decay = 0;
+    _base = 0;
+  };
 };
 
 // ====================================================================================
@@ -60,5 +60,3 @@ switch (_fog) do
 _transition setFog [_strength,_decay,_base];
 
 // ====================================================================================
-
-

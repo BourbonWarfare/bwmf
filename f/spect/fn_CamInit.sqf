@@ -140,7 +140,7 @@ _this spawn {
     _camera = f_cam_camera;
     switch(f_cam_mode) do {
       case 0: {
-          _camera = f_cam_camera; // Standard
+        _camera = f_cam_camera; // Standard
       };
       case 1: {
         _camera = cameraOn; // FP
@@ -180,7 +180,7 @@ _this spawn {
   f_cam_freecamera camSetFov 1.2;
   f_cam_zeusKey = 21;
   if (count (actionKeys "curatorInterface") > 0) then {
-      f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
+    f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
   };
 
   f_cam_MouseMoving = false;

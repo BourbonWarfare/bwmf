@@ -7,9 +7,9 @@
 // SERVER INIT
 
 if (isServer) then {
-    //Counters to allow for unique IDs of respawned players and groups.
-    f_serverRespawnPlayerCounter = 1;
-    f_serverRespawnGroupCounter = 1;
+  //Counters to allow for unique IDs of respawned players and groups.
+  f_serverRespawnPlayerCounter = 1;
+  f_serverRespawnGroupCounter = 1;
 };
 
 isSpec = false;

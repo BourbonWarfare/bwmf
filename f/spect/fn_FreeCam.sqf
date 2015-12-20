@@ -34,7 +34,7 @@ switch (f_cam_mode) do {
       vehicle cameraOn switchCamera _mode;
     };
     if (vehicle cameraOn == cameraOn && !f_cam_ads) then {
-        cameraon switchCamera "internal";
+      cameraon switchCamera "internal";
     };
   };
   case (3): { // free

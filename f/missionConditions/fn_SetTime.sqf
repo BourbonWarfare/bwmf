@@ -36,53 +36,53 @@ _minute = 0;
 switch (_timeOfDay) do
 {
 // Dawn
-    case 0:
-    {
-        _hour = 4;
-        _minute = 50;
-    };
+  case 0:
+  {
+    _hour = 4;
+    _minute = 50;
+  };
 // Early Morning
-    case 1:
-    {
-        _hour = 5;
-        _minute = 20;
-    };
+  case 1:
+  {
+    _hour = 5;
+    _minute = 20;
+  };
 // Morning
-    case 2:
-    {
-        _hour = 9;
-        _minute = 20;
-    };
+  case 2:
+  {
+    _hour = 9;
+    _minute = 20;
+  };
 // Noon
-    case 3:
-    {
-        _hour = 12;
-        _minute = 00;
-    };
+  case 3:
+  {
+    _hour = 12;
+    _minute = 00;
+  };
 // Afternoon
-    case 4:
-    {
-        _hour = 15;
-        _minute = 30;
-    };
+  case 4:
+  {
+    _hour = 15;
+    _minute = 30;
+  };
 // Evening
-    case 5:
-    {
-        _hour = 18;
-        _minute = 40;
-    };
+  case 5:
+  {
+    _hour = 18;
+    _minute = 40;
+  };
 // Dusk
-    case 6:
-    {
-        _hour = 19;
-        _minute = 10;
-    };
+  case 6:
+  {
+    _hour = 19;
+    _minute = 10;
+  };
 // Night
-    case 7:
-    {
-        _hour = 0;
-        _minute = 0;
-    };
+  case 7:
+  {
+    _hour = 0;
+    _minute = 0;
+  };
 };
 
 // ====================================================================================
@@ -93,14 +93,14 @@ switch (_timeOfDay) do
 
 _transition = false;
 if (time > 0) then {
-    _transition = true;
-    _day = date select 2;
-    _month = date select 1;
-    _year = date select 0;
+  _transition = true;
+  _day = date select 2;
+  _month = date select 1;
+  _year = date select 0;
 
-    if (date select 3 > _hour) then {_day = _day + 1};
-    if (_day > 31) then {_day = 1; _month = _month + 1};
-    if (_month > 12) then {_month = 1; _year = _year + 1};
+  if (date select 3 > _hour) then {_day = _day + 1};
+  if (_day > 31) then {_day = 1; _month = _month + 1};
+  if (_month > 12) then {_month = 1; _year = _year + 1};
 };
 
 // ====================================================================================
@@ -116,4 +116,3 @@ _date = [_year,_month,_day,_hour,_minute];
 [_date,true,_transition] call BIS_fnc_setDate;
 
 // ====================================================================================
-
