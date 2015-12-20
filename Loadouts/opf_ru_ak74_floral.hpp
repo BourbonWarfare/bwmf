@@ -159,7 +159,7 @@ class opf_f {
     weapons[] = {EAST_SMG};
     magazines[] = {EAST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_EAST,RADIO_LR};
-    items[] = {BASE_MEDICAL,EAST_BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,EAST_BASE_TOOLS,EAST_LEADER_TOOLS,RADIO_MR};
     linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_dtk"};
   };

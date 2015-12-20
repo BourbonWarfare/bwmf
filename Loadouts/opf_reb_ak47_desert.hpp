@@ -105,7 +105,7 @@ class opf_f {
     linkedItems[] += {BINOS};
   };
   class O_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
-    magazinesp[] += {EAST_AT_MAG};
+    magazines[] += {EAST_AT_MAG};
     launchers[] = {EAST_AT};
   };
   class O_medic_F: Fic_Soldier_Carbine {// Medic
@@ -166,7 +166,7 @@ class opf_f {
     weapons[] = {EAST_SMG};
     magazines[] = {EAST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_EAST,RADIO_LR};
-    items[] = {BASE_MEDICAL,EAST_BASE_TOOLS,RADIO_MR};
+    items[] = {BASE_MEDICAL,EAST_BASE_TOOLS,EAST_LEADER_TOOLS,RADIO_MR};
     linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
   };
   class O_crew_F: Fic_Soldier_Carbine {// Crew

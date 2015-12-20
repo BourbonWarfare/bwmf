@@ -5,13 +5,13 @@ params ["_unit"];
 
 if (!(local _unit)) exitWith {};
 
-_startTime = diag_tickTime;
+private _startTime = diag_tickTime;
 
-_faction = tolower (faction _unit);
-_unitClassname = typeOf _unit;
+private _faction = toLower faction _unit;
+private _unitClassname = typeOf _unit;
 //Check variable f_gear, otherwise default to typeof
-_loadout = _unit getVariable ["F_Gear", _unitClassname];
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+private _loadout = _unit getVariable ["F_Gear", _unitClassname];
+private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "useFallback")) == 1}) then {
     // [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
@@ -23,25 +23,21 @@ if (!isClass(_path)) exitWith {
     _unit setVariable ["F_Gear_Setup", true, true];
 };
 
-_allowMagnifiedOptics = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics")) then {
-    1 == getNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics");
-} else {
-    true
-};
+private _allowMagnifiedOptics = (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics") && (getNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics") == 1));
 
-_uniforms = getArray(_path >> "uniform");
-_vests = getArray(_path >> "vest");
-_headgears = getArray(_path >> "headgear");
-_backpack = getArray(_path >> "backpack");
-_backpackItems = getArray(_path >> "backpackItems");
-_weapons = getArray(_path >> "weapons");
-_launchers = getArray(_path >> "launchers");
-_handguns = getArray(_path >> "handguns");
-_magazines = getArray(_path >> "magazines");
-_items = getArray(_path >> "items");
-_linkedItems = getArray(_path >> "linkedItems");
-_attachments = getArray(_path >> "attachments");
-_secondaryAttachments = getArray(_path >> "secondaryAttachments");
+private _uniforms = getArray (_path >> "uniform");
+private _vests = getArray (_path >> "vest");
+private _headgears = getArray (_path >> "headgear");
+private _backpack = getArray (_path >> "backpack");
+private _backpackItems = getArray (_path >> "backpackItems");
+private _weapons = getArray (_path >> "weapons");
+private _launchers = getArray (_path >> "launchers");
+private _handguns = getArray (_path >> "handguns");
+private _magazines = getArray (_path >> "magazines");
+private _items = getArray (_path >> "items");
+private _linkedItems = getArray (_path >> "linkedItems");
+private _attachments = getArray (_path >> "attachments");
+private _secondaryAttachments = getArray (_path >> "secondaryAttachments");
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
@@ -52,7 +48,7 @@ removeAllItemsWithMagazines _unit;
 if ((count _uniforms) == 0) then {
     removeUniform _unit;
 } else {
-    _toAdd = _uniforms call BIS_fnc_selectRandom;
+    private _toAdd = _uniforms call BIS_fnc_selectRandom;
     if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
         if (_unit isUniformAllowed _toAdd) then {
             _unit addUniform _toAdd;
@@ -67,7 +63,7 @@ if ((count _uniforms) == 0) then {
 if ((count _vests) == 0) then {
     removeVest _unit;
 } else {
-    _toAdd = _vests call BIS_fnc_selectRandom;
+    private _toAdd = _vests call BIS_fnc_selectRandom;
     if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
         removeVest _unit;
         _unit addVest _toAdd;
@@ -91,7 +87,7 @@ if ((count _backpack) == 0) then {
 if ((count _headgears) == 0) then {
     removeHeadgear _unit;
 } else {
-    _toAdd = _headgears call BIS_fnc_selectRandom;
+    private _toAdd = _headgears call BIS_fnc_selectRandom;
     if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
         removeHeadgear _unit;
         _unit addHeadgear _toAdd;
@@ -105,65 +101,50 @@ clearAllItemsFromBackpack _unit;
 
 // Backpack Items
 {
-    _arr = _x splitString ":";
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-            if (_unit canAddItemToBackpack _classname) then {
-                _unit addItemToBackpack _classname;
-            } else {
-                _unit addItem _classname;
-            };
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    for "_i" from 0 to (parseNumber _amount) do {
+        if (_unit canAddItemToBackpack _classname) then {
+            _unit addItemToBackpack _classname;
+        } else {
+            _unit addItem _classname;
         };
     };
-    true;
+    nil
 } count _backpackItems;
 
 // Items
 {
-    _arr = _x splitString ":";
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-            _unit additem _classname;
-        };
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    for "_i" from 0 to (parseNumber _amount) do {
+        _unit addItem _classname;
     };
-    true;
+    nil
 } count _items;
 
 // Linked Items
 {
-    _arr = _x splitString ":";
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        if ("Binocular" in ([(configFile >> "CfgWeapons" >> _classname), true] call BIS_fnc_returnParents)) then {
-            _unit addWeapon _classname;
-        } else {
-            for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-                _unit linkItem _classname;
-            };
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    if ("Binocular" in ([configFile >> "CfgWeapons" >> _classname, true] call BIS_fnc_returnParents)) then {
+        _unit addWeapon _classname;
+    } else {
+        for "_i" from 0 to (parseNumber _amount) do {
+            _unit linkItem _classname;
         };
     };
-    true;
+    nil
 } count _linkedItems;
 
 // Magazines
-_magazinesNotAdded = [];
+private _magazinesNotAdded = [];
 {
-    _arr = _x splitString ":";
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        _unit addMagazines [_classname, _amt];
-        _notAdded = _amt - ({_x == _classname} count (magazines _unit));
-        for "_index" from 0 to (_notAdded - 1) do {
-            _magazinesNotAdded pushBack _classname;
-        };
+    (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
+    _unit addMagazines [_classname, (parseNumber _amount)];
+
+    _notAdded = _amt - ({_x == _classname} count (magazines _unit));
+    for "_i" from 0 to (_notAdded - 1) do {
+        _magazinesNotAdded pushBack _classname;
     };
-    true;
+    nil
 } count _magazines;
 
 // Weapons
@@ -174,19 +155,19 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
 // attachments
 if (!(_attachments isEqualTo [])) then {
     //Prevents error from adding incompatible attachments
-    _primaryWeaponAttachables = [primaryWeapon _unit] call CBA_fnc_compatibleItems;
-    _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
+    private _primaryWeaponAttachables = [primaryWeapon _unit] call CBA_fnc_compatibleItems;
+    private _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
     {
         (_x splitString ":") params [["_classname", ""]]; //count makes no sense for attachments, ignore
         _config = configFile >> "CfgWeapons" >> _classname;
         if (isClass _config) then {
-            _addAttachment = true;
+            private _addAttachment = true;
             if (!_allowMagnifiedOptics) then {
-                _minZoom = 999; //FOV, so smaller is more zoomed in
+                private _minZoom = 999; //FOV, so smaller is more zoomed in
                 {
                     if (isNumber (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (getNumber (_x >> "opticsZoomMin"));};
                     if (isText (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (call compile getText (_x >> "opticsZoomMin"));};
-                    true;
+                    nil
                 } count configProperties [_config >> "ItemInfo" >> "OpticsModes"];
                 if (_minZoom < 0.25) then {
                     _addAttachment = false;
@@ -205,18 +186,17 @@ if (!(_attachments isEqualTo [])) then {
         } else {
             [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
         };
-        true;
+        nil
     } count _attachments;
 };
 
 // Secondary (Launchers) Attachements
 if (!(_secondaryAttachments isEqualTo [])) then {
     //Prevents error from adding incompatible attachments
-    _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
+    private _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
     {
         (_x splitString ":") params [["_classname", ""]];
-        _config = configFile >> "CfgWeapons" >> _classname;
-        if (isClass _config) then {
+        if (isClass configFile >> "CfgWeapons" >> _classname) then {
             if (({_x == _classname} count _secondaryWeaponAttachables) > 0) then {
                 _unit addSecondaryWeaponItem _classname;
             } else {
@@ -225,7 +205,7 @@ if (!(_secondaryAttachments isEqualTo [])) then {
         } else {
             [_unitClassname, format ["Secondary attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
         };
-        true;
+        nil
     } count _secondaryAttachments;
 };
 
@@ -236,13 +216,13 @@ if (!(_secondaryAttachments isEqualTo [])) then {
     } else {
         [_unitClassname, format ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
     };
-    true;
+    nil
 } count _magazinesNotAdded;
 
 //Run loadout's init code
-_a = _path >> "init";
-if (isText _a) then {
-    _unit call compile ("this = _this;"+ getText _a);
+private _loadoutInit = _path >> "init";
+if (isText _loadoutInit) then {
+    _unit call compile ("this = _this;"+ getText _loadoutInit);
 };
 
 [_unitClassname, "Done", (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
