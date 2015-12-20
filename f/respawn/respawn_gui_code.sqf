@@ -58,7 +58,7 @@ fn_update_deadListBox = {
 
   _deadListBox = ((findDisplay 26893) displayCtrl 26891);
   lbClear _deadListBox;
-   _i = 0;
+  _i = 0;
   {
     _found = false;
     //Check if already selected and thus in the selected respawn listBox.

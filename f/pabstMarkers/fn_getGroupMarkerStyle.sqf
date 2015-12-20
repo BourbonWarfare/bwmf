@@ -1,34 +1,33 @@
-private ["_red","_green","_blue","_yellow","_orange","_black","_pink","_white","_fireteam","_unknown","_hq","_support","_supportAT","_recon","_mortar","_maint","_mech","_armor","_air","_plane","_artillery","_med","_size","_input","_texture","_color"];
 // data values
-_red = [1,0,0,1];
-_green = [0,1,0,1];
-_blue = [0,0,1,1];
-_yellow = [1,1,0,1];
-_orange  = [1,0.647,0,1];
-_black = [0,0,0,1];
-_pink = [1,0.753,0.796,1];
-_white = [1,1,1,1];
-_fireteam = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
-_unknown = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-_hq = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
-_support = "\A3\ui_f\data\map\markers\nato\b_support.paa"; // MMG HMG
-_supportAT = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa"; // MAT HAT
-_recon = "\A3\ui_f\data\map\markers\nato\b_recon.paa"; // Sniper
-_mortar = "\A3\ui_f\data\map\markers\nato\b_mortar.paa"; // Mortar
-_maint = "\A3\ui_f\data\map\markers\nato\b_maint.paa"; // Engineers
-_mech = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa"; // IFV/APC
-_armor = "\A3\ui_f\data\map\markers\nato\b_armor.paa"; // Tank
-_air = "\A3\ui_f\data\map\markers\nato\b_air.paa"; // Helos
-_plane = "\A3\ui_f\data\map\markers\nato\b_plane.paa"; // Planes
-_artillery = "\A3\ui_f\data\map\markers\nato\b_art.paa"; // Artillery
+private _red = [1,0,0,1];
+private _green = [0,1,0,1];
+private _blue = [0,0,1,1];
+private _yellow = [1,1,0,1];
+private _orange  = [1,0.647,0,1];
+private _black = [0,0,0,1];
+private _pink = [1,0.753,0.796,1];
+private _white = [1,1,1,1];
+private _fireteam = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+private _unknown = "\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+private _hq = "\A3\ui_f\data\map\markers\nato\b_hq.paa";
+private _support = "\A3\ui_f\data\map\markers\nato\b_support.paa"; // MMG HMG
+private _supportAT = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa"; // MAT HAT
+private _recon = "\A3\ui_f\data\map\markers\nato\b_recon.paa"; // Sniper
+private _mortar = "\A3\ui_f\data\map\markers\nato\b_mortar.paa"; // Mortar
+private _maint = "\A3\ui_f\data\map\markers\nato\b_maint.paa"; // Engineers
+private _mech = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa"; // IFV/APC
+private _armor = "\A3\ui_f\data\map\markers\nato\b_armor.paa"; // Tank
+private _air = "\A3\ui_f\data\map\markers\nato\b_air.paa"; // Helos
+private _plane = "\A3\ui_f\data\map\markers\nato\b_plane.paa"; // Planes
+private _artillery = "\A3\ui_f\data\map\markers\nato\b_art.paa"; // Artillery
 
-_med = "\A3\ui_f\data\map\markers\nato\b_med.paa"; // Medic
+private _med = "\A3\ui_f\data\map\markers\nato\b_med.paa"; // Medic
 
-_size = [24,24];
+private _size = [24,24];
 
-_input = _this select 0;
-_texture = _unknown;
-_color = [1,1,1,1];
+private _input = _this select 0;
+private _texture = _unknown;
+private _color = [1,1,1,1];
 switch true do {
   case (_input in ["COY","1PLT","2PLT","CO","DC"]): {
     _texture = _hq;
@@ -58,7 +57,7 @@ switch true do {
     _texture = _fireteam;
     _color = _green;
   };
-   case (_input in ["DSL"]):
+  case (_input in ["DSL"]):
   {
     _texture = _hq;
     _color = _red;
@@ -173,4 +172,4 @@ switch true do {
     _size = [16,16];
   };
 };
-[_texture,_color,_size];
+[_texture, _color, _size];

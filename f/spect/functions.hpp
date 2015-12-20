@@ -1,5 +1,4 @@
-class fspectator
-{
+class fspectator {
   file = "f\spect";
   class CamInit{};
   class OnUnload{};

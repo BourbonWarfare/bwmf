@@ -64,21 +64,12 @@ player setPos (_position);
 if (_leader) then {
   //Broadcast group var to everyone so people can join.
   missionNamespace setVariable[_groupVarName, _dummyGroup];
-  _groupPrefix = "";
-  switch (_faction) do {
-    case "blu_f": {
-      _groupPrefix = "NATO ";
-    };
-    case "opf_f":{
-      _groupPrefix = "OPFOR ";
-    };
-    case "ind_f": {
-      _groupPrefix = "IND ";
-    };
-    case "rhs_faction_msv": {
-      _groupPrefix = "MSV ";
-    };
-    default {};
+  _groupPrefix = switch (_faction) do {
+    case "blu_f": {"NATO "};
+    case "opf_f":{"OPFOR "};
+    case "ind_f": {"IND "};
+    case "rhs_faction_msv": {"MSV "};
+    default {""};
   };
   _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
   publicVariable _groupVarName;

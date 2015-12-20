@@ -11,12 +11,9 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
   {
     _distToCam = (call f_cam_GetCurrentCam) distance _x;
     if(isPlayer _x) then {_isPlayerGroup = true};
-    if(_distToCam < 200) then
-    {
+    if(_distToCam < 200) then {
       _drawUnits pushBack _x;
-    }
-    else
-    {
+    } else {
       _drawGroup = true;
     };
     true;
@@ -34,8 +31,7 @@ if(!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
     if (surfaceIsWater _visPos) then  { _visPos = getPosASLVisual leader _x; };
     if (_isPlayerGroup) then {
       _color set [3,0.7];
-    }
-    else {
+    } else {
       _color set [3,0.4];
     };
     _str = _x getVariable ["f_cam_nicename",""];

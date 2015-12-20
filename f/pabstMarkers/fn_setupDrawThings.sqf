@@ -41,7 +41,7 @@ _showTheseFactions = [];
       };
     };
   };
-} foreach allGroups;
+} forEach allGroups;
 
 
 {
@@ -57,4 +57,4 @@ _showTheseFactions = [];
       F_Markers_thingsToDraw pushBack _unit;
     };
   };
-} foreach UNIT_MARKERS;
+} forEach UNIT_MARKERS;

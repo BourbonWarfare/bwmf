@@ -67,8 +67,7 @@ while {true} do {
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
-    }
-    else {
+    } else {
       _val = lbText [_listBox, _index] != "    " + name _x;
 
       if (_index >= 0 && alive _x && _val ) then {

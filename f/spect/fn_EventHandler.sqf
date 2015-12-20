@@ -58,8 +58,7 @@ switch (_type) do {
           f_cam_scrollHeight = (_args select 1);
         };
       };
-    }
-    else {
+    } else {
       f_cam_fovZoom = ((f_cam_fovZoom - ((_args select 1)*f_cam_fovZoom/5)) max 0.1) min 1;
     };
   };
@@ -96,21 +95,19 @@ switch (_type) do {
           f_cam_tiBHOn = false;
           f_cam_nvOn = false;
           true setCamUseTi 0;
-        }
-        else {
+        } else {
           camUseNVG false;
           false setCamUseTi 0;
         };
       };
-      case f_cam_lb_toggletiBHIndex:  {
+      case f_cam_lb_toggletiBHIndex: {
         f_cam_tiBHOn = !f_cam_tiBHOn;
         if (f_cam_tiBHOn) then {
           camUseNVG false;
           f_cam_tiWHOn = false;
           f_cam_nvOn = false;
           true setCamUseTi 1;
-        }
-        else {
+        } else {
           camUseNVG false;
           false setCamUseTi 0;
         };
@@ -122,15 +119,14 @@ switch (_type) do {
         f_cam_tiBHOn = false;
         f_cam_nvOn = false;
       };
-      case f_cam_lb_toggletiNVIndex:  {
+      case f_cam_lb_toggletiNVIndex: {
         f_cam_nvOn = !f_cam_nvOn;
         if (f_cam_nvOn) then {
           false setCamUseTi 0;
           camUseNVG true;
           f_cam_tiWHOn = false;
           f_cam_tiBHOn = false;
-        }
-        else {
+        } else {
           camUseNVG false;
           false setCamUseTi 0;
         };
@@ -177,9 +173,7 @@ switch (_type) do {
           openCuratorInterface;
 
           _handled = true;
-        }
-        else
-        {
+        } else {
           _handled = true;
         };
       };
@@ -192,8 +186,7 @@ switch (_type) do {
         f_cam_tracerOn = !f_cam_tracerOn;
         if (f_cam_tracerOn) then {
           systemChat "Tracers on map activated.";
-        }
-        else {
+        } else {
           systemChat "Tracers on map deactivated.";
         };
         _handled = true;
@@ -205,19 +198,19 @@ switch (_type) do {
       };
       // Freecam movement keys
       case 17: { // W
-        f_cam_freecam_buttons set [0,true];
+        f_cam_freecam_buttons set [0, true];
         _handled = true;
       };
       case 31: { // S
-        f_cam_freecam_buttons set [1,true];
+        f_cam_freecam_buttons set [1, true];
         _handled = true;
       };
       case 30: { // A
-        f_cam_freecam_buttons set [2,true];
+        f_cam_freecam_buttons set [2, true];
         _handled = true;
       };
       case 32: { // D
-        f_cam_freecam_buttons set [3,true];
+        f_cam_freecam_buttons set [3, true];
         _handled = true;
       };
       case 49: { // N
@@ -244,8 +237,7 @@ switch (_type) do {
           f_cam_freecamera setPosASL getPosASL f_cam_camera;
           cameraEffectEnableHUD true;
           showCinemaBorder false;
-        }
-        else {
+        } else {
           f_cam_freecamera cameraEffect ["Terminate","BACK"];
           f_cam_angleY = 45;
           f_cam_camera cameraEffect ["internal", "BACK"];
@@ -344,7 +336,7 @@ switch (_type) do {
       case 49:
       case 200:
       case 208:
-      case 74: 
+      case 74:
       case 78:
       case 57: {
         _handled = true;

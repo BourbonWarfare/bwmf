@@ -8,11 +8,11 @@ F_Markers_drawNonPlayerGroups = true;
 
 //Faction map, to show other faction's markers, but them in the same array
 F_Markers_factionMap = [
-// ["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],  //uncomment to show all markers
-["blu_f"],
-["ind_f"],
-["opf_f"],
-["rhs_faction_msv", "rhs_faction_vvs"]
+  // ["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],  //uncomment to show all markers
+  ["blu_f"],
+  ["ind_f"],
+  ["opf_f"],
+  ["rhs_faction_msv", "rhs_faction_vvs"]
 ];
 
 

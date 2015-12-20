@@ -127,7 +127,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "B_soldier_repair_F"};
         case "PP": { _type = "B_Helipilot_F"};
         case "PCC": { _type = "B_soldier_repair_F"};
-        default  { _type = "B_Soldier_F"; };
+        default { _type = "B_Soldier_F"; };
       };
     };
     case "opf_f":{
@@ -149,7 +149,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "O_soldier_repair_F"};
         case "PP": { _type = "O_Helipilot_F"};
         case "PCC": { _type = "O_soldier_repair_F"};
-        default  { _type = "O_Soldier_F"; };
+        default { _type = "O_Soldier_F"; };
       };
     };
     case "ind_f": {
@@ -171,7 +171,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "I_soldier_repair_F"};
         case "PP": { _type = "I_Helipilot_F"};
         case "PCC": { _type = "I_soldier_repair_F"};
-        default  { _type = "I_Soldier_F"; };
+        default { _type = "I_Soldier_F"; };
       };
     };
     case "rhs_faction_msv" : {
@@ -194,7 +194,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "rhs_msv_engineer"};
         case "PP": { _type = "rhs_pilot_transport_heli"};
         case "PCC": { _type = "rhs_msv_engineer"};
-        default  { _type = "rhs_msv_rifleman"; };
+        default { _type = "rhs_msv_rifleman"; };
       };
     };
     default {};

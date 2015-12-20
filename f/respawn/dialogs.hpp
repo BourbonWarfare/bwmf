@@ -29,32 +29,28 @@ class respawnMenuDialog {
   class controlsBackground {};
   class objects {};
   class controls {
-    class respawnGroupFrame: respawnMenu_RscFrame
-    {
+    class respawnGroupFrame: respawnMenu_RscFrame {
       idc = -1;
       x = 0.238065 * safezoneW + safezoneX;
       y = 0.3174 * safezoneH + safezoneY;
       w = 0.510469 * safezoneW;
       h = 0.484 * safezoneH;
     };
-    class deadPlayersListBox: respawnMenu_RscListbox
-    {
+    class deadPlayersListBox: respawnMenu_RscListbox {
       idc = 26891;
       x = 0.25147 * safezoneW + safezoneX;
       y = 0.401 * safezoneH + safezoneY;
       w = 0.139219 * safezoneW;
       h = 0.308 * safezoneH;
     };
-    class groupListBox: respawnMenu_RscListbox
-    {
+    class groupListBox: respawnMenu_RscListbox {
       idc = 26892;
       x = 0.468031 * safezoneW + safezoneX;
       y = 0.401 * safezoneH + safezoneY;
       w = 0.20625 * safezoneW;
       h = 0.308 * safezoneH;
     };
-    class waveRespawnTitle: respawnMenu_RscText
-    {
+    class waveRespawnTitle: respawnMenu_RscText {
       idc = 1000;
       text = "Wave Respawn Tool";
       x = 0.247344 * safezoneW + safezoneX;
@@ -62,8 +58,7 @@ class respawnMenuDialog {
       w = 0.128906 * safezoneW;
       h = 0.044 * safezoneH;
     };
-    class respawnMenuAddButton: respawnMenu_RscButton
-    {
+    class respawnMenuAddButton: respawnMenu_RscButton {
       idc = 1600;
       text = "Add";
       x = 0.407199 * safezoneW + safezoneX;
@@ -72,8 +67,7 @@ class respawnMenuDialog {
       h = 0.055 * safezoneH;
       action="[] spawn fn_respawnMenuAddAction";
     };
-    class respawnMenuRemoveButton: respawnMenu_RscButton
-    {
+    class respawnMenuRemoveButton: respawnMenu_RscButton {
       idc = 1601;
       text = "Remove";
       x = 0.407199 * safezoneW + safezoneX;
@@ -82,8 +76,7 @@ class respawnMenuDialog {
       h = 0.055 * safezoneH;
       action="[] spawn fn_respawnMenuRemoveAction";
     };
-    class respawnMenuSpawnButton: respawnMenu_RscButton
-    {
+    class respawnMenuSpawnButton: respawnMenu_RscButton {
       idc = 1602;
       text = "Spawn Group";
       x = 0.641268 * safezoneW + safezoneX;
@@ -92,8 +85,7 @@ class respawnMenuDialog {
       h = 0.044 * safezoneH;
       action="[] spawn fn_respawnMenuRespawnAction";
     };
-    class respawnMenuChangeRoleButton: respawnMenu_RscButton
-    {
+    class respawnMenuChangeRoleButton: respawnMenu_RscButton {
       idc = 1603;
       text = "Cycle Role";
       x = 0.684594 * safezoneW + safezoneX;
@@ -102,8 +94,7 @@ class respawnMenuDialog {
       h = 0.055 * safezoneH;
       action="[] spawn fn_respawnMenuChangeRoleAction";
     };
-    class respawnMenuChangeRankButton: respawnMenu_RscButton
-    {
+    class respawnMenuChangeRankButton: respawnMenu_RscButton {
       idc = 1604;
       text = "Cycle Rank";
       x = 0.684594 * safezoneW + safezoneX;
@@ -112,8 +103,7 @@ class respawnMenuDialog {
       h = 0.055 * safezoneH;
       action="[] spawn fn_respawnMenuChangeRankAction";
     };
-    class respawnMenuGroupNameCombo: respawnMenu_RscCombo
-    {
+    class respawnMenuGroupNameCombo: respawnMenu_RscCombo {
       idc = 26898;
       text = "";
       x = 0.474227 * safezoneW + safezoneX;
@@ -121,8 +111,7 @@ class respawnMenuDialog {
       w = 0.108281 * safezoneW;
       h = 0.033 * safezoneH;
     };
-    class respawnMenuSideCombo: respawnMenu_RscCombo
-    {
+    class respawnMenuSideCombo: respawnMenu_RscCombo {
       idc = 26894;
       text = "Faction";
       x = 0.603125 * safezoneW + safezoneX;
@@ -130,8 +119,7 @@ class respawnMenuDialog {
       w = 0.0773437 * safezoneW;
       h = 0.022 * safezoneH;
     };
-    class respawnMenuPlayersText: respawnMenu_RscText
-    {
+    class respawnMenuPlayersText: respawnMenu_RscText {
       idc = 26895;
       text = "Players in Spectator: 0";
       x = 0.2525 * safezoneW + safezoneX;
@@ -139,8 +127,7 @@ class respawnMenuDialog {
       w = 0.108281 * safezoneW;
       h = 0.033 * safezoneH;
     };
-    class respawnMenuCloseButton: respawnMenu_RscButton
-    {
+    class respawnMenuCloseButton: respawnMenu_RscButton {
       idc = 26904;
       text = "Close";
       x = 0.716563 * safezoneW + safezoneX;
@@ -149,8 +136,7 @@ class respawnMenuDialog {
       h = 0.022 * safezoneH;
       action = "closeDialog 26893";
     };
-    class respawnMenuRscComboRole: respawnMenu_RscCombo
-    {
+    class respawnMenuRscComboRole: respawnMenu_RscCombo {
       idc = 26896;
       text = "Faction";
       x = 0.396792 * safezoneW + safezoneX;
@@ -158,8 +144,7 @@ class respawnMenuDialog {
       w = 0.0670312 * safezoneW;
       h = 0.022 * safezoneH;
     };
-    class respawnMenuRscComboRank: respawnMenu_RscCombo
-    {
+    class respawnMenuRscComboRank: respawnMenu_RscCombo {
       idc = 26897;
       text = "Faction";
       x = 0.396792 * safezoneW + safezoneX;
@@ -167,8 +152,7 @@ class respawnMenuDialog {
       w = 0.0670312 * safezoneW;
       h = 0.022 * safezoneH;
     };
-    class respawnMenuVOIP: respawnMenu_RscButton
-    {
+    class respawnMenuVOIP: respawnMenu_RscButton {
       idc = 26927;
       text = "Toggle Spectator VOIP";
       x = 0.365937 * safezoneW + safezoneX;
@@ -184,13 +168,10 @@ class respawnMenuDialog {
 class respawnMenuMapDialog {
   idd = 26950;
   movingEnable = 0;
-  class controlsBackground {
-  };
-  class objects {
-  };
+  class controlsBackground {};
+  class objects {};
   class controls {
-    class FullRespawnMap : respawnMenu_RscMapControl
-    {
+    class FullRespawnMap : respawnMenu_RscMapControl {
       idc = 26902;
       type = 100;
       x = 0 * safezoneW + safezoneX;

@@ -1,6 +1,6 @@
 #include "defines_unitsAndGroups.sqf"
 
-_unit = _this select 0;
+params ["_unit"];
 _group = group _unit;
 
 //If it has a groupID set, exit
