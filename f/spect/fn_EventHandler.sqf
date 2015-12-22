@@ -64,7 +64,6 @@ switch (_type) do {
     };
   };
 
-  // ==================================================================
   // handles dropboxes
   case "LBListSelChanged": {
     if (count f_cam_listUnits > (_args select 1)) then {
@@ -156,28 +155,6 @@ switch (_type) do {
       };
       case 1: {
         _handled = false;
-      };
-      case ([] call f_cam_getZeusKey): { // zeus key
-        if (!isNull (getAssignedCuratorLogic player)) then {
-          // handler to check when we can return to the spectator system ( when zeus interface is closed and not remoteing controlling)
-          [] spawn {
-            _done = false;
-            waitUntil { sleep 0.5; !isNull (findDisplay 312) }; // wait until open
-            while {!_done} do {
-              waitUntil {sleep 0.1; isNull (findDisplay 312)}; // then wait until its not open
-              if (isnil "bis_fnc_moduleRemoteControl_unit") then { // check if someone is being remote controled
-                [player, player, player, 0, true] spawn F_fnc_CamInit; // if not retoggle
-                _done = true;
-              }; // restart spectator once exit.
-            };
-          };
-
-          // force exit
-          [] call F_fnc_ForceExit;
-          openCuratorInterface;
-
-          _handled = true;
-        }
       };
       case 74: { // numpad -
         f_cam_zoom = f_cam_zoom + 1;

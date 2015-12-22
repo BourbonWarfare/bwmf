@@ -27,7 +27,8 @@ fn_respawnMenuInit = {
   _control = ((findDisplay 26893) displayCtrl 26896);
   {
     _control lbAdd (_x select 1);
-  } forEach respawnMenuRoles;
+    nil
+  } count respawnMenuRoles;
   _control lbSetCurSel 0;
 
   //Default Rank listbox
@@ -60,23 +61,18 @@ fn_update_deadListBox = {
   lbClear _deadListBox;
    _i = 0;
   {
-    _found = false;
     //Check if already selected and thus in the selected respawn listBox.
-    _player = _x;
-    {
-      if (_player == (_x select 1)) exitWith { _found = true; };
-      true;
-    } count selectedRespawnGroup;
-
-    if (!_found) then {
+    if ((selectedRespawnGroup find _x) < 0) then {
+      _name = _x getVariable ["f_respawnName", "Name not found"];
+      _uid = _x getVariable ["f_respawnUID", "UID not found"];
       _deadTimer = serverTime - (_x getVariable ["timeOfDeath", serverTime]);
       _minute = [(_deadTimer / 60)] call fn_truncateDecimal;
       _second = [(_deadTimer % 60)] call fn_truncateDecimal;
-      _deadListBox lbAdd (format ["%1m %2s - %3", _minute, _second, name _x]);
-      _deadListBox lbSetData[_i, str getPlayerUID _x];
+      _deadListBox lbAdd (format ["%1m %2s - %3", _minute, _second, _name]);
+      _deadListBox lbSetData[_i, _uid];
       _i = _i + 1;
     };
-    true;
+    nil
   } count deadPlayerList;
 };
 
@@ -94,7 +90,7 @@ fn_update_aliveListBox = {
 
   {
     _player = selectedRespawnGroup select _forEachIndex;
-    _groupListBox lbAdd format["%1 - %2", name (_player select 1), (respawnMenuRoles select (_player select 2)) select 1];
+    _groupListBox lbAdd format["%1 - %2", (_player select 1) getVariable ["f_respawnName", "Name not found"], (respawnMenuRoles select (_player select 2)) select 1];
 
     //Set image based on rank
     switch (_player select 0) do {
@@ -123,8 +119,8 @@ fn_respawnMenuAddAction = {
 
   _obj = objNull;
   {
-    if (_selection == (str getPlayerUID _x)) exitWith { _obj = _x; };
-    true;
+    if (_selection == _x getVariable ["f_respawnUID", "UID not found"]) exitWith { _obj = _x; };
+    nil
   } count deadPlayerList;
 
   if (!(isNull _obj)) then {
@@ -184,8 +180,8 @@ fn_respawnMenuChangeRankAction = {
 fn_reloadDeadPlayers = {
   deadPlayerList = [];
   {
-    if (_x isKindOf "VirtualCurator_F") then { deadPlayerList pushBack _x; };
-    true;
+    if (!alive _x) then { deadPlayerList pushBack _x; };
+    nil
   } count allPlayers;
 
   ((findDisplay 26893) displayCtrl 26895) ctrlSetText format["Players in Spectator: %1", count deadPlayerList];
@@ -224,7 +220,7 @@ fn_respawnMapLoaded = {
   disableSerialization;
   _mapCtrl = ((findDisplay 26950) displayCtrl 26902);
   _pos = [0,0,0];
-  if (alive player && !(player isKindOf "VirtualCurator_F")) then {
+  if (alive player) then {
     _pos = getPos player;
   } else {
     if (count playableUnits > 0) then {

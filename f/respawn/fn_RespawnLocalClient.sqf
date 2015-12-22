@@ -51,8 +51,6 @@ _localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
 
 _name = (name player);
 selectPlayer _localRespawnedUnit;
-deleteVehicle _oldUnit;
-f_spec_unit = nil;
 
  _groupVarName = format ["GrpRespawn_%1", _groupNum];
 if (_leader) then {
@@ -92,6 +90,9 @@ else {
 [] call F_fnc_showBriefing;
 [] call F_fnc_showOrbatNotes;
 [] call F_fnc_setTeamColours;
+
+player setVariable ["f_respawnName", name player, true];
+player setVariable ["f_respawnUID", getPlayerUID player, true];
 
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {

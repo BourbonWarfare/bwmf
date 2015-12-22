@@ -7,4 +7,9 @@ if (isServer) then {
     f_serverRespawnGroupCounter = 1;
 };
 
-isSpec = false;
+if (hasInterface) then {
+  isSpec = false;
+  waitUntil {time > 0};
+  player setVariable ["f_respawnName", name player, true];
+  player setVariable ["f_respawnUID", getPlayerUID player, true];
+};
