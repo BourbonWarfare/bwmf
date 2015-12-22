@@ -196,7 +196,7 @@ if (!(_secondaryAttachments isEqualTo [])) then {
     private _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
     {
         (_x splitString ":") params [["_classname", ""]];
-        if (isClass configFile >> "CfgWeapons" >> _classname) then {
+        if (isClass (configFile >> "CfgWeapons" >> _classname)) then {
             if (({_x == _classname} count _secondaryWeaponAttachables) > 0) then {
                 _unit addSecondaryWeaponItem _classname;
             } else {
