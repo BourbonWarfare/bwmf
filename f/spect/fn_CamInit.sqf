@@ -19,6 +19,8 @@ if (!isNil "BIS_fnc_feedback_allowPP") then {
 
 if (!isNil "_seagull") then { camDestroy _seagull; };
 
+_deadUnit setVariable ["timeOfDeath", serverTime, true];
+
 if (isNull _deadUnit) then {
   if (count playableUnits > 0) then {
     _deadUnit = (playableUnits select 0);

@@ -62,7 +62,14 @@ fn_update_deadListBox = {
    _i = 0;
   {
     //Check if already selected and thus in the selected respawn listBox.
-    if ((selectedRespawnGroup find _x) < 0) then {
+    _found = false;
+    _player = _x;
+    {
+      if (_player == (_x select 1)) exitWith { _found = true; };
+      nil
+    } count selectedRespawnGroup; 
+    
+    if (!_found) then {
       _name = _x getVariable ["f_respawnName", "Name not found"];
       _uid = _x getVariable ["f_respawnUID", "UID not found"];
       _deadTimer = serverTime - (_x getVariable ["timeOfDeath", serverTime]);
