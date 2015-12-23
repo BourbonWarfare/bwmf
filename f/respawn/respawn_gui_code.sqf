@@ -6,7 +6,7 @@ fn_respawnMenuInit = {
   //Faction selection control
   _control = ((findDisplay 26893) displayCtrl 26894);
   {
-    _factionArray = respawnMenuFactions select _forEachIndex;
+    _factionArray = _x;
     _control lbAdd (_factionArray select 1);
     _factionImg = getText (configfile >> "CfgFactionClasses" >> (_factionArray select 0) >> "icon");
     if (_factionImg != "") then {
@@ -18,9 +18,10 @@ fn_respawnMenuInit = {
   //Group name selection control
   _control = ((findDisplay 26893) displayCtrl 26898);
   {
-    _groupNameArray = respawnMenuGroupNames select _forEachIndex;
+    _groupNameArray = _x;
     _control lbAdd (_groupNameArray select 0);
-  } forEach respawnMenuGroupNames;
+    nil
+  } count respawnMenuGroupNames;
   _control lbSetCurSel 0;
 
   //Default Role listbox
@@ -84,10 +85,7 @@ fn_update_deadListBox = {
 };
 
 fn_truncateDecimal = {
-  params ["_decimal"];
-  _decToString = str _decimal;
-  _splitDec = _decToString splitString ".";
-  _splitDec select 0;
+ ((str (_this select 0)) splitString ".") select 0
 };
 
 fn_update_aliveListBox = {
@@ -157,7 +155,7 @@ fn_respawnMenuChangeRoleAction = {
   _deadListBox = ((findDisplay 26893) displayCtrl 26891);
   _groupListBox = ((findDisplay 26893) displayCtrl 26892);
 
-  _selection =  (lbCurSel _groupListBox);
+  _selection = (lbCurSel _groupListBox);
 
   if (_selection < 0 || _selection >= (count selectedRespawnGroup)) exitWith { hint "No soldier selected to cycle roles for."; };
 
@@ -173,7 +171,7 @@ fn_respawnMenuChangeRankAction = {
   _deadListBox = ((findDisplay 26893) displayCtrl 26891);
   _groupListBox = ((findDisplay 26893) displayCtrl 26892);
 
-  _selection =  (lbCurSel _groupListBox);
+  _selection = (lbCurSel _groupListBox);
 
   if (_selection < 0 || _selection >= (count selectedRespawnGroup)) exitWith { hint "No soldier selected to cycle ranks for."; };
 

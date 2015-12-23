@@ -2,11 +2,13 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // params
-_seagull = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
-_deadUnit = [_this, 1, player, [objNull]] call BIS_fnc_param;
-_respawnType = [_this, 2, 3, [3]] call BIS_fnc_param;
-_respawnDelay = [_this, 3, 3, [3]] call BIS_fnc_param;
-_forced = [_this, 4, false, [false]] call BIS_fnc_param;
+params [
+  ["_seagull", objNull, [objNull]],
+  ["_deadUnit", player, [objNull]],
+  ["_respawnType", 3, [3]],
+  ["_respawnDelay", 3, [3]],
+  ["_forced", false, [false]]
+];
 
 // escape the script if you are not a seagull unless forced
 if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
