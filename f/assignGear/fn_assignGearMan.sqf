@@ -102,7 +102,7 @@ clearAllItemsFromBackpack _unit;
 // Backpack Items
 {
     (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
-    for "_i" from 0 to (parseNumber _amount) do {
+    for "_i" from 0 to ((parseNumber _amount) - 1) do {
         if (_unit canAddItemToBackpack _classname) then {
             _unit addItemToBackpack _classname;
         } else {
@@ -115,7 +115,7 @@ clearAllItemsFromBackpack _unit;
 // Items
 {
     (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
-    for "_i" from 0 to (parseNumber _amount) do {
+    for "_i" from 0 to ((parseNumber _amount) - 1) do {
         _unit addItem _classname;
     };
     nil
@@ -127,7 +127,7 @@ clearAllItemsFromBackpack _unit;
     if ("Binocular" in ([configFile >> "CfgWeapons" >> _classname, true] call BIS_fnc_returnParents)) then {
         _unit addWeapon _classname;
     } else {
-        for "_i" from 0 to (parseNumber _amount) do {
+        for "_i" from 0 to ((parseNumber _amount) - 1) do {
             _unit linkItem _classname;
         };
     };
@@ -138,9 +138,11 @@ clearAllItemsFromBackpack _unit;
 private _magazinesNotAdded = [];
 {
     (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
-    _unit addMagazines [_classname, (parseNumber _amount)];
+    _amount = parseNumber _amount;
 
-    _notAdded = _amt - ({_x == _classname} count (magazines _unit));
+    _unit addMagazines [_classname, _amount];
+
+    _notAdded = _amount - ({_x == _classname} count (magazines _unit));
     for "_i" from 0 to (_notAdded - 1) do {
         _magazinesNotAdded pushBack _classname;
     };
