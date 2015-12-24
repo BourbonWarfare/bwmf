@@ -4954,7 +4954,7 @@ class Mission
 					azimut=-5.1778002;
 					id=332;
 					side="WEST";
-					vehicle="B_soldier_AR_F";
+					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_E1_R2";
