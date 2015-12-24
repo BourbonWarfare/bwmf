@@ -11,7 +11,7 @@ if (f_cam_mapMode == 2) then {
           _dist = _pos distance _x;
         };
       } foreach crew _x;
-      true;
+      nil
     } count _ents;
 
     if (!isNil "_chosen") then {

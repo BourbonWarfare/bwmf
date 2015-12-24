@@ -139,10 +139,10 @@ private _magazinesNotAdded = [];
 {
     (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
     _amount = parseNumber _amount;
-
+    
     _unit addMagazines [_classname, _amount];
-
     _notAdded = _amount - ({_x == _classname} count (magazines _unit));
+
     for "_i" from 0 to (_notAdded - 1) do {
         _magazinesNotAdded pushBack _classname;
     };

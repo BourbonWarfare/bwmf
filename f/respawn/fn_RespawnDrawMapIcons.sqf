@@ -10,11 +10,11 @@ if (isNil "f_cam_blufor_color") then {
 };
 
 {
-  if(alive _x) then {
+  if (alive _x) then {
     _name = "";
-    if(isPlayer _x) then { _name = name _x };
-    if(leader _x == _x && { isPlayer _x } count units _x > 0) then { _name = format["%1 - %2",toString(toArray(groupID (group _x)) - [45]),_name] };
-    if(vehicle _x != _x && crew (vehicle _x) select 0 == _x || vehicle _x == _x) then {
+    if (isPlayer _x) then { _name = name _x };
+    if (leader _x == _x && { isPlayer _x } count units _x > 0) then { _name = format["%1 - %2",toString(toArray(groupID (group _x)) - [45]),_name] };
+    if (vehicle _x != _x && crew (vehicle _x) select 0 == _x || vehicle _x == _x) then {
       _icon = (vehicle _x getVariable ["f_cam_icon", ""]);
       if(_icon == "") then {
         _icon = getText (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
@@ -57,7 +57,7 @@ if (isNil "f_cam_blufor_color") then {
       _markerTexture = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
       _fullmapWindow drawEllipse  [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture];
     };
-    case "ICON": { //TODO need to debug this to get non-shape markers to show up properly
+    case "ICON": {
       if (_markerType != "Empty") then {
         _multiplier = 20;
         _markerText = markerText _x;
