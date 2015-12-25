@@ -2,17 +2,13 @@
 //
 //             F3 - RESPAWN SETTINGS
 //         Credits: Snippers, Head & 1Tac (AACO is going to steal a bit of credit here too)
+//         To open the respawn dialog just call from the debug console (even in spectator):
+//         createDialog "respawnMenuDialog";
 //
 //////////////////////////////////////////////////////
 
-// To open the respawn dialog just call from the debug console (even in spectator):
-//   createDialog "respawnMenuDialog";
-
-///////////// RESPAWN ROLE SETTINGS
-
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
-
 // Group name, SR net, LR net
 respawnMenuGroupNames = [
   ["", 1, 1],
@@ -83,11 +79,8 @@ respawnMenuRoles = [
   ["PCC", "Aircrewman - Crew Chief (Repair)"]
 ];
 
-///////////// FACTION SETTINGS
-
 // Factions that will appear in the respawn GUI.
 // These MUST be defined in CfgFactionClasses
-
 respawnMenuFactions = [
   ["blu_f", "NATO"],
   ["opf_f", "CSAT"],
@@ -98,15 +91,11 @@ respawnMenuFactions = [
 // Respawn Classes
 // This function is designed to choose the classname of a new unit based on the faction and specified unit type.
 // This is important as the ability to perform certain tasks can be derived from being a certain class.
-
 fn_respawnSelectClass = {
   params["_faction","_typeOfUnit"];
-  //Needed to convert index to unit type string
-  _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
 
   //Setup a default value.
   _type = "C_man_1";
-
   switch (_faction) do {
     case "blu_f": {
       switch (_typeOfUnit) do {
@@ -127,7 +116,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "B_soldier_repair_F"};
         case "PP": { _type = "B_Helipilot_F"};
         case "PCC": { _type = "B_soldier_repair_F"};
-        default { _type = "B_Soldier_F"; };
+        default  { _type = "B_Soldier_F"; };
       };
     };
     case "opf_f":{
@@ -149,7 +138,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "O_soldier_repair_F"};
         case "PP": { _type = "O_Helipilot_F"};
         case "PCC": { _type = "O_soldier_repair_F"};
-        default { _type = "O_Soldier_F"; };
+        default  { _type = "O_Soldier_F"; };
       };
     };
     case "ind_f": {
@@ -171,7 +160,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "I_soldier_repair_F"};
         case "PP": { _type = "I_Helipilot_F"};
         case "PCC": { _type = "I_soldier_repair_F"};
-        default { _type = "I_Soldier_F"; };
+        default  { _type = "I_Soldier_F"; };
       };
     };
     case "rhs_faction_msv" : {
@@ -194,7 +183,7 @@ fn_respawnSelectClass = {
         case "D": { _type = "rhs_msv_engineer"};
         case "PP": { _type = "rhs_pilot_transport_heli"};
         case "PCC": { _type = "rhs_msv_engineer"};
-        default { _type = "rhs_msv_rifleman"; };
+        default  { _type = "rhs_msv_rifleman"; };
       };
     };
     default {};

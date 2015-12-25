@@ -15,5 +15,5 @@ if (isNil "_respawn" || !_respawn) then {
   if(!isNil "_var") then {
     _x removeEventHandler ["fired",_var];
   };
-  true;
+  nil
 } count (allunits + vehicles);

@@ -27,8 +27,8 @@ switch (_type) do {
     };
     if (_args select 1 == 1) then {
       if (f_cam_mode == 1) then {
-        f_cam_ads = false;
-        f_cam_curTarget switchCamera "internal";
+          f_cam_ads = false;
+          f_cam_curTarget switchCamera "internal";
       };
     };
   };
@@ -58,12 +58,12 @@ switch (_type) do {
           f_cam_scrollHeight = (_args select 1);
         };
       };
-    } else {
+    }
+    else {
       f_cam_fovZoom = ((f_cam_fovZoom - ((_args select 1)*f_cam_fovZoom/5)) max 0.1) min 1;
     };
   };
 
-  // ==================================================================
   // handles dropboxes
   case "LBListSelChanged": {
     if (count f_cam_listUnits > (_args select 1)) then {
@@ -90,24 +90,26 @@ switch (_type) do {
     _index =  (_args select 1);
     switch (_index) do {
       case f_cam_lb_toggletiWHIndex: {
-        f_cam_tiWHOn = !f_cam_tiWHOn;
-        if( f_cam_tiWHOn) then {
-          f_cam_tiBHOn = false;
-          f_cam_nvOn = false;
-          true setCamUseTi 0;
-        } else {
-          camUseNVG false;
-          false setCamUseTi 0;
-        };
+          f_cam_tiWHOn = !f_cam_tiWHOn;
+          if( f_cam_tiWHOn) then {
+            f_cam_tiBHOn = false;
+            f_cam_nvOn = false;
+            true setCamUseTi 0;
+          }
+          else {
+            camUseNVG false;
+            false setCamUseTi 0;
+          };
       };
-      case f_cam_lb_toggletiBHIndex: {
+      case f_cam_lb_toggletiBHIndex:  {
         f_cam_tiBHOn = !f_cam_tiBHOn;
         if (f_cam_tiBHOn) then {
           camUseNVG false;
           f_cam_tiWHOn = false;
           f_cam_nvOn = false;
           true setCamUseTi 1;
-        } else {
+        }
+        else {
           camUseNVG false;
           false setCamUseTi 0;
         };
@@ -119,14 +121,15 @@ switch (_type) do {
         f_cam_tiBHOn = false;
         f_cam_nvOn = false;
       };
-      case f_cam_lb_toggletiNVIndex: {
+      case f_cam_lb_toggletiNVIndex:  {
         f_cam_nvOn = !f_cam_nvOn;
         if (f_cam_nvOn) then {
           false setCamUseTi 0;
           camUseNVG true;
           f_cam_tiWHOn = false;
           f_cam_tiBHOn = false;
-        } else {
+        }
+        else {
           camUseNVG false;
           false setCamUseTi 0;
         };
@@ -153,30 +156,6 @@ switch (_type) do {
       case 1: {
         _handled = false;
       };
-      case f_cam_zeusKey: {
-        if (!isNull (getAssignedCuratorLogic player)) then {
-          // handler to check when we can return to the spectator system ( when zeus interface is closed and not remoteing controlling)
-          [] spawn {
-            _done = false;
-            waitUntil { sleep 0.5; !isNull (findDisplay 312) }; // wait until open
-            while {!_done} do {
-              waitUntil {sleep 0.1; isNull (findDisplay 312)}; // then wait until its not open
-              if (isnil "bis_fnc_moduleRemoteControl_unit") then { // check if someone is being remote controled
-                [player, player, player, 0, true] spawn F_fnc_CamInit; // if not retoggle
-                _done = true;
-              }; // restart spectator once exit.
-            };
-          };
-
-          // force exit
-          [] call F_fnc_ForceExit;
-          openCuratorInterface;
-
-          _handled = true;
-        } else {
-          _handled = true;
-        };
-      };
       case 74: { // numpad -
         f_cam_zoom = f_cam_zoom + 1;
         f_cam_zoom = 0.3 max f_cam_zoom;
@@ -186,7 +165,8 @@ switch (_type) do {
         f_cam_tracerOn = !f_cam_tracerOn;
         if (f_cam_tracerOn) then {
           systemChat "Tracers on map activated.";
-        } else {
+        }
+        else {
           systemChat "Tracers on map deactivated.";
         };
         _handled = true;
@@ -198,19 +178,19 @@ switch (_type) do {
       };
       // Freecam movement keys
       case 17: { // W
-        f_cam_freecam_buttons set [0, true];
+        f_cam_freecam_buttons set [0,true];
         _handled = true;
       };
       case 31: { // S
-        f_cam_freecam_buttons set [1, true];
+        f_cam_freecam_buttons set [1,true];
         _handled = true;
       };
       case 30: { // A
-        f_cam_freecam_buttons set [2, true];
+        f_cam_freecam_buttons set [2,true];
         _handled = true;
       };
       case 32: { // D
-        f_cam_freecam_buttons set [3, true];
+        f_cam_freecam_buttons set [3,true];
         _handled = true;
       };
       case 49: { // N
@@ -224,8 +204,8 @@ switch (_type) do {
         _handled = true;
       };
       case 44: { // Z
-        f_cam_freecam_buttons set [5,true];
-        _handled = true;
+          f_cam_freecam_buttons set [5,true];
+          _handled = true;
       };
       case 57: { // SPACE
         f_cam_freecamOn = !f_cam_freecamOn;
@@ -237,7 +217,8 @@ switch (_type) do {
           f_cam_freecamera setPosASL getPosASL f_cam_camera;
           cameraEffectEnableHUD true;
           showCinemaBorder false;
-        } else {
+        }
+        else {
           f_cam_freecamera cameraEffect ["Terminate","BACK"];
           f_cam_angleY = 45;
           f_cam_camera cameraEffect ["internal", "BACK"];
@@ -249,16 +230,16 @@ switch (_type) do {
       };
 
       case 35: { //  H
-        ctrlShow [1315, !ctrlVisible 1315];
-        ctrlShow [1310, !ctrlVisible 1310];
-        ctrlShow [1300, !ctrlVisible 1300];
-        ctrlShow [1305, !ctrlVisible 1305];
-        _handled = true;
+          ctrlShow [1315, !ctrlVisible 1315];
+          ctrlShow [1310, !ctrlVisible 1310];
+          ctrlShow [1300, !ctrlVisible 1300];
+          ctrlShow [1305, !ctrlVisible 1305];
+           _handled = true;
       };
       case 42: { // SHIFT
-        f_cam_shift_down = true;
-        [] spawn f_fnc_HandleCamera;
-        _handled = true;
+          f_cam_shift_down = true;
+          [] spawn f_fnc_HandleCamera;
+           _handled = true;
       };
       case 25: { // P
         f_cam_muteSpectators = !f_cam_muteSpectators;
@@ -269,7 +250,7 @@ switch (_type) do {
       case 29: { // CTRL
         f_cam_ctrl_down = true;
         [] spawn f_fnc_HandleCamera;
-        _handled = true;
+         _handled = true;
       };
       case 50: { // M
         f_cam_mapMode = f_cam_mapMode +1;
@@ -329,15 +310,33 @@ switch (_type) do {
         f_cam_ctrl_down = false;
         _handled = true;
       };
-      case 203:
-      case 205:
-      case 24:
-      case 28:
-      case 49:
-      case 200:
-      case 208:
-      case 74:
-      case 78:
+      case 203: {
+        _handled = true;
+      };
+      case 205: {
+        _handled = true;
+      };
+      case 24: {
+        _handled = true;
+      };
+      case 28: {
+        _handled = true;
+      };
+      case 49: {
+        _handled = true;
+      };
+      case 200: {
+        _handled = true;
+      };
+      case 208: {
+        _handled = true;
+      };
+      case 74: {
+        _handled = true;
+      };
+      case 78: {
+        _handled = true;
+      };
       case 57: {
         _handled = true;
       };

@@ -1,6 +1,6 @@
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ==================================================================
+
 _listBox =  2103;
 // updaes values for the units listbox.
 f_cam_checkIndex = {
@@ -47,10 +47,10 @@ while {true} do {
             _x SetVariable ["f_spect_listBoxIndex", _index];
           };
         };
-        true
+        nil
       } count units _x;
     };
-    true;
+    nil
   } count _tempArr;
 
   {
@@ -81,7 +81,7 @@ while {true} do {
         [] call f_cam_checkIndex;
       };
     };
-    true;
+    nil
   } count f_cam_listUnits;
   sleep 1;
 };

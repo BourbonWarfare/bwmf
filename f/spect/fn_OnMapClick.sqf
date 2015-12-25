@@ -10,13 +10,13 @@ if (f_cam_mapMode == 2) then {
           _chosen = _x;
           _dist = _pos distance _x;
         };
-      } forEach crew _x;
-      true;
+      } foreach crew _x;
+      nil
     } count _ents;
 
     if (!isNil "_chosen") then {
       f_cam_curTarget = _chosen;
-      if (f_cam_toggleCamera) then {
+      if(f_cam_toggleCamera) then {
         f_cam_curTarget switchCamera "INTERNAL";
       };
 
@@ -29,7 +29,7 @@ if (f_cam_mapMode == 2) then {
       ctrlSetText [1000, format ["Spectating:%1", name f_cam_curTarget]];
     };
   };
-  if (f_cam_mode == 3) then {
+  if(f_cam_mode == 3) then {
     _pos params ["_x", "_y"];
     f_cam_freecamera setPosASL [_x, _y, ((getposASL f_cam_freecamera) select 2 ) max ((getTerrainHeightASL [_x, _y]) + 1)];
 
