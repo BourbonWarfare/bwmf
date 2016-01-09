@@ -1,5 +1,5 @@
 disableSerialization;
-params["_show"];
+params ["_show"];
 _disp = findDisplay 9228;
 if (f_cam_menuWorking) exitWith {};
 if (_show && !f_cam_menuShown) then {

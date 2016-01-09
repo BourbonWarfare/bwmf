@@ -4,15 +4,15 @@
 
 //Setup babble languages:
 F_available_languages = [
-    ["en", "English"],
-    ["ru", "Russian"],
-    ["ar", "Arabic"],
-    ["de", "German"],
-    ["fr", "French"]
+  ["en", "English"],
+  ["ru", "Russian"],
+  ["ar", "Arabic"],
+  ["de", "German"],
+  ["fr", "French"]
 ];
 
 {
-    _x call acre_api_fnc_babelAddLanguageType;
+  _x call acre_api_fnc_babelAddLanguageType;
 } forEach F_available_languages;
 
 //Setup radio presets:
@@ -73,5 +73,5 @@ F_available_languages = [
 diag_log text format ["[BW] - ACRE Presets Setup"];
 
 if (hasInterface) then {
-    [] call F_Radios_fnc_acreRadioSetPlayerChannels;
+  [] call F_Radios_fnc_acreRadioSetPlayerChannels;
 };

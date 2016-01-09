@@ -68,8 +68,8 @@ fn_update_deadListBox = {
     {
       if (_player == (_x select 1)) exitWith { _found = true; };
       nil
-    } count selectedRespawnGroup; 
-    
+    } count selectedRespawnGroup;
+
     if (!_found) then {
       _name = _x getVariable ["f_respawnName", "Name not found"];
       _uid = _x getVariable ["f_respawnUID", "UID not found"];

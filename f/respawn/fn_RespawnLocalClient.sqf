@@ -14,22 +14,22 @@ _factionName = switch (_faction) do {
 
 _sideNum = getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
 _side = switch (_sideNum) do {
-    case 0: {east};
-    case 1: {west};
-    case 2: {resistance};
-    case 3: {civilian};
-    default {civilian};
+  case 0: {east};
+  case 1: {west};
+  case 2: {resistance};
+  case 3: {civilian};
+  default {civilian};
 };
 
 _rankName  = switch (_rank) do {
-    case 0: {"PRIVATE"};
-    case 1: {"CORPORAL"};
-    case 2: {"SERGEANT"};
-    case 3: {"LIEUTENANT"};
-    case 4: {"CAPTAIN"};
-    case 5: {"MAJOR"};
-    case 6: {"COLONEL"};
-    default {"PRIVATE"};
+  case 0: {"PRIVATE"};
+  case 1: {"CORPORAL"};
+  case 2: {"SERGEANT"};
+  case 3: {"LIEUTENANT"};
+  case 4: {"CAPTAIN"};
+  case 5: {"MAJOR"};
+  case 6: {"COLONEL"};
+  default {"PRIVATE"};
 };
 
 //Dummy group is required
@@ -56,21 +56,12 @@ selectPlayer _localRespawnedUnit;
 if (_leader) then {
   //Broadcast group var to everyone so people can join.
   missionNamespace setVariable[_groupVarName, _dummyGroup];
-  _groupPrefix = "";
-  switch (_faction) do {
-      case "blu_f": {
-          _groupPrefix = "NATO ";
-      };
-      case "opf_f":{
-          _groupPrefix = "OPFOR ";
-      };
-      case "ind_f": {
-          _groupPrefix = "IND ";
-      };
-      case "rhs_faction_msv": {
-          _groupPrefix = "MSV ";
-      };
-      default {};
+  _groupPrefix = switch (_faction) do {
+    case "blu_f": {"NATO "};
+    case "opf_f":{"OPFOR "};
+    case "ind_f": {"IND "};
+    case "rhs_faction_msv": {"MSV "};
+    default {""};
   };
   _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
   publicVariable _groupVarName;

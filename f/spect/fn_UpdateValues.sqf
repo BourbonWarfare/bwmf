@@ -41,7 +41,7 @@ while {true} do {
       {
         if (alive _x) then {
           if (!(_x in f_cam_listUnits) && !(_x iskindof "VirtualMan_F")) then {
-             f_cam_listUnits pushBack _x;
+            f_cam_listUnits pushBack _x;
             _text = "    " + name _x;
             _index = lbAdd [_listBox, _text];
             _x SetVariable ["f_spect_listBoxIndex", _index];
@@ -67,8 +67,7 @@ while {true} do {
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
-    }
-    else {
+    } else {
       _val = lbText [_listBox, _index] != "    " + name _x;
 
       if (_index >= 0 && alive _x && _val ) then {

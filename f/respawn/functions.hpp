@@ -1,7 +1,6 @@
-class frespawn
-{
-    file = "f\respawn";
-    class RespawnDrawMapIcons{};
-    class RespawnLocalClient{};
-    class RespawnWaveServer{};
+class frespawn {
+  file = "f\respawn";
+  class RespawnDrawMapIcons{};
+  class RespawnLocalClient{};
+  class RespawnWaveServer{};
 };

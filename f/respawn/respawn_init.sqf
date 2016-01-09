@@ -2,9 +2,9 @@
 #include "respawn_gui_code.sqf";
 
 if (isServer) then {
-    //Counters to allow for unique IDs of respawned players and groups.
-    f_serverRespawnPlayerCounter = 1;
-    f_serverRespawnGroupCounter = 1;
+  //Counters to allow for unique IDs of respawned players and groups.
+  f_serverRespawnPlayerCounter = 1;
+  f_serverRespawnGroupCounter = 1;
 };
 
 if (hasInterface) then {
