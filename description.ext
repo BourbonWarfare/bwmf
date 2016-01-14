@@ -109,8 +109,14 @@ class Params {
     isGlobal = 0;                        // Execute this only on the server
     code = "f_param_timeOfDay = %1";
   };
-  // F3 - End of Params code blocks.
-  // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+  class f_param_endMissionTimer {
+    title = "End Mission Timer";
+    values[] = {-1,0,5,10,15,20,25,30,35,40,45,50,55,60};
+    texts[] = {"Off", "Default", "5 Minutes", "10 Minutes", "15 Minutes", "20 Minutes", "25 Minutes", "30 Minutes", "35 Minutes", "40 Minutes", "45 Minutes", "50 Minutes", "55 Minutes", "60 Minutes"};
+    default = 0;
+    isGlobal = 1;
+    code = "f_param_endMissionTimer = %1";
+  };
 };
 
 class CfgRespawnTemplates {

@@ -7,9 +7,9 @@
     2 (Optional): STRING - Message to hint to everyone when the timer expires (default: "Time is up")
     3 (Optional): BOOL - Add target end mission time to player briefing (default: false)
   Usage: Add to init.sqf
-    [0,1,2,3] call F_fnc_missionTimer;
+    [0,1,2,3] spawn F_fnc_missionTimer;
   Example:
-    [20, true, "The mission is over", true] call F_fnc_missionTimer;
+    [20, true, "The mission is over", true] spawn F_fnc_missionTimer;
 */
 
 params [
@@ -19,8 +19,13 @@ params [
   ["_addToDiary", false, [false]]
 ];
 
+waitUntil { !(isNil f_param_endMissionTimer) }; // Ensure mission parameter is populated
+
+if (f_param_endMissionTimer < 0) exitWith {};
+if (f_param_endMissionTimer > 0) then { _targetMinuteTime = f_param_endMissionTimer; };
+
 if (_afterSafeStart) then {
-  waitUntil { PABST_ADMIN_SAFESTART_public_isSafe }; // Make sure safe start is on
+  waitUntil { !(isNil PABST_ADMIN_SAFESTART_public_isSafe) && PABST_ADMIN_SAFESTART_public_isSafe }; // Make sure safe start is not null and is on
   waitUntil { sleep 1; !PABST_ADMIN_SAFESTART_public_isSafe }; // Wait until safe start is off, check every second
 };
 
