@@ -47,6 +47,8 @@ if (isServer) then { // Only spawn the thread on the server
   [_targetMinuteTime, _message] spawn {
     params ["_targetMinuteTime", "_message"]; // Guaranteed "good" values, no checks
     waitUntil { sleep 1; time > (60 * _targetMinuteTime) }; // Check every second to see if time is past end mission time
+    F_mission_timer_complete = true;
+    publicVariable "F_mission_timer_complete";
     _message remoteExecCall ["hint", -2]; // Send the hint to everything but the server
   };
 };
