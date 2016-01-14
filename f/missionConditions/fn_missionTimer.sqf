@@ -9,7 +9,7 @@
   Usage: Add to init.sqf
     [0,1,2,3] call F_fnc_missionTimer;
   Example:
-    [20, true, "The mission is over", true] call F_fnc_setTeamColours;
+    [20, true, "The mission is over", true] call F_fnc_missionTimer;
 */
 
 params [
