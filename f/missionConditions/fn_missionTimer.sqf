@@ -21,7 +21,7 @@ params [
 
 if (_afterSafeStart) then {
   waitUntil { PABST_ADMIN_SAFESTART_public_isSafe }; // Make sure safe start is on
-  waitUntil { !PABST_ADMIN_SAFESTART_public_isSafe }; // Wait until safe start is off
+  waitUntil { sleep 1; !PABST_ADMIN_SAFESTART_public_isSafe }; // Wait until safe start is off, check every second
 };
 
 if (hasInterface && _addToDiary) then { // For all players and if we should add to diary, add in game mission end time to briefing
