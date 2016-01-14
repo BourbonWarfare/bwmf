@@ -6,7 +6,7 @@
     1 (Optional): BOOL - Start timer after safe start (default: false)
     2 (Optional): STRING - Message to hint to everyone when the timer expires (default: "Time is up")
     3 (Optional): BOOL - Add target end mission time to player briefing (default: false)
-  Usage: Add to init
+  Usage: Add to init.sqf
     [0,1,2,3] call F_fnc_missionTimer;
   Example:
     [20, true, "The mission is over", true] call F_fnc_setTeamColours;
@@ -47,6 +47,6 @@ if (isServer) then { // Only spawn the thread on the server
   [_targetMinuteTime, _message] spawn {
     params ["_targetMinuteTime", "_message"]; // Guaranteed "good" values, no checks
     waitUntil { sleep 1; time > (60 * _targetMinuteTime) }; // Check every second to see if time is past end mission time
-    _message remoteExecCall ["hint"]; // Send the hint to everything (ignore future JIPs)
+    _message remoteExecCall ["hint", -2]; // Send the hint to everything but the server
   };
 };
