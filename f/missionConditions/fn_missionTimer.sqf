@@ -1,6 +1,6 @@
 /*
   Author: AACO
-  Description: Function to help mission makers set soft time limits to misisons
+  Description: Function to help mission makers set soft time limits to missions
   Parameters:
     0 (Optional): NUMBER - Targeted mission length in minutes (default: 30)
     1 (Optional): BOOL - Start timer after safe start (default: false)
