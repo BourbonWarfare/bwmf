@@ -19,18 +19,18 @@ params [
   ["_addToDiary", false, [false]]
 ];
 
-waitUntil { !(isNil f_param_endMissionTimer) }; // Ensure mission parameter is populated
+waitUntil { !(isNil "f_param_endMissionTimer") }; // Ensure mission parameter is populated
 
 if (f_param_endMissionTimer < 0) exitWith {};
 if (f_param_endMissionTimer > 0) then { _targetMinuteTime = f_param_endMissionTimer; };
 
 if (_afterSafeStart) then {
-  waitUntil { !(isNil PABST_ADMIN_SAFESTART_public_isSafe) && PABST_ADMIN_SAFESTART_public_isSafe }; // Make sure safe start is not null and is on
+  waitUntil { !(isNil "PABST_ADMIN_SAFESTART_public_isSafe") }; // Make sure safe start is not null and is on
   waitUntil { sleep 1; !PABST_ADMIN_SAFESTART_public_isSafe }; // Wait until safe start is off, check every second
 };
 
 if (hasInterface && _addToDiary) then { // For all players and if we should add to diary, add in game mission end time to briefing
-  fn_numberToTwoDigitString { // Helper function to make sure each part of the time is two digits
+  fn_numberToTwoDigitString = { // Helper function to make sure each part of the time is two digits
     params [["_number", 0, [0]]]; // Should be good data, double check for good luck
     private _stringNumber = str _number; //Turn the input number into a string
 
@@ -40,20 +40,23 @@ if (hasInterface && _addToDiary) then { // For all players and if we should add 
     _stringNumber
   };
 
-  private _targetDaytime = daytime * (_targetMinuteTime / 60));
+  private _targetDaytime = daytime + (_targetMinuteTime / 60);
   private _targetHour = floor (_targetDaytime % 24);
   private _targetMinute = floor ((_targetDaytime - _targetHour) * 60);
-  player createDiaryRecord ["diary", ["Mission Timer", format ["Target end of mission time: %1:%2",
+  private _targetSecond = floor (((((_targetDaytime) - (_targetHour)) * 60) - _targetMinute)  * 60);
+  player createDiaryRecord ["diary", ["Mission Timer", format ["Target end of mission time: %1:%2:%3",
                                                                [_targetHour] call fn_numberToTwoDigitString,
-                                                               [_targetMinute] call fn_numberToTwoDigitString]]];
+                                                               [_targetMinute] call fn_numberToTwoDigitString,
+                                                               [_targetSecond] call fn_numberToTwoDigitString]]];
 };
 
 if (isServer) then { // Only spawn the thread on the server
   [_targetMinuteTime, _message] spawn {
     params ["_targetMinuteTime", "_message"]; // Guaranteed "good" values, no checks
-    waitUntil { sleep 1; time > (60 * _targetMinuteTime) }; // Check every second to see if time is past end mission time
+    private _targetSecondTime = time + (60 * _targetMinuteTime);
+    waitUntil { sleep 1; time > _targetSecondTime }; // Check every second to see if time is past end mission time
     F_mission_timer_complete = true;
     publicVariable "F_mission_timer_complete";
-    _message remoteExecCall ["hint", -2]; // Send the hint to everything but the server
+    _message remoteExecCall ["hint", 0]; // Send the hint to everything
   };
 };
