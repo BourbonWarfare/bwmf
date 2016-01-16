@@ -12,14 +12,13 @@ params [
 
 // escape the script if you are not a seagull unless forced
 if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
+if (!isNil "_seagull") then { camDestroy _seagull; };
 
 waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_deadUnit) || _forced };
 
 if (!isNil "BIS_fnc_feedback_allowPP") then {
   BIS_fnc_feedback_allowPP = false; // disable effects death effects
 };
-
-if (!isNil "_seagull") then { camDestroy _seagull; };
 
 _deadUnit setVariable ["timeOfDeath", serverTime, true];
 
