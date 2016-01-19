@@ -221,7 +221,6 @@ class rhs_faction_usmc_wd {
     //backpackItems[] += {BASE_MINE};   // uncomment to add mines
     linkedItems[] = { WEST_BASE_LINKED };
   };
-
   class rhsusf_usmc_recon_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_squadleader {// SF Squad Leader
     //headgear[] = { "rhsusf_Bowman" };
   };
@@ -237,8 +236,6 @@ class rhs_faction_usmc_wd {
   };
   class rhsusf_usmc_recon_marpat_wd_rifleman_at: rhsusf_usmc_marpat_wd_riflemanat{// SF RAT
   };
-
-
   class fallback: rhsusf_usmc_marpat_wd_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
 
