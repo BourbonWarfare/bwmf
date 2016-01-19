@@ -143,12 +143,12 @@ class rhs_faction_usmc_wd {
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class rhsusf_usmc_lar_marpat_wd_machinegunner : Fic_Soldier_Carbine{// HMG
-      backpackItems[] = {};
-      backpack[] = { "RHS_M2_Gun_Bag" };
+    backpackItems[] = {};
+    backpack[] = { "RHS_M2_Gun_Bag" };
   };
   class rhsusf_usmc_lar_marpat_wd_marksman : Fic_Spotter{// HMG Spotter / Ammo carrier
-      backpackItems[] = {};
-      backpack[] = {"RHS_M2_MiniTripod_Bag"};
+    backpackItems[] = {};
+    backpack[] = {"RHS_M2_MiniTripod_Bag"};
   };
   class rhsusf_usmc_marpat_wd_smaw: Fic_Soldier_Carbine {// MAT Gunner
     // Classnames for launcher set at the top of this file
@@ -162,12 +162,12 @@ class rhs_faction_usmc_wd {
     LAUNCHER_GEAR("B_Carryall_mcamo", USMC_MAT_MAG2)
   };
   class rhsusf_usmc_lar_marpat_wd_crewman : Fic_Soldier_Carbine{ // HAT Gunner
-      LAUNCHER_GEAR("B_Carryall_mcamo", WEST_HAT_MAG)
-      launchers[] = {WEST_HAT};
+    LAUNCHER_GEAR("B_Carryall_mcamo", WEST_HAT_MAG)
+    launchers[] = {WEST_HAT};
   };
   class rhsusf_usmc_lar_marpat_wd_combatcrewman : Fic_Spotter{// HAT Spotter
-      vest[] = {"rhsusf_spc_light"};
-      LAUNCHER_GEAR("B_Carryall_mcamo", WEST_HAT_MAG)
+    vest[] = {"rhsusf_spc_light"};
+    LAUNCHER_GEAR("B_Carryall_mcamo", WEST_HAT_MAG)
   };
   class rhsusf_usmc_marpat_wd_stinger : Fic_Soldier_Carbine {// SAM Gunner
     vest[] = { "rhsusf_spc_light" };
@@ -197,7 +197,7 @@ class rhs_faction_usmc_wd {
   };
   class rhsusf_usmc_marpat_wd_helicrew: rhsusf_usmc_marpat_wd_helipilot {// Pilot Crewchief
     headgear[] = {"rhsusf_hgu56p_mask"};
-  }; 
+  };
   class rhsusf_usmc_marpat_wd_combatcrewman: Fic_Soldier_Carbine {// Crewman Commander
     vest[] = {"rhsusf_spc_crewman"};
     headgear[] = {"rhsusf_cvc_helmet"};
@@ -212,7 +212,7 @@ class rhs_faction_usmc_wd {
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class rhsusf_usmc_marpat_wd_engineer: rhsusf_usmc_marpat_wd_combatcrewman{// Crewman Driver
-      backpackItems[] += {"Toolkit"};
+    backpackItems[] += {"Toolkit"};
   };
   class Fic_eng: rhsusf_usmc_marpat_wd_crewman {
     headgear[] = {"rhsusf_lwh_helmet_marpatd"};
@@ -225,7 +225,7 @@ class rhs_faction_usmc_wd {
     //backpackItems[] += {BASE_MINE};   // uncomment to add mines
     linkedItems[] = { WEST_BASE_LINKED };
   };
-  
+
   class rhsusf_usmc_recon_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_squadleader {// SF Squad Leader
     //headgear[] = { "rhsusf_Bowman" };
   };
@@ -235,25 +235,25 @@ class rhs_faction_usmc_wd {
   class rhsusf_usmc_recon_marpat_wd_machinegunner: rhsusf_usmc_marpat_wd_autorifleman_m249{// SF AR
   };
   class rhsusf_usmc_recon_marpat_wd_marksman: rhsusf_usmc_marpat_wd_autorifleman_m249_ass{// SF AAR
-      weapons[] = {WEST_SNIPER};
-      magazines[] = {WEST_SNIPER_MAG, WEST_BASE_GRENADES};
-      attachments[] = {};
+    weapons[] = {WEST_SNIPER};
+    magazines[] = {WEST_SNIPER_MAG, WEST_BASE_GRENADES};
+    attachments[] = {};
   };
   class rhsusf_usmc_recon_marpat_wd_rifleman_at: rhsusf_usmc_marpat_wd_riflemanat{// SF RAT
   };
-  
+
 
   class fallback: rhsusf_usmc_marpat_wd_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
 
 class rhs_faction_usn : rhs_faction_usmc_wd{
-    class rhsusf_navy_marpat_wd_medic : Fic_Soldier_Carbine{// SL Corpsman
-        vest[] = { "rhsusf_spc_corpsman" };
-        magazines[] = { WEST_CARBINE_MAG,MEDIC_GRENADES };
-        backpackItems[] = { MEDIC_MEDICAL };
-        };
-    class rhsusf_navy_sarc_w_fast : rhsusf_navy_marpat_wd_medic{// SF Squad Corpsman
-        };
-    class rhsusf_navy_sarc_w : rhsusf_navy_marpat_wd_medic{ // PLT Corpsman. Same as SL Corpsman. Future proofing for Advanced Medical
-        };
-    };
+  class rhsusf_navy_marpat_wd_medic : Fic_Soldier_Carbine{// SL Corpsman
+    vest[] = { "rhsusf_spc_corpsman" };
+    magazines[] = { WEST_CARBINE_MAG,MEDIC_GRENADES };
+    backpackItems[] = { MEDIC_MEDICAL };
+  };
+  class rhsusf_navy_sarc_w_fast : rhsusf_navy_marpat_wd_medic{// SF Squad Corpsman
+  };
+  class rhsusf_navy_sarc_w : rhsusf_navy_marpat_wd_medic{ // PLT Corpsman. Same as SL Corpsman. Future proofing for Advanced Medical
+  };
+};
