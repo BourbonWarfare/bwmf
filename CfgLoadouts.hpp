@@ -24,8 +24,8 @@ class CfgLoadouts {
   // #include "Loadouts\blu_ger_g36_fleck.hpp"     // German: G36 - Flecktarn Camo
 
   //USMC FACTION (rhs_faction_usmc_wd):
-  #include "Loadouts\blu_usmc_m16_desert.hpp"      // USMC COOP Template Desert Loadout
-  // #include "Loadouts\blu_usmc_m16_woodland.hpp" // USMC COOP Template Woodland Loadout
+  #include "Loadouts\usmc_us_m16_desert.hpp"      // US: M16 - FROG Desert
+  // #include "Loadouts\usmc_us_m16_woodland.hpp"  // US: M16 - FROG Woodland
 
   //INDFOR FACTION (ind_f):
   #include "Loadouts\ind_ukr_ak74_ttsko.hpp"       // Ukraine: AK74 - TTskO
