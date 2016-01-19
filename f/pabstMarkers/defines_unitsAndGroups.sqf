@@ -116,103 +116,103 @@
   ["UnitNATO_TH7", "NATO TH7"], \
   ["UnitNATO_TH8", "NATO TH8"], \
   ["UnitNATO_AH1", "NATO AH1"], \
-  ["UnitNATO_AH2", "NATO AH2"] \
+  ["UnitNATO_AH2", "NATO AH2"], \
   \
-	["unitMAR_COY", "USMC COY -"], \
+	["unitMAR_COY", "USMC COY"], \
 	\
-	["unitMAR_1PLT", "USMC 1PLT -"], \
+	["unitMAR_1PLT", "USMC 1PLT"], \
 	\
-	["unitMAR_ASL",  "USMC ASL -"], \
-	["unitMAR_A1",   "USMC A1 -"], \
-	["unitMAR_A2",   "USMC A2 -"], \
-	["unitMAR_A3",   "USMC A3 -"], \
+	["unitMAR_ASL",  "USMC ASL"], \
+	["unitMAR_A1",   "USMC A1"], \
+	["unitMAR_A2",   "USMC A2"], \
+	["unitMAR_A3",   "USMC A3"], \
 	\
-	["unitMAR_BSL",  "USMC BSL -"], \
-	["unitMAR_B1",   "USMC B1 -"], \
-	["unitMAR_B2",   "USMC B2 -"], \
-	["unitMAR_B3",   "USMC B3 -"], \
+	["unitMAR_BSL",  "USMC BSL"], \
+	["unitMAR_B1",   "USMC B1"], \
+	["unitMAR_B2",   "USMC B2"], \
+	["unitMAR_B3",   "USMC B3"], \
 	\
-	["unitMAR_CSL",  "USMC CSL -"], \
-	["unitMAR_C1",   "USMC C1 -"], \
-	["unitMAR_C2",   "USMC C2 -"], \
-	["unitMAR_C3",   "USMC C3 -"], \
+	["unitMAR_CSL",  "USMC CSL"], \
+	["unitMAR_C1",   "USMC C1"], \
+	["unitMAR_C2",   "USMC C2"], \
+	["unitMAR_C3",   "USMC C3"], \
 	\
-	["unitMAR_2PLT", "USMC 2PLT -"], \
+	["unitMAR_2PLT", "USMC 2PLT"], \
 	\
-	["unitMAR_DSL",  "USMC DSL -"], \
-	["unitMAR_D1",   "USMC D1 -"], \
-	["unitMAR_D2",   "USMC D2 -"], \
+	["unitMAR_DSL",  "USMC DSL"], \
+	["unitMAR_D1",   "USMC D1"], \
+	["unitMAR_D2",   "USMC D2"], \
 	["unitMAR_D3",   "USMC D3 -"], \
 	\
-	["unitMAR_ESL",  "USMC ESL -"], \
-	["unitMAR_E1",   "USMC E1 -"], \
-	["unitMAR_E2",   "USMC E2 -"], \
-	["unitMAR_E3",   "USMC E3 -"], \
+	["unitMAR_ESL",  "USMC ESL"], \
+	["unitMAR_E1",   "USMC E1"], \
+	["unitMAR_E2",   "USMC E2"], \
+	["unitMAR_E3",   "USMC E3"], \
 	\
-	["unitMAR_FSL",  "USMC FSL -"], \
-	["unitMAR_F1",   "USMC F1 -"], \
-	["unitMAR_F2",   "USMC F2 -"], \
-	["unitMAR_F3",   "USMC F3 -"], \
+	["unitMAR_FSL",  "USMC FSL"], \
+	["unitMAR_F1",   "USMC F1"], \
+	["unitMAR_F2",   "USMC F2"], \
+	["unitMAR_F3",   "USMC F3"], \
 	\
-	["unitMAR_WSL",  "USMC WSL -"], \
+	["unitMAR_WSL",  "USMC WSL"], \
 	\
-	["unitMAR_MMG1", "USMC MMG1 -"], \
-	["unitMAR_MMG2", "USMC MMG2 -"], \
-	["unitMAR_MMG3", "USMC MMG3 -"], \
+	["unitMAR_MMG1", "USMC MMG1"], \
+	["unitMAR_MMG2", "USMC MMG2"], \
+	["unitMAR_MMG3", "USMC MMG3"], \
 	\
-	["unitMAR_MAT1", "USMC MAT1 -"], \
-	["unitMAR_MAT2", "USMC MAT2 -"], \
-	["unitMAR_MAT3", "USMC MAT3 -"], \
+	["unitMAR_MAT1", "USMC MAT1"], \
+	["unitMAR_MAT2", "USMC MAT2"], \
+	["unitMAR_MAT3", "USMC MAT3"], \
 	\
-	["unitMAR_MTR1", "USMC MTR1 -"], \
-	["unitMAR_MTR2", "USMC MTR2 -"], \
-	["unitMAR_MTR3", "USMC MTR3 -"], \
+	["unitMAR_MTR1", "USMC MTR1"], \
+	["unitMAR_MTR2", "USMC MTR2"], \
+	["unitMAR_MTR3", "USMC MTR3"], \
 	\
-	["unitMAR_HAT1", "USMC HAT1 -"], \
-	["unitMAR_HAT2", "USMC HAT2 -"], \
-	["unitMAR_HAT3", "USMC HAT3 -"], \
-	["unitMAR_HAT4", "USMC HAT4 -"], \
+	["unitMAR_HAT1", "USMC HAT1"], \
+	["unitMAR_HAT2", "USMC HAT2"], \
+	["unitMAR_HAT3", "USMC HAT3"], \
+	["unitMAR_HAT4", "USMC HAT4"], \
 	\
-	["unitMAR_HMG1", "USMC HMG1 -"], \
-	["unitMAR_HMG2", "USMC HMG2 -"], \
-	["unitMAR_HMG3", "USMC HMG3 -"], \
-	["unitMAR_HMG4", "USMC HMG4 -"], \
+	["unitMAR_HMG1", "USMC HMG1"], \
+	["unitMAR_HMG2", "USMC HMG2"], \
+	["unitMAR_HMG3", "USMC HMG3"], \
+	["unitMAR_HMG4", "USMC HMG4"], \
 	\
-	["unitMAR_AA1", "USMC MSAM1 -"], \
-	["unitMAR_AA2", "USMC MSAM2 -"], \
+	["unitMAR_AA1", "USMC MSAM1"], \
+	["unitMAR_AA2", "USMC MSAM2"], \
 	\
-	["unitMAR_EOD1", "USMC EOD1 -"], \
-	["unitMAR_EOD2", "USMC EOD2 -"], \
-	["unitMAR_EOD3", "USMC EOD3 -"], \
+	["unitMAR_EOD1", "USMC EOD1"], \
+	["unitMAR_EOD2", "USMC EOD2"], \
+	["unitMAR_EOD3", "USMC EOD3"], \
 	\
-	["unitMAR_RSL", "USMC FRSL -"], \
-	["unitMAR_R1", "USMC FR1 -"], \
-	["unitMAR_R2", "USMC FR2 -"], \
-	["unitMAR_R3", "USMC FR3 -"], \
+	["unitMAR_RSL", "USMC FRSL"], \
+	["unitMAR_R1", "USMC FR1"], \
+	["unitMAR_R2", "USMC FR2"], \
+	["unitMAR_R3", "USMC FR3"], \
 	\
-	["unitMAR_IFV1", "USMC IFV1 -"], \
-	["unitMAR_IFV2", "USMC IFV2 -"], \
-	["unitMAR_IFV3", "USMC IFV3 -"], \
-	["unitMAR_IFV4", "USMC IFV4 -"], \
-	["unitMAR_IFV5", "USMC IFV5 -"], \
-	["unitMAR_IFV6", "USMC IFV6 -"], \
-	["unitMAR_IFV7", "USMC IFV7 -"], \
-	["unitMAR_IFV8", "USMC IFV8 -"], \
-	["unitMAR_TNK1", "USMC TNK1 -"], \
-	["unitMAR_TNK2", "USMC TNK2 -"], \
-	["unitMAR_TNK3", "USMC TNK3 -"], \
-  ["unitMAR_TNK4", "USMC TNK4 -"], \
+	["unitMAR_IFV1", "USMC IFV1"], \
+	["unitMAR_IFV2", "USMC IFV2"], \
+	["unitMAR_IFV3", "USMC IFV3"], \
+	["unitMAR_IFV4", "USMC IFV4"], \
+	["unitMAR_IFV5", "USMC IFV5"], \
+	["unitMAR_IFV6", "USMC IFV6"], \
+	["unitMAR_IFV7", "USMC IFV7"], \
+	["unitMAR_IFV8", "USMC IFV8"], \
+	["unitMAR_TNK1", "USMC TNK1"], \
+	["unitMAR_TNK2", "USMC TNK2"], \
+	["unitMAR_TNK3", "USMC TNK3"], \
+  ["unitMAR_TNK4", "USMC TNK4"], \
 	\
-	["unitMAR_TH1", "USMC TH1 -"], \
-	["unitMAR_TH2", "USMC TH2 -"], \
-	["unitMAR_TH3", "USMC TH3 -"], \
-	["unitMAR_TH4", "USMC TH4 -"], \
-	["unitMAR_TH5", "USMC TH5 -"], \
-	["unitMAR_TH6", "USMC TH6 -"], \
-	["unitMAR_TH7", "USMC TH7 -"], \
-	["unitMAR_TH8", "USMC TH8 -"], \
-	["unitMAR_AH1", "USMC AH1 -"], \
-	["unitMAR_AH2", "USMC AH2 -"] \
+	["unitMAR_TH1", "USMC TH1"], \
+	["unitMAR_TH2", "USMC TH2"], \
+	["unitMAR_TH3", "USMC TH3"], \
+	["unitMAR_TH4", "USMC TH4"], \
+	["unitMAR_TH5", "USMC TH5"], \
+	["unitMAR_TH6", "USMC TH6"], \
+	["unitMAR_TH7", "USMC TH7"], \
+	["unitMAR_TH8", "USMC TH8"], \
+	["unitMAR_AH1", "USMC AH1"], \
+	["unitMAR_AH2", "USMC AH2"] \
   ]\
 
 // GROUP IDs: OPFOR > OPFOR
