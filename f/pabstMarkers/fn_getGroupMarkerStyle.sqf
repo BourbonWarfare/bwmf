@@ -118,11 +118,11 @@ switch true do {
     _texture = _recon;
     _color = _orange;
   };
-  case (_input in ["DT1","DT2","DT3"]): {
+  case (_input in ["FRSL","FR1","FR2","FR3","DT1","DT2","DT3"]): {
     _texture = _recon;
     _color = _orange;
   };
-  case (_input in ["ENG1","ENG2","ENG3"]): {
+  case (_input in ["EOD1","EOD2","EOD3","ENG1","ENG2","ENG3"]): {
     _texture = _maint;
     _color = _orange;
   };
@@ -142,7 +142,7 @@ switch true do {
     _texture = _mech;
     _color = _orange;
   };
-  case (_input in ["TNK1","TNK2","TNK3"]): {
+  case (_input in ["TNK1","TNK2","TNK3","TNK4"]): {
     _texture = _armor;
     _color = _red;
   };
@@ -169,6 +169,11 @@ switch true do {
   case (_input in ["COM","DCM","P1M","P2M","AM","BM","CM","DM","EM","FM","WSM"]): {
     _texture = _med;
     _color = _pink;
+    _size = [16,16];
+  };
+    case (_input in ["REM"]): {
+    _texture = _med;
+    _color = _black;
     _size = [16,16];
   };
 };
