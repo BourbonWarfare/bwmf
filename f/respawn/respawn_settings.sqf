@@ -48,7 +48,9 @@ respawnMenuGroupNames = [
   ["AH1", 13, 4],
   ["AH2", 13, 4],
   ["TNK1", 15, 4],
-  ["TNK2", 15, 4]
+  ["TNK2", 15, 4],
+  ["TNK3", 15, 4],
+  ["TNK4", 15, 4]
 ];
 
 respawnMenuRoles = [
@@ -76,7 +78,20 @@ respawnMenuRoles = [
   ["C", "Crewman - Vehicle Crew"],
   ["D", "Crewman - Vehicle Driver"],
   ["PP", "Aircrewman - Pilot"],
-  ["PCC", "Aircrewman - Crew Chief (Repair)"]
+  ["PCC", "Aircrewman - Crew Chief (Repair)"],
+  ["VC","Vehicle Commander"],
+  ["VG","Vehicle Gunner"],
+  ["VD","Vehicle Driver"],
+  ["SSL","Special Squad Leader"],
+  ["SM","Special Corpsman"],
+  ["SFTL","Special Fireteam Leader"],
+  ["SAR","Special Autorifleman"],
+  ["SAAR","Special Ass Autorifleman"],
+  ["SRAT","Special Rifleman AT"],
+  ["HMGG","Heavy Machinegunner"],
+  ["HMGAG","Heavy Ass Machinegunner"],
+  ["HATG","Heavy AT Gunner"],
+  ["HATAG",Heavy AT Assist"]
 ];
 
 // Factions that will appear in the respawn GUI.
@@ -85,7 +100,9 @@ respawnMenuFactions = [
   ["blu_f", "NATO"],
   ["opf_f", "CSAT"],
   ["ind_f", "AAF"],
-  ["rhs_faction_msv", "MSV"]
+  ["rhs_faction_msv", "MSV"],
+  ["rhs_faction_usmc_wd","USMC"],
+  ["rhs_faction_usn","USN"]
 ];
 
 // Respawn Classes
@@ -184,6 +201,42 @@ fn_respawnSelectClass = {
         case "PP": { _type = "rhs_pilot_transport_heli"};
         case "PCC": { _type = "rhs_msv_engineer"};
         default  { _type = "rhs_msv_rifleman"; };
+      };
+    };
+    case "rhs_faction_usmc_wd" : {
+      switch (_typeOfUnit) do {
+        case "CO": { _type = "rhsusf_usmc_marpat_wd_officer"};
+        case "SL": { _type = "rhsusf_usmc_marpat_wd_squadleader"};
+        case "FTL": { _type = "rhsusf_usmc_marpat_wd_teamleader"};
+        case "AR": { _type = "rhsusf_usmc_marpat_wd_autorifleman_m249"};
+        case "AAR": { _type = "rhsusf_usmc_marpat_wd_autorifleman_m249_ass"};
+        case "RAT": { _type = "rhsusf_usmc_marpat_wd_riflemanat"};
+        case "MMGG": { _type = "rhsusf_usmc_marpat_wd_machinegunner"};
+        case "MMGAG": { _type = "rhsusf_usmc_marpat_wd_machinegunner_ass"};
+        case "MATG": { _type = "rhsusf_usmc_marpat_wd_smaw"};
+        case "MATAG": { _type = "rhsusf_usmc_marpat_wd_javelin"};
+        case "MSAMG": { _type = "rhsusf_usmc_marpat_wd_stinger"};
+        case "VC": { _type = "rhsusf_usmc_marpat_wd_combatcrewman"};
+        case "VG": { _type = "rhsusf_usmc_marpat_wd_crewman"};
+        case "VD": { _type = "rhsusf_usmc_marpat_wd_engineer"};
+        case "PP": { _type = "rhsusf_usmc_marpat_wd_helipilot"};
+        case "PCC": { _type = "rhsusf_usmc_marpat_wd_helicrew"};
+        case "SSL": { _type = "rhsusf_usmc_recon_marpat_wd_teamleader"};
+        case "SFTL": { _type = "I_soldier_repair_F"};
+        case "SAR": { _type = "rhsusf_usmc_recon_marpat_wd_machinegunner"};
+        case "SAAR": { _type = "rhsusf_usmc_recon_marpat_wd_marksman"};
+        case "SRAT": { _type = "rhsusf_usmc_recon_marpat_wd_rifleman_at"};
+        case "HMGG": { _type = "rhsusf_usmc_lar_marpat_wd_machinegunner"};
+        case "HMGAG": { _type = "rhsusf_usmc_lar_marpat_wd_marksman"};
+        case "HATG": { _type = "rhsusf_usmc_lar_marpat_wd_crewman"};
+        case "HATAG": { _type = "rhsusf_usmc_lar_marpat_wd_combatcrewman"};
+        default  { _type = "I_Soldier_F"; };
+      };
+    };
+    case "rhs_faction_usn" : {
+      switch (_typeOfUnit) do {
+        case "M": { _type = "rhsusf_navy_marpat_wd_medic"};
+        case "SM": { _type = "rhsusf_navy_sarc_w_fast"};
       };
     };
     default {};
