@@ -77,13 +77,11 @@ respawnMenuRoles = [
   ["MATAG", "MAT - Assistant"],
   ["MSAMG", "MSAM - Gunner"],
   ["MSAMAG", "MSAM - Assistant"],
+  ["VC", "Crewman - Vehicle Crew"],
   ["C", "Crewman - Vehicle Crew"],
   ["D", "Crewman - Vehicle Driver"],
   ["PP", "Aircrewman - Pilot"],
   ["PCC", "Aircrewman - Crew Chief (Repair)"],
-  ["VC","Vehicle Commander"],
-  ["VG","Vehicle Gunner"],
-  ["VD","Vehicle Driver"],
   ["SSL","Special Squad Leader"],
   ["SM","Special Corpsman"],
   ["SFTL","Special Fireteam Leader"],
@@ -104,7 +102,7 @@ respawnMenuFactions = [
   ["ind_f", "AAF"],
   ["rhs_faction_msv", "MSV"],
   ["rhs_faction_usmc_wd","USMC"],
-  ["rhs_faction_usn","USN - Medics"]
+  ["rhs_faction_usn","USN - Corpsman"]
 ];
 
 // Respawn Classes
@@ -131,6 +129,7 @@ fn_respawnSelectClass = {
         case "MATAG": { _type = "B_soldier_AAT_F"};
         case "MSAMG": { _type = "B_soldier_AA_F"};
         case "MSAMAG": { _type = "B_soldier_AAA_F"};
+        case "VC": { _type = "B_crew_F"};
         case "C": { _type = "B_crew_F"};
         case "D": { _type = "B_soldier_repair_F"};
         case "PP": { _type = "B_Helipilot_F"};
@@ -153,6 +152,7 @@ fn_respawnSelectClass = {
         case "MATAG": { _type = "O_soldier_AAT_F"};
         case "MSAMG": { _type = "O_soldier_AA_F"};
         case "MSAMAG": { _type = "O_soldier_AAA_F"};
+        case "VC": { _type = "O_crew_F"};
         case "C": { _type = "O_crew_F"};
         case "D": { _type = "O_soldier_repair_F"};
         case "PP": { _type = "O_Helipilot_F"};
@@ -175,6 +175,7 @@ fn_respawnSelectClass = {
         case "MATAG": { _type = "I_soldier_AAT_F"};
         case "MSAMG": { _type = "I_soldier_AA_F"};
         case "MSAMAG": { _type = "I_soldier_AAA_F"};
+        case "VC": { _type = "I_crew_F"};
         case "C": { _type = "I_crew_F"};
         case "D": { _type = "I_soldier_repair_F"};
         case "PP": { _type = "I_Helipilot_F"};
@@ -198,6 +199,7 @@ fn_respawnSelectClass = {
         case "MMGAG": { _type = "rhs_msv_machinegunner_assistant"};
         case "MATG": { _type = "rhs_msv_at"};
         case "MATAG": { _type = "rhs_msv_strelok_rpg_assist"};
+        case "VC": { _type = "rhs_msv_crew"};
         case "C": { _type = "rhs_msv_crew"};
         case "D": { _type = "rhs_msv_engineer"};
         case "PP": { _type = "rhs_pilot_transport_heli"};
@@ -219,8 +221,8 @@ fn_respawnSelectClass = {
         case "MATAG": { _type = "rhsusf_usmc_marpat_wd_javelin"};
         case "MSAMG": { _type = "rhsusf_usmc_marpat_wd_stinger"};
         case "VC": { _type = "rhsusf_usmc_marpat_wd_combatcrewman"};
-        case "VG": { _type = "rhsusf_usmc_marpat_wd_crewman"};
-        case "VD": { _type = "rhsusf_usmc_marpat_wd_engineer"};
+        case "G": { _type = "rhsusf_usmc_marpat_wd_crewman"};
+        case "D": { _type = "rhsusf_usmc_marpat_wd_engineer"};
         case "PP": { _type = "rhsusf_usmc_marpat_wd_helipilot"};
         case "PCC": { _type = "rhsusf_usmc_marpat_wd_helicrew"};
         case "SSL": { _type = "rhsusf_usmc_recon_marpat_wd_teamleader"};
