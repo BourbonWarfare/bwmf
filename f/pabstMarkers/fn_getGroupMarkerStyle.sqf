@@ -173,7 +173,7 @@ switch true do {
   };
     case (_input in ["REM"]): {
     _texture = _med;
-    _color = _black;
+    _color = _orange;
     _size = [16,16];
   };
 };
