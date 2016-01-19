@@ -93,7 +93,7 @@ respawnMenuRoles = [
   ["HMGG","Heavy Machinegunner"],
   ["HMGAG","Heavy Ass Machinegunner"],
   ["HATG","Heavy AT Gunner"],
-  ["HATAG",Heavy AT Assist"]
+  ["HATAG","Heavy AT Assist"]
 ];
 
 // Factions that will appear in the respawn GUI.
