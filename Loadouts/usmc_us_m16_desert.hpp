@@ -83,7 +83,7 @@ class rhs_faction_usmc_wd {
     weapons[] = {WEST_CARBINE};
     magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
   };
-  class rhsusf_usmc_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_rifleman {// FTL
+  class rhsusf_usmc_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_rifleman {// FTLi
     vest[] = {"rhsusf_spc_teamleader"};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_BASE_GRENADES};
@@ -140,12 +140,12 @@ class rhs_faction_usmc_wd {
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class rhsusf_usmc_lar_marpat_wd_machinegunner : Fic_Soldier_Carbine{// HMG
-    items[] = {BASE_MEDICAL};
+    items[] += {BASE_MEDICAL};
     backpackItems[] = {};
     backpack[] = { "RHS_M2_Gun_Bag" };
   };
   class rhsusf_usmc_lar_marpat_wd_marksman : Fic_Spotter{// HMG Spotter / Ammo carrier
-    items[] = {BASE_MEDICAL};
+    items[] += {BASE_MEDICAL};
     backpackItems[] = {};
     backpack[] = {"RHS_M2_MiniTripod_Bag"};
   };
