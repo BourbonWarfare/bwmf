@@ -13,7 +13,6 @@ F_Markers_factionMap = [
   ["ind_f"],
   ["opf_f"],
   ["rhs_faction_msv", "rhs_faction_vvs"]
-  [
 ];
 
 
