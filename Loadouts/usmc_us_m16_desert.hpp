@@ -83,7 +83,7 @@ class rhs_faction_usmc_wd {
     weapons[] = {WEST_CARBINE};
     magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
   };
-  class rhsusf_usmc_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_rifleman {// FTLi
+  class rhsusf_usmc_marpat_wd_teamleader: rhsusf_usmc_marpat_wd_rifleman {// FTL
     vest[] = {"rhsusf_spc_teamleader"};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_BASE_GRENADES};
