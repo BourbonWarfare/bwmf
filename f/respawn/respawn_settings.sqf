@@ -37,6 +37,8 @@ respawnMenuGroupNames = [
   ["MAT1", 10, 4],
   ["MAT2", 10, 4],
   ["MSAM1", 10, 4],
+  ["HMG", 10, 4],
+  ["HAT", 10, 4],
   ["TH1", 12, 4],
   ["TH2", 12, 4],
   ["TH3", 12, 4],
@@ -102,7 +104,7 @@ respawnMenuFactions = [
   ["ind_f", "AAF"],
   ["rhs_faction_msv", "MSV"],
   ["rhs_faction_usmc_wd","USMC"],
-  ["rhs_faction_usn","USN"]
+  ["rhs_faction_usn","USN - Medics"]
 ];
 
 // Respawn Classes
@@ -222,7 +224,7 @@ fn_respawnSelectClass = {
         case "PP": { _type = "rhsusf_usmc_marpat_wd_helipilot"};
         case "PCC": { _type = "rhsusf_usmc_marpat_wd_helicrew"};
         case "SSL": { _type = "rhsusf_usmc_recon_marpat_wd_teamleader"};
-        case "SFTL": { _type = "I_soldier_repair_F"};
+        case "SFTL": { _type = "rhsusf_usmc_recon_marpat_wd_teamleader_fast"};
         case "SAR": { _type = "rhsusf_usmc_recon_marpat_wd_machinegunner"};
         case "SAAR": { _type = "rhsusf_usmc_recon_marpat_wd_marksman"};
         case "SRAT": { _type = "rhsusf_usmc_recon_marpat_wd_rifleman_at"};
@@ -230,13 +232,14 @@ fn_respawnSelectClass = {
         case "HMGAG": { _type = "rhsusf_usmc_lar_marpat_wd_marksman"};
         case "HATG": { _type = "rhsusf_usmc_lar_marpat_wd_crewman"};
         case "HATAG": { _type = "rhsusf_usmc_lar_marpat_wd_combatcrewman"};
-        default  { _type = "I_Soldier_F"; };
+        default  { _type = "rhsusf_usmc_marpat_wd_rifleman"; };
       };
     };
     case "rhs_faction_usn" : {
       switch (_typeOfUnit) do {
         case "M": { _type = "rhsusf_navy_marpat_wd_medic"};
         case "SM": { _type = "rhsusf_navy_sarc_w_fast"};
+        default  { _type = "rhsusf_navy_marpat_wd_medic"; };
       };
     };
     default {};
