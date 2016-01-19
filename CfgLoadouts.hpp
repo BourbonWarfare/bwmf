@@ -23,6 +23,10 @@ class CfgLoadouts {
   // #include "Loadouts\blu_swede_ak5_m90.hpp"     // Swedish: AK5 - M90 (Green)
   // #include "Loadouts\blu_ger_g36_fleck.hpp"     // German: G36 - Flecktarn Camo
 
+  //USMC FACTION (rhs_faction_usmc_wd):
+  #include "Loadouts\blu_usmc_m16_desert.hpp"      // USMC COOP Template Desert Loadout
+  // #include "Loadouts\blu_usmc_m16_woodland.hpp" // USMC COOP Template Woodland Loadout
+
   //INDFOR FACTION (ind_f):
   #include "Loadouts\ind_ukr_ak74_ttsko.hpp"       // Ukraine: AK74 - TTskO
   // #include "Loadouts\ind_ukr_ak74_ddpm.hpp"     // "Ukraine": AK74 - Desert DPM
