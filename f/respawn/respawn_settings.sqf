@@ -77,7 +77,7 @@ respawnMenuRoles = [
   ["MATAG", "MAT - Assistant"],
   ["MSAMG", "MSAM - Gunner"],
   ["MSAMAG", "MSAM - Assistant"],
-  ["VC", "Crewman - Vehicle Crew"],
+  ["VC", "Crewman - Vehicle Commander"],
   ["C", "Crewman - Vehicle Crew"],
   ["D", "Crewman - Vehicle Driver"],
   ["PP", "Aircrewman - Pilot"],
