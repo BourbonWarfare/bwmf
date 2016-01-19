@@ -1,5 +1,5 @@
 //Author: BWMF
-//Description: USMC: M16A4 - Desert Camo
+//Description: USMC: M16A4 - Woodland Camo
 
 class rhs_faction_usmc_wd {
   //Rifle
