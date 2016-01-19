@@ -140,12 +140,12 @@ class rhs_faction_usmc_wd {
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class rhsusf_usmc_lar_marpat_wd_machinegunner : Fic_Soldier_Carbine{// HMG
-    items[] = {BASE_MEDICAL};    
+    items[] += {BASE_MEDICAL};    
     backpackItems[] = {};
     backpack[] = { "RHS_M2_Gun_Bag" };
   };
   class rhsusf_usmc_lar_marpat_wd_marksman : Fic_Spotter{// HMG Spotter / Ammo carrier
-    items[] = {BASE_MEDICAL};    
+    items[] += {BASE_MEDICAL};    
     backpackItems[] = {};
     backpack[] = {"RHS_M2_MiniTripod_Bag"};
   };
