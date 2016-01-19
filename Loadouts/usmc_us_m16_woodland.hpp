@@ -230,8 +230,8 @@ class rhs_faction_usmc_wd {
     headgear[] = {"rhsusf_Bowman"};
   };
   class rhsusf_usmc_recon_marpat_wd_machinegunner: rhsusf_usmc_marpat_wd_autorifleman_m249{// SF AR
-  uniform[] = {"rhs_uniform_FROG01_m81"};
-  headgear[] = {"rhsusf_mich_bare_headset" };
+    uniform[] = {"rhs_uniform_FROG01_m81"};
+    headgear[] = {"rhsusf_mich_bare_headset" };
   };
   class rhsusf_usmc_recon_marpat_wd_marksman: rhsusf_usmc_marpat_wd_autorifleman_m249_ass{// SF AAR
     uniform[] = {"rhs_uniform_FROG01_m81"};
@@ -241,8 +241,8 @@ class rhs_faction_usmc_wd {
     attachments[] = {};
   };
   class rhsusf_usmc_recon_marpat_wd_rifleman_at: rhsusf_usmc_marpat_wd_riflemanat{// SF RAT
-  uniform[] = {"rhs_uniform_FROG01_m81"};
-  headgear[] = {"rhs_Booniehat_m81" };
+    uniform[] = {"rhs_uniform_FROG01_m81"};
+    headgear[] = {"rhs_Booniehat_m81" };
   };
   class fallback: rhsusf_usmc_marpat_wd_rifleman {}; //This means any faction member who doesn't match something will use this loadout
 };
@@ -254,8 +254,8 @@ class rhs_faction_usn : rhs_faction_usmc_wd{
     backpackItems[] = { MEDIC_MEDICAL };
   };
   class rhsusf_navy_sarc_w_fast : rhsusf_navy_marpat_wd_medic{// SF Squad Corpsman
-  uniform[] = {"rhs_uniform_FROG01_m81"};
-  headgear[] = {"rhsusf_bowman_cap" };
+    uniform[] = {"rhs_uniform_FROG01_m81"};
+    headgear[] = {"rhsusf_bowman_cap" };
   };
   class rhsusf_navy_sarc_w : rhsusf_navy_marpat_wd_medic{ // PLT Corpsman. Same as SL Corpsman. Future proofing for Advanced Medical
   };
