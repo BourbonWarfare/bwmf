@@ -13,7 +13,6 @@ class rhs_faction_usmc_wd {
   #define WEST_GLRIFLE_MAG_SMOKE "rhs_mag_m714_White:2","rhs_mag_m713_Red:2"
   #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
   #define WEST_GLRIFLE_MAG_FLARE "rhs_mag_M585_white:2","rhs_mag_m661_green:2","rhs_mag_m662_red:2"
-
   // GL Launcher
   #define WEST_GLLAUNCHER "rhs_weap_m32"
   #define WEST_GLLAUNCHER_MAG_HE "rhsusf_mag_6Rnd_M441_HE:3"
@@ -26,11 +25,10 @@ class rhs_faction_usmc_wd {
   #define WEST_AR_MAG "rhs_200rnd_556x45_M_SAW:2"
   // AT
   #define WEST_AT "rhs_weap_rpg26"
-  #define WEST_AT_MAG "rhs_rpg26_mag"
   // MAT
   #define USMC_MAT "rhs_weap_smaw_green"
-  #define USMC_MAT_MAG "rhs_mag_smaw_HEDP:2", "rhs_mag_smaw_SR:5"
-  #define USMC_MAT_MAG2 "rhs_mag_smaw_HEAA:2"
+  #define USMC_MAT_MAG "rhs_mag_smaw_HEDP","rhs_mag_smaw_HEAA","rhs_mag_smaw_SR:5"
+  #define USMC_MAT_MAG2 "rhs_mag_smaw_HEDP","rhs_mag_smaw_HEAA"
   #define USMC_MAT_OPTIC "rhs_weap_optic_smaw"
   // HAT
   #define WEST_HAT "rhs_weap_fgm148"
@@ -127,7 +125,6 @@ class rhs_faction_usmc_wd {
     linkedItems[] += {BINOS};
   };
   class rhsusf_usmc_marpat_wd_riflemanat: Fic_Soldier_Carbine {// RAT
-    magazines[] += {WEST_AT_MAG};
     launchers[] = {WEST_AT};
   };
   class Fic_Spotter: rhsusf_usmc_marpat_wd_rifleman {
@@ -143,15 +140,16 @@ class rhs_faction_usmc_wd {
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class rhsusf_usmc_lar_marpat_wd_machinegunner : Fic_Soldier_Carbine{// HMG
+    items[] = {BASE_MEDICAL};
     backpackItems[] = {};
     backpack[] = { "RHS_M2_Gun_Bag" };
   };
   class rhsusf_usmc_lar_marpat_wd_marksman : Fic_Spotter{// HMG Spotter / Ammo carrier
+    items[] = {BASE_MEDICAL};
     backpackItems[] = {};
     backpack[] = {"RHS_M2_MiniTripod_Bag"};
   };
   class rhsusf_usmc_marpat_wd_smaw: Fic_Soldier_Carbine {// MAT Gunner
-    // Classnames for launcher set at the top of this file
     vest[] = {"rhsusf_spc_light"};
     LAUNCHER_GEAR("B_Carryall_mcamo", USMC_MAT_MAG)
     launchers[] = {USMC_MAT};
@@ -175,8 +173,6 @@ class rhs_faction_usmc_wd {
     launchers[] = {WEST_SAM};
   };
   class rhsusf_usmc_marpat_wd_grenadier: Fic_Soldier_Carbine {// Mortar Gunner
-    handguns[] = { WEST_PISTOL };
-    magazines[] += {WEST_PISTOL_MAG};
     vest[] = { "rhsusf_spc_light" };
     MORTAR_GEAR("B_Mortar_01_weapon_F")
   };
@@ -221,7 +217,7 @@ class rhs_faction_usmc_wd {
   };
   class rhsusf_usmc_marpat_wd_explosives: Fic_eng{// EOD Explodey guy
     vest[] = { "rhsusf_spc_rifleman" };
-    //backpackItems[] += {BASE_EXP};    // uncomment to add explosives
+    backpackItems[] += {BASE_EXP};    // uncomment to add explosives
     //backpackItems[] += {BASE_MINE};   // uncomment to add mines
     linkedItems[] = { WEST_BASE_LINKED };
   };
