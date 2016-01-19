@@ -9636,7 +9636,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="unitMAR_R1_AAR";
-					description="Marine Recon 1 Assistant Automatic Rifleman";
+					description="Marine Recon 1 AAR (MDLC REQ)";
 				};
 				class Item3
 				{
@@ -9694,7 +9694,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="unitMAR_R2_AAR";
-					description="Marine Recon 2 Assistant Automatic Rifleman";
+					description="Marine Recon 2 AAR (MDLC REQ)";
 				};
 				class Item3
 				{
@@ -9752,7 +9752,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="unitMAR_R3_AAR";
-					description="Marine Recon 3 Assistant Automatic Rifleman";
+					description="Marine Recon 3 AAR (MDLC REQ)";
 				};
 				class Item3
 				{
