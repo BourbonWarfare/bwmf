@@ -73,12 +73,12 @@ if ((count _vests) == 0) then {
 };
 //Random Backpack:
 if ((count _backpack) == 0) then {
-  removeBackpack _unit;
+  removeBackpackGlobal _unit;
 } else {
   _toAdd = _backpack call BIS_fnc_selectRandom;
   if ((!isNil "_toAdd") && {isClass (configFile >> "CfgVehicles" >> _toAdd)}) then {
-    removeBackpack _unit;
-    _unit addBackpack _toAdd;
+    removeBackpackGlobal _unit;
+    _unit addBackpackGlobal _toAdd;
   } else {
     [_unitClassname, format ["%1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)]] call F_fnc_gearErrorLogger;
   };
