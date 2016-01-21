@@ -5,7 +5,7 @@ class blu_f {
   //Rifle
   #define WEST_RIFLE "BWA3_G36"
   #define WEST_RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
-  #define WEST_RIFLE_ATTACHMENTS "BWA3_optic_EOTech","BWA3_acc_LLM01_irlaser"
+  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","BWA3_acc_LLM01_irlaser"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define WEST_GLRIFLE "BWA3_G36_AG"
