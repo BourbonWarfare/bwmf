@@ -37,6 +37,8 @@ class rhs_faction_msv {
   // Pistol
   #define MSV_PISTOL "rhsusf_weap_m1911a1"
   #define MSV_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:2"
+  // Grenades
+  #define MSV_FRAG "rhs_mag_rgd5:2"
 
   class Car {
     TransportWeapons[] = {MSV_LAT};
@@ -62,18 +64,18 @@ class rhs_faction_msv {
     backpack[] = {"SAM_AssaultPack_rgr"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {MSV_RIFLE};
-    magazines[] = {MSV_RIFLE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_RIFLE_MAG,BASE_GRENADES(MSV_FRAG)};
     items[] = {EAST_BASE_TOOLS};
     linkedItems[] = {EAST_BASE_LINKED};
     attachments[] = {MSV_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: rhs_msv_rifleman {// carbine-man
     weapons[] = {MSV_CARBINE};
-    magazines[] = {MSV_CARBINE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_CARBINE_MAG,BASE_GRENADES(MSV_FRAG)};
   };
   class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
     weapons[] = {MSV_GLRIFLE};
-    magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,EAST_LEADER_GRENADES};
+    magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(MSV_FRAG,EAST_CHEM)};
     items[] += {EAST_LEADER_TOOLS};
     linkedItems[] += {EAST_LEADER_LINKED,BINOS};
   };
@@ -89,7 +91,7 @@ class rhs_faction_msv {
   class rhs_msv_machinegunner: rhs_msv_rifleman {// AR
     backpack[] = {"SAM_Kitbag_rgr"};
     weapons[] = {MSV_AR};
-    magazines[] = {MSV_AR_MAG,MSV_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_AR_MAG,MSV_PISTOL_MAG,BASE_GRENADES(MSV_FRAG)};
     handguns[] = {MSV_PISTOL};
   };
   class rhs_msv_machinegunner_assistant: rhs_msv_rifleman {// AAR
@@ -116,7 +118,7 @@ class rhs_faction_msv {
   class rhs_msv_mmg: rhs_msv_machinegunner {// MMG
     attachments[] = {};
     weapons[] = {MSV_MMG};
-    magazines[] = {MSV_MMG_MAG,MSV_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_MMG_MAG,MSV_PISTOL_MAG,BASE_GRENADES(MSV_FRAG)};
   };
   class rhs_msv_mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
     backpack[] = {"SAM_Kitbag_rgr"};
@@ -144,7 +146,7 @@ class rhs_faction_msv {
   class rhs_msv_sf : rhs_msv_rifleman {// Spetnaz Team
     backpack[] = {"SAM_Kitbag_rgr"};
     weapons[] = {MSV_SFR};
-    magazines[] = {MSV_SFR_MAG,EAST_BASE_GRENADES,"DemoCharge_Remote_Mag:1"};
+    magazines[] = {MSV_SFR_MAG,BASE_GRENADES(MSV_FRAG),"DemoCharge_Remote_Mag:1"};
     items[] += {RADIO_MR,"ACE_DefusalKit","ACE_Clacker"};
     linkedItems[] += {EAST_LEADER_LINKED,RANGE_FINDER};
     backpackItems[] += {"Chemlight_red"};

@@ -3,6 +3,8 @@
 // FUNCTIONS
 #define LAUNCHER_GEAR(BACKPACK, MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
 #define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {BASE_MEDICAL,"ACE_RangeTable_82mm"};
+#define BASE_GRENADES(FRAG) FRAG,BASE_SMOKES
+#define LEADER_GRENADES(FRAG,CHEM) WEST_BASE_FRAG,LEADER_SMOKES,CHEM
 
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
@@ -31,8 +33,42 @@
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_Vector"
 
-// SIDE SPECIFIC GEAR
+// MAT Setups
+// Carl Gustav MAT
+#define CG_MAT "sam_grg_m86"
+#define CG_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
+#define CG_MAT_MAG2 "sam_grg_heat:2","sam_grg_he:2"
+#define CG_MAT_OPTIC "sam_acco_m86"
 
+// RPG7 MAT
+#define RPG7_MAT "rhs_weap_rpg7"
+#define RPG7_MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
+#define RPG7_MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
+#define RPG7_MAT_OPTIC "rhs_acc_pgo7v"
+
+// SMAW MAT
+#define SMAW_MAT "rhs_weap_smaw_green"
+#define SMAW_MAT_MAG "rhs_mag_smaw_SR:3","rhs_mag_smaw_HEAA:1","rhs_mag_smaw_HEDP:1"
+#define SMAW_MAT_MAG2 "rhs_mag_smaw_HEAA:2"
+#define SMAW_MAT_OPTIC "rhs_weap_optic_smaw_10"
+
+// RPG32 MAT
+#define RPG32_MAT "launch_RPG32_F"
+#define RPG32_MAT_MAG "RPG32_F:3","RPG32_HE_F:2"
+#define RPG32_MAT_MAG2 "RPG32_F:3","RPG32_HE_F:1"
+
+// SAM Setups
+// STINGER SAM
+#define STINGER_SAM "rhs_weap_fim92"
+#define STINGER_SAM_MAG "rhs_fim92_mag:3"
+#define STINGER_SAM_MAG2 "rhs_fim92_mag:2"
+
+// IGLA SAM
+#define IGLA_SAM "rhs_weap_igla"
+#define IGLA_SAM_MAG "rhs_mag_9k38_rocket:3"
+#define IGLA_SAM_MAG2 "rhs_mag_9k38_rocket:2"
+
+// SIDE SPECIFIC GEAR
 // WEST GEAR
 #define WEST_BASE_TOOLS BASE_TOOLS
 #define WEST_LEADER_TOOLS LEADER_TOOLS,KEY_WEST
@@ -40,20 +76,7 @@
 #define WEST_LEADER_LINKED LEADER_LINKED
 
 // WEST GRENADES
-#define WEST_BASE_FRAG "rhs_mag_m67:2"
-#define WEST_BASE_GRENADES WEST_BASE_FRAG,BASE_SMOKES
-#define WEST_LEADER_GRENADES WEST_BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
-
-// WEST MAT
-#define WEST_MAT "sam_grg_m86"
-#define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
-#define WEST_MAT_MAG2 "sam_grg_heat:2","sam_grg_he:2"
-#define WEST_MAT_OPTIC "sam_acco_m86"
-
-// WEST SAM
-#define WEST_SAM "rhs_weap_fim92"
-#define WEST_SAM_MAG "rhs_fim92_mag:3"
-#define WEST_SAM_MAG2 "rhs_fim92_mag:2"
+#define WEST_CHEM "Chemlight_blue:2"
 
 // IND GEAR
 #define IND_BASE_TOOLS BASE_TOOLS
@@ -62,9 +85,7 @@
 #define IND_LEADER_LINKED LEADER_LINKED
 
 // IND GRENADES
-#define IND_BASE_FRAG "rhs_mag_rgd5:2"
-#define IND_BASE_GRENADES IND_BASE_FRAG,BASE_SMOKES
-#define IND_LEADER_GRENADES IND_BASE_FRAG,LEADER_SMOKES,"chemlight_green:2"
+#define IND_CHEM "chemlight_green:2"
 
 // EAST GEAR
 #define EAST_BASE_TOOLS BASE_TOOLS
@@ -73,17 +94,4 @@
 #define EAST_LEADER_LINKED LEADER_LINKED
 
 // EAST GRENADES
-#define EAST_BASE_FRAG "rhs_mag_rgd5:2"
-#define EAST_BASE_GRENADES EAST_BASE_FRAG,BASE_SMOKES
-#define EAST_LEADER_GRENADES EAST_BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
-
-// EAST MAT
-#define EAST_MAT "rhs_weap_rpg7"
-#define EAST_MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
-#define EAST_MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
-#define EAST_MAT_OPTIC "rhs_acc_pgo7v"
-
-// EAST SAM
-#define EAST_SAM "rhs_weap_igla"
-#define EAST_SAM_MAG "rhs_mag_9k38_rocket:3"
-#define EAST_SAM_MAG2 "rhs_mag_9k38_rocket:2"
+#define EAST_CHEM "Chemlight_red:2"

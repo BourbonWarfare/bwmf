@@ -33,6 +33,8 @@ class opf_f {
   // Pistol
   #define EAST_PISTOL "rhs_weap_pya"
   #define EAST_PISTOL_MAG "rhs_mag_9x19_17:3"
+  // Grenades
+  #define EAST_FRAG "rhs_mag_rgd5:2"
 
   class Car {
     TransportWeapons[] = {EAST_AT};
@@ -58,19 +60,19 @@ class opf_f {
     backpack[] = {"rhs_assault_umbts"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {EAST_RIFLE};
-    magazines[] = {EAST_RIFLE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_RIFLE_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] = {EAST_BASE_TOOLS};
     linkedItems[] = {EAST_BASE_LINKED};
     attachments[] = {EAST_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: O_Soldier_F {// carbine-man
     weapons[] = {EAST_CARBINE};
-    magazines[] = {EAST_CARBINE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_CARBINE_MAG,BASE_GRENADES(EAST_FRAG)};
   };
   class O_Soldier_TL_F: O_Soldier_F {// FTL
     vest[] = {"rhs_6b23_6sh92_vog_headset"};
     weapons[] = {EAST_GLRIFLE};
-    magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_LEADER_GRENADES};
+    magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(EAST_FRAG,EAST_CHEM)};
     items[] += {EAST_LEADER_TOOLS};
     linkedItems[] += {EAST_LEADER_LINKED,BINOS};
   };
@@ -91,7 +93,7 @@ class opf_f {
   class O_soldier_GL_F: O_Soldier_TL_F {}; // GP Dude
   class O_Soldier_AR_F: O_Soldier_F {// AR
     weapons[] = {EAST_AR};
-    magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,BASE_GRENADES(EAST_FRAG)};
     handguns[] = {EAST_PISTOL};
     attachments[] = {};
   };
@@ -139,14 +141,14 @@ class opf_f {
   };
   class O_spotter_F: Fic_Spotter {// Spotter
     weapons[] = {EAST_SPOTTER};
-    magazines[] = {EAST_SPOTTER_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_SPOTTER_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
   };
   class O_sniper_F: O_spotter_F {// Sniper
     weapons[] = {EAST_SNIPER};
-    magazines[] = {EAST_SNIPER_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_SNIPER_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] = {EAST_BASE_TOOLS,BASE_MEDICAL,"ACE_RangeCard"};
     linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};

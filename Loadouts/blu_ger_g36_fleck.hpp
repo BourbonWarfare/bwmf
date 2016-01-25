@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: AACO
 //Description: German: G36 - Flecktarn Camo
 
 class blu_f {
@@ -37,6 +37,8 @@ class blu_f {
   // Pistol
   #define WEST_PISTOL "BWA3_P8"
   #define WEST_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
+  // Grenades
+  #define WEST_FRAG "BWA3_DM51A1:2"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
@@ -62,19 +64,19 @@ class blu_f {
     backpack[] = {"BWA3_Kitbag_Fleck"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
-    magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_RIFLE_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
     weapons[] = {WEST_CARBINE};
-    magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_CARBINE_MAG,BASE_GRENADES(WEST_FRAG)};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
     vest[] = {"BWA3_Vest_Leader_Fleck","BWA3_Vest_Grenadier_Fleck"};
     weapons[] = {WEST_GLRIFLE};
-    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
+    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(WEST_FRAG,WEST_CHEM)};
     items[] += {WEST_LEADER_TOOLS};
     linkedItems[] += {WEST_LEADER_LINKED,BINOS};
   };
@@ -94,7 +96,7 @@ class blu_f {
   class B_Soldier_AR_F: B_Soldier_F {// AR
     vest[] = {"BWA3_Vest_Autorifleman_Fleck"};
     weapons[] = {WEST_AR};
-    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     handguns[] = {WEST_PISTOL};
   };
   class B_Soldier_AAR_F: B_Soldier_F {// AAR
@@ -117,7 +119,7 @@ class blu_f {
   };
   class B_support_MG_F: B_Soldier_AR_F {// MMG
     weapons[] = {WEST_MMG};
-    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     attachments[] = {};
   };
   class B_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -149,13 +151,13 @@ class blu_f {
     vest[] = {"BWA3_Vest_Marksman_Fleck"};
     headgear[] = {};
     weapons[] = {WEST_SPOTTER};
-    magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SPOTTER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
-    magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SNIPER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {BASE_MEDICAL,BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {"BWA3_optic_Shortdot","BWA3_acc_VarioRay_irlaser"};

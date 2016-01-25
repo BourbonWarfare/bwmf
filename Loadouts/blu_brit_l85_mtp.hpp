@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: Soviet
 //Description: British: L86 - Multi-Terrain Pattern
 
 class blu_f {
@@ -37,6 +37,8 @@ class blu_f {
   // Pistol
   #define WEST_PISTOL "UK3CB_BAF_L131A1"
   #define WEST_PISTOL_MAG "UK3CB_BAF_17Rnd_9mm:3"
+  // Grenades
+  #define WEST_FRAG "rhs_mag_m67:2"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
@@ -62,19 +64,19 @@ class blu_f {
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
-    magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_RIFLE_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
     weapons[] = {WEST_CARBINE};
-    magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_CARBINE_MAG,BASE_GRENADES(WEST_FRAG)};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Radio_L_B","UK3CB_BAF_B_Bergen_MTP_Radio_L_A","UK3CB_BAF_B_Bergen_MTP_PointMan_L_A"};
     weapons[] = {WEST_GLRIFLE};
-    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
+    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(WEST_FRAG,WEST_CHEM)};
     items[] += {WEST_LEADER_TOOLS};
     linkedItems[] += {WEST_LEADER_LINKED,BINOS};
   };
@@ -95,7 +97,7 @@ class blu_f {
   };
   class B_Soldier_AR_F: B_Soldier_F {// AR
     weapons[] = {WEST_AR};
-    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     handguns[] = {WEST_PISTOL};
   };
   class B_Soldier_AAR_F: B_Soldier_F {// AAR
@@ -119,7 +121,7 @@ class blu_f {
   class B_support_MG_F: B_Soldier_AR_F {// MMG
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A"};
     weapons[] = {WEST_MMG};
-    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     attachments[] = {};
   };
   class B_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -127,19 +129,19 @@ class blu_f {
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B", WEST_MAT_MAG)
-    launchers[] = {WEST_MAT};
-    secondaryAttachments[] = {WEST_MAT_OPTIC};
+    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B", CG_MAT_MAG)
+    launchers[] = {CG_MAT};
+    secondaryAttachments[] = {CG_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B", WEST_MAT_MAG)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B", CG_MAT_MAG2)
   };
   class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C", WEST_SAM_MAG)
-    launchers[] = {WEST_SAM};
+    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C", STINGER_SAM_MAG)
+    launchers[] = {STINGER_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C", WEST_SAM_MAG2)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C", STINGER_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -153,13 +155,13 @@ class blu_f {
     headgear[] = {"UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C"};
     backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"};
     weapons[] = {WEST_SPOTTER};
-    magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SPOTTER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
-    magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SNIPER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {BASE_MEDICAL,BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
