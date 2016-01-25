@@ -130,20 +130,20 @@ class ind_f {
   };
   class I_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
     vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class I_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG2)
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG2)
   };
   class I_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
     vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class I_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
   };
   class I_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};

@@ -133,19 +133,19 @@ class rhs_faction_msv {
     backpackItems[] += {MSV_AR_MAG};
   };
   class rhs_msv_mat: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_assault_umbts",RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class rhs_msv_matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_MAT_MAG)
+    LAUNCHER_GEAR("rhs_assault_umbts",RPG7_MAT_MAG)
   };
   class rhs_msv_aa: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("rhs_assault_umbts",IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class rhs_msv_aaag: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_SAM_MAG2)
+    LAUNCHER_GEAR("rhs_assault_umbts",IGLA_SAM_MAG2)
   };
   class rhs_msv_support_Mort: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("rhs_msv_Mortar_01_weapon_F")

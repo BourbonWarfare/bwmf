@@ -126,19 +126,19 @@ class opf_f {
     backpackItems[] += {EAST_MMG_MAG};
   };
   class O_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class O_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG2)
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG2)
   };
   class O_soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class O_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
   };
   class O_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("O_Mortar_01_weapon_F")

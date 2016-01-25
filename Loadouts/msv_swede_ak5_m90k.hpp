@@ -99,11 +99,11 @@ class rhs_faction_msv {
     linkedItems[] += {BINOS};
   };
   class rhs_msv_at: Fic_Soldier_Carbine {// RAT
-    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",WEST_MAT_MAG)
-    launchers[] = {WEST_MAT};
+    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",CG_MAT_MAG)
+    launchers[] = {CG_MAT};
   };
   class rhs_msv_strelok_rpg_assist: rhs_msv_rifleman {// Assistant Grenadier
-    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",WEST_MAT_MAG2)
+    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",CG_MAT_MAG2)
     linkedItems[] += {BINOS};
   };
   class rhs_msv_medic: Fic_Soldier_Carbine {// Medic
@@ -125,17 +125,17 @@ class rhs_faction_msv {
     backpackItems[] += {MSV_MMG_MAG};
   };
   class rhs_msv_mat: rhs_msv_at {// MAT Gunner
-    secondaryAttachments[] = {WEST_MAT_OPTIC};
+    secondaryAttachments[] = {CG_MAT_OPTIC};
   };
   class rhs_msv_matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",WEST_MAT_MAG2)
+    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat",CG_MAT_MAG2)
   };
   class rhs_msv_aa: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("SAM_Kitbag_rgr",WEST_SAM_MAG)
-    launchers[] = {WEST_SAM};
+    LAUNCHER_GEAR("SAM_Kitbag_rgr",STINGER_SAM_MAG)
+    launchers[] = {STINGER_SAM};
   };
   class rhs_msv_aaag: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("SAM_Kitbag_rgr",WEST_SAM_MAG2)
+    LAUNCHER_GEAR("SAM_Kitbag_rgr",STINGER_SAM_MAG2)
   };
   class rhs_msv_support_Mort: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("rhs_msv_Mortar_01_weapon_F")

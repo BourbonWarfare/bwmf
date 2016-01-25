@@ -126,19 +126,19 @@ class blu_f {
     backpackItems[] += {WEST_MMG_MAG};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
-    launchers[] = {WEST_MAT};
-    secondaryAttachments[] = {WEST_MAT_OPTIC};
+    LAUNCHER_GEAR("BWA3_Carryall_Fleck", CG_MAT_MAG)
+    launchers[] = {CG_MAT};
+    secondaryAttachments[] = {CG_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
+    LAUNCHER_GEAR("BWA3_Carryall_Fleck", CG_MAT_MAG)
   };
   class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG)
-    launchers[] = {WEST_SAM};
+    LAUNCHER_GEAR("BWA3_Carryall_Fleck", STINGER_SAM_MAG)
+    launchers[] = {STINGER_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG2)
+    LAUNCHER_GEAR("BWA3_Carryall_Fleck", STINGER_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
