@@ -36,6 +36,8 @@ class ind_f {
   // Pistol
   #define IND_PISTOL "rhs_weap_makarov_pmm"
   #define IND_PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
+  // Grenades
+  #define IND_FRAG "rhs_mag_rgd5:2"
 
   class Car {
     TransportWeapons[] = {IND_AT};
@@ -61,19 +63,19 @@ class ind_f {
     backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {IND_RIFLE};
-    magazines[] = {IND_RIFLE_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_RIFLE_MAG,BASE_GRENADES(IND_FRAG)};
     items[] = {IND_BASE_TOOLS};
     linkedItems[] = {IND_BASE_LINKED};
     attachments[] = {IND_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: I_Soldier_F {// carbine-man
     weapons[] = {IND_CARBINE};
-    magazines[] = {IND_CARBINE_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_CARBINE_MAG,BASE_GRENADES(IND_FRAG)};
   };
   class I_Soldier_TL_F: I_Soldier_F {// FTL
     headgear[] = {"MNP_Helmet_PAGST_US6co","MNP_Boonie_DDPM","MNP_MC_US6co"};
     weapons[] = {IND_GLRIFLE};
-    magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_LEADER_GRENADES};
+    magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(IND_FRAG,IND_CHEM)};
     items[] += {IND_LEADER_TOOLS};
     linkedItems[] += {IND_LEADER_LINKED,BINOS};
   };
@@ -92,7 +94,7 @@ class ind_f {
   };
   class I_Soldier_AR_F: I_Soldier_F {// AR
     weapons[] = {IND_AR};
-    magazines[] = {IND_AR_MAG,IND_PISTOL_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_AR_MAG,IND_PISTOL_MAG,BASE_GRENADES(IND_FRAG)};
     handguns[] = {IND_PISTOL};
   };
   class I_Soldier_AAR_F: I_Soldier_F {// AAR
@@ -114,26 +116,26 @@ class ind_f {
   };
   class I_support_MG_F: I_Soldier_AR_F {// MMG
     weapons[] = {IND_MMG};
-    magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,BASE_GRENADES(IND_FRAG)};
     attachments[] = {};
   };
   class I_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
     backpackItems[] += {IND_MMG_MAG};
   };
   class I_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class I_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG2)
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG2)
   };
   class I_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class I_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
   };
   class I_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("I_Mortar_01_weapon_F")
@@ -144,14 +146,14 @@ class ind_f {
   class I_spotter_F: Fic_Spotter {// Spotter
     headgear[] = {"H_Booniehat_khk_hs"};
     weapons[] = {IND_SPOTTER};
-    magazines[] = {IND_SPOTTER_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_SPOTTER_MAG,BASE_GRENADES(IND_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {IND_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
   };
   class I_sniper_F: I_spotter_F {// Sniper
     weapons[] = {IND_SNIPER};
-    magazines[] = {IND_SNIPER_MAG,IND_BASE_GRENADES};
+    magazines[] = {IND_SNIPER_MAG,BASE_GRENADES(IND_FRAG)};
     items[] = {IND_BASE_TOOLS,BASE_MEDICAL,"ACE_RangeCard"};
     linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};

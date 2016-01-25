@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: Soviet
 //Description: Swedish: AK5 - M90 (Green)
 
 class blu_f {
@@ -37,6 +37,8 @@ class blu_f {
   // Pistol
   #define WEST_PISTOL "rhsusf_weap_m1911a1"
   #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+  // Grenades
+  #define WEST_FRAG "rhs_mag_m67:2"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
@@ -62,18 +64,18 @@ class blu_f {
     backpack[] = {"SAM_AssaultPack_rgr"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
-    magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_RIFLE_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {WEST_BASE_TOOLS};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {WEST_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: B_Soldier_F {// carbine-man
     weapons[] = {WEST_CARBINE};
-    magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_CARBINE_MAG,BASE_GRENADES(WEST_FRAG)};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
     weapons[] = {WEST_GLRIFLE};
-    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
+    magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(WEST_FRAG,WEST_CHEM)};
     items[] += {WEST_LEADER_TOOLS};
     linkedItems[] += {WEST_LEADER_LINKED,BINOS};
   };
@@ -92,7 +94,7 @@ class blu_f {
   };
   class B_Soldier_AR_F: B_Soldier_F {// AR
     weapons[] = {WEST_AR};
-    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     handguns[] = {WEST_PISTOL};
   };
   class B_Soldier_AAR_F: B_Soldier_F {// AAR
@@ -115,7 +117,7 @@ class blu_f {
   class B_support_MG_F: B_Soldier_AR_F {// MMG
     backpack[] = {"SAM_Kitbag_rgr"};
     weapons[] = {WEST_MMG};
-    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,BASE_GRENADES(WEST_FRAG)};
     attachments[] = {};
   };
   class B_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -123,19 +125,19 @@ class blu_f {
     backpackItems[] += {WEST_MMG_MAG};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat", WEST_MAT_MAG)
-    launchers[] = {WEST_MAT};
-    secondaryAttachments[] = {WEST_MAT_OPTIC};
+    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat", CG_MAT_MAG)
+    launchers[] = {CG_MAT};
+    secondaryAttachments[] = {CG_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat", WEST_MAT_MAG2)
+    LAUNCHER_GEAR("SAM_GRG_Backpack_Heat", CG_MAT_MAG2)
   };
   class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("B_Carryall_oli", WEST_SAM_MAG)
-    launchers[] = {WEST_SAM};
+    LAUNCHER_GEAR("B_Carryall_oli", STINGER_SAM_MAG)
+    launchers[] = {STINGER_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_oli", WEST_SAM_MAG2)
+    LAUNCHER_GEAR("B_Carryall_oli", STINGER_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -147,13 +149,13 @@ class blu_f {
     uniform[] = {"SAM_Crye_M90_ghillie"};
     headgear[] = {"SAM_Watchcap_grn"};
     weapons[] = {WEST_SPOTTER};
-    magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SPOTTER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {WEST_LEADER_LINKED};
   };
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
-    magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
+    magazines[] = {WEST_SNIPER_MAG,BASE_GRENADES(WEST_FRAG)};
     items[] = {BASE_MEDICAL,WEST_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15A"};

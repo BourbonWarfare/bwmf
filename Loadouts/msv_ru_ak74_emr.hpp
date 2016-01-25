@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: Soviet
 //Description: Russian: AK74 - Digital FLoral Summer
 
 class rhs_faction_msv {
@@ -45,6 +45,8 @@ class rhs_faction_msv {
   // Pistol
   #define MSV_PISTOL "rhs_weap_pya"
   #define MSV_PISTOL_MAG "rhs_mag_9x19_17:2"
+  // Grenades
+  #define MSV_FRAG "rhs_mag_rgd5:2"
 
   class Car {
     TransportWeapons[] = {MSV_LAT};
@@ -70,19 +72,19 @@ class rhs_faction_msv {
     backpack[] = {"rhs_assault_umbts"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {MSV_RIFLE};
-    magazines[] = {MSV_RIFLE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_RIFLE_MAG,BASE_GRENADES(MSV_FRAG)};
     items[] = {EAST_BASE_TOOLS};
     linkedItems[] = {EAST_BASE_LINKED};
     attachments[] = {MSV_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: rhs_msv_rifleman {// carbine-man
     weapons[] = {MSV_CARBINE};
-    magazines[] = {MSV_CARBINE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_CARBINE_MAG,BASE_GRENADES(MSV_FRAG)};
   };
   class rhs_msv_junior_sergeant: rhs_msv_rifleman {// FTL
     vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
     weapons[] = {MSV_GLRIFLE};
-    magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,EAST_LEADER_GRENADES};
+    magazines[] = {MSV_GLRIFLE_MAG,MSV_GLRIFLE_MAG_HE,MSV_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(MSV_FRAG,EAST_CHEM)};
     items[] += {EAST_LEADER_TOOLS};
     linkedItems[] += {EAST_LEADER_LINKED,BINOS};
   };
@@ -99,7 +101,7 @@ class rhs_faction_msv {
   };
   class rhs_msv_machinegunner: rhs_msv_rifleman {// AR
     weapons[] = {MSV_AR};
-    magazines[] = {MSV_AR_MAG,MSV_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_AR_MAG,MSV_PISTOL_MAG,BASE_GRENADES(MSV_FRAG)};
     handguns[] = {MSV_PISTOL};
     attachments[] = {};
   };
@@ -131,19 +133,19 @@ class rhs_faction_msv {
     backpackItems[] += {MSV_AR_MAG};
   };
   class rhs_msv_mat: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_assault_umbts",RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class rhs_msv_matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_MAT_MAG)
+    LAUNCHER_GEAR("rhs_assault_umbts",RPG7_MAT_MAG)
   };
   class rhs_msv_aa: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("rhs_assault_umbts",IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class rhs_msv_aaag: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_assault_umbts",EAST_SAM_MAG2)
+    LAUNCHER_GEAR("rhs_assault_umbts",IGLA_SAM_MAG2)
   };
   class rhs_msv_support_Mort: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("rhs_msv_Mortar_01_weapon_F")
@@ -156,7 +158,7 @@ class rhs_faction_msv {
     headgear[] = {"rhs_6b28_bala","rhs_6b28_ess_bala"};
     backpack[] = {"rhs_assault_umbts"};
     weapons[] = {MSV_SFR};
-    magazines[] = {MSV_SFR_MAG,EAST_BASE_GRENADES,"DemoCharge_Remote_Mag:1"};
+    magazines[] = {MSV_SFR_MAG,BASE_GRENADES(MSV_FRAG),"DemoCharge_Remote_Mag:1"};
     items[] += {RADIO_MR,"ACE_DefusalKit","ACE_Clacker"};
     linkedItems[] += {EAST_LEADER_LINKED,RANGE_FINDER};
     backpackItems[] += {"Chemlight_red"};
@@ -168,7 +170,7 @@ class rhs_faction_msv {
   };
   class rhs_msv_marksman: rhs_msv_rifleman {// Marksman
     weapons[] = {MSV_SPOTTER};
-    magazines[] = {MSV_SPOTTER_MAG,EAST_BASE_GRENADES};
+    magazines[] = {MSV_SPOTTER_MAG,BASE_GRENADES(MSV_FRAG)};
     items[] += {"ACE_RangeCard"};
     attachments[] = {"rhs_acc_pso1m2"};
   };

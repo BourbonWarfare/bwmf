@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: AACO
 //Description: Rebel: AK47 - Mixed Desert
 
 class opf_f {
@@ -37,6 +37,8 @@ class opf_f {
   // Pistol
   #define EAST_PISTOL "rhs_weap_pya"
   #define EAST_PISTOL_MAG "rhs_mag_9x19_17:2"
+  // Grenades
+  #define EAST_FRAG "rhs_mag_rgd5:2"
 
   class Car {
     TransportWeapons[] = {EAST_AT};
@@ -62,19 +64,19 @@ class opf_f {
     backpack[] = {"B_AssaultPack_cbr","B_AssaultPack_mcamo","rhs_assault_umbts"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {EAST_RIFLE};
-    magazines[] = {EAST_RIFLE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_RIFLE_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] = {EAST_BASE_TOOLS};
     linkedItems[] = {EAST_BASE_LINKED};
     attachments[] = {EAST_RIFLE_ATTACHMENTS};
   };
   class Fic_Soldier_Carbine: O_Soldier_F {// carbine-man
     weapons[] = {EAST_CARBINE};
-    magazines[] = {EAST_CARBINE_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_CARBINE_MAG,BASE_GRENADES(EAST_FRAG)};
   };
   class O_Soldier_TL_F: O_Soldier_F {// FTL
     vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
     weapons[] = {EAST_GLRIFLE};
-    magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_LEADER_GRENADES};
+    magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,LEADER_GRENADES(EAST_FRAG,EAST_CHEM)};
     items[] += {EAST_LEADER_TOOLS};
     linkedItems[] += {EAST_LEADER_LINKED,BINOS};
   };
@@ -95,7 +97,7 @@ class opf_f {
   class O_soldier_GL_F: O_Soldier_TL_F {}; // GP Dude
   class O_Soldier_AR_F: O_Soldier_F {// AR
     weapons[] = {EAST_AR};
-    magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_AR_MAG,EAST_PISTOL_MAG,BASE_GRENADES(EAST_FRAG)};
     handguns[] = {EAST_PISTOL};
     attachments[] = {};
   };
@@ -117,26 +119,26 @@ class opf_f {
   };
   class O_support_MG_F: O_Soldier_AR_F {// MMG Gunner
     weapons[] = {EAST_MMG};
-    magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,BASE_GRENADES(EAST_FRAG)};
   };
   class O_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
     backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] += {EAST_MMG_MAG};
   };
   class O_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG)
-    launchers[] = {EAST_MAT};
-    secondaryAttachments[] = {EAST_MAT_OPTIC};
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG)
+    launchers[] = {RPG7_MAT};
+    secondaryAttachments[] = {RPG7_MAT_OPTIC};
   };
   class O_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("rhs_rpg_empty", EAST_MAT_MAG2)
+    LAUNCHER_GEAR("rhs_rpg_empty", RPG7_MAT_MAG2)
   };
   class O_soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
-    launchers[] = {EAST_SAM};
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
+    launchers[] = {IGLA_SAM};
   };
   class O_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("B_Carryall_khk", EAST_SAM_MAG)
+    LAUNCHER_GEAR("B_Carryall_khk", IGLA_SAM_MAG)
   };
   class O_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("O_Mortar_01_weapon_F")
@@ -146,14 +148,14 @@ class opf_f {
   };
   class O_spotter_F: Fic_Spotter {// Spotter
     weapons[] = {EAST_SPOTTER};
-    magazines[] = {EAST_SPOTTER_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_SPOTTER_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
     linkedItems[] += {EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
   };
   class O_sniper_F: O_spotter_F {// Sniper
     weapons[] = {EAST_SNIPER};
-    magazines[] = {EAST_SNIPER_MAG,EAST_BASE_GRENADES};
+    magazines[] = {EAST_SNIPER_MAG,BASE_GRENADES(EAST_FRAG)};
     items[] = {EAST_BASE_TOOLS,BASE_MEDICAL,"ACE_RangeCard"};
     linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
