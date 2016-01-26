@@ -2,7 +2,7 @@
 
 // FUNCTIONS
 #define LAUNCHER_GEAR(BACKPACK, MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
-#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {BASE_MEDICAL,"ACE_RangeTable_82mm"};
+#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {"ACE_RangeTable_82mm"};
 
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
