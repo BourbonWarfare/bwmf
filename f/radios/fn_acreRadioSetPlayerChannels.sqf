@@ -179,7 +179,7 @@ if (!hasInterface) exitWith {};
 
   [_groupID, _languagesPlayerSpeaks, _groupFreqIndex, _groupLRFreqIndex] spawn _addSignalsBriefing;
 
-  waitUntil {[] call acre_api_fnc_isInitialized};
+  waitUntil {[player] call acre_api_fnc_isInitialized};
   diag_log text format ["[BW] - acre_api_fnc_isInitialized @ %1, setting radios", time];
 
   _radio343 = ["ACRE_PRC343"] call acre_api_fnc_getRadioByType;

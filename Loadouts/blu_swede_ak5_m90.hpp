@@ -5,7 +5,7 @@ class blu_f {
   //Rifle
   #define WEST_RIFLE "SAM_AK5C","SAM_AK5C_NOGRIP"
   #define WEST_RIFLE_MAG "SAM_30Rnd_556x45_Pmag:8","SAM_30Rnd_556x45_Pmag_T:2"
-  #define WEST_RIFLE_ATTACHMENTS "rhsusf_acc_eotech_552","rhsusf_acc_anpeq15A"
+  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define WEST_GLRIFLE "SAM_AK5C_GRT"

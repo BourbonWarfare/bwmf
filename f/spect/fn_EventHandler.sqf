@@ -148,6 +148,13 @@ switch (_type) do {
       [_args, "keydown"] call CBA_events_fnc_keyHandler;
     };
 
+    if ([_key, _args select 2, _args select 3, _args select 4] call f_cam_checkAcreMute) then {
+      f_cam_muteSpectators = !f_cam_muteSpectators;
+      if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
+        [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
+      };
+    };
+
     switch (_key) do {
       case 78: { // numpad +
         f_cam_zoom = f_cam_zoom - 1;
@@ -228,7 +235,6 @@ switch (_type) do {
         };
          _handled = true;
       };
-
       case 35: { //  H
           ctrlShow [1315, !ctrlVisible 1315];
           ctrlShow [1310, !ctrlVisible 1310];
@@ -240,12 +246,6 @@ switch (_type) do {
           f_cam_shift_down = true;
           [] spawn f_fnc_HandleCamera;
            _handled = true;
-      };
-      case 25: { // P
-        f_cam_muteSpectators = !f_cam_muteSpectators;
-        if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
-          [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-        };
       };
       case 29: { // CTRL
         f_cam_ctrl_down = true;

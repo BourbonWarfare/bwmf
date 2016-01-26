@@ -112,6 +112,17 @@ f_cam_cameraMode = 0; // set camera mode (default)
 
 f_cam_listUnits = [];
 
+f_cam_checkAcreMute = {
+  params ["_inputKey", "_inputShift", "_inputCtrl", "_inputAlt"];
+  (["ACRE2", "HeadSet"] call CBA_fnc_getKeybind select 5) params ["_key", "_modifiers"];
+  _modifiers params ["_shift", "_ctrl", "_alt"];
+
+  (_inputKey == _key &&
+    _inputShift isEqualTo _shift &&
+    _inputCtrl isEqualTo _ctrl &&
+    _inputAlt isEqualTo _alt)
+};
+
 f_cam_ToggleFPCamera = {
   f_cam_toggleCamera = !f_cam_toggleCamera;
   if (f_cam_toggleCamera) then {

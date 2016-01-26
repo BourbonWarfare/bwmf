@@ -35,12 +35,9 @@ if (_addToDiary) then {
   if (isServer) then { // do the calc on the server, then transmit to all clients (including JIPs)
     fn_numberToTwoDigitString = { // Helper function to make sure each part of the time is two digits
       params [["_number", 0, [0]]]; // Should be good data, double check for good luck
-      private _stringNumber = str _number; //Turn the input number into a string
 
-      if (count (toArray _stringNumber) < 2) then { // If the input is not two digits, make it so
-        _stringNumber = "0" + _stringNumber;
-      };
-      _stringNumber
+      if (_number < 10) then { format ["0%1", _number] }
+      else { str _number }
     };
 
     private _targetDaytime = daytime + (_targetMinuteTime / 60);

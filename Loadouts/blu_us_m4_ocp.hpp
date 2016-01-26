@@ -5,7 +5,7 @@ class blu_f {
   //Rifle
   #define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
   #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
-  #define WEST_RIFLE_ATTACHMENTS "rhsusf_acc_eotech_552","rhsusf_acc_anpeq15A"
+  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
