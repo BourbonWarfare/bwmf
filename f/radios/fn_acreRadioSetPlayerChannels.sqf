@@ -144,7 +144,7 @@ if (!hasInterface) exitWith {};
 
   if (_groupID != "-1") then {
     _splitName = _groupID splitString " ";
-    if ((count _splitName) > 2) then {
+    if ((count _splitName) >= 2) then {
       _groupName = (_splitName select 1);
       {
         if (_groupName in _x) exitWith { _groupFreqIndex = _forEachIndex; };
