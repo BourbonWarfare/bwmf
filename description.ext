@@ -27,7 +27,7 @@ class ACE_Settings {
     value = 1;
     typeName = "BOOL";
   };
-  ace_hearing_autoAddEarplugsToUnits {
+  class ace_hearing_autoAddEarplugsToUnits {
     value = 0;
     typeName = "BOOL";
   };
