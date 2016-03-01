@@ -2,11 +2,11 @@ class CfgLoadouts {
   //Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
 
   //Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
-  allowMagnifiedOptics = 1;
+  allowMagnifiedOptics = 0;
 
   //Do Vehicle Loadouts
   //(1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
-  setVehicleLoadouts = 1;
+  setVehicleLoadouts = -1;
 
   //Fallback: use a basic soldiers loadout when the unit's classname isn't found (for Alive spawning random units)
   useFallback = 1;
