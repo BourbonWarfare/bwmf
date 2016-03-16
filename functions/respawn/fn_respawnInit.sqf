@@ -9,7 +9,8 @@ if (isServer) then {
 
 if (hasInterface) then {
   isSpec = false;
-  waitUntil {time > 0};
-  player setVariable ["f_respawnName", name player, true];
-  player setVariable ["f_respawnUID", getPlayerUID player, true];
+  spawn { // wait until the player has loaded, set variables
+    waitUntil {time > 0};
+    player setVariable ["f_respawnName", name player, true];
+  };
 };

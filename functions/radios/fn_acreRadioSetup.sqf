@@ -73,5 +73,5 @@ F_available_languages = [
 diag_log text format ["[BW] - ACRE Presets Setup"];
 
 if (hasInterface) then {
-  [] call F_Radios_fnc_acreRadioSetPlayerChannels;
+  [] call F_fnc_acreRadioSetPlayerChannels;
 };

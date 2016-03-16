@@ -5,161 +5,31 @@ onLoadMission = "Made with the BW Mission Framework - Based on F3";
 author = "*** Insert your name here. ***";
 loadScreen = "bwbannersmall.jpg";
 
+enableDebugConsole = 1;
+disableRandomization[] = {"AllVehicles"};
+
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 class Header {
-  gameType = Coop;
-  minPlayers = 1;
-  maxPlayers = 491;
+  gameType = Coop; // Other types: ZCoop, TDM, SC, CTF
 };
 
-// ACE Settings: (see http://forums.bourbonwarfare.site.nfoservers.com/viewtopic.php?f=8&t=2026)
-class ACE_Settings {
-  //Daylight laser pointer:
-  class ace_laserPointer_enabled {
-    value = 0;
-  };
-  class ace_map_DefaultChannel {//ACE 3.4.0 - https://github.com/acemod/ACE3/pull/2650
-    typeName = "NUMBER";
-    value = 1; //SIDE
-  };
-  class ace_zeus_autoAddObjects {
-    value = 1;
-    typeName = "BOOL";
-  };
-  class ace_hearing_autoAddEarplugsToUnits {
-    value = 0;
-    typeName = "BOOL";
-  };
-};
-
-// BWMF Gear
-//Credits:headswe, Pabst, Zerith
+// BWMF Gear Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
 
-//Extended Event Handlers:
-#include "CfgEventHandlers.hpp"
+// ACE Settings: (see http://forums.bourbonwarfare.com/viewtopic.php?f=8&t=2026)
+#include "cfg/CfgAceSettings.hpp"
 
-// F3 - Debug Console
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-enableDebugConsole = 1;
+// Extended Event Handlers:
+#include "cfg/CfgEventHandlers.hpp"
 
-// F3 - Respawn Settings
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-respawn = "GROUP";
-respawndelay = 3;
-respawnButton = 1;
-respawnOnStart = 0;
-respawnTemplates[] = {"f_spectator"};
+// Spectator/Respawn configuration
+#include "cfg/CfgRespawn.hpp"
 
-// F3 - Start of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-class Params {
-  // F3 - Mission Conditions Selector
-  // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-  class f_param_weather {
-    title = "Weather";
-    values[] = {-1,0,1,2,3,4,5,6,7,8};
-    texts[] = {"Leave it the fuck alone", "Clear (Calm)", "Cloudy (Light Winds)", "Cloudy (Strong Winds)", "Overcast (Calm)", "Overcast (Light Winds)", "Overcast (Strong Winds)", "Rain (Light Winds)", "Rain (Strong Winds)", "Storm"};
-    default = -1;
-    function = "f_fnc_setWeather";        // This function is called to apply the values
-    isGlobal = 0;                        // Execute this only on the server
-    code = "f_param_weather = %1";
-  };
-  class f_param_fog {
-    title = "Fog";
-    values[] = {-1,0,1,2};
-    texts[] = {"Leave it the fuck alone", "None","Light","Heavy"};
-    default = -1;
-    function = "f_fnc_SetFog";            // This function is called to apply the values
-    isGlobal = 0;                        // Execute this only on the server
-    code = "f_param_fog = %1";
-  };
-  class f_param_timeOfDay {
-    title = "Time of Day";
-    values[] = {-1,0,1,2,3,4,5,6,7};
-    texts[] = {"Leave it the fuck alone", "Dawn", "Early Morning", "Morning", "Noon", "Afternoon", "Evening", "Dusk", "Night"};
-    default = -1;
-    function = "f_fnc_setTime";            // This function is called to apply the values
-    isGlobal = 0;                        // Execute this only on the server
-    code = "f_param_timeOfDay = %1";
-  };
-  class f_param_endMissionTimer {
-    title = "End Mission Timer";
-    values[] = {-1,0,5,10,15,20,25,30,35,40,45,50,55,60};
-    texts[] = {"Off", "Default", "5 Minutes", "10 Minutes", "15 Minutes", "20 Minutes", "25 Minutes", "30 Minutes", "35 Minutes", "40 Minutes", "45 Minutes", "50 Minutes", "55 Minutes", "60 Minutes"};
-    default = 0;
-    isGlobal = 1;
-    code = "f_param_endMissionTimer = %1";
-  };
-};
+// Parameter configuration
+#include "cfg/CfgParameters.hpp"
 
-class CfgRespawnTemplates {
-  // F3 Spectator Script
-  class f_Spectator {
-    onPlayerRespawn = "f_fnc_CamInit";
-  };
-};
+// Function configuration
+#include "cfg/CfgFunctions.hpp"
 
-#include "f\spect\config.hpp"
-
-// F3 - Functions
-class CfgFunctions {
-  class F_Markers {
-    class F_Markers {
-      file = "f\pabstMarkers";
-      class drawMap {};
-      class getGroupMarkerStyle {};
-      class playerInit {};
-      class serverSetupGroupID {};
-      class setupDrawThings {};
-    };
-  };
-  class F_Radios {
-    class F_Radios {
-      file = "f\radios";
-      class reinitRadio {};
-      class acreRadioSetup {};
-      class acreRadioSetPlayerChannels {};
-    };
-  };
-  class F {  // Defines the "owner"
-    class briefing {
-      file = "f\briefing";
-      class showBriefing;
-      class showOrbatNotes;
-    };
-    class common {  // category
-      file = "f\common";
-      // Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
-      class processParamsArray {
-        preInit = 1;
-        postInit = 1;
-      };
-    };
-    class assignGear {
-      // Defines the functions to preInit the compling of the assignGear function used by units.
-      file = "f\assignGear";
-      class assignGearMan {};
-      class assignGearVehicle {};
-      class gearErrorLogger {};
-    };
-    class missionConditions {
-      file = "f\missionConditions";
-      class SetTime {};
-      class SetFog {};
-      class SetWeather {};
-      class missionTimer {};
-    };
-    class setTeamColours {
-      file = "f\setTeamColours";
-      class setTeamColours {};
-    };
-    #include "f\spect\functions.hpp"
-    #include "f\respawn\functions.hpp"
-  };
-};
-#include "f\respawn\defines.hpp"
-#include "f\respawn\dialogs.hpp"
-
-bwmfDate = "2016/03/01"; //Framework date
+bwmfDate = "2016/03/16"; //Framework date

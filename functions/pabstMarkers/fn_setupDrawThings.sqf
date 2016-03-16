@@ -1,7 +1,7 @@
 #include "defines_unitsAndGroups.sqf"
 
 
-F_Markers_thingsToDraw = [];
+Pabst_thingsToDraw = [];
 
 _playerFaction = toLower (faction player);
 _showTheseFactions = [];
@@ -9,7 +9,7 @@ _showTheseFactions = [];
   if (_playerFaction in _x) exitWith {
     _showTheseFactions = _x;
   };
-} forEach F_Markers_factionMap;
+} forEach Pabst_factionMap;
 
 
 {
@@ -23,7 +23,7 @@ _showTheseFactions = [];
       _splitName = _groupIDName splitString " ";
       if ((count _splitName) >= 2) then {
         _shortName = _splitName select 1;
-        _style = [_shortName] call F_Markers_fnc_getGroupMarkerStyle;
+        _style = [_shortName] call Pabst_fnc_getGroupMarkerStyle;
         if((_style select 0) != "") then {
           _x setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [0,0,0], -1000]];
         };
@@ -33,8 +33,8 @@ _showTheseFactions = [];
 
   _groupFaction = toLower (faction (leader _x));
   if (_groupFaction in _showTheseFactions) then {
-    if (F_Markers_drawNonPlayerGroups || {({isPlayer _x} count (units _x)) > 0}) then {
-      F_Markers_thingsToDraw pushBack _x;
+    if (Pabst_drawNonPlayerGroups || {({isPlayer _x} count (units _x)) > 0}) then {
+      Pabst_thingsToDraw pushBack _x;
       //If it doesn't have settings, just give a default:
       if ((_x getVariable ["f_var_drawSettings", []]) isEqualTo []) then {
         _x setVariable ["f_var_drawSettings", [(groupID _x), "\A3\ui_f\data\map\markers\nato\b_unknown.paa", [1,1,1,1], [20,20], [0,0,0], -1000]];
@@ -51,10 +51,10 @@ _showTheseFactions = [];
     if (_unitFaction in _showTheseFactions) then {
       if ((_unit getVariable ["f_var_drawSettings", []]) isEqualTo []) then {
         _shortName = (_x select 1);
-        _style = [_shortName] call F_Markers_fnc_getGroupMarkerStyle;
+        _style = [_shortName] call Pabst_fnc_getGroupMarkerStyle;
         _unit setVariable ["f_var_drawSettings", [_shortName, _style select 0, _style select 1, _style select 2, [0,0,0], -1000]];
       };
-      F_Markers_thingsToDraw pushBack _unit;
+      Pabst_thingsToDraw pushBack _unit;
     };
   };
 } forEach UNIT_MARKERS;

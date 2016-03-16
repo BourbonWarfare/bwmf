@@ -1,13 +1,13 @@
 //Marker Settings:
 
 //How often the map markers are updated:
-F_Markers_delay = 3;
+Pabst_delay = 3;
 
 //Set to false to only show markers with players in them
-F_Markers_drawNonPlayerGroups = true;
+Pabst_drawNonPlayerGroups = true;
 
 //Faction map, to show other faction's markers, but them in the same array
-F_Markers_factionMap = [
+Pabst_factionMap = [
   // ["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],  //uncomment to show all markers
   ["blu_f"],
   ["ind_f"],
@@ -17,8 +17,8 @@ F_Markers_factionMap = [
 
 
 //====================================Internal Variables====================================
-F_Markers_thingsToDraw = [];
-F_Markers_lastUpdate = -1000;
+Pabst_thingsToDraw = [];
+Pabst_lastUpdate = -1000;
 
 if (!hasInterface) exitWith {};
 
@@ -26,12 +26,12 @@ if (!hasInterface) exitWith {};
   if (player != player) then {waitUntil {player == player};};
   if (!alive player) then {waitUntil {alive player};};
 
-  [] call F_Markers_fnc_setupDrawThings;
+  [] call Pabst_fnc_setupDrawThings;
 
   _fnc_installMapEvents = {
     _d = _this select 0;
     diag_log text format ["[BW] Markers - Installing Draw EH on %1", _d];
-    ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
+    ((finddisplay _d) displayctrl 51) ctrlAddEventHandler ["Draw", {_this call Pabst_fnc_drawMap;}];
   };
 
   // Wait until the briefing map is detected
@@ -59,13 +59,13 @@ if (!hasInterface) exitWith {};
   waitUntil { !isNull findDisplay 12 };
 
   //Add markers to the ace_microDAGR
-  ace_microDAGR_miniMapDrawHandlers pushBack {_this call F_Markers_fnc_drawMap};
+  ace_microDAGR_miniMapDrawHandlers pushBack {_this call Pabst_fnc_drawMap};
 
   [12] call _fnc_installMapEvents;
   diag_log text format ["[BW] - Markers added to main map"];
 
   waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
-  ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
+  ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call Pabst_fnc_drawMap}];
 
   diag_log text format ["[BW] - Markers added to vanilla GPS minimap"];
 };

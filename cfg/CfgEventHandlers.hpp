@@ -3,7 +3,7 @@
 class Extended_InitPost_EventHandlers {
   class CAManBase {
     class F_AssignGear { init = "[F_fnc_assignGearMan, _this] call ace_common_fnc_runAfterSettingsInit;"; };
-    class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+    class F_ServerGroupID { serverinit = "_this call Pabst_fnc_serverSetupGroupID;"; };
     class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
   };
   class Car {

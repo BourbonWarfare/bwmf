@@ -72,12 +72,11 @@ fn_update_deadListBox = {
 
     if (!_found) then {
       _name = _x getVariable ["f_respawnName", "Name not found"];
-      _uid = _x getVariable ["f_respawnUID", "UID not found"];
       _deadTimer = serverTime - (_x getVariable ["timeOfDeath", serverTime]);
       _minute = [(_deadTimer / 60)] call fn_truncateDecimal;
       _second = [(_deadTimer % 60)] call fn_truncateDecimal;
       _deadListBox lbAdd (format ["%1m %2s - %3", _minute, _second, _name]);
-      _deadListBox lbSetData[_i, _uid];
+      _deadListBox lbSetData[_i, _name];
       _i = _i + 1;
     };
     nil
@@ -124,7 +123,7 @@ fn_respawnMenuAddAction = {
 
   _obj = objNull;
   {
-    if (_selection == _x getVariable ["f_respawnUID", "UID not found"]) exitWith { _obj = _x; };
+    if (_selection == _x getVariable ["f_respawnName", "Name not found"]) exitWith { _obj = _x; };
     nil
   } count deadPlayerList;
 

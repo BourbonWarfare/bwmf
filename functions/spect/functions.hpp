@@ -1,5 +1,4 @@
-class fspectator {
-  file = "f\spect";
+class spectator {
   class CamInit{};
   class OnUnload{};
   class DrawTags{};

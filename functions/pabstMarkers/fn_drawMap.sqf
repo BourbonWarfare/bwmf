@@ -6,9 +6,9 @@ _sizeFactor = (_mapSize + 1) / 2;
 
 if ((player != player) || {!alive player}) exitWith {};
 
-if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
-  [] call F_Markers_fnc_setupDrawThings;
-  F_Markers_lastUpdate = diag_tickTime;
+if ((diag_tickTime - Pabst_lastUpdate) > 5) then {
+  [] call Pabst_fnc_setupDrawThings;
+  Pabst_lastUpdate = diag_tickTime;
 };
 
 {
@@ -22,7 +22,7 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
     _sizeX = _sizeX * _sizeFactor;
     _sizeY = _sizeY * _sizeFactor;
 
-    if(((time - _time) > F_Markers_delay) && {!isNull _x}) then {
+    if(((time - _time) > Pabst_delay) && {!isNull _x}) then {
       if(typeName _x == "GROUP") then {_pos = getpos leader _x};
       if(typeName _x == "OBJECT") then {_pos = getpos _x};
       _time = time;
@@ -34,7 +34,7 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
 
     _mapControl drawIcon [_texture, _color, _pos, _sizeX, _sizeY, 0, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "right"];
   };
-} forEach F_Markers_thingsToDraw;
+} forEach Pabst_thingsToDraw;
 
 
 #define TRI_MARKER "\A3\ui_f\data\map\markers\military\start_CA.paa"

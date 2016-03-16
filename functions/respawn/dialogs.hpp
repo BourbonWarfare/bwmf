@@ -20,7 +20,7 @@ $[
     [1606,"respawnMenuVOIP",[1,"Toggle Spectator VOIP",["0.365937 * safezoneW + safezoneX","0.346 * safezoneH + safezoneY","0.0979687 * safezoneW","0.022 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Toggles the spectator channel for (ACRE/TFAR), so that you can talk to dead players if alive.","-1"],[]]
 ]
 */
-
+#include "defines.hpp"
 
 class respawnMenuDialog {
   idd = 26893;

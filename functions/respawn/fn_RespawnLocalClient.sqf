@@ -91,6 +91,6 @@ if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   player setVariable ["F_Radio_LR", _lr, false];
   player setVariable ["F_Radio_SR", _sr, false];
   [] spawn {
-    [] call F_Radios_fnc_acreRadioSetup;
+    [] call F_fnc_acreRadioSetup;
   };
 };
