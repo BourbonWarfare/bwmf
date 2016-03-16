@@ -1,6 +1,8 @@
 //Set Radio Difficulty:
+[true] call acre_api_fnc_setFullDuplex;
 [false] call acre_api_fnc_setInterference;
 [0.5] call acre_api_fnc_setLossModelScale;
+[0.25] call acre_api_fnc_setPTTDelay
 
 //Setup babble languages:
 F_available_languages = [

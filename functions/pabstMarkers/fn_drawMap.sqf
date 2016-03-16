@@ -34,7 +34,8 @@ if ((diag_tickTime - Pabst_lastUpdate) > 5) then {
 
     _mapControl drawIcon [_texture, _color, _pos, _sizeX, _sizeY, 0, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "right"];
   };
-} forEach Pabst_thingsToDraw;
+  nil
+} count Pabst_thingsToDraw;
 
 
 #define TRI_MARKER "\A3\ui_f\data\map\markers\military\start_CA.paa"
@@ -54,6 +55,6 @@ if((ctrlMapScale _mapControl) < 0.5) then {
     if ((!isNil "_color") && {(count _color) == 4} && {(count _pos) == 3}) then { //handle weird/dead group members
       _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), _dir, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "left"];
     };
-
-  } forEach (units (group player));
+    nil
+  } count (units (group player));
 };

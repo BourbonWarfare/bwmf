@@ -41,7 +41,8 @@ _showTheseFactions = [];
       };
     };
   };
-} forEach allGroups;
+  nil
+} count allGroups;
 
 
 {
@@ -57,4 +58,5 @@ _showTheseFactions = [];
       Pabst_thingsToDraw pushBack _unit;
     };
   };
-} forEach UNIT_MARKERS;
+  nil
+} count UNIT_MARKERS;
