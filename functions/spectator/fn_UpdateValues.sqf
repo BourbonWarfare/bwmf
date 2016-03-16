@@ -1,7 +1,7 @@
 // F3 - Spectator Script
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-_listBox =  2103;
+private _listBox =  2103;
 // updaes values for the units listbox.
 f_cam_checkIndex = {
   {
@@ -17,20 +17,20 @@ while {true} do {
   ctrlSetFocus ((findDisplay 9228) displayCtrl 1315);
 
   // fetch units
-  _groupArr = call F_fnc_GetPlayers;
+  private _groupArr = call F_fnc_GetPlayers;
   f_cam_units = ((_groupArr select 0) + (_groupArr select 1));
   f_cam_players = _groupArr select 0;
 
   // get the list for players or players/ai
-  _tempArr = [];
+  private _tempArr = [];
   if (f_cam_playersOnly) then { _tempArr = f_cam_players; }
   else { _tempArr = f_cam_units; };
 
   // Check it and see if they have been added already
   {
     if (!(_x in f_cam_listUnits) && ({alive _x} count units _x) > 0 ) then {
-      _text = toString(toArray(groupID _x) - [45]);
-      _index = lbAdd [_listBox,_text];
+      private _text = toString(toArray(groupID _x) - [45]);
+      private _index = lbAdd [_listBox,_text];
       _x SetVariable ["f_spect_listBoxIndex", _index];
       f_cam_listUnits pushBack _x;
       lbSetColor [_listBox,_index,[side _x,false] call BIS_fnc_sideColor];
@@ -50,7 +50,7 @@ while {true} do {
   } count _tempArr;
 
   {
-    _index = _x GetVariable ["f_spect_listBoxIndex",-1];
+    private _index = _x GetVariable ["f_spect_listBoxIndex",-1];
     if (typeName _x == "GROUP") then {
       if (_index >= 0 && ({alive _x} count units _x) > 0 && {lbText [_listBox,_index] != (toString(toArray(groupID _x) - [45]))}) then {
         // there is no lbSetText, so just punt it out of the list and fix it up there..
@@ -64,7 +64,7 @@ while {true} do {
         [] call f_cam_checkIndex;
       };
     } else {
-      _val = lbText [_listBox, _index] != "    " + name _x;
+      private _val = lbText [_listBox, _index] != "    " + name _x;
 
       if (_index >= 0 && alive _x && _val ) then {
         lbDelete [_listBox, _index];
