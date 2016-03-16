@@ -7620,7 +7620,7 @@ class Mission
 						};
 						class Item10
 						{
-							value="1";
+							value="10";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="bleedingCoefficient";
 						};
