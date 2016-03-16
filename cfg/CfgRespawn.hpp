@@ -11,5 +11,5 @@ class CfgRespawnTemplates {
   };
 };
 
-#include "functions\spect\config.hpp"
+#include "functions\spectator\config.hpp"
 #include "functions\respawn\dialogs.hpp"

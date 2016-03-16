@@ -41,7 +41,7 @@ class CfgFunctions {
     class setTeamColours {
       class setTeamColours {};
     };
-    #include "functions\spect\functions.hpp"
+    #include "functions\spectator\functions.hpp"
     #include "functions\respawn\functions.hpp"
   };
 };

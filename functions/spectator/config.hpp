@@ -762,14 +762,6 @@ class f_spec_dialog {
       onMouseHolding = "f_cam_menuShownTime=time";
       onMouseMoving = "f_cam_menuShownTime=time";
     };
-    class SpecText: RscSpectText {
-      idc = 1000;
-      text = "Spectating:Unknown";
-      x = 0.430336 * safezoneW + safezoneX;
-      y = 0.00159198 * safezoneH + safezoneY;
-      w = 0.800 * safezoneW;
-      h = 0.0200 * safezoneH;
-    };
     class SpectMap : RscSpectMapControl {
       type = 100;
       idc = 1350;

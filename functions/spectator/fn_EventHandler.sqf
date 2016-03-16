@@ -73,7 +73,6 @@ switch (_type) do {
         if (f_cam_mode == 0 || f_cam_mode == 1) then {
           f_cam_curTarget = _unit;
           if (f_cam_toggleCamera) then { f_cam_curTarget switchCamera "INTERNAL"; };
-          ctrlSetText [1000,format ["Spectating:%1", name f_cam_curTarget]];
         };
         if (f_cam_mode == 3) then {
           _pos = getpos _unit;

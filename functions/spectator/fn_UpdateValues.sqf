@@ -16,10 +16,6 @@ while {true} do {
   ctrlMapAnimCommit ((findDisplay 9228) displayCtrl 1350);
   ctrlSetFocus ((findDisplay 9228) displayCtrl 1315);
 
-  // update string.
-  if (alive f_cam_curTarget) then { ctrlSetText [1000, format ["Spectating: %1", name f_cam_curTarget]]; }
-  else { ctrlSetText [1000, "Spectating: Dead"]; };
-
   // fetch units
   _groupArr = call F_fnc_GetPlayers;
   f_cam_units = ((_groupArr select 0) + (_groupArr select 1));
