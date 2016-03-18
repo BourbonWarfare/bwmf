@@ -16,10 +16,6 @@ class CfgFunctions {
       class assignGearVehicle {};
       class gearErrorLogger {};
     };
-    class briefing {
-      class showBriefing;
-      class showOrbatNotes;
-    };
     class common {  // category
       // Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
       class processParamsArray {

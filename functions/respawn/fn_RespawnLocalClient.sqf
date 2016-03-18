@@ -78,12 +78,9 @@ else {
 };
 
 // Re-run briefing script for our new unit.
-[] call F_fnc_showBriefing;
-[] call F_fnc_showOrbatNotes;
 [] call F_fnc_setTeamColours;
 
 player setVariable ["f_respawnName", name player, true];
-player setVariable ["f_respawnUID", getPlayerUID player, true];
 
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
