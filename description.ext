@@ -12,6 +12,7 @@ disableRandomization[] = {"AllVehicles"};
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 class Header {
   gameType = Coop; // Other types: ZCoop, TDM, SC, CTF
+  minPlayer = 1;
 };
 
 // BWMF Gear Credits:headswe, Pabst, Zerith

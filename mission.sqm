@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=705;
+		nextID=706;
 	};
 	class Camera
 	{
-		pos[]={455.50781,407.89127,1279.9039};
-		dir[]={-0.025698261,-0.58344769,-0.81175178};
-		up[]={-0.018461244,0.81214869,-0.5831579};
-		aside[]={-0.99950331,1.6875674e-007,0.03164098};
+		pos[]={469.34268,385.31534,1110.5159};
+		dir[]={0.0041324329,-0.72039407,-0.69356948};
+		up[]={0.0042924616,0.69356084,-0.72038484};
+		aside[]={-0.99998963,-2.8401246e-008,-0.0059592286};
 	};
 };
 binarizationWanted=0;
@@ -54,7 +54,8 @@ addons[]=
 	"A3_Characters_F_Civil",
 	"ace_medical",
 	"ace_finger",
-	"ace_mk6mortar"
+	"ace_mk6mortar",
+	"ace_refuel"
 };
 randomSeed=79502;
 class ScenarioData
@@ -82,7 +83,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=202;
+		items=203;
 		class Item0
 		{
 			dataType="Object";
@@ -13168,6 +13169,39 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item202
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={389.914,5,701.151};
+			};
+			id=705;
+			type="ACE_moduleRefuelSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRefuelSettings_rate";
+					expression="_this setVariable ['rate',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
