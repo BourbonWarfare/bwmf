@@ -31,7 +31,6 @@ class CfgFunctions {
       class SetTime {};
       class SetFog {};
       class SetWeather {};
-      class missionTimer {};
     };
     class radios {
       class reinitRadio {};
@@ -41,7 +40,7 @@ class CfgFunctions {
     class setTeamColours {
       class setTeamColours {};
     };
-    #include "functions\spectator\functions.hpp"
-    #include "functions\respawn\functions.hpp"
+    #include "..\functions\spectator\functions.hpp"
+    #include "..\functions\respawn\functions.hpp"
   };
 };

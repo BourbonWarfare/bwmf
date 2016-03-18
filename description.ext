@@ -17,19 +17,16 @@ class Header {
 // BWMF Gear Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
 
-// ACE Settings: (see http://forums.bourbonwarfare.com/viewtopic.php?f=8&t=2026)
-#include "cfg/CfgAceSettings.hpp"
-
 // Extended Event Handlers:
-#include "cfg/CfgEventHandlers.hpp"
+#include "cfg\CfgEventHandlers.hpp"
 
 // Spectator/Respawn configuration
-#include "cfg/CfgRespawn.hpp"
+#include "cfg\CfgRespawn.hpp"
 
 // Parameter configuration
-#include "cfg/CfgParameters.hpp"
+#include "cfg\CfgParameters.hpp"
 
 // Function configuration
-#include "cfg/CfgFunctions.hpp"
+#include "cfg\CfgFunctions.hpp"
 
 bwmfDate = "2016/03/16"; //Framework date

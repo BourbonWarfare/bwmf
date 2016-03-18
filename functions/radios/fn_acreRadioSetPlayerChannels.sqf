@@ -34,10 +34,10 @@ if (!hasInterface) exitWith {};
       {
         _charCount = _charCount + count _x;
         if (_charCount > _maxPerLine) then {
-          _output pushBack ["<br/>%1%2, ", _newLineSpace, _x];
+          _output pushBack format ["<br/>%1%2", _newLineSpace, _x];
           _charCount = count _x;
         } else {
-          _output pushBack format ["%1, ", _x];
+          _output pushBack format ["%1", _x];
         };
         nil
       } count _array;

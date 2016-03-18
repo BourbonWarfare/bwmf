@@ -41,8 +41,8 @@ if (f_cam_tracerOn) then {
 };
 
 {
-  private _cachedMarker = _x getVariable ["markerCache", objNull];
-  if (isNull _cachedMarker) then {
+  private _cachedMarker = _x getVariable ["markerCache", nil];
+  if (isNil "_cachedMarker") then {
     private _markerType = getMarkerType _x;
     private _markerShape = markerShape _x;
     private _markerPos = getMarkerPos _x;

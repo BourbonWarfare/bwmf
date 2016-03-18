@@ -13,7 +13,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
     private _distToCam = (call f_cam_GetCurrentCam) distance _groupLeader;
     if (isPlayer _groupLeader) then {_isPlayerGroup = true};
     if (_distToCam < 200) then {
-      {_drawUnits pushBack _x; nil} count _x
+      {_drawUnits pushBack _x; nil} count (units _x)
     }
     else {
       _drawGroup = true;
@@ -55,9 +55,9 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
         if (surfaceIsWater _visPos) then  { _visPos = getPosASLVisual _x; };
         _color set [3,0.6];
         private _name = "";
-        private _cachedIcon = _x getVariable ["f_cam_cached_icon", objNull];
+        private _cachedIcon = _x getVariable ["f_cam_cached_icon", nil];
 
-        if (isNull _cachedIcon) {
+        if (isNil "_cachedIcon") then {
           _cachedIcon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
           _x setVariable ["f_cam_cached_icon", _cachedIcon];
         };
@@ -69,8 +69,8 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
           _name = (name _x);
         }
         else {
-          _name = _x getVariable ["f_cam_cached_name", objNull];
-          if (isNull _name) {
+          _name = _x getVariable ["f_cam_cached_name", nil];
+          if (isNil "_name") then {
             _name = format ["AI - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
             _x setVariable ["f_cam_cached_name", _name];
           };
