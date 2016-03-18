@@ -18,7 +18,10 @@ class Header {
 // BWMF Gear Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
 
-// Extended Event Handlers:
+// Add ACE/Potato settings
+#include "cfg\CfgAceSettings.hpp"
+
+// Extended Event Handlers
 #include "cfg\CfgEventHandlers.hpp"
 
 // Spectator/Respawn configuration
