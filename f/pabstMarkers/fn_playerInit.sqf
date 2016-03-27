@@ -63,9 +63,4 @@ if (!hasInterface) exitWith {};
 
   [12] call _fnc_installMapEvents;
   diag_log text format ["[BW] - Markers added to main map"];
-
-  waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
-  ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
-
-  diag_log text format ["[BW] - Markers added to vanilla GPS minimap"];
 };

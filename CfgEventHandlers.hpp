@@ -29,3 +29,9 @@ class Extended_InitPost_EventHandlers {
     class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
   };
 };
+
+class Extended_DisplayLoad_EventHandlers {
+    class RscMiniMap {
+        BWMF = "_this call F_Markers_fnc_setupGpsMiniMap";
+    };
+};
