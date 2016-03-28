@@ -14,12 +14,13 @@ private _loadout = _unit getVariable ["F_Gear", _unitClassname];
 private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "useFallback")) == 1}) then {
-  // [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
   _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
 };
 
+diag_log text format ["[BW] DEBUG: Gear values: { _unit: "%1", _faction: "%2", _unitClassname: "%3", _loadout: "%4", _path: "%5"  }", _unit, _faction, _unitClassname, _loadout, _path];
+
 if (!isClass(_path)) exitWith {
-  [_unitClassname, "No loadout found, using default gear"] call F_fnc_gearErrorLogger;
+  [_unitClassname, ["No loadout found, using default gear"]] call F_fnc_gearErrorLogger;
   _unit setVariable ["F_Gear_Setup", true, true];
 };
 
@@ -56,7 +57,7 @@ if ((count _uniforms) == 0) then {
       _unit forceAddUniform _toAdd;
     };
   } else {
-    [_unitClassname, format ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
+    [_unitClassname, ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
   };
 };
 //Random Vest:
@@ -68,7 +69,7 @@ if ((count _vests) == 0) then {
     removeVest _unit;
     _unit addVest _toAdd;
   } else {
-    [_unitClassname, format ["%1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)]] call F_fnc_gearErrorLogger;
+    [_unitClassname, ["%1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)]] call F_fnc_gearErrorLogger;
   };
 };
 //Random Backpack:
@@ -80,7 +81,7 @@ if ((count _backpack) == 0) then {
     removeBackpackGlobal _unit;
     _unit addBackpackGlobal _toAdd;
   } else {
-    [_unitClassname, format ["%1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)]] call F_fnc_gearErrorLogger;
+    [_unitClassname, ["%1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)]] call F_fnc_gearErrorLogger;
   };
 };
 //Random Headgear:
@@ -92,7 +93,7 @@ if ((count _headgears) == 0) then {
     removeHeadgear _unit;
     _unit addHeadgear _toAdd;
   } else {
-    [_unitClassname, format ["%1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)]] call F_fnc_gearErrorLogger;
+    [_unitClassname, ["%1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)]] call F_fnc_gearErrorLogger;
   };
 };
 
@@ -173,7 +174,7 @@ if (!(_attachments isEqualTo [])) then {
         } count configProperties [_config >> "ItemInfo" >> "OpticsModes"];
         if (_minZoom < 0.25) then {
           _addAttachment = false;
-          [_unitClassname, format ["allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom]] call F_fnc_gearErrorLogger;
+          [_unitClassname, ["allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom]] call F_fnc_gearErrorLogger;
         };
       };
       if (_addAttachment) then {
@@ -181,12 +182,12 @@ if (!(_attachments isEqualTo [])) then {
           case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
           case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
           default {
-            [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+            [_unitClassname, ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
           };
         };
       };
     } else {
-      [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
+      [_unitClassname, ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
     };
     nil
   } count _attachments;
@@ -202,10 +203,10 @@ if (!(_secondaryAttachments isEqualTo [])) then {
       if (({_x == _classname} count _secondaryWeaponAttachables) > 0) then {
         _unit addSecondaryWeaponItem _classname;
       } else {
-        [_unitClassname, format ["Secondary attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+        [_unitClassname, ["Secondary attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
       };
     } else {
-      [_unitClassname, format ["Secondary attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
+      [_unitClassname, ["Secondary attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
     };
     nil
   } count _secondaryAttachments;
@@ -216,7 +217,7 @@ if (!(_secondaryAttachments isEqualTo [])) then {
   if (_unit canAdd _x) then {
     _unit addMagazines [_x, 1];
   } else {
-    [_unitClassname, format ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
+    [_unitClassname, ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
   };
   nil
 } count _magazinesNotAdded;
@@ -227,5 +228,5 @@ if (isText _loadoutInit) then {
   _unit call compile ("this = _this;"+ getText _loadoutInit);
 };
 
-[_unitClassname, "Done", (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
+[_unitClassname, ["Done"], (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
 _unit setVariable ["F_Gear_Setup", true, true];

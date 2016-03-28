@@ -4,9 +4,9 @@
 //Don't waste time on dedicated.  This only runs personaly hosted
 if ((!hasInterface) || {!isServer}) exitWith {};
 
-params ["_classname", "_error", "_timeTaken"];
+params ["_classname", "_errorToFormat", "_timeTaken"];
 
-// diag_log text format ["[BW] %1", _this];
+private _error = format _errorToFormat;
 
 if (isNil "F_gearHash") then {F_gearHash = [[], [], []]};
 
@@ -22,7 +22,6 @@ if (_index != -1) then {
   (F_gearHash select 1) pushBack _classErrrorArray;
   (F_gearHash select 2) pushBack _classTimeTaken;
 };
-
 
 if (_error == "Done") then {
   _classTimeTaken pushBack _timeTaken;
