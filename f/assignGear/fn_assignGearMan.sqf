@@ -14,9 +14,10 @@ private _loadout = _unit getVariable ["F_Gear", _unitClassname];
 private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "useFallback")) == 1}) then {
-  // [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
   _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
 };
+
+diag_log text format ["[BW] DEBUG: Gear values: { _unit: "%1", _faction: "%2", _unitClassname: "%3", _loadout: "%4", _path: "%5"  }", _unit, _faction, _unitClassname, _loadout, _path];
 
 if (!isClass(_path)) exitWith {
   [_unitClassname, "No loadout found, using default gear"] call F_fnc_gearErrorLogger;
