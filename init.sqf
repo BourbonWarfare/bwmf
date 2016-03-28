@@ -4,10 +4,6 @@ enableSaving [false, false];
 // F3 - Mute Orders and Reports
 enableSentences false;
 
-// F3 - Briefing
-[] call F_fnc_showBriefing;
-[] call F_fnc_showOrbatNotes;
-
 // F3 - Buddy Team Colours
 [] call F_fnc_setTeamColours;
 
@@ -19,9 +15,9 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // F3 - Radio Framework
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] call F_Radios_fnc_acreRadioSetup;
+[] call F_fnc_acreRadioSetup;
 
-[] execVM "f\respawn\respawn_init.sqf";
+[] call F_fnc_respawnInit;
 
 // BWMF: Group and FTL Markers
-[] call F_Markers_fnc_playerInit;
+[] call Pabst_fnc_playerInit;
