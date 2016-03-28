@@ -107,7 +107,7 @@
   ["UnitNATO_TH8", "NATO TH8"], \
   ["UnitNATO_AH1", "NATO AH1"], \
   ["UnitNATO_AH2", "NATO AH2"] \
-  ]\
+  ]
 
 // GROUP IDs: OPFOR > OPFOR
 // Automatically assigns intelligible names to groups

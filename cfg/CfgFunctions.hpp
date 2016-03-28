@@ -7,6 +7,7 @@ class CfgFunctions {
       class playerInit {};
       class serverSetupGroupID {};
       class setupDrawThings {};
+      class setupGpsMiniMap {};
     };
   };
   class F {
