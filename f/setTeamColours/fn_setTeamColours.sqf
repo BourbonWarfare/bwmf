@@ -31,8 +31,9 @@ if (!hasInterface) exitWith {};
   // CHECK GROUP SIZE
   // If the group isn't a full fireteam, leave teams as default.
   {
-    if ([_x, format["%1",(leader (group _unit))]] call _inStr) exitWith {_isFireteam = true;}
-  } forEach _leaders;
+    if ([_x, format["%1",(leader (group _unit))]] call _inStr) exitWith {_isFireteam = true;};
+	nil
+  } count _leaders;
 
   if(!_isFireteam) exitWith {};
 
@@ -57,21 +58,22 @@ if (!hasInterface) exitWith {};
     _green = [];
 
     //Pabst: set ft color based on ftl number
+	_n = vehicleVarName _unit;
     {
-      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_red = _red + ["_AR","_AAR"];};
-    } forEach ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
+      if ([_x,_n] call _inStr) exitWith {_red = _red + ["_AR","_AAR"];};nil
+    } count ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_blue = _blue + ["_AR","_AAR"];};
-    } forEach ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
+      if ([_x,_n] call _inStr) exitWith {_blue = _blue + ["_AR","_AAR"];};nil
+    } count ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_green = _green + ["_AT","_R1"];};
-    } forEach ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
+      if ([_x,_n] call _inStr) exitWith {_green = _green + ["_AT","_R1"];};nil
+    } count ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_yellow = _yellow + ["_AT","_R1"];};
-    } forEach ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
+      if ([_x,_n] call _inStr) exitWith {_yellow = _yellow + ["_AT","_R1"];};nil
+    } count ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
   };
 
   // SET TEAM COLOURS
@@ -83,27 +85,32 @@ if (!hasInterface) exitWith {};
       if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "RED";
       };
-    } forEach _red;
+	  nil
+    } count _red;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "blue";
       };
-    } forEach _blue;
+	  nil
+    } count _blue;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "yellow";
       };
-    } forEach _yellow;
+	  nil
+    } count _yellow;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "green";
       };
-    } forEach _green;
+	  nil
+    } count _green;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "white";
       };
-    } forEach _white;
-
-  } foreach units (group _unit);
+	  nil
+    } count _white;
+	nil
+  } count units (group _unit);
 };
