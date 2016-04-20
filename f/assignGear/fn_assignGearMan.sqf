@@ -49,7 +49,7 @@ removeAllItemsWithMagazines _unit;
 if ((count _uniforms) == 0) then {
   removeUniform _unit;
 } else {
-  private _toAdd = _uniforms call BIS_fnc_selectRandom;
+  private _toAdd = selectRandom _uniforms;
   if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
     if (_unit isUniformAllowed _toAdd) then {
       _unit addUniform _toAdd;
@@ -64,7 +64,7 @@ if ((count _uniforms) == 0) then {
 if ((count _vests) == 0) then {
   removeVest _unit;
 } else {
-  private _toAdd = _vests call BIS_fnc_selectRandom;
+  private _toAdd = selectRandom _vests;
   if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
     removeVest _unit;
     _unit addVest _toAdd;
@@ -76,7 +76,7 @@ if ((count _vests) == 0) then {
 if ((count _backpack) == 0) then {
   removeBackpackGlobal _unit;
 } else {
-  _toAdd = _backpack call BIS_fnc_selectRandom;
+  _toAdd = selectRandom _backpack;
   if ((!isNil "_toAdd") && {isClass (configFile >> "CfgVehicles" >> _toAdd)}) then {
     removeBackpackGlobal _unit;
     _unit addBackpackGlobal _toAdd;
@@ -88,7 +88,7 @@ if ((count _backpack) == 0) then {
 if ((count _headgears) == 0) then {
   removeHeadgear _unit;
 } else {
-  private _toAdd = _headgears call BIS_fnc_selectRandom;
+  private _toAdd = selectRandom _headgears;
   if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
     removeHeadgear _unit;
     _unit addHeadgear _toAdd;
@@ -125,7 +125,7 @@ clearAllItemsFromBackpack _unit;
 // Linked Items
 {
   (_x splitString ":") params ["_classname", ["_amount", "1", [""]]];
-  if ("Binocular" in ([configFile >> "CfgWeapons" >> _classname, true] call BIS_fnc_returnParents)) then {
+  if (_classname isKindOf ["Binocular",configFile >> "CfgWeapons"]) then {
     _unit addWeapon _classname;
   } else {
     for "_i" from 0 to ((parseNumber _amount) - 1) do {
@@ -151,9 +151,9 @@ private _magazinesNotAdded = [];
 } count _magazines;
 
 // Weapons
-if ((count _weapons) > 0) then {_unit addWeapon (_weapons call BIS_fnc_selectRandom);};
-if ((count _launchers) > 0) then {_unit addWeapon (_launchers call BIS_fnc_selectRandom);};
-if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectRandom);};
+if ((count _weapons) > 0) then {_unit addWeapon (selectRandom _weapons);};
+if ((count _launchers) > 0) then {_unit addWeapon (selectRandom _launchers);};
+if ((count _handguns) > 0) then {_unit addWeapon (selectRandom _handguns);};
 
 // attachments
 if (!(_attachments isEqualTo [])) then {
@@ -178,13 +178,9 @@ if (!(_attachments isEqualTo [])) then {
         };
       };
       if (_addAttachment) then {
-        switch (true) do {
-          case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
-          case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
-          default {
-            [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
-          };
-        };
+	    if (({_x == _classname} count _primaryWeaponAttachables) > 0) exitWith {_unit addPrimaryWeaponItem _classname};
+	    if (({_x == _classname} count _handgunWeaponAttachables) > 0) exitWith {_unit addHandgunItem _classname};
+	    [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
       };
     } else {
       [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
