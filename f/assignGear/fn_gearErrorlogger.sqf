@@ -68,7 +68,7 @@ if (isNil "F_gearPEFH") then {
 
         //Add Time Taken
         _sumTime = 0;
-        {_sumTime = _sumTime + _x;} forEach _classTimeTaken;
+        {_sumTime = _sumTime + _x;nil} count _classTimeTaken;
         _avgTime = (floor (10000 * (_sumTime / ((count _classTimeTaken) max 1)))) / 10;
         _diaryText = _diaryText + format ["<br/>AssignGearMan took %1 ms avg<br/>%2", _avgTime, _classTimeTaken];
 
