@@ -25,11 +25,13 @@ if (!hasInterface) exitWith {};
 
   _unit = player;
   _isFireteam = false;
+  
+  _inStr = {_this select 1 find (_this select 0) != -1};
   // ====================================================================================
   // CHECK GROUP SIZE
   // If the group isn't a full fireteam, leave teams as default.
   {
-    if ([_x, format["%1",(leader (group _unit))]] call BIS_fnc_inString) exitWith {_isFireteam = true;}
+    if ([_x, format["%1",(leader (group _unit))]] call _inStr) exitWith {_isFireteam = true;}
   } forEach _leaders;
 
   if(!_isFireteam) exitWith {};
@@ -56,19 +58,19 @@ if (!hasInterface) exitWith {};
 
     //Pabst: set ft color based on ftl number
     {
-      if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_red = _red + ["_AR","_AAR"];};
+      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_red = _red + ["_AR","_AAR"];};
     } forEach ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_blue = _blue + ["_AR","_AAR"];};
+      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_blue = _blue + ["_AR","_AAR"];};
     } forEach ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_green = _green + ["_AT","_R1"];};
+      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_green = _green + ["_AT","_R1"];};
     } forEach ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
 
     {
-      if ([_x, (vehicleVarName _unit)] call BIS_fnc_inString) exitWith {_yellow = _yellow + ["_AT","_R1"];};
+      if ([_x, (vehicleVarName _unit)] call _inStr) exitWith {_yellow = _yellow + ["_AT","_R1"];};
     } forEach ["_A2_", "_B2_", "_C2_","_D2_", "_E2_", "_F2_"];
   };
 
@@ -78,27 +80,27 @@ if (!hasInterface) exitWith {};
     _unit = _x;
 
     {
-      if ([_x, format ["%1",_unit]] call BIS_fnc_inString) then {
+      if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "RED";
       };
     } forEach _red;
     {
-      if ([_x, format ["%1",_unit]] call BIS_fnc_inString) then {
+      if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "blue";
       };
     } forEach _blue;
     {
-      if ([_x, format ["%1",_unit]] call BIS_fnc_inString) then {
+      if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "yellow";
       };
     } forEach _yellow;
     {
-      if ([_x, format ["%1",_unit]] call BIS_fnc_inString) then {
+      if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "green";
       };
     } forEach _green;
     {
-      if ([_x, format ["%1",_unit]] call BIS_fnc_inString) then {
+      if ([_x, format ["%1",_unit]] call _inStr) then {
           _unit assignTeam "white";
       };
     } forEach _white;
