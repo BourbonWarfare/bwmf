@@ -19,8 +19,8 @@ class ind_f {
   #define IND_AR "BWA3_G36_LMG"
   #define IND_AR_MAG "BWA3_100Rnd_556x45_G36:2","BWA3_100Rnd_556x45_G36_Tracer:2"
   // AT
-  #define IND_AT "BWA3_RGW90"
-  #define IND_AT_MAG "BWA3_RGW90_HH:1"
+  #define IND_AT "BWA3_Pzf3"
+  #define IND_AT_MAG "BWA3_Pzf3_IT"
   // MMG
   #define IND_MMG "BWA3_MG5"
   #define IND_MMG_MAG "BWA3_120Rnd_762x51:4"
