@@ -12,8 +12,8 @@ F_available_languages = [
 ];
 
 {
-  _x call acre_api_fnc_babelAddLanguageType;
-} forEach F_available_languages;
+  _x call acre_api_fnc_babelAddLanguageType;nil
+} count F_available_languages;
 
 //Setup radio presets:
 ["ACRE_PRC148", "default3", "west148"] call acre_api_fnc_copyPreset;
