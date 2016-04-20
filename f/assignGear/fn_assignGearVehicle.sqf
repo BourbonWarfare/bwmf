@@ -32,20 +32,18 @@ private _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if (!isClass _path) then {
   //No CfgLoadouts for exact loadout, try default
+  private _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
+  private _vehConfigFaction = switch (_vehConfigSide) do {
+    case (west): {"blu_f"};
+    case (east): {"rhs_faction_msv"};
+    case (independent): {"ind_f"};
+    default {"CIV_F"};
+  };
+  _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
   if (!isClass _path) then {
-    private _vehConfigSide = [_theVehicle, true] call BIS_fnc_objectSide;
-    private _vehConfigFaction = switch (_vehConfigSide) do {
-      case (west): {"blu_f"};
-      case (east): {"rhs_faction_msv"};
-      case (independent): {"ind_f"};
-      default {"CIV_F"};
-    };
-    _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
-    if (!isClass _path) then {
-      if (_vehConfigSide == east) then {
-        _vehConfigFaction = "OPF_F";
-        _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
-      };
+    if (_vehConfigSide == east) then {
+      _vehConfigFaction = "OPF_F";
+      _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
     };
   };
 };

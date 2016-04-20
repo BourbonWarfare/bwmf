@@ -21,4 +21,5 @@ _nameToSearch = format ["%1_%2", (_splitName select 0), (_splitName select 1)];
   if (_nameToSearch == (_x select 0)) exitWith {
     _group setVariable ["F3_GroupID", (_x select 1), true];
   };
-} forEach _groupNames;
+  nil
+} count _groupNames;

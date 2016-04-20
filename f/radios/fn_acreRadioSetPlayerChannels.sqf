@@ -39,7 +39,8 @@ if (!hasInterface) exitWith {};
         } else {
           _output = _output + format ["%1, ", _x];
         };
-      } forEach _array;
+		nil
+      } count _array;
       _output select [0, (count _output - 2)];
     };
 
@@ -51,8 +52,10 @@ if (!hasInterface) exitWith {};
       {
         _x params ["_xShort", "_xDisplay"];
         if (_xShort == _playerShortName) exitWith {_languageDisplayNames pushBack _xDisplay};
-      } forEach F_available_languages;
-    } forEach _languagesPlayerSpeaks;
+		nil
+      } count F_available_languages;
+	  nil
+    } count _languagesPlayerSpeaks;
     _diaryBuilder = [];
     _diaryBuilder pushBack format ["<font size=15>You speak: %1</font><br/>", ([_languageDisplayNames] call _cleanLines)];
 
@@ -63,7 +66,8 @@ if (!hasInterface) exitWith {};
       if (_x isKindOf ["ACRE_PRC343", configFile >> "CfgWeapons"]) then {_hasSR = true;};
       if (_x isKindOf ["ACRE_PRC148", configFile >> "CfgWeapons"]) then {_hasLR = true;};
       if (_x isKindOf ["ACRE_PRC117F", configFile >> "CfgWeapons"]) then {_hasLR = true;};
-    } forEach (items player);
+	  nil
+    } count (items player);
 
     diag_log text format ["[BW] - SIGNALS Briefing %1 - [%2,%3]", _this, _hasSR, _hasLR];
 

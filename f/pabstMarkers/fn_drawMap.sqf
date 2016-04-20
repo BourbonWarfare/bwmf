@@ -17,10 +17,6 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
     diag_log format ["[BW] Bad f_var_drawSettings on %1", _x]
   } else {
     _data params ["_text", "_texture", "_color", "_size", "_pos", "_time"];
-    _size params ["_sizeX", "_sizeY"];
-
-    _sizeX = _sizeX * _sizeFactor;
-    _sizeY = _sizeY * _sizeFactor;
 
     if(((time - _time) > F_Markers_delay) && {!isNull _x}) then {
       if(typeName _x == "GROUP") then {_pos = getpos leader _x};
@@ -29,12 +25,11 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
       _data set [4, _pos];
       _data set [5, _time];
     };
-    _textsize = 0.05;
-    if(((ctrlMapScale _mapControl) * _mapSize) > 0.1) then {_textsize = 0};
 
-    _mapControl drawIcon [_texture, _color, _pos, _sizeX, _sizeY, 0, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "right"];
+    _mapControl drawIcon [_texture, _color, _pos, (_size select 0) * _sizeFactor, (_size select 1) * _sizeFactor, 0, _text, 1, (([0.05,0] select (((ctrlMapScale _mapControl) * _mapSize) > 0.1)) * _sizeFactor), 'TahomaB', "right"];
   };
-} forEach F_Markers_thingsToDraw;
+  nil
+} count F_Markers_thingsToDraw;
 
 
 #define TRI_MARKER "\A3\ui_f\data\map\markers\military\start_CA.paa"
@@ -47,13 +42,11 @@ if((ctrlMapScale _mapControl) < 0.5) then {
       case "BLUE": {[0,0,1,1]};
       default {[1,1,1,1]}
     };
-    _textsize = if (((ctrlMapScale _mapControl) * _mapSize) < 0.005) then {0.02} else {0};
     _pos = getPos _x;
-    _dir = getDir _x;
     _text = if (alive _x) then {name _x} else {""};
     if ((!isNil "_color") && {(count _color) == 4} && {(count _pos) == 3}) then { //handle weird/dead group members
-      _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), _dir, _text, 1, (_textsize * _sizeFactor), 'TahomaB', "left"];
+      _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), getDir _x, _text, 1, ([0,.02] select (((ctrlMapScale _mapControl) * _mapSize) < 0.005) * _sizeFactor), 'TahomaB', "left"];
     };
-
-  } forEach (units (group player));
+	nil
+  } count (units (group player));
 };
