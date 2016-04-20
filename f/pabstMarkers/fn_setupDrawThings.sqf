@@ -9,7 +9,8 @@ _showTheseFactions = [];
   if (_playerFaction in _x) exitWith {
     _showTheseFactions = _x;
   };
-} forEach F_Markers_factionMap;
+  nil
+} count F_Markers_factionMap;
 
 
 {
@@ -41,7 +42,8 @@ _showTheseFactions = [];
       };
     };
   };
-} forEach allGroups;
+  nil
+} count allGroups;
 
 
 {
@@ -57,4 +59,5 @@ _showTheseFactions = [];
       F_Markers_thingsToDraw pushBack _unit;
     };
   };
-} forEach UNIT_MARKERS;
+  nil
+} count UNIT_MARKERS;
