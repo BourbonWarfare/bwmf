@@ -1,57 +1,42 @@
 class CfgLoadouts {
-    //Only include one hpp per faction!
-    //use (//) to comment out other files
+  //Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
 
-    //BLUFOR FACTION:
-    #include "Loadouts\bluefor_standard.hpp" //Our Standard "us tan" loadout
+  //Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
+  allowMagnifiedOptics = 0;
 
+  //Do Vehicle Loadouts
+  //(1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
+  setVehicleLoadouts = -1;
 
-    //INDFOR FACTION:
-    #include "Loadouts\indfor_standard.hpp" //Our Standard "ukraine" loadout
+  //Fallback: use a basic soldiers loadout when the unit's classname isn't found (for Alive spawning random units)
+  useFallback = 1;
 
+  //Shared items
+  #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
 
-    //OPFOR FACTION:
-    #include "Loadouts\opfor_standard.hpp" //Our standard "middle-east" loadout
+  //Only include one hpp per faction; use (//) to comment out other files
 
+  //BLUFOR FACTION (blu_f):
+  #include "Loadouts\blu_us_m4_ucp.hpp"            // US: M4 - Gray/Green
+  // #include "Loadouts\blu_us_m4_ocp.hpp"         // US: M4 - Tan
+  // #include "Loadouts\blu_brit_l85_mtp.hpp"      // British: L86 - Multi-Terrain Pattern
+  // #include "Loadouts\blu_swede_ak5_m90.hpp"     // Swedish: AK5 - M90 (Green)
+  // #include "Loadouts\blu_ger_g36_fleck.hpp"     // German: G36 - Flecktarn Camo
 
-    //RUSSIAN FACTIONS:
-    #include "Loadouts\russian_standard.hpp" //Our standard "commy" loadout
-    // #include "Loadouts\russian_sov-sweedish.hpp" //Soviet's "sweedish" loadout
+  //INDFOR FACTION (ind_f):
+  #include "Loadouts\ind_ukr_ak74_ttsko.hpp"       // Ukraine: AK74 - TTskO
+  // #include "Loadouts\ind_ukr_ak74_ddpm.hpp"     // "Ukraine": AK74 - Desert DPM
+  // #include "Loadouts\ind_reb_ak47_desert.hpp"   // Rebel: AK47 - Mixed Desert
+  // #include "Loadouts\ind_ger_g36_tropen.hpp"    // German: G36 - Tropen Camo
 
+  //OPFOR FACTION (opf_f):
+  #include "Loadouts\opf_ru_ak74_floral.hpp"       // Russian: AK74 - Floral
+  // #include "Loadouts\opf_reb_ak47_desert.hpp"   // Rebel: AK47 - Mixed Desert
 
+  //RUSSIAN FACTIONS (rhs_faction_msv):
+  #include "Loadouts\msv_ru_ak74_emr.hpp"          // Russian: AK74 - Digital FLoral Summer
+  // #include "Loadouts\msv_swede_ak5_m90k.hpp"    // Swedish: AK5 - M90K (Desert)
 
-    //Bonus example civilian loadouts:
-    class CIV_F {
-        class C_man_1 {
-            uniform[] = {"U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite"};  /// randomized
-            vest[] = {}; /// randomized
-            headgear[] = {}; /// randomized
-            backpack[] = {}; /// randomized
-            backpackItems[] = {};
-            weapons[] = {}; /// randomized
-            launchers[] = {}; /// randomized
-            handguns[] = {}; /// randomized
-            magazines[] = {};
-            items[] = {"ACE_fieldDressing:3"};
-            linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
-            attachments[] = {};
-        };
-        class C_journalist_F: C_man_1 {
-            uniform[] = {"U_C_Journalist"};  /// randomized
-            vest[] = {"V_Press_F"}; /// randomized
-            headgear[] = {"H_Cap_press"}; /// randomized
-        };
-        class CEO: C_man_1 {
-            uniform[] = {"U_Marshal"};  /// randomized
-            headgear[] = {"H_Hat_brown"};
-            items[] += {};
-        };
-        class C_man_hunter_1_F: C_man_1 {
-            uniform[] = {"U_C_HunterBody_grn"};  /// randomized
-            headgear[] = {"H_Booniehat_grn"};  /// randomized
-            weapons[] = {};
-            magazines[] = {};
-            backpack[] = {"B_OutdoorPack_blk"};
-        };
-    };
+  //Civilians (mainly for RP missions)
+  #include "Loadouts\civilians.hpp"                //Bare example of doing civilian loadouts
 };

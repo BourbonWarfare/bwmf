@@ -1,13 +1,19 @@
 //Set Radio Difficulty:
 [false] call acre_api_fnc_setInterference;
-[0.5] call acre_api_fnc_setLossModelScale;
+[0] call acre_api_fnc_setLossModelScale;
 
 //Setup babble languages:
-["en", "English"] call acre_api_fnc_babelAddLanguageType;
-["ru", "Russian"] call acre_api_fnc_babelAddLanguageType;
-["ar", "Arabic"] call acre_api_fnc_babelAddLanguageType;
-["de", "German"] call acre_api_fnc_babelAddLanguageType;
-["fr", "French"] call acre_api_fnc_babelAddLanguageType;
+F_available_languages = [
+  ["en", "English"],
+  ["ru", "Russian"],
+  ["ar", "Arabic"],
+  ["de", "German"],
+  ["fr", "French"]
+];
+
+{
+  _x call acre_api_fnc_babelAddLanguageType;
+} forEach F_available_languages;
 
 //Setup radio presets:
 ["ACRE_PRC148", "default3", "west148"] call acre_api_fnc_copyPreset;
@@ -67,5 +73,5 @@
 diag_log text format ["[BW] - ACRE Presets Setup"];
 
 if (hasInterface) then {
-    [] call F_Radios_fnc_acreRadioSetPlayerChannels;
+  [] call F_Radios_fnc_acreRadioSetPlayerChannels;
 };
