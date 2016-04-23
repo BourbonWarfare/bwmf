@@ -45,7 +45,7 @@ if((ctrlMapScale _mapControl) < 0.5) then {
     _pos = getPos _x;
     _text = if (alive _x) then {name _x} else {""};
     if ((!isNil "_color") && {(count _color) == 4} && {(count _pos) == 3}) then { //handle weird/dead group members
-      _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), getDir _x, _text, 1, ([0,.02] select (((ctrlMapScale _mapControl) * _mapSize) < 0.005) * _sizeFactor), 'TahomaB', "left"];
+      _mapControl drawIcon [TRI_MARKER, _color, _pos, (12 * _sizeFactor), (12 * _sizeFactor), getDir _x, _text, 1, (([0,.02] select (((ctrlMapScale _mapControl) * _mapSize) < 0.005)) * _sizeFactor), 'TahomaB', "left"];
     };
 	nil
   } count (units (group player));
