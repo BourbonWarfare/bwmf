@@ -163,4 +163,4 @@ class CfgFunctions {
 #include "f\respawn\defines.hpp"
 #include "f\respawn\dialogs.hpp"
 
-bwmfDate = "2016/03/01"; //Framework date
+bwmfDate = "2016/04/22"; //Framework date
