@@ -25,14 +25,14 @@ if (!hasInterface) exitWith {};
 
   _unit = player;
   _isFireteam = false;
-  
+
   _inStr = {_this select 1 find (_this select 0) != -1};
   // ====================================================================================
   // CHECK GROUP SIZE
   // If the group isn't a full fireteam, leave teams as default.
   {
     if ([_x, format["%1",(leader (group _unit))]] call _inStr) exitWith {_isFireteam = true;};
-	nil
+    nil
   } count _leaders;
 
   if(!_isFireteam) exitWith {};
@@ -58,7 +58,7 @@ if (!hasInterface) exitWith {};
     _green = [];
 
     //Pabst: set ft color based on ftl number
-	_n = vehicleVarName _unit;
+    _n = vehicleVarName _unit;
     {
       if ([_x,_n] call _inStr) exitWith {_red = _red + ["_AR","_AAR"];};nil
     } count ["_A1_", "_B1_", "_C1_","_D1_", "_E1_", "_F1_"];
@@ -83,34 +83,34 @@ if (!hasInterface) exitWith {};
 
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
-          _unit assignTeam "RED";
+        _unit assignTeam "RED";
       };
-	  nil
+      nil
     } count _red;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
-          _unit assignTeam "blue";
+        _unit assignTeam "blue";
       };
-	  nil
+      nil
     } count _blue;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
-          _unit assignTeam "yellow";
+        _unit assignTeam "yellow";
       };
-	  nil
+      nil
     } count _yellow;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
-          _unit assignTeam "green";
+        _unit assignTeam "green";
       };
-	  nil
+      nil
     } count _green;
     {
       if ([_x, format ["%1",_unit]] call _inStr) then {
-          _unit assignTeam "white";
+        _unit assignTeam "white";
       };
-	  nil
+      nil
     } count _white;
-	nil
+    nil
   } count units (group _unit);
 };

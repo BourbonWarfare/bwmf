@@ -178,9 +178,9 @@ if (!(_attachments isEqualTo [])) then {
         };
       };
       if (_addAttachment) then {
-	    if (({_x == _classname} count _primaryWeaponAttachables) > 0) exitWith {_unit addPrimaryWeaponItem _classname};
-	    if (({_x == _classname} count _handgunWeaponAttachables) > 0) exitWith {_unit addHandgunItem _classname};
-	    [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+        if (({_x == _classname} count _primaryWeaponAttachables) > 0) exitWith {_unit addPrimaryWeaponItem _classname};
+        if (({_x == _classname} count _handgunWeaponAttachables) > 0) exitWith {_unit addHandgunItem _classname};
+        [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
       };
     } else {
       [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
