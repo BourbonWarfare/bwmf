@@ -4,10 +4,6 @@ enableSaving [false, false];
 // F3 - Mute Orders and Reports
 enableSentences false;
 
-// F3 - Briefing
-[] call F_fnc_showBriefing;
-[] call F_fnc_showOrbatNotes;
-
 // F3 - Buddy Team Colours
 [] call F_fnc_setTeamColours;
 
