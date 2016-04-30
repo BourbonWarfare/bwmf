@@ -17,7 +17,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 [] call F_Radios_fnc_acreRadioSetup;
 
-[] execVM "f\respawn\respawn_init.sqf";
+[] call F_fnc_RespawnWaveServer;
 
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;
