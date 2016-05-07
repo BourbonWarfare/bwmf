@@ -147,7 +147,7 @@ class opf_f {
   class O_sniper_F: O_spotter_F {// Sniper
     weapons[] = {EAST_SNIPER};
     magazines[] = {EAST_SNIPER_MAG,EAST_BASE_GRENADES};
-    items[] = {EAST_BASE_TOOLS,BASE_MEDICAL,"ACE_RangeCard"};
+    items[] = {EAST_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {EAST_BASE_LINKED,EAST_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
   };

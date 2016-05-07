@@ -160,7 +160,7 @@ class blu_f {
   class B_sniper_F: B_spotter_F {// Sniper
     weapons[] = {WEST_SNIPER};
     magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
-    items[] = {BASE_MEDICAL,BASE_TOOLS,"ACE_RangeCard"};
+    items[] = {WEST_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
     attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
   };

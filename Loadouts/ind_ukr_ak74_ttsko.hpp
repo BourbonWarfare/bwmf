@@ -153,7 +153,7 @@ class ind_f {
     headgear[] = {"MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_Helmet_PAGST_UKR","MNP_MC_UKR"};
     weapons[] = {IND_SNIPER};
     magazines[] = {IND_SNIPER_MAG,IND_BASE_GRENADES};
-    items[] = {IND_BASE_TOOLS,BASE_MEDICAL,"ACE_RangeCard"};
+    items[] = {IND_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {IND_BASE_LINKED,IND_LEADER_LINKED};
     attachments[] = {"rhs_acc_pso1m2"};
   };
