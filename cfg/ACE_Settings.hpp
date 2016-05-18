@@ -23,19 +23,19 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_aimingAccuracy_min {
     typeName = "SCALAR";
-    value = 0.05;
+    value = 0.1;
   };
   class potato_missionModules_aiSkill_aimingAccuracy_max {
     typeName = "SCALAR";
-    value = 0.25;
+    value = 0.3;
   };
   class potato_missionModules_aiSkill_aimingShake_min {
     typeName = "SCALAR";
-    value = 0.1;
+    value = 0.6;
   };
   class potato_missionModules_aiSkill_aimingShake_max {
     typeName = "SCALAR";
-    value = 0.3;
+    value = 0.9;
   };
   class potato_missionModules_aiSkill_aimingSpeed_min {
     typeName = "SCALAR";
@@ -79,7 +79,7 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_spotDistance_min {
     typeName = "SCALAR";
-    value = 0.6;
+    value = 0.8;
   };
   class potato_missionModules_aiSkill_spotDistance_max {
     typeName = "SCALAR";
@@ -91,6 +91,6 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_spotTime_max {
     typeName = "SCALAR";
-    value = 1;
+    value = 0.7;
   };
 };
