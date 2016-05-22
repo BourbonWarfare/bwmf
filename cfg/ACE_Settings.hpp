@@ -23,11 +23,11 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_aimingAccuracy_min {
     typeName = "SCALAR";
-    value = 0.1;
+    value = 0.15;
   };
   class potato_missionModules_aiSkill_aimingAccuracy_max {
     typeName = "SCALAR";
-    value = 0.3;
+    value = 0.35;
   };
   class potato_missionModules_aiSkill_aimingShake_min {
     typeName = "SCALAR";
