@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={433.79852,446.19647,186.96532};
-		dir[]={0.025411306,-0.8021788,0.59657019};
-		up[]={0.034137953,0.59707719,0.80145627};
-		aside[]={0.99911129,-3.7171048e-007,-0.042556781};
+		pos[]={527.56909,648.31073,293.41461};
+		dir[]={0.019726042,-0.91697931,0.39862227};
+		up[]={0.045324501,0.39881623,0.91590321};
+		aside[]={0.99883997,-7.2893272e-007,-0.049427148};
 	};
 };
 binarizationWanted=0;
@@ -23,20 +23,24 @@ addons[]=
 {
 	"A3_Air_F_Beta_Heli_Transport_01",
 	"A3_Air_F_Heli_Light_02",
+	"ace_realisticnames",
 	"A3_Air_F_Beta_Heli_Transport_02",
-	"A3_Armor_F_AMV",
+	"ace_repair",
+	"A3_Armor_F_Beta_APC_Wheeled_01",
 	"A3_Air_F_Beta_Heli_Attack_01",
-	"A3_Armor_F_Marid",
+	"ace_laser",
+	"A3_Armor_F_Beta_APC_Wheeled_02",
 	"A3_Air_F_Beta_Heli_Attack_02",
-	"A3_Armor_F_Slammer",
-	"A3_Armor_F_APC_Wheeled_03",
-	"A3_Armor_F_T100K",
+	"A3_Armor_F_Gamma_MBT_01",
+	"A3_Armor_F_Gamma_APC_Wheeled_03",
+	"A3_Armor_F_Gamma_MBT_02",
 	"A3_Armor_F_EPB_MBT_03",
 	"A3_Air_F_EPB_Heli_Light_03",
-	"A3_Soft_F_TruckHeavy",
-	"A3_Soft_F_MRAP_03",
+	"A3_Soft_F_Beta_Truck_02",
+	"A3_Soft_F_Beta_MRAP_03",
 	"A3_Soft_F_MRAP_01",
-	"A3_Soft_F_HEMTT",
+	"A3_Soft_F_Beta_Truck_01",
+	"ace_cargo",
 	"A3_Soft_F_MRAP_02",
 	"A3_Soft_F_EPC_Truck_03",
 	"rhs_c_tanks",
@@ -44,19 +48,179 @@ addons[]=
 	"rhs_c_bmp",
 	"rhs_c_cars",
 	"rhs_c_heavyweapons",
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
-	"A3_Characters_F_Gamma",
-	"A3_Characters_F_OPFOR",
-	"A3_Characters_F_INDEP",
+	"A3_Characters_F",
+	"ace_explosives",
 	"rhs_c_troops",
-	"A3_Characters_F_EPC",
-	"A3_Characters_F_Civil",
+	"cba_xeh",
 	"ace_medical",
 	"ace_finger",
 	"ace_mk6mortar",
 	"A3_Modules_F_Curator_Curator",
 	"ace_refuel"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=27;
+		class Item0
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="ace_realisticnames";
+			name="ace_realisticnames";
+		};
+		class Item3
+		{
+			className="ace_repair";
+			name="ace_repair";
+		};
+		class Item4
+		{
+			className="A3_Armor_F_Beta";
+			name="Arma 3 Beta - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="ace_laser";
+			name="ace_laser";
+		};
+		class Item6
+		{
+			className="A3_Armor_F_Gamma";
+			name="Arma 3 - Armored land vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Armor_F_EPB";
+			name="Arma 3 Adapt Episode - Armored land vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Air_F_EPB";
+			name="Arma 3 Adapt Episode - Aircrafts";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored land vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item11
+		{
+			className="ace_cargo";
+			name="ace_cargo";
+		};
+		class Item12
+		{
+			className="A3_Soft_F_EPC";
+			name="Arma 3 Win Episode - Unarmored land vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item13
+		{
+			className="rhs_c_tanks";
+			name="rhs_c_tanks";
+		};
+		class Item14
+		{
+			className="rhs_c_a2port_air";
+			name="rhs_c_a2port_air";
+		};
+		class Item15
+		{
+			className="rhs_c_bmp";
+			name="rhs_c_bmp";
+		};
+		class Item16
+		{
+			className="rhs_c_cars";
+			name="rhs_c_cars";
+		};
+		class Item17
+		{
+			className="rhs_c_heavyweapons";
+			name="rhs_c_heavyweapons";
+		};
+		class Item18
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item19
+		{
+			className="ace_explosives";
+			name="ace_explosives";
+		};
+		class Item20
+		{
+			className="rhs_c_troops";
+			name="rhs_c_troops";
+		};
+		class Item21
+		{
+			className="cba_xeh";
+			name="cba_xeh";
+		};
+		class Item22
+		{
+			className="ace_medical";
+			name="ace_medical";
+		};
+		class Item23
+		{
+			className="ace_finger";
+			name="ace_finger";
+		};
+		class Item24
+		{
+			className="ace_mk6mortar";
+			name="ace_mk6mortar";
+		};
+		class Item25
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted features";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item26
+		{
+			className="ace_refuel";
+			name="ace_refuel";
+		};
+	};
 };
 randomSeed=10562329;
 class ScenarioData
