@@ -183,7 +183,9 @@ if (!(_attachments isEqualTo [])) then {
         [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
       };
     } else {
-      [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
+      if (_classname != "") then {
+        [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
+      };
     };
     nil
   } count _attachments;

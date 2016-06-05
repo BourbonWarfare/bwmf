@@ -31,4 +31,4 @@ enableDebugConsole = 1;
 // Functions
 #include "cfg\CfgFunctions.hpp"
 
-bwmfDate = "2016/04/22"; //Framework date
+bwmfDate = "2016/06/04"; //Framework date
