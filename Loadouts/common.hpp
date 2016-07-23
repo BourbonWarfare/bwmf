@@ -45,10 +45,10 @@
 #define WEST_LEADER_GRENADES WEST_BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 
 // WEST MAT
-#define WEST_MAT "sam_grg_m86"
-#define WEST_MAT_MAG "sam_grg_heat:3","sam_grg_he:2"
-#define WEST_MAT_MAG2 "sam_grg_heat:2","sam_grg_he:2"
-#define WEST_MAT_OPTIC "sam_acco_m86"
+#define WEST_MAT "BWA3_CarlGustaf"
+#define WEST_MAT_MAG "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
+#define WEST_MAT_MAG2 "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
+#define WEST_MAT_OPTIC ""
 
 // WEST SAM
 #define WEST_SAM "rhs_weap_fim92"

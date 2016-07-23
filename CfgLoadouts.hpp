@@ -20,7 +20,6 @@ class CfgLoadouts {
   #include "Loadouts\blu_us_m4_ucp.hpp"            // US: M4 - Gray/Green
   // #include "Loadouts\blu_us_m4_ocp.hpp"         // US: M4 - Tan
   // #include "Loadouts\blu_brit_l85_mtp.hpp"      // British: L86 - Multi-Terrain Pattern
-  // #include "Loadouts\blu_swede_ak5_m90.hpp"     // Swedish: AK5 - M90 (Green)
   // #include "Loadouts\blu_ger_g36_fleck.hpp"     // German: G36 - Flecktarn Camo
 
   //INDFOR FACTION (ind_f):
@@ -35,7 +34,6 @@ class CfgLoadouts {
 
   //RUSSIAN FACTIONS (rhs_faction_msv):
   #include "Loadouts\msv_ru_ak74_emr.hpp"          // Russian: AK74 - Digital FLoral Summer
-  // #include "Loadouts\msv_swede_ak5_m90k.hpp"    // Swedish: AK5 - M90K (Desert)
 
   //Civilians (mainly for RP missions)
   #include "Loadouts\civilians.hpp"                //Bare example of doing civilian loadouts
