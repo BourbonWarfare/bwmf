@@ -225,7 +225,8 @@ class AddonsMetaData
 randomSeed=10562329;
 class ScenarioData
 {
-	author="Pabst Mirror";
+	author="*** Insert your name here. ***";
+	onLoadMission="*** Insert mission name here. ***";
 };
 class Mission
 {
