@@ -226,7 +226,7 @@ randomSeed=10562329;
 class ScenarioData
 {
 	author="*** Insert your name here. ***";
-	onLoadMission="*** Insert mission name here. ***";
+	onLoadName ="*** Insert mission name here. ***";
 };
 class Mission
 {
