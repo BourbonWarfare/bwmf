@@ -29,4 +29,11 @@ enableDebugConsole = 1;
 // Functions
 #include "cfg\CfgFunctions.hpp"
 
-bwmfDate = "2016/06/04"; //Framework date
+bwmfDate = "2016/08/11"; //Framework date
+
+class CfgDebriefingSections {
+  class acex_killTracker {
+    title = "ACEX Killed Events";
+    variable = "acex_killTracker_outputText";
+  };
+};
