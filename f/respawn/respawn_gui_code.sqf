@@ -207,8 +207,6 @@ fn_respawnMenuRespawnAction = {
   _control = ((findDisplay 26893) displayCtrl 26898);
   _groupIndex = lbCurSel _control;
   _groupName = (respawnMenuGroupNames select _groupIndex) select 0;
-  _sr = (respawnMenuGroupNames select _groupIndex) select 1;
-  _lr = (respawnMenuGroupNames select _groupIndex) select 2;
   if (_groupName == "") exitWith { hint "No group name selected"; };
 
   // Hand over control to the map dialog.
@@ -216,9 +214,7 @@ fn_respawnMenuRespawnAction = {
   createDialog "respawnMenuMapDialog";
 
   var1_faction = _faction;
-  var2_groupName = _groupName;
-  var3_sr = _sr;
-  var4_lr = _lr;
+  var2_groupIndex = _groupIndex;
 };
 
 fn_respawnMapLoaded = {
@@ -289,7 +285,8 @@ fn_respawnMap_keyUp = {
         if (!(_pos isEqualTo [0,0,0])) then { _position = _pos; };
       };
       hint "Group created on ground.";
-      [[var2_groupName, _position, var1_faction, selectedRespawnGroup, var3_sr, var4_lr], "F_fnc_RespawnWaveServer", false] call BIS_fnc_MP;
+
+      [var2_groupIndex, _position, var1_faction, selectedRespawnGroup] remoteExecCall ["F_fnc_RespawnWaveServer", 2, false];
       selectedRespawnGroup = [];
 
       // Close the Map
