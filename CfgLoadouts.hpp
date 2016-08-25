@@ -1,6 +1,8 @@
 class CfgLoadouts {
-  //Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
+  //Use POTATO to run gear assignment
+  usePotato = 1;
 
+  //Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
   //Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
   allowMagnifiedOptics = 0;
 
@@ -31,9 +33,6 @@ class CfgLoadouts {
   //OPFOR FACTION (opf_f):
   #include "Loadouts\opf_ru_ak74_floral.hpp"       // Russian: AK74 - Floral
   // #include "Loadouts\opf_reb_ak47_desert.hpp"   // Rebel: AK47 - Mixed Desert
-
-  //RUSSIAN FACTIONS (rhs_faction_msv):
-  #include "Loadouts\msv_ru_ak74_emr.hpp"          // Russian: AK74 - Digital FLoral Summer
 
   //Civilians (mainly for RP missions)
   #include "Loadouts\civilians.hpp"                //Bare example of doing civilian loadouts

@@ -1,3 +1,11 @@
+## BWMF Version 5.0 ##
+* Moved most of the framework (map markers, team colors, assign gear, and radios) to the POTATO mod
+* Expanded each faction to company strength, and configured them for the new marker, team color, and radio systems
+* Tweaked base AI settings to higher min values
+* Tweaked the respawn script to work with the new setup
+* Reduced base bleed rate from 5x to 1.5x
+* (Temporarily) removed MSV from the framework, don't worry they should be back by 5.1
+
 ## BWMF Version 4.4 ##
 * Complete overhaul of the loadouts
 * Updated spectate (hopefully fixing the issue where people never reach spectate)

@@ -7,48 +7,64 @@
 //
 //////////////////////////////////////////////////////
 
+#define UNK "\A3\ui_f\data\map\markers\nato\b_unknown.paa"
+#define INF "\A3\ui_f\data\map\markers\nato\b_inf.paa"
+#define HQ "\A3\ui_f\data\map\markers\nato\b_hq.paa"
+#define MMG "\A3\ui_f\data\map\markers\nato\b_support.paa"
+#define MAT "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa"
+#define IFV "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa"
+#define TNK "\A3\ui_f\data\map\markers\nato\b_armor.paa"
+#define AIR "\A3\ui_f\data\map\markers\nato\b_air.paa"
+
+#define RED [0.9,0,0,1]
+#define BLUE [0,0,1,1]
+#define GREEN [0,0.8,0,1]
+#define WHITE [1,1,1,1]
+#define ORANGE [1,0.647,0,1]
+
 // These are the roles that area shown in the respawn GUI.
 // Format: AssignGear Role, GUI Display Name
 // Group name, SR net, LR net
 respawnMenuGroupNames = [
-  ["", 1, 1],
-  ["ASL", 1, 1],
-  ["A1", 1, 1],
-  ["A2", 1, 1],
-  ["BSL", 2, 1],
-  ["B1", 2, 1],
-  ["B2", 2, 1],
-  ["CSL", 3, 1],
-  ["C1", 3, 1],
-  ["C2", 3, 1],
-  ["1PLT", 4, 1],
-  ["DSL", 6, 2],
-  ["D1", 6, 2],
-  ["D2", 6, 2],
-  ["ESL", 7, 2],
-  ["E1", 7, 2],
-  ["E2", 7, 2],
-  ["FSL", 8, 2],
-  ["F1", 8, 2],
-  ["F2", 8, 2],
-  ["2PLT", 9, 2],
-  ["MMG1", 10, 4],
-  ["MMG2", 10, 4],
-  ["MAT1", 10, 4],
-  ["MAT2", 10, 4],
-  ["MSAM1", 10, 4],
-  ["TH1", 12, 4],
-  ["TH2", 12, 4],
-  ["TH3", 12, 4],
-  ["TH4", 12, 4],
-  ["IFV1", 14, 4],
-  ["IFV2", 14, 4],
-  ["IFV3", 14, 4],
-  ["IFV4", 14, 4],
-  ["AH1", 13, 4],
-  ["AH2", 13, 4],
-  ["TNK1", 15, 4],
-  ["TNK2", 15, 4]
+  ["",1,1,UNK,WHITE],
+  ["ASL",1,1,HQ,RED],
+  ["A1",1,1,INF,RED],
+  ["A2",1,1,INF,RED],
+  ["BSL",2,1,HQ,BLUE],
+  ["B1",2,1,INF,BLUE],
+  ["B2",2,1,INF,BLUE],
+  ["CSL",3,1,HQ,GREEN],
+  ["C1",3,1,INF,GREEN],
+  ["C2",3,1,INF,GREEN],
+  ["1PLT",4,1,HQ,ORANGE],
+  ["DSL",5,2,HQ,RED],
+  ["D1",5,2,INF,RED],
+  ["D2",5,2,INF,RED],
+  ["ESL",6,2,HQ,BLUE],
+  ["E1",6,2,INF,BLUE],
+  ["E2",6,2,INF,BLUE],
+  ["FSL",7,2,HQ,GREEN],
+  ["F1",7,2,INF,GREEN],
+  ["F2",7,2,INF,GREEN],
+  ["1PLT",8,2,HQ,ORANGE],
+  ["MMG1",12,4,MMG,ORANGE],
+  ["MMG2",12,4,MMG,ORANGE],
+  ["MAT1",12,4,MAT,ORANGE],
+  ["MAT2",12,4,MAT,ORANGE],
+  ["MSAM1",12,4,MAT,ORANGE],
+  ["MSAM2",12,4,MAT,ORANGE],
+  ["TH1",10,4,AIR,RED],
+  ["TH2",10,4,AIR,BLUE],
+  ["TH3",10,4,AIR,RED],
+  ["TH4",10,4,AIR,BLUE],
+  ["IFV1",11,4,IFV,RED],
+  ["IFV2",11,4,IFV,BLUE],
+  ["IFV3",11,4,IFV,RED],
+  ["IFV4",11,4,IFV,BLUE],
+  ["AH1",10,4,AIR,RED],
+  ["AH2",10,4,AIR,BLUE],
+  ["TNK1",11,4,TNK,RED],
+  ["TNK2",11,4,TNK,BLUE]
 ];
 
 respawnMenuRoles = [
@@ -59,14 +75,8 @@ respawnMenuRoles = [
   ["AR", "Automatic Rifleman"],
   ["AAR", "Assistant Automatic Rifleman"],
   ["RAT", "Rifleman: Antitank"],
-  ["R", "Rifleman (MSV)"],
   ["R1", "Rifleman 1"],
   ["R2", "Rifleman 2"],
-  ["GR", "Grenadier"],
-  ["AGR", "Assistant Grenadier"],
-  ["S", "Marksman"],
-  ["VD", "Squad Driver"],
-  ["VG", "Squad Gunner"],
   ["MMGG", "MMG - Gunner"],
   ["MMGAG", "MMG - Assistant"],
   ["MATG", "MAT - Gunner"],
@@ -84,8 +94,7 @@ respawnMenuRoles = [
 respawnMenuFactions = [
   ["blu_f", "NATO"],
   ["opf_f", "CSAT"],
-  ["ind_f", "AAF"],
-  ["rhs_faction_msv", "MSV"]
+  ["ind_f", "AAF"]
 ];
 
 // Respawn Classes
@@ -161,29 +170,6 @@ fn_respawnSelectClass = {
         case "PP": { _type = "I_Helipilot_F"};
         case "PCC": { _type = "I_soldier_repair_F"};
         default  { _type = "I_Soldier_F"; };
-      };
-    };
-    case "rhs_faction_msv" : {
-      switch (_typeOfUnit) do {
-        case "CO": { _type = "rhs_msv_officer"};
-        case "SL": { _type = "rhs_msv_sergeant"};
-        case "M": { _type = "rhs_msv_medic"};
-        case "FTL": { _type = "rhs_msv_junior_sergeant"};
-        case "AR": { _type = "rhs_msv_machinegunner"};
-        case "GR": { _type = "rhs_msv_at"};
-        case "AGR": { _type = "rhs_msv_strelok_rpg_assist"};
-        case "S": { _type = "rhs_msv_marksman"};
-        case "VD": { _type = "rhs_msv_engineer"};
-        case "VG": { _type = "rhs_msv_crew"};
-        case "MMGG": { _type = "rhs_msv_machinegunner"};
-        case "MMGAG": { _type = "rhs_msv_machinegunner_assistant"};
-        case "MATG": { _type = "rhs_msv_at"};
-        case "MATAG": { _type = "rhs_msv_strelok_rpg_assist"};
-        case "C": { _type = "rhs_msv_crew"};
-        case "D": { _type = "rhs_msv_engineer"};
-        case "PP": { _type = "rhs_pilot_transport_heli"};
-        case "PCC": { _type = "rhs_msv_engineer"};
-        default  { _type = "rhs_msv_rifleman"; };
       };
     };
     default {};

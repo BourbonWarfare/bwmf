@@ -10,10 +10,26 @@ class ACE_Settings {
     value = 1;
   };
 
+  /*   Enable potato markers   */
+  class potato_markers_groupAndUnitEnabled {
+    typeName = "BOOL";
+    value = 1;
+  };
+  class potato_markers_intraFireteamEnabled {
+    typeName = "BOOL";
+    value = 1;
+  };
+
   /*   Start safestart on mission start   */
   class potato_safeStart_enabled {
     typeName = "BOOL";
     value = 1;
+  };
+
+  /*   Enable/disable VCOM   */
+  class potato_aiFrameworks_vcom_enabled {
+    typeName = "BOOL";
+    value = 0;
   };
 
   /*   Setup AI skills   */
@@ -23,11 +39,11 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_aimingAccuracy_min {
     typeName = "SCALAR";
-    value = 0.15;
+    value = 0.25;
   };
   class potato_missionModules_aiSkill_aimingAccuracy_max {
     typeName = "SCALAR";
-    value = 0.35;
+    value = 0.60;
   };
   class potato_missionModules_aiSkill_aimingShake_min {
     typeName = "SCALAR";
@@ -39,11 +55,11 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_aimingSpeed_min {
     typeName = "SCALAR";
-    value = 0.1;
+    value = 0.3;
   };
   class potato_missionModules_aiSkill_aimingSpeed_max {
     typeName = "SCALAR";
-    value = 0.4;
+    value = 0.7;
   };
   class potato_missionModules_aiSkill_commanding_min {
     typeName = "SCALAR";
@@ -55,7 +71,7 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_courage_min {
     typeName = "SCALAR";
-    value = 0.7;
+    value = 0.8;
   };
   class potato_missionModules_aiSkill_courage_max {
     typeName = "SCALAR";
@@ -63,7 +79,7 @@ class ACE_Settings {
   };
   class potato_missionModules_aiSkill_general_min {
     typeName = "SCALAR";
-    value = 0.6;
+    value = 0.7;
   };
   class potato_missionModules_aiSkill_general_max {
     typeName = "SCALAR";

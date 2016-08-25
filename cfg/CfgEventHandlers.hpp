@@ -1,37 +1,23 @@
 //Extended Event Handlers:
-
 class Extended_InitPost_EventHandlers {
   class CAManBase {
-    class F_AssignGear { init = "[CBA_fnc_execNextFrame, [F_fnc_assignGearMan, _this]] call ace_common_fnc_runAfterSettingsInit;"; };
-    class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
-    class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
+    class BWMF_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
   };
   class Car {
-    class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
-    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+    class BWMF_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
+    class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
   class Tank {
-    class F_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
-    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+    class BWMF_NoBitchZone { init = "(_this select 0) allowCrewInImmobile true;"; };
+    class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
   class Helicopter {
-    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+    class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
   class Plane {
-    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+    class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
   class Ship_F {
-    class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-    class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+    class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
-};
-
-class Extended_DisplayLoad_EventHandlers {
-    class RscMiniMap {
-        BWMF = "_this call F_Markers_fnc_setupGpsMiniMap";
-    };
 };

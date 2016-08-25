@@ -5,7 +5,7 @@
 // This code will then wait for that group to return before then notifying all clients of the new group marker.
 //
 
-params ["_groupName", "_position", "_faction", "_selectedRespawnGroup","_sr","_lr"];
+params ["_groupIndex", "_position", "_faction", "_selectedRespawnGroup"];
 
 // Loop through each proposed client for respawn.
 {
@@ -13,18 +13,14 @@ params ["_groupName", "_position", "_faction", "_selectedRespawnGroup","_sr","_l
 
   _x params ["_rank", "_client", "_typeOfUnit"];
   _leader = _forEachIndex == 0;
-  diag_log format ["_sr: %1, _lr: %2", _sr, _lr];
-  [[f_serverRespawnGroupCounter,
+  [f_serverRespawnGroupCounter,
     _position,
     _faction,
     _typeOfUnit,
     _rank,
     f_serverRespawnPlayerCounter,
     _leader,
-    _groupName,
-    _sr,
-    _lr],
-    "F_fnc_RespawnLocalClient", _client] call BIS_fnc_MP;
+    _groupIndex] remoteExec ["F_fnc_RespawnLocalClient", _client, false];
 
   //Setup respawned player to die if he disconnects?
   [f_serverRespawnPlayerCounter] spawn {

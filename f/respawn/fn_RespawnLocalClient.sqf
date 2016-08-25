@@ -1,28 +1,19 @@
-params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupName","_sr","_lr"];
+params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex"];
 
 _faction = (respawnMenuFactions select _faction) select 0;
 _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
-_class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
+private _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
 
-_factionName = switch (_faction) do {
-  case "blu_f": {"UnitNATO"};
-  case "opf_f": {"UnitOPFOR"};
-  case "ind_f": {"UnitIND"};
-  case "rhs_faction_msv": {"UnitMSV"};
-  default {"UnitCiv"};
-};
+(respawnMenuGroupNames select _groupIndex) params ["_groupName","_sr","_lr","_texture","_color"];
 
-_sideNum = getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side");
-_side = switch (_sideNum) do {
+private _side = switch (getNumber (configfile >> "CfgFactionClasses" >> _faction >> "side")) do {
   case 0: {east};
   case 1: {west};
   case 2: {resistance};
-  case 3: {civilian};
   default {civilian};
 };
 
-_rankName  = switch (_rank) do {
-  case 0: {"PRIVATE"};
+private _rankName  = switch (_rank) do {
   case 1: {"CORPORAL"};
   case 2: {"SERGEANT"};
   case 3: {"LIEUTENANT"};
@@ -32,52 +23,53 @@ _rankName  = switch (_rank) do {
   default {"PRIVATE"};
 };
 
-//Dummy group is required
-_dummyGroup = createGroup _side;
+private _groupVarName = format ["GrpRespawn_%1", _groupNum];
+private _group = if (_leader) then {
+  private _newGroup = createGroup _side;
+  //Broadcast group var to everyone so people can join.
+
+  private _groupPrefix = switch (_faction) do {
+    case "blu_f": {"BluFor"};
+    case "opf_f":{"OpFor"};
+    case "ind_f": {"Indy"};
+    default {""};
+  };
+  _newGroup setGroupIdGlobal [format ["%1 %2, RG:%3", _groupPrefix, _groupName, _groupNum]];
+
+  _newGroup setVariable ["potato_radios_srChannel", _sr, true];
+  _newGroup setVariable ["potato_radios_mrChannel", _lr, true];
+  _newGroup setVariable ["potato_radios_lrChannel", _lr, true];
+
+  _newGroup setVariable ["potato_markers_addMarker", true, true];
+  _newGroup setVariable ["potato_markers_markerText", _groupName, true];
+  _newGroup setVariable ["potato_markers_markerTexture", _texture, true];
+  _newGroup setVariable ["potato_markers_markerColor", _color, true];
+  _newGroup setVariable ["potato_markers_markerSize", 24, true];
+
+  missionNamespace setVariable[_groupVarName, _newGroup];
+  publicVariable _groupVarName;
+
+  _newGroup
+}
+else {
+  sleep 1;
+  waitUntil{ !isNil _groupVarName };
+  _groupVarName
+};
+
 // Create the unit
-_unitName = format["respawnedUnit%1_%2_%3", _number, _groupName, _typeOfUnit];
-_editorName = format["%1_%2_%3", _factionName, _groupName, _typeOfUnit];
-_init = format ["%1 = this; this setName '%1'; this setVehicleVarName '%2';", _unitName, _editorName];
-_oldUnit = player;
-_class createUnit [_position, _dummyGroup, _init, 0.5, _rankName];
+private _oldUnit = player;
+private _newUnit = _group createUnit [_class, _position, [], 5, "NONE"];
+_newUnit setRank _rankName;
+_newUnit addRating 10000;
 
 // Wait till the unit is created
-waitUntil{!isNil _unitName};
-
-_localRespawnedUnit = missionNamespace getVariable [_unitName, objNull];
+waitUntil{!isNil "_newUnit" && !isNull _newUnit && alive _newUnit};
 
 // Exit Spectator
 [true] call F_fnc_ForceExit;
 
-_name = (name player);
-selectPlayer _localRespawnedUnit;
-
- _groupVarName = format ["GrpRespawn_%1", _groupNum];
-if (_leader) then {
-  //Broadcast group var to everyone so people can join.
-  missionNamespace setVariable[_groupVarName, _dummyGroup];
-  _groupPrefix = switch (_faction) do {
-    case "blu_f": {"NATO "};
-    case "opf_f":{"OPFOR "};
-    case "ind_f": {"IND "};
-    case "rhs_faction_msv": {"MSV "};
-    default {""};
-  };
-  _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
-  publicVariable _groupVarName;
-}
-else {
-  //Wait for group be created by the group leader before joining it.
-  [_groupVarName] spawn {
-    params["_groupVarName"];
-    // Wait for group exist.
-    sleep 1; // Ensure that everything is in Sync.
-    waitUntil{ !isNil _groupVarName };
-    [player] joinSilent (missionNamespace getVariable[_groupVarName, grpNull]);
- };
-};
-
-[] call F_fnc_setTeamColours;
+selectPlayer _newUnit;
 
 player setVariable ["f_respawnName", name player, true];
 player setVariable ["f_respawnUID", getPlayerUID player, true];
@@ -85,9 +77,5 @@ player setVariable ["f_respawnUID", getPlayerUID player, true];
 // Spawn to avoid blocking with waitUntil for assignGear to finish.
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   [false] call acre_api_fnc_setSpectator;
-  player setVariable ["F_Radio_LR", _lr, false];
-  player setVariable ["F_Radio_SR", _sr, false];
-  [] spawn {
-    [] call F_Radios_fnc_acreRadioSetup;
-  };
+  [{[player] call acre_api_fnc_isInitialized}, potato_radios_fnc_configureRadios] call CBA_fnc_waitUntilAndExecute;
 };

@@ -1,14 +1,4 @@
-// F3 - Loading Screen
-onLoadMission = "Made with the BW Mission Framework - Based on F3";
-loadScreen = "bwbannersmall.jpg";
-
-class Header {
-  gameType = Coop;
-  minPlayers = 1;
-  maxPlayers = 491;
-};
-
-enableDebugConsole = 1;
+onLoadName = "*** Insert mission name here. ***";
 
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
@@ -29,7 +19,7 @@ enableDebugConsole = 1;
 // Functions
 #include "cfg\CfgFunctions.hpp"
 
-bwmfDate = "2016/08/11"; //Framework date
+bwmfDate = "2016/08/20"; //Framework date
 
 class CfgDebriefingSections {
   class acex_killTracker {
