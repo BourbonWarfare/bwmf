@@ -11218,7 +11218,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -11444,7 +11444,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -11605,7 +11605,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="2PM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="2PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -11745,7 +11745,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -11789,7 +11789,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -12465,7 +12465,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -12509,7 +12509,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -13185,7 +13185,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -13229,7 +13229,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -13905,7 +13905,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\I_air.paa";
+									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -14068,7 +14068,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\I_air.paa";
+									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -14250,7 +14250,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\I_air.paa";
+									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -14413,7 +14413,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\I_air.paa";
+									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -15261,7 +15261,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\I_air.paa";
+									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -16198,7 +16198,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -16241,7 +16241,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -16613,7 +16613,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -16657,7 +16657,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="DM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -17333,7 +17333,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -17377,7 +17377,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="EM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="EM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -18053,7 +18053,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\I_hq.paa";
+									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -18097,7 +18097,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -19936,7 +19936,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -20162,7 +20162,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -20323,7 +20323,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="2PM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="2PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -20463,7 +20463,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -20507,7 +20507,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -21183,7 +21183,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -21227,7 +21227,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -21903,7 +21903,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -21947,7 +21947,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -22623,7 +22623,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\O_air.paa";
+									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -22786,7 +22786,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\O_air.paa";
+									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -22968,7 +22968,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\O_air.paa";
+									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -23131,7 +23131,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\O_air.paa";
+									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -23979,7 +23979,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\O_air.paa";
+									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\b_air.paa";
 								};
 							};
 						};
@@ -24916,7 +24916,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -24959,7 +24959,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -25331,7 +25331,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -25375,7 +25375,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="DM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -26051,7 +26051,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -26095,7 +26095,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="EM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="EM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -26771,7 +26771,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\O_hq.paa";
+									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -26815,7 +26815,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
