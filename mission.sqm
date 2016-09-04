@@ -1355,7 +1355,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -11444,7 +11444,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
+									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\I_med.paa";
 								};
 							};
 						};
@@ -20162,7 +20162,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
+									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\O_med.paa";
 								};
 							};
 						};
