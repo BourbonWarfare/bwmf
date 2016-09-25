@@ -1,7 +1,5 @@
 params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex"];
 
-diag_log format ["[bwmf] - Can Suspend: %1", canSuspend];
-
 _faction = (respawnMenuFactions select _faction) select 0;
 _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
 private _class = [_faction, _typeOfUnit] call fn_respawnSelectClass;
@@ -35,7 +33,7 @@ private _rankName  = switch (_rank) do {
 };
 
 private _groupVarName = format ["GrpRespawn_%1", _groupNum];
-private _group = if (_leader) then {
+if (_leader) then {
   private _newGroup = createGroup _side;
   _newGroup setGroupIdGlobal [_groupId];
 
@@ -49,39 +47,57 @@ private _group = if (_leader) then {
   _newGroup setVariable ["potato_markers_markerColor", _color, true];
   _newGroup setVariable ["potato_markers_markerSize", 24, true];
 
+  // Create the unit
+  private _newUnit = _newGroup createUnit [_class, _position, [], 5, "NONE"];
+  _newUnit setRank _rankName;
+  _newUnit addRating 10000;
+
+  // Wait till the unit is created
+  private _timeOut = time + 10;
+  waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
+  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
+
+  // Exit Spectator
+  [true] call F_fnc_ForceExit;
+
+  // 'respawn'
+  selectPlayer _newUnit;
+
   publicVariable _groupVarName;
-  _newGroup
 }
 else {
-  waitUntil{ !isNil _groupVarName };
+  private _tempGroup = createGroup _side;
+
+  // Create the unit
+  private _newUnit = _tempGroup createUnit [_class, _position, [], 5, "NONE"];
+  _newUnit setRank _rankName;
+  _newUnit addRating 10000;
+
+  // Wait till the unit is created
+  private _timeOut = time + 10;
+  waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
+  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
+
+  // Exit Spectator
+  [true] call F_fnc_ForceExit;
+
+  // 'respawn'
+  selectPlayer _newUnit;
+
+  _timeOut = time + 10;
+  waitUntil{ !isNil _groupVarName || time > _timeOut };
+  if (isNil _groupVarName) exitWith { diag_log "[bwmf] - Respawn died"; };
 
   private _newGroup = grpNull;
   {
     if (groupId _x == _groupId) exitWith { _newGroup = _x; };
   } forEach allGroups;
 
-  if (isNull _newGroup) then {
-    _newGroup = createGroup _side;
+  if (!isNull _newGroup) then {
+    [player] joinSilent _newGroup;
+    deleteGroup _tempGroup;
   };
-
-  _newGroup
 };
-
-// Create the unit
-private _oldUnit = player;
-private _newUnit = _group createUnit [_class, _position, [], 5, "NONE"];
-_newUnit setRank _rankName;
-_newUnit addRating 10000;
-
-// Wait till the unit is created
-private _timeOut = time + 10;
-waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
-
-// Exit Spectator
-[true] call F_fnc_ForceExit;
-
-selectPlayer _newUnit;
 
 player setVariable ["f_respawnName", name player, true];
 player setVariable ["f_respawnUID", getPlayerUID player, true];
