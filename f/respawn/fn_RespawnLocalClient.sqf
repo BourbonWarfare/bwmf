@@ -46,15 +46,14 @@ private _group = if (_leader) then {
   _newGroup setVariable ["potato_markers_markerColor", _color, true];
   _newGroup setVariable ["potato_markers_markerSize", 24, true];
 
-  missionNamespace setVariable[_groupVarName, _newGroup];
+  missionNamespace setVariable [_groupVarName, _newGroup, true];
   publicVariable _groupVarName;
 
   _newGroup
 }
 else {
-  sleep 1;
   waitUntil{ !isNil _groupVarName };
-  _groupVarName
+  missionNamespace getVariable [_groupVarName, createGroup _side]
 };
 
 // Create the unit
@@ -64,7 +63,10 @@ _newUnit setRank _rankName;
 _newUnit addRating 10000;
 
 // Wait till the unit is created
-waitUntil{!isNil "_newUnit" && !isNull _newUnit && alive _newUnit};
+private _timeOut = time + 10;
+waitUntil{(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
+
+if (!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) exitWith { diag_log "Respawn died"; };
 
 // Exit Spectator
 [true] call F_fnc_ForceExit;
