@@ -33,12 +33,12 @@ if (isNull _deadUnit) then {
 // Set spectator mode for whichever radio system is in use
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   [true] call acre_api_fnc_setSpectator;
-  if (!isNil "F_available_languages") then {
+  if (!isNil "potato_radios_availableLanguages") then {
     _languages = [];
     {
       _languages pushBack (_x select 0);
       nil
-    } count F_available_languages;
+    } count potato_radios_availableLanguages;
     _languages call acre_api_fnc_babelSetSpokenLanguages;
   };
 };

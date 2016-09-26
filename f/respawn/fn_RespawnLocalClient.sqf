@@ -76,7 +76,7 @@ else {
   // Wait till the unit is created
   private _timeOut = time + 10;
   waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
+  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died, new unit wasn't created"; };
 
   // Exit Spectator
   [true] call F_fnc_ForceExit;
@@ -85,18 +85,24 @@ else {
   selectPlayer _newUnit;
 
   _timeOut = time + 10;
+  waitUntil{ player == _newUnit || time > _timeOut };
+  if (player != _newUnit) exitWith { diag_log "[bwmf] - Respawn died, player didn't transfer"; };
+
+  _timeOut = time + 10;
   waitUntil{ !isNil _groupVarName || time > _timeOut };
-  if (isNil _groupVarName) exitWith { diag_log "[bwmf] - Respawn died"; };
+  if (isNil _groupVarName) exitWith { diag_log "[bwmf] - Respawn died, group wasn't created"; };
 
   private _newGroup = grpNull;
   {
     if (groupId _x == _groupId) exitWith { _newGroup = _x; };
   } forEach allGroups;
 
+  diag_log format ["[bwmf] - Respawn 'pre' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
   if (!isNull _newGroup) then {
-    [player] joinSilent _newGroup;
+    [_newUnit] joinSilent _newGroup;
     deleteGroup _tempGroup;
   };
+  diag_log format ["[bwmf] - Respawn 'post' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
 };
 
 player setVariable ["f_respawnName", name player, true];
