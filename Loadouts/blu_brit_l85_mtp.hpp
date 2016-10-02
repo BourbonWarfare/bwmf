@@ -4,7 +4,7 @@
 class blu_f {
   //Rifle
   #define WEST_RIFLE "UK3CB_BAF_L85A2_RIS","UK3CB_BAF_L85A2_RIS_AFG"
-  #define WEST_RIFLE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
+  #define WEST_RIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
   #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","UK3CB_BAF_LLM_IR_Black"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
@@ -18,25 +18,25 @@ class blu_f {
   #define WEST_CARBINE_MAG WEST_RIFLE_MAG
   // AR
   #define WEST_AR "UK3CB_BAF_L110A2"
-  #define WEST_AR_MAG "UK3CB_BAF_100Rnd:4"
+  #define WEST_AR_MAG "UK3CB_BAF_556_100Rnd_T:4"
   // AT
-  #define WEST_AT "UK3CB_BAF_AT4_AT_Launcher"
+  #define WEST_AT "UK3CB_BAF_AT4_CS_AP_Launcher"
   // MMG
   #define WEST_MMG "UK3CB_BAF_L7A2"
-  #define WEST_MMG_MAG "UK3CB_BAF_75Rnd:6"
-  #define WEST_MMG_MAG2 "UK3CB_BAF_75Rnd:5"
+  #define WEST_MMG_MAG "UK3CB_BAF_762_100Rnd_T:6"
+  #define WEST_MMG_MAG2 "UK3CB_BAF_762_100Rnd_T:5"
   // Sniper Rifle
-  #define WEST_SNIPER "UK3CB_BAF_L82A1"
-  #define WEST_SNIPER_MAG "UK3CB_BAF_10Rnd_127x99mm:4"
+  #define WEST_SNIPER "UK3CB_BAF_L135A1"
+  #define WEST_SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
   // Spotter Rifle
   #define WEST_SPOTTER "UK3CB_BAF_L86A3"
-  #define WEST_SPOTTER_MAG "UK3CB_BAF_30Rnd:8"
+  #define WEST_SPOTTER_MAG WEST_RIFLE_MAG
   // SMG
   #define WEST_SMG "UK3CB_BAF_L91A1"
-  #define WEST_SMG_MAG "UK3CB_BAF_30Rnd_9mm:6"
+  #define WEST_SMG_MAG "UK3CB_BAF_9_30Rnd:6"
   // Pistol
   #define WEST_PISTOL "UK3CB_BAF_L131A1"
-  #define WEST_PISTOL_MAG "UK3CB_BAF_17Rnd_9mm:3"
+  #define WEST_PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
@@ -123,7 +123,7 @@ class blu_f {
     attachments[] = {};
   };
   class B_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-    backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A"};
+    backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B"};
     backpackItems[] += {WEST_MMG_MAG2};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
