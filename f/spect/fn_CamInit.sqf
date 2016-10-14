@@ -89,7 +89,7 @@ f_cam_timestamp = time;
 f_cam_muteSpectators = true;
 
 // Menu (Top left)
-f_cam_menuControls = [2111,2112,2113,2114,2511,2101,4302];
+f_cam_menuControls = [2111,2112,2113,2114,2511,2512,2101,4302];
 f_cam_menuShownTime = 0;
 f_cam_menuShown = true;
 f_cam_menuWorking = false;
@@ -299,13 +299,32 @@ f_cam_ToggleTracers = {
 				[_x, [0,0,1,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
 			};
 			if (side _x == resistance) then {
-				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
 			};
 		} forEach allUnits;
 	} else {
 		{
 			[_x] call hyp_fnc_traceFireRemove
 		} forEach allUnits;
+	};
+};
+
+f_cam_AdminZeus = {
+	if ((serverCommandAvailable "#kick") || PABST_ADMIN_playerIsAuthorized) then {
+		f_cam_forcedExit = true;
+		closeDialog 1;
+		call F_fnc_RemoveHandlers;
+		[[player], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
+		[[], "PABST_ADMIN_server_zeusConnectAllUnits", false] call BIS_fnc_mp;
+		openCuratorInterface;
+		[] spawn {
+			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
+			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
+			[[], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
+			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
+		};
+	} else {
+		systemChat "You are not authorized to use Zeus.";
 	};
 };
 
