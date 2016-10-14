@@ -107,6 +107,7 @@ else {
 
 player setVariable ["f_respawnName", name player, true];
 player setVariable ["f_respawnUID", getPlayerUID player, true];
+player setVariable ["f_spectator", false, true];
 
 if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   [false] call acre_api_fnc_setSpectator;

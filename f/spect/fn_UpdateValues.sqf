@@ -32,7 +32,7 @@ while {true} do {
 
   // Check it and see if they have been added already
   {
-    if (!(_x in f_cam_listUnits) && ({alive _x} count units _x) > 0 ) then {
+    if (!(_x in f_cam_listUnits) && ({alive _x && !((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)} count units _x) > 0 ) then {
       _text = toString(toArray(groupID _x) - [45]);
       _index = lbAdd [_listBox,_text];
       _x SetVariable ["f_spect_listBoxIndex", _index];
@@ -41,10 +41,12 @@ while {true} do {
       {
         if (alive _x) then {
           if (!(_x in f_cam_listUnits) && !(_x iskindof "VirtualMan_F")) then {
-            f_cam_listUnits pushBack _x;
-            _text = "    " + name _x;
-            _index = lbAdd [_listBox, _text];
-            _x SetVariable ["f_spect_listBoxIndex", _index];
+            if (!isPlayer _x || isPlayer _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}) then {
+              f_cam_listUnits pushBack _x;
+              _text = "    " + name _x;
+              _index = lbAdd [_listBox, _text];
+              _x SetVariable ["f_spect_listBoxIndex", _index];
+            };
           };
         };
         nil
