@@ -732,16 +732,30 @@ class f_spec_dialog {
     };
     class FirstPersonButton: RscSpectButton {
       idc = 2114;
-      x = 0.12679 * safezoneW + safezoneX;
+      x = 0.12668754 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
-      w = 0.05 * safezoneW;
+      w = 0.04 * safezoneW;
       h = 0.02 * safezoneH;
-      text = "First Person";
+      text = "Perspective";
       tooltip = "Switch between First Person or Third person";
       sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
       onButtonClick = "[_this select 0,3] call f_fnc_HandleMenu";
       onMouseHolding = "f_cam_menuShownTime=time";
       onMouseMoving = "f_cam_menuShownTime=time";
+    };
+	class TracerButton: RscSpectButton
+    {
+        idc = 2511;
+        x = 0.16876256 * safezoneW + safezoneX;
+        y = -5.99921e-005 * safezoneH + safezoneY;
+        w = 0.04 * safezoneW;
+        h = 0.02 * safezoneH;
+        text = "Tracers";
+        tooltip = "Toggle highlighted tracers on and off";
+        sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+        onButtonClick = "[_this select 0,5] call f_fnc_HandleMenu";
+        onMouseHolding = "f_cam_menuShownTime=time";
+        onMouseMoving = "f_cam_menuShownTime=time";
     };
     class SpecUnitBox: RscSpectList {
       idc = 2103;
@@ -753,7 +767,7 @@ class f_spec_dialog {
     };
     class SpecModes: RscSpectCombo {
       idc = 2101;
-      x = 0.178999 * safezoneW + safezoneX;
+      x = 0.21083758 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.07 * safezoneW;
       h = 0.02 * safezoneH;
