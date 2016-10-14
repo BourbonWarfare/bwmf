@@ -779,9 +779,10 @@ class f_spec_dialog {
       h = 0.9 * safezoneH;
       onLBSelChanged = "[""LBListSelChanged"",_this] call F_fnc_EventHandler";
     };
+
     class SpecModes: RscSpectCombo {
       idc = 2101;
-      x = 0.21083758 * safezoneW + safezoneX;
+      x = -100 * safezoneW + safezoneX; //move offscreen, sloppy but keeps other things intact
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.07 * safezoneW;
       h = 0.02 * safezoneH;
@@ -790,6 +791,7 @@ class f_spec_dialog {
       onMouseHolding = "f_cam_menuShownTime=time";
       onMouseMoving = "f_cam_menuShownTime=time";
     };
+
     class SpecText: RscSpectText {
       idc = 1000;
       text = "Spectating:Unknown";
