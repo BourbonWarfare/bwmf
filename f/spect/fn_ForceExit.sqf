@@ -1,9 +1,9 @@
 params ["_respawn"];
 
-f_cam_toggleTags = false;   //make sure tags don't stay up when admin goes to zeus
+f_cam_toggleTags = false;   //make sure tags don't stay up
 if (f_cam_toggleTracersV) then {
     {
-        [_x] call hyp_fnc_traceFireRemove;  //make sure tracers stop being drawn when admin goes to zeus
+        [_x] call hyp_fnc_traceFireRemove;  //make sure tracers stop being drawn
     } forEach allUnits;
 };
 
