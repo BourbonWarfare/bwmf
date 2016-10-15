@@ -7,9 +7,15 @@ if (_isJip && !isNil "PABST_ADMIN_SAFESTART_public_isSafe" && {!PABST_ADMIN_SAFE
   [] execVM "f\common\f_JIP_autoTeleport.sqf";
 };
 // ====================================================================================
-
 // ====================================================================================
 // SCMF - Admin Safestart Weapons Monitor
 // Credits: Bismarck
 [] execVM "f\common\f_admin_fireMonitor.sqf";
+// ====================================================================================
+// ====================================================================================
+// SCMF - STUI Defaults
+// Credits: JonBons
+STHud_NoSquadBarMode = true;
+STUI_Occlusion = false;
+STUI_RemoveDeadViaProximity = true ;
 // ====================================================================================
