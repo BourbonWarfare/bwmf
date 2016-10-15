@@ -311,16 +311,8 @@ f_cam_ToggleTracers = {
 
 f_cam_AdminZeus = {
 	if ((serverCommandAvailable "#kick") || PABST_ADMIN_playerIsAuthorized) then {
-		f_cam_forcedExit = true;
-		closeDialog 1;
-		call F_fnc_RemoveHandlers;
 
-        f_cam_toggleTags = false;   //make sure tags don't stay up when admin goes to zeus
-        if (f_cam_toggleTracersV) then {
-            {
-                [_x] call hyp_fnc_traceFireRemove;  //make sure tracers stop being drawn when admin goes to zeus
-            } forEach allUnits;
-        };
+        [true] call F_fnc_ForceExit;
 
 		[[player], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
 		[[], "PABST_ADMIN_server_zeusConnectAllUnits", false] call BIS_fnc_mp;
