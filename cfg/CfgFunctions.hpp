@@ -6,7 +6,7 @@ class CfgFunctions {
         preInit = 1;
         postInit = 1;
       };
-      class getCurLeader{};
+      class getCurLeaderSide{};
     };
     class missionConditions {
       file = "f\missionConditions";
