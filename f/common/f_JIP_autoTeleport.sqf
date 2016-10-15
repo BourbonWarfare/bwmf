@@ -1,6 +1,6 @@
 //only run on jips joining after safestart disabled
 waitUntil {!isNull player};
-_lead = [playerSide] call F_fnc_getCurLeader;
+_lead = [playerSide] call F_fnc_getCurLeaderSide;
 
 if (_lead isEqualTo objNull) then {
   hint "Sorry, there is no available leadership unit for auto-teleportation. Contact an administrator.";
