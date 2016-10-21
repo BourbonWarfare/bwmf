@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={621.78912,20.835886,872.78918};
-		dir[]={0.29533994,-0.62796694,-0.72006297};
-		up[]={0.23831148,0.7782169,-0.58102238};
-		aside[]={-0.92523068,-4.4703484e-007,-0.37949067};
+		pos[]={684.11182,66.597061,865.16321};
+		dir[]={-0.73512542,-0.49262887,0.46581021};
+		up[]={-0.41615909,0.87021637,0.26369819};
+		aside[]={0.53526229,-5.5064447e-007,0.84473151};
 	};
 };
 binarizationWanted=0;
@@ -800,7 +800,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=201;
+		items=198;
 		class Item0
 		{
 			dataType="Object";
@@ -13133,788 +13133,6 @@ class Mission
 		};
 		class Item77
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=38;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={736.03156,5.0014391,888.0257};
-						angles[]={0,6.2789788,0};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=667;
-					type="B_officer_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={735.97052,5.0014391,886.03668};
-						angles[]={0,6.2677388,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=668;
-					type="B_officer_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.00836,5.0014391,884.0733};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=778;
-					type="B_Soldier_SL_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.06256,5.0014391,886.03967};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=669;
-					type="B_Soldier_SL_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.01654,5.0014391,888.04669};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=671;
-					type="B_Soldier_SL_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.02667,5.0014391,887.97009};
-						angles[]={0,0.0040792208,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=659;
-					type="B_Soldier_TL_F";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.02985,5.0014391,886.0481};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=663;
-					type="B_Soldier_TL_F";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.02417,5.0014391,884.06342};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=732;
-					type="B_Soldier_TL_F";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={741.99445,5.0014391,886.01324};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=665;
-					type="B_soldier_AAR_F";
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={742.03052,5.0014391,888.02814};
-						angles[]={0,0.0040792208,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=661;
-					type="B_soldier_AAR_F";
-				};
-				class Item10
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={742.04315,5.0014391,884.07214};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=736;
-					type="B_soldier_AAR_F";
-				};
-				class Item11
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={744.01935,5.0014391,888.00507};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=664;
-					type="B_soldier_AR_F";
-				};
-				class Item12
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={743.98596,5.0014391,883.9884};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=741;
-					type="B_soldier_AR_F";
-				};
-				class Item13
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={744.06549,5.0014391,886.08691};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=743;
-					type="B_soldier_AR_F";
-				};
-				class Item14
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={746.02191,5.0014391,887.98248};
-						angles[]={0,0.0040792208,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=662;
-					type="B_soldier_LAT_F";
-				};
-				class Item15
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={745.97925,5.0014391,885.92688};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=666;
-					type="B_soldier_LAT_F";
-				};
-				class Item16
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={746.00012,5.0014391,884.03619};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=747;
-					type="B_soldier_LAT_F";
-				};
-				class Item17
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.05457,5.0014391,888.01868};
-						angles[]={0,0.0040840702,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=750;
-					type="B_Soldier_F";
-				};
-				class Item18
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.06995,5.0014391,886.172};
-						angles[]={0,0.0040840702,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=752;
-					type="B_Soldier_F";
-				};
-				class Item19
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.07117,5.0014391,884.15131};
-						angles[]={0,0.0040840702,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=754;
-					type="B_Soldier_F";
-				};
-				class Item20
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.06067,5.0014391,882.14594};
-						angles[]={0,0.0040840702,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=756;
-					type="B_Soldier_F";
-				};
-				class Item21
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.07324,5.0014391,880.13696};
-						angles[]={0,0.0040840702,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=758;
-					type="B_Soldier_F";
-				};
-				class Item22
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={750.02881,5.0014391,888.0379};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=670;
-					type="B_medic_F";
-				};
-				class Item23
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={749.98566,5.0014391,885.98181};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=672;
-					type="B_medic_F";
-				};
-				class Item24
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={751.99908,5.0014391,887.89032};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=673;
-					type="B_Helipilot_F";
-				};
-				class Item25
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={752.04651,5.0014391,886.0285};
-						angles[]={0,0.0090104537,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=674;
-					type="B_Helipilot_F";
-				};
-				class Item26
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.02454,5.0014391,887.96265};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=675;
-					type="B_soldier_repair_F";
-				};
-				class Item27
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.05151,5.0014391,886.00769};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=676;
-					type="B_soldier_repair_F";
-				};
-				class Item28
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.05676,5.0014391,884.17786};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=770;
-					type="B_soldier_repair_F";
-				};
-				class Item29
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.05756,5.0014391,888.11267};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_BLU_TNK1_C_1";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=772;
-					type="B_crew_F";
-				};
-				class Item30
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.0517,5.0014391,886.12866};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_BLU_TNK1_C_2";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=774;
-					type="B_crew_F";
-				};
-				class Item31
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.03998,5.0014391,884.14819};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_BLU_TNK1_C_3";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=776;
-					type="B_crew_F";
-				};
-				class Item32
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={758.06055,5.0014391,888.06665};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Spotter";
-						isPlayable=1;
-					};
-					id=680;
-					type="B_Soldier_A_F";
-				};
-				class Item33
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={760.09052,5.0014391,888.01367};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Gunner";
-						isPlayable=1;
-					};
-					id=679;
-					type="B_support_MG_F";
-				};
-				class Item34
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={762.02057,5.0014391,888.01764};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_BLU_MAT1_AG_1";
-						description="JIP MAT Spotter";
-						isPlayable=1;
-					};
-					id=781;
-					type="B_soldier_AAT_F";
-				};
-				class Item35
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={764.05554,5.0014391,887.93268};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_BLU_MAT1_G_1";
-						description="JIP MAT Gunner";
-						isPlayable=1;
-					};
-					id=780;
-					type="B_soldier_AT_F";
-				};
-				class Item36
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={765.97552,5.0014391,888.02765};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Demo)";
-						isPlayable=1;
-					};
-					id=677;
-					type="B_soldier_exp_F";
-				};
-				class Item37
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={768.14056,5.0014391,887.9137};
-						angles[]={0,0.0090058986,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Mine)";
-						isPlayable=1;
-					};
-					id=783;
-					type="B_engineer_F";
-				};
-			};
-			class Attributes
-			{
-				name="GROUP_BLU_JIP";
-			};
-			id=725;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="BluFor JIP";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item78
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -13931,7 +13149,7 @@ class Mission
 			id=784;
 			type="I_Heli_light_03_unarmed_F";
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13949,7 +13167,7 @@ class Mission
 			id=785;
 			type="I_Heli_light_03_unarmed_F";
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13967,7 +13185,7 @@ class Mission
 			id=786;
 			type="I_Heli_light_03_unarmed_F";
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Object";
 			class PositionInfo
@@ -13985,7 +13203,7 @@ class Mission
 			id=787;
 			type="I_Heli_light_03_unarmed_F";
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14003,7 +13221,7 @@ class Mission
 			id=788;
 			type="I_APC_tracked_03_cannon_F";
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14021,7 +13239,7 @@ class Mission
 			id=789;
 			type="I_APC_tracked_03_cannon_F";
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14039,7 +13257,7 @@ class Mission
 			id=790;
 			type="I_APC_tracked_03_cannon_F";
 		};
-		class Item85
+		class Item84
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14057,7 +13275,7 @@ class Mission
 			id=791;
 			type="I_APC_tracked_03_cannon_F";
 		};
-		class Item86
+		class Item85
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14075,7 +13293,7 @@ class Mission
 			id=792;
 			type="I_Heli_light_03_F";
 		};
-		class Item87
+		class Item86
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14093,7 +13311,7 @@ class Mission
 			id=793;
 			type="I_MBT_03_cannon_F";
 		};
-		class Item88
+		class Item87
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14111,7 +13329,7 @@ class Mission
 			id=794;
 			type="I_MRAP_03_F";
 		};
-		class Item89
+		class Item88
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14129,7 +13347,7 @@ class Mission
 			id=795;
 			type="I_Truck_02_transport_F";
 		};
-		class Item90
+		class Item89
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14147,7 +13365,7 @@ class Mission
 			id=796;
 			type="I_Truck_02_transport_F";
 		};
-		class Item91
+		class Item90
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14165,7 +13383,7 @@ class Mission
 			id=797;
 			type="I_Truck_02_transport_F";
 		};
-		class Item92
+		class Item91
 		{
 			dataType="Object";
 			class PositionInfo
@@ -14183,7 +13401,7 @@ class Mission
 			id=798;
 			type="I_MRAP_03_F";
 		};
-		class Item93
+		class Item92
 		{
 			dataType="Group";
 			side="Independent";
@@ -14516,7 +13734,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item94
+		class Item93
 		{
 			dataType="Group";
 			side="Independent";
@@ -14786,7 +14004,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item95
+		class Item94
 		{
 			dataType="Group";
 			side="Independent";
@@ -15012,7 +14230,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item96
+		class Item95
 		{
 			dataType="Group";
 			side="Independent";
@@ -15194,7 +14412,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item97
+		class Item96
 		{
 			dataType="Group";
 			side="Independent";
@@ -15604,7 +14822,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Group";
 			side="Independent";
@@ -16014,7 +15232,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item99
+		class Item98
 		{
 			dataType="Group";
 			side="Independent";
@@ -16196,7 +15414,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item100
+		class Item99
 		{
 			dataType="Group";
 			side="Independent";
@@ -16606,7 +15824,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item101
+		class Item100
 		{
 			dataType="Group";
 			side="Independent";
@@ -17016,7 +16234,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item102
+		class Item101
 		{
 			dataType="Group";
 			side="Independent";
@@ -17198,7 +16416,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item103
+		class Item102
 		{
 			dataType="Group";
 			side="Independent";
@@ -17608,7 +16826,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item104
+		class Item103
 		{
 			dataType="Group";
 			side="Independent";
@@ -18018,7 +17236,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item105
+		class Item104
 		{
 			dataType="Group";
 			side="Independent";
@@ -18269,7 +17487,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item106
+		class Item105
 		{
 			dataType="Group";
 			side="Independent";
@@ -18539,7 +17757,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item107
+		class Item106
 		{
 			dataType="Group";
 			side="Independent";
@@ -18790,7 +18008,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item108
+		class Item107
 		{
 			dataType="Group";
 			side="Independent";
@@ -19041,7 +18259,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item109
+		class Item108
 		{
 			dataType="Group";
 			side="Independent";
@@ -19247,7 +18465,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item110
+		class Item109
 		{
 			dataType="Group";
 			side="Independent";
@@ -19453,7 +18671,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item111
+		class Item110
 		{
 			dataType="Group";
 			side="Independent";
@@ -19659,7 +18877,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Group";
 			side="Independent";
@@ -19865,7 +19083,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Group";
 			side="Independent";
@@ -20071,7 +19289,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Group";
 			side="Independent";
@@ -20234,7 +19452,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Group";
 			side="Independent";
@@ -20439,7 +19657,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Group";
 			side="Independent";
@@ -20644,7 +19862,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item117
+		class Item116
 		{
 			dataType="Group";
 			side="Independent";
@@ -20849,7 +20067,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Group";
 			side="Independent";
@@ -21054,7 +20272,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Group";
 			side="Independent";
@@ -21259,7 +20477,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Group";
 			side="Independent";
@@ -21464,7 +20682,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Group";
 			side="Independent";
@@ -21645,7 +20863,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Group";
 			side="Independent";
@@ -21807,7 +21025,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Group";
 			side="Independent";
@@ -22055,7 +21273,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Group";
 			side="Independent";
@@ -22237,7 +21455,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Group";
 			side="Independent";
@@ -22647,7 +21865,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Group";
 			side="Independent";
@@ -23057,7 +22275,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Group";
 			side="Independent";
@@ -23239,7 +22457,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item128
+		class Item127
 		{
 			dataType="Group";
 			side="Independent";
@@ -23649,7 +22867,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item129
+		class Item128
 		{
 			dataType="Group";
 			side="Independent";
@@ -24059,7 +23277,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item130
+		class Item129
 		{
 			dataType="Group";
 			side="Independent";
@@ -24241,7 +23459,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item131
+		class Item130
 		{
 			dataType="Group";
 			side="Independent";
@@ -24651,7 +23869,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item132
+		class Item131
 		{
 			dataType="Group";
 			side="Independent";
@@ -25061,7 +24279,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item133
+		class Item132
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25079,7 +24297,7 @@ class Mission
 			id=993;
 			type="I_MRAP_03_F";
 		};
-		class Item134
+		class Item133
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25097,7 +24315,7 @@ class Mission
 			id=994;
 			type="I_Truck_02_transport_F";
 		};
-		class Item135
+		class Item134
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25115,7 +24333,7 @@ class Mission
 			id=995;
 			type="I_Truck_02_transport_F";
 		};
-		class Item136
+		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25133,7 +24351,7 @@ class Mission
 			id=996;
 			type="I_Truck_02_transport_F";
 		};
-		class Item137
+		class Item136
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25151,789 +24369,7 @@ class Mission
 			id=997;
 			type="I_Truck_02_transport_F";
 		};
-		class Item138
-		{
-			dataType="Group";
-			side="Independent";
-			class Entities
-			{
-				items=38;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={544.00262,5.0014391,887.98669};
-						angles[]={0,6.2789788,0};
-					};
-					side="Independent";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=999;
-					type="I_officer_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={543.94159,5.0014391,885.99768};
-						angles[]={0,6.2677388,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=1000;
-					type="I_officer_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={545.97943,5.0014391,884.0343};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1001;
-					type="I_Soldier_SL_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={546.03363,5.0014391,886.00067};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1002;
-					type="I_Soldier_SL_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={545.98761,5.0014391,888.00769};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1003;
-					type="I_Soldier_SL_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={547.99774,5.0014391,887.93109};
-						angles[]={0,0.0040792208,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1004;
-					type="I_Soldier_TL_F";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={548.00092,5.0014391,886.00909};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1005;
-					type="I_Soldier_TL_F";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={547.99524,5.0014391,884.02441};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1006;
-					type="I_Soldier_TL_F";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={549.96552,5.0014391,885.97424};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1007;
-					type="I_Soldier_AAR_F";
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={550.00159,5.0014391,887.98914};
-						angles[]={0,0.0040792208,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1008;
-					type="I_Soldier_AAR_F";
-				};
-				class Item10
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={550.01422,5.0014391,884.03314};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1009;
-					type="I_Soldier_AAR_F";
-				};
-				class Item11
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={551.99042,5.0014391,887.96606};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1010;
-					type="I_Soldier_AR_F";
-				};
-				class Item12
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={551.95703,5.0014391,883.9494};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1011;
-					type="I_Soldier_AR_F";
-				};
-				class Item13
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={552.03656,5.0014391,886.04791};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1012;
-					type="I_Soldier_AR_F";
-				};
-				class Item14
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={553.99298,5.0014391,887.94348};
-						angles[]={0,0.0040792208,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1013;
-					type="I_Soldier_LAT_F";
-				};
-				class Item15
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={553.95032,5.0014391,885.88788};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1014;
-					type="I_Soldier_LAT_F";
-				};
-				class Item16
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={553.97119,5.0014391,883.99719};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1015;
-					type="I_Soldier_LAT_F";
-				};
-				class Item17
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={556.02563,5.0014391,887.97968};
-						angles[]={0,0.0040840702,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1016;
-					type="I_soldier_F";
-				};
-				class Item18
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={556.04102,5.0014391,886.133};
-						angles[]={0,0.0040840702,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1017;
-					type="I_soldier_F";
-				};
-				class Item19
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={556.04224,5.0014391,884.1123};
-						angles[]={0,0.0040840702,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1018;
-					type="I_soldier_F";
-				};
-				class Item20
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={556.03174,5.0014391,882.10693};
-						angles[]={0,0.0040840702,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1019;
-					type="I_soldier_F";
-				};
-				class Item21
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={556.04431,5.0014391,880.09796};
-						angles[]={0,0.0040840702,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1020;
-					type="I_soldier_F";
-				};
-				class Item22
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={557.99988,5.0014391,887.9989};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=1021;
-					type="I_medic_F";
-				};
-				class Item23
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={557.95673,5.0014391,885.94281};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=1022;
-					type="I_medic_F";
-				};
-				class Item24
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={559.97015,5.0014391,887.85132};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=1023;
-					type="I_helipilot_F";
-				};
-				class Item25
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={560.01758,5.0014391,885.9895};
-						angles[]={0,0.0090104537,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=1024;
-					type="I_helipilot_F";
-				};
-				class Item26
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={561.99561,5.0014391,887.92365};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1025;
-					type="I_Soldier_repair_F";
-				};
-				class Item27
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={562.02258,5.0014391,885.96869};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1026;
-					type="I_Soldier_repair_F";
-				};
-				class Item28
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={562.02783,5.0014391,884.13885};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1027;
-					type="I_Soldier_repair_F";
-				};
-				class Item29
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={564.02863,5.0014391,888.07367};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_IND_TNK1_C_1";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1028;
-					type="I_crew_F";
-				};
-				class Item30
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={564.02277,5.0014391,886.08966};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_IND_TNK1_C_2";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1029;
-					type="I_crew_F";
-				};
-				class Item31
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={564.01105,5.0014391,884.10919};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_IND_TNK1_C_3";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1030;
-					type="I_crew_F";
-				};
-				class Item32
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={566.03162,5.0014391,888.02765};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Spotter";
-						isPlayable=1;
-					};
-					id=1031;
-					type="I_Soldier_A_F";
-				};
-				class Item33
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={568.06158,5.0014391,887.97467};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Gunner";
-						isPlayable=1;
-					};
-					id=1032;
-					type="I_support_MG_F";
-				};
-				class Item34
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={569.99164,5.0014391,887.97864};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_IND_MAT1_AG_1";
-						description="JIP MAT Spotter";
-						isPlayable=1;
-					};
-					id=1033;
-					type="I_Soldier_AAT_F";
-				};
-				class Item35
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={572.02661,5.0014391,887.89368};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_IND_MAT1_G_1";
-						description="JIP MAT Gunner";
-						isPlayable=1;
-					};
-					id=1034;
-					type="I_Soldier_AT_F";
-				};
-				class Item36
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={573.94659,5.0014391,887.98865};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Demo)";
-						isPlayable=1;
-					};
-					id=1035;
-					type="I_Soldier_exp_F";
-				};
-				class Item37
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={576.11163,5.0014391,887.87469};
-						angles[]={0,0.0090058986,0};
-					};
-					side="Independent";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Mine)";
-						isPlayable=1;
-					};
-					id=1036;
-					type="I_engineer_F";
-				};
-			};
-			class Attributes
-			{
-				name="GROUP_IND_JIP";
-			};
-			id=998;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Indy JIP";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item139
+		class Item137
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25951,7 +24387,7 @@ class Mission
 			id=1037;
 			type="O_Heli_Light_02_unarmed_F";
 		};
-		class Item140
+		class Item138
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25969,7 +24405,7 @@ class Mission
 			id=1038;
 			type="O_Heli_Light_02_unarmed_F";
 		};
-		class Item141
+		class Item139
 		{
 			dataType="Object";
 			class PositionInfo
@@ -25987,7 +24423,7 @@ class Mission
 			id=1039;
 			type="O_Heli_Light_02_unarmed_F";
 		};
-		class Item142
+		class Item140
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26005,7 +24441,7 @@ class Mission
 			id=1040;
 			type="O_Heli_Light_02_unarmed_F";
 		};
-		class Item143
+		class Item141
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26023,7 +24459,7 @@ class Mission
 			id=1041;
 			type="O_APC_Tracked_02_cannon_F";
 		};
-		class Item144
+		class Item142
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26041,7 +24477,7 @@ class Mission
 			id=1042;
 			type="O_APC_Tracked_02_cannon_F";
 		};
-		class Item145
+		class Item143
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26059,7 +24495,7 @@ class Mission
 			id=1043;
 			type="O_APC_Tracked_02_cannon_F";
 		};
-		class Item146
+		class Item144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26077,7 +24513,7 @@ class Mission
 			id=1044;
 			type="O_APC_Tracked_02_cannon_F";
 		};
-		class Item147
+		class Item145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26095,7 +24531,7 @@ class Mission
 			id=1045;
 			type="O_Heli_Attack_02_F";
 		};
-		class Item148
+		class Item146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26113,7 +24549,7 @@ class Mission
 			id=1046;
 			type="O_MBT_02_cannon_F";
 		};
-		class Item149
+		class Item147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26131,7 +24567,7 @@ class Mission
 			id=1047;
 			type="O_MRAP_02_F";
 		};
-		class Item150
+		class Item148
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26149,7 +24585,7 @@ class Mission
 			id=1048;
 			type="O_Truck_03_transport_F";
 		};
-		class Item151
+		class Item149
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26167,7 +24603,7 @@ class Mission
 			id=1049;
 			type="O_Truck_03_transport_F";
 		};
-		class Item152
+		class Item150
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26185,7 +24621,7 @@ class Mission
 			id=1050;
 			type="O_Truck_03_transport_F";
 		};
-		class Item153
+		class Item151
 		{
 			dataType="Object";
 			class PositionInfo
@@ -26203,7 +24639,7 @@ class Mission
 			id=1051;
 			type="O_MRAP_02_F";
 		};
-		class Item154
+		class Item152
 		{
 			dataType="Group";
 			side="East";
@@ -26536,7 +24972,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item155
+		class Item153
 		{
 			dataType="Group";
 			side="East";
@@ -26806,7 +25242,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item156
+		class Item154
 		{
 			dataType="Group";
 			side="East";
@@ -27032,7 +25468,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item157
+		class Item155
 		{
 			dataType="Group";
 			side="East";
@@ -27214,7 +25650,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item158
+		class Item156
 		{
 			dataType="Group";
 			side="East";
@@ -27624,7 +26060,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item159
+		class Item157
 		{
 			dataType="Group";
 			side="East";
@@ -28034,7 +26470,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item160
+		class Item158
 		{
 			dataType="Group";
 			side="East";
@@ -28216,7 +26652,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item161
+		class Item159
 		{
 			dataType="Group";
 			side="East";
@@ -28626,7 +27062,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item162
+		class Item160
 		{
 			dataType="Group";
 			side="East";
@@ -29036,7 +27472,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item163
+		class Item161
 		{
 			dataType="Group";
 			side="East";
@@ -29218,7 +27654,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item164
+		class Item162
 		{
 			dataType="Group";
 			side="East";
@@ -29628,7 +28064,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item165
+		class Item163
 		{
 			dataType="Group";
 			side="East";
@@ -30038,7 +28474,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item166
+		class Item164
 		{
 			dataType="Group";
 			side="East";
@@ -30289,7 +28725,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item167
+		class Item165
 		{
 			dataType="Group";
 			side="East";
@@ -30559,7 +28995,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item168
+		class Item166
 		{
 			dataType="Group";
 			side="East";
@@ -30810,7 +29246,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item169
+		class Item167
 		{
 			dataType="Group";
 			side="East";
@@ -31061,7 +29497,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item170
+		class Item168
 		{
 			dataType="Group";
 			side="East";
@@ -31267,7 +29703,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item171
+		class Item169
 		{
 			dataType="Group";
 			side="East";
@@ -31473,7 +29909,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item172
+		class Item170
 		{
 			dataType="Group";
 			side="East";
@@ -31679,7 +30115,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item173
+		class Item171
 		{
 			dataType="Group";
 			side="East";
@@ -31885,7 +30321,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item174
+		class Item172
 		{
 			dataType="Group";
 			side="East";
@@ -32091,7 +30527,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item175
+		class Item173
 		{
 			dataType="Group";
 			side="East";
@@ -32254,7 +30690,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item176
+		class Item174
 		{
 			dataType="Group";
 			side="East";
@@ -32459,7 +30895,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item177
+		class Item175
 		{
 			dataType="Group";
 			side="East";
@@ -32664,7 +31100,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item178
+		class Item176
 		{
 			dataType="Group";
 			side="East";
@@ -32869,7 +31305,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item179
+		class Item177
 		{
 			dataType="Group";
 			side="East";
@@ -33074,7 +31510,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item180
+		class Item178
 		{
 			dataType="Group";
 			side="East";
@@ -33279,7 +31715,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item181
+		class Item179
 		{
 			dataType="Group";
 			side="East";
@@ -33484,7 +31920,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item182
+		class Item180
 		{
 			dataType="Group";
 			side="East";
@@ -33665,7 +32101,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item183
+		class Item181
 		{
 			dataType="Group";
 			side="East";
@@ -33827,7 +32263,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item184
+		class Item182
 		{
 			dataType="Group";
 			side="East";
@@ -34075,7 +32511,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item185
+		class Item183
 		{
 			dataType="Group";
 			side="East";
@@ -34257,7 +32693,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item186
+		class Item184
 		{
 			dataType="Group";
 			side="East";
@@ -34667,7 +33103,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item187
+		class Item185
 		{
 			dataType="Group";
 			side="East";
@@ -35077,7 +33513,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item188
+		class Item186
 		{
 			dataType="Group";
 			side="East";
@@ -35259,7 +33695,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item189
+		class Item187
 		{
 			dataType="Group";
 			side="East";
@@ -35669,7 +34105,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item190
+		class Item188
 		{
 			dataType="Group";
 			side="East";
@@ -36079,7 +34515,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item191
+		class Item189
 		{
 			dataType="Group";
 			side="East";
@@ -36261,7 +34697,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item192
+		class Item190
 		{
 			dataType="Group";
 			side="East";
@@ -36671,7 +35107,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item193
+		class Item191
 		{
 			dataType="Group";
 			side="East";
@@ -37081,7 +35517,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item194
+		class Item192
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37099,7 +35535,7 @@ class Mission
 			id=1246;
 			type="O_MRAP_02_F";
 		};
-		class Item195
+		class Item193
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37117,7 +35553,7 @@ class Mission
 			id=1247;
 			type="O_Truck_03_transport_F";
 		};
-		class Item196
+		class Item194
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37135,7 +35571,7 @@ class Mission
 			id=1248;
 			type="O_Truck_03_transport_F";
 		};
-		class Item197
+		class Item195
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37153,7 +35589,7 @@ class Mission
 			id=1249;
 			type="O_Truck_03_transport_F";
 		};
-		class Item198
+		class Item196
 		{
 			dataType="Object";
 			class PositionInfo
@@ -37171,789 +35607,7 @@ class Mission
 			id=1250;
 			type="O_Truck_03_transport_F";
 		};
-		class Item199
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=38;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={736.13287,5.0014391,760.39221};
-						angles[]={0,6.2789788,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=1252;
-					type="O_officer_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={736.07184,5.0014391,758.4032};
-						angles[]={0,6.2677388,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						description="JIP Offcer (CO/XO/Plt/Sgt)";
-						isPlayable=1;
-					};
-					id=1253;
-					type="O_officer_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.10968,5.0014391,756.43982};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1254;
-					type="O_Soldier_SL_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.16388,5.0014391,758.40619};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1255;
-					type="O_Soldier_SL_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={738.11786,5.0014391,760.41321};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Squad/Weapons Leader";
-						isPlayable=1;
-					};
-					id=1256;
-					type="O_Soldier_SL_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.12799,5.0014391,760.33661};
-						angles[]={0,0.0040792208,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1257;
-					type="O_Soldier_TL_F";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.13116,5.0014391,758.41461};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1258;
-					type="O_Soldier_TL_F";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={740.12549,5.0014391,756.42993};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Fireteam Leader";
-						isPlayable=1;
-					};
-					id=1259;
-					type="O_Soldier_TL_F";
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={742.09576,5.0014391,758.37976};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1260;
-					type="O_Soldier_AAR_F";
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={742.13184,5.0014391,760.39465};
-						angles[]={0,0.0040792208,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1261;
-					type="O_Soldier_AAR_F";
-				};
-				class Item10
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={742.14447,5.0014391,756.43866};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1262;
-					type="O_Soldier_AAR_F";
-				};
-				class Item11
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={744.12067,5.0014391,760.37158};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1263;
-					type="O_Soldier_AR_F";
-				};
-				class Item12
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={744.08728,5.0014391,756.35492};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1264;
-					type="O_Soldier_AR_F";
-				};
-				class Item13
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={744.16681,5.0014391,758.45343};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1265;
-					type="O_Soldier_AR_F";
-				};
-				class Item14
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={746.12323,5.0014391,760.349};
-						angles[]={0,0.0040792208,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1266;
-					type="O_Soldier_LAT_F";
-				};
-				class Item15
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={746.08057,5.0014391,758.2934};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1267;
-					type="O_Soldier_LAT_F";
-				};
-				class Item16
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={746.10144,5.0014391,756.40271};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=1268;
-					type="O_Soldier_LAT_F";
-				};
-				class Item17
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.15588,5.0014391,760.38519};
-						angles[]={0,0.0040840702,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1269;
-					type="O_Soldier_F";
-				};
-				class Item18
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.17126,5.0014391,758.53851};
-						angles[]={0,0.0040840702,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1270;
-					type="O_Soldier_F";
-				};
-				class Item19
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.17249,5.0014391,756.51782};
-						angles[]={0,0.0040840702,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1271;
-					type="O_Soldier_F";
-				};
-				class Item20
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.16199,5.0014391,754.51245};
-						angles[]={0,0.0040840702,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1272;
-					type="O_Soldier_F";
-				};
-				class Item21
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={748.17456,5.0014391,752.50348};
-						angles[]={0,0.0040840702,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Rifleman";
-						isPlayable=1;
-					};
-					id=1273;
-					type="O_Soldier_F";
-				};
-				class Item22
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={750.13013,5.0014391,760.40442};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=1274;
-					type="O_medic_F";
-				};
-				class Item23
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={750.08698,5.0014391,758.34833};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						description="JIP Medic";
-						isPlayable=1;
-					};
-					id=1275;
-					type="O_medic_F";
-				};
-				class Item24
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={752.1004,5.0014391,760.25684};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=1276;
-					type="O_helipilot_F";
-				};
-				class Item25
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={752.14783,5.0014391,758.39502};
-						angles[]={0,0.0090104537,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						description="JIP Helo Pilot";
-						isPlayable=1;
-					};
-					id=1277;
-					type="O_helipilot_F";
-				};
-				class Item26
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.12585,5.0014391,760.32916};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1278;
-					type="O_soldier_repair_F";
-				};
-				class Item27
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.15283,5.0014391,758.37421};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1279;
-					type="O_soldier_repair_F";
-				};
-				class Item28
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={754.15808,5.0014391,756.54437};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						description="JIP Crew Chief/Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1280;
-					type="O_soldier_repair_F";
-				};
-				class Item29
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.15887,5.0014391,760.47919};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_OPF_TNK1_C_1";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1281;
-					type="O_crew_F";
-				};
-				class Item30
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.15302,5.0014391,758.49518};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_OPF_TNK1_C_2";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1282;
-					type="O_crew_F";
-				};
-				class Item31
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={756.1413,5.0014391,756.51471};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UNIT_OPF_TNK1_C_3";
-						description="JIP Vehicle Commander/Gunner";
-						isPlayable=1;
-					};
-					id=1283;
-					type="O_crew_F";
-				};
-				class Item32
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={758.16187,5.0014391,760.43317};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Spotter";
-						isPlayable=1;
-					};
-					id=1284;
-					type="O_Soldier_A_F";
-				};
-				class Item33
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={760.19183,5.0014391,760.38019};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP MMG Gunner";
-						isPlayable=1;
-					};
-					id=1285;
-					type="O_support_MG_F";
-				};
-				class Item34
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={762.12189,5.0014391,760.38416};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_OPF_MAT1_AG_1";
-						description="JIP MAT Spotter";
-						isPlayable=1;
-					};
-					id=1286;
-					type="O_Soldier_AAT_F";
-				};
-				class Item35
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={764.15686,5.0014391,760.29919};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						name="UNIT_OPF_MAT1_G_1";
-						description="JIP MAT Gunner";
-						isPlayable=1;
-					};
-					id=1287;
-					type="O_Soldier_AT_F";
-				};
-				class Item36
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={766.07684,5.0014391,760.39417};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Demo)";
-						isPlayable=1;
-					};
-					id=1288;
-					type="O_soldier_exp_F";
-				};
-				class Item37
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={768.24188,5.0014391,760.28021};
-						angles[]={0,0.0090058986,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						description="JIP Engineer (Mine)";
-						isPlayable=1;
-					};
-					id=1289;
-					type="O_engineer_F";
-				};
-			};
-			class Attributes
-			{
-				name="GROUP_OPF_JIP";
-			};
-			id=1251;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="OpFor JIP";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item200
+		class Item197
 		{
 			dataType="Logic";
 			class PositionInfo
