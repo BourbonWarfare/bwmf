@@ -196,7 +196,7 @@ randomSeed=10562329;
 class ScenarioData
 {
 	author="*** Insert author name here. ***";
-	onLoadMission="Made with the BW Mission Framework - Based on F3";
+	onLoadMission="Made with the SC Mission Framework - Based on F3";
 	loadScreen="\z\potato\addons\missionModules\images\bwbanner01.jpg";
 	saving=0;
 	class Header
@@ -9643,7 +9643,7 @@ class Mission
 			{
 				position[]={624.03351,5,849.91833};
 			};
-			name="bwmf_placedZeus_1";
+			name="scmf_placedZeus_1";
 			id=705;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -9786,7 +9786,7 @@ class Mission
 			{
 				position[]={626.0705,5,849.86035};
 			};
-			name="bwmf_placedZeus_2";
+			name="scmf_placedZeus_2";
 			id=707;
 			type="ModuleCurator_F";
 			class CustomAttributes
@@ -9896,7 +9896,7 @@ class Mission
 			{
 				position[]={628.07947,5,849.83734};
 			};
-			name="bwmf_placedZeus_3";
+			name="scmf_placedZeus_3";
 			id=708;
 			type="ModuleCurator_F";
 			class CustomAttributes

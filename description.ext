@@ -1,6 +1,6 @@
 onLoadName = "*** Insert mission name here. ***";
 
-// BWMF Gear
+// SCMF Gear
 //Credits:headswe, Pabst, Zerith
 #include "CfgLoadouts.hpp"
 
@@ -19,7 +19,7 @@ onLoadName = "*** Insert mission name here. ***";
 // Functions
 #include "cfg\CfgFunctions.hpp"
 
-bwmfDate = "2016/09/27"; //Framework date
+scmfDate = "2016/09/27"; //Framework date
 
 class CfgDebriefingSections {
   class acex_killTracker {
