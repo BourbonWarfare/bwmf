@@ -226,7 +226,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="true,false,true,0.25,Negotiations,8,false,false";
+					value="true,false,true,0,Negotiations,8,false,false";
 				};
 			};
 		};
