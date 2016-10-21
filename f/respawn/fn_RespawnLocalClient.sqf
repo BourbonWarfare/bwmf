@@ -60,10 +60,16 @@ if (_leader) then {
   // Exit Spectator
   [true] call F_fnc_ForceExit;
 
+  // gc old unit
+  _oldUnit = player;
+
   // 'respawn'
   selectPlayer _newUnit;
 
   publicVariable _groupVarName;
+
+  deleteVehicle _oldUnit;
+
 }
 else {
   private _tempGroup = createGroup _side;
@@ -80,6 +86,9 @@ else {
 
   // Exit Spectator
   [true] call F_fnc_ForceExit;
+
+  // gc old unit
+  _oldUnit = player;
 
   // 'respawn'
   selectPlayer _newUnit;
@@ -103,6 +112,9 @@ else {
     deleteGroup _tempGroup;
   };
   diag_log format ["[bwmf] - Respawn 'post' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
+
+  deleteVehicle _oldUnit;
+
 };
 
 player setVariable ["f_respawnName", name player, true];
