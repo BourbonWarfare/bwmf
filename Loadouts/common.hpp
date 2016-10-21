@@ -17,7 +17,7 @@
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:3","ACE_packingBandage:3","ACE_morphine","ACE_tourniquet:2"
 #define MEDIC_MEDICAL "ACE_fieldDressing:15","ACE_elasticBandage:20","ACE_packingBandage:20","ACE_atropine:6","ACE_morphine:8","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_personalAidKit","ACE_tourniquet:5"
-#define BASE_TOOLS RADIO_SR "ACE_MapTools"
+#define BASE_TOOLS RADIO_SR,"ACE_MapTools"
 #define LEADER_TOOLS "ACE_Flashlight_KSF1"
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
 #define LEADER_LINKED "ItemGPS"
