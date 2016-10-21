@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: PabstMirror
 //Description: German: G36 - Tropen Camo
 
 class ind_f {

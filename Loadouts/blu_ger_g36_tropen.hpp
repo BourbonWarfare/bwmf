@@ -1,5 +1,5 @@
-//Author: AACO
-//Description: German: G36 - Flecktarn Camo
+//Author: Soviet
+//Description: German: G36 - Troppentarn Camo
 
 class blu_f {
   //Rifle
@@ -56,10 +56,10 @@ class blu_f {
   class Ship_F {};
 
   class B_Soldier_F {// rifleman
-    uniform[] = {"BWA3_Uniform_Fleck","BWA3_Uniform2_Fleck"};
-    vest[] = {"BWA3_Vest_Fleck","BWA3_Vest_Rifleman1_Fleck"};
-    headgear[] = {"BWA3_OpsCore_Fleck","BWA3_OpsCore_Fleck_Patch","BWA3_OpsCore_Fleck_Camera","BWA3_OpsCore_Schwarz"};
-    backpack[] = {"BWA3_Kitbag_Fleck"};
+    uniform[] = {"BWA3_Uniform_Tropen","BWA3_Uniform2_Tropen"};
+    vest[] = {"BWA3_Vest_Tropen","BWA3_Vest_Rifleman1_Tropen"};
+    headgear[] = {"BWA3_OpsCore_Tropen","BWA3_OpsCore_Tropen_Patch","BWA3_OpsCore_Tropen_Camera"};
+    backpack[] = {"BWA3_Kitbag_Tropen"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
@@ -72,7 +72,7 @@ class blu_f {
     magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
-    vest[] = {"BWA3_Vest_Leader_Fleck","BWA3_Vest_Grenadier_Fleck"};
+    vest[] = {"BWA3_Vest_Leader_Tropen","BWA3_Vest_Grenadier_Tropen"};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
     items[] += {WEST_LEADER_TOOLS};
@@ -92,7 +92,7 @@ class blu_f {
     linkedItems[] += {"B_uavterminal"};
   };
   class B_Soldier_AR_F: B_Soldier_F {// AR
-    vest[] = {"BWA3_Vest_Autorifleman_Fleck"};
+    vest[] = {"BWA3_Vest_Autorifleman_Tropen"};
     weapons[] = {WEST_AR};
     magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
     handguns[] = {WEST_PISTOL};
@@ -107,8 +107,8 @@ class blu_f {
     launchers[] = {WEST_AT};
   };
   class B_medic_F: Fic_Soldier_Carbine {// Medic
-    vest[] = {"BWA3_Vest_Medic_Fleck"};
-    backpack[] = {"BWA3_Kitbag_Fleck_Medic"};
+    vest[] = {"BWA3_Vest_Medic_Tropen"};
+    backpack[] = {"BWA3_Kitbag_Tropen_Medic"};
     magazines[] = {WEST_CARBINE_MAG,MEDIC_GRENADES};
     backpackItems[] = {MEDIC_MEDICAL};
   };
@@ -124,19 +124,19 @@ class blu_f {
     backpackItems[] += {WEST_MMG_MAG};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
+    LAUNCHER_GEAR("BWA3_Carryall_Tropen", WEST_MAT_MAG)
     launchers[] = {WEST_MAT};
     secondaryAttachments[] = {WEST_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
+    LAUNCHER_GEAR("BWA3_Carryall_Tropen", WEST_MAT_MAG)
   };
   class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG)
+    LAUNCHER_GEAR("BWA3_Carryall_Tropen", WEST_SAM_MAG)
     launchers[] = {WEST_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG2)
+    LAUNCHER_GEAR("BWA3_Carryall_Tropen", WEST_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -145,8 +145,8 @@ class blu_f {
     MORTAR_GEAR("B_Mortar_01_support_F")
   };
   class B_spotter_F: Fic_Spotter {// Spotter
-    uniform[] = {"BWA3_Uniform_Ghillie_Fleck"};
-    vest[] = {"BWA3_Vest_Marksman_Fleck"};
+    uniform[] = {"BWA3_Uniform_Ghillie_Tropen"};
+    vest[] = {"BWA3_Vest_Marksman_Tropen"};
     headgear[] = {};
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
@@ -173,9 +173,9 @@ class blu_f {
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot
   class B_crew_F: Fic_Soldier_Carbine {// Crew
-    uniform[] = {"BWA3_Uniform_Crew_Fleck"};
-    headgear[] = {"BWA3_CrewmanKSK_Fleck_Headset"};
-    backpack[] = {"BWA3_Kitbag_Fleck"};
+    uniform[] = {"BWA3_Uniform_Crew_Tropen"};
+    headgear[] = {"BWA3_CrewmanKSK_Tropen_Headset"};
+    backpack[] = {"BWA3_Kitbag_Tropen"};
     magazines[] = {WEST_CARBINE_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,BINOS};
@@ -186,7 +186,7 @@ class blu_f {
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class Fic_eng: B_soldier_repair_F {
-    backpack[] = {"BWA3_PatrolPack_Fleck"};
+    backpack[] = {"BWA3_PatrolPack_Tropen"};
     backpackItems[] = {};
     items[] += {BASE_ENG};
   };

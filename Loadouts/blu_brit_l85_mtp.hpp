@@ -1,4 +1,4 @@
-//Author: BWMF
+//Author: Soviet
 //Description: British: L86 - Multi-Terrain Pattern
 
 class blu_f {

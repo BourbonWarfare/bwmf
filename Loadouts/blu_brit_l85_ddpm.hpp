@@ -1,51 +1,51 @@
-//Author: AACO
-//Description: German: G36 - Flecktarn Camo
+//Author: Soviet
+//Description: British: L86 - Disruptive Desert
 
 class blu_f {
   //Rifle
-  #define WEST_RIFLE "BWA3_G36"
-  #define WEST_RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
-  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","BWA3_acc_LLM01_irlaser"
+  #define WEST_RIFLE "UK3CB_BAF_L85A2_RIS","UK3CB_BAF_L85A2_RIS_AFG"
+  #define WEST_RIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
+  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","UK3CB_BAF_LLM_IR_Black"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
-  #define WEST_GLRIFLE "BWA3_G36_AG"
+  #define WEST_GLRIFLE "UK3CB_BAF_L85A2_UGL_HWS","UK3CB_BAF_L85A2_UGL"
   #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
   #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
   #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
   #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
   //Carbine
-  #define WEST_CARBINE "BWA3_G36K"
+  #define WEST_CARBINE WEST_RIFLE
   #define WEST_CARBINE_MAG WEST_RIFLE_MAG
   // AR
-  #define WEST_AR "BWA3_MG4"
-  #define WEST_AR_MAG "BWA3_200Rnd_556x45:2"
+  #define WEST_AR "UK3CB_BAF_L110A2"
+  #define WEST_AR_MAG "UK3CB_BAF_556_100Rnd_T:4"
   // AT
-  #define WEST_AT "BWA3_Pzf3"
-  #define WEST_AT_MAG "BWA3_Pzf3_IT"
+  #define WEST_AT "UK3CB_BAF_AT4_CS_AP_Launcher"
   // MMG
-  #define WEST_MMG "BWA3_MG5"
-  #define WEST_MMG_MAG "BWA3_120Rnd_762x51:4"
+  #define WEST_MMG "UK3CB_BAF_L7A2"
+  #define WEST_MMG_MAG "UK3CB_BAF_762_100Rnd_T:6"
+  #define WEST_MMG_MAG2 "UK3CB_BAF_762_100Rnd_T:5"
   // Sniper Rifle
-  #define WEST_SNIPER "BWA3_G28_Standard"
-  #define WEST_SNIPER_MAG "BWA3_10Rnd_762x51_G28:10"
+  #define WEST_SNIPER "UK3CB_BAF_L135A1"
+  #define WEST_SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
   // Spotter Rifle
-  #define WEST_SPOTTER "BWA3_G36"
-  #define WEST_SPOTTER_MAG "BWA3_30Rnd_556x45_G36:8"
+  #define WEST_SPOTTER "UK3CB_BAF_L86A3"
+  #define WEST_SPOTTER_MAG WEST_RIFLE_MAG
   // SMG
-  #define WEST_SMG "BWA3_MP7"
-  #define WEST_SMG_MAG "BWA3_40Rnd_46x30_MP7:6"
+  #define WEST_SMG "UK3CB_BAF_L91A1"
+  #define WEST_SMG_MAG "UK3CB_BAF_9_30Rnd:6"
   // Pistol
-  #define WEST_PISTOL "BWA3_P8"
-  #define WEST_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
+  #define WEST_PISTOL "UK3CB_BAF_L131A1"
+  #define WEST_PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
 
   class Car {
     TransportWeapons[] = {WEST_AT};
-    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
+    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
     TransportItems[] = {WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL};
   };
   class Tank {
     TransportWeapons[] = {WEST_AT};
-    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
+    TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
     TransportItems[] = {WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL,WEST_BASE_MEDICAL};
   };
   class Helicopter {
@@ -56,10 +56,10 @@ class blu_f {
   class Ship_F {};
 
   class B_Soldier_F {// rifleman
-    uniform[] = {"BWA3_Uniform_Fleck","BWA3_Uniform2_Fleck"};
-    vest[] = {"BWA3_Vest_Fleck","BWA3_Vest_Rifleman1_Fleck"};
-    headgear[] = {"BWA3_OpsCore_Fleck","BWA3_OpsCore_Fleck_Patch","BWA3_OpsCore_Fleck_Camera","BWA3_OpsCore_Schwarz"};
-    backpack[] = {"BWA3_Kitbag_Fleck"};
+    uniform[] = {"UK3CB_BAF_U_Smock_DDPM"};
+    vest[] = {"UK3CB_BAF_V_Osprey_DDPM1","UK3CB_BAF_V_Osprey_DDPM2","UK3CB_BAF_V_Osprey_DDPM3","UK3CB_BAF_V_Osprey_DDPM4","UK3CB_BAF_V_Osprey_DDPM5","UK3CB_BAF_V_Osprey_DDPM6"};
+    headgear[] = {"UK3CB_BAF_H_Mk6_DDPM_A","UK3CB_BAF_H_Mk6_DDPM_B","UK3CB_BAF_H_Mk6_DDPM_C","UK3CB_BAF_H_Mk6_DDPM_D","UK3CB_BAF_H_Mk6_DDPM_E","UK3CB_BAF_H_Mk6_DDPM_F"};
+    backpack[] = {"UK3CB_BAF_B_Bergen_DDPM_Rifleman_A","UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"};
     backpackItems[] = {BASE_MEDICAL};
     weapons[] = {WEST_RIFLE};
     magazines[] = {WEST_RIFLE_MAG,WEST_BASE_GRENADES};
@@ -72,13 +72,13 @@ class blu_f {
     magazines[] = {WEST_CARBINE_MAG,WEST_BASE_GRENADES};
   };
   class B_Soldier_TL_F: B_Soldier_F {// FTL
-    vest[] = {"BWA3_Vest_Leader_Fleck","BWA3_Vest_Grenadier_Fleck"};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_LEADER_GRENADES};
     items[] += {WEST_LEADER_TOOLS};
     linkedItems[] += {WEST_LEADER_LINKED,BINOS};
   };
   class B_Soldier_SL_F: B_Soldier_TL_F {// SL
+    backpack[] = {"UK3CB_BAF_B_Bergen_DDPM_SL_A"};
     handguns[] = {WEST_PISTOL};
     magazines[] += {WEST_PISTOL_MAG};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,RANGE_FINDER};
@@ -92,7 +92,6 @@ class blu_f {
     linkedItems[] += {"B_uavterminal"};
   };
   class B_Soldier_AR_F: B_Soldier_F {// AR
-    vest[] = {"BWA3_Vest_Autorifleman_Fleck"};
     weapons[] = {WEST_AR};
     magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
     handguns[] = {WEST_PISTOL};
@@ -103,12 +102,10 @@ class blu_f {
     linkedItems[] += {BINOS};
   };
   class B_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
-    magazines[] += {WEST_AT_MAG};
     launchers[] = {WEST_AT};
   };
   class B_medic_F: Fic_Soldier_Carbine {// Medic
-    vest[] = {"BWA3_Vest_Medic_Fleck"};
-    backpack[] = {"BWA3_Kitbag_Fleck_Medic"};
+    backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
     magazines[] = {WEST_CARBINE_MAG,MEDIC_GRENADES};
     backpackItems[] = {MEDIC_MEDICAL};
   };
@@ -116,27 +113,29 @@ class blu_f {
     linkedItems[] += {RANGE_FINDER};
   };
   class B_support_MG_F: B_Soldier_AR_F {// MMG
+    backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
     weapons[] = {WEST_MMG};
     magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
     attachments[] = {};
   };
   class B_Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-    backpackItems[] += {WEST_MMG_MAG};
+    backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+    backpackItems[] += {WEST_MMG_MAG2};
   };
   class B_soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Carryall_DDPM", WEST_MAT_MAG)
     launchers[] = {WEST_MAT};
     secondaryAttachments[] = {WEST_MAT_OPTIC};
   };
   class B_Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_MAT_MAG)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Carryall_DDPM", WEST_MAT_MAG)
   };
   class B_soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Carryall_DDPM", WEST_SAM_MAG)
     launchers[] = {WEST_SAM};
   };
   class B_Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-    LAUNCHER_GEAR("BWA3_Carryall_Fleck", WEST_SAM_MAG2)
+    LAUNCHER_GEAR("UK3CB_BAF_B_Carryall_DDPM", WEST_SAM_MAG2)
   };
   class B_support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
     MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -145,9 +144,10 @@ class blu_f {
     MORTAR_GEAR("B_Mortar_01_support_F")
   };
   class B_spotter_F: Fic_Spotter {// Spotter
-    uniform[] = {"BWA3_Uniform_Ghillie_Fleck"};
-    vest[] = {"BWA3_Vest_Marksman_Fleck"};
-    headgear[] = {};
+    uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
+    vest[] = {"UK3CB_BAF_V_Osprey_Marksman_A"};
+    headgear[] = {"UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C"};
+    backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"};
     weapons[] = {WEST_SPOTTER};
     magazines[] = {WEST_SPOTTER_MAG,WEST_BASE_GRENADES};
     items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
@@ -158,13 +158,13 @@ class blu_f {
     magazines[] = {WEST_SNIPER_MAG,WEST_BASE_GRENADES};
     items[] = {WEST_BASE_TOOLS,"ACE_RangeCard"};
     linkedItems[] = {WEST_BASE_LINKED};
-    attachments[] = {"BWA3_optic_Shortdot","BWA3_acc_VarioRay_irlaser"};
+    attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
   };
   class B_Helipilot_F {// Pilot
-    uniform[] = {"U_B_HeliPilotCoveralls"};
+    uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
     backpack[] = {"B_AssaultPack_blk"};
-    vest[] = {"V_TacVest_blk"};
-    headgear[] = {"H_PilotHelmetHeli_B"};
+    vest[] = {"UK3CB_BAF_V_Pilot_A"};
+    headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
     weapons[] = {WEST_SMG};
     magazines[] = {WEST_SMG_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
@@ -173,22 +173,20 @@ class blu_f {
   };
   class B_helicrew_F: B_Helipilot_F {}; // Pilot
   class B_crew_F: Fic_Soldier_Carbine {// Crew
-    uniform[] = {"BWA3_Uniform_Crew_Fleck"};
-    headgear[] = {"BWA3_CrewmanKSK_Fleck_Headset"};
-    backpack[] = {"BWA3_Kitbag_Fleck"};
+    backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
     magazines[] = {WEST_CARBINE_MAG,CREW_GRENADES};
     backpackItems[] = {KEY_WEST,RADIO_LR};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED,BINOS};
     items[] += {BASE_MEDICAL};
   };
   class B_soldier_repair_F: B_crew_F {// Repair Specialist
+    backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
     backpackItems[] = {"Toolkit",RADIO_MR,KEY_WEST};
     linkedItems[] = {WEST_BASE_LINKED,WEST_LEADER_LINKED};
   };
   class Fic_eng: B_soldier_repair_F {
-    backpack[] = {"BWA3_PatrolPack_Fleck"};
-    backpackItems[] = {};
     items[] += {BASE_ENG};
+    backpackItems[] = {};
   };
   class B_soldier_exp_F: Fic_eng {// Explosive Specialist
     magazines[] += {BASE_EXP};

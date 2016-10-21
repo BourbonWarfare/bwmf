@@ -21,7 +21,6 @@ class blu_f {
   #define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
   // AT
   #define WEST_AT "rhs_weap_M136"
-  #define WEST_AT_MAG "rhs_m136_mag"
   // MMG
   #define WEST_MMG "rhs_weap_m240B"
   #define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
@@ -106,7 +105,6 @@ class blu_f {
     linkedItems[] += {BINOS};
   };
   class B_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
-    magazines[] += {WEST_AT_MAG};
     launchers[] = {WEST_AT};
   };
   class B_medic_F: Fic_Soldier_Carbine {// Medic
