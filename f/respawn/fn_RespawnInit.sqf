@@ -27,7 +27,11 @@ if (isServer) then {
           _uid = _x getVariable ["f_respawnUID", ""];
 
           if (_uid != "") then {
-            f_serverRespawnableUnits pushBackUnique _uid;
+            _added = f_serverRespawnableUnits pushBackUnique _uid;
+            if (_added != -1) then {
+              _x enableSimulationGlobal false;
+              _x hideObjectGlobal true;
+            };
           };
 
         };
