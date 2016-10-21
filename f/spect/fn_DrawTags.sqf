@@ -9,16 +9,18 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
   _isPlayerGroup = false;
 
   {
-      _distToCam = (call f_cam_GetCurrentCam) distance _x;
-      if(isPlayer _x) then {_isPlayerGroup = true};
-      if(_distToCam < 200) then
-      {
-          _drawUnits pushBack _x;
-      }
-      else
-      {
-          _drawGroup = true;
-      };
+    if (!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)) then {
+        _distToCam = (call f_cam_GetCurrentCam) distance _x;
+        if(isPlayer _x) then {_isPlayerGroup = true};
+        if(_distToCam < 200) then
+        {
+            _drawUnits pushBack _x;
+        }
+        else
+        {
+            _drawGroup = true;
+        };
+    };
     nil
   } count units _x;
 
