@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1301;
+		nextID=1337;
 	};
 	class Camera
 	{
@@ -2095,7 +2095,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.96844,5.0014391,935.95563};
+						position[]={679.96802,5.0014391,935.95599};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2131,7 +2131,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -2139,7 +2158,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={675.8739,5.0014391,931.99792};
+						position[]={675.87402,5.0014391,931.99799};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2263,7 +2282,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.85699,5.0014391,930.09711};
+						position[]={679.85699,5.0014391,930.09698};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2271,7 +2290,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A1_AT";
+						name="UNIT_BLU_A1_AT1";
 						description="BluFor Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -2313,7 +2332,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -2325,7 +2344,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={683.70398,5.0014391,931.94098};
+						position[]={685.82599,5.0014391,933.90601};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2333,11 +2352,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A1_R1";
-						description="BluFor Alpha 1 Rifleman 1";
+						name="UNIT_BLU_A1_R";
+						description="BluFor Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=86;
+					id=87;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -2375,7 +2394,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -2387,7 +2406,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={685.82599,5.0014391,933.90601};
+						position[]={683.70398,5.0014391,931.94098};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2395,12 +2414,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A1_R2";
-						description="BluFor Alpha 1 Rifleman 2";
+						name="UNIT_BLU_A1_AT2";
+						description="BluFor Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=87;
-					type="B_Soldier_F";
+					id=1301;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2422,7 +2441,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -2505,7 +2543,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.82098,5.0014391,922.05017};
+						position[]={679.82098,5.0014391,922.04999};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2541,7 +2579,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -2549,7 +2606,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={675.68793,5.0014391,918.11554};
+						position[]={675.68799,5.0014391,918.11597};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2599,7 +2656,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BLUE";
+									value="MAIN";
 								};
 							};
 						};
@@ -2611,7 +2668,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={673.8064,5.0014391,920.10376};
+						position[]={673.80603,5.0014391,920.104};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2661,7 +2718,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BLUE";
+									value="MAIN";
 								};
 							};
 						};
@@ -2673,7 +2730,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.80621,5.0014391,916.0791};
+						position[]={679.80603,5.0014391,916.07898};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2681,7 +2738,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A2_AT";
+						name="UNIT_BLU_A2_AT1";
 						description="BluFor Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -2723,7 +2780,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -2735,7 +2792,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={683.763,5.0014391,918.07697};
+						position[]={685.66302,5.0014391,920.13};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2743,11 +2800,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A2_R1";
-						description="BluFor Alpha 2 Rifleman 1";
+						name="UNIT_BLU_A2_R";
+						description="BluFor Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=93;
+					id=94;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -2785,7 +2842,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -2797,7 +2854,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={685.66302,5.0014391,920.13};
+						position[]={683.763,5.0014391,918.07697};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -2805,12 +2862,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_A2_R2";
-						description="BluFor Alpha 2 Rifleman 2";
+						name="UNIT_BLU_A2_AT2";
+						description="BluFor Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=94;
-					type="B_Soldier_F";
+					id=1302;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2832,7 +2889,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -3097,7 +3173,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={699.91699,5.0014391,935.67572};
+						position[]={699.91699,5.0014391,935.67596};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3133,7 +3209,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -3265,7 +3360,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={699.92163,5.0014391,929.89893};
+						position[]={699.922,5.0014391,929.89899};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3273,7 +3368,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B1_AT";
+						name="UNIT_BLU_B1_AT1";
 						description="BluFor Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -3315,7 +3410,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -3327,7 +3422,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={703.862,5.0014391,931.89001};
+						position[]={705.98499,5.0014391,933.784};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3335,11 +3430,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B1_R1";
-						description="BluFor Bravo 1 Rifleman 1";
+						name="UNIT_BLU_B1_R";
+						description="BluFor Bravo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=103;
+					id=104;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -3377,7 +3472,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -3389,7 +3484,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={705.98499,5.0014391,933.784};
+						position[]={703.862,5.0014391,931.89001};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3397,12 +3492,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B1_R2";
-						description="BluFor Bravo 1 Rifleman 2";
+						name="UNIT_BLU_B1_AT2";
+						description="BluFor Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=104;
-					type="B_Soldier_F";
+					id=1303;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3424,7 +3519,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -3507,7 +3621,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={699.89893,5.0014391,921.84631};
+						position[]={699.89899,5.0014391,921.84601};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3543,7 +3657,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -3675,7 +3808,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={699.93829,5.0014391,915.93103};
+						position[]={699.93799,5.0014391,915.93097};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3683,7 +3816,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B2_AT";
+						name="UNIT_BLU_B2_AT1";
 						description="BluFor Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -3725,7 +3858,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -3737,7 +3870,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={703.88702,5.0014391,917.83899};
+						position[]={706,5.0014391,919.72101};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3745,11 +3878,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B2_R1";
-						description="BluFor Bravo 2 Rifleman 1";
+						name="UNIT_BLU_B2_R";
+						description="BluFor Bravo 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=110;
+					id=111;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -3787,7 +3920,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -3799,7 +3932,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={705.99902,5.0014391,919.72101};
+						position[]={703.88702,5.0014391,917.83899};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -3807,12 +3940,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_B2_R2";
-						description="BluFor Bravo 2 Rifleman 2";
+						name="UNIT_BLU_B2_AT2";
+						description="BluFor Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=111;
-					type="B_Soldier_F";
+					id=1304;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3834,7 +3967,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -4099,8 +4251,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.81946,5.0014391,936.01654};
-						angles[]={0,0.0090104537,0};
+						position[]={719.81897,5.0014391,936.01697};
+						angles[]={0,0.0090058986,0};
 					};
 					side="West";
 					flags=6;
@@ -4135,7 +4287,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -4267,15 +4438,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.92596,5.0014391,929.97601};
-						angles[]={0,0.0090104537,0};
+						position[]={719.92603,5.0014391,929.97601};
+						angles[]={0,0.0090058986,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C1_AT";
+						name="UNIT_BLU_C1_AT1";
 						description="BluFor Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -4317,7 +4488,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -4329,7 +4500,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.85901,5.0014391,932.00098};
+						position[]={725.99402,5.0014391,933.84698};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -4337,11 +4508,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C1_R1";
-						description="BluFor Charlie 1 Rifleman 1";
+						name="UNIT_BLU_C1_R";
+						description="BluFor Charlie 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=120;
+					id=121;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -4379,7 +4550,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -4391,7 +4562,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={725.99402,5.0014391,933.84698};
+						position[]={723.85901,5.0014391,932.00098};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -4399,12 +4570,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C1_R2";
-						description="BluFor Charlie 1 Rifleman 2";
+						name="UNIT_BLU_C1_AT2";
+						description="BluFor Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=121;
-					type="B_Soldier_F";
+					id=1305;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4426,7 +4597,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -4509,8 +4699,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.85175,5.0014391,921.9873};
-						angles[]={0,0.0090104537,0};
+						position[]={719.85199,5.0014391,921.987};
+						angles[]={0,0.0090058986,0};
 					};
 					side="West";
 					flags=6;
@@ -4545,7 +4735,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -4677,15 +4886,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.91711,5.0014391,916.06537};
-						angles[]={0,0.0090104537,0};
+						position[]={719.91699,5.0014391,916.065};
+						angles[]={0,0.0090058986,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C2_AT";
+						name="UNIT_BLU_C2_AT1";
 						description="BluFor Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -4727,7 +4936,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -4739,7 +4948,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.85498,5.0014391,918.04102};
+						position[]={725.90503,5.0014391,920.01196};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -4747,11 +4956,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C2_R1";
-						description="BluFor Charlie 2 Rifleman 1";
+						name="UNIT_BLU_C2_R";
+						description="BluFor Charlie 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=127;
+					id=128;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -4789,7 +4998,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -4801,7 +5010,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={725.90503,5.0014391,920.01196};
+						position[]={723.85498,5.0014391,918.04102};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -4809,12 +5018,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_C2_R2";
-						description="BluFor Charlie 2 Rifleman 2";
+						name="UNIT_BLU_C2_AT2";
+						description="BluFor Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=128;
-					type="B_Soldier_F";
+					id=1306;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4836,7 +5045,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -9150,8 +9378,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={783.84515,5.0014391,936.35516};
-						angles[]={0,6.1928158,0};
+						position[]={783.84497,5.0014391,936.35498};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -9186,7 +9414,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -9318,15 +9565,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={784.03601,5.0014391,930.08655};
-						angles[]={0,6.1928158,0};
+						position[]={784.03601,5.0014391,930.08698};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D1_AT";
+						name="UNIT_BLU_D1_AT1";
 						description="BluFor Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -9368,7 +9615,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -9380,7 +9627,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={788.06897,5.0014391,932.039};
+						position[]={790.03302,5.0014391,934.01801};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -9388,11 +9635,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D1_R1";
-						description="BluFor Delta 1 Rifleman 1";
+						name="UNIT_BLU_D1_R";
+						description="BluFor Delta 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=472;
+					id=473;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -9430,7 +9677,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -9442,7 +9689,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={790.03302,5.0014391,934.01801};
+						position[]={788.06897,5.0014391,932.039};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -9450,12 +9697,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D1_R2";
-						description="BluFor Delta 1 Rifleman 2";
+						name="UNIT_BLU_D1_AT2";
+						description="BluFor Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=473;
-					type="B_Soldier_F";
+					id=1307;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9477,7 +9724,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -9560,8 +9826,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={784.23828,5.0014391,921.90015};
-						angles[]={0,6.1928158,0};
+						position[]={784.23798,5.0014391,921.89996};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -9596,7 +9862,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -9728,15 +10013,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={784.03168,5.0014391,916.13745};
-						angles[]={0,6.1928158,0};
+						position[]={784.03198,5.0014391,916.13696};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D2_AT";
+						name="UNIT_BLU_D2_AT1";
 						description="BluFor Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -9778,7 +10063,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -9790,7 +10075,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={788.01001,5.0014391,917.96698};
+						position[]={789.99597,5.0014391,920.01898};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -9798,11 +10083,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D2_R1";
-						description="BluFor Delta 2 Rifleman 1";
+						name="UNIT_BLU_D2_R";
+						description="BluFor Delta 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=479;
+					id=480;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -9840,7 +10125,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -9852,7 +10137,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={789.99597,5.0014391,920.01898};
+						position[]={788.01001,5.0014391,917.96698};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -9860,12 +10145,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_D2_R2";
-						description="BluFor Delta 2 Rifleman 2";
+						name="UNIT_BLU_D2_AT2";
+						description="BluFor Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=480;
-					type="B_Soldier_F";
+					id=1308;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9887,7 +10172,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -10152,8 +10456,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.03192,5.0014391,936.00037};
-						angles[]={0,6.1928158,0};
+						position[]={804.03198,5.0014391,936};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -10188,7 +10492,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -10320,15 +10643,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.00824,5.0014391,930.03174};
-						angles[]={0,6.1928158,0};
+						position[]={804.008,5.0014391,930.03198};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E1_AT";
+						name="UNIT_BLU_E1_AT1";
 						description="BluFor Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -10370,7 +10693,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -10382,7 +10705,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={807.98798,5.0014391,932.04498};
+						position[]={809.992,5.0014391,933.96497};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -10390,11 +10713,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E1_R1";
-						description="BluFor Echo 1 Rifleman 1";
+						name="UNIT_BLU_E1_R";
+						description="BluFor Echo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=489;
+					id=490;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -10432,7 +10755,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -10444,7 +10767,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={809.992,5.0014391,933.96497};
+						position[]={807.98798,5.0014391,932.04498};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -10452,12 +10775,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E1_R2";
-						description="BluFor Echo 1 Rifleman 2";
+						name="UNIT_BLU_E1_AT2";
+						description="BluFor Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=490;
-					type="B_Soldier_F";
+					id=1309;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10479,7 +10802,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -10562,8 +10904,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.02686,5.0014391,921.98169};
-						angles[]={0,6.1928158,0};
+						position[]={804.02698,5.0014391,921.98199};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -10598,7 +10940,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -10730,15 +11091,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.01013,5.0014391,916.05261};
-						angles[]={0,6.1928158,0};
+						position[]={804.01001,5.0014391,916.05298};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E2_AT";
+						name="UNIT_BLU_E2_AT1";
 						description="BluFor Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -10780,7 +11141,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -10792,7 +11153,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={808.07599,5.0014391,917.914};
+						position[]={810.091,5.0014391,919.98999};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -10800,11 +11161,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E2_R1";
-						description="BluFor Echo 2 Rifleman 1";
+						name="UNIT_BLU_E2_R2";
+						description="BluFor Echo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=496;
+					id=497;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -10854,7 +11215,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={810.091,5.0014391,919.98999};
+						position[]={808.07599,5.0014391,917.914};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -10862,12 +11223,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_E2_R2";
-						description="BluFor Echo 2 Rifleman 2";
+						name="UNIT_BLU_E2_AT2";
+						description="BluFor Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=497;
-					type="B_Soldier_F";
+					id=1310;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10889,7 +11250,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -11154,8 +11534,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={823.99109,5.0014391,935.99231};
-						angles[]={0,6.1928158,0};
+						position[]={823.99103,5.0014391,935.992};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -11190,7 +11570,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -11322,15 +11721,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={823.92841,5.0014391,930.01563};
-						angles[]={0,6.1928158,0};
+						position[]={823.92798,5.0014391,930.01599};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F1_AT";
+						name="UNIT_BLU_F1_AT1";
 						description="BluFor Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -11372,7 +11771,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -11384,7 +11783,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={827.92102,5.0014391,931.91797};
+						position[]={829.914,5.0014391,933.92499};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -11392,11 +11791,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F1_R1";
-						description="BluFor Foxtrot 1 Rifleman 1";
+						name="UNIT_BLU_F1_R";
+						description="BluFor Foxtrot 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=506;
+					id=507;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -11434,7 +11833,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -11446,7 +11845,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={829.914,5.0014391,933.92499};
+						position[]={827.92102,5.0014391,931.91797};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -11454,12 +11853,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F1_R2";
-						description="BluFor Foxtrot 1 Rifleman 2";
+						name="UNIT_BLU_F1_AT2";
+						description="BluFor Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=507;
-					type="B_Soldier_F";
+					id=1311;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11481,7 +11880,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -11564,8 +11982,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={824.11987,5.0014391,921.94452};
-						angles[]={0,6.1928158,0};
+						position[]={824.12,5.0014391,921.94501};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=6;
@@ -11600,7 +12018,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -11732,15 +12169,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={823.91394,5.0014391,915.99359};
-						angles[]={0,6.1928158,0};
+						position[]={823.914,5.0014391,915.99396};
+						angles[]={0,6.192812,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F2_AT";
+						name="UNIT_BLU_F2_AT1";
 						description="BluFor Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -11782,7 +12219,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -11794,7 +12231,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={827.91602,5.0014391,917.98596};
+						position[]={829.875,5.0014391,919.901};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -11802,11 +12239,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F2_R1";
-						description="BluFor Foxtrot 2 Rifleman 1";
+						name="UNIT_BLU_F2_R";
+						description="BluFor Foxtrot 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=513;
+					id=514;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -11844,7 +12281,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -11856,7 +12293,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={829.875,5.0014391,919.901};
+						position[]={827.91602,5.0014391,917.98596};
 						angles[]={0,6.192812,0};
 					};
 					side="West";
@@ -11864,12 +12301,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_BLU_F2_R2";
-						description="BluFor Foxtrot 2 Rifleman 2";
+						name="UNIT_BLU_F2_AT2";
+						description="BluFor Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=514;
-					type="B_Soldier_F";
+					id=1312;
+					type="B_soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11891,7 +12328,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -14424,7 +14880,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={487.93951,5.0014391,935.91663};
+						position[]={487.94,5.0014391,935.91699};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14460,7 +14916,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -14592,7 +15067,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={487.82806,5.0014391,930.05811};
+						position[]={487.828,5.0014391,930.05798};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14600,7 +15075,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A1_AT";
+						name="UNIT_IND_A1_AT1";
 						description="Indy Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -14642,7 +15117,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -14654,7 +15129,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.67505,5.0014391,931.90198};
+						position[]={493.797,5.0014391,933.867};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14662,11 +15137,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A1_R1";
-						description="Indy Alpha 1 Rifleman 1";
+						name="UNIT_IND_A1_R";
+						description="Indy Alpha 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=821;
+					id=822;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -14704,7 +15179,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -14716,7 +15191,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={493.79706,5.0014391,933.867};
+						position[]={491.67499,5.0014391,931.90198};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14724,12 +15199,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A1_R2";
-						description="Indy Alpha 1 Rifleman 2";
+						name="UNIT_IND_A1_AT2";
+						description="Indy Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=822;
-					type="I_soldier_F";
+					id=1313;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14751,7 +15226,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -14834,7 +15328,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={487.79205,5.0014391,922.01117};
+						position[]={487.79199,5.0014391,922.01099};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14870,7 +15364,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -15002,7 +15515,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={487.77728,5.0014391,916.0401};
+						position[]={487.77701,5.0014391,916.03998};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15010,7 +15523,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A2_AT";
+						name="UNIT_IND_A2_AT1";
 						description="Indy Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -15052,7 +15565,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -15064,7 +15577,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.73407,5.0014391,918.03796};
+						position[]={493.634,5.0014391,920.091};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15072,11 +15585,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A2_R1";
-						description="Indy Alpha 2 Rifleman 1";
+						name="UNIT_IND_A2_R";
+						description="Indy Alpha 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=828;
+					id=829;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -15114,7 +15627,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -15126,7 +15639,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={493.63409,5.0014391,920.091};
+						position[]={491.73401,5.0014391,918.03796};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15134,12 +15647,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_A2_R2";
-						description="Indy Alpha 2 Rifleman 2";
+						name="UNIT_IND_A2_AT2";
+						description="Indy Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=829;
-					type="I_soldier_F";
+					id=1314;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15161,7 +15674,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -15426,7 +15958,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.88806,5.0014391,935.63672};
+						position[]={507.888,5.0014391,935.63696};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15462,7 +15994,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -15594,7 +16145,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.8927,5.0014391,929.85992};
+						position[]={507.89301,5.0014391,929.85999};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15602,7 +16153,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B1_AT";
+						name="UNIT_IND_B1_AT1";
 						description="Indy Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -15644,7 +16195,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -15656,7 +16207,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={511.83307,5.0014391,931.85101};
+						position[]={513.95599,5.0014391,933.745};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15664,11 +16215,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B1_R1";
-						description="Indy Bravo 1 Rifleman 1";
+						name="UNIT_IND_B1_R";
+						description="Indy Bravo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=838;
+					id=839;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -15706,7 +16257,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -15718,7 +16269,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={513.95605,5.0014391,933.745};
+						position[]={511.83301,5.0014391,931.85101};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15726,12 +16277,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B1_R2";
-						description="Indy Bravo 1 Rifleman 2";
+						name="UNIT_IND_B1_AT2";
+						description="Indy Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=839;
-					type="I_soldier_F";
+					id=1315;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15753,7 +16304,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -15836,7 +16406,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.87,5.0014391,921.80731};
+						position[]={507.87,5.0014391,921.80701};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15872,7 +16442,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -16004,7 +16593,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.90936,5.0014391,915.89203};
+						position[]={507.909,5.0014391,915.89197};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16012,7 +16601,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B2_AT";
+						name="UNIT_IND_B2_AT1";
 						description="Indy Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -16054,7 +16643,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -16066,7 +16655,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={511.85809,5.0014391,917.79999};
+						position[]={513.96997,5.0014391,919.68201};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16074,11 +16663,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B2_R1";
-						description="Indy Bravo 2 Rifleman 1";
+						name="UNIT_IND_B2_R";
+						description="Indy Bravo 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=845;
+					id=846;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -16116,7 +16705,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -16128,7 +16717,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={513.97009,5.0014391,919.68201};
+						position[]={511.858,5.0014391,917.79999};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16136,12 +16725,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_B2_R2";
-						description="Indy Bravo 2 Rifleman 2";
+						name="UNIT_IND_B2_AT2";
+						description="Indy Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=846;
-					type="I_soldier_F";
+					id=1316;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16163,7 +16752,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -16428,8 +17036,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={527.79053,5.0014391,935.97754};
-						angles[]={0,0.0090104537,0};
+						position[]={527.79102,5.0014391,935.97797};
+						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
 					flags=6;
@@ -16464,7 +17072,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -16596,15 +17223,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={527.89703,5.0014391,929.93701};
-						angles[]={0,0.0090104537,0};
+						position[]={527.89697,5.0014391,929.93701};
+						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C1_AT";
+						name="UNIT_IND_C1_AT1";
 						description="Indy Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -16646,7 +17273,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -16658,7 +17285,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={531.83008,5.0014391,931.96198};
+						position[]={533.96503,5.0014391,933.80798};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16666,11 +17293,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C1_R1";
-						description="Indy Charlie 1 Rifleman 1";
+						name="UNIT_IND_C1_R";
+						description="Indy Charlie 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=855;
+					id=856;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -16708,7 +17335,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -16720,7 +17347,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={533.96509,5.0014391,933.80798};
+						position[]={531.83002,5.0014391,931.96198};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16728,12 +17355,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C1_R2";
-						description="Indy Charlie 1 Rifleman 2";
+						name="UNIT_IND_C1_AT2";
+						description="Indy Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=856;
-					type="I_soldier_F";
+					id=1317;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16755,7 +17382,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -16838,8 +17484,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={527.82281,5.0014391,921.9483};
-						angles[]={0,0.0090104537,0};
+						position[]={527.823,5.0014391,921.948};
+						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
 					flags=6;
@@ -16874,7 +17520,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -17006,15 +17671,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={527.88818,5.0014391,916.02637};
-						angles[]={0,0.0090104537,0};
+						position[]={527.888,5.0014391,916.026};
+						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C2_AT";
+						name="UNIT_IND_C2_AT1";
 						description="Indy Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -17056,7 +17721,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -17068,7 +17733,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={531.82605,5.0014391,918.00201};
+						position[]={533.87598,5.0014391,919.97296};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -17076,11 +17741,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C2_R1";
-						description="Indy Charlie 2 Rifleman 1";
+						name="UNIT_IND_C2_R";
+						description="Indy Charlie 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=862;
+					id=863;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -17118,7 +17783,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -17130,7 +17795,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={533.8761,5.0014391,919.97296};
+						position[]={531.82599,5.0014391,918.00201};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -17138,12 +17803,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_C2_R2";
-						description="Indy Charlie 2 Rifleman 2";
+						name="UNIT_IND_C2_AT2";
+						description="Indy Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=863;
-					type="I_soldier_F";
+					id=1318;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17165,7 +17830,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -21467,8 +22151,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={591.81622,5.0014391,936.31616};
-						angles[]={0,6.1928158,0};
+						position[]={591.81598,5.0014391,936.31598};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -21503,7 +22187,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -21635,15 +22338,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={592.00708,5.0014391,930.04755};
-						angles[]={0,6.1928158,0};
+						position[]={592.00702,5.0014391,930.04797};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D1_AT";
+						name="UNIT_IND_D1_AT1";
 						description="Indy Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -21685,7 +22388,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -21697,7 +22400,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={596.04004,5.0014391,932};
+						position[]={598.00403,5.0014391,933.979};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -21705,11 +22408,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D1_R1";
-						description="Indy Delta 1 Rifleman 1";
+						name="UNIT_IND_D1_R";
+						description="Indy Delta 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=950;
+					id=951;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -21747,7 +22450,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -21759,7 +22462,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={598.00409,5.0014391,933.979};
+						position[]={596.03998,5.0014391,932};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -21767,12 +22470,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D1_R2";
-						description="Indy Delta 1 Rifleman 2";
+						name="UNIT_IND_D1_AT2";
+						description="Indy Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=951;
-					type="I_soldier_F";
+					id=1319;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21794,7 +22497,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -21877,8 +22599,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={592.20935,5.0014391,921.86115};
-						angles[]={0,6.1928158,0};
+						position[]={592.20898,5.0014391,921.86096};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -21913,7 +22635,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -22045,15 +22786,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={592.00275,5.0014391,916.09845};
-						angles[]={0,6.1928158,0};
+						position[]={592.00299,5.0014391,916.09796};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D2_AT";
+						name="UNIT_IND_D2_AT1";
 						description="Indy Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -22095,7 +22836,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -22107,7 +22848,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={595.98108,5.0014391,917.92798};
+						position[]={597.96698,5.0014391,919.97998};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -22115,11 +22856,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D2_R1";
-						description="Indy Delta 2 Rifleman 1";
+						name="UNIT_IND_D2_R";
+						description="Indy Delta 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=957;
+					id=958;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -22157,7 +22898,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -22169,7 +22910,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={597.96704,5.0014391,919.97998};
+						position[]={595.98102,5.0014391,917.92798};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -22177,12 +22918,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_D2_R2";
-						description="Indy Delta 2 Rifleman 2";
+						name="UNIT_IND_D2_AT2";
+						description="Indy Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=958;
-					type="I_soldier_F";
+					id=1320;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22204,7 +22945,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -22469,8 +23229,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={612.00299,5.0014391,935.96136};
-						angles[]={0,6.1928158,0};
+						position[]={612.00299,5.0014391,935.961};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -22505,7 +23265,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -22637,15 +23416,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={611.97931,5.0014391,929.99274};
-						angles[]={0,6.1928158,0};
+						position[]={611.979,5.0014391,929.99298};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E1_AT";
+						name="UNIT_IND_E1_AT1";
 						description="Indy Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -22687,7 +23466,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -22699,7 +23478,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={615.95905,5.0014391,932.00598};
+						position[]={617.96301,5.0014391,933.92596};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -22707,11 +23486,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E1_R1";
-						description="Indy Echo 1 Rifleman 1";
+						name="UNIT_IND_E1_R";
+						description="Indy Echo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=967;
+					id=968;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -22749,7 +23528,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -22761,7 +23540,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={617.96307,5.0014391,933.92596};
+						position[]={615.95898,5.0014391,932.00598};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -22769,12 +23548,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E1_R2";
-						description="Indy Echo 1 Rifleman 2";
+						name="UNIT_IND_E1_AT2";
+						description="Indy Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=968;
-					type="I_soldier_F";
+					id=1321;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22796,7 +23575,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -22879,8 +23677,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={611.99792,5.0014391,921.94269};
-						angles[]={0,6.1928158,0};
+						position[]={611.99799,5.0014391,921.94299};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -22915,7 +23713,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -23047,15 +23864,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={611.9812,5.0014391,916.01361};
-						angles[]={0,6.1928158,0};
+						position[]={611.98102,5.0014391,916.01398};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E2_AT";
+						name="UNIT_IND_E2_AT1";
 						description="Indy Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -23097,7 +23914,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -23109,7 +23926,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={616.04706,5.0014391,917.875};
+						position[]={618.06201,5.0014391,919.95099};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -23117,11 +23934,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E2_R1";
-						description="Indy Echo 2 Rifleman 1";
+						name="UNIT_IND_E2_R";
+						description="Indy Echo 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=974;
+					id=975;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -23159,7 +23976,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -23171,7 +23988,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={618.06207,5.0014391,919.95099};
+						position[]={616.047,5.0014391,917.875};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -23179,12 +23996,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_E2_R2";
-						description="Indy Echo 2 Rifleman 2";
+						name="UNIT_IND_E2_AT2";
+						description="Indy Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=975;
-					type="I_soldier_F";
+					id=1322;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23206,7 +24023,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -23471,8 +24307,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={631.96216,5.0014391,935.95331};
-						angles[]={0,6.1928158,0};
+						position[]={631.96198,5.0014391,935.953};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23507,7 +24343,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -23639,15 +24494,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={631.89948,5.0014391,929.97662};
-						angles[]={0,6.1928158,0};
+						position[]={631.89899,5.0014391,929.97699};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F1_AT";
+						name="UNIT_IND_F1_AT1";
 						description="Indy Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -23689,7 +24544,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -23701,7 +24556,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={635.89209,5.0014391,931.87897};
+						position[]={637.88501,5.0014391,933.88599};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -23709,11 +24564,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F1_R1";
-						description="Indy Foxtrot 1 Rifleman 1";
+						name="UNIT_IND_F1_R";
+						description="Indy Foxtrot 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=984;
+					id=985;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -23751,7 +24606,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -23763,7 +24618,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={637.88507,5.0014391,933.88599};
+						position[]={635.89203,5.0014391,931.87897};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -23771,12 +24626,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F1_R2";
-						description="Indy Foxtrot 1 Rifleman 2";
+						name="UNIT_IND_F1_AT2";
+						description="Indy Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=985;
-					type="I_soldier_F";
+					id=1323;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23798,7 +24653,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -23881,8 +24755,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={632.09094,5.0014391,921.90552};
-						angles[]={0,6.1928158,0};
+						position[]={632.091,5.0014391,921.90601};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=6;
@@ -23917,7 +24791,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -24049,15 +24942,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={631.88501,5.0014391,915.95459};
-						angles[]={0,6.1928158,0};
+						position[]={631.88501,5.0014391,915.95502};
+						angles[]={0,6.192812,0};
 					};
 					side="Independent";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F2_AT";
+						name="UNIT_IND_F2_AT1";
 						description="Indy Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -24099,7 +24992,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -24111,7 +25004,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={635.88708,5.0014391,917.94696};
+						position[]={637.84601,5.0014391,919.862};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -24119,11 +25012,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F2_R1";
-						description="Indy Foxtrot 2 Rifleman 1";
+						name="UNIT_IND_F2_R";
+						description="Indy Foxtrot 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=991;
+					id=992;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -24161,7 +25054,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -24173,7 +25066,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={637.84607,5.0014391,919.862};
+						position[]={635.88702,5.0014391,917.94696};
 						angles[]={0,6.192812,0};
 					};
 					side="Independent";
@@ -24181,12 +25074,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_IND_F2_R2";
-						description="Indy Foxtrot 2 Rifleman 2";
+						name="UNIT_IND_F2_AT2";
+						description="Indy Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=992;
-					type="I_soldier_F";
+					id=1324;
+					type="I_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24208,7 +25101,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -25662,7 +26574,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={680.06976,5.0014391,808.32214};
+						position[]={680.07001,5.0014391,808.32196};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -25698,7 +26610,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -25830,7 +26761,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.95831,5.0014391,802.46362};
+						position[]={679.95801,5.0014391,802.46399};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -25838,7 +26769,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A1_AT";
+						name="UNIT_OPF_A1_AT1";
 						description="OpFor Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -25880,7 +26811,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -25892,7 +26823,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={683.8053,5.0014391,804.3075};
+						position[]={685.927,5.0014391,806.27301};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -25900,11 +26831,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A1_R1";
-						description="OpFor Alpha 1 Rifleman 1";
+						name="UNIT_OPF_A1_R";
+						description="OpFor Alpha 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1074;
+					id=1075;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -25942,7 +26873,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -25954,7 +26885,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={685.92731,5.0014391,806.27252};
+						position[]={683.80499,5.0014391,804.30798};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -25962,12 +26893,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A1_R2";
-						description="OpFor Alpha 1 Rifleman 2";
+						name="UNIT_OPF_A1_AT2";
+						description="OpFor Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1075;
-					type="O_Soldier_F";
+					id=1325;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -25989,7 +26920,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -26072,7 +27022,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.9223,5.0014391,794.41669};
+						position[]={679.922,5.0014391,794.41699};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26108,7 +27058,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -26240,7 +27209,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={679.90753,5.0014391,788.44562};
+						position[]={679.90802,5.0014391,788.44598};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26248,7 +27217,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A2_AT";
+						name="UNIT_OPF_A2_AT1";
 						description="OpFor Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -26290,7 +27259,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -26302,7 +27271,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={683.86432,5.0014391,790.44348};
+						position[]={685.76398,5.0014391,792.49701};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26310,11 +27279,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A2_R1";
-						description="OpFor Alpha 2 Rifleman 1";
+						name="UNIT_OPF_A2_R";
+						description="OpFor Alpha 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1081;
+					id=1082;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -26352,7 +27321,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -26364,7 +27333,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={685.76434,5.0014391,792.49652};
+						position[]={683.86401,5.0014391,790.44299};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26372,12 +27341,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_A2_R2";
-						description="OpFor Alpha 2 Rifleman 2";
+						name="UNIT_OPF_A2_AT2";
+						description="OpFor Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1082;
-					type="O_Soldier_F";
+					id=1326;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26399,7 +27368,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -26664,7 +27652,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.01831,5.0014391,808.04224};
+						position[]={700.01801,5.0014391,808.04199};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26700,7 +27688,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -26832,7 +27839,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.02295,5.0014391,802.26544};
+						position[]={700.02301,5.0014391,802.26501};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26840,7 +27847,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B1_AT";
+						name="UNIT_OPF_B1_AT1";
 						description="OpFor Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -26882,7 +27889,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -26894,7 +27901,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={703.96332,5.0014391,804.25653};
+						position[]={706.086,5.0014391,806.151};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26902,11 +27909,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B1_R1";
-						description="OpFor Bravo 1 Rifleman 1";
+						name="UNIT_OPF_B1_R";
+						description="OpFor Bravo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1091;
+					id=1092;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -26944,7 +27951,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -26956,7 +27963,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={706.0863,5.0014391,806.15051};
+						position[]={703.96301,5.0014391,804.25696};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26964,12 +27971,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B1_R2";
-						description="OpFor Bravo 1 Rifleman 2";
+						name="UNIT_OPF_B1_AT2";
+						description="OpFor Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1092;
-					type="O_Soldier_F";
+					id=1327;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -26991,7 +27998,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -27074,7 +28100,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.00024,5.0014391,794.21283};
+						position[]={700,5.0014391,794.21301};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27110,7 +28136,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -27242,7 +28287,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.03961,5.0014391,788.29755};
+						position[]={700.03998,5.0014391,788.29797};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27250,7 +28295,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B2_AT";
+						name="UNIT_OPF_B2_AT1";
 						description="OpFor Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -27292,7 +28337,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -27304,7 +28349,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={703.98834,5.0014391,790.20551};
+						position[]={706.09998,5.0014391,792.08801};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27312,11 +28357,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B2_R1";
-						description="OpFor Bravo 2 Rifleman 1";
+						name="UNIT_OPF_B2_R";
+						description="OpFor Bravo 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1098;
+					id=1099;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -27354,7 +28399,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -27366,7 +28411,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={706.10034,5.0014391,792.08752};
+						position[]={703.98798,5.0014391,790.20599};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27374,12 +28419,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_B2_R2";
-						description="OpFor Bravo 2 Rifleman 2";
+						name="UNIT_OPF_B2_AT2";
+						description="OpFor Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1099;
-					type="O_Soldier_F";
+					id=1328;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27401,7 +28446,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -27666,8 +28730,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.92078,5.0014391,808.38306};
-						angles[]={0,0.0090104537,0};
+						position[]={719.92102,5.0014391,808.383};
+						angles[]={0,0.0090058986,0};
 					};
 					side="East";
 					flags=6;
@@ -27702,7 +28766,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -27834,15 +28917,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={720.02728,5.0014391,802.34253};
-						angles[]={0,0.0090104537,0};
+						position[]={720.02698,5.0014391,802.34302};
+						angles[]={0,0.0090058986,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C1_AT";
+						name="UNIT_OPF_C1_AT1";
 						description="OpFor Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -27884,7 +28967,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -27896,7 +28979,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.96033,5.0014391,804.36749};
+						position[]={726.09497,5.0014391,806.21399};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27904,11 +28987,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C1_R1";
-						description="OpFor Charlie 1 Rifleman 1";
+						name="UNIT_OPF_C1_R";
+						description="OpFor Charlie 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1108;
+					id=1109;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -27946,7 +29029,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -27958,7 +29041,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={726.09534,5.0014391,806.2135};
+						position[]={723.96002,5.0014391,804.36798};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27966,12 +29049,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C1_R2";
-						description="OpFor Charlie 1 Rifleman 2";
+						name="UNIT_OPF_C1_AT2";
+						description="OpFor Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1109;
-					type="O_Soldier_F";
+					id=1329;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -27993,7 +29076,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -28076,8 +29178,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={719.95306,5.0014391,794.35382};
-						angles[]={0,0.0090104537,0};
+						position[]={719.953,5.0014391,794.354};
+						angles[]={0,0.0090058986,0};
 					};
 					side="East";
 					flags=6;
@@ -28112,7 +29214,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -28244,15 +29365,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={720.01843,5.0014391,788.43188};
-						angles[]={0,0.0090104537,0};
+						position[]={720.01801,5.0014391,788.43201};
+						angles[]={0,0.0090058986,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C2_AT";
+						name="UNIT_OPF_C2_AT1";
 						description="OpFor Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -28294,7 +29415,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -28306,7 +29427,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.9563,5.0014391,790.40753};
+						position[]={726.00598,5.0014391,792.37799};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -28314,11 +29435,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C2_R1";
-						description="OpFor Charlie 2 Rifleman 1";
+						name="UNIT_OPF_C2_R";
+						description="OpFor Charlie 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1115;
+					id=1116;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -28356,7 +29477,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -28368,7 +29489,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={726.00635,5.0014391,792.37848};
+						position[]={723.95599,5.0014391,790.40796};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -28376,12 +29497,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_C2_R2";
-						description="OpFor Charlie 2 Rifleman 2";
+						name="UNIT_OPF_C2_AT2";
+						description="OpFor Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1116;
-					type="O_Soldier_F";
+					id=1330;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -28403,7 +29524,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -32705,8 +33845,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={783.94647,5.0014391,808.72168};
-						angles[]={0,6.1928158,0};
+						position[]={783.94598,5.0014391,808.72198};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -32741,7 +33881,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -32873,15 +34032,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={784.13733,5.0014391,802.45306};
-						angles[]={0,6.1928158,0};
+						position[]={784.13702,5.0014391,802.453};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D1_AT";
+						name="UNIT_OPF_D1_AT1";
 						description="OpFor Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -32923,7 +34082,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -32935,7 +34094,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={788.17029,5.0014391,804.40552};
+						position[]={790.13397,5.0014391,806.38501};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -32943,11 +34102,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D1_R1";
-						description="OpFor Delta 1 Rifleman 1";
+						name="UNIT_OPF_D1_R";
+						description="OpFor Delta 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1203;
+					id=1204;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -32985,7 +34144,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -32997,7 +34156,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={790.13434,5.0014391,806.38452};
+						position[]={788.16998,5.0014391,804.40601};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -33005,12 +34164,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D1_R2";
-						description="OpFor Delta 1 Rifleman 2";
+						name="UNIT_OPF_D1_AT2";
+						description="OpFor Delta 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1204;
-					type="O_Soldier_F";
+					id=1331;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33032,7 +34191,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -33115,8 +34293,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={784.3396,5.0014391,794.26666};
-						angles[]={0,6.1928158,0};
+						position[]={784.34003,5.0014391,794.26697};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -33151,7 +34329,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -33284,14 +34481,14 @@ class Mission
 					class PositionInfo
 					{
 						position[]={784.133,5.0014391,788.50397};
-						angles[]={0,6.1928158,0};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D2_AT";
+						name="UNIT_OPF_D2_AT1";
 						description="OpFor Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -33333,7 +34530,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -33345,7 +34542,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={788.11133,5.0014391,790.3335};
+						position[]={790.09698,5.0014391,792.38599};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -33353,11 +34550,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D2_R1";
-						description="OpFor Delta 2 Rifleman 1";
+						name="UNIT_OPF_D2_R";
+						description="OpFor Delta 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1210;
+					id=1211;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -33395,7 +34592,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -33407,7 +34604,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={790.09729,5.0014391,792.3855};
+						position[]={788.11102,5.0014391,790.33398};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -33415,12 +34612,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_D2_R2";
-						description="OpFor Delta 2 Rifleman 2";
+						name="UNIT_OPF_D2_AT2";
+						description="OpFor Delta 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1211;
-					type="O_Soldier_F";
+					id=1332;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33442,7 +34639,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -33707,8 +34923,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.13324,5.0014391,808.36688};
-						angles[]={0,6.1928158,0};
+						position[]={804.133,5.0014391,808.367};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -33743,7 +34959,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -33875,15 +35110,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.10956,5.0014391,802.39825};
-						angles[]={0,6.1928158,0};
+						position[]={804.10999,5.0014391,802.39801};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E1_AT";
+						name="UNIT_OPF_E1_AT1";
 						description="OpFor Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -33925,7 +35160,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -33937,7 +35172,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={808.08929,5.0014391,804.4115};
+						position[]={810.09302,5.0014391,806.33099};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -33945,11 +35180,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E1_R1";
-						description="OpFor Echo 1 Rifleman 1";
+						name="UNIT_OPF_E1_R";
+						description="OpFor Echo 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1220;
+					id=1221;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -33987,7 +35222,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -33999,7 +35234,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={810.09332,5.0014391,806.33148};
+						position[]={808.08899,5.0014391,804.41199};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -34007,12 +35242,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E1_R2";
-						description="OpFor Echo 1 Rifleman 2";
+						name="UNIT_OPF_E1_AT2";
+						description="OpFor Echo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1221;
-					type="O_Soldier_F";
+					id=1333;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34034,7 +35269,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -34117,8 +35371,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.12817,5.0014391,794.34821};
-						angles[]={0,6.1928158,0};
+						position[]={804.12799,5.0014391,794.34796};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -34153,7 +35407,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -34285,15 +35558,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={804.11145,5.0014391,788.41913};
-						angles[]={0,6.1928158,0};
+						position[]={804.11102,5.0014391,788.41901};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E2_AT";
+						name="UNIT_OPF_E2_AT1";
 						description="OpFor Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -34335,7 +35608,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -34347,7 +35620,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={808.17731,5.0014391,790.28052};
+						position[]={810.19202,5.0014391,792.35699};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -34355,11 +35628,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E2_R1";
-						description="OpFor Echo 2 Rifleman 1";
+						name="UNIT_OPF_E2_R";
+						description="OpFor Echo 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1227;
+					id=1228;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -34397,7 +35670,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -34409,7 +35682,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={810.19232,5.0014391,792.35651};
+						position[]={808.177,5.0014391,790.28101};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -34417,12 +35690,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_E2_R2";
-						description="OpFor Echo 2 Rifleman 2";
+						name="UNIT_OPF_E2_AT2";
+						description="OpFor Echo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1228;
-					type="O_Soldier_F";
+					id=1334;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34444,7 +35717,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -34709,8 +36001,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={824.09241,5.0014391,808.35883};
-						angles[]={0,6.1928158,0};
+						position[]={824.09198,5.0014391,808.35901};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -34745,7 +36037,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -34877,15 +36188,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={824.02972,5.0014391,802.38214};
-						angles[]={0,6.1928158,0};
+						position[]={824.03003,5.0014391,802.38196};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F1_AT";
+						name="UNIT_OPF_F1_AT1";
 						description="OpFor Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -34927,7 +36238,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -34939,7 +36250,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={828.02234,5.0014391,804.28448};
+						position[]={830.01501,5.0014391,806.29199};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -34947,11 +36258,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F1_R1";
-						description="OpFor Foxtrot 1 Rifleman 1";
+						name="UNIT_OPF_F1_R";
+						description="OpFor Foxtrot 1 Rifleman ";
 						isPlayable=1;
 					};
-					id=1237;
+					id=1238;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -34989,7 +36300,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="GREEN";
+									value="MAIN";
 								};
 							};
 						};
@@ -35001,7 +36312,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={830.01532,5.0014391,806.2915};
+						position[]={828.02197,5.0014391,804.284};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -35009,12 +36320,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F1_R2";
-						description="OpFor Foxtrot 1 Rifleman 2";
+						name="UNIT_OPF_F1_AT2";
+						description="OpFor Foxtrot 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1238;
-					type="O_Soldier_F";
+					id=1335;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35036,7 +36347,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -35119,8 +36449,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={824.22119,5.0014391,794.31104};
-						angles[]={0,6.1928158,0};
+						position[]={824.22101,5.0014391,794.31097};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=6;
@@ -35155,7 +36485,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -35287,15 +36636,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={824.01526,5.0014391,788.36011};
-						angles[]={0,6.1928158,0};
+						position[]={824.01501,5.0014391,788.35999};
+						angles[]={0,6.192812,0};
 					};
 					side="East";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F2_AT";
+						name="UNIT_OPF_F2_AT1";
 						description="OpFor Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
@@ -35337,7 +36686,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -35349,7 +36698,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={828.01733,5.0014391,790.35248};
+						position[]={829.97601,5.0014391,792.26801};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -35357,11 +36706,11 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F2_R1";
-						description="OpFor Foxtrot 2 Rifleman 1";
+						name="UNIT_OPF_F2_R";
+						description="OpFor Foxtrot 2 Rifleman ";
 						isPlayable=1;
 					};
-					id=1244;
+					id=1245;
 					type="O_Soldier_F";
 					class CustomAttributes
 					{
@@ -35399,7 +36748,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -35411,7 +36760,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={829.97632,5.0014391,792.26752};
+						position[]={828.01703,5.0014391,790.35199};
 						angles[]={0,6.192812,0};
 					};
 					side="East";
@@ -35419,12 +36768,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UNIT_OPF_F2_R2";
-						description="OpFor Foxtrot 2 Rifleman 2";
+						name="UNIT_OPF_F2_AT2";
+						description="OpFor Foxtrot 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=1245;
-					type="O_Soldier_F";
+					id=1336;
+					type="O_Soldier_LAT_F";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35446,7 +36795,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this, _value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
