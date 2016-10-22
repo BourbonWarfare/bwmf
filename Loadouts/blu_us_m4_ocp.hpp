@@ -1,26 +1,27 @@
 //Author: BWMF
-//Description: US: M4 - Tan
+//Description: US: M4 - OCP
 
 class blu_f {
   //Rifle
-  #define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
-  #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
-  #define WEST_RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
+  #define WEST_RIFLE "rhs_weap_m4a1_carryhandle"
+  #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:10","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:4"
+  #define WEST_RIFLE_ATTACHMENTS "rhsusf_acc_eotech_552","acc_flashlight"
   #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
   #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
-  #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-  #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
+  #define WEST_GLRIFLE_MAG_SMOKE "rhs_mag_m714_White:4","rhs_mag_m713_Red:4"
+  #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:12"
   #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
   //Carbine
   #define WEST_CARBINE "rhs_weap_m4a1_carryhandle_grip"
   #define WEST_CARBINE_MAG WEST_RIFLE_MAG
   // AR
-  #define WEST_AR "rhs_weap_m249_pip_L"
-  #define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
+  #define WEST_AR "rhs_weap_m249_pip_S_para"
+  #define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:5"
   // AT
   #define WEST_AT "rhs_weap_M136"
+  #define WEST_AT_MAG "rhs_m136_mag"
   // MMG
   #define WEST_MMG "rhs_weap_m240B"
   #define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
@@ -105,6 +106,7 @@ class blu_f {
     linkedItems[] += {BINOS};
   };
   class B_Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
+    magazines[] += {WEST_AT_MAG};
     launchers[] = {WEST_AT};
   };
   class B_medic_F: Fic_Soldier_Carbine {// Medic

@@ -4,14 +4,14 @@
 class opf_f {
   //Rifle
   #define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag"
-  #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
+  #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:10","rhs_30Rnd_545x39_AK_green:4"
   #define EAST_RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk"
   #define EAST_AAR_ATTACHMENTS EAST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define EAST_GLRIFLE "rhs_weap_ak74m_gp25"
   #define EAST_GLRIFLE_MAG EAST_RIFLE_MAG
-  #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
-  #define EAST_GLRIFLE_MAG_HE "rhs_VOG25:5"
+  #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Red:4"
+  #define EAST_GLRIFLE_MAG_HE "rhs_VOG25:12"
   #define EAST_GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
   //Carbine
   #define EAST_CARBINE EAST_RIFLE
