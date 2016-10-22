@@ -10,7 +10,7 @@ class blu_f {
   //GL Rifle
   #define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
   #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
-  #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeRed_Grenade_shell:4"
+  #define WEST_GLRIFLE_MAG_SMOKE "rhs_mag_m714_White:4","rhs_mag_m713_Red:4"
   #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:12"
   #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
   //Carbine

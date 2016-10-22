@@ -3,39 +3,40 @@
 
 class ind_f {
   //Rifle
-  #define IND_RIFLE "BWA3_G36"
-  #define IND_RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
-  #define IND_RIFLE_ATTACHMENTS "optic_Aco","BWA3_acc_LLM01_irlaser"
-  #define IND_AAR_ATTACHMENTS IND_RIFLE_ATTACHMENTS
+  #define WEST_RIFLE "hlc_rifle_G36KV"
+  #define WEST_RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:10","hlc_30rnd_556x45_Tracers_G36:4"
+  #define WEST_RIFLE_ATTACHMENTS "rhsusf_acc_eotech_552"
+  #define WEST_AAR_ATTACHMENTS WEST_RIFLE_ATTACHMENTS
   //GL Rifle
-  #define IND_GLRIFLE "BWA3_G36_AG"
-  #define IND_GLRIFLE_MAG IND_RIFLE_MAG
-  #define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-  #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
+  #define WEST_GLRIFLE "hlc_rifle_G36VAG36"
+  #define WEST_GLRIFLE_MAG WEST_RIFLE_MAG
+  #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeRed_Grenade_shell:4"
+  #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:12"
+  #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
   //Carbine
-  #define IND_CARBINE "BWA3_G36K"
-  #define IND_CARBINE_MAG IND_RIFLE_MAG
+  #define WEST_CARBINE "hlc_rifle_G36C"
+  #define WEST_CARBINE_MAG WEST_RIFLE_MAG
   // AR
-  #define IND_AR "BWA3_G36_LMG"
-  #define IND_AR_MAG "BWA3_100Rnd_556x45_G36:2","BWA3_100Rnd_556x45_G36_Tracer:2"
+  #define WEST_AR "rhs_weap_m249_pip_S_para"
+  #define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:5"
   // AT
-  #define IND_AT "BWA3_Pzf3"
-  #define IND_AT_MAG "BWA3_Pzf3_IT"
+  #define WEST_AT "rhs_weap_M136"
+  #define WEST_AT_MAG "rhs_m136_mag"
   // MMG
-  #define IND_MMG "BWA3_MG5"
-  #define IND_MMG_MAG "BWA3_120Rnd_762x51:4"
+  #define WEST_MMG "rhs_weap_m240B"
+  #define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
   // Sniper Rifle
-  #define IND_SNIPER "BWA3_G82"
-  #define IND_SNIPER_MAG "BWA3_10Rnd_127x99_G82:8"
+  #define WEST_SNIPER "BWA3_G28_Standard"
+  #define WEST_SNIPER_MAG "BWA3_10Rnd_762x51_G28:10"
   // Spotter Rifle
-  #define IND_SPOTTER "BWA3_G28_Standard"
-  #define IND_SPOTTER_MAG "BWA3_10Rnd_762x51_G28:8"
+  #define WEST_SPOTTER "BWA3_G36"
+  #define WEST_SPOTTER_MAG "BWA3_30Rnd_556x45_G36:8"
   // SMG
-  #define IND_SMG "BWA3_MP7"
-  #define IND_SMG_MAG "BWA3_40Rnd_46x30_MP7:6"
+  #define WEST_SMG "hlc_smg_mp5a4"
+  #define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
   // Pistol
-  #define IND_PISTOL "BWA3_P8"
-  #define IND_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
+  #define WEST_PISTOL "BWA3_P8"
+  #define WEST_PISTOL_MAG "BWA3_15Rnd_9x19_P8:3"
 
   class Car {
     TransportWeapons[] = {IND_AT};

@@ -4,20 +4,20 @@
 class ind_f {
   //Rifle
   #define IND_RIFLE "rhs_weap_akm"
-  #define IND_RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+  #define IND_RIFLE_MAG "rhs_30Rnd_762x39mm:10","rhs_30Rnd_762x39mm_tracer:4"
   #define IND_RIFLE_ATTACHMENTS "rhs_acc_dtk1l"
   #define IND_AAR_ATTACHMENTS IND_RIFLE_ATTACHMENTS
   //GL Rifle
   #define IND_GLRIFLE "rhs_weap_akm_gp25"
   #define IND_GLRIFLE_MAG IND_RIFLE_MAG
-  #define IND_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
-  #define IND_GLRIFLE_MAG_HE "rhs_VOG25:5"
+  #define IND_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Red:4"
+  #define IND_GLRIFLE_MAG_HE "rhs_VOG25:12"
   //Carbine
   #define IND_CARBINE "rhs_weap_akms"
   #define IND_CARBINE_MAG IND_RIFLE_MAG
   // AR
   #define IND_AR "hlc_rifle_rpk"
-  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
+  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:7"
   // AT
   #define IND_AT "rhs_weap_rpg7"
   #define IND_AT_MAG "rhs_rpg7_PG7VL_mag:1"
