@@ -97,7 +97,6 @@ class blu_f {
     weapons[] = {WEST_AR};
     magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_BASE_GRENADES};
     handguns[] = {WEST_PISTOL};
-	attachments[] = {};
   };
   class B_Soldier_AAR_F: B_Soldier_F {// AAR
     vest[] = {"UK3CB_BAF_V_Osprey_MG_A","UK3CB_BAF_V_Osprey_MG_B"};
