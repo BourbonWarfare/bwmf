@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={684.11182,66.597061,865.16321};
-		dir[]={-0.73512542,-0.49262887,0.46581021};
-		up[]={-0.41615909,0.87021637,0.26369819};
-		aside[]={0.53526229,-5.5064447e-007,0.84473151};
+		pos[]={756.7099,110.39336,1041.9136};
+		dir[]={-0.11360122,-0.596582,-0.7946142};
+		up[]={-0.084440969,0.80250752,-0.59064126};
+		aside[]={-0.99004191,-5.2986434e-007,0.14154385};
 	};
 };
 binarizationWanted=0;
@@ -1360,7 +1360,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="COY,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="COY,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -1493,7 +1493,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,purple,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -1543,6 +1543,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_xo.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -1560,7 +1579,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -1587,6 +1606,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_jtac.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -1604,7 +1642,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -1630,7 +1668,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="Plt HQ,34,purple,sc_mapmarkers\data\platoon_hq.paa";
 						};
 					};
 				};
@@ -1856,7 +1894,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="2PLT,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -1942,10 +1980,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -2008,7 +2046,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,red,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -2044,6 +2082,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL,30,red,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -2061,7 +2118,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -2080,7 +2137,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item19
@@ -2486,7 +2543,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A1,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -2934,7 +2991,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A2,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -3020,10 +3077,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -3086,7 +3143,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,blue,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -3122,6 +3179,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL,30,blue,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -3139,7 +3215,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -3158,7 +3234,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item22
@@ -3564,7 +3640,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B1,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -4012,7 +4088,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B2,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -4098,10 +4174,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -4164,7 +4240,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,green,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -4200,6 +4276,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSL,30,green,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -4217,7 +4312,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -4236,7 +4331,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item25
@@ -4642,7 +4737,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C1,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -5090,7 +5185,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C2,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -5176,10 +5271,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -5347,6 +5442,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch1,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -5364,7 +5478,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -5383,7 +5497,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item28
@@ -5427,10 +5541,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -5608,10 +5722,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=1;
+							value="Ch2,26,orange,sc_mapmarkers\data\rotarywing.paa";
 						};
 					};
 				};
@@ -5697,10 +5811,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -5868,6 +5982,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch3,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -5885,7 +6018,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -5904,7 +6037,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item30
@@ -5948,10 +6081,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -6119,6 +6252,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch4,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -6136,7 +6288,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -6155,7 +6307,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item31
@@ -6170,7 +6322,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={710.00555,5.0014391,909.96381};
+						position[]={710.00598,5.0014391,909.96399};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -6319,7 +6471,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV1,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -6376,7 +6528,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.94202,5.0014391,909.9444};
+						position[]={723.94202,5.0014391,909.94397};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -6525,7 +6677,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV2,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham2,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -6582,7 +6734,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={813.82977,5.0014391,909.92645};
+						position[]={813.83002,5.0014391,909.92596};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -6731,7 +6883,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV3,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham3,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -6788,7 +6940,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={827.82867,5.0014391,909.80878};
+						position[]={827.82898,5.0014391,909.80896};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -6937,7 +7089,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV4,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham4,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -6994,7 +7146,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={760.01117,5.0014391,903.89771};
+						position[]={760.01099,5.0014391,903.89801};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -7143,7 +7295,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TNK1,32,orange,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="Tndr1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -7229,10 +7381,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -7312,6 +7464,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rpr1,26,yellow,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -7329,7 +7500,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -7348,7 +7519,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item37
@@ -7363,7 +7534,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={743.94623,5.0014391,937.91296};
+						position[]={743.94598,5.0014391,937.91296};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -7511,7 +7682,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG1,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -7716,7 +7887,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG2,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -7773,7 +7944,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={743.83209,5.0014391,929.92633};
+						position[]={743.83197,5.0014391,929.92596};
 						angles[]={0,0.0090058986,0};
 					};
 					side="West";
@@ -7921,7 +8092,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -8126,7 +8297,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT2,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -8331,7 +8502,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MTR1,24,orange,\A3\ui_f\data\map\markers\nato\b_mortar.paa";
+							value="MTR1,26,orange,sc_mapmarkers\data\mortar.paa";
 						};
 					};
 				};
@@ -8536,7 +8707,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSAM1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="SAM1,26,orange,sc_mapmarkers\data\sam.paa";
 						};
 					};
 				};
@@ -8622,10 +8793,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -8687,7 +8858,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,orange,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -8723,6 +8894,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WSL,30,orange,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -8740,7 +8930,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -8759,7 +8949,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item44
@@ -8879,7 +9069,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ST1,24,orange,\A3\ui_f\data\map\markers\nato\b_recon.paa";
+							value="ST1,26,orange,sc_mapmarkers\data\scout.paa";
 						};
 					};
 				};
@@ -9127,7 +9317,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ENG1,24,orange,\A3\ui_f\data\map\markers\nato\b_maint.paa";
+							value="ENG1,26,orange,sc_mapmarkers\data\engineers.paa";
 						};
 					};
 				};
@@ -9228,7 +9418,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -9769,7 +9959,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D1,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -10217,7 +10407,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D2,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -10306,7 +10496,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -10847,7 +11037,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E1,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -11295,7 +11485,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E2,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -11384,7 +11574,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="FSL,26,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -11925,7 +12115,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F1,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -12373,7 +12563,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F2,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -14145,7 +14335,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="COY,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="COY,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -14246,7 +14436,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={503.92804,5.0014391,957.77496};
+						position[]={503.92801,5.0014391,957.77496};
 						angles[]={0,6.2724166,0};
 					};
 					side="Independent";
@@ -14278,7 +14468,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,purple,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -14328,6 +14518,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_xo.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -14345,7 +14554,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -14372,6 +14581,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_jtac.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -14389,7 +14617,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -14415,7 +14643,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="Plt HQ,34,purple,sc_mapmarkers\data\platoon_hq.paa";
 						};
 					};
 				};
@@ -14641,7 +14869,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="2PLT,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -14698,7 +14926,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={487.87805,5.0014391,943.82196};
+						position[]={487.87799,5.0014391,943.82196};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14727,10 +14955,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -14761,7 +14989,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.98706,5.0014391,941.77698};
+						position[]={491.987,5.0014391,941.77698};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -14793,7 +15021,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,red,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -14829,6 +15057,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL,30,red,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -14846,7 +15093,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -14865,7 +15112,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item96
@@ -15271,7 +15518,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A1,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -15719,7 +15966,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A2,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -15776,7 +16023,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.95007,5.0014391,943.76697};
+						position[]={507.95001,5.0014391,943.76697};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15805,10 +16052,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -15839,7 +16086,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={511.9231,5.0014391,941.797};
+						position[]={511.923,5.0014391,941.797};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -15871,7 +16118,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,blue,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -15907,6 +16154,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL,30,blue,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -15924,7 +16190,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -15943,7 +16209,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item99
@@ -16349,7 +16615,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B1,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -16797,7 +17063,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B2,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -16854,7 +17120,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={527.89008,5.0014391,943.79797};
+						position[]={527.89001,5.0014391,943.79797};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16883,10 +17149,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -16917,7 +17183,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={531.76605,5.0014391,941.90601};
+						position[]={531.76599,5.0014391,941.90601};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -16949,7 +17215,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,green,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -16985,6 +17251,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSL,30,green,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -17002,7 +17287,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -17021,7 +17306,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item102
@@ -17427,7 +17712,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C1,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -17875,7 +18160,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C2,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -17932,7 +18217,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={484.03308,5.0014391,909.90698};
+						position[]={484.03299,5.0014391,909.90698};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -17961,10 +18246,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -18132,6 +18417,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch1,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -18149,7 +18453,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -18168,7 +18472,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item105
@@ -18183,7 +18487,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={501.91504,5.0014391,909.87201};
+						position[]={501.91501,5.0014391,909.87201};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -18212,10 +18516,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -18393,10 +18697,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=1;
+							value="Ch2,26,orange,sc_mapmarkers\data\rotarywing.paa";
 						};
 					};
 				};
@@ -18453,7 +18757,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={588.00208,5.0014391,909.93701};
+						position[]={588.00201,5.0014391,909.93701};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -18482,10 +18786,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -18653,6 +18957,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch3,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -18670,7 +18993,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -18689,7 +19012,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item107
@@ -18733,10 +19056,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -18904,6 +19227,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch4,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -18921,7 +19263,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -18940,7 +19282,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item108
@@ -19104,7 +19446,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV1,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -19310,7 +19652,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV2,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham2,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -19516,7 +19858,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV3,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham3,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -19722,7 +20064,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV4,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham4,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -19928,7 +20270,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TNK1,32,orange,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="Tndr1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -19985,7 +20327,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={551.90607,5.0014391,907.81299};
+						position[]={551.90601,5.0014391,907.81299};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -20014,10 +20356,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -20097,6 +20439,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rpr1,26,yellow,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -20114,7 +20475,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -20133,7 +20494,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item114
@@ -20296,7 +20657,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG1,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -20501,7 +20862,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG2,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -20706,7 +21067,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -20911,7 +21272,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT2,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -21116,7 +21477,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MTR1,24,orange,\A3\ui_f\data\map\markers\nato\b_mortar.paa";
+							value="MTR,26,orange,sc_mapmarkers\data\mortar.paa";
 						};
 					};
 				};
@@ -21321,7 +21682,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSAM1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="SAM,26,orange,sc_mapmarkers\data\sam.paa";
 						};
 					};
 				};
@@ -21378,7 +21739,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={559.93506,5.0014391,943.90198};
+						position[]={559.935,5.0014391,943.90198};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -21407,10 +21768,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -21441,7 +21802,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={563.93005,5.0014391,941.88898};
+						position[]={563.92999,5.0014391,941.88898};
 						angles[]={0,0.0090058986,0};
 					};
 					side="Independent";
@@ -21472,7 +21833,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,orange,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -21508,6 +21869,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WSL,30,orange,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -21525,7 +21905,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -21544,7 +21924,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item121
@@ -21664,7 +22044,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ST1,24,orange,\A3\ui_f\data\map\markers\nato\b_recon.paa";
+							value="ST,26,orange,sc_mapmarkers\data\scout.paa";
 						};
 					};
 				};
@@ -21912,7 +22292,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ENG1,24,orange,\A3\ui_f\data\map\markers\nato\b_maint.paa";
+							value="ENG,26,orange,sc_mapmarkers\data\engineers.paa";
 						};
 					};
 				};
@@ -22001,7 +22381,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -22542,7 +22922,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D1,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -22990,7 +23370,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D2,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -23079,7 +23459,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -23620,7 +24000,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E1,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -24068,7 +24448,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E2,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -24157,7 +24537,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="FSL,26,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -24698,7 +25078,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F1,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -25146,7 +25526,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F2,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -25839,7 +26219,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="COY,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="COY,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -25940,7 +26320,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={696.05829,5.0014391,830.18048};
+						position[]={696.05798,5.0014391,830.17999};
 						angles[]={0,6.2724166,0};
 					};
 					side="East";
@@ -25972,7 +26352,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1PM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,purple,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -26022,6 +26402,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_xo.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -26039,7 +26438,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -26066,6 +26465,25 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value=" ,16,purple,sc_mapmarkers\data\u_jtac.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
 							property="potato_radios_radio";
 							expression="[_this, _value] call potato_radios_fnc_setChannels";
 							class Value
@@ -26083,7 +26501,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -26109,7 +26527,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="1PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="Plt HQ,34,purple,sc_mapmarkers\data\platoon_hq.paa";
 						};
 					};
 				};
@@ -26335,7 +26753,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="2PLT,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+							value="2PLT,26,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -26392,7 +26810,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={680.0083,5.0014391,816.22748};
+						position[]={680.008,5.0014391,816.22699};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26421,10 +26839,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="ASL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -26455,7 +26873,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={684.11731,5.0014391,814.1825};
+						position[]={684.117,5.0014391,814.18298};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -26487,7 +26905,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,red,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -26523,6 +26941,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL,30,red,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -26540,7 +26977,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -26559,7 +26996,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item156
@@ -26965,7 +27402,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A1,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -27413,7 +27850,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="A2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A2,26,red,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -27470,7 +27907,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={700.08032,5.0014391,816.17249};
+						position[]={700.08002,5.0014391,816.172};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27499,10 +27936,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="BSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -27533,7 +27970,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={704.05334,5.0014391,814.20251};
+						position[]={704.05298,5.0014391,814.203};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -27565,7 +28002,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,blue,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -27601,6 +28038,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL,30,blue,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -27618,7 +28074,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -27637,7 +28093,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item159
@@ -28043,7 +28499,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B1,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -28491,7 +28947,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="B2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="B2,26,blue,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -28548,7 +29004,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={720.02032,5.0014391,816.20349};
+						position[]={720.02002,5.0014391,816.20398};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -28577,10 +29033,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="CSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -28611,7 +29067,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={723.8963,5.0014391,814.31152};
+						position[]={723.896,5.0014391,814.31201};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -28643,7 +29099,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,green,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -28679,6 +29135,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSL,30,green,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -28696,7 +29171,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -28715,7 +29190,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item162
@@ -29121,7 +29596,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C1,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -29569,7 +30044,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="C2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C2,26,green,sc_mapmarkers\data\fireteam.paa";
 						};
 					};
 				};
@@ -29626,7 +30101,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={676.16333,5.0014391,782.3125};
+						position[]={676.16302,5.0014391,782.31299};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -29655,10 +30130,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -29826,6 +30301,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch1,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -29843,7 +30337,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -29862,7 +30356,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item165
@@ -29877,7 +30371,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={694.04529,5.0014391,782.27753};
+						position[]={694.04498,5.0014391,782.27802};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -29906,10 +30400,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -30087,10 +30581,10 @@ class Mission
 							{
 								type[]=
 								{
-									"BOOL"
+									"STRING"
 								};
 							};
-							value=1;
+							value="Ch2,26,orange,sc_mapmarkers\data\rotarywing.paa";
 						};
 					};
 				};
@@ -30147,7 +30641,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={780.13232,5.0014391,782.34253};
+						position[]={780.13202,5.0014391,782.34302};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -30176,10 +30670,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -30347,6 +30841,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch3,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -30364,7 +30877,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -30383,7 +30896,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item167
@@ -30398,7 +30911,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={798.1073,5.0014391,782.28253};
+						position[]={798.10699,5.0014391,782.28296};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -30427,10 +30940,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -30598,6 +31111,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Ch4,26,orange,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -30615,7 +31147,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -30634,7 +31166,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item168
@@ -30649,7 +31181,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={710.10687,5.0014391,782.33032};
+						position[]={710.10699,5.0014391,782.33002};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -30798,7 +31330,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV1,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -31004,7 +31536,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV2,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="IFV2,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -31061,7 +31593,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={813.93109,5.0014391,782.29297};
+						position[]={813.93103,5.0014391,782.29297};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -31210,7 +31742,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV3,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham3,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -31267,7 +31799,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={827.92999,5.0014391,782.17529};
+						position[]={827.92999,5.0014391,782.17499};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -31416,7 +31948,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="IFV4,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="Ham4,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -31473,7 +32005,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={760.11249,5.0014391,776.26422};
+						position[]={760.112,5.0014391,776.26398};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -31622,7 +32154,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TNK1,32,orange,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="Tndr1,26,orange,sc_mapmarkers\data\armored.paa";
 						};
 					};
 				};
@@ -31679,7 +32211,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={744.03632,5.0014391,780.21851};
+						position[]={744.03601,5.0014391,780.21899};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -31708,10 +32240,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="AH1,32,orange,\A3\ui_f\data\map\markers\nato\b_air.paa";
+									value=1;
 								};
 							};
 						};
@@ -31791,6 +32323,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Rpr1,26,yellow,sc_mapmarkers\data\rotarywing.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -31808,7 +32359,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -31827,7 +32378,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item174
@@ -31990,7 +32541,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG1,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -32195,7 +32746,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG2,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -32400,7 +32951,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT1,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -32605,7 +33156,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT2,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT2,26,orange,sc_mapmarkers\data\attachment.paa";
 						};
 					};
 				};
@@ -32810,7 +33361,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MTR1,24,orange,\A3\ui_f\data\map\markers\nato\b_mortar.paa";
+							value="MTR,26,orange,sc_mapmarkers\data\mortar.paa";
 						};
 					};
 				};
@@ -33015,7 +33566,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSAM1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="SAM,26,orange,sc_mapmarkers\data\sam.paa";
 						};
 					};
 				};
@@ -33072,7 +33623,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={752.06531,5.0014391,816.3075};
+						position[]={752.065,5.0014391,816.30798};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -33101,10 +33652,10 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="WSL,24,orange,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value=1;
 								};
 							};
 						};
@@ -33135,7 +33686,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={756.0603,5.0014391,814.29449};
+						position[]={756.06,5.0014391,814.29498};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -33166,7 +33717,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="WM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value=" ,16,orange,sc_mapmarkers\data\u_medic.paa";
 								};
 							};
 						};
@@ -33202,6 +33753,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="WSL,30,orange,sc_mapmarkers\data\squad_hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
 					class Value
@@ -33219,7 +33789,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -33238,7 +33808,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item181
@@ -33358,7 +33928,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ST1,24,orange,\A3\ui_f\data\map\markers\nato\b_recon.paa";
+							value="ST,26,orange,sc_mapmarkers\data\scout.paa";
 						};
 					};
 				};
@@ -33415,7 +33985,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={760.04651,5.0014391,786.20435};
+						position[]={760.047,5.0014391,786.20398};
 						angles[]={0,0.0090058986,0};
 					};
 					side="East";
@@ -33606,7 +34176,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ENG1,24,orange,\A3\ui_f\data\map\markers\nato\b_maint.paa";
+							value="ENG,26,orange,sc_mapmarkers\data\engineers.paa";
 						};
 					};
 				};
@@ -33695,7 +34265,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,red,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -34236,7 +34806,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D1,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D1,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -34684,7 +35254,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="D2,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D2,26,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -34773,7 +35343,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="DSL,26,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -35314,7 +35884,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E1,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E1,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -35762,7 +36332,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="E2,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E2,26,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -35851,7 +36421,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FSL,24,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="FSL,26,green,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -36392,7 +36962,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F1,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F1,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -36840,7 +37410,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="F2,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F2,26,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
