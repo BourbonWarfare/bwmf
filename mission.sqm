@@ -1366,7 +1366,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -1674,7 +1674,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -1900,7 +1900,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -2101,7 +2101,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -2549,7 +2549,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -2997,7 +2997,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -3198,7 +3198,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -3646,7 +3646,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -4094,7 +4094,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -4295,7 +4295,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -4743,7 +4743,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -5191,7 +5191,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -5461,7 +5461,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -5731,7 +5731,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -6001,7 +6001,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -6271,7 +6271,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -6477,7 +6477,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -6683,7 +6683,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -6889,7 +6889,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -7095,7 +7095,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -7301,7 +7301,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -7483,7 +7483,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -7688,7 +7688,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -7893,7 +7893,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -8098,7 +8098,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -8303,7 +8303,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -8508,7 +8508,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -8713,7 +8713,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -8913,7 +8913,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -9075,7 +9075,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -9323,7 +9323,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -9517,7 +9517,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -9965,7 +9965,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -10413,7 +10413,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -10595,7 +10595,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -11043,7 +11043,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -11491,7 +11491,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -11673,7 +11673,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12121,7 +12121,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12569,7 +12569,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12663,7 +12663,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12738,7 +12738,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12813,7 +12813,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12870,7 +12870,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12926,7 +12926,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -12982,7 +12982,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -13038,7 +13038,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -13094,7 +13094,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -13150,7 +13150,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -14341,7 +14341,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -14649,7 +14649,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -14875,7 +14875,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -15076,7 +15076,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -15524,7 +15524,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -15972,7 +15972,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -16173,7 +16173,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -16621,7 +16621,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -17069,7 +17069,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -17270,7 +17270,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -17718,7 +17718,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -18166,7 +18166,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -18436,7 +18436,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -18706,7 +18706,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -18976,7 +18976,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -19246,7 +19246,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -19452,7 +19452,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -19658,7 +19658,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -19864,7 +19864,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -20070,7 +20070,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -20276,7 +20276,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -20458,7 +20458,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -20663,7 +20663,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -20868,7 +20868,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -21073,7 +21073,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -21278,7 +21278,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -21483,7 +21483,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -21688,7 +21688,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -21888,7 +21888,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -22050,7 +22050,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -22298,7 +22298,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -22480,7 +22480,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -22928,7 +22928,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -23376,7 +23376,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -23558,7 +23558,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -24006,7 +24006,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -24454,7 +24454,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -24636,7 +24636,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -25084,7 +25084,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -25532,7 +25532,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -26225,7 +26225,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -26533,7 +26533,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -26759,7 +26759,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -26960,7 +26960,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -27408,7 +27408,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -27856,7 +27856,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -28057,7 +28057,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -28505,7 +28505,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -28953,7 +28953,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -29154,7 +29154,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -29602,7 +29602,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -30050,7 +30050,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -30320,7 +30320,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -30590,7 +30590,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -30860,7 +30860,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -31130,7 +31130,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -31336,7 +31336,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -31542,7 +31542,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -31748,7 +31748,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -31954,7 +31954,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32160,7 +32160,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32342,7 +32342,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32547,7 +32547,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32752,7 +32752,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32957,7 +32957,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33162,7 +33162,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33367,7 +33367,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33572,7 +33572,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33772,7 +33772,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33934,7 +33934,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -34182,7 +34182,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -34364,7 +34364,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -34812,7 +34812,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -35260,7 +35260,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -35442,7 +35442,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -35890,7 +35890,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -36338,7 +36338,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -36520,7 +36520,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -36968,7 +36968,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -37416,7 +37416,7 @@ class Mission
 				class Attribute1
 				{
 					property="groupID";
-					expression="[_this, _value] call potato_miscFixes_fnc_setGroupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
