@@ -20,3 +20,5 @@
 #define F_CAM_BUTTIONTRACERS 2511
 #define F_CAM_BUTTIONZEUS 2512
 #define F_CAM_DIVIDER 4302
+
+#define POTATO_ADMIN [] call potato_common_fnc_isAuthorized;

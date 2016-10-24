@@ -310,17 +310,16 @@ f_cam_ToggleTracers = {
 };
 
 f_cam_AdminZeus = {
-	if ((serverCommandAvailable "#kick") || PABST_ADMIN_playerIsAuthorized) then {
+	if ((serverCommandAvailable "#kick") || POTATO_ADMIN) then {
 
     [true] call F_fnc_ForceExit;
 
-		[[player], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
-		[[], "PABST_ADMIN_server_zeusConnectAllUnits", false] call BIS_fnc_mp;
+		[player, true] remoteExecCall [potato_adminMenu_fnc_zeusConnectCurator, 2];
 		openCuratorInterface;
 		[] spawn {
 			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
 			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
-			[[], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
+			[player, false] remoteExecCall [potato_adminMenu_fnc_zeusConnectCurator, 2];
 			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
 		};
 	} else {
