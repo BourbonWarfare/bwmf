@@ -19,28 +19,33 @@ if (isServer) then {
   [] spawn {
     waitUntil {
 
+      private _oldRespawnableUnits = f_serverRespawnableUnits;
       f_serverRespawnableUnits = [];
 
       { 
-        if (isPlayer _x && {_x getVariable ["f_spectator", false]}) then {
+        if (_x getVariable ["f_spectator", false]) then {
 
           _uid = _x getVariable ["f_respawnUID", ""];
 
           if (_uid != "") then {
             _added = f_serverRespawnableUnits pushBackUnique _uid;
             if (_added != -1) then {
+              _x setPos [0, 0, 5];
               _x enableSimulationGlobal false;
               _x hideObjectGlobal true;
             };
           };
 
         };
-      } forEach allUnits;
+      } forEach allPlayers;
 
-      publicVariable "f_serverRespawnableUnits";
+      if !(_oldRespawnableUnits isEqualTo f_serverRespawnableUnits) then {
+        publicVariable "f_serverRespawnableUnits";
+      };
       
-      sleep 5;
-      false;
+      sleep 1;
+      
+      false
     };
   };
 };
