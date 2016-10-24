@@ -185,7 +185,7 @@ fn_respawnMenuChangeRankAction = {
 fn_reloadDeadPlayers = {
   deadPlayerList = [];
   {
-    if (!alive _x) then { deadPlayerList pushBack _x; };
+    if (!alive _x || ((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)) then { deadPlayerList pushBack _x; };
     nil
   } count allPlayers;
 

@@ -31,6 +31,7 @@ params ["_groupIndex", "_position", "_faction", "_selectedRespawnGroup"];
     _unit = missionNamespace getVariable[_unitName,objNull];
     while{!isNull _unit} do {
       if (!isPlayer _unit) exitWith {
+        _unit setVariable ["f_spectator", false, true];
         _unit setDamage 1;
         [_unit] join grpNull;
       };

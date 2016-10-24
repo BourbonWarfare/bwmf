@@ -4,21 +4,21 @@
 class opf_f {
   //Rifle
   #define EAST_RIFLE "rhs_weap_akm"
-  #define EAST_RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+  #define EAST_RIFLE_MAG "rhs_30Rnd_762x39mm:10","rhs_30Rnd_762x39mm_tracer:4"
   #define EAST_RIFLE_ATTACHMENTS "rhs_acc_dtk1l"
   #define EAST_AAR_ATTACHMENTS EAST_RIFLE_ATTACHMENTS
   //GL Rifle
   #define EAST_GLRIFLE "rhs_weap_akm_gp25"
   #define EAST_GLRIFLE_MAG EAST_RIFLE_MAG
-  #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
-  #define EAST_GLRIFLE_MAG_HE "rhs_VOG25:5"
+  #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Red:4"
+  #define EAST_GLRIFLE_MAG_HE "rhs_VOG25:12"
   #define EAST_GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
   //Carbine
   #define EAST_CARBINE "rhs_weap_akms"
   #define EAST_CARBINE_MAG EAST_RIFLE_MAG
   // AR
   #define EAST_AR "hlc_rifle_rpk"
-  #define EAST_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
+  #define EAST_AR_MAG "hlc_75Rnd_762x39_m_rpk:7"
   // AT
   #define EAST_AT "rhs_weap_rpg7"
   #define EAST_AT_MAG "rhs_rpg7_PG7VL_mag:1"

@@ -32,7 +32,7 @@ while {true} do {
 
   // Check it and see if they have been added already
   {
-    if (!(_x in f_cam_listUnits) && ({alive _x} count units _x) > 0 ) then {
+    if (!(_x in f_cam_listUnits) && ({alive _x && !((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)} count units _x) > 0 ) then {
       _text = toString(toArray(groupID _x) - [45]);
       _index = lbAdd [_listBox,_text];
       _x SetVariable ["f_spect_listBoxIndex", _index];
@@ -41,10 +41,12 @@ while {true} do {
       {
         if (alive _x) then {
           if (!(_x in f_cam_listUnits) && !(_x iskindof "VirtualMan_F")) then {
-            f_cam_listUnits pushBack _x;
-            _text = "    " + name _x;
-            _index = lbAdd [_listBox, _text];
-            _x SetVariable ["f_spect_listBoxIndex", _index];
+            if (!isPlayer _x || isPlayer _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}) then {
+              f_cam_listUnits pushBack _x;
+              _text = "    " + name _x;
+              _index = lbAdd [_listBox, _text];
+              _x SetVariable ["f_spect_listBoxIndex", _index];
+            };
           };
         };
         nil
@@ -56,13 +58,13 @@ while {true} do {
   {
     _index = _x GetVariable ["f_spect_listBoxIndex",-1];
     if (typeName _x == "GROUP") then {
-      if (_index >= 0 && ({alive _x} count units _x) > 0 && {lbText [_listBox,_index] != (toString(toArray(groupID _x) - [45]))}) then {
+      if (_index >= 0 && ({alive _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}} count units _x) > 0 && {lbText [_listBox,_index] != (toString(toArray(groupID _x) - [45]))}) then {
         // there is no lbSetText, so just punt it out of the list and fix it up there..
         lbDelete [_listBox,_index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
-      if (({alive _x} count units _x) <= 0  && _index >= 0) then {
+      if (({alive _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}} count units _x) <= 0  && _index >= 0) then {
         lbDelete [_listBox,_index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
@@ -70,12 +72,12 @@ while {true} do {
     } else {
       _val = lbText [_listBox, _index] != "    " + name _x;
 
-      if (_index >= 0 && alive _x && _val ) then {
+      if (_index >= 0 && (alive _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}) && _val ) then {
         lbDelete [_listBox, _index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;
       };
-      if (!alive _x && _index >= 0) then {
+      if ((!alive _x || {((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}) && _index >= 0) then {
         lbDelete [_listBox, _index];
         f_cam_listUnits = f_cam_listUnits - [_x];
         [] call f_cam_checkIndex;

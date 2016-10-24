@@ -592,7 +592,7 @@ class RscSpectCombo {
   soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1};
   style = 0x02 + 160;
   type = 4;
-  w = 0.12;
+  w = 0.075;
   wholeHeight = "5 * safezoneH";
   x = 0;
   y = 0;
@@ -693,7 +693,7 @@ class f_spec_dialog {
     };
     class FilterAIButton: RscSpectButton {
       idc = 2111;
-      x = 0.00046248 * safezoneW + safezoneX;
+      x = 0 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.04 * safezoneW;
       h = 0.02 * safezoneH;
@@ -706,7 +706,7 @@ class f_spec_dialog {
     };
     class SideFilterButton: RscSpectButton {
       idc = 2112;
-      x = 0.0425375 * safezoneW + safezoneX;
+      x = 0.04 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.04 * safezoneW;
       h = 0.02 * safezoneH;
@@ -719,7 +719,7 @@ class f_spec_dialog {
     };
     class TagsNameButton: RscSpectButton {
       idc = 2113;
-      x = 0.0846125 * safezoneW + safezoneX;
+      x = 0.08 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.04 * safezoneW;
       h = 0.02 * safezoneH;
@@ -732,16 +732,44 @@ class f_spec_dialog {
     };
     class FirstPersonButton: RscSpectButton {
       idc = 2114;
-      x = 0.12679 * safezoneW + safezoneX;
+      x = 0.12 * safezoneW + safezoneX;
       y = -5.99921e-005 * safezoneH + safezoneY;
-      w = 0.05 * safezoneW;
+      w = 0.04 * safezoneW;
       h = 0.02 * safezoneH;
-      text = "First Person";
+      text = "Perspective";
       tooltip = "Switch between First Person or Third person";
       sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
       onButtonClick = "[_this select 0,3] call f_fnc_HandleMenu";
       onMouseHolding = "f_cam_menuShownTime=time";
       onMouseMoving = "f_cam_menuShownTime=time";
+    };
+	class TracerButton: RscSpectButton
+    {
+        idc = 2511;
+        x = 0.16 * safezoneW + safezoneX;
+        y = -5.99921e-005 * safezoneH + safezoneY;
+        w = 0.04 * safezoneW;
+        h = 0.02 * safezoneH;
+        text = "Tracers";
+        tooltip = "Toggle highlighted tracers on and off";
+        sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+        onButtonClick = "[_this select 0,5] call f_fnc_HandleMenu";
+        onMouseHolding = "f_cam_menuShownTime=time";
+        onMouseMoving = "f_cam_menuShownTime=time";
+    };
+    class ZeusButton: RscSpectButton
+    {
+        idc = 2512;
+        x = 0.20 * safezoneW + safezoneX;
+        y = -5.99921e-005 * safezoneH + safezoneY;
+        w = 0.04 * safezoneW;
+        h = 0.02 * safezoneH;
+        text = "Zeus";
+        tooltip = "Open Zeus interface (logged in admin only)";
+        sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+        onButtonClick = "[_this select 0,6] call f_fnc_HandleMenu";
+        onMouseHolding = "f_cam_menuShownTime=time";
+        onMouseMoving = "f_cam_menuShownTime=time";
     };
     class SpecUnitBox: RscSpectList {
       idc = 2103;
@@ -751,9 +779,10 @@ class f_spec_dialog {
       h = 0.9 * safezoneH;
       onLBSelChanged = "[""LBListSelChanged"",_this] call F_fnc_EventHandler";
     };
+
     class SpecModes: RscSpectCombo {
       idc = 2101;
-      x = 0.178999 * safezoneW + safezoneX;
+      x = -100 * safezoneW + safezoneX; //move offscreen, sloppy but keeps other things intact
       y = -5.99921e-005 * safezoneH + safezoneY;
       w = 0.07 * safezoneW;
       h = 0.02 * safezoneH;
@@ -762,6 +791,7 @@ class f_spec_dialog {
       onMouseHolding = "f_cam_menuShownTime=time";
       onMouseMoving = "f_cam_menuShownTime=time";
     };
+
     class SpecText: RscSpectText {
       idc = 1000;
       text = "Spectating:Unknown";

@@ -15,10 +15,10 @@
 #define KEY_IND "ACE_key_indp"
 
 // GEAR
-#define BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
-#define MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-#define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-#define LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
+#define BASE_MEDICAL "ACE_elasticBandage:3","ACE_packingBandage:3","ACE_morphine","ACE_tourniquet:2"
+#define MEDIC_MEDICAL "ACE_fieldDressing:15","ACE_elasticBandage:20","ACE_packingBandage:20","ACE_atropine:6","ACE_morphine:8","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_personalAidKit","ACE_tourniquet:5"
+#define BASE_TOOLS RADIO_SR,"ACE_MapTools"
+#define LEADER_TOOLS "ACE_Flashlight_KSF1"
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
 #define LEADER_LINKED "ItemGPS"
 #define BASE_SMOKES "SmokeShell:2"
@@ -45,10 +45,10 @@
 #define WEST_LEADER_GRENADES WEST_BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 
 // WEST MAT
-#define WEST_MAT "BWA3_CarlGustaf"
-#define WEST_MAT_MAG "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
-#define WEST_MAT_MAG2 "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
-#define WEST_MAT_OPTIC ""
+#define WEST_MAT "rhs_weap_smaw_green"
+#define WEST_MAT_MAG "rhs_mag_smaw_HEAA:2"
+#define WEST_MAT_MAG2 "rhs_mag_smaw_HEAA:2"
+#define WEST_MAT_OPTIC "rhs_weap_optic_smaw"
 
 // WEST SAM
 #define WEST_SAM "rhs_weap_fim92"
@@ -79,8 +79,8 @@
 
 // EAST MAT
 #define EAST_MAT "rhs_weap_rpg7"
-#define EAST_MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
-#define EAST_MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
+#define EAST_MAT_MAG "rhs_rpg7_PG7VR_mag:4"
+#define EAST_MAT_MAG2 "rhs_rpg7_PG7VR_mag:3"
 #define EAST_MAT_OPTIC "rhs_acc_pgo7v"
 
 // EAST SAM

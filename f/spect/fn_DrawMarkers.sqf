@@ -4,7 +4,7 @@ params ["_fullmapWindow"];
 _camera = ([] call f_cam_GetCurrentCam);
 _fullmapWindow drawIcon ["\A3\ui_f\data\GUI\Rsc\RscDisplayMissionEditor\iconCamera_ca.paa", [0,0,0,1],getpos _camera ,20,20,getDir _camera,"",0];
 {
-  if (alive _x) then {
+  if (alive _x && {!((_x getVariable ["f_respawnUID", ""]) in f_serverRespawnableUnits)}) then {
     _name = "";
     _color = switch (side _x) do {
       case blufor: { f_cam_blufor_color };

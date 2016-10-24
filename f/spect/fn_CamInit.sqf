@@ -47,7 +47,7 @@ _listBox = 2103;
 lbClear _listBox;
 // set inital values.
 #include "macros.hpp"
-f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_MODESCOMBO,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_DIVIDER];
+f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_MODESCOMBO,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTIONTRACERS,F_CAM_DIVIDER];
 f_cam_units = [];
 f_cam_players = [];
 f_cam_startX = 0;
@@ -59,6 +59,7 @@ f_cam_hideUI = false;
 f_cam_map_zoom = 0.5;
 f_cam_mode = 0;
 f_cam_toggleCamera = false;
+f_cam_toggleTracersV = false;
 f_cam_playersOnly = false;
 f_cam_toggleTags = true;
 f_cam_ads = false;
@@ -88,7 +89,7 @@ f_cam_timestamp = time;
 f_cam_muteSpectators = true;
 
 // Menu (Top left)
-f_cam_menuControls = [2111,2112,2113,2114,2101,4302];
+f_cam_menuControls = [2111,2112,2113,2114,2511,2512,2101,4302];
 f_cam_menuShownTime = 0;
 f_cam_menuShown = true;
 f_cam_menuWorking = false;
@@ -109,6 +110,156 @@ f_cam_height = 3;
 f_cam_fovZoom = 1.2;
 f_cam_scrollHeight = 0;
 f_cam_cameraMode = 0; // set camera mode (default)
+
+// ====================================================================================
+
+//script by Hypnomatic, saved me a lot of time
+hyp_var_tracer_tracedUnits = [];
+addMissionEventHandler ["Draw3D", {
+    {
+        private["_unit"];
+        _unit = _x;
+        {
+            private["_positions","_color","_muzzleVelocity"];
+            _positions = _unit getVariable [format["hyp_var_tracer_projectile_%1", _x], []];
+            _color     = _unit getVariable ["hyp_var_tracer_color", [1,0,0,1]];
+            _muzzleVelocity = _positions select 0 select 1;
+
+            for "_i" from 0 to (count _positions) - 2 do {
+
+                //Variant of Dslyecxi's awesome color tracking modification
+                if (_unit getVariable ["hyp_var_tracer_trackVel", false]) then {
+                    private["_velocity"];
+                    _velocity = (_positions select _i) select 1;
+                    _color = switch true do {
+                        case (_velocity / _muzzleVelocity >= .75) : {[1,0,0,1]};
+                        case (_velocity / _muzzleVelocity >= .50) : {[.5,.5,0,1]};
+                        case (_velocity / _muzzleVelocity >= .25) : {[0,1,0,1]};
+                        case (_velocity / _muzzleVelocity >= .10) : {[0,0,1,1]};
+                        case (_velocity / _muzzleVelocity >= 0.0) : {[1,1,1,1]};
+                        default {_color};
+                    };
+                };
+
+                drawLine3D [_positions select _i select 0, _positions select (_i + 1) select 0, _color];
+            };
+        } forEach ( _unit getVariable["hyp_var_tracer_activeIndexes", []] );
+    } forEach hyp_var_tracer_tracedUnits;
+}];
+hyp_fnc_traceFire = {
+    private["_this","_unit","_color","_lifetime","_interval","_maxDistance","_maxDuration","_eventHandle"];
+    _unit        = [_this, 0, player, [objNull]] call BIS_fnc_param;
+    _color       = [_this, 1, [1,0,0,1], [[]], [4]] call BIS_fnc_param;
+    _lifetime    = [_this, 2, -1, [0]] call BIS_fnc_param;
+    _interval    = [_this, 3, 0, [0]] call BIS_fnc_param;
+    _maxDistance = [_this, 4, -1, [0]] call BIS_fnc_param;
+    _maxDuration = [_this, 5, -1, [0]] call BIS_fnc_param;
+    _trackVel    = [_this, 6, false, [false]] call BIS_fnc_param;
+
+    _unit setVariable ["hyp_var_tracer_color", _color];
+    _unit setVariable ["hyp_var_tracer_lifetime", _lifetime];
+    _unit setVariable ["hyp_var_tracer_interval", _interval];
+    _unit setVariable ["hyp_var_tracer_trackVel", _trackVel];
+    _unit setVariable ["hyp_var_tracer_maxDistance", _maxDistance];
+    _unit setVariable ["hyp_var_tracer_maxDuration", _maxDuration];
+    _unit setVariable ["hyp_var_tracer_currentIndex", 0];
+    _unit setVariable ["hyp_var_tracer_activeIndexes", []];
+    _unit setVariable ["hyp_var_tracer_initialized", true];
+
+    _eventHandle = _unit addEventHandler ["fired", {
+        [_this, (position(_this select 6)),(velocity (_this select 6)) distance [0,0,0]] spawn hyp_fnc_traceFireEvent;
+    }];
+    _unit setVariable ["hyp_var_tracer_eventHandle", _eventHandle];
+    hyp_var_tracer_tracedUnits set [count hyp_var_tracer_tracedUnits, _unit];
+};
+
+hyp_fnc_traceFireEvent = {
+    private["_this","_params","_initialPos","_unit","_projectile","_color","_lifetime","_interval","_maxDistance",
+            "_maxDuration","_startTime","_skippedFrames","_positions","_projIndex","_activeIndexes","_initialVel"];
+    _params        = _this select 0;
+    _initialPos    = _this select 1;
+    _initialVel    = _this select 2;
+    _unit          = _params select 0;
+    _projectile    = _params select 6;
+    _color         = _unit getVariable "hyp_var_tracer_color";
+    _lifetime      = _unit getVariable "hyp_var_tracer_lifetime";
+    _interval      = _unit getVariable "hyp_var_tracer_interval";
+    _maxDistance   = _unit getVariable "hyp_var_tracer_maxDistance";
+    _maxDuration   = _unit getVariable "hyp_var_tracer_maxDuration";
+    _startTime     = diag_tickTime;
+    _skippedFrames = _interval; //Number of frames since last full operation.  Starts at interval value to record first position
+    _positions     = [[_initialPos,_initialVel]];
+    _projIndex     = -1;
+    _activeIndexes = [];
+
+    _projIndex     = _unit getVariable "hyp_var_tracer_currentIndex"; //Get the index to assign to the bullet
+    _unit setVariable ["hyp_var_tracer_currentIndex", _projIndex + 1]; //Increment index for next bullet
+
+    //Initialize final array into which all positions for the current projectile will be stored...
+    _unit setVariable [format["hyp_var_tracer_projectile_%1", _projIndex], _positions];
+    //...Then update the activeIndexes to indicate that the projectile is active
+    _activeIndexes = _unit getVariable "hyp_var_tracer_activeIndexes";
+    _activeIndexes set [count _activeIndexes, _projIndex];
+    _unit setVariable ["hyp_var_tracer_activeIndexes", _activeIndexes];
+    _activeIndexes = nil; //Completely nil this variable just as a safety measure, as the data it holds may be outdated now
+
+    //Loop to run as long as the projectile's line is being updated
+    waitUntil {
+
+        //First, handle skipping frames on an interval
+        if (_interval != 0 && _skippedFrames < _interval) exitWith {_skippedFrames = _skippedFrames + 1; false}; //Check and handle if frame should be skipped
+        if (_interval != 0) then {_skippedFrames = 0;}; //Reset skipped frame counter on recording a frame
+        //Next, check if the bullet still exists
+        if (!alive _projectile) exitWith {true};
+        //Finally, handle the duration and distance checks
+        if (_maxDuration != -1 && ((diag_tickTime - _startTime) >= _maxDuration)) exitWith {true}; //Break loop if duration for tracking has been exceeded
+        if (_maxDistance != -1 && ((_initialPos distance _projectile) >= _maxDistance)) exitWith {true}; //Break loop if distance for tracking has been exceeded
+
+        //Now, checks have all been run, so let's do the actual bullet tracking stuff
+        _positions set [count _positions, [position _projectile, (velocity _projectile) distance [0,0,0]]];
+        _unit setVariable [format["hyp_var_tracer_projectile_%1", _projIndex], _positions];
+    };
+
+    //Now, if a lifetime is specified, wait until it has elapsed, then delete all data for that projectile
+    if (_lifetime != -1) then {
+        waitUntil {(diag_tickTime - _startTime) >= _lifetime};
+        //Remove the current projectile's index from the activeIndexes...
+        _activeIndexes = _unit getVariable "hyp_var_tracer_activeIndexes";
+        _activeIndexes = _activeIndexes - [_projIndex];
+        _unit setVariable ["hyp_var_tracer_activeIndexes", _activeIndexes];
+        //... Then delete the data for the projectile itself
+        _unit setVariable [format["hyp_var_tracer_projectile_%1", _projIndex], nil]; //Delete the projectile's data
+    };
+};
+
+//Clears all lines created by a given unit manually
+hyp_fnc_traceFireClear = {
+    private["_this","_unit"];
+    _unit = _this select 0;
+    {
+        _unit setVariable [format["hyp_var_tracer_projectile_%1", _x], nil];
+    } forEach (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
+    _unit setVariable ["hyp_var_tracer_activeIndexes", []];
+};
+
+//Completely removes this script from a unit
+hyp_fnc_traceFireRemove = {
+    private["_this","_unit"];
+    _unit = _this select 0;
+
+    _unit removeEventHandler ["fired", (_unit getVariable ["hyp_var_tracer_eventHandle", 0])];
+    {
+        _unit setVariable [format["hyp_var_tracer_projectile_%1", _x], nil];
+    } forEach (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
+    _unit setVariable ["hyp_var_tracer_color", nil];
+    _unit setVariable ["hyp_var_tracer_lifetime", nil];
+    _unit setVariable ["hyp_var_tracer_interval", nil];
+    _unit setVariable ["hyp_var_tracer_maxDistance", nil];
+    _unit setVariable ["hyp_var_tracer_maxDuration", nil];
+    _unit setVariable ["hyp_var_tracer_currentIndex", nil];
+    _unit setVariable ["hyp_var_tracer_activeIndexes", []];
+    _unit setVariable ["hyp_var_tracer_eventHandle", nil];
+};
 
 f_cam_listUnits = [];
 
@@ -136,6 +287,46 @@ f_cam_ToggleFPCamera = {
   };
   call F_fnc_ReloadModes;
 };
+
+f_cam_ToggleTracers = {
+	f_cam_toggleTracersV = !f_cam_toggleTracersV;
+	if (f_cam_toggleTracersV) then {
+		{
+			if (side _x == east) then {
+				[_x, [1,0,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
+			};
+			if (side _x == west) then {
+				[_x, [0,0,1,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
+			};
+			if (side _x == resistance) then {
+				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
+			};
+		} forEach allUnits;
+	} else {
+		{
+			[_x] call hyp_fnc_traceFireRemove
+		} forEach allUnits;
+	};
+};
+
+f_cam_AdminZeus = {
+	if ((serverCommandAvailable "#kick") || POTATO_ADMIN) then {
+
+    [true] call F_fnc_ForceExit;
+
+		[player, true] remoteExecCall [potato_adminMenu_fnc_zeusConnectCurator, 2];
+		openCuratorInterface;
+		[] spawn {
+			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
+			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
+			[player, false] remoteExecCall [potato_adminMenu_fnc_zeusConnectCurator, 2];
+			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
+		};
+	} else {
+		systemChat "You are not authorized to use Zeus.";
+	};
+};
+
 f_cam_GetCurrentCam = {
   _camera = f_cam_camera;
   switch(f_cam_mode) do {

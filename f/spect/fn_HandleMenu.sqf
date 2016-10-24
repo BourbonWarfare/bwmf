@@ -31,4 +31,34 @@ switch (_button) do {
     if (f_cam_toggleCamera) then { _control ctrlSetText "Third Person"; }
     else { _control ctrlSetText "First Person"; };
   };
+  case 4: {
+      0 spawn {
+          private ["_spectMuted"];
+
+          _spectMuted = false;
+          if (!isNil "ACRE_MUTE_SPECTATORS") then { _spectMuted = ACRE_MUTE_SPECTATORS; };
+
+          _camera = f_cam_camera;
+
+          [] call F_fnc_ForceExit;
+          ACRE_MUTE_SPECTATORS = true;
+
+          _camera call bis_fnc_cameraOld;
+          waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
+
+          ACRE_MUTE_SPECTATORS = _spectMuted;
+          [player,objNull,player,0,true] spawn F_fnc_CamInit;
+      };
+  };
+  case 5: { // Tracers/Notracers Button
+      [] call f_cam_ToggleTracers;
+      if (f_cam_toggleTracersV) then {
+          _control ctrlSetText "Tracers On";
+      } else {
+          _control ctrlSetText "Tracers Off";
+      };
+  };
+  case 6: {
+      [] call f_cam_AdminZeus;
+  }
 };
