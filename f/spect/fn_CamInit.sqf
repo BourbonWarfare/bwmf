@@ -312,7 +312,7 @@ f_cam_ToggleTracers = {
 f_cam_AdminZeus = {
 	if ((serverCommandAvailable "#kick") || PABST_ADMIN_playerIsAuthorized) then {
 
-        [true] call F_fnc_ForceExit;
+    [true] call F_fnc_ForceExit;
 
 		[[player], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
 		[[], "PABST_ADMIN_server_zeusConnectAllUnits", false] call BIS_fnc_mp;
