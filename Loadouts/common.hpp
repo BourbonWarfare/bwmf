@@ -17,10 +17,10 @@
 // GEAR
 #define BASE_MEDICAL "ACE_fieldDressing:3","ACE_morphine"
 #define MEDIC_MEDICAL "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
-#define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-#define LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
-#define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
-#define LEADER_LINKED "ItemGPS"
+#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
+#define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
+#define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
+#define COMMON_LEADER_LINKED "ItemGPS"
 #define BASE_SMOKES "SmokeShell:2"
 #define LEADER_SMOKES "SmokeShell:4","SmokeShellGreen:2"
 #define MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
@@ -30,60 +30,3 @@
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_Vector"
-
-// SIDE SPECIFIC GEAR
-
-// WEST GEAR
-#define WEST_BASE_TOOLS BASE_TOOLS
-#define WEST_LEADER_TOOLS LEADER_TOOLS,KEY_WEST
-#define WEST_BASE_LINKED BASE_LINKED
-#define WEST_LEADER_LINKED LEADER_LINKED
-
-// WEST GRENADES
-#define WEST_BASE_FRAG "rhs_mag_m67:2"
-#define WEST_BASE_GRENADES WEST_BASE_FRAG,BASE_SMOKES
-#define WEST_LEADER_GRENADES WEST_BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
-
-// WEST MAT
-#define WEST_MAT "BWA3_CarlGustaf"
-#define WEST_MAT_MAG "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
-#define WEST_MAT_MAG2 "BWA3_CarlGustaf_HEAT:2","BWA3_CarlGustaf_HE:2"
-#define WEST_MAT_OPTIC ""
-
-// WEST SAM
-#define WEST_SAM "rhs_weap_fim92"
-#define WEST_SAM_MAG "rhs_fim92_mag:3"
-#define WEST_SAM_MAG2 "rhs_fim92_mag:2"
-
-// IND GEAR
-#define IND_BASE_TOOLS BASE_TOOLS
-#define IND_LEADER_TOOLS LEADER_TOOLS,KEY_IND
-#define IND_BASE_LINKED BASE_LINKED
-#define IND_LEADER_LINKED LEADER_LINKED
-
-// IND GRENADES
-#define IND_BASE_FRAG "rhs_mag_rgd5:2"
-#define IND_BASE_GRENADES IND_BASE_FRAG,BASE_SMOKES
-#define IND_LEADER_GRENADES IND_BASE_FRAG,LEADER_SMOKES,"chemlight_green:2"
-
-// EAST GEAR
-#define EAST_BASE_TOOLS BASE_TOOLS
-#define EAST_LEADER_TOOLS LEADER_TOOLS,KEY_EAST
-#define EAST_BASE_LINKED BASE_LINKED
-#define EAST_LEADER_LINKED LEADER_LINKED
-
-// EAST GRENADES
-#define EAST_BASE_FRAG "rhs_mag_rgd5:2"
-#define EAST_BASE_GRENADES EAST_BASE_FRAG,BASE_SMOKES
-#define EAST_LEADER_GRENADES EAST_BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
-
-// EAST MAT
-#define EAST_MAT "rhs_weap_rpg7"
-#define EAST_MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
-#define EAST_MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
-#define EAST_MAT_OPTIC "rhs_acc_pgo7v"
-
-// EAST SAM
-#define EAST_SAM "rhs_weap_igla"
-#define EAST_SAM_MAG "rhs_mag_9k38_rocket:3"
-#define EAST_SAM_MAG2 "rhs_mag_9k38_rocket:2"
