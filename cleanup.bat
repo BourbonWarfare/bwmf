@@ -1,4 +1,4 @@
-rem^ & del /q mission.sqm.oldBackup & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
+rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
 
 Wscript.Echo "begin."
 set objShell = CreateObject("WScript.Shell")
@@ -13,16 +13,16 @@ WScript.Quit 0
 sub CleanFile(fString)
 	Wscript.Echo "Cleaning: " & fString & "..."
 	script = objFSO.OpenTextFile(fString).ReadAll
-	
+
 	set objRegEx = CreateObject("VBScript.RegExp")
 	objRegEx.Global = True
 	objRegEx.IgnoreCase = True
 	objRegEx.Pattern = "\/\/.*"
 	script = objRegEx.Replace(script, "")
-	
+
 	objRegEx.Pattern = "(\r\n|\r|\n)(\s*(\r\n|\r|\n))+"
 	script = objRegEx.Replace(script, vbCr & vbLf)
-	
+
 	objFSO.OpenTextFile(fString, 2).Write(script)
 end sub
 
@@ -54,6 +54,3 @@ sub ShowSubFolders(fFolder)
 		ShowSubFolders(Subfolder)
 	next
 end sub
-
-
-
