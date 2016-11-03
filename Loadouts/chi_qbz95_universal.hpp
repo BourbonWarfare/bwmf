@@ -1,7 +1,7 @@
 // Author: SovietOnion
 // Description: Chinese Universal camo with QBZ-95 rifles
 
-#include "common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
+#include "undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "arifle_CTAR_blk_F"
@@ -53,7 +53,7 @@
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
-#define LINKED COMMON_LINKED
+#define BASE_LINKED COMMON_LINKED
 #define LEADER_LINKED COMMON_LEADER_LINKED
 
 class Car {
@@ -136,19 +136,25 @@ class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-  LAUNCHER_GEAR("MNP_B_Carryall_PLA_Basic", MAT_MAG)
+  backpack[] = {"MNP_B_Carryall_PLA_Basic"};
+  backpackItems[] = {};
+  magazines[] += {MAT_MAG};
+  items[] += {BASE_MEDICAL};
   launchers[] = {MAT};
   secondaryAttachments[] = {MAT_OPTIC};
 };
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  LAUNCHER_GEAR("MNP_B_Carryall_PLA_Basic", MAT_MAG2)
+  backpack[] = {"MNP_B_Carryall_PLA_Basic"};
+  backpackItems[] = {};
+  magazines[] += {MAT_MAG2};
+  items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
-  LAUNCHER_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
+  SAM_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
   launchers[] = {SAM};
 };
 class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  LAUNCHER_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
+  SAM_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
 };
 class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("O_Mortar_01_weapon_F")

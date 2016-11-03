@@ -1,4 +1,4 @@
-rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
+rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & pause & del "%~f0" & exit /b
 
 Wscript.Echo "begin."
 set objShell = CreateObject("WScript.Shell")
@@ -32,7 +32,7 @@ sub RemoveUnusedLoadouts()
 	set colFiles = objFolder.Files
 	for Each objFile in colFiles
 		loadoutName = objFile.name
-		if InStr(loadouts, objFile.name) <> 0 then
+		if ((InStr(loadouts, objFile.name) <> 0) Or (objFile.name = "undef.hpp")) then
 			Wscript.Echo "Loadout: " & objFile.name & " used, leaving in mission folder"
 		else
 			Wscript.Echo "Loadout: " & objFile.name & " not used, deleting from mission folder"

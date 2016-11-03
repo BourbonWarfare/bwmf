@@ -1,9 +1,5 @@
 // common defines
 
-// FUNCTIONS
-#define LAUNCHER_GEAR(BACKPACK, MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
-#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {"ACE_RangeTable_82mm"};
-
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
 #define RADIO_MR "ACRE_PRC148"
@@ -30,3 +26,11 @@
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_Vector"
+
+// HELPERS
+#define ARR_2(ARG1,ARG2) ARG1, ARG2
+#define ARR_3(ARG1,ARG2,ARG3) ARG1, ARG2, ARG3
+
+// FUNCTIONS
+#define SAM_GEAR(BACKPACK,MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
+#define MORTAR_GEAR(BACKPACK) backpack[] = {#BACKPACK}; items[] += {"ACE_RangeTable_82mm"};

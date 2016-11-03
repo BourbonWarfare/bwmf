@@ -9,7 +9,8 @@ if (isServer) then {
 
 if (hasInterface) then {
   [] spawn {
-    waitUntil {time > 0};
+    private _timeOut = time + 30;
+    waitUntil {(time > 0 && alive player) || time > _timeOut};
     player setVariable ["f_respawnName", name player, true];
     player setVariable ["f_respawnUID", getPlayerUID player, true];
   };

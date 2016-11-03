@@ -16,6 +16,9 @@ class CfgLoadouts {
   // prefixes to strip from the units classnames
   prefixes[] = {"b_", "o_", "i_"};
 
+  // Shared defines
+  #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
+
   // Available loadouts (configured for BluFor, Indy, and OpFor)
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
