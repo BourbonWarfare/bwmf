@@ -24,8 +24,7 @@
 #define AT "UK3CB_BAF_AT4_CS_AP_Launcher"
 // MMG
 #define MMG "UK3CB_BAF_L7A2"
-#define MMG_MAG "UK3CB_BAF_762_100Rnd_T:6"
-#define MMG_MAG2 "UK3CB_BAF_762_100Rnd_T:5"
+#define MMG_MAG "UK3CB_BAF_762_100Rnd_T:5"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
@@ -109,7 +108,7 @@ class officer_F: Soldier_SL_F {// CO and DC
   items[] += {RADIO_LR};
 };
 class soldier_UAV_F: Soldier_F {
-  backpack[] = {"B_rhsusf_B_BACKPACK"};
+  backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
 };
 class Soldier_AR_F: Soldier_F {// AR
@@ -143,7 +142,7 @@ class support_MG_F: Soldier_AR_F {// MMG
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B"};
-  backpackItems[] += {MMG_MAG2};
+  backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B"};

@@ -24,7 +24,7 @@
 #define AT "rhs_weap_rpg26"
 // MMG
 #define MMG "rhs_weap_pkp"
-#define MMG_MAG "rhs_100Rnd_762x54mmR:3","rhs_100Rnd_762x54mmR_green:2"
+#define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
 // MAT
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"

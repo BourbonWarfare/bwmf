@@ -1,4 +1,4 @@
-rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & pause & del "%~f0" & exit /b
+rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /q .* &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
 
 Wscript.Echo "begin."
 set objShell = CreateObject("WScript.Shell")

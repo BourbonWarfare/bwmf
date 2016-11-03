@@ -18,10 +18,13 @@
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "rhs_weap_pkp"
-#define AR_MAG "rhs_100Rnd_762x54mmR:3","rhs_100Rnd_762x54mmR_green:2"
+#define AR "hlc_rifle_rpk74n"
+#define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
 // AT
 #define AT "rhs_weap_rpg26"
+// MMG
+#define MMG "rhs_weap_pkm"
+#define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
 // MAT
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
@@ -130,10 +133,15 @@ class medic_F: Fic_Soldier_Carbine {// Medic
 class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
 };
-class support_MG_F: Soldier_AR_F {}; // MMG Gunner
+class support_MG_F: Soldier_AR_F {// MMG
+  backpack[] = {"B_Kitbag_sgg"};
+  weapons[] = {MMG};
+  magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  attachments[] = {};
+};
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpack[] = {"B_Kitbag_sgg"};
-  backpackItems[] += {AR_MAG};
+  backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   backpack[] = {"rhs_rpg_empty"};

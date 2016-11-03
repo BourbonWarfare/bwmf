@@ -19,13 +19,12 @@
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "rhs_weap_m249_pip_L"
-#define AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
+#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
 // AT
 #define AT "rhs_weap_M136"
 // MMG
 #define MMG "rhs_weap_m240B"
 #define MMG_MAG "rhsusf_100Rnd_762x51:5"
-#define MMG_MAG2 "rhsusf_100Rnd_762x51:4"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
@@ -109,7 +108,7 @@ class officer_F: Soldier_SL_F {// CO and DC
   items[] += {RADIO_LR};
 };
 class soldier_UAV_F: Soldier_F {
-  backpack[] = {"B_rhsusf_B_BACKPACK"};
+  backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
 };
 class Soldier_AR_F: Soldier_F {// AR
@@ -140,7 +139,8 @@ class support_MG_F: Soldier_AR_F {// MMG
   attachments[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpackItems[] += {MMG_MAG2};
+  backpack[] = {"B_Kitbag_cbr"};
+  backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   backpack[] = {"B_Carryall_mcamo"};

@@ -18,14 +18,14 @@
 #define CARBINE "BWA3_G36K"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "BWA3_MG4"
-#define AR_MAG "BWA3_200Rnd_556x45:2"
+#define AR "BWA3_G36_LMG"
+#define AR_MAG "BWA3_100Rnd_556x45_G36_Tracer:4"
 // AT
 #define AT "BWA3_Pzf3"
 #define AT_MAG "BWA3_Pzf3_IT"
 // MMG
 #define MMG "BWA3_MG5"
-#define MMG_MAG "BWA3_120Rnd_762x51:4"
+#define MMG_MAG "BWA3_120Rnd_762x51_Tracer:4"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
@@ -107,7 +107,7 @@ class officer_F: Soldier_SL_F {// CO and DC
   items[] += {RADIO_LR};
 };
 class soldier_UAV_F: Soldier_F {
-  backpack[] = {"B_rhsusf_B_BACKPACK"};
+  backpack[] = {"B_UAV_01_backpack_F"};
   linkedItems[] += {"B_uavterminal"};
 };
 class Soldier_AR_F: Soldier_F {// AR
