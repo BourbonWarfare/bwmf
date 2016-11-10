@@ -7256,7 +7256,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="ESL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -17333,7 +17333,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="ESL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -26051,7 +26051,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DSL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="ESL,24,blue,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
