@@ -3,5 +3,5 @@ class frespawn {
   class RespawnDrawMapIcons {};
   class RespawnLocalClient {};
   class RespawnWaveServer {};
-  class RespawnInit {};
+  class RespawnInit { postInit = 1; };
 };
