@@ -1,4 +1,5 @@
-//Bonus example civilian loadouts:
+// Bonus example civilian loadouts
+
 class CIV_F {
   class C_man_1 {
     uniform[] = {"U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite"};
