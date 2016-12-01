@@ -1,10 +1,10 @@
 // Author: BWMF
-// Description: Rebel: AK47 - Mixed Desert
+// Description: Rebel: M70/AKM - Mixed Desert
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_akm"
+#define RIFLE "rhs_weap_m70b1"
 #define RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_dtk1l"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
@@ -14,11 +14,11 @@
 #define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
 #define GLRIFLE_MAG_HE "rhs_VOG25:5"
 // Carbine
-#define CARBINE "rhs_weap_akms"
+#define CARBINE "rhs_weap_m70ab2"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "hlc_rifle_rpk"
-#define AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
+#define AR "potato_arifle_RPK"
+#define AR_MAG "potato_75Rnd_762x39mm_tracer:5"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:1"
@@ -41,8 +41,8 @@
 #define SPOTTER "rhs_weap_svdp"
 #define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:10"
 // SMG
-#define SMG "hlc_rifle_aks74u"
-#define SMG_MAG "hlc_30Rnd_545x39_B_AK:8"
+#define SMG "rhs_weap_m92"
+#define SMG_MAG "rhs_30Rnd_762x39mm:8"
 // Pistol
 #define PISTOL "rhs_weap_makarov_pmm"
 #define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"

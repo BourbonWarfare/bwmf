@@ -41,8 +41,8 @@
 #define SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
 #define SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
 // SMG
-#define SMG "hlc_smg_mp5a4"
-#define SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
+#define SMG "CUP_smg_MP5A5"
+#define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
 #define PISTOL "rhsusf_weap_m1911a1"
 #define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"

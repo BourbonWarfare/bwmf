@@ -18,8 +18,8 @@
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "hlc_rifle_rpk74n"
-#define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
+#define AR "CUP_arifle_RPK74"
+#define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
 // AT
 #define AT "rhs_weap_rpg26"
 // MMG
@@ -41,8 +41,8 @@
 #define SPOTTER "rhs_weap_svds"
 #define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
 // SMG
-#define SMG "rhs_weap_ak74m_camo_folded"
-#define SMG_MAG "rhs_30Rnd_545x39_AK:5"
+#define SMG "rhs_weap_aks74u"
+#define SMG_MAG "rhs_30Rnd_545x39_AK:6"
 // Pistol
 #define PISTOL "rhs_weap_pya"
 #define PISTOL_MAG "rhs_mag_9x19_17:3"
