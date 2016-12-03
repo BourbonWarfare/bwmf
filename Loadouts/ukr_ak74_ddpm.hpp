@@ -4,21 +4,21 @@
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "hlc_rifle_ak74_dirty"
-#define RIFLE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
-#define RIFLE_ATTACHMENTS "rhs_acc_1p63"
+#define RIFLE "CUP_arifle_AK74"
+#define RIFLE_MAG "CUP_30Rnd_545x39_AK_M:8","CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M:2"
+#define RIFLE_ATTACHMENTS "CUP_optic_Kobra"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 // GL Rifle
-#define GLRIFLE "hlc_rifle_aks74_GL"
+#define GLRIFLE "CUP_arifle_AK74_GL"
 #define GLRIFLE_MAG RIFLE_MAG
-#define GLRIFLE_MAG_SMOKE "hlc_GRD_White:2","hlc_GRD_Red:2"
-#define GLRIFLE_MAG_HE "hlc_VOG25_AK:5"
+#define GLRIFLE_MAG_SMOKE "CUP_1Rnd_SMOKE_GP25_M:2","CUP_1Rnd_SmokeRed_GP25_M:2"
+#define GLRIFLE_MAG_HE "CUP_1Rnd_HE_GP25_M:5"
 // Carbine
-#define CARBINE "hlc_rifle_aks74"
+#define CARBINE "CUP_arifle_AKS74"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "hlc_rifle_rpk74n"
-#define AR_MAG "hlc_45Rnd_545x39_t_rpk:9"
+#define AR "CUP_arifle_RPK74_45"
+#define AR_MAG "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:9"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:1"
@@ -41,8 +41,8 @@
 #define SPOTTER "rhs_weap_svdp"
 #define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:10"
 // SMG
-#define SMG CARBINE
-#define SMG_MAG "hlc_30Rnd_545x39_B_AK:8"
+#define SMG "rhs_weap_aks74u"
+#define SMG_MAG "rhs_30Rnd_545x39_AK:6"
 // Pistol
 #define PISTOL "rhs_weap_makarov_pmm"
 #define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
