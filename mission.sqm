@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1738;
+		nextID=1824;
 	};
 	class Camera
 	{
-		pos[]={488.26425,35.060619,637.30176};
-		dir[]={-0.0026310915,-0.77932054,0.62675428};
-		up[]={-0.0032730957,0.626607,0.77933347};
-		aside[]={1.0000707,-7.661688e-007,0.0041992916};
+		pos[]={468.84763,298.39832,417.41412};
+		dir[]={0.042315863,-0.76932716,0.63762641};
+		up[]={0.050943129,0.63882738,0.76766485};
+		aside[]={0.99790365,-1.2651435e-007,-0.066224709};
 	};
 };
 binarizationWanted=0;
@@ -53,13 +53,16 @@ addons[]=
 	"A3_Soft_F_EPC_Truck_03",
 	"potato_miscFixes",
 	"rhs_c_troops",
-	"Desert"
+	"Desert",
+	"rhs_c_bmp",
+	"rhs_c_t72",
+	"rhs_c_a2port_air"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=25;
 		class Item0
 		{
 			className="A3_Air_F_Beta";
@@ -210,6 +213,27 @@ class AddonsMetaData
 		{
 			className="Desert";
 			name="Desert";
+		};
+		class Item22
+		{
+			className="rhs_c_bmp";
+			name="BMP-1 & 2 IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item23
+		{
+			className="rhs_c_t72";
+			name="T-72 Series Tanks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item24
+		{
+			className="rhs_c_a2port_air";
+			name="A2 ported air";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -813,7 +837,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=234;
+		items=259;
 		class Item0
 		{
 			dataType="Object";
@@ -28374,7 +28398,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={525.5224,5.0014391,704.25085};
+						position[]={525.52197,5.0014391,704.25098};
 						angles[]={0,6.2545094,0};
 					};
 					side="East";
@@ -28407,7 +28431,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BV,24,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="BV,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -28426,7 +28450,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -28793,7 +28817,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={462.85907,5.0014391,629.06787};
+						position[]={410.25977,5.0014391,598.78223};
 						angles[]={0,0.11877692,0};
 					};
 					side="East";
@@ -28816,7 +28840,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={467.23132,5.0014391,623.56061};
+						position[]={414.63202,5.0014391,593.27496};
 						angles[]={0,0.11877692,0};
 					};
 					side="East";
@@ -28838,7 +28862,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={457.30182,5.0014391,624.74561};
+						position[]={404.70251,5.0014391,594.45996};
 						angles[]={0,0.11877692,0};
 					};
 					side="East";
@@ -28860,7 +28884,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={471.60364,5.0014391,618.0033};
+						position[]={419.00433,5.0014391,587.71765};
 						angles[]={0,0.11877692,0};
 					};
 					side="East";
@@ -28884,305 +28908,6 @@ class Mission
 			id=1409;
 		};
 		class Item203
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={429.93875,5.0014391,623.58026};
-						angles[]={0,6.2525277,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						name="UnitMSV_TNK1_C";
-						description="Russian Tank 1 Commander";
-						isPlayable=1;
-					};
-					id=1420;
-					type="rhs_msv_crew";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={435.08969,5.0014391,618.78583};
-						angles[]={0,6.2525277,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						name="UnitMSV_TNK1_G";
-						description="Russian Tank 1 Gunner";
-						isPlayable=1;
-					};
-					id=1421;
-					type="rhs_msv_crew";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={425.09439,5.0014391,618.47931};
-						angles[]={0,6.2525277,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
-						name="UnitMSV_TNK1_D";
-						description="Russian Tank 1 Driver (Repair)";
-						isPlayable=1;
-					};
-					id=1422;
-					type="rhs_msv_engineer";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1419;
-		};
-		class Item204
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={610.01257,5.0014391,621.09296};
-						angles[]={0,6.2647209,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						name="UnitMSV_AH1_P";
-						description="Russian Attack Helo 1 Pilot";
-						isPlayable=1;
-					};
-					id=1424;
-					type="rhs_pilot_transport_heli";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={615.10413,5.0014391,616.23615};
-						angles[]={0,6.2647209,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
-						name="UnitMSV_AH1_CP";
-						description="Russian Attack Helo 1 Gunner (Repair)";
-						isPlayable=1;
-					};
-					id=1425;
-					type="rhs_msv_engineer";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1423;
-		};
-		class Item205
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={639.85657,5.0014391,618.68622};
-						angles[]={0,6.2647209,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						name="UnitMSV_AH2_P";
-						description="Russian Attack Helo 2 Pilot";
-						isPlayable=1;
-					};
-					id=1427;
-					type="rhs_pilot_transport_heli";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={644.94812,5.0014391,613.82941};
-						angles[]={0,6.2647209,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						name="UnitMSV_AH2_CP";
-						description="Russian Attack Helo 2 Gunner (Repair)";
-						isPlayable=1;
-					};
-					id=1428;
-					type="rhs_msv_engineer";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1426;
-		};
-		class Item206
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={543.26074,5.0014391,623.11981};
-						angles[]={0,6.2585874,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						name="UnitMSV_TH1_P";
-						description="Russian Transport Helo 1 Pilot";
-						isPlayable=1;
-					};
-					id=1430;
-					type="rhs_pilot_transport_heli";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={548.3822,5.0014391,618.29425};
-						angles[]={0,6.2585874,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
-						name="UnitMSV_TH1_CP";
-						description="Russian Transport Helo 1 Co-Pilot (Repair)";
-						isPlayable=1;
-					};
-					id=1431;
-					type="rhs_msv_engineer";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1429;
-		};
-		class Item207
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={569.79199,5.0014391,622.68573};
-						angles[]={0,6.2585874,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						name="UnitMSV_TH2_P";
-						description="Russian Transport Helo 2 Pilot";
-						isPlayable=1;
-					};
-					id=1433;
-					type="rhs_pilot_transport_heli";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={574.91345,5.0014391,617.86017};
-						angles[]={0,6.2585874,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this setVariable [""F_Gear"", ""rhs_msv_repair""];";
-						name="UnitMSV_TH2_CP";
-						description="Russian Transport Helo 2 Co-Pilot (Repair)";
-						isPlayable=1;
-					};
-					id=1434;
-					type="rhs_msv_engineer";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=1432;
-		};
-		class Item208
 		{
 			dataType="Group";
 			side="East";
@@ -29581,7 +29306,7 @@ class Mission
 			};
 			id=1435;
 		};
-		class Item209
+		class Item204
 		{
 			dataType="Group";
 			side="East";
@@ -29615,7 +29340,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={494.84598,5.0014391,717.72369};
+						position[]={494.84601,5.0014391,717.724};
 						angles[]={0,6.2234602,0};
 					};
 					side="East";
@@ -29647,7 +29372,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COY SGT,24,yellow,\A3\ui_f\data\map\markers\nato\b_hq.paa";
+									value="COY SGT,16,yellow,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 								};
 							};
 						};
@@ -29690,7 +29415,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="coyV,24,yellow,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="COYV,32,yellow,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -29848,7 +29573,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item210
+		class Item205
 		{
 			dataType="Group";
 			side="East";
@@ -29947,7 +29672,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item211
+		class Item206
 		{
 			dataType="Group";
 			side="East";
@@ -30084,7 +29809,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item212
+		class Item207
 		{
 			dataType="Group";
 			side="East";
@@ -30118,7 +29843,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={520.74316,5.0014391,704.49408};
+						position[]={520.74298,5.0014391,704.49396};
 						angles[]={0,0.16296139,0};
 					};
 					side="East";
@@ -30151,7 +29876,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AV,24,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="AV,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -30170,7 +29895,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -30643,7 +30368,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item213
+		class Item208
 		{
 			dataType="Group";
 			side="East";
@@ -30741,7 +30466,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={530.14825,5.0014391,703.62665};
+						position[]={530.14801,5.0014391,703.62701};
 						angles[]={0,6.2757502,0};
 					};
 					side="East";
@@ -30774,7 +30499,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="CV,16,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="CV,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -30793,7 +30518,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -31149,7 +30874,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item214
+		class Item209
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -31159,7 +30884,7 @@ class Mission
 			title="MSV Units";
 			id=1543;
 		};
-		class Item215
+		class Item210
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -31169,7 +30894,7 @@ class Mission
 			title="Opfor Units";
 			id=1544;
 		};
-		class Item216
+		class Item211
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -31179,7 +30904,7 @@ class Mission
 			title="Civilian Units";
 			id=1545;
 		};
-		class Item217
+		class Item212
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -31189,7 +30914,7 @@ class Mission
 			title="Bluefor Units";
 			id=1546;
 		};
-		class Item218
+		class Item213
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -31199,7 +30924,7 @@ class Mission
 			title="Independent Units";
 			id=1547;
 		};
-		class Item219
+		class Item214
 		{
 			dataType="Group";
 			side="East";
@@ -31233,7 +30958,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={481.59329,5.0014391,707.86469};
+						position[]={481.59299,5.0014391,707.86499};
 						angles[]={0,6.2651734,0};
 					};
 					side="East";
@@ -31266,7 +30991,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="DV,16,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="DV,32,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -31285,7 +31010,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -31686,7 +31411,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item220
+		class Item215
 		{
 			dataType="Group";
 			side="East";
@@ -31720,7 +31445,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={475.39056,5.0014391,708.09631};
+						position[]={475.39099,5.0014391,708.09601};
 						angles[]={0,0.00034906584,0};
 					};
 					side="East";
@@ -31753,7 +31478,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="EV,16,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="EV,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -31772,7 +31497,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="BLUE";
+									value="MAIN";
 								};
 							};
 						};
@@ -32173,7 +31898,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item221
+		class Item216
 		{
 			dataType="Group";
 			side="East";
@@ -32207,7 +31932,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={469.61224,5.0014391,707.87994};
+						position[]={469.612,5.0014391,707.88};
 						angles[]={0,0.0045029493,0};
 					};
 					side="East";
@@ -32240,7 +31965,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="FV,16,green,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="FV,32,green,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -32259,7 +31984,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="YELLOW";
+									value="MAIN";
 								};
 							};
 						};
@@ -32659,7 +32384,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item222
+		class Item217
 		{
 			dataType="Group";
 			side="East";
@@ -32671,7 +32396,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={499.61044,5.0014391,687.37549};
+						position[]={509.32825,5.0014391,699.95935};
 						angles[]={0,6.278141,0};
 					};
 					side="East";
@@ -32693,7 +32418,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={495.87814,5.0014391,682.90607};
+						position[]={505.59595,5.0014391,695.48993};
 						angles[]={0,6.2431817,0};
 					};
 					side="East";
@@ -32796,7 +32521,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item223
+		class Item218
 		{
 			dataType="Group";
 			side="East";
@@ -32808,7 +32533,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={502.15259,5.0014391,683.3681};
+						position[]={511.87039,5.0014391,695.95197};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -32830,7 +32555,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={506.43958,5.0014391,677.7951};
+						position[]={516.15735,5.0014391,690.37897};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -32933,7 +32658,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item224
+		class Item219
 		{
 			dataType="Group";
 			side="East";
@@ -32945,7 +32670,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={501.67764,5.0014391,678.23303};
+						position[]={511.39545,5.0014391,690.81689};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -32967,7 +32692,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={505.96463,5.0014391,672.66003};
+						position[]={515.68243,5.0014391,685.2439};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -33070,7 +32795,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item225
+		class Item220
 		{
 			dataType="Group";
 			side="East";
@@ -33082,7 +32807,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={501.40701,5.0014391,674.29102};
+						position[]={511.12482,5.0014391,686.87488};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -33104,7 +32829,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={505.694,5.0014391,668.71802};
+						position[]={515.4118,5.0014391,681.30188};
 						angles[]={0,0.13404128,0};
 					};
 					side="East";
@@ -33207,7 +32932,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item226
+		class Item221
 		{
 			dataType="Group";
 			side="East";
@@ -33219,7 +32944,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.82864,5.0014391,679.18494};
+						position[]={501.54645,5.0014391,691.7688};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33241,7 +32966,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={496.83362,5.0014391,674.24695};
+						position[]={506.55142,5.0014391,686.83081};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33344,7 +33069,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item227
+		class Item222
 		{
 			dataType="Group";
 			side="East";
@@ -33356,7 +33081,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.81863,5.0014391,674.93097};
+						position[]={501.53644,5.0014391,687.51483};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33378,7 +33103,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={496.82364,5.0014391,669.99292};
+						position[]={506.54144,5.0014391,682.57678};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33481,7 +33206,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item228
+		class Item223
 		{
 			dataType="Group";
 			side="East";
@@ -33493,7 +33218,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={491.70563,5.0014391,672.09991};
+						position[]={501.42343,5.0014391,684.68378};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33515,7 +33240,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={496.71063,5.0014391,667.16193};
+						position[]={506.42844,5.0014391,679.74579};
 						angles[]={0,6.2807765,0};
 					};
 					side="East";
@@ -33618,7 +33343,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item229
+		class Item224
 		{
 			dataType="Group";
 			side="East";
@@ -33630,7 +33355,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={483.69754,5.0014391,681.31146};
+						position[]={493.41534,5.0014391,693.89532};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33652,7 +33377,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={488.62152,5.0014391,676.29242};
+						position[]={498.33932,5.0014391,688.87628};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33736,7 +33461,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item230
+		class Item225
 		{
 			dataType="Group";
 			side="East";
@@ -33748,7 +33473,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={483.54053,5.0014391,676.58643};
+						position[]={493.25833,5.0014391,689.17029};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33770,7 +33495,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={488.46555,5.0014391,671.56842};
+						position[]={498.18335,5.0014391,684.15228};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33854,7 +33579,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item231
+		class Item226
 		{
 			dataType="Group";
 			side="East";
@@ -33866,7 +33591,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={483.55154,5.0014391,673.30743};
+						position[]={493.26935,5.0014391,685.8913};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33888,7 +33613,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={488.47552,5.0014391,668.28943};
+						position[]={498.19333,5.0014391,680.87329};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -33972,7 +33697,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item232
+		class Item227
 		{
 			dataType="Group";
 			side="East";
@@ -33984,7 +33709,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={471.06601,5.0014391,680.71295};
+						position[]={480.78381,5.0014391,693.29681};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -34006,7 +33731,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={475.99686,5.0014391,675.69476};
+						position[]={485.71466,5.0014391,688.27863};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -34027,7 +33752,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={465.9978,5.0014391,675.83209};
+						position[]={475.71561,5.0014391,688.41595};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -34048,7 +33773,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={480.9277,5.0014391,670.62653};
+						position[]={490.64551,5.0014391,683.21039};
 						angles[]={0,0.013735741,0};
 					};
 					side="East";
@@ -34152,7 +33877,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item233
+		class Item228
 		{
 			dataType="Group";
 			side="East";
@@ -34164,7 +33889,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={497.24301,5.0014391,661.46497};
+						position[]={494.08951,5.0014391,682.36383};
 						angles[]={0,0.006754424,0};
 					};
 					side="East";
@@ -34284,7 +34009,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={492.20901,5.0014391,656.54901};
+						position[]={489.05551,5.0014391,677.44788};
 						angles[]={0,0.006754424,0};
 					};
 					side="East";
@@ -34403,7 +34128,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={502.20901,5.0014391,656.48199};
+						position[]={499.05551,5.0014391,677.38086};
 						angles[]={0,0.006754424,0};
 					};
 					side="East";
@@ -34522,7 +34247,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={507.17499,5.0014391,651.448};
+						position[]={504.02148,5.0014391,672.34686};
 						angles[]={0,0.006754424,0};
 					};
 					side="East";
@@ -34741,6 +34466,4708 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item229
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={481.33844,5.0014391,685.07245};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitMSV_TNK1_C";
+						description="Russian Tank 1 Commander";
+						isPlayable=1;
+					};
+					id=1766;
+					type="potato_msv_vicl";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={486.48944,5.0014391,680.2785};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitMSV_TNK1_G";
+						description="Russian Tank 1 Gunner";
+						isPlayable=1;
+					};
+					id=1767;
+					type="potato_msv_vicc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={476.49344,5.0014391,679.9715};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitMSV_TNK1_D";
+						description="Russian Tank 1 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=1768;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TANK1";
+			};
+			id=1750;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TANK1,24,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Tank1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item230
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={531.24316,7.1291909,691.95612};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1769;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item231
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={527.20856,7.1291909,691.84076};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1770;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={522.89038,7.1291909,691.84802};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1771;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item233
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={479.23102,7.1291909,697.17249};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1772;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item234
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={475.19641,7.1291909,697.05713};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1773;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item235
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={470.87823,7.1291909,697.06439};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1774;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item236
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={526.9823,7.1291909,683.16162};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1776;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item237
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={522.66406,7.1291909,683.16888};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1777;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item238
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={500.09845,7.1291909,705.40277};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1778;
+			type="rhs_bmp2k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item239
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={531.32971,7.1992745,683.63513};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1779;
+			type="rhs_brm1k_msv";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="crate_l3_unhide";
+					expression="[_this,_value,'crate_l3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="crate_r3_unhide";
+					expression="[_this,_value,'crate_r3_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="wood_2_unhide";
+					expression="[_this,_value,'wood_2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="crate_l2_unhide";
+					expression="[_this,_value,'crate_l2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="crate_r2_unhide";
+					expression="[_this,_value,'crate_r2_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="wood_1_unhide";
+					expression="[_this,_value,'wood_1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="crate_l1_unhide";
+					expression="[_this,_value,'crate_l1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="crate_r1_unhide";
+					expression="[_this,_value,'crate_r1_unhide'] call rhs_fnc_setHabarEden";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={495.21045,6.9795036,669.12885};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1780;
+			type="rhs_t90a_tv";
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={490.52747,6.9795036,669.24487};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1781;
+			type="rhs_t90a_tv";
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={485.29391,6.9795036,669.22058};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1782;
+			type="rhs_t90a_tv";
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={479.78891,6.9795036,669.42462};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1783;
+			type="rhs_t90a_tv";
+		};
+		class Item244
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={481.49719,5.0014391,683.16315};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitMSV_TNK2_C";
+						description="Russian Tank 2 Commander";
+						isPlayable=1;
+					};
+					id=1785;
+					type="potato_msv_vicl";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={486.64865,5.0014391,678.36908};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitMSV_TNK2_G";
+						description="Russian Tank 2 Gunner";
+						isPlayable=1;
+					};
+					id=1786;
+					type="potato_msv_vicc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={476.65265,5.0014391,678.06207};
+						angles[]={0,6.2525201,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitMSV_TNK2_D";
+						description="Russian Tank 2 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=1787;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TANK2";
+			};
+			id=1784;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TANK2,24,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Tank2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item245
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={481.55505,5.0014391,681.57971};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitMSV_TNK3_C";
+						description="Russian Tank 3 Commander";
+						isPlayable=1;
+					};
+					id=1789;
+					type="potato_msv_vicl";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={486.62207,5.0014391,676.69647};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitMSV_TNK3_G";
+						description="Russian Tank 3 Gunner";
+						isPlayable=1;
+					};
+					id=1790;
+					type="potato_msv_vicc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={476.62207,5.0014391,676.56445};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitMSV_TNK3_D";
+						description="Russian Tank 3 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=1791;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TANK3";
+			};
+			id=1788;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TANK3,24,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Tank3";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item246
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={481.63608,5.0014391,680.22668};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UnitMSV_TNK4_C";
+						description="Russian Tank 4 Commander";
+						isPlayable=1;
+					};
+					id=1793;
+					type="potato_msv_vicl";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={486.70209,5.0014391,675.34369};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UnitMSV_TNK4_G";
+						description="Russian Tank 4 Gunner";
+						isPlayable=1;
+					};
+					id=1794;
+					type="potato_msv_vicc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={476.70209,5.0014391,675.21173};
+						angles[]={0,6.2700429,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UnitMSV_TNK4_D";
+						description="Russian Tank 4 Driver (Repair)";
+						isPlayable=1;
+					};
+					id=1795;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0,0,0";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TANK4";
+			};
+			id=1792;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TANK4,24,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Tank4";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="10,5,3";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item247
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={508.00558,5.0014391,673.98114};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_TH1_P";
+						description="Russian Transport Helo 1 Pilot";
+						isPlayable=1;
+					};
+					id=1799;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={513.12756,5.0014391,669.15613};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_TH1_CP";
+						description="Russian Transport Helo 1 Co-Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1800;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TH1";
+			};
+			id=1798;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV TH1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item248
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={510.03387,5.0014391,673.89655};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_TH2_P";
+						description="Russian Transport Helo 2 Pilot";
+						isPlayable=1;
+					};
+					id=1802;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={515.15588,5.0014391,669.07153};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_TH2_CP";
+						description="Russian Transport Helo 2 Co-Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1803;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TH2";
+			};
+			id=1801;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TH2,32,red,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV TH2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item249
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={512.047,5.0014391,674.01898};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_TH3_P";
+						description="Russian Transport Helo 3 Pilot";
+						isPlayable=1;
+					};
+					id=1805;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={517.16901,5.0014391,669.19397};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_TH3_CP";
+						description="Russian Transport Helo 3 Co-Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1806;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TH3";
+			};
+			id=1804;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TH3,32,blue,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV TH3";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item250
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={513.97601,5.0014391,674.02802};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_TH4_P";
+						description="Russian Transport Helo 4 Pilot";
+						isPlayable=1;
+					};
+					id=1808;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={519.09802,5.0014391,669.203};
+						angles[]={0,6.2585936,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_TH4_CP";
+						description="Russian Transport Helo 4 Co-Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1809;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_TH4";
+			};
+			id=1807;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TH3,32,blue,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV TH4";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item251
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={516.09198,5.0014391,674.06799};
+						angles[]={0,6.2647195,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_AH1_P";
+						description="Russian Attack Helo 1 Pilot";
+						isPlayable=1;
+					};
+					id=1813;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={521.18402,5.0014391,669.211};
+						angles[]={0,6.2647195,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_AH1_CP";
+						description="Russian Attack Helo 1 Gunner (Repair)";
+						isPlayable=1;
+					};
+					id=1814;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_AH1";
+			};
+			id=1810;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="AH1,32,green,\A3\ui_f\data\map\markers\nato\b_air.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV AH1";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item252
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={518.05402,5.0014391,673.93201};
+						angles[]={0,6.2647195,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						name="UnitMSV_AH1_P_1";
+						description="Russian Attack Helo 2 Pilot";
+						isPlayable=1;
+					};
+					id=1816;
+					type="potato_msv_pilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={523.146,5.0014391,669.07501};
+						angles[]={0,6.2647195,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						name="UnitMSV_AH1_CP_1";
+						description="Russian Attack Helo 2 Gunner (Repair)";
+						isPlayable=1;
+					};
+					id=1817;
+					type="potato_msv_cc";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_AH2";
+			};
+			id=1815;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="AH2,32,green,\A3\ui_f\data\map\markers\nato\b_air.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV AH2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ru";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="9,3,4";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item253
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={483.98077,7.8331289,650.43774};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1818;
+			type="RHS_Mi8MTV3_vdv";
+		};
+		class Item254
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={505.19443,7.8331289,650.54559};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1819;
+			type="RHS_Mi8MTV3_vdv";
+		};
+		class Item255
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={484.56586,7.8331289,623.06842};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1820;
+			type="RHS_Mi8MTV3_vdv";
+		};
+		class Item256
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={505.77951,7.8331289,623.17627};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1821;
+			type="RHS_Mi8MTV3_vdv";
+		};
+		class Item257
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={528.84088,7.0332093,652.59277};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1822;
+			type="RHS_Ka52_vvsc";
+		};
+		class Item258
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={528.23145,7.0332093,623.45892};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1823;
+			type="RHS_Ka52_vvsc";
 		};
 	};
 };
