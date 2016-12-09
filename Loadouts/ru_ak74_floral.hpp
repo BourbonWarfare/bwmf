@@ -8,6 +8,7 @@
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS "rhs_acc_ekp1","rhs_acc_pkas"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -84,6 +85,7 @@ class Soldier_F { // rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
+  opticChoices[] = {ALT_OPTICS};
 };
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};

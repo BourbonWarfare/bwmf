@@ -6,6 +6,8 @@ class CfgLoadouts {
   // Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
   allowMagnifiedOptics = 0;
 
+  allowChangeableOptics = 1;
+
   // Do Vehicle Loadouts
   // (1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
   setVehicleLoadouts = -1;

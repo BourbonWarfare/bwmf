@@ -8,6 +8,7 @@
 #define RIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
 #define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","UK3CB_BAF_LLM_IR_Black"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
 // GL Rifle
 #define GLRIFLE "UK3CB_BAF_L85A2_UGL_HWS","UK3CB_BAF_L85A2_UGL"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -84,6 +85,7 @@ class Soldier_F {// rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
+  opticChoices[] = {ALT_OPTICS};
 };
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
