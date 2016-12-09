@@ -29609,105 +29609,6 @@ class Mission
 					};
 					id=1492;
 					type="potato_msv_pol";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -29776,25 +29677,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29812,64 +29694,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
+						nAttributes=1;
 					};
 				};
 				class Item3
@@ -29886,34 +29711,11 @@ class Mission
 					{
 						skill=0.60000002;
 						name="UnitMSV_CO_D";
-						description="Russian Company Driver ";
+						description="Russian Company Driver";
 						isPlayable=1;
 					};
 					id=1495;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item4
 				{
@@ -29939,25 +29741,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29975,64 +29758,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
+						nAttributes=1;
 					};
 				};
 			};
@@ -30472,29 +30198,6 @@ class Mission
 					};
 					id=1506;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item3
 				{
@@ -31801,7 +31504,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="BLUE";
 								};
 							};
 						};
@@ -32187,29 +31890,6 @@ class Mission
 					};
 					id=1601;
 					type="potato_msv_marksman";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item5
 				{
