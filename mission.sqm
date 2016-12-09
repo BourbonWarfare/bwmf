@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={506.72345,51.46014,605.52649};
-		dir[]={0.1002512,-0.79001898,0.6049695};
-		up[]={0.12915626,0.61306673,0.7794072};
-		aside[]={0.98662484,-7.613562e-007,-0.16349542};
+		pos[]={488.26425,35.060619,637.30176};
+		dir[]={-0.0026310915,-0.77932054,0.62675428};
+		up[]={-0.0032730957,0.626607,0.77933347};
+		aside[]={1.0000707,-7.661688e-007,0.0041992916};
 	};
 };
 binarizationWanted=0;
@@ -30761,25 +30761,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="YELLOW";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -30794,6 +30775,25 @@ class Mission
 										};
 									};
 									value="CV,16,red,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
 								};
 							};
 						};
@@ -31740,25 +31740,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -31773,6 +31754,25 @@ class Mission
 										};
 									};
 									value="EV,16,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
 								};
 							};
 						};
@@ -32401,25 +32401,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -32434,6 +32415,25 @@ class Mission
 										};
 									};
 									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
 								};
 							};
 						};
@@ -34179,6 +34179,105 @@ class Mission
 					};
 					id=1732;
 					type="potato_msv_engl";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
 				};
 				class Item1
 				{
@@ -34199,6 +34298,105 @@ class Mission
 					};
 					id=1733;
 					type="potato_msv_eng";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
 				};
 				class Item2
 				{
@@ -34219,6 +34417,105 @@ class Mission
 					};
 					id=1734;
 					type="potato_msv_eng";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
 				};
 				class Item3
 				{
@@ -34239,10 +34536,110 @@ class Mission
 					};
 					id=1735;
 					type="potato_msv_eng";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="potato_radios_babel";
+							expression="[_this,_value] call potato_radios_fnc_setLanguages";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="potato_briefing_brief";
+							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="potato_radios_radio";
+							expression="[_this,_value] call potato_radios_fnc_setChannels";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						nAttributes=5;
+					};
 				};
 			};
 			class Attributes
 			{
+				name="GROUP_MSV_ENGINEERS";
 			};
 			id=1727;
 			class CustomAttributes
@@ -34255,6 +34652,25 @@ class Mission
 					{
 						class data
 						{
+							nil=1;
+							class type
+							{
+								type[]=
+								{
+									"ANY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
 							class type
 							{
 								type[]=
@@ -34262,11 +34678,68 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ENG,16,orange,\A3\ui_f\data\map\markers\nato\b_maint.paa";
+							value="MSV Engineers";
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute2
+				{
+					property="potato_radios_babel";
+					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					class Value
+					{
+						class data
+						{
+							nil=1;
+							class type
+							{
+								type[]=
+								{
+									"ANY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="potato_briefing_brief";
+					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
+					class Value
+					{
+						class data
+						{
+							nil=1;
+							class type
+							{
+								type[]=
+								{
+									"ANY"
+								};
+							};
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							nil=1;
+							class type
+							{
+								type[]=
+								{
+									"ANY"
+								};
+							};
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
