@@ -8,6 +8,7 @@
 #define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
 // GL Rifle
 #define GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -84,6 +85,7 @@ class Soldier_F {// rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
+  opticChoices[] = {ALT_OPTICS};
 };
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
