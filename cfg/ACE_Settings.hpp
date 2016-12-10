@@ -26,12 +26,6 @@ class ACE_Settings {
     value = 1;
   };
 
-  /*   Enable/disable VCOM   */
-  class potato_aiFrameworks_vcom_enabled {
-    typeName = "BOOL";
-    value = 0;
-  };
-
   /*   Setup AI skills   */
   class potato_missionModules_aiSkill_set {
     typeName = "BOOL";
