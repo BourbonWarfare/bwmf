@@ -4079,25 +4079,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
@@ -4115,7 +4096,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -4134,7 +4115,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item29
@@ -14168,25 +14149,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
@@ -14204,7 +14166,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -14223,7 +14185,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item108
@@ -22886,25 +22848,6 @@ class Mission
 			{
 				class Attribute0
 				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
@@ -22922,7 +22865,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -22941,7 +22884,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=3;
+				nAttributes=2;
 			};
 		};
 		class Item169
@@ -28345,447 +28288,6 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=9;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={523.92938,5.0014391,704.24084};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_SL";
-						description="Russian Bravo Squad Leader/Commander";
-						isPlayable=1;
-					};
-					id=1513;
-					type="potato_msv_sl";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={525.52197,5.0014391,704.25098};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_VG";
-						description="Russian Bravo Squad Gunner";
-						isPlayable=1;
-					};
-					id=1514;
-					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BV,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={527.41602,5.0014391,703.99799};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_VD";
-						description="Russian Bravo Squad Driver";
-						isPlayable=1;
-					};
-					id=1515;
-					type="potato_msv_vicd";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={523.94141,5.0014391,702.54187};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_SR";
-						description="Russian Bravo Squad Senior Rifleman";
-						isPlayable=1;
-					};
-					id=1516;
-					type="potato_msv_sr";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BSR,16,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={525.47839,5.0014391,702.56989};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_AR";
-						description="Russian Bravo Squad Marksman";
-						isPlayable=1;
-					};
-					id=1517;
-					type="potato_msv_marksman";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={527.35138,5.0014391,702.38684};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_M";
-						description="Russian Bravo Squad Rifleman/Medic";
-						isPlayable=1;
-					};
-					id=1518;
-					type="potato_msv_sm";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={524.00439,5.0014391,700.85187};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_R";
-						description="Russian Bravo Squad Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=1519;
-					type="potato_msv_ar";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={525.4884,5.0014391,700.82385};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_GR";
-						description="Russian Bravo Squad Grenadier";
-						isPlayable=1;
-					};
-					id=1520;
-					type="potato_msv_g";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="RED";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={527.21637,5.0014391,700.85187};
-						angles[]={0,6.2545094,0};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_BSL_AGR";
-						description="Russian Bravo Squad Assistant Grenadier";
-						isPlayable=1;
-					};
-					id=1521;
-					type="potato_msv_ag";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="RED";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
-			class Attributes
-			{
-				name="GROUP_MSV_BRAVO";
-			};
-			id=1330;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="Bravo,24,blue,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="MSV Bravo";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_radios_radio";
-					expression="[_this,_value] call potato_radios_fnc_setChannels";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1,0,0";
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item202
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
 				items=5;
 				class Item0
 				{
@@ -28801,13 +28303,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						name="UnitMSV_CO";
+						name="UNIT_MSV_COY_CO";
 						description="Russian Company Commander";
 						isPlayable=1;
 					};
 					id=1492;
-					type="potato_msv_pol";
+					type="potato_msv_coy";
 				};
 				class Item1
 				{
@@ -28823,35 +28324,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_CO_UAV";
+						name="UNIT_MSV_COY_XO";
 						description="Russian First Seargent";
 						isPlayable=1;
 					};
 					id=1493;
 					type="potato_msv_acoy";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="COY SGT,16,yellow,\A3\ui_f\data\map\markers\nato\b_hq.paa";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item2
 				{
@@ -28866,8 +28344,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_CO_VG";
-						description="Russian Company Gunner";
+						name="UNIT_MSV_COY_VG";
+						description="Russian Company Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1494;
@@ -28889,7 +28367,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="COYV,32,yellow,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+									value="COV,32,yellow,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -28909,8 +28387,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_CO_D";
-						description="Russian Company Driver";
+						name="UNIT_MSV_COY_VD";
+						description="Russian Company Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1495;
@@ -28930,35 +28408,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_CO_M";
+						name="UNIT_MSV_COY_POL";
 						description="Russian Political Officer";
 						isPlayable=1;
 					};
 					id=1496;
 					type="potato_msv_pol";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -29002,30 +28457,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSV Coy";
+							value="MSV COY";
 						};
 					};
 				};
 				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -29044,10 +28480,10 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
-		class Item203
+		class Item202
 		{
 			dataType="Group";
 			side="East";
@@ -29068,13 +28504,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						name="UnitMSV_Plt1CO_CO";
+						name="UNIT_MSV_1PLT_CO";
 						description="Russian First Platoon Commander";
 						isPlayable=1;
 					};
 					id=1498;
-					type="potato_msv_aplt";
+					type="potato_msv_plt";
 				};
 				class Item1
 				{
@@ -29090,7 +28525,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_Plt1CO_DC";
+						name="UNIT_MSV_1PLT_XO";
 						description="Russian First Platoon Assistant Leader";
 						isPlayable=1;
 					};
@@ -29100,7 +28535,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_1PLT_2";
+				name="GROUP_MSV_1PLT";
 			};
 			id=1497;
 			class CustomAttributes
@@ -29143,10 +28578,29 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="3,0,3";
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
-		class Item204
+		class Item203
 		{
 			dataType="Group";
 			side="East";
@@ -29167,8 +28621,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						name="UnitMSV_Plt2CO_CO";
+						name="UNIT_MSV_2PLT_CO";
 						description="Russian Second Platoon Commander";
 						isPlayable=1;
 					};
@@ -29189,7 +28642,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_Plt2CO_DC";
+						name="UNIT_MSV_2PLT_XO";
 						description="Russian Second Platoon Assistant Leader";
 						isPlayable=1;
 					};
@@ -29199,7 +28652,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_2PLT_1";
+				name="GROUP_MSV_2PLT";
 			};
 			id=1500;
 			class CustomAttributes
@@ -29244,25 +28697,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -29276,14 +28710,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="7,1,1";
+							value="7,1,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
-		class Item205
+		class Item204
 		{
 			dataType="Group";
 			side="East";
@@ -29304,9 +28738,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_SL";
-						description="Russian Alpha Squad Leader/Commander";
+						name="UNIT_MSV_A_SL";
+						description="Russian Alpha Squad Leader";
 						isPlayable=1;
 					};
 					id=1504;
@@ -29326,9 +28759,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_VG";
-						description="Russian Alpha Squad Gunner";
+						name="UNIT_MSV_A_VG";
+						description="Russian Alpha Squad Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1505;
@@ -29369,7 +28801,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="YELLOW";
 								};
 							};
 						};
@@ -29390,13 +28822,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_VD";
-						description="Russian Alpha Squad Driver";
+						name="UNIT_MSV_A_VD";
+						description="Russian Alpha Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1506;
 					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item3
 				{
@@ -29412,8 +28866,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_SR";
+						name="UNIT_MSV_A_SR";
 						description="Russian Alpha Squad Senior Rifleman";
 						isPlayable=1;
 					};
@@ -29440,45 +28893,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=3;
+						nAttributes=1;
 					};
 				};
 				class Item4
@@ -29495,8 +28910,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_AR";
+						name="UNIT_MSV_A_R";
 						description="Russian Alpha Squad Rifleman";
 						isPlayable=1;
 					};
@@ -29516,9 +28930,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_M";
-						description="Russian Alpha Squad Rifleman/Medic";
+						name="UNIT_MSV_A_M";
+						description="Russian Alpha Squad Medic";
 						isPlayable=1;
 					};
 					id=1509;
@@ -29579,8 +28992,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_R";
+						name="UNIT_MSV_A_AR";
 						description="Russian Alpha Squad Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -29589,25 +29001,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="potato_teamColors_teamColor";
 							expression="[_this,_value] call potato_teamColors_fnc_setColor";
@@ -29626,7 +29019,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item7
@@ -29642,8 +29035,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_GR";
+						name="UNIT_MSV_A_GR";
 						description="Russian Alpha Squad Grenadier";
 						isPlayable=1;
 					};
@@ -29652,25 +29044,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="potato_teamColors_teamColor";
 							expression="[_this,_value] call potato_teamColors_fnc_setColor";
@@ -29689,7 +29062,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item8
@@ -29705,8 +29078,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ASL_AGR";
+						name="UNIT_MSV_A_AGR";
 						description="Russian Alpha Squad Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -29715,25 +29087,6 @@ class Mission
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="potato_teamColors_teamColor";
 							expression="[_this,_value] call potato_teamColors_fnc_setColor";
@@ -29752,13 +29105,13 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_ALPHA";
+				name="GROUP_MSV_A";
 			};
 			id=1503;
 			class CustomAttributes
@@ -29778,7 +29131,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Alpha,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="A,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -29801,48 +29154,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_radios_radio";
-					expression="[_this,_value] call potato_radios_fnc_setChannels";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0,0,0";
-						};
-					};
-				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
-		class Item206
+		class Item205
 		{
 			dataType="Group";
 			side="East";
@@ -29854,8 +29169,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={528.70129,5.0014391,703.82867};
-						angles[]={0,6.2757502,0};
+						position[]={523.92938,5.0014391,704.24084};
+						angles[]={0,6.2545094,0};
 					};
 					side="East";
 					flags=6;
@@ -29863,12 +29178,11 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_SL";
-						description="Russian Charlie Squad Leader/Commander";
+						name="UNIT_MSV_B_SL";
+						description="Russian Bravo Squad Leader";
 						isPlayable=1;
 					};
-					id=1534;
+					id=1513;
 					type="potato_msv_sl";
 				};
 				class Item1
@@ -29876,8 +29190,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={531.36829,5.0014391,703.57465};
-						angles[]={0,6.2757502,0};
+						position[]={525.52197,5.0014391,704.25098};
+						angles[]={0,6.2545094,0};
 					};
 					side="East";
 					flags=4;
@@ -29885,13 +29199,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_VD";
-						description="Russian Charlie Squad Driver";
+						name="UNIT_MSV_B_VG";
+						description="Russian Bravo Squad Vehicle Gunner";
 						isPlayable=1;
 					};
-					id=1535;
-					type="potato_msv_vicd";
+					id=1514;
+					type="potato_msv_vicc";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29906,10 +29219,10 @@ class Mission
 									{
 										type[]=
 										{
-											"BOOL"
+											"STRING"
 										};
 									};
-									value=1;
+									value="BV,32,blue,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 								};
 							};
 						};
@@ -29940,6 +29253,442 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
+						position[]={527.41602,5.0014391,703.99799};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_MSV_B_VD";
+						description="Russian Bravo Squad Vehicle Driver";
+						isPlayable=1;
+					};
+					id=1515;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={523.94141,5.0014391,702.54187};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_MSV_B_SR";
+						description="Russian Bravo Squad Senior Rifleman";
+						isPlayable=1;
+					};
+					id=1516;
+					type="potato_msv_sr";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BSR,16,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={525.47839,5.0014391,702.56989};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_MSV_B_MK";
+						description="Russian Bravo Squad Marksman";
+						isPlayable=1;
+					};
+					id=1517;
+					type="potato_msv_marksman";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={527.35138,5.0014391,702.38684};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_MSV_B_M";
+						description="Russian Bravo Squad Medic";
+						isPlayable=1;
+					};
+					id=1518;
+					type="potato_msv_sm";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={524.00439,5.0014391,700.85187};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_MSV_B_AR";
+						description="Russian Bravo Squad Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1519;
+					type="potato_msv_ar";
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={525.4884,5.0014391,700.82385};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_MSV_B_GR";
+						description="Russian Bravo Squad Grenadier";
+						isPlayable=1;
+					};
+					id=1520;
+					type="potato_msv_g";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={527.21637,5.0014391,700.85187};
+						angles[]={0,6.2545094,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						name="UNIT_MSV_B_AGR";
+						description="Russian Bravo Squad Assistant Grenadier";
+						isPlayable=1;
+					};
+					id=1521;
+					type="potato_msv_ag";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="RED";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_B";
+			};
+			id=1330;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this,_value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="B,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Bravo";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this,_value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1,0,0";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item206
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={528.70129,5.0014391,703.82867};
+						angles[]={0,6.2757502,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						name="UNIT_MSV_C_SL";
+						description="Russian Charlie Squad Leader";
+						isPlayable=1;
+					};
+					id=1534;
+					type="potato_msv_sl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={531.36829,5.0014391,703.57465};
+						angles[]={0,6.2757502,0};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						name="UNIT_MSV_C_VD";
+						description="Russian Charlie Squad Vehicle Driver";
+						isPlayable=1;
+					};
+					id=1535;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
 						position[]={530.14801,5.0014391,703.62701};
 						angles[]={0,6.2757502,0};
 					};
@@ -29949,9 +29698,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_VG";
-						description="Russian Charlie Squad Gunner";
+						name="UNIT_MSV_C_VG";
+						description="Russian Charlie Squad Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1536;
@@ -29992,7 +29740,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="YELLOW";
 								};
 							};
 						};
@@ -30013,8 +29761,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_SR";
+						name="UNIT_MSV_C_SR";
 						description="Russian Charlie Squad Senior Rifleman";
 						isPlayable=1;
 					};
@@ -30058,8 +29805,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_AR";
+						name="UNIT_MSV_C_R";
 						description="Russian Charlie Squad Rifleman";
 						isPlayable=1;
 					};
@@ -30079,9 +29825,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_M";
-						description="Russian Charlie Squad Rifleman/Medic";
+						name="UNIT_MSV_C_M";
+						description="Russian Charlie Squad Medic";
 						isPlayable=1;
 					};
 					id=1539;
@@ -30142,8 +29887,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_R";
+						name="UNIT_MSV_C_AR";
 						description="Russian Charlie Squad Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -30186,8 +29930,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_GR";
+						name="UNIT_MSV_C_GR";
 						description="Russian Charlie Squad Grenadier";
 						isPlayable=1;
 					};
@@ -30230,8 +29973,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_CSL_AGR";
+						name="UNIT_MSV_C_AGR";
 						description="Russian Charlie Squad Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -30264,7 +30006,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_CHARLIE";
+				name="GROUP_MSV_C";
 			};
 			id=1533;
 			class CustomAttributes
@@ -30284,7 +30026,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Charlie,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="C,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -30309,25 +30051,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -30345,7 +30068,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item207
@@ -30419,9 +30142,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_SL";
-						description="Russian Delta Squad Leader/Commander";
+						name="UNIT_MSV_D_SL";
+						description="Russian Delta Squad Leader";
 						isPlayable=1;
 					};
 					id=1578;
@@ -30441,9 +30163,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_VG";
-						description="Russian Delta Squad Gunner";
+						name="UNIT_MSV_D_VG";
+						description="Russian Delta Squad Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1579;
@@ -30484,7 +30205,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="YELLOW";
 								};
 							};
 						};
@@ -30505,9 +30226,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_VD";
-						description="Russian Delta Squad Driver";
+						name="UNIT_MSV_D_VD";
+						description="Russian Delta Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1580;
@@ -30550,8 +30270,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_SR";
+						name="UNIT_MSV_D_SR";
 						description="Russian Delta Squad Senior Rifleman";
 						isPlayable=1;
 					};
@@ -30595,8 +30314,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_AR";
+						name="UNIT_MSV_D_R";
 						description="Russian Delta Squad Rifleman";
 						isPlayable=1;
 					};
@@ -30616,9 +30334,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_M";
-						description="Russian Delta Squad Rifleman/Medic";
+						name="UNIT_MSV_D_M";
+						description="Russian Delta Squad Medic";
 						isPlayable=1;
 					};
 					id=1583;
@@ -30640,7 +30357,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value=",16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
+									value="DM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
 								};
 							};
 						};
@@ -30679,8 +30396,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_R";
+						name="UNIT_MSV_D_AR";
 						description="Russian Delta Squad Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -30723,8 +30439,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_GR";
+						name="UNIT_MSV_D_GR";
 						description="Russian Delta Squad Grenadier";
 						isPlayable=1;
 					};
@@ -30767,8 +30482,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_DSL_AGR";
+						name="UNIT_MSV_D_AGR";
 						description="Russian Delta Squad Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -30801,7 +30515,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_DELTA";
+				name="GROUP_MSV_D";
 			};
 			id=1577;
 			class CustomAttributes
@@ -30821,7 +30535,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Delta,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="D,24,red,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -30846,25 +30560,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -30882,7 +30577,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item213
@@ -30906,9 +30601,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_SL";
-						description="Russian Echo Squad Leader/Commander";
+						name="UNIT_MSV_E_SL";
+						description="Russian Echo Squad Leader";
 						isPlayable=1;
 					};
 					id=1597;
@@ -30928,9 +30622,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_VG";
-						description="Russian Echo Squad Gunner";
+						name="UNIT_MSV_E_VG";
+						description="Russian Echo Squad Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1598;
@@ -30971,7 +30664,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="YELLOW";
 								};
 							};
 						};
@@ -30992,9 +30685,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_VD";
-						description="Russian Echo Squad Driver";
+						name="UNIT_MSV_E_VD";
+						description="Russian Echo Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1599;
@@ -31037,8 +30729,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_SR";
+						name="UNIT_MSV_E_SR";
 						description="Russian Echo Squad Senior Rifleman";
 						isPlayable=1;
 					};
@@ -31082,8 +30773,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_AR";
+						name="UNIT_MSV_E_MK";
 						description="Russian Echo Squad Marksman";
 						isPlayable=1;
 					};
@@ -31103,9 +30793,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_M";
-						description="Russian Echo Squad Rifleman/Medic";
+						name="UNIT_MSV_E_M";
+						description="Russian Echo Squad Medic";
 						isPlayable=1;
 					};
 					id=1602;
@@ -31166,8 +30855,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_R";
+						name="UNIT_MSV_E_AR";
 						description="Russian Echo Squad Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -31210,8 +30898,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_GR";
+						name="UNIT_MSV_E_GR";
 						description="Russian Echo Squad Grenadier";
 						isPlayable=1;
 					};
@@ -31254,8 +30941,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_ESL_AGR";
+						name="UNIT_MSV_E_AGR";
 						description="Russian Echo Squad Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -31288,7 +30974,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_ECHO";
+				name="GROUP_MSV_E";
 			};
 			id=1596;
 			class CustomAttributes
@@ -31308,7 +30994,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Echo,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="E,24,blue,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -31333,25 +31019,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -31369,7 +31036,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item214
@@ -31393,9 +31060,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_SL";
-						description="Russian Foxtrot Squad Leader/Commander";
+						name="UNIT_MSV_F_SL";
+						description="Russian Foxtrot Squad Leader";
 						isPlayable=1;
 					};
 					id=1636;
@@ -31415,9 +31081,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_VG";
-						description="Russian Foxtrot Squad Gunner";
+						name="UNIT_MSV_F_VG";
+						description="Russian Foxtrot Squad Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1637;
@@ -31458,7 +31123,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="MAIN";
+									value="YELLOW";
 								};
 							};
 						};
@@ -31479,9 +31144,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_VD";
-						description="Russian Foxtrot Squad Driver";
+						name="UNIT_MSV_F_VD";
+						description="Russian Foxtrot Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1638;
@@ -31523,8 +31187,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_SR";
+						name="UNIT_MSV_F_SR";
 						description="Russian Foxtrot Squad Senior Rifleman";
 						isPlayable=1;
 					};
@@ -31568,8 +31231,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_AR";
+						name="UNIT_MSV_F_R";
 						description="Russian Foxtrot Squad Rifleman";
 						isPlayable=1;
 					};
@@ -31589,9 +31251,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_M";
-						description="Russian Foxtrot Squad Rifleman/Medic";
+						name="UNIT_MSV_F_M";
+						description="Russian Foxtrot Squad Medic";
 						isPlayable=1;
 					};
 					id=1641;
@@ -31652,8 +31313,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_R";
+						name="UNIT_MSV_F_AR";
 						description="Russian Foxtrot Squad Automatic Rifleman";
 						isPlayable=1;
 					};
@@ -31696,8 +31356,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_GR";
+						name="UNIT_MSV_F_GR";
 						description="Russian Foxtrot Squad Grenadier";
 						isPlayable=1;
 					};
@@ -31740,8 +31399,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FSL_AGR";
+						name="UNIT_MSV_F_AGR";
 						description="Russian Foxtrot Squad Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -31774,7 +31432,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_FOXTROT";
+				name="GROUP_MSV_F";
 			};
 			id=1635;
 			class CustomAttributes
@@ -31794,7 +31452,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Foxtrot,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="F,24,green,\A3\ui_f\data\map\markers\nato\b_inf.paa";
 						};
 					};
 				};
@@ -31819,25 +31477,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -31855,7 +31494,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item215
@@ -31879,8 +31518,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						lock="UNLOCKED";
-						name="UnitMSV_Plt3CO_CO";
+						name="UNIT_MSV_W_CO";
 						description="Russian Weapons Platoon Commander";
 						isPlayable=1;
 					};
@@ -31901,7 +31539,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_Plt3CO_DC";
+						name="UNIT_MSV_W_XO";
 						description="Russian Weapons Platoon Assistant Leader";
 						isPlayable=1;
 					};
@@ -31911,7 +31549,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_3PLT";
+				name="GROUP_MSV_W";
 			};
 			id=1648;
 			class CustomAttributes
@@ -31931,7 +31569,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="3PLT,24,yellow,\A3\ui_f\data\map\markers\nato\b_inf.paa";
+							value="W,24,yellow,\A3\ui_f\data\map\markers\nato\b_hq.paa";
 						};
 					};
 				};
@@ -31950,30 +31588,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSV 3PLT";
+							value="MSV Weapons";
 						};
 					};
 				};
 				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -31988,11 +31607,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,6";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item216
@@ -32016,9 +31635,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_W1_VG";
-						description="Russian Weapon Squad Gunner 1";
+						name="UNIT_MSV_W1_VG";
+						description="Russian Weapon Squad Vehicle Gunner 1";
 						isPlayable=1;
 					};
 					id=1657;
@@ -32037,9 +31655,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_W1_VD";
-						description="Russian Weapon Squad Driver 1";
+						name="UNIT_MSV_W1_VD";
+						description="Russian Weapon Squad Vehicle Driver 1";
 						isPlayable=1;
 					};
 					id=1658;
@@ -32048,7 +31665,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_WPS_VIC1";
+				name="GROUP_W_VIC1";
 			};
 			id=1656;
 			class CustomAttributes
@@ -32068,7 +31685,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="WV1,24,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="WV1,32,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 						};
 					};
 				};
@@ -32093,25 +31710,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32125,11 +31723,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item217
@@ -32153,9 +31751,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_W2_VG";
-						description="Russian Weapon Squad Gunner 2";
+						name="UNIT_MSV_W2_VG";
+						description="Russian Weapon Squad Vehicle Gunner 2";
 						isPlayable=1;
 					};
 					id=1663;
@@ -32174,9 +31771,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_W2_VD";
-						description="Russian Weapon Squad Driver 2";
+						name="UNIT_MSV_W2_VD";
+						description="Russian Weapon Squad Vehicle Driver 2";
 						isPlayable=1;
 					};
 					id=1664;
@@ -32185,7 +31781,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_WPS_VIC2";
+				name="GROUP_W_VIC2";
 			};
 			id=1662;
 			class CustomAttributes
@@ -32205,7 +31801,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="WV2,24,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="WV2,32,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 						};
 					};
 				};
@@ -32230,25 +31826,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32262,11 +31839,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item218
@@ -32290,9 +31867,8 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_W2_VG_1";
-						description="Russian Weapon Squad Gunner AUX";
+						name="UNIT_MSV_W3_VG";
+						description="Russian Weapon Squad Vehicle Gunner 3";
 						isPlayable=1;
 					};
 					id=1673;
@@ -32311,9 +31887,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_W2_VD_1";
-						description="Russian Weapon Squad Driver AUX";
+						name="UNIT_MSV_W3_VD";
+						description="Russian Weapon Squad Vehicle Driver 3";
 						isPlayable=1;
 					};
 					id=1674;
@@ -32322,7 +31897,7 @@ class Mission
 			};
 			class Attributes
 			{
-				name="GROUP_WPS_VIC3";
+				name="GROUP_W_VIC3";
 			};
 			id=1672;
 			class CustomAttributes
@@ -32342,7 +31917,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="WV3,24,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+							value="WV3,32,orange,\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
 						};
 					};
 				};
@@ -32367,25 +31942,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32399,11 +31955,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item219
@@ -32427,8 +31983,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MMG1_G";
+						name="UNIT_MSV_MMG1_G";
 						description="Russian Machine Gunner";
 						isPlayable=1;
 					};
@@ -32448,8 +32003,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MMG1_AG";
+						name="UNIT_MSV_MMG1_AG";
 						description="Russian Machine Gunner Assistant";
 						isPlayable=1;
 					};
@@ -32479,7 +32033,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG1,16,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG1,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
 						};
 					};
 				};
@@ -32504,25 +32058,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32536,11 +32071,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item220
@@ -32564,8 +32099,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MMG2_G";
+						name="UNIT_MSV_MMG2_G";
 						description="Russian Machine Gunner";
 						isPlayable=1;
 					};
@@ -32585,8 +32119,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MMG2_AG";
+						name="UNIT_MSV_MMG2_AG";
 						description="Russian Machine Gunner Assistant";
 						isPlayable=1;
 					};
@@ -32616,7 +32149,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG2,16,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG2,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
 						};
 					};
 				};
@@ -32641,25 +32174,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32673,11 +32187,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item221
@@ -32701,8 +32215,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MMG3_G";
+						name="UNIT_MSV_MMG3_G";
 						description="Russian Machine Gunner";
 						isPlayable=1;
 					};
@@ -32722,8 +32235,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MMG3_AG";
+						name="UNIT_MSV_MMG3_AG";
 						description="Russian Machine Gunner Assistant";
 						isPlayable=1;
 					};
@@ -32753,7 +32265,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MMG3,16,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
+							value="MMG3,24,orange,\A3\ui_f\data\map\markers\nato\b_support.paa";
 						};
 					};
 				};
@@ -32778,25 +32290,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -32810,11 +32303,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item222
@@ -32838,8 +32331,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MAT1_G";
+						name="UNIT_MSV_MAT1_G";
 						description="Russian ATGM Operator";
 						isPlayable=1;
 					};
@@ -32859,8 +32351,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MAT1_AG";
+						name="UNIT_MSV_MAT1_AG";
 						description="Russian ATGM Assistant";
 						isPlayable=1;
 					};
@@ -32890,14 +32381,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT1,16,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT1,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -32909,7 +32400,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ru";
+							value="MSV MAT1";
 						};
 					};
 				};
@@ -32928,7 +32419,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
@@ -32956,8 +32447,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MAT2_G";
+						name="UNIT_MSV_MAT2_G";
 						description="Russian ATGM Operator";
 						isPlayable=1;
 					};
@@ -32977,8 +32467,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MAT2_AG";
+						name="UNIT_MSV_MAT2_AG";
 						description="Russian ATGM Assistant";
 						isPlayable=1;
 					};
@@ -33008,14 +32497,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT2,16,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT2,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33027,7 +32516,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ru";
+							value="MSV MAT2";
 						};
 					};
 				};
@@ -33046,7 +32535,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
@@ -33074,8 +32563,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MAT3_G";
+						name="UNIT_MSV_MAT3_G";
 						description="Russian ATGM Operator";
 						isPlayable=1;
 					};
@@ -33095,8 +32583,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MAT3_AG";
+						name="UNIT_MSV_MAT3_AG";
 						description="Russian ATGM Assistant";
 						isPlayable=1;
 					};
@@ -33126,14 +32613,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MAT3,16,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+							value="MAT3,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -33145,7 +32632,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ru";
+							value="MSV MAT3";
 						};
 					};
 				};
@@ -33164,7 +32651,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
@@ -33192,8 +32679,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MAT1_G_1";
+						name="UNIT_MSV_MSAM_L";
 						description="Russian MSAM Leader";
 						isPlayable=1;
 					};
@@ -33213,8 +32699,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MAT1_AG_1";
+						name="UNIT_MSV_MSAM_G1";
 						description="Russian MSAM Gunner";
 						isPlayable=1;
 					};
@@ -33234,8 +32719,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_MAT2_AG_1";
+						name="UNIT_MSV_MSAM_G2";
 						description="Russian MSAM Gunner";
 						isPlayable=1;
 					};
@@ -33256,8 +32740,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_MAT2_G_1";
+						name="UNIT_MSV_MSAM_AG";
 						description="Russian MSAM Assistant";
 						isPlayable=1;
 					};
@@ -33287,7 +32770,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="MSAM,16,orange,\A3\ui_f\data\map\markers\nato\b_art.paa";
+							value="MSAM,24,orange,\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
 						};
 					};
 				};
@@ -33312,25 +32795,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -33344,11 +32808,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="11,2,2";
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=3;
 			};
 		};
 		class Item226
@@ -33372,111 +32836,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_ENG1_FTL";
+						name="UNIT_MSV_ENG1_FTL";
 						description="Russian Engineer Team 1 Leader";
 						isPlayable=1;
 					};
 					id=1732;
 					type="potato_msv_engl";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -33491,111 +32856,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_ENG1_A2";
+						name="UNIT_MSV_ENG1_A2";
 						description="Russian Engineer Team 1 Assistant";
 						isPlayable=1;
 					};
 					id=1733;
 					type="potato_msv_eng";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item2
 				{
@@ -33610,111 +32876,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_ENG1_A1";
+						name="UNIT_MSV_ENG1_A1";
 						description="Russian Engineer Team 1 Assistant";
 						isPlayable=1;
 					};
 					id=1734;
 					type="potato_msv_eng";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item3
 				{
@@ -33729,116 +32896,17 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_ENG1_A3";
+						name="UNIT_MSV_ENG1_A3";
 						description="Russian Engineer Team 1 Assistant";
 						isPlayable=1;
 					};
 					id=1735;
 					type="potato_msv_eng";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									nil=1;
-									class type
-									{
-										type[]=
-										{
-											"ANY"
-										};
-									};
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_ENGINEERS";
+				name="GROUP_MSV_ENG1";
 			};
 			id=1727;
 			class CustomAttributes
@@ -33851,14 +32919,14 @@ class Mission
 					{
 						class data
 						{
-							nil=1;
 							class type
 							{
 								type[]=
 								{
-									"ANY"
+									"STRING"
 								};
 							};
+							value="ENG,24,orange,\A3\ui_f\data\map\markers\nato\b_maint.paa";
 						};
 					};
 				};
@@ -33883,62 +32951,24 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							nil=1;
-							class type
-							{
-								type[]=
-								{
-									"ANY"
-								};
-							};
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_briefing_brief";
-					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-					class Value
-					{
-						class data
-						{
-							nil=1;
-							class type
-							{
-								type[]=
-								{
-									"ANY"
-								};
-							};
-						};
-					};
-				};
-				class Attribute4
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
 					{
 						class data
 						{
-							nil=1;
 							class type
 							{
 								type[]=
 								{
-									"ANY"
+									"STRING"
 								};
 							};
+							value="11,6,3";
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item227
@@ -33962,111 +32992,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitMSV_TNK1_C";
+						name="UNIT_MSV_TNK1_C";
 						description="Russian Tank 1 Commander";
 						isPlayable=1;
 					};
 					id=1766;
 					type="potato_msv_vicl";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -34082,111 +33013,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_TNK1_G";
+						name="UNIT_MSV_TNK1_G";
 						description="Russian Tank 1 Gunner";
 						isPlayable=1;
 					};
 					id=1767;
 					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item2
 				{
@@ -34201,111 +33033,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_TNK1_D";
+						name="UNIT_MSV_TNK1_D";
 						description="Russian Tank 1 Driver (Repair)";
 						isPlayable=1;
 					};
 					id=1768;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 			};
 			class Attributes
@@ -34330,7 +33063,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TANK1,24,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="TANK1,32,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
 						};
 					};
 				};
@@ -34355,44 +33088,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_briefing_brief";
-					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute4
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -34410,7 +33105,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item228
@@ -34434,111 +33129,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitMSV_TNK2_C";
+						name="UNIT_MSV_TNK2_C";
 						description="Russian Tank 2 Commander";
 						isPlayable=1;
 					};
 					id=1785;
 					type="potato_msv_vicl";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -34554,111 +33150,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_TNK2_G";
+						name="UNIT_MSV_TNK2_G";
 						description="Russian Tank 2 Gunner";
 						isPlayable=1;
 					};
 					id=1786;
 					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item2
 				{
@@ -34673,111 +33170,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_TNK2_D";
+						name="UNIT_MSV_TNK2_D";
 						description="Russian Tank 2 Driver (Repair)";
 						isPlayable=1;
 					};
 					id=1787;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 			};
 			class Attributes
@@ -34802,7 +33200,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TANK2,24,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="TANK2,32,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
 						};
 					};
 				};
@@ -34827,44 +33225,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_briefing_brief";
-					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute4
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -34882,7 +33242,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item229
@@ -34906,111 +33266,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitMSV_TNK3_C";
+						name="UNIT_MSV_TNK3_C";
 						description="Russian Tank 3 Commander";
 						isPlayable=1;
 					};
 					id=1789;
 					type="potato_msv_vicl";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -35026,111 +33287,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_TNK3_G";
+						name="UNIT_MSV_TNK3_G";
 						description="Russian Tank 3 Gunner";
 						isPlayable=1;
 					};
 					id=1790;
 					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item2
 				{
@@ -35145,111 +33307,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_TNK3_D";
+						name="UNIT_MSV_TNK3_D";
 						description="Russian Tank 3 Driver (Repair)";
 						isPlayable=1;
 					};
 					id=1791;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 			};
 			class Attributes
@@ -35274,7 +33337,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TANK3,24,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="TANK3,32,red,\A3\ui_f\data\map\markers\nato\b_armor.paa";
 						};
 					};
 				};
@@ -35299,44 +33362,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_briefing_brief";
-					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute4
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -35354,7 +33379,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item230
@@ -35378,111 +33403,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						name="UnitMSV_TNK4_C";
+						name="UNIT_MSV_TNK4_C";
 						description="Russian Tank 4 Commander";
 						isPlayable=1;
 					};
 					id=1793;
 					type="potato_msv_vicl";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item1
 				{
@@ -35498,111 +33424,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						name="UnitMSV_TNK4_G";
+						name="UNIT_MSV_TNK4_G";
 						description="Russian Tank 4 Gunner";
 						isPlayable=1;
 					};
 					id=1794;
 					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 				class Item2
 				{
@@ -35617,111 +33444,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						name="UnitMSV_TNK4_D";
+						name="UNIT_MSV_TNK4_D";
 						description="Russian Tank 4 Driver (Repair)";
 						isPlayable=1;
 					};
 					id=1795;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="24,24,white,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="potato_radios_babel";
-							expression="[_this,_value] call potato_radios_fnc_setLanguages";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="potato_briefing_brief";
-							expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="potato_radios_radio";
-							expression="[_this,_value] call potato_radios_fnc_setChannels";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="0,0,0";
-								};
-							};
-						};
-						nAttributes=5;
-					};
 				};
 			};
 			class Attributes
@@ -35746,7 +33474,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TANK4,24,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
+							value="TANK4,32,blue,\A3\ui_f\data\map\markers\nato\b_armor.paa";
 						};
 					};
 				};
@@ -35771,44 +33499,6 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="potato_briefing_brief";
-					expression="[_this,_value] call potato_briefing_fnc_setBriefingVar";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute4
-				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
 					class Value
@@ -35826,7 +33516,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				nAttributes=3;
 			};
 		};
 		class Item231
@@ -35850,12 +33540,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_TH1_P";
+						name="UNIT_MSV_TH1_P";
 						description="Russian Transport Helo 1 Pilot";
 						isPlayable=1;
 					};
 					id=1799;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -35871,35 +33584,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_TH1_CP";
+						name="UNIT_MSV_TH1_CP";
 						description="Russian Transport Helo 1 Co-Pilot (Repair)";
 						isPlayable=1;
 					};
 					id=1800;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -35910,25 +33600,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TH1,32,red,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -35947,26 +33618,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -35981,11 +33633,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item232
@@ -36009,12 +33661,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_TH2_P";
+						name="UNIT_MSV_TH2_P";
 						description="Russian Transport Helo 2 Pilot";
 						isPlayable=1;
 					};
 					id=1802;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -36030,35 +33705,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_TH2_CP";
+						name="UNIT_MSV_TH2_CP";
 						description="Russian Transport Helo 2 Co-Pilot (Repair)";
 						isPlayable=1;
 					};
 					id=1803;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -36069,25 +33721,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TH2,32,red,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -36106,26 +33739,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -36140,11 +33754,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item233
@@ -36168,12 +33782,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_TH3_P";
+						name="UNIT_MSV_TH3_P";
 						description="Russian Transport Helo 3 Pilot";
 						isPlayable=1;
 					};
 					id=1805;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TH3,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -36189,35 +33826,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_TH3_CP";
+						name="UNIT_MSV_TH3_CP";
 						description="Russian Transport Helo 3 Co-Pilot (Repair)";
 						isPlayable=1;
 					};
 					id=1806;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -36228,25 +33842,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TH3,32,blue,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -36265,26 +33860,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -36299,11 +33875,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item234
@@ -36327,12 +33903,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_TH4_P";
+						name="UNIT_MSV_TH4_P";
 						description="Russian Transport Helo 4 Pilot";
 						isPlayable=1;
 					};
 					id=1808;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TH4,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -36348,35 +33947,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_TH4_CP";
+						name="UNIT_MSV_TH4_CP";
 						description="Russian Transport Helo 4 Co-Pilot (Repair)";
 						isPlayable=1;
 					};
 					id=1809;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -36387,25 +33963,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="TH3,32,blue,\A3\ui_f\data\map\markers\nato\b_unknown.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -36424,26 +33981,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -36458,11 +33996,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item235
@@ -36486,12 +34024,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_AH1_P";
+						name="UNIT_MSV_AH1_P";
 						description="Russian Attack Helo 1 Pilot";
 						isPlayable=1;
 					};
 					id=1813;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AH1,32,red,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -36507,35 +34068,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_AH1_CP";
+						name="UNIT_MSV_AH1_CP";
 						description="Russian Attack Helo 1 Gunner (Repair)";
 						isPlayable=1;
 					};
 					id=1814;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -36546,25 +34084,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="AH1,32,green,\A3\ui_f\data\map\markers\nato\b_air.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -36583,26 +34102,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -36617,11 +34117,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item236
@@ -36645,12 +34145,35 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						name="UnitMSV_AH1_P_1";
+						name="UNIT_MSV_AH2_P";
 						description="Russian Attack Helo 2 Pilot";
 						isPlayable=1;
 					};
 					id=1816;
 					type="potato_msv_pilot";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AH2,32,blue,\A3\ui_f\data\map\markers\nato\b_air.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item1
 				{
@@ -36666,35 +34189,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						name="UnitMSV_AH1_CP_1";
+						name="UNIT_MSV_AH2_CP";
 						description="Russian Attack Helo 2 Gunner (Repair)";
 						isPlayable=1;
 					};
 					id=1817;
 					type="potato_msv_cc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
@@ -36705,25 +34205,6 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
-				{
-					property="potato_markers_addMarker";
-					expression="[_this,_value] call potato_markers_fnc_setMarker;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="AH2,32,green,\A3\ui_f\data\map\markers\nato\b_air.paa";
-						};
-					};
-				};
-				class Attribute1
 				{
 					property="groupID";
 					expression="[_this, _value] call CBA_fnc_setCallsign";
@@ -36742,26 +34223,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="ru";
-						};
-					};
-				};
-				class Attribute3
+				class Attribute1
 				{
 					property="potato_radios_radio";
 					expression="[_this,_value] call potato_radios_fnc_setChannels";
@@ -36776,11 +34238,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="9,3,4";
+							value="9,4,3";
 						};
 					};
 				};
-				nAttributes=4;
+				nAttributes=2;
 			};
 		};
 		class Item237
@@ -36803,36 +34265,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_GR";
+						name="UNIT_MSV_SF_GR";
 						description="Russian Spetsnaz Grenadier";
 						isPlayable=1;
 					};
 					id=1832;
 					type="potato_msv_g";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item1
 				{
@@ -36848,8 +34286,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_SL";
+						name="UNIT_MSV_SF_SL";
 						description="Russian Spetsnaz Leader ";
 						isPlayable=1;
 					};
@@ -36870,36 +34307,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_R";
+						name="UNIT_MSV_SF_R";
 						description="Russian Spetsnaz Rifleman";
 						isPlayable=1;
 					};
 					id=1836;
 					type="potato_msv_sf_rifleman";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item3
 				{
@@ -36914,8 +34327,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_SR";
+						name="UNIT_MSV_SF_SR";
 						description="Russian Spetsnaz Senior Rifleman";
 						isPlayable=1;
 					};
@@ -36959,8 +34371,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_MK";
+						name="UNIT_MSV_SF_MK";
 						description="Russian Spetsnaz Marksman";
 						isPlayable=1;
 					};
@@ -36981,8 +34392,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_M";
+						name="UNIT_MSV_SF_M";
 						description="Russian Spetsnaz Medic";
 						isPlayable=1;
 					};
@@ -37009,26 +34419,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item6
@@ -37044,55 +34435,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_AR";
+						name="UNIT_MSV_SF_AR";
 						description="Russian Spetsnaz Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1843;
 					type="potato_msv_sf_ar";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_markers_addMarker";
-							expression="[_this,_value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="FM,16,pink,\A3\ui_f\data\map\markers\nato\b_med.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=2;
-					};
 				};
 				class Item7
 				{
@@ -37107,36 +34455,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_AAR";
-						description="Russian Spetsnaz  AssistantAutomatic Rifleman";
+						name="UNIT_MSV_SF_AAR";
+						description="Russian Spetsnaz Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1844;
 					type="potato_msv_sf_aar";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item8
 				{
@@ -37151,41 +34475,17 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_FOR_AGR";
+						name="UNIT_MSV_SF_AGR";
 						description="Russian Spetsnaz Assistant Grenadier";
 						isPlayable=1;
 					};
 					id=1845;
 					type="potato_msv_rifleman_04";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="MAIN";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 			};
 			class Attributes
 			{
-				name="GROUP_MSV_SPETSNAZ";
+				name="GROUP_MSV_SF";
 			};
 			id=1824;
 			class CustomAttributes
@@ -37211,8 +34511,8 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="potato_radios_babel";
-					expression="[_this,_value] call potato_radios_fnc_setLanguages";
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -37224,7 +34524,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ru";
+							value="MSV SF";
 						};
 					};
 				};
@@ -37271,8 +34571,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_SL1";
+						name="UNIT_MSV_JIP_SL1";
 						description="Russian JIP Squad Leader";
 						isPlayable=1;
 					};
@@ -37292,8 +34591,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_D1";
+						name="UNIT_MSV_JIP_D1";
 						description="Russian JIP Vehicle Driver";
 						isPlayable=1;
 					};
@@ -37314,36 +34612,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_G2";
+						name="UNIT_MSV_JIP_G2";
 						description="Russian JIP Vehicle Gunner";
 						isPlayable=1;
 					};
 					id=1867;
 					type="potato_msv_vicc";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item3
 				{
@@ -37358,36 +34632,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_SR1";
+						name="UNIT_MSV_JIP_SR1";
 						description="Russian JIP Senior Rifleman";
 						isPlayable=1;
 					};
 					id=1868;
 					type="potato_msv_sr";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item4
 				{
@@ -37402,36 +34652,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_D2";
+						name="UNIT_MSV_JIP_D2";
 						description="Russian JIP Vehicle Driver";
 						isPlayable=1;
 					};
 					id=1869;
 					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item5
 				{
@@ -37447,8 +34673,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_SL2";
+						name="UNIT_MSV_JIP_SL2";
 						description="Russian JIP Squad Leader";
 						isPlayable=1;
 					};
@@ -37469,8 +34694,7 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_G1";
+						name="UNIT_MSV_JIP_G1";
 						description="Russian JIP Vehicle Gunner";
 						isPlayable=1;
 					};
@@ -37490,36 +34714,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_M1";
-						description="Russian JIP Rifleman/Medic";
+						name="UNIT_MSV_JIP_M1";
+						description="Russian JIP Medic";
 						isPlayable=1;
 					};
 					id=1872;
 					type="potato_msv_sm";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item8
 				{
@@ -37535,36 +34735,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_AR1";
+						name="UNIT_MSV_JIP_AR1";
 						description="Russian JIP Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1873;
 					type="potato_msv_ar";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item9
 				{
@@ -37579,36 +34755,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_R2";
+						name="UNIT_MSV_JIP_R2";
 						description="Russian JIP Rifleman";
 						isPlayable=1;
 					};
 					id=1874;
 					type="potato_msv_rifleman";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item10
 				{
@@ -37623,36 +34775,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_GR1";
+						name="UNIT_MSV_JIP_GR1";
 						description="Russian JIP Grenadier";
 						isPlayable=1;
 					};
 					id=1875;
 					type="potato_msv_g";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item11
 				{
@@ -37667,8 +34795,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_GR2";
+						name="UNIT_MSV_JIP_GR2";
 						description="Russian JIP Grenadier";
 						isPlayable=1;
 					};
@@ -37688,36 +34815,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_AGR1";
+						name="UNIT_MSV_JIP_AGR1";
 						description="Russian JIP Assistant Grenadier";
 						isPlayable=1;
 					};
 					id=1877;
 					type="potato_msv_ag";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item13
 				{
@@ -37732,8 +34835,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_SR2";
+						name="UNIT_MSV_JIP_SR2";
 						description="Russian JIP Senior Rifleman";
 						isPlayable=1;
 					};
@@ -37754,36 +34856,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_AR2";
+						name="UNIT_MSV_JIP_AR2";
 						description="Russian JIP Automatic Rifleman";
 						isPlayable=1;
 					};
 					id=1879;
 					type="potato_msv_ar";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item15
 				{
@@ -37798,36 +34876,12 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_R1";
+						name="UNIT_MSV_JIP_R1";
 						description="Russian JIP Rifleman";
 						isPlayable=1;
 					};
 					id=1880;
 					type="potato_msv_rifleman";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="face";
-							expression="_this setface _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
 				};
 				class Item16
 				{
@@ -37842,9 +34896,8 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_M2";
-						description="Russian JIP Rifleman/Medic";
+						name="UNIT_MSV_JIP_M2";
+						description="Russian JIP Medic";
 						isPlayable=1;
 					};
 					id=1881;
@@ -37863,8 +34916,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						lock="UNLOCKED";
-						name="UnitMSV_JIP_AGR2";
+						name="UNIT_MSV_JIP_AGR2";
 						description="Russian JIP Assistant Grenadier";
 						isPlayable=1;
 					};
@@ -37877,29 +34929,6 @@ class Mission
 				name="GROUP_MSV_JIP";
 			};
 			id=1846;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="MSV JIP";
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 		class Item239
 		{
