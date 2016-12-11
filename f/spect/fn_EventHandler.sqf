@@ -149,10 +149,7 @@ switch (_type) do {
     };
 
     if ([_key, _args select 2, _args select 3, _args select 4] call f_cam_checkAcreMute) then {
-      f_cam_muteSpectators = !f_cam_muteSpectators;
-      if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
-        [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-      };
+      [] call acre_sys_core_fnc_toggleHeadset;
     };
 
     switch (_key) do {
