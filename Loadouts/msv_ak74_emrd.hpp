@@ -1,10 +1,10 @@
 // Author: BWMF
-// Description: Russian: AK74 - EMR
+// Description: Russian: AK74 - EMR Desert
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag"
+#define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag","rhs_weap_ak74m_desert"
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_pkas","rhs_acc_dtk"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
@@ -81,7 +81,7 @@ class Plane {};
 class Ship_F {};
 
 class potato_msv_rifleman { // rifleman
-  uniform[] = {"rhs_uniform_emr_patchless"};
+  uniform[] = {"rhs_uniform_emr_des_patchless"};
   vest[] = {"rhs_6b23_digi_6sh92"};
   headgear[] = {"rhs_6b27m_digi","rhs_6b27m_digi_bala","rhs_6b27m_digi_ess","rhs_6b27m_digi_ess_bala","rhs_6b47","rhs_6b47_bala","rhs_6b47_ess","rhs_6b47_ess_bala"};
   backpack[] = {"rhs_assault_umbts"};
@@ -217,7 +217,7 @@ class potato_msv_sniper: spotter_F {// Sniper
   opticChoices[] = {"rhs_acc_pso1m21","rhs_acc_1pn93_1"};
 };
 class potato_msv_pilot {// Pilot
-  uniform[] = {"rhs_uniform_df15"};
+  uniform[] = {"rhs_uniform_df15_tan"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"rhs_zsh7a_mike"};
   backpack[] = {"B_AssaultPack_rgr"};

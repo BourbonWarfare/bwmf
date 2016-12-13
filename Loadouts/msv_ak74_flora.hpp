@@ -1,5 +1,5 @@
 // Author: BWMF
-// Description: Russian: AK74 - EMR
+// Description: Russian: AK74 - Flora
 
 #include "undef.hpp" // Reset defines
 
@@ -81,9 +81,9 @@ class Plane {};
 class Ship_F {};
 
 class potato_msv_rifleman { // rifleman
-  uniform[] = {"rhs_uniform_emr_patchless"};
-  vest[] = {"rhs_6b23_digi_6sh92"};
-  headgear[] = {"rhs_6b27m_digi","rhs_6b27m_digi_bala","rhs_6b27m_digi_ess","rhs_6b27m_digi_ess_bala","rhs_6b47","rhs_6b47_bala","rhs_6b47_ess","rhs_6b47_ess_bala"};
+  uniform[] = {"rhs_uniform_flora_patchless"};
+  vest[] = {"rhs_6b23_6sh92"};
+  headgear[] = {"rhs_6b27m_green","rhs_6b27m_green_bala","rhs_6b27m_green_ess","rhs_6b27m_green_ess_bala","rhs_6b27m","rhs_6b27m_bala","rhs_6b27m_ess","rhs_6b27m_ess_bala"};
   backpack[] = {"rhs_assault_umbts"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -98,7 +98,7 @@ class Fic_Soldier_Carbine: potato_msv_rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class potato_msv_sr: potato_msv_rifleman {// FTL
-  vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
+  vest[] = {"rhs_6b23_6sh92_vog_headset"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
