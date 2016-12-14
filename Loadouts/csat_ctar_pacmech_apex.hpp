@@ -248,7 +248,7 @@ class potato_msv_vicd: fic_vehicle_crewman {// Vehicle Crewman (repair)
 };
 class potato_msv_eng: potato_msv_rifleman {// Demoman
   backpack[] = {"B_Carryall_ghex_F"};
-  items[] += {BASE_ENGIE,BASE_MEDICAL};
+  items[] += {BASE_ENG,BASE_MEDICAL};
   backpackItems[] = {"Toolkit"};
   magazines[] += {MSV_EXP};
   linkedItems[] = {BASE_LINKED};
