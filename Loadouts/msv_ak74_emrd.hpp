@@ -61,20 +61,21 @@
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
 #define BASE_LINKED COMMON_LINKED
 #define LEADER_LINKED COMMON_LEADER_LINKED
+#define MSV_EXP "DemoCharge_Remote_Mag:2"
 
 class Car {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
@@ -158,12 +159,12 @@ class Fic_Spotter: potato_msv_rifleman {
   linkedItems[] += {RANGE_FINDER};
 };
 class potato_msv_mmgg: potato_msv_AR {// MMG
-  backpack[] = {"B_Kitbag_sgg"};
+  backpack[] = {"rhs_assault_umbts"};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
 };
 class potato_msv_mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"B_Kitbag_sgg"};
+  backpack[] = {"rhs_assault_umbts"};
   backpackItems[] += {MMG_MAG};
 };
 class potato_msv_matg: potato_msv_rifleman {// MAT Gunner
@@ -248,10 +249,10 @@ class potato_msv_vicd: fic_vehicle_crewman {// Vehicle Crewman (repair)
   backpackItems[] = {"toolkit",KEY_EAST};
 };
 class potato_msv_eng: potato_msv_rifleman {// Demoman
-  backpack[] = {"B_Carryall_oli"};
+  backpack[] = {"rhs_assault_umbts_engineer_empty"};
   items[] += {BASE_ENG,BASE_MEDICAL};
   backpackItems[] = {"Toolkit"};
-  magazines[] += {BASE_EXP};
+  magazines[] += {MSV_EXP};
   linkedItems[] = {BASE_LINKED};
 };
 class potato_msv_engl: potato_msv_eng {// Demoman Leader
