@@ -57,7 +57,7 @@
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
 // Gear
-#define BASE_TOOLS COMMON_TOOLS,"rhs_6b27m_digi"
+#define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
 #define BASE_LINKED COMMON_LINKED
 #define LEADER_LINKED COMMON_LEADER_LINKED
@@ -110,7 +110,7 @@ class potato_msv_sl: potato_msv_sr { // SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR};
+  items[] += {RADIO_MR,"rhs_6b27m"};
 };
 class potato_msv_plt: potato_msv_sl { // PLT
   headgear[] = {"rhs_fieldcap_digi"};
@@ -118,10 +118,10 @@ class potato_msv_plt: potato_msv_sl { // PLT
 };
 class potato_msv_aplt: potato_msv_plt {}; // PLT Assistant
 class potato_msv_coy: potato_msv_plt { // COY
-  headgear[] = {"rhs_tsh4"};
+  headgear[] = {"rhs_fieldcap_vsr"};
 };
 class potato_msv_acoy: potato_msv_plt{}; // COY Assistant
-class potato_msv_pol: potato_msv_rifleman { // Poloitical Officer
+class potato_msv_pol: potato_msv_rifleman { // Political Officer
   vest[] = {"rhs_vest_commander"};
   headgear[] = {"rhs_beret_mp1"};
   backpack[] = {}; // This loadout looks stupid with a backpack
@@ -144,7 +144,7 @@ class potato_msv_ag: potato_msv_rifleman {// Assistant Grenadier
   magazines[] += {AT_MAG};
 };
 class potato_msv_sm: potato_msv_rifleman {// Medic
-  vest[] = {"rhs_6b23_digi_medic"};
+  vest[] = {"rhs_6b23_medic"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
