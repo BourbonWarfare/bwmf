@@ -8,6 +8,7 @@
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define AR_ATTACHMENTS "CUP_optic_Kobra"
 #define ALT_OPTICS "rhs_acc_ekp1","rhs_acc_pkas"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
@@ -117,7 +118,7 @@ class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
-  attachments[] = {};
+  attachments[] = {AR_ATTACHMENTS};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpack[] = {"B_Kitbag_sgg"};
