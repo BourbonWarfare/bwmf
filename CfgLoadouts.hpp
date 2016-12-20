@@ -6,6 +6,7 @@ class CfgLoadouts {
   // Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
   allowMagnifiedOptics = 0;
 
+  // Allow changeable optics on a global level, note: optic options obey allowMagnifiedOptics rules
   allowChangeableOptics = 1;
 
   // Do Vehicle Loadouts
