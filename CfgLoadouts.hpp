@@ -44,8 +44,7 @@ class CfgLoadouts {
   };
 
   class opf_f { // OpFor
-    //#include "Loadouts\ru_ak74_floral.hpp"
-    #include "Loadouts\ru_ak74_desert.hpp"
+    #include "Loadouts\ru_ak74_floral.hpp"
   };
 
   // Civilians (mainly for RP missions)
