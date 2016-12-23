@@ -227,20 +227,19 @@ class potato_msv_cc: potato_msv_pilot {};// Crew Chief
 class fic_vehicle_crewman: potato_msv_rifleman {// Vehicle crew base
   headgear[] = {"rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"};
   magazines[] = {RIFLE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST,RADIO_LR};
-  linkedItems[] += {BASE_LINKED};
+  backpackItems[] = {KEY_EAST};
+  linkedItems[] += {BASE_LINKED,LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
-class potato_msv_vicl: fic_vehicle_crewman {// Vehicle Leader
-  backpackItems[] = {RADIO_MR,RADIO_LR,KEY_EAST};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS};
-};
 class potato_msv_vicc: fic_vehicle_crewman {// Vehicle Crewman (non-repair)
-  backpackItems[] = {RADIO_MR,KEY_EAST};
-  linkedItems[] += {LEADER_LINKED,BINOS};
+  backpackItems[] += {RADIO_MR};
+  linkedItems[] += {BINOS};
+};
+class potato_msv_vicl: potato_msv_vicc {// Vehicle Leader
+  backpackItems[] += {RADIO_LR};
 };
 class potato_msv_vicd: fic_vehicle_crewman {// Vehicle Crewman (repair)
-  backpackItems[] = {"toolkit",KEY_EAST};
+  backpackItems[] += {"toolkit"};
 };
 class potato_msv_eng: potato_msv_rifleman {// Demoman
   backpack[] = {"rhs_assault_umbts_engineer_empty"};
