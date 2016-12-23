@@ -87,7 +87,7 @@ class potato_msv_rifleman { // rifleman
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS,"rhs_1PN138"}; // rhs_1PN138 russian single tube NVG
+  items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {MSV_OPTIX};
