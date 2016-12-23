@@ -6,6 +6,9 @@ class CfgLoadouts {
   // Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
   allowMagnifiedOptics = 0;
 
+  // Allow changeable optics on a global level, note: optic options obey allowMagnifiedOptics rules
+  allowChangeableOptics = 1;
+
   // Do Vehicle Loadouts
   // (1 will run normaly, 0 will leave them to vanilla defaults, -1 will clear and leave empty)
   setVehicleLoadouts = -1;
@@ -42,8 +45,7 @@ class CfgLoadouts {
   };
 
   class opf_f { // OpFor
-    //#include "Loadouts\ru_ak74_floral.hpp"
-    #include "Loadouts\ru_ak74_desert.hpp"
+    #include "Loadouts\ru_ak74_floral.hpp"
   };
 
   // Civilians (mainly for RP missions)
