@@ -209,7 +209,7 @@ class potato_msv_sniper: potato_msv_rifleman_02 {// Sniper
 };
 class potato_msv_pilot {// Pilot
   uniform[] = {"U_O_PilotCoveralls"};
-  vest[] = {};
+  vest[] = {"V_TacVest_khk"};
   headgear[] = {"H_PilotHelmetHeli_O"};
   backpack[] = {"B_Carryall_oli"};
   weapons[] = {SMG};
