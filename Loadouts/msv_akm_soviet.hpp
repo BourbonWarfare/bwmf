@@ -1,4 +1,4 @@
-// Author: BWMF
+// Author: Raeth
 // Description: Russian: AK74 - Soviet Uniforms
 
 #include "undef.hpp" // Reset defines
@@ -15,13 +15,13 @@
 #define GLRIFLE_MAG_HE "rhs_VOG25:5"
 #define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
 // Carbine
-#define CARBINE "rhs_weap_ak105"
+#define CARBINE "rhs_weap_ak104"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_arifle_RPK74"
 #define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
 // Recon Rifle Attachments
-#define RECONRIFLE_ATTACHMENTS  "rhs_acc_pbs1"
+#define RECONRIFLE_ATTACHMENTS "rhs_acc_pbs1"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:3","rhs_rpg7_OG7V_mag:1"
@@ -57,7 +57,7 @@
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
 // Gear
-#define BASE_TOOLS COMMON_TOOLS
+#define BASE_TOOLS COMMON_TOOLS,"rhs_1PN138"
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
 #define BASE_LINKED COMMON_LINKED
 #define LEADER_LINKED COMMON_LEADER_LINKED
@@ -65,17 +65,17 @@
 
 class Car {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
   TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
@@ -89,13 +89,9 @@ class potato_msv_rifleman { // rifleman
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS,"rhs_1PN138"}; // rhs_1PN138 russian single tube NVG
+  items[] = {BASE_TOOLS}; // rhs_1PN138 russian single tube NVG
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
-};
-class Fic_Soldier_Carbine: potato_msv_rifleman {// carbine-man
-  weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class potato_msv_sr: potato_msv_rifleman {// FTL
   vest[] = {"rhsgref_6b23_khaki_nco","rhsgref_6b23_ttsko_mountain_nco"};
@@ -144,7 +140,7 @@ class potato_msv_ag: potato_msv_rifleman {// Assistant Grenadier
 };
 class potato_msv_sm: potato_msv_rifleman {// Medic
   vest[] = {"rhsgref_6b23_khaki_medic","rhsgref_6b23_ttsko_mountain_medic"};
-  magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  magazines[] = {RIFLE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class potato_msv_marksman: potato_msv_rifleman {// Squad Marksman
@@ -184,11 +180,11 @@ class potato_msv_msamg: potato_msv_rifleman {// SAM Gunner
   launchers[] = {SAM};
 };
 class potato_msv_msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  SAM_GEAR("B_Carryall_oli", SAM_MAG)
+  SAM_GEAR("B_Carryall_oli", SAM_MAG2)
 };
 class potato_msv_msaml: potato_msv_msamag {// SAM Leader
   items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,RADIO_LR};
+  linkedItems[] += {LEADER_LINKED,RADIO_MR};
 };
 class potato_msv_mtrl: Fic_Spotter { // Mortar Leader
   items[] += {LEADER_TOOLS};
@@ -200,20 +196,20 @@ class potato_msv_mtrg: potato_msv_rifleman {// Mortar Gunner
 class potato_msv_mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("O_Mortar_01_support_F")
 };
-class spotter_F: Fic_Spotter {// Spotter
+class potato_msv_rifleman_02: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {"rhs_acc_pso1m2"};
 };
-class potato_msv_sniper: spotter_F {// Sniper
+class potato_msv_sniper: potato_msv_rifleman_02 {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
   attachments[] = {"rhs_acc_pso1m21"};
-  opticChoices[] = {"rhs_acc_pso1m21","rhs_acc_1pn93_1"};
+  opticChoices[] = {"rhs_acc_1pn93_1"};
 };
 class potato_msv_pilot {// Pilot
   uniform[] = {"rhs_uniform_df15"};
@@ -223,39 +219,37 @@ class potato_msv_pilot {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_EAST,RADIO_LR};
-  items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR,"rhsusf_ANPVS_15"}; // Theres no double tube NVGs for pilots in RHS yet
+  items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR,"rhsusf_ANPVS_15"}; // Theres no double tube NVGs for pilots in RHS yet
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
   attachments[] = {"rhs_acc_dtk"};
 };
 class potato_msv_cc: potato_msv_pilot {};// Crew Chief
 class fic_vehicle_crewman: potato_msv_rifleman {// Vehicle crew base
   headgear[] = {"rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"};
-  magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST,RADIO_LR};
-  linkedItems[] += {BASE_LINKED};
+  magazines[] = {RIFLE_MAG,CREW_GRENADES};
+  backpackItems[] = {KEY_EAST};
+  linkedItems[] += {BASE_LINKED,LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
-class potato_msv_vicl: fic_vehicle_crewman {// Vehicle Leader
-  backpackItems[] = {RADIO_MR,RADIO_LR,KEY_EAST};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS};
-};
 class potato_msv_vicc: fic_vehicle_crewman {// Vehicle Crewman (non-repair)
-  backpackItems[] = {RADIO_MR,KEY_EAST};
-  linkedItems[] += {LEADER_LINKED,BINOS};
+  backpackItems[] += {RADIO_MR};
+  linkedItems[] += {BINOS};
+};
+class potato_msv_vicl: potato_msv_vicc {// Vehicle Leader
+  backpackItems[] += {RADIO_LR};
 };
 class potato_msv_vicd: fic_vehicle_crewman {// Vehicle Crewman (repair)
-  backpackItems[] = {"toolkit",KEY_EAST};
+  backpackItems[] += {"toolkit"};
 };
 class potato_msv_eng: potato_msv_rifleman {// Demoman
   backpack[] = {"rhs_assault_umbts_engineer_empty"};
   items[] += {BASE_ENG,BASE_MEDICAL};
   backpackItems[] = {"Toolkit"};
   magazines[] += {MSV_EXP};
-  linkedItems[] = {BASE_LINKED};
 };
 class potato_msv_engl: potato_msv_eng {// Demoman Leader
-  backpackItems[] += {RADIO_MR,KEY_EAS};
-  linkedItems[] = {LEADER_LINKED};
+  backpackItems[] += {RADIO_MR,KEY_EAST};
+  linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   uniform[] = {"rhs_uniform_gorka_r_g","rhs_uniform_gorka_r_y"};
@@ -300,7 +294,7 @@ class potato_msv_sf_marksman: potato_msv_sf_rifleman {// Recon Marksman
   magazines[] = {MARKSMAN_MAG};
   items[] += {"ACE_RangeCard"}; // SF Marksman gets a rangecard for high speed
   attachments[] = {"rhs_acc_pso1m21"};
-  opticChoices[] = {"rhs_acc_pso1m21","rhs_acc_1pn93_1"};
+  opticChoices[] = {"rhs_acc_1pn93_1"};
 };
 class potato_msv_sf_aar: potato_msv_sf_rifleman {//Recon AAR
   backpackItems[] += {AR_MAG};
