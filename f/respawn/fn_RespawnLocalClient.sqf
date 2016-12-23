@@ -1,4 +1,5 @@
 params["_groupNum", "_position", "_faction", "_typeOfUnit", "_rank", "_number", "_leader", "_groupIndex"];
+diag_log text format ["[BWMF] RespawnLocalClient: %1", _this];
 
 _faction = (respawnMenuFactions select _faction) select 0;
 _typeOfUnit = (respawnMenuRoles select _typeOfUnit) select 0;
@@ -55,28 +56,41 @@ if (_leader) then {
   // Wait till the unit is created
   private _timeOut = time + 10;
   waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died"; };
+  if (isNil "_newUnit" || {isNull _newUnit} || {!alive _newUnit}) exitWith { diag_log "[bwmf] - Respawn died"; };
 
+  // Explicitly set leader
+  _newGroup selectLeader _newUnit;
+  
   // Exit Spectator
   [true] call F_fnc_ForceExit;
 
   // 'respawn'
   selectPlayer _newUnit;
-
-  publicVariable _groupVarName;
+  
+  missionNameSpace setVariable [_groupVarName, _newGroup, true];
+  
+  diag_log text format ["[bwmf] - Respawned as leader [%1] GroupVar [%2:%3]", player, _groupVarName, missionNameSpace getVariable [_groupVarName, -1]];
 }
 else {
-  private _tempGroup = createGroup _side;
+  _timeOut = time + 10;
+  waitUntil{ !isNil _groupVarName || time > _timeOut };
+  if (isNil _groupVarName) exitWith { 
+    systemChat "Respawn Failed, No Leader Group!!!";
+    diag_log "[bwmf] - Respawn Public group wasn't created!"; 
+  };
+  
+  private _newGroup = missionNameSpace getVariable [_groupVarName, grpNull];
+  if (isNull _newGroup) exitWith {diag_log "[bwmf] - Respawn Public group was null!";}; 
 
   // Create the unit
-  private _newUnit = _tempGroup createUnit [_class, _position, [], 5, "NONE"];
+  private _newUnit = _newGroup createUnit [_class, _position, [], 5, "NONE"];
   _newUnit setRank _rankName;
   _newUnit addRating 10000;
 
   // Wait till the unit is created
   private _timeOut = time + 10;
   waitUntil {(!isNil "_newUnit" && {!isNull _newUnit && {alive _newUnit}}) || time > _timeOut};
-  if (isNil "_newUnit" && {isNull _newUnit && {!alive _newUnit}}) exitWith { diag_log "[bwmf] - Respawn died, new unit wasn't created"; };
+  if (isNil "_newUnit" || {isNull _newUnit} || {!alive _newUnit}) exitWith { diag_log "[bwmf] - Respawn died, new unit wasn't created"; };
 
   // Exit Spectator
   [true] call F_fnc_ForceExit;
@@ -88,21 +102,7 @@ else {
   waitUntil{ player == _newUnit || time > _timeOut };
   if (player != _newUnit) exitWith { diag_log "[bwmf] - Respawn died, player didn't transfer"; };
 
-  _timeOut = time + 10;
-  waitUntil{ !isNil _groupVarName || time > _timeOut };
-  if (isNil _groupVarName) exitWith { diag_log "[bwmf] - Respawn died, group wasn't created"; };
-
-  private _newGroup = grpNull;
-  {
-    if (groupId _x == _groupId) exitWith { _newGroup = _x; };
-  } forEach allGroups;
-
-  diag_log format ["[bwmf] - Respawn 'pre' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
-  if (!isNull _newGroup) then {
-    [_newUnit] joinSilent _newGroup;
-    deleteGroup _tempGroup;
-  };
-  diag_log format ["[bwmf] - Respawn 'post' current player: %1, current group: %2, newUnit: %3, newGroup: %4, tempGroup: %5", player, group player, _newUnit, _newGroup, _tempGroup];
+  diag_log text format ["[bwmf] - Respawned as non-leader [%1] GroupVar [%2:%3]", player, _groupVarName, missionNameSpace getVariable [_groupVarName, -1]];
 };
 
 player setVariable ["f_respawnName", name player, true];

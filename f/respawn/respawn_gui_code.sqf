@@ -286,6 +286,7 @@ fn_respawnMap_keyUp = {
       };
       hint "Group created on ground.";
 
+      diag_log text format ["[BWMF] respawn_gui_code: sending to server: %1", [var2_groupIndex, _position, var1_faction, selectedRespawnGroup]];
       [var2_groupIndex, _position, var1_faction, selectedRespawnGroup] remoteExecCall ["F_fnc_RespawnWaveServer", 2, false];
       selectedRespawnGroup = [];
 
