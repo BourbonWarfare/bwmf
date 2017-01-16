@@ -54,12 +54,12 @@
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
 // Gear
-#define BASE_TOOLS COMMON_TOOLS,"rhs_1PN138"
+#define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
-#define BASE_LINKED COMMON_LINKED
+#define BASE_LINKED COMMON_LINKED,"rhs_1PN138" // To be moved to tools if loadout bug is fixed
 #define LEADER_LINKED COMMON_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
-#define MSV_OPTIX "rhs_acc_1p29","rhs_acc_1p63","rhs_acc_1p78","rhs_acc_1pn93_2","rhs_acc_ekp1"
+#define MSV_OPTIX "rhs_acc_1p29","rhs_acc_1p63","rhs_acc_1p78","rhs_acc_1pn93_1","rhs_acc_ekp1"
 
 class Car {
   TransportWeapons[] = {AT,AT_MAG};
@@ -163,7 +163,7 @@ class potato_msv_mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
 };
 class potato_msv_matg: potato_msv_rifleman {// MAT Gunner
   backpack[] = {"rhs_rpg_empty"};
-  backpackItems[] = {};
+  backpackItems[] = {"rhs_acc_1pn93_2"};
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
   launchers[] = {MAT};
@@ -220,8 +220,8 @@ class potato_msv_pilot {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_EAST,RADIO_LR};
-  items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR,"rhsusf_ANPVS_15"}; // Theres no double tube NVGs for pilots in RHS yet
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
+  items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR}; // Theres no double tube NVGs for pilots in RHS yet
+  linkedItems[] = {COMMON_LINKED,LEADER_LINKED,"rhsusf_ANPVS_15"};
   attachments[] = {"rhs_acc_dtk"};
 };
 class potato_msv_cc: potato_msv_pilot {};// Crew Chief
