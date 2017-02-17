@@ -62,18 +62,18 @@
 #define MSV_OPTIX "rhs_acc_1p29","rhs_acc_1p63","rhs_acc_1p78","rhs_acc_1pn93_1","rhs_acc_ekp1"
 
 class Car {
-  TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportWeapons[] = {AT};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP,AT_MAG};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
-  TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportWeapons[] = {AT};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP,AT_MAG};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
-  TransportWeapons[] = {AT,AT_MAG};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP};
+  TransportWeapons[] = {AT};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,BASE_MINE,BASE_EXP,AT_MAG};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
