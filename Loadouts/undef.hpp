@@ -124,3 +124,15 @@
 #ifdef AR_ATTACHMENTS
   #undef AR_ATTACHMENTS
 #endif
+#ifdef RECONRIFLE_ATTACHMENTS
+  #undef RECONRIFLE_ATTACHMENTS
+#endif
+#ifdef RECON_MAGS
+  #undef RECON_MAGS
+#endif
+#ifdef MSV_EXP
+  #undef MSV_EXP
+#endif
+#ifdef MSV_OPTIX
+  #undef MSV_OPTIX
+#endif
