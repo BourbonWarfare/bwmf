@@ -10,9 +10,6 @@ onLoadName = "*** Insert mission name here. ***";
 // Parameters
 #include "cfg\Params.hpp"
 
-// Respawn/Spectator config
-#include "cfg\Respawn.hpp"
-
 // ACE/Potato settings
 #include "cfg\ACE_Settings.hpp"
 
