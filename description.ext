@@ -16,10 +16,7 @@ onLoadName = "*** Insert mission name here. ***";
 // ACE/Potato settings
 #include "cfg\ACE_Settings.hpp"
 
-// Functions
-#include "cfg\CfgFunctions.hpp"
-
-bwmfDate = "2016/10/21"; //Framework date
+bwmfDate = "2017/3/1"; //Framework date
 
 class CfgDebriefingSections {
   class acex_killTracker {
