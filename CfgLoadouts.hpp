@@ -23,6 +23,7 @@ class CfgLoadouts {
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
 
   // Available loadouts (configured for BluFor, Indy, and OpFor)
+  // For use with exporter - "Loadouts\blankForArsenal.hpp"
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"

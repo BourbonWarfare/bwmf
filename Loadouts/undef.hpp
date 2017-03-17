@@ -1,3 +1,15 @@
+#ifdef CAMO_UNIFORM
+  #undef CAMO_UNIFORM
+#endif
+#ifdef CAMO_VEST
+  #undef CAMO_VEST
+#endif
+#ifdef CAMO_BACKPACK
+  #undef CAMO_BACKPACK
+#endif
+#ifdef CAMO_HEADGEAR
+  #undef CAMO_HEADGEAR
+#endif
 #ifdef RIFLE
   #undef RIFLE
 #endif
