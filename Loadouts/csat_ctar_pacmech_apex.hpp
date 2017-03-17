@@ -18,8 +18,8 @@
 #define AR "arifle_CTARS_blk_F","arifle_CTARS_ghex_F"
 #define AR_MAG "100Rnd_580x42_Mag_F:4"
 // Recon Gear
-#define RECONRIFLE_ATTACHMENTS  "muzzle_snds_65_TI_ghex_F","acc_pointer_IR","optic_Arco_ghex_F"
-#define RECON_MAGS "30Rnd_65x39_caseless_green:8","30Rnd_65x39_caseless_green_mag_Tracer:2","10Rnd_50BW_Mag_F:3"
+#define RECON_RIFLE_ATTACHMENTS  "muzzle_snds_65_TI_ghex_F","acc_pointer_IR","optic_Arco_ghex_F"
+#define RECON_RIFLE_MAGS "30Rnd_65x39_caseless_green:8","30Rnd_65x39_caseless_green_mag_Tracer:2","10Rnd_50BW_Mag_F:3"
 // AT
 #define AT "launch_RPG32_ghex_F"
 #define AT_MAG "RPG32_F:3","RPG32_HE_F:1"
@@ -257,9 +257,9 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   backpack[] = {"B_ViperHarness_ghex_TL_F"};
   weapons[] = {"arifle_ARX_ghex_F"};
   handguns[] = {PISTOL};
-  magazines[] = {RECON_MAGS,BASE_GRENADES,PISTOL_MAG};
+  magazines[] = {RECON_RIFLE_MAGS,BASE_GRENADES,PISTOL_MAG};
   linkedItems[] = {COMMON_LINKED}; // Direct calls to common are perfectly safe said nobody ever
-  attachments[] = {RECONRIFLE_ATTACHMENTS};
+  attachments[] = {RECON_RIFLE_ATTACHMENTS};
   handgunAttachments[] = {"muzzle_snds_L"};
   opticChoices[] = {};
 };
@@ -279,7 +279,7 @@ class potato_msv_rifleman_04: potato_msv_sf_rifleman {//Recon Assistant Grenadie
   magazines[] += {"RPG32_F"};
 };
 class potato_msv_sf_sm: potato_msv_sf_rifleman {// Recon Medic
-  magazines[] = {RECON_MAGS,MEDIC_GRENADES,PISTOL_MAG};
+  magazines[] = {RECON_RIFLE_MAGS,MEDIC_GRENADES,PISTOL_MAG};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class potato_msv_sf_ar: potato_msv_sf_sm {};// Recon AR WARNING: IN VIPER TEAM AR IS A SECOND MEDIC

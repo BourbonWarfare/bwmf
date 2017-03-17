@@ -136,11 +136,23 @@
 #ifdef AR_ATTACHMENTS
   #undef AR_ATTACHMENTS
 #endif
-#ifdef RECONRIFLE_ATTACHMENTS
-  #undef RECONRIFLE_ATTACHMENTS
+#ifdef RECON_RIFLE
+  #undef RECON_RIFLE
 #endif
-#ifdef RECON_MAGS
-  #undef RECON_MAGS
+#ifdef RECON_RIFLE_MAGS
+  #undef RECON_RIFLE_MAGS
+#endif
+#ifdef RECON_RIFLE_ATTACHMENTS
+  #undef RECON_RIFLE_ATTACHMENTS
+#endif
+#ifdef MARKSMAN
+  #undef MARKSMAN
+#endif
+#ifdef MARKSMAN_MAG
+  #undef MARKSMAN_MAG
+#endif
+#ifdef MARKSMAN_ATTACHMENTS
+  #undef MARKSMAN_ATTACHMENTS
 #endif
 #ifdef MSV_EXP
   #undef MSV_EXP

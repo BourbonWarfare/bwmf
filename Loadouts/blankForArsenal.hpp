@@ -103,7 +103,6 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
-  // backpack[] = {""};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -144,10 +143,6 @@ class support_AMort_F: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter_F: Fic_Spotter {// Spotter
-  uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
-  vest[] = {"UK3CB_BAF_V_Osprey_Marksman_A"};
-  headgear[] = {"UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C"};
-  backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
@@ -164,7 +159,7 @@ class Helipilot_F {// Pilot
   // uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
   // backpack[] = {"B_AssaultPack_blk"};
   // vest[] = {"UK3CB_BAF_V_Pilot_A"};
-  headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+  // headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};

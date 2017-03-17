@@ -21,7 +21,7 @@
 #define AR "CUP_arifle_RPK74"
 #define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
 // Recon Rifle Attachments
-#define RECONRIFLE_ATTACHMENTS "rhs_acc_pbs1"
+#define RECON_RIFLE_ATTACHMENTS "rhs_acc_pbs1"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:3","rhs_rpg7_OG7V_mag:1"
@@ -258,7 +258,7 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   backpack[] = {"rhs_sidor"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  attachments[] = {RECONRIFLE_ATTACHMENTS};
+  attachments[] = {RECON_RIFLE_ATTACHMENTS};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
   vest[] = {"rhs_6b23_6sh116_vog_od"};
