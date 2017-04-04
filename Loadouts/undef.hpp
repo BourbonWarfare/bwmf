@@ -1,3 +1,15 @@
+#ifdef CAMO_UNIFORM
+  #undef CAMO_UNIFORM
+#endif
+#ifdef CAMO_VEST
+  #undef CAMO_VEST
+#endif
+#ifdef CAMO_BACKPACK
+  #undef CAMO_BACKPACK
+#endif
+#ifdef CAMO_HEADGEAR
+  #undef CAMO_HEADGEAR
+#endif
 #ifdef RIFLE
   #undef RIFLE
 #endif
@@ -123,4 +135,28 @@
 #endif
 #ifdef AR_ATTACHMENTS
   #undef AR_ATTACHMENTS
+#endif
+#ifdef RECON_RIFLE
+  #undef RECON_RIFLE
+#endif
+#ifdef RECON_RIFLE_MAGS
+  #undef RECON_RIFLE_MAGS
+#endif
+#ifdef RECON_RIFLE_ATTACHMENTS
+  #undef RECON_RIFLE_ATTACHMENTS
+#endif
+#ifdef MARKSMAN
+  #undef MARKSMAN
+#endif
+#ifdef MARKSMAN_MAG
+  #undef MARKSMAN_MAG
+#endif
+#ifdef MARKSMAN_ATTACHMENTS
+  #undef MARKSMAN_ATTACHMENTS
+#endif
+#ifdef MSV_EXP
+  #undef MSV_EXP
+#endif
+#ifdef MSV_OPTIX
+  #undef MSV_OPTIX
 #endif
