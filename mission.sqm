@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1906;
+		nextID=1909;
 	};
 	class Camera
 	{
@@ -42,7 +42,7 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -56,7 +56,7 @@ class AddonsMetaData
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
@@ -84,7 +84,7 @@ class AddonsMetaData
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
@@ -26914,7 +26914,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=7;
+				items=9;
 				class Item0
 				{
 					dataType="Object";
@@ -27170,6 +27170,107 @@ class Mission
 										};
 									};
 									value="RED";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={791.84698,5.0014391,612.86798};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_B_M";
+						description="Russian Bravo Squad Medic";
+						isPlayable=1;
+					};
+					id=1907;
+					type="potato_msv_sm";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AM,16,pink,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={789.89697,5.0014391,611.14899};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_B_GR";
+						description="Russian Bravo Squad Grenadier";
+						isPlayable=1;
+					};
+					id=1908;
+					type="potato_msv_g";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MAIN";
 								};
 							};
 						};
