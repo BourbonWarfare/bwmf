@@ -141,7 +141,7 @@ class potato_msv_sm: potato_msv_rifleman {// Medic
 };
 class potato_msv_marksman: potato_msv_rifleman {// Squad Marksman
   weapons[] = {MARKSMAN};
-  magazines[] = {MARKSMAN_MAG};
+  magazines[] = {MARKSMAN_MAG,BASE_GRENADES};
   attachments[] = {"optic_DMS"};
   opticChoices[] = {"optic_DMS_ghex_F"};
 };
