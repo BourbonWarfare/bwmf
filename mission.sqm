@@ -27229,7 +27229,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="AM,16,pink,\z\potato\addons\markers\data\medical.paa";
+									value="BM,16,pink,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
