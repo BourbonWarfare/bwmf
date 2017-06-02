@@ -723,7 +723,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_COY_CO";
-						description="BluFor Company Commander";
+						description="BluFor Company Commander@Company";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -941,7 +941,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_BLU_1PLT_CO";
-						description="BluFor 1 Platoon Commander";
+						description="BluFor 1 Platoon Commander@1st Platoon (Alpha, Bravo, Charlie)";
 						isPlayable=1;
 					};
 					id=71;
@@ -1096,7 +1096,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_BLU_2PLT_CO";
-						description="BluFor 2 Platoon Commander";
+						description="BluFor 2 Platoon Commander@2nd Platoon (Delta, Echo, Foxtrot)";
 						isPlayable=1;
 					};
 					id=75;
@@ -1251,7 +1251,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_ASL_SL";
-						description="BluFor Alpha Squad Leader";
+						description="BluFor Alpha Squad Leader@Alpha Squad";
 						isPlayable=1;
 					};
 					id=79;
@@ -1391,7 +1391,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_A1_FTL";
-						description="BluFor Alpha 1 Fireteam Leader";
+						description="BluFor Alpha 1 Fireteam Leader@Alpha Fireteam 1";
 						isPlayable=1;
 					};
 					id=82;
@@ -1667,7 +1667,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_A2_FTL";
-						description="BluFor Alpha 2 Fireteam Leader";
+						description="BluFor Alpha 2 Fireteam Leader@Alpha Fireteam 2";
 						isPlayable=1;
 					};
 					id=89;
@@ -1943,7 +1943,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_BSL_SL";
-						description="BluFor Bravo Squad Leader";
+						description="BluFor Bravo Squad Leader@Bravo Squad";
 						isPlayable=1;
 					};
 					id=96;
@@ -2083,7 +2083,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_B1_FTL";
-						description="BluFor Bravo 1 Fireteam Leader";
+						description="BluFor Bravo 1 Fireteam Leader@Bravo Fireteam 1";
 						isPlayable=1;
 					};
 					id=99;
@@ -2359,7 +2359,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_B2_FTL";
-						description="BluFor Bravo 2 Fireteam Leader";
+						description="BluFor Bravo 2 Fireteam Leader@Bravo Fireteam 2";
 						isPlayable=1;
 					};
 					id=106;
@@ -2635,7 +2635,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_CSL_SL";
-						description="BluFor Charlie Squad Leader";
+						description="BluFor Charlie Squad Leader@Charlie Squad";
 						isPlayable=1;
 					};
 					id=113;
@@ -2775,7 +2775,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_C1_FTL";
-						description="BluFor Charlie 1 Fireteam Leader";
+						description="BluFor Charlie 1 Fireteam Leader@Charlie Fireteam 1";
 						isPlayable=1;
 					};
 					id=116;
@@ -3051,7 +3051,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_C2_FTL";
-						description="BluFor Charlie 2 Fireteam Leader";
+						description="BluFor Charlie 2 Fireteam Leader@Charlie Fireteam 2";
 						isPlayable=1;
 					};
 					id=123;
@@ -3327,7 +3327,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_TH1_P";
-						description="BluFor Transport Helo 1 Pilot";
+						description="BluFor Transport Helo 1 Pilot@Heli Transport 1";
 						isPlayable=1;
 					};
 					id=130;
@@ -3482,7 +3482,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_TH2_P";
-						description="BluFor Transport Helo 2 Pilot";
+						description="BluFor Transport Helo 2 Pilot@Heli Transport 2";
 						isPlayable=1;
 					};
 					id=135;
@@ -3637,7 +3637,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_TH3_P";
-						description="BluFor Transport Helo 3 Pilot";
+						description="BluFor Transport Helo 3 Pilot@Heli Transport 3";
 						isPlayable=1;
 					};
 					id=140;
@@ -3792,7 +3792,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_TH4_P";
-						description="BluFor Transport Helo 4 Pilot";
+						description="BluFor Transport Helo 4 Pilot@Heli Transport 4";
 						isPlayable=1;
 					};
 					id=145;
@@ -3947,7 +3947,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_IFV1_C";
-						description="BluFor IFV 1 Commander";
+						description="BluFor IFV 1 Commander@IFV 1";
 						isPlayable=1;
 					};
 					id=214;
@@ -4078,7 +4078,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_IFV2_C";
-						description="BluFor IFV 2 Commander";
+						description="BluFor IFV 2 Commander@IFV 2";
 						isPlayable=1;
 					};
 					id=218;
@@ -4209,7 +4209,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_IFV3_C";
-						description="BluFor IFV 3 Commander";
+						description="BluFor IFV 3 Commander@IFV 3";
 						isPlayable=1;
 					};
 					id=222;
@@ -4340,7 +4340,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_IFV4_C";
-						description="BluFor IFV 4 Commander";
+						description="BluFor IFV 4 Commander@IFV 4";
 						isPlayable=1;
 					};
 					id=226;
@@ -4471,7 +4471,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TNK1_C";
-						description="BluFor Tank 1 Commander";
+						description="BluFor Tank 1 Commander@Tank 1";
 						isPlayable=1;
 					};
 					id=230;
@@ -4602,7 +4602,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_BLU_AH1_P";
-						description="BluFor Attack Helo 1 Pilot";
+						description="BluFor Attack Helo 1 Pilot@Attack Heli 1";
 						isPlayable=1;
 					};
 					id=234;
@@ -4719,7 +4719,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MMG1_FTL";
-						description="BluFor Medium MG Team 1 Leader";
+						description="BluFor Medium MG Team 1 Leader@Medium MG Team 1";
 						isPlayable=1;
 					};
 					id=429;
@@ -4849,7 +4849,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MMG2_FTL";
-						description="BluFor Medium MG Team 2 Leader";
+						description="BluFor Medium MG Team 2 Leader@Medium MG Team 2";
 						isPlayable=1;
 					};
 					id=433;
@@ -4979,7 +4979,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MAT1_FTL";
-						description="BluFor Medium AT Team 1 Leader";
+						description="BluFor Medium AT Team 1 Leader@Medium AT Team 1";
 						isPlayable=1;
 					};
 					id=437;
@@ -5109,7 +5109,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MAT2_FTL";
-						description="BluFor Medium AT Team 2 Leader";
+						description="BluFor Medium AT Team 2 Leader@Medium AT Team 2";
 						isPlayable=1;
 					};
 					id=441;
@@ -5239,7 +5239,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MTR1_FTL";
-						description="BluFor Mortar Team 1 Leader";
+						description="BluFor Mortar Team 1 Leader@Mortar Team 1";
 						isPlayable=1;
 					};
 					id=445;
@@ -5369,7 +5369,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_MSAM1_FTL";
-						description="BluFor Medium SAM Team 1 Leader";
+						description="BluFor Medium SAM Team 1 Leader@Medium SAM Team 1";
 						isPlayable=1;
 					};
 					id=449;
@@ -5499,7 +5499,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_WSL_SL";
-						description="BluFor Weapon Squad Leader";
+						description="BluFor Weapon Squad Leader@Weapon Squad";
 						isPlayable=1;
 					};
 					id=453;
@@ -5638,7 +5638,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_ST1_SP";
-						description="BluFor Sniper Team 1 Spotter";
+						description="BluFor Sniper Team 1 Spotter@Sniper Team 1";
 						isPlayable=1;
 					};
 					id=456;
@@ -5750,7 +5750,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_ENG1_FTL";
-						description="BluFor Leader Explosive Specialist";
+						description="BluFor Leader Explosive Specialist@Demolitions Team";
 						isPlayable=1;
 					};
 					id=459;
@@ -5910,7 +5910,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_DSL_SL";
-						description="BluFor Delta Squad Leader";
+						description="BluFor Delta Squad Leader@Delta Squad";
 						isPlayable=1;
 					};
 					id=465;
@@ -6050,7 +6050,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_D1_FTL";
-						description="BluFor Delta 1 Fireteam Leader";
+						description="BluFor Delta 1 Fireteam Leader@Delta Fireteam 1";
 						isPlayable=1;
 					};
 					id=468;
@@ -6326,7 +6326,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_D2_FTL";
-						description="BluFor Delta 2 Fireteam Leader";
+						description="BluFor Delta 2 Fireteam Leader@Delta Fireteam 2";
 						isPlayable=1;
 					};
 					id=475;
@@ -6602,7 +6602,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_ESL_SL";
-						description="BluFor Echo Squad Leader";
+						description="BluFor Echo Squad Leader@Echo Squad";
 						isPlayable=1;
 					};
 					id=482;
@@ -6742,7 +6742,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_E1_FTL";
-						description="BluFor Echo 1 Fireteam Leader";
+						description="BluFor Echo 1 Fireteam Leader@Echo Fireteam 1";
 						isPlayable=1;
 					};
 					id=485;
@@ -7018,7 +7018,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_E2_FTL";
-						description="BluFor Echo 2 Fireteam Leader";
+						description="BluFor Echo 2 Fireteam Leader@Echo Fireteam 2";
 						isPlayable=1;
 					};
 					id=492;
@@ -7294,7 +7294,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_FSL_SL";
-						description="BluFor Foxtrot Squad Leader";
+						description="BluFor Foxtrot Squad Leader@Foxtrot Squad";
 						isPlayable=1;
 					};
 					id=499;
@@ -7434,7 +7434,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_F1_FTL";
-						description="BluFor Foxtrot 1 Fireteam Leader";
+						description="BluFor Foxtrot 1 Fireteam Leader@Foxtrot Fireteam 1";
 						isPlayable=1;
 					};
 					id=502;
@@ -7710,7 +7710,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_BLU_F2_FTL";
-						description="BluFor Foxtrot 2 Fireteam Leader";
+						description="BluFor Foxtrot 2 Fireteam Leader@Foxtrot Fireteam 2";
 						isPlayable=1;
 					};
 					id=509;
@@ -10085,7 +10085,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_COY_CO";
-						description="Indy Company Commander";
+						description="Indy Company Commander@Company";
 						isPlayable=1;
 					};
 					id=800;
@@ -10302,7 +10302,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_IND_1PLT_CO";
-						description="Indy 1 Platoon Commander";
+						description="Indy 1 Platoon Commander@1st Platoon (Alpha, Bravo, Charlie)";
 						isPlayable=1;
 					};
 					id=806;
@@ -10457,7 +10457,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_IND_2PLT_CO";
-						description="Indy 2 Platoon Commander";
+						description="Indy 2 Platoon Commander@2nd Platoon (Delta, Echo, Foxtrot)";
 						isPlayable=1;
 					};
 					id=810;
@@ -10612,7 +10612,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_ASL_SL";
-						description="Indy Alpha Squad Leader";
+						description="Indy Alpha Squad Leader@Alpha Squad";
 						isPlayable=1;
 					};
 					id=814;
@@ -10752,7 +10752,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_A1_FTL";
-						description="Indy Alpha 1 Fireteam Leader";
+						description="Indy Alpha 1 Fireteam Leader@Alpha Fireteam 1";
 						isPlayable=1;
 					};
 					id=817;
@@ -11028,7 +11028,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_A2_FTL";
-						description="Indy Alpha 2 Fireteam Leader";
+						description="Indy Alpha 2 Fireteam Leader@Alpha Fireteam 2";
 						isPlayable=1;
 					};
 					id=824;
@@ -11304,7 +11304,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_BSL_SL";
-						description="Indy Bravo Squad Leader";
+						description="Indy Bravo Squad Leader@Bravo Squad";
 						isPlayable=1;
 					};
 					id=831;
@@ -11444,7 +11444,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_B1_FTL";
-						description="Indy Bravo 1 Fireteam Leader";
+						description="Indy Bravo 1 Fireteam Leader@Bravo Fireteam 1";
 						isPlayable=1;
 					};
 					id=834;
@@ -11720,7 +11720,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_B2_FTL";
-						description="Indy Bravo 2 Fireteam Leader";
+						description="Indy Bravo 2 Fireteam Leader@Bravo Fireteam 2";
 						isPlayable=1;
 					};
 					id=841;
@@ -11996,7 +11996,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_CSL_SL";
-						description="Indy Charlie Squad Leader";
+						description="Indy Charlie Squad Leader@Charlie Squad";
 						isPlayable=1;
 					};
 					id=848;
@@ -12136,7 +12136,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_C1_FTL";
-						description="Indy Charlie 1 Fireteam Leader";
+						description="Indy Charlie 1 Fireteam Leader@Charlie Fireteam 1";
 						isPlayable=1;
 					};
 					id=851;
@@ -12412,7 +12412,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_C2_FTL";
-						description="Indy Charlie 2 Fireteam Leader";
+						description="Indy Charlie 2 Fireteam Leader@Charlie Fireteam 2";
 						isPlayable=1;
 					};
 					id=858;
@@ -12688,7 +12688,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_TH1_P";
-						description="Indy Transport Helo 1 Pilot";
+						description="Indy Transport Helo 1 Pilot@Heli Transport 1";
 						isPlayable=1;
 					};
 					id=865;
@@ -12843,7 +12843,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_TH2_P";
-						description="Indy Transport Helo 2 Pilot";
+						description="Indy Transport Helo 2 Pilot@Heli Transport 2";
 						isPlayable=1;
 					};
 					id=870;
@@ -12998,7 +12998,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_TH3_P";
-						description="Indy Transport Helo 3 Pilot";
+						description="Indy Transport Helo 3 Pilot@Heli Transport 3";
 						isPlayable=1;
 					};
 					id=875;
@@ -13153,7 +13153,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_TH4_P";
-						description="Indy Transport Helo 4 Pilot";
+						description="Indy Transport Helo 4 Pilot@Heli Transport 4";
 						isPlayable=1;
 					};
 					id=880;
@@ -13308,7 +13308,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_IFV1_C";
-						description="Indy IFV 1 Commander";
+						description="Indy IFV 1 Commander@IFV 1";
 						isPlayable=1;
 					};
 					id=885;
@@ -13439,7 +13439,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_IFV2_C";
-						description="Indy IFV 2 Commander";
+						description="Indy IFV 2 Commander@IFV 2";
 						isPlayable=1;
 					};
 					id=889;
@@ -13570,7 +13570,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_IFV3_C";
-						description="Indy IFV 3 Commander";
+						description="Indy IFV 3 Commander@IFV 3";
 						isPlayable=1;
 					};
 					id=893;
@@ -13701,7 +13701,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_IFV4_C";
-						description="Indy IFV 4 Commander";
+						description="Indy IFV 4 Commander@IFV 4";
 						isPlayable=1;
 					};
 					id=897;
@@ -13832,7 +13832,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TNK1_C";
-						description="Indy Tank 1 Commander";
+						description="Indy Tank 1 Commander@Tank 1";
 						isPlayable=1;
 					};
 					id=901;
@@ -13963,7 +13963,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_IND_AH1_P";
-						description="Indy Attack Helo 1 Pilot";
+						description="Indy Attack Helo 1 Pilot@Attack Heli 1";
 						isPlayable=1;
 					};
 					id=905;
@@ -14080,7 +14080,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MMG1_FTL";
-						description="Indy Medium MG Team 1 Leader";
+						description="Indy Medium MG Team 1 Leader@Medium MG Team 1";
 						isPlayable=1;
 					};
 					id=908;
@@ -14210,7 +14210,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MMG2_FTL";
-						description="Indy Medium MG Team 2 Leader";
+						description="Indy Medium MG Team 2 Leader@Medium MG Team 2";
 						isPlayable=1;
 					};
 					id=912;
@@ -14340,7 +14340,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MAT1_FTL";
-						description="Indy Medium AT Team 1 Leader";
+						description="Indy Medium AT Team 1 Leader@Medium AT Team 1";
 						isPlayable=1;
 					};
 					id=916;
@@ -14470,7 +14470,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MAT2_FTL";
-						description="Indy Medium AT Team 2 Leader";
+						description="Indy Medium AT Team 2 Leader@Medium AT Team 2";
 						isPlayable=1;
 					};
 					id=920;
@@ -14600,7 +14600,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MTR1_FTL";
-						description="Indy Mortar Team 1 Leader";
+						description="Indy Mortar Team 1 Leader@Mortar Team 1";
 						isPlayable=1;
 					};
 					id=924;
@@ -14730,7 +14730,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_MSAM1_FTL";
-						description="Indy Medium SAM Team 1 Leader";
+						description="Indy Medium SAM Team 1 Leader@Medium SAM Team 1";
 						isPlayable=1;
 					};
 					id=928;
@@ -14860,7 +14860,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_WSL_SL";
-						description="Indy Weapon Squad Leader";
+						description="Indy Weapon Squad Leader@Weapon Squad";
 						isPlayable=1;
 					};
 					id=932;
@@ -14999,7 +14999,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_ST1_SP";
-						description="Indy Sniper Team 1 Spotter";
+						description="Indy Sniper Team 1 Spotter@Sniper Team 1";
 						isPlayable=1;
 					};
 					id=935;
@@ -15111,7 +15111,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_ENG1_FTL";
-						description="Indy Leader Explosive Specialist";
+						description="Indy Leader Explosive Specialist@Demolitions Team";
 						isPlayable=1;
 					};
 					id=938;
@@ -15259,7 +15259,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_DSL_SL";
-						description="Indy Delta Squad Leader";
+						description="Indy Delta Squad Leader@Delta Squad";
 						isPlayable=1;
 					};
 					id=943;
@@ -15399,7 +15399,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_D1_FTL";
-						description="Indy Delta 1 Fireteam Leader";
+						description="Indy Delta 1 Fireteam Leader@Delta Fireteam 1";
 						isPlayable=1;
 					};
 					id=946;
@@ -15675,7 +15675,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_D2_FTL";
-						description="Indy Delta 2 Fireteam Leader";
+						description="Indy Delta 2 Fireteam Leader@Delta Fireteam 2";
 						isPlayable=1;
 					};
 					id=953;
@@ -15951,7 +15951,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_ESL_SL";
-						description="Indy Echo Squad Leader";
+						description="Indy Echo Squad Leader@Echo Squad";
 						isPlayable=1;
 					};
 					id=960;
@@ -16091,7 +16091,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_E1_FTL";
-						description="Indy Echo 1 Fireteam Leader";
+						description="Indy Echo 1 Fireteam Leader@Echo Fireteam 1";
 						isPlayable=1;
 					};
 					id=963;
@@ -16367,7 +16367,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_E2_FTL";
-						description="Indy Echo 2 Fireteam Leader";
+						description="Indy Echo 2 Fireteam Leader@Echo Fireteam 2";
 						isPlayable=1;
 					};
 					id=970;
@@ -16643,7 +16643,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_FSL_SL";
-						description="Indy Foxtrot Squad Leader";
+						description="Indy Foxtrot Squad Leader@Foxtrot Squad";
 						isPlayable=1;
 					};
 					id=977;
@@ -16783,7 +16783,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_F1_FTL";
-						description="Indy Foxtrot 1 Fireteam Leader";
+						description="Indy Foxtrot 1 Fireteam Leader@Foxtrot Fireteam 1";
 						isPlayable=1;
 					};
 					id=980;
@@ -17059,7 +17059,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_IND_F2_FTL";
-						description="Indy Foxtrot 2 Fireteam Leader";
+						description="Indy Foxtrot 2 Fireteam Leader@Foxtrot Fireteam 2";
 						isPlayable=1;
 					};
 					id=987;
@@ -18087,7 +18087,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_COY_CO";
-						description="OpFor Company Commander";
+						description="OpFor Company Commander@Company";
 						isPlayable=1;
 					};
 					id=1053;
@@ -18304,7 +18304,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_OPF_1PLT_CO";
-						description="OpFor 1 Platoon Commander";
+						description="OpFor 1 Platoon Commander@1st Platoon (Alpha, Bravo, Charlie)";
 						isPlayable=1;
 					};
 					id=1059;
@@ -18459,7 +18459,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_OPF_2PLT_CO";
-						description="OpFor 2 Platoon Commander";
+						description="OpFor 2 Platoon Commander@2nd Platoon (Delta, Echo, Foxtrot)";
 						isPlayable=1;
 					};
 					id=1063;
@@ -18614,7 +18614,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_ASL_SL";
-						description="OpFor Alpha Squad Leader";
+						description="OpFor Alpha Squad Leader@Alpha Squad";
 						isPlayable=1;
 					};
 					id=1067;
@@ -18754,7 +18754,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_A1_FTL";
-						description="OpFor Alpha 1 Fireteam Leader";
+						description="OpFor Alpha 1 Fireteam Leader@Alpha Fireteam 1";
 						isPlayable=1;
 					};
 					id=1070;
@@ -19030,7 +19030,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_A2_FTL";
-						description="OpFor Alpha 2 Fireteam Leader";
+						description="OpFor Alpha 2 Fireteam Leader@Alpha Fireteam 2";
 						isPlayable=1;
 					};
 					id=1077;
@@ -19306,7 +19306,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_BSL_SL";
-						description="OpFor Bravo Squad Leader";
+						description="OpFor Bravo Squad Leader@Bravo Squad";
 						isPlayable=1;
 					};
 					id=1084;
@@ -19446,7 +19446,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_B1_FTL";
-						description="OpFor Bravo 1 Fireteam Leader";
+						description="OpFor Bravo 1 Fireteam Leader@Bravo Fireteam 1";
 						isPlayable=1;
 					};
 					id=1087;
@@ -19722,7 +19722,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_B2_FTL";
-						description="OpFor Bravo 2 Fireteam Leader";
+						description="OpFor Bravo 2 Fireteam Leader@Bravo Fireteam 2";
 						isPlayable=1;
 					};
 					id=1094;
@@ -19998,7 +19998,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_CSL_SL";
-						description="OpFor Charlie Squad Leader";
+						description="OpFor Charlie Squad Leader@Charlie Squad";
 						isPlayable=1;
 					};
 					id=1101;
@@ -20138,7 +20138,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_C1_FTL";
-						description="OpFor Charlie 1 Fireteam Leader";
+						description="OpFor Charlie 1 Fireteam Leader@Charlie Fireteam 1";
 						isPlayable=1;
 					};
 					id=1104;
@@ -20414,7 +20414,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_C2_FTL";
-						description="OpFor Charlie 2 Fireteam Leader";
+						description="OpFor Charlie 2 Fireteam Leader@Charlie Fireteam 2";
 						isPlayable=1;
 					};
 					id=1111;
@@ -20690,7 +20690,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_TH1_P";
-						description="OpFor Transport Helo 1 Pilot";
+						description="OpFor Transport Helo 1 Pilot@Heli Transport 1";
 						isPlayable=1;
 					};
 					id=1118;
@@ -20845,7 +20845,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_TH2_P";
-						description="OpFor Transport Helo 2 Pilot";
+						description="OpFor Transport Helo 2 Pilot@Heli Transport 2";
 						isPlayable=1;
 					};
 					id=1123;
@@ -21000,7 +21000,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_TH3_P";
-						description="OpFor Transport Helo 3 Pilot";
+						description="OpFor Transport Helo 3 Pilot@Heli Transport 3";
 						isPlayable=1;
 					};
 					id=1128;
@@ -21155,7 +21155,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_TH4_P";
-						description="OpFor Transport Helo 4 Pilot";
+						description="OpFor Transport Helo 4 Pilot@Heli Transport 4";
 						isPlayable=1;
 					};
 					id=1133;
@@ -21310,7 +21310,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_IFV1_C";
-						description="OpFor IFV 1 Commander";
+						description="OpFor IFV 1 Commander@IFV 1";
 						isPlayable=1;
 					};
 					id=1138;
@@ -21441,7 +21441,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_IFV2_C";
-						description="OpFor IFV 2 Commander";
+						description="OpFor IFV 2 Commander@IFV 2";
 						isPlayable=1;
 					};
 					id=1142;
@@ -21572,7 +21572,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_IFV3_C";
-						description="OpFor IFV 3 Commander";
+						description="OpFor IFV 3 Commander@IFV 3";
 						isPlayable=1;
 					};
 					id=1146;
@@ -21703,7 +21703,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_IFV4_C";
-						description="OpFor IFV 4 Commander";
+						description="OpFor IFV 4 Commander@IFV 4";
 						isPlayable=1;
 					};
 					id=1150;
@@ -21834,7 +21834,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TNK1_C";
-						description="OpFor Tank 1 Commander";
+						description="OpFor Tank 1 Commander@Tank 1";
 						isPlayable=1;
 					};
 					id=1154;
@@ -21965,7 +21965,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_OPF_AH1_P";
-						description="OpFor Attack Helo 1 Pilot";
+						description="OpFor Attack Helo 1 Pilot@Attack Heli 1";
 						isPlayable=1;
 					};
 					id=1158;
@@ -22082,7 +22082,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MMG1_FTL";
-						description="OpFor Medium MG Team 1 Leader";
+						description="OpFor Medium MG Team 1 Leader@Medium MG Team 1";
 						isPlayable=1;
 					};
 					id=1161;
@@ -22212,7 +22212,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MMG2_FTL";
-						description="OpFor Medium MG Team 2 Leader";
+						description="OpFor Medium MG Team 2 Leader@Medium MG Team 2";
 						isPlayable=1;
 					};
 					id=1165;
@@ -22342,7 +22342,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MAT1_FTL";
-						description="OpFor Medium AT Team 1 Leader";
+						description="OpFor Medium AT Team 1 Leader@Medium AT Team 1";
 						isPlayable=1;
 					};
 					id=1169;
@@ -22472,7 +22472,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MAT2_FTL";
-						description="OpFor Medium AT Team 2 Leader";
+						description="OpFor Medium AT Team 2 Leader@Medium AT Team 2";
 						isPlayable=1;
 					};
 					id=1173;
@@ -22602,7 +22602,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MTR1_FTL";
-						description="OpFor Mortar Team 1 Leader";
+						description="OpFor Mortar Team 1 Leader@Mortar Team 1";
 						isPlayable=1;
 					};
 					id=1177;
@@ -22732,7 +22732,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_MSAM1_FTL";
-						description="OpFor Medium SAM Team 1 Leader";
+						description="OpFor Medium SAM Team 1 Leader@Medium SAM Team 1";
 						isPlayable=1;
 					};
 					id=1181;
@@ -22862,7 +22862,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_WSL_SL";
-						description="OpFor Weapon Squad Leader";
+						description="OpFor Weapon Squad Leader@Weapon Squad";
 						isPlayable=1;
 					};
 					id=1185;
@@ -23001,7 +23001,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_ST1_SP";
-						description="OpFor Sniper Team 1 Spotter";
+						description="OpFor Sniper Team 1 Spotter@Sniper Team 1";
 						isPlayable=1;
 					};
 					id=1188;
@@ -23113,7 +23113,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_ENG1_FTL";
-						description="OpFor Leader Explosive Specialist";
+						description="OpFor Leader Explosive Specialist@Demolitions Team";
 						isPlayable=1;
 					};
 					id=1191;
@@ -23261,7 +23261,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_DSL_SL";
-						description="OpFor Delta Squad Leader";
+						description="OpFor Delta Squad Leader@Delta Squad";
 						isPlayable=1;
 					};
 					id=1196;
@@ -23401,7 +23401,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_D1_FTL";
-						description="OpFor Delta 1 Fireteam Leader";
+						description="OpFor Delta 1 Fireteam Leader@Delta Fireteam 1";
 						isPlayable=1;
 					};
 					id=1199;
@@ -23677,7 +23677,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_D2_FTL";
-						description="OpFor Delta 2 Fireteam Leader";
+						description="OpFor Delta 2 Fireteam Leader@Delta Fireteam 2";
 						isPlayable=1;
 					};
 					id=1206;
@@ -23953,7 +23953,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_ESL_SL";
-						description="OpFor Echo Squad Leader";
+						description="OpFor Echo Squad Leader@Echo Squad";
 						isPlayable=1;
 					};
 					id=1213;
@@ -24093,7 +24093,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_E1_FTL";
-						description="OpFor Echo 1 Fireteam Leader";
+						description="OpFor Echo 1 Fireteam Leader@Echo Fireteam 1";
 						isPlayable=1;
 					};
 					id=1216;
@@ -24369,7 +24369,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_E2_FTL";
-						description="OpFor Echo 2 Fireteam Leader";
+						description="OpFor Echo 2 Fireteam Leader@Echo Fireteam 2";
 						isPlayable=1;
 					};
 					id=1223;
@@ -24645,7 +24645,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_FSL_SL";
-						description="OpFor Foxtrot Squad Leader";
+						description="OpFor Foxtrot Squad Leader@Foxtrot Squad";
 						isPlayable=1;
 					};
 					id=1230;
@@ -24785,7 +24785,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_F1_FTL";
-						description="OpFor Foxtrot 1 Fireteam Leader";
+						description="OpFor Foxtrot 1 Fireteam Leader@Foxtrot Fireteam 1";
 						isPlayable=1;
 					};
 					id=1233;
@@ -25061,7 +25061,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_OPF_F2_FTL";
-						description="OpFor Foxtrot 2 Fireteam Leader";
+						description="OpFor Foxtrot 2 Fireteam Leader@Foxtrot Fireteam 2";
 						isPlayable=1;
 					};
 					id=1240;
@@ -26089,7 +26089,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_COY_CO";
-						description="Russian Company Commander";
+						description="Russian Company Commander@Company";
 						isPlayable=1;
 					};
 					id=1492;
@@ -26280,7 +26280,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_1PLT_CO";
-						description="Russian First Platoon Commander";
+						description="Russian First Platoon Commander@1st Platoon (Alpha, Bravo, Charlie)";
 						isPlayable=1;
 					};
 					id=1498;
@@ -26393,7 +26393,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_2PLT_CO";
-						description="Russian Second Platoon Commander";
+						description="Russian Second Platoon Commander@2nd Platoon (Delta, Echo, Foxtrot)";
 						isPlayable=1;
 					};
 					id=1501;
@@ -26506,7 +26506,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_A_SL";
-						description="Russian Alpha Squad Leader";
+						description="Russian Alpha Squad Leader@Alpha Squad";
 						isPlayable=1;
 					};
 					id=1504;
@@ -26928,7 +26928,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_B_SL";
-						description="Russian Bravo Squad Leader";
+						description="Russian Bravo Squad Leader@Bravo Squad";
 						isPlayable=1;
 					};
 					id=1513;
@@ -27365,7 +27365,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_C_SL";
-						description="Russian Charlie Squad Leader";
+						description="Russian Charlie Squad Leader@Charlie Squad";
 						isPlayable=1;
 					};
 					id=1534;
@@ -27856,7 +27856,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_D_SL";
-						description="Russian Delta Squad Leader";
+						description="Russian Delta Squad Leader@Delta Squad";
 						isPlayable=1;
 					};
 					id=1578;
@@ -28297,7 +28297,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_E_SL";
-						description="Russian Echo Squad Leader";
+						description="Russian Echo Squad Leader@Echo Squad";
 						isPlayable=1;
 					};
 					id=1597;
@@ -28738,7 +28738,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_F_SL";
-						description="Russian Foxtrot Squad Leader";
+						description="Russian Foxtrot Squad Leader@Foxtrot Squad";
 						isPlayable=1;
 					};
 					id=1636;
@@ -29178,7 +29178,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_W_CO";
-						description="Russian Weapons Platoon Commander";
+						description="Russian Weapons Platoon Commander@Weapons Squad";
 						isPlayable=1;
 					};
 					id=1650;
@@ -29627,7 +29627,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MMG1_G";
-						description="Russian Machine Gunner";
+						description="Russian Machine Gunner@MG Team 1";
 						isPlayable=1;
 					};
 					id=1682;
@@ -29739,7 +29739,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MMG2_G";
-						description="Russian Machine Gunner";
+						description="Russian Machine Gunner@MG Team 2";
 						isPlayable=1;
 					};
 					id=1685;
@@ -29963,7 +29963,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MAT1_G";
-						description="Russian ATGM Operator";
+						description="Russian ATGM Operator@MAT Team 1";
 						isPlayable=1;
 					};
 					id=1698;
@@ -30075,7 +30075,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MAT2_G";
-						description="Russian ATGM Operator";
+						description="Russian ATGM Operator@MAT Team 2";
 						isPlayable=1;
 					};
 					id=1701;
@@ -30187,7 +30187,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MAT3_G";
-						description="Russian ATGM Operator";
+						description="Russian ATGM Operator@MAT Team 3";
 						isPlayable=1;
 					};
 					id=1704;
@@ -30299,7 +30299,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_MSAM_L";
-						description="Russian MSAM Leader";
+						description="Russian MSAM Leader@Medium SAM Team";
 						isPlayable=1;
 					};
 					id=1712;
@@ -30448,7 +30448,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_ENG1_FTL";
-						description="Russian Engineer Team 1 Leader";
+						description="Russian Engineer Team 1 Leader@Engineer Team";
 						isPlayable=1;
 					};
 					id=1732;
@@ -30596,7 +30596,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_TNK1_C";
-						description="Russian Tank 1 Commander";
+						description="Russian Tank 1 Commander@Tank 1";
 						isPlayable=1;
 					};
 					id=1766;
@@ -30727,7 +30727,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_TNK2_C";
-						description="Russian Tank 2 Commander";
+						description="Russian Tank 2 Commander@Tank 2";
 						isPlayable=1;
 					};
 					id=1785;
@@ -30858,7 +30858,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_TNK3_C";
-						description="Russian Tank 3 Commander";
+						description="Russian Tank 3 Commander@Tank 3";
 						isPlayable=1;
 					};
 					id=1789;
@@ -30989,7 +30989,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_TNK4_C";
-						description="Russian Tank 4 Commander";
+						description="Russian Tank 4 Commander@Tank 4";
 						isPlayable=1;
 					};
 					id=1793;
@@ -31120,7 +31120,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_TH1_P";
-						description="Russian Transport Helo 1 Pilot";
+						description="Russian Transport Helo 1 Pilot@Heli Transport 1";
 						isPlayable=1;
 					};
 					id=1799;
@@ -31237,7 +31237,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_TH2_P";
-						description="Russian Transport Helo 2 Pilot";
+						description="Russian Transport Helo 2 Pilot@Heli Transport 2";
 						isPlayable=1;
 					};
 					id=1802;
@@ -31354,7 +31354,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_TH3_P";
-						description="Russian Transport Helo 3 Pilot";
+						description="Russian Transport Helo 3 Pilot@Heli Transport 3";
 						isPlayable=1;
 					};
 					id=1805;
@@ -31471,7 +31471,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_TH4_P";
-						description="Russian Transport Helo 4 Pilot";
+						description="Russian Transport Helo 4 Pilot@Heli Transport 4";
 						isPlayable=1;
 					};
 					id=1808;
@@ -31588,7 +31588,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_AH1_P";
-						description="Russian Attack Helo 1 Pilot";
+						description="Russian Attack Helo 1 Pilot@Attack Heli 1";
 						isPlayable=1;
 					};
 					id=1813;
@@ -31705,7 +31705,7 @@ class Mission
 					{
 						rank="CAPTAIN";
 						name="UNIT_MSV_AH2_P";
-						description="Russian Attack Helo 2 Pilot";
+						description="Russian Attack Helo 2 Pilot@Attack Heli 2";
 						isPlayable=1;
 					};
 					id=1816;
@@ -31822,7 +31822,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_SF_SL";
-						description="Russian Spetsnaz Leader ";
+						description="Russian Spetsnaz Leader@Spetsnaz";
 						isPlayable=1;
 					};
 					id=1834;
@@ -32243,7 +32243,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_JIP_SL1";
-						description="Russian JIP Squad Leader";
+						description="Russian JIP Squad Leader@JIP Squad";
 						isPlayable=1;
 					};
 					id=1865;
@@ -32335,7 +32335,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_JIP_SL2";
-						description="Russian JIP Squad Leader";
+						description="Russian JIP Squad Leader@JIP Squad";
 						isPlayable=1;
 					};
 					id=1870;
