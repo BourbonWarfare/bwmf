@@ -30,7 +30,7 @@
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
 #define MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
-#define MAT_OPTIC "rhs_acc_pgo7v"
+#define MAT_OPTIC "rhs_acc_pgo7v3"
 // SAM
 #define SAM "rhs_weap_igla"
 #define SAM_MAG "rhs_mag_9k38_rocket:3"
