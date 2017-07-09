@@ -214,7 +214,7 @@ class potato_msv_pilot {// Pilot
   backpack[] = {"B_Carryall_oli"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST,RADIO_LR};
+  backpackItems[] = {RADIO_LR};
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
   attachments[] = {};

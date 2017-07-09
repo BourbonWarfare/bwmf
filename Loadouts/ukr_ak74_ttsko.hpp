@@ -190,7 +190,7 @@ class Helipilot_F {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
-  backpackItems[] += {KEY_IND,RADIO_LR};
+  backpackItems[] += {RADIO_LR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
 class helicrew_F: Helipilot_F {}; // Pilot

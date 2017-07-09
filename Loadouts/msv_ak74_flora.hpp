@@ -218,7 +218,7 @@ class potato_msv_pilot {// Pilot
   backpack[] = {"B_AssaultPack_rgr"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST,RADIO_LR};
+  backpackItems[] = {RADIO_LR};
   items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR}; // Theres no double tube NVGs for pilots in RHS yet
   linkedItems[] = {COMMON_LINKED,LEADER_LINKED,"rhsusf_ANPVS_15"};
   attachments[] = {"rhs_acc_dtk"};

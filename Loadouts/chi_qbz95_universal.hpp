@@ -185,7 +185,7 @@ class Helipilot_F {// Pilot
   backpack[] = {"MNP_B_FieldPack_PLA_Basic"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST,RADIO_LR};
+  backpackItems[] = {RADIO_LR};
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
