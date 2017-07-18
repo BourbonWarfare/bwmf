@@ -264,7 +264,7 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
   vest[] = {"rhs_6b23_6sh116_vog_od"};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  magazines[] = {GLRIFLE_MAG,PISTOL_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
@@ -288,12 +288,12 @@ class potato_msv_rifleman_04: potato_msv_sf_rifleman {//Recon Assistant Grenadie
 };
 class potato_msv_sf_sm: potato_msv_sf_rifleman {// Recon Medic
   vest[] = {"rhsgref_6b23_khaki_medic"};
-  magazines[] = {RIFLE_MAG,MEDIC_GRENADES};
+  magazines[] = {RIFLE_MAG,PISTOL_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class potato_msv_sf_marksman: potato_msv_sf_rifleman {// Recon Marksman
   weapons[] = {MARKSMAN};
-  magazines[] = {MARKSMAN_MAG};
+  magazines[] = {MARKSMAN_MAG,PISTOL_MAG};
   items[] += {"ACE_RangeCard"}; // SF Marksman gets a rangecard for high speed
   attachments[] = {"rhs_acc_pso1m21"};
   opticChoices[] = {"rhs_acc_1pn93_1"};
