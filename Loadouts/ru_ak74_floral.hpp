@@ -109,6 +109,10 @@ class soldier_SL_F: Soldier_TL_F { // SL
 class officer_F: Soldier_SL_F { // CO and DC
   items[] += {RADIO_LR};
 };
+class Soldier_unarmed_F: officer_F {// FAC
+  magazines[] += {FAC_MAGAZINES};
+  linkedItems[] = {BASE_LINKED,FAC_LINKED};
+};
 class soldier_UAV_F: Soldier_F {
   backpack[] = {"O_UAV_01_backpack_F"};
   linkedItems[] += {"O_uavterminal"};
