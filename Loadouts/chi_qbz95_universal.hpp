@@ -131,9 +131,13 @@ class medic_F: Fic_Soldier_Carbine {// Medic
 class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
 };
-class support_MG_F: Soldier_AR_F {}; // MMG Gunner
+
+class support_MG_F: Soldier_AR_F {  // MMG Gunner
+  handguns[] = {PISTOL};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+ }; 
+
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
 };
@@ -185,7 +189,7 @@ class Helipilot_F {// Pilot
   backpack[] = {"MNP_B_FieldPack_PLA_Basic"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {RADIO_LR};
+  backpackItems[] = {KEY_EAST,RADIO_LR};
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
