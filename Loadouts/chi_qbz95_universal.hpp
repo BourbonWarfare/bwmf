@@ -131,9 +131,10 @@ class medic_F: Fic_Soldier_Carbine {// Medic
 class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
 };
-class support_MG_F: Soldier_AR_F {}; // MMG Gunner
+class support_MG_F: Soldier_AR_F { // MMG Gunner
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+};
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
 };
