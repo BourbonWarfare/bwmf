@@ -24,7 +24,7 @@
 // AT
 #define AT "potato_nlaw_dumb"
 // MMG
-#define MMG "rhs_weap_m240B" //That moment when Bi never made a AAF MMG 🤔
+#define MMG "rhs_weap_m240B" //That moment when Bi never made a AAF MMG :thinking:
 #define MMG_MAG "rhsusf_100Rnd_762x51:5"
 // MAT
 #define MAT "launch_B_Titan_short_F"
@@ -36,7 +36,7 @@
 #define SAM_MAG "Titan_AA:3"
 #define SAM_MAG2 "Titan_AA:2"
 // Sniper Rifle
-#define SNIPER "srifle_DMR_05_blk_F" // Bi seriously? 😠
+#define SNIPER "srifle_DMR_05_blk_F" // Bi seriously? :angry: 
 #define SNIPER_MAG "10Rnd_93x64_DMR_05_Mag:8"
 // Spotter Rifle
 #define SPOTTER "srifle_EBR_F"
