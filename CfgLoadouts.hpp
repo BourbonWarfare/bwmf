@@ -26,14 +26,18 @@ class CfgLoadouts {
   // For use with exporter - "Loadouts\blankForArsenal.hpp"
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
+  // NATO: MX - Tan "Loadouts\nato_mx_mcam.hpp"
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"
   // German: G36 - Flecktarn Camo "Loadouts\ger_g36_fleck.hpp"
   // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
   // Ukraine: AK74 - TTskO "Loadouts\ukr_ak74_ttsko.hpp"
   // "Ukraine": AK74 - Desert DPM "Loadouts\ukr_ak74_ddpm.hpp"
+  // AAF: F2000 - Green Hex ("Combat") "Loadouts\aaf_f2000_combat.hpp"
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
   // Russian: AK74 - Floral "Loadouts\ru_ak74_floral.hpp"
   // Russian: AK74 - Desert "Loadouts\ru_ak74_desert.hpp"
+  // CSAT: Katiba - Red Hex ("Ocamo") "Loadouts\csat_katiba_ocamo.hpp"
+  // CSAT: Katiba - Urban Hex "Loadouts\csat_katiba_urban.hpp"
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
@@ -47,7 +51,7 @@ class CfgLoadouts {
 
   class opf_f { // OpFor
     #include "Loadouts\ru_ak74_floral.hpp"
-  }; 
+  };
 
   class potato_msv { // MSV
     #include "Loadouts\msv_ak74_emr.hpp"
