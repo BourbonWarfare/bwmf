@@ -23,6 +23,7 @@
 #define AR_MAG "UK3CB_BAF_556_100Rnd_T:4"
 // AT
 #define AT "UK3CB_BAF_AT4_CS_AP_Launcher"
+#define AT_MAG "UK3CB_BAF_AT4_CS_AP_Mag:1"
 // MMG
 #define MMG "UK3CB_BAF_L7A2"
 #define MMG_MAG "UK3CB_BAF_762_100Rnd_T:5"
@@ -59,12 +60,12 @@
 
 class Car {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,AT_MAG};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE,AT_MAG};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
@@ -125,6 +126,7 @@ class Soldier_AAR_F: Soldier_F {// AAR
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
+  magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
