@@ -106,6 +106,12 @@ class Soldier_SL_F: Soldier_TL_F {// SL
 class officer_F: Soldier_SL_F {// CO and DC
   items[] += {RADIO_LR};
 };
+class Soldier_unarmed_F: officer_F {// FAC
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_SMOKES,FAC_MAGAZINES};
+  handguns[] = {};
+  linkedItems[] = {BASE_LINKED,LEADER_LINKED,FAC_LINKED};
+  items[] += {RADIO_LR};
+};
 class soldier_UAV_F: Soldier_F {
   vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
   backpack[] = {"I_UAV_01_backpack_F"};

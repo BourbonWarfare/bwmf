@@ -26,6 +26,8 @@
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_Vector"
+#define FAC_LINKED "Laserdesignator"
+#define FAC_MAGAZINES "Laserbatteries","SmokeShellBlue:5","SmokeShellOrange:5","SmokeShellPurple:5","ACE_Chemlight_HiWhite:2","ACE_Chemlight_HiYellow:2"
 
 // FUNCTIONS
 #define SAM_GEAR(BACKPACK,MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};

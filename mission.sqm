@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2914;
+		nextID=2923;
 	};
 	class Camera
 	{
@@ -690,7 +690,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -827,6 +827,48 @@ class Mission
 										};
 									};
 									value="ar,en,ru";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={751.99701,5.0014391,970.815};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_BLU_COY_FAC";
+						description="BluFor FAC";
+						isPlayable=1;
+					};
+					id=2919;
+					type="B_Soldier_unarmed_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="FAC,16,yellow,\z\potato\addons\markers\data\helicopter.paa";
 								};
 							};
 						};
@@ -9867,7 +9909,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -10003,6 +10045,48 @@ class Mission
 										};
 									};
 									value="ar,en,ru";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={560.13702,5.0014391,971.047};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_IND_COY_FAC";
+						description="Indy FAC";
+						isPlayable=1;
+					};
+					id=2916;
+					type="I_Soldier_unarmed_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="FAC,16,yellow,\z\potato\addons\markers\data\helicopter.paa";
 								};
 							};
 						};
@@ -17869,7 +17953,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -18005,6 +18089,48 @@ class Mission
 										};
 									};
 									value="ar,en,ru";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={752.04901,5.0014391,842.89001};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_OPF_COY_FAC";
+						description="OpFor FAC";
+						isPlayable=1;
+					};
+					id=2922;
+					type="O_Soldier_unarmed_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="FAC,16,yellow,\z\potato\addons\markers\data\helicopter.paa";
 								};
 							};
 						};
@@ -29348,25 +29474,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="YELLOW";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29381,6 +29488,25 @@ class Mission
 										};
 									};
 									value="GV,32,red,\z\potato\addons\markers\data\mechanized_infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
 								};
 							};
 						};
@@ -29450,25 +29576,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29483,6 +29590,25 @@ class Mission
 										};
 									};
 									value="GSR,16,red,\z\potato\addons\markers\data\infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
 								};
 							};
 						};
@@ -29552,25 +29678,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29585,6 +29692,25 @@ class Mission
 										};
 									};
 									value="GM,16,pink,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
 								};
 							};
 						};
@@ -29830,25 +29956,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="YELLOW";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29863,6 +29970,25 @@ class Mission
 										};
 									};
 									value="HV,32,blue,\z\potato\addons\markers\data\mechanized_infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
 								};
 							};
 						};
@@ -29933,25 +30059,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -29966,6 +30073,25 @@ class Mission
 										};
 									};
 									value="HSR,16,blue,\z\potato\addons\markers\data\infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
 								};
 							};
 						};
@@ -30035,25 +30161,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -30068,6 +30175,25 @@ class Mission
 										};
 									};
 									value="HM,16,pink,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
 								};
 							};
 						};
@@ -30313,25 +30439,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="YELLOW";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -30346,6 +30453,25 @@ class Mission
 										};
 									};
 									value="IV,32,green,\z\potato\addons\markers\data\mechanized_infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
 								};
 							};
 						};
@@ -30416,25 +30542,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GREEN";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -30449,6 +30556,25 @@ class Mission
 										};
 									};
 									value="ISR,16,green,\z\potato\addons\markers\data\infantry.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GREEN";
 								};
 							};
 						};
@@ -30518,25 +30644,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BLUE";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this,_value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -30551,6 +30658,25 @@ class Mission
 										};
 									};
 									value="IM,16,pink,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BLUE";
 								};
 							};
 						};
