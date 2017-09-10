@@ -1,3 +1,7 @@
+## BWMF Version 5.2 ##
+* Moved to Advanced Medical
+* Add group names for slotting
+
 ## BWMF Version 5.1 ##
 * Moved the rest of the framework (respawn and spectate) to the POTATO mod
 * Added MSV back (thanks Raeth)
