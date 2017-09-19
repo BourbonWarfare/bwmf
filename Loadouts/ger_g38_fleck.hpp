@@ -8,7 +8,7 @@
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_eotech_xps3","rhsusf_acc_anpeq15side_bk"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","CUP_optic_HoloBlack","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","CUP_optic_MRad"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","CUP_optic_HoloBlack","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "rhs_weap_hk416d145_m320"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -24,8 +24,8 @@
 // AT
 #define AT "rhs_weap_M136"
 // MMG
-#define MMG "BWA3_MG5"
-#define MMG_MAG "BWA3_120Rnd_762x51_Tracer:4"
+#define MMG "rhs_weap_m240B"
+#define MMG_MAG "rhsusf_100Rnd_762x51:5"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
