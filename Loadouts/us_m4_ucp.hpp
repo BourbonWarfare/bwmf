@@ -48,8 +48,6 @@
 #define PISTOL "rhsusf_weap_m1911a1"
 #define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_m67:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS

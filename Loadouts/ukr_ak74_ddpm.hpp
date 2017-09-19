@@ -47,8 +47,6 @@
 #define PISTOL "rhs_weap_makarov_pmm"
 #define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_rgd5:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_green:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS

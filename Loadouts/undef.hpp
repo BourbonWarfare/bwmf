@@ -91,11 +91,17 @@
 #ifdef SNIPER_MAG
   #undef SNIPER_MAG
 #endif
+#ifdef SNIPER_ATTACHMENTS
+  #undef SNIPER_ATTACHMENTS
+#endif
 #ifdef SPOTTER
   #undef SPOTTER
 #endif
 #ifdef SPOTTER_MAG
   #undef SPOTTER_MAG
+#endif
+#ifdef SPOTTER_ATTACHMENTS
+  #undef SPOTTER_ATTACHMENTS
 #endif
 #ifdef SMG
   #undef SMG

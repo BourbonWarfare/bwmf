@@ -13,7 +13,7 @@
 #define GLRIFLE "CUP_arifle_L85A2_G"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "CUP_1Rnd_HE_M203:5"
+#define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
 #define CARBINE RIFLE
