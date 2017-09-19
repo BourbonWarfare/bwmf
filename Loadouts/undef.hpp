@@ -109,12 +109,6 @@
 #ifdef PISTOL_MAG
   #undef PISTOL_MAG
 #endif
-#ifdef BASE_FRAG
-  #undef BASE_FRAG
-#endif
-#ifdef BASE_GRENADES
-  #undef BASE_GRENADES
-#endif
 #ifdef LEADER_GRENADES
   #undef LEADER_GRENADES
 #endif

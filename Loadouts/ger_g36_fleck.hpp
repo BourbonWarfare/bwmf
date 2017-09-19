@@ -6,9 +6,9 @@
 // Rifle
 #define RIFLE "BWA3_G36"
 #define RIFLE_MAG "BWA3_30Rnd_556x45_G36:8","BWA3_30Rnd_556x45_G36_Tracer:2"
-#define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","BWA3_acc_LLM01_irlaser"
+#define RIFLE_ATTACHMENTS "CUP_optic_HoloBlack","BWA3_acc_LLM01_irlaser"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "BWA3_G36_AG"
 #define GLRIFLE_MAG RIFLE_MAG

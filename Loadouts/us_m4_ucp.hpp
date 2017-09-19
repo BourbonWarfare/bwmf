@@ -6,9 +6,9 @@
 // Rifle
 #define RIFLE "rhs_weap_m4a1_carryhandle_grip2"
 #define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
+#define RIFLE_ATTACHMENTS "CUP_optic_HoloBlack","rhsusf_acc_anpeq15A"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 #define GLRIFLE_MAG RIFLE_MAG
