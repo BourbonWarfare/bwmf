@@ -15,20 +15,18 @@
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "UK3CB_BAF_L135A1"
-#define SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
+#define SNIPER "rhs_weap_m14ebrri"
+#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
 // Spotter Rifle
-#define SPOTTER "UK3CB_BAF_L86A3"
-#define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
+#define SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
 // SMG
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "UK3CB_BAF_L131A1"
-#define PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
+#define PISTOL "rhsusf_weap_m1911a1"
+#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_m67:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
@@ -131,11 +129,11 @@ class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-  SAM_GEAR("UK3CB_BAF_B_Carryall_DDPM", SAM_MAG)
+  SAM_GEAR("B_Carryall_mcamo", SAM_MAG)
   launchers[] = {SAM};
 };
 class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  SAM_GEAR("UK3CB_BAF_B_Carryall_DDPM", SAM_MAG2)
+  SAM_GEAR("B_Carryall_mcamo", SAM_MAG2)
 };
 class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -154,13 +152,13 @@ class sniper_F: spotter_F {// Sniper
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED};
-  attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
+  attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15A"};
 };
 class Helipilot_F {// Pilot
-  // uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
-  // backpack[] = {"B_AssaultPack_blk"};
-  // vest[] = {"UK3CB_BAF_V_Pilot_A"};
-  // headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+  uniform[] = {"U_B_HeliPilotCoveralls"};
+  backpack[] = {"B_AssaultPack_blk"};
+  vest[] = {"V_TacVest_blk"};
+  headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
@@ -169,14 +167,12 @@ class Helipilot_F {// Pilot
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
-  // backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] = {KEY_WEST,RADIO_LR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
-  // backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
   backpackItems[] = {"Toolkit",RADIO_MR,KEY_WEST};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
