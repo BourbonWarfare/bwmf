@@ -90,7 +90,7 @@ class potato_msv_rifleman { // rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
-  opticChoices[] = {MSV_OPTIX};
+  opticChoices[] = {ALT_OPTICS};
 };
 class potato_msv_sr: potato_msv_rifleman {// FTL
   vest[] = {"V_HarnessOGL_ghex_F"};
