@@ -41,12 +41,6 @@
 #define MARKSMAN "srifle_DMR_07_ghex_F"
 #define MARKSMAN_MAG "20Rnd_650x39_Cased_Mag_F:8"
 #define MARKSMAN_ATTACHMENTS "optic_DMS_ghex_F"
-// Sniper Rifle
-#define SNIPER "srifle_DMR_05_blk_F"
-#define SNIPER_MAG "10Rnd_762x54_Mag:8"
-// Spotter Rifle
-#define SPOTTER "srifle_DMR_01_F"
-#define SPOTTER_MAG "16Rnd_9x21_Mag:8"
 // SMG
 #define SMG "SMG_02_F"
 #define SMG_MAG "30Rnd_9x21_Mag_SMG_02:6"
