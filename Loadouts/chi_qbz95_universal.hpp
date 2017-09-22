@@ -6,7 +6,7 @@
 // Rifle
 #define RIFLE "arifle_CTAR_blk_F"
 #define RIFLE_MAG "30Rnd_580x42_Mag_F:8","30Rnd_580x42_Mag_Tracer_F:2"
-#define RIFLE_ATTACHMENTS "optic_ACO_grn","CUP_acc_ANPEQ_2"
+#define RIFLE_ATTACHMENTS "optic_ACO_grn","acc_pointer_IR"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
@@ -36,11 +36,13 @@
 #define SAM_MAG "rhs_mag_9k38_rocket:3"
 #define SAM_MAG2 "rhs_mag_9k38_rocket:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_svds"
-#define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+#define SNIPER "srifle_DMR_07_blk_F"
+#define SNIPER_MAG "20Rnd_650x39_Cased_Mag_F:10"
+#define SNIPER_ATTACHMENTS "optic_LRPS","acc_pointer_IR"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_svds"
-#define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+#define SPOTTER RIFLE
+#define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER_ATTACHMENTS "optic_Hamr","acc_pointer_IR"
 // SMG
 #define SMG "SMG_02_F"
 #define SMG_MAG "30Rnd_9x21_Mag_SMG_02:5"
@@ -166,16 +168,16 @@ class support_AMort_F: Fic_Spotter {// Assistant Mortar
 class spotter_F: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
+  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
-  attachments[] = {"rhs_acc_pso1m2"};
+  attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper_F: spotter_F {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
-  attachments[] = {"rhs_acc_pso1m2"};
+  linkedItems[] = {BASE_LINKED};
+  attachments[] = {SNIPER_ATTACHMENTS};
 };
 class Helipilot_F {// Pilot
   uniform[] = {"rhs_uniform_df15"};

@@ -1,25 +1,28 @@
 // Author: Raeth
-// Description: CSAT: Pacific Mechanized WARNING: Spez is replaced with VIPER team, reducing role varity. Verify slot names correct before play
+// Description: CSAT: Pacific Mechanized with QBZ-95 rifles
+// WARNING: Spez is replaced with VIPER team, reducing role varity. Verify slot names correct before play
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "arifle_CTAR_blk_F","arifle_CTAR_ghex_F"
+#define RIFLE "arifle_CTAR_ghex_F"
 #define RIFLE_MAG "30Rnd_580x42_Mag_F:8","30Rnd_580x42_Mag_Tracer_F:2"
-#define RIFLE_ATTACHMENTS "acc_pointer_IR","optic_ACO_grn"
+#define RIFLE_ATTACHMENTS "optic_ACO_grn","acc_pointer_IR"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS "optic_Arco_ghex_F","optic_Holosight_blk_F"
 // GL Rifle
-#define GLRIFLE "arifle_CTAR_GL_blk_F"
+#define GLRIFLE "arifle_CTAR_GL_ghex_F"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareRed_F:4"
 // AR
-#define AR "arifle_CTARS_blk_F","arifle_CTARS_ghex_F"
+#define AR "arifle_CTARS_ghex_F"
 #define AR_MAG "100Rnd_580x42_Mag_F:4"
 // Recon Gear
-#define RECON_RIFLE_ATTACHMENTS  "muzzle_snds_65_TI_ghex_F","acc_pointer_IR","optic_Arco_ghex_F"
+#define RECON_RIFLE "arifle_ARX_ghex_F"
 #define RECON_RIFLE_MAGS "30Rnd_65x39_caseless_green:8","30Rnd_65x39_caseless_green_mag_Tracer:2","10Rnd_50BW_Mag_F:3"
+#define RECON_RIFLE_ATTACHMENTS "muzzle_snds_65_TI_ghex_F","acc_pointer_IR","optic_Arco_ghex_F"
 // AT
 #define AT "launch_RPG32_ghex_F"
 #define AT_MAG "RPG32_F:3","RPG32_HE_F:1"
@@ -35,8 +38,9 @@
 #define SAM_MAG "Titan_AA:3"
 #define SAM_MAG2 "Titan_AA:2"
 // Marksman Rifle
-#define MARKSMAN "srifle_DMR_07_blk_F","srifle_DMR_07_ghex_F"
+#define MARKSMAN "srifle_DMR_07_ghex_F"
 #define MARKSMAN_MAG "20Rnd_650x39_Cased_Mag_F:8"
+#define MARKSMAN_ATTACHMENTS "optic_DMS_ghex_F"
 // Sniper Rifle
 #define SNIPER "srifle_DMR_05_blk_F"
 #define SNIPER_MAG "10Rnd_762x54_Mag:8"
@@ -56,7 +60,6 @@
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST,"H_HelmetLeaderO_ghex_F"
 #define BASE_LINKED COMMON_LINKED,"O_NVGoggles_ghex_F"
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
-#define MSV_OPTIX "optic_Arco_blk_F","optic_Arco_ghex_F","ACE_optic_Arco_PIP","optic_Holosight_blk_F"
 
 class Car {
   TransportWeapons[] = {AT,AT_MAG};
@@ -140,8 +143,7 @@ class potato_msv_sm: potato_msv_rifleman {// Medic
 class potato_msv_marksman: potato_msv_rifleman {// Squad Marksman
   weapons[] = {MARKSMAN};
   magazines[] = {MARKSMAN_MAG,BASE_GRENADES};
-  attachments[] = {"optic_DMS"};
-  opticChoices[] = {"optic_DMS_ghex_F"};
+  attachments[] = {MARKSMAN_ATTACHMENTS};
 };
 class Fic_Spotter: potato_msv_rifleman {
   linkedItems[] += {RANGE_FINDER};
@@ -191,20 +193,6 @@ class potato_msv_mtrg: potato_msv_rifleman {// Mortar Gunner
 class potato_msv_mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("O_Mortar_01_support_F")
 };
-class potato_msv_rifleman_02: Fic_Spotter {// Spotter
-  weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-  linkedItems[] += {LEADER_LINKED};
-  attachments[] = {"optic_KHS_blk","bipod_02_F_blk"};
-  opticChoices[] = {};
-};
-class potato_msv_sniper: potato_msv_rifleman_02 {// Sniper
-  weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
-  attachments[] = {"optic_KHS_blk","bipod_02_F_blk"};
-  opticChoices[] = {};
-};
 class potato_msv_pilot {// Pilot
   uniform[] = {"U_O_PilotCoveralls"};
   vest[] = {"V_TacVest_khk"};
@@ -253,7 +241,7 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   vest[] = {};
   headgear[] = {"H_HelmetO_ViperSP_ghex_F"};
   backpack[] = {"B_ViperHarness_ghex_TL_F"};
-  weapons[] = {"arifle_ARX_ghex_F"};
+  weapons[] = {RECON_RIFLE};
   handguns[] = {PISTOL};
   magazines[] = {RECON_RIFLE_MAGS,BASE_GRENADES,PISTOL_MAG};
   linkedItems[] = {COMMON_LINKED}; // Direct calls to common are perfectly safe said nobody ever

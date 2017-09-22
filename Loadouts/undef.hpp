@@ -154,9 +154,9 @@
 #ifdef MARKSMAN_ATTACHMENTS
   #undef MARKSMAN_ATTACHMENTS
 #endif
+#ifdef MARKSMAN_ALT_OPTICS
+  #undef MARKSMAN_ALT_OPTICS
+#endif
 #ifdef MSV_EXP
   #undef MSV_EXP
-#endif
-#ifdef MSV_OPTIX
-  #undef MSV_OPTIX
 #endif
