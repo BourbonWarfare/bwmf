@@ -6,8 +6,9 @@
 // Rifle
 #define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag","rhs_weap_ak74m_desert"
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
-#define RIFLE_ATTACHMENTS "rhs_acc_pkas","rhs_acc_dtk"
+#define RIFLE_ATTACHMENTS "rhs_acc_pkas","rhs_acc_dtk","rhs_acc_perst1ik"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS "rhs_acc_1p29","rhs_acc_1p63","rhs_acc_1p78","rhs_acc_1pn93_1","rhs_acc_ekp1"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -37,12 +38,16 @@
 // Marksman Rifle
 #define MARKSMAN "rhs_weap_svds"
 #define MARKSMAN_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+#define MARKSMAN_ATTACHMENTS "rhs_acc_pso1m21"
+#define MARKSMAN_ALT_OPTICS "rhs_acc_1pn93_1"
 // Sniper Rifle
-#define SNIPER "rhs_weap_svds"
-#define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+#define SNIPER "rhs_weap_svdp_npz"
+#define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:20"
+#define SNIPER_ATTACHMENTS "optic_LRPS"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_svds"
-#define SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+#define SPOTTER "rhs_weap_ak74m_desert"
+#define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER_ATTACHMENTS "rhs_acc_1p78","rhs_acc_perst1ik","rhs_acc_uuk"
 // SMG
 #define SMG "rhs_weap_aks74u"
 #define SMG_MAG "rhs_30Rnd_545x39_AK:6"
@@ -50,8 +55,6 @@
 #define PISTOL "rhs_weap_pya"
 #define PISTOL_MAG "rhs_mag_9x19_17:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_rgd5:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
@@ -59,7 +62,6 @@
 #define BASE_LINKED COMMON_LINKED,"rhs_1PN138" // To be moved to tools if loadout bug is fixed
 #define LEADER_LINKED COMMON_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
-#define MSV_OPTIX "rhs_acc_1p29","rhs_acc_1p63","rhs_acc_1p78","rhs_acc_1pn93_1","rhs_acc_ekp1"
 
 class Car {
   TransportWeapons[] = {AT};
@@ -90,7 +92,7 @@ class potato_msv_rifleman { // rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
-  opticChoices[] = {MSV_OPTIX};
+  opticChoices[] = {ALT_OPTICS};
 };
 class potato_msv_sr: potato_msv_rifleman {// FTL
   vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
@@ -146,8 +148,8 @@ class potato_msv_sm: potato_msv_rifleman {// Medic
 class potato_msv_marksman: potato_msv_rifleman {// Squad Marksman
   weapons[] = {MARKSMAN};
   magazines[] = {MARKSMAN_MAG,BASE_GRENADES};
-  attachments[] = {"rhs_acc_pso1m21"};
-  opticChoices[] = {"rhs_acc_1pn93_1"};
+  attachments[] = {MARKSMAN_ATTACHMENTS};
+  opticChoices[] = {MARKSMAN_ALT_OPTICS};
 };
 class Fic_Spotter: potato_msv_rifleman {
   linkedItems[] += {RANGE_FINDER};
@@ -195,21 +197,6 @@ class potato_msv_mtrg: potato_msv_rifleman {// Mortar Gunner
 };
 class potato_msv_mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("O_Mortar_01_support_F")
-};
-class potato_msv_rifleman_02: Fic_Spotter {// Spotter
-  weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
-  linkedItems[] += {LEADER_LINKED};
-  attachments[] = {"rhs_acc_pso1m2"};
-};
-class potato_msv_sniper: potato_msv_rifleman_02 {// Sniper
-  weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS,"ACE_RangeCard"};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
-  attachments[] = {"rhs_acc_pso1m21"};
-  opticChoices[] = {"rhs_acc_1pn93_1"};
 };
 class potato_msv_pilot {// Pilot
   uniform[] = {"rhs_uniform_df15_tan"};
@@ -259,7 +246,6 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   attachments[] = {RECON_RIFLE_ATTACHMENTS};
-  opticChoices[] = {MSV_OPTIX};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
   vest[] = {"rhs_6b23_6sh116_vog_od"};
@@ -295,8 +281,8 @@ class potato_msv_sf_marksman: potato_msv_sf_rifleman {// Recon Marksman
   weapons[] = {MARKSMAN};
   magazines[] = {MARKSMAN_MAG,PISTOL_MAG};
   items[] += {"ACE_RangeCard"}; // SF Marksman gets a rangecard for high speed
-  attachments[] = {"rhs_acc_pso1m21"};
-  opticChoices[] = {"rhs_acc_1pn93_1"};
+  attachments[] = {MARKSMAN_ATTACHMENTS};
+  opticChoices[] = {MARKSMAN_ALT_OPTICS};
 };
 class potato_msv_sf_aar: potato_msv_sf_rifleman {//Recon AAR
   backpackItems[] += {AR_MAG};

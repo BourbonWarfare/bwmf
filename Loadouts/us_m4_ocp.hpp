@@ -6,9 +6,9 @@
 // Rifle
 #define RIFLE "rhs_weap_m4a1_carryhandle_grip2"
 #define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","rhsusf_acc_anpeq15A"
+#define RIFLE_ATTACHMENTS "CUP_optic_HoloBlack","rhsusf_acc_anpeq15A"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -37,10 +37,12 @@
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
 #define SNIPER "rhs_weap_m14ebrri"
-#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
+#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"
+#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
-#define SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
+#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
+#define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
@@ -48,8 +50,6 @@
 #define PISTOL "rhsusf_weap_m1911a1"
 #define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_m67:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
@@ -176,15 +176,16 @@ class spotter_F: Fic_Spotter {// Spotter
   headgear[] = {"rhs_Booniehat_ocp"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
+  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
+  attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper_F: spotter_F {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED};
-  attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15A"};
+  attachments[] = {SNIPER_ATTACHMENTS};
 };
 class Helipilot_F {// Pilot
   uniform[] = {"U_B_HeliPilotCoveralls"};

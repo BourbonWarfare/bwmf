@@ -17,7 +17,9 @@
 #define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
 #define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
 #define COMMON_LEADER_LINKED "ItemGPS"
+#define BASE_FRAG "HandGrenade:2"
 #define BASE_SMOKES "SmokeShell:2"
+#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_SMOKES "SmokeShell:4","SmokeShellGreen:2"
 #define MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
 #define CREW_GRENADES "SmokeShell:4"

@@ -1,56 +1,56 @@
-// Author: SovietOnion
+// Author: SovietOnion, AACO
 // Description: British: L85 - Disruptive Desert
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "UK3CB_BAF_L85A2_RIS","UK3CB_BAF_L85A2_RIS_AFG"
-#define RIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
-#define RIFLE_ATTACHMENTS "UK3CB_BAF_Eotech","UK3CB_BAF_LLM_IR_Black"
+#define RIFLE "CUP_arifle_L85A2_G","CUP_arifle_L85A2_NG"
+#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
+#define RIFLE_ATTACHMENTS "CUP_optic_HoloBlack","CUP_acc_ANPEQ_2"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","BWA3_optic_RSAS","RKSL_optic_RMR_MS19"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
-#define GLRIFLE "UK3CB_BAF_L85A2_UGL_HWS","UK3CB_BAF_L85A2_UGL"
+#define GLRIFLE "CUP_arifle_L85A2_G"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
+#define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "UK3CB_BAF_L110A2"
-#define AR_MAG "UK3CB_BAF_556_100Rnd_T:4"
+#define AR "CUP_lmg_L110A1"
+#define AR_MAG "CUP_100Rnd_TE4_Red_Tracer_556x45_M249:4"
 // AT
-#define AT "UK3CB_BAF_AT4_CS_AP_Launcher"
-#define AT_MAG "UK3CB_BAF_AT4_CS_AP_Mag:1"
+#define AT "CUP_launch_M136"
+#define AT_MAG "ACE_PreloadedMissileDummy_CUP:1"
 // MMG
-#define MMG "UK3CB_BAF_L7A2"
-#define MMG_MAG "UK3CB_BAF_762_100Rnd_T:5"
+#define MMG "CUP_lmg_L7A2"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:5"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
-#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
-#define MAT_OPTIC "rhs_weap_optic_smaw"
+#define MAT "CUP_launch_Mk153Mod0"
+#define MAT_MAG "CUP_SMAW_HEAA_M:3","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:3"
+#define MAT_MAG2 "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:2"
+#define MAT_OPTIC "CUP_optic_SMAW_Scope"
 // SAM
 #define SAM "rhs_weap_fim92"
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "UK3CB_BAF_L135A1"
-#define SNIPER_MAG "UK3CB_BAF_127_10Rnd:5"
+#define SNIPER "CUP_srifle_L129A1"
+#define SNIPER_MAG "CUP_20Rnd_762x51_DMR:10"
+#define SNIPER_ATTACHMENTS "optic_LRPS","CUP_acc_ANPEQ_2","CUP_bipod_Harris_1A2_L"
 // Spotter Rifle
-#define SPOTTER "UK3CB_BAF_L86A3"
+#define SPOTTER "CUP_arifle_L85A2_G"
 #define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER_ATTACHMENTS "CUP_optic_ACOG","CUP_acc_ANPEQ_2"
 // SMG
-#define SMG "UK3CB_BAF_L91A1"
-#define SMG_MAG "UK3CB_BAF_9_30Rnd:6"
+#define SMG "CUP_smg_MP5A5"
+#define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "UK3CB_BAF_L131A1"
-#define PISTOL_MAG "UK3CB_BAF_9_17Rnd:3"
+#define PISTOL "CUP_hgun_Glock17_tan"
+#define PISTOL_MAG "CUP_17Rnd_9x19_glock17:3"
 // Grenades
-#define BASE_FRAG "rhs_mag_m67:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_blue:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
@@ -76,10 +76,10 @@ class Plane {};
 class Ship_F {};
 
 class Soldier_F {// rifleman
-  uniform[] = {"UK3CB_BAF_U_Smock_DDPM"};
-  vest[] = {"UK3CB_BAF_V_Osprey_DDPM1","UK3CB_BAF_V_Osprey_DDPM2","UK3CB_BAF_V_Osprey_DDPM3","UK3CB_BAF_V_Osprey_DDPM4","UK3CB_BAF_V_Osprey_DDPM5","UK3CB_BAF_V_Osprey_DDPM6"};
-  headgear[] = {"UK3CB_BAF_H_Mk6_DDPM_A","UK3CB_BAF_H_Mk6_DDPM_B","UK3CB_BAF_H_Mk6_DDPM_C","UK3CB_BAF_H_Mk6_DDPM_D","UK3CB_BAF_H_Mk6_DDPM_E","UK3CB_BAF_H_Mk6_DDPM_F"};
-  backpack[] = {"UK3CB_BAF_B_Bergen_DDPM_Rifleman_A","UK3CB_BAF_B_Bergen_DDPM_Rifleman_B"};
+  uniform[] = {"CUP_U_B_BAF_DDPM_S2_UnRolled","CUP_U_B_BAF_DDPM_S1_RolledUp"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1","CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2"};
+  headgear[] = {"CUP_H_BAF_Helmet_1_DDPM","CUP_H_BAF_Helmet_3_DDPM"};
+  backpack[] = {"B_AssaultPack_cbr"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
@@ -93,13 +93,15 @@ class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class Soldier_TL_F: Soldier_F {// FTL
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Grenadier"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class Soldier_SL_F: Soldier_TL_F {// SL
-  backpack[] = {"UK3CB_BAF_B_Bergen_DDPM_SL_A"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Officer"};
+  backpack[] = {"B_Kitbag_cbr"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -127,7 +129,8 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Medic"};
+  backpack[] = {"B_Kitbag_cbr"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -135,17 +138,17 @@ class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
 };
 class support_MG_F: Soldier_AR_F {// MMG
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  backpack[] = {"B_Kitbag_cbr"};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  backpack[] = {"B_Kitbag_cbr"};
   backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
@@ -153,17 +156,17 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   secondaryAttachments[] = {MAT_OPTIC};
 };
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] = {};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-  SAM_GEAR("UK3CB_BAF_B_Carryall_DDPM", SAM_MAG)
+  SAM_GEAR("B_Carryall_cbr", SAM_MAG)
   launchers[] = {SAM};
 };
 class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  SAM_GEAR("UK3CB_BAF_B_Carryall_DDPM", SAM_MAG2)
+  SAM_GEAR("B_Carryall_cbr", SAM_MAG2)
 };
 class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -172,27 +175,29 @@ class support_AMort_F: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter_F: Fic_Spotter {// Spotter
-  uniform[] = {"UK3CB_BAF_U_CombatUniform_MTP_Ghillie_RM"};
-  vest[] = {"UK3CB_BAF_V_Osprey_Marksman_A"};
-  headgear[] = {"UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C"};
-  backpack[] = {"UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C"};
+  uniform[] = {"CUP_U_B_BAF_DDPM_S2_UnRolled"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1"};
+  headgear[] = {"CUP_H_BAF_Helmet_3_DDPM"};
+  backpackItems[] = {};
+  backpack[] = {};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
+  items[] += {BASE_MEDICAL,RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
+  attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper_F: spotter_F {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS,"ACE_RangeCard"};
+  items[] = {BASE_MEDICAL,BASE_TOOLS,"ACE_RangeCard"};
   linkedItems[] = {BASE_LINKED};
-  attachments[] = {"UK3CB_BAF_SB31250_Ghillie"};
+  attachments[] = {SNIPER_ATTACHMENTS};
 };
 class Helipilot_F {// Pilot
-  uniform[] = {"UK3CB_BAF_U_HeliPilotCoveralls_RAF"};
-  backpack[] = {"B_AssaultPack_blk"};
-  vest[] = {"UK3CB_BAF_V_Pilot_A"};
-  headgear[] = {"UK3CB_BAF_H_PilotHelmetHeli_A"};
+  uniform[] = {"CUP_U_B_BAF_DDPM_Tshirt","CUP_U_B_BAF_DDPM_S1_RolledUp"};
+  backpack[] = {"B_AssaultPack_cbr"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Pilot"};
+  headgear[] = {"CUP_H_BAF_Helmet_Pilot"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {RADIO_LR};
@@ -201,20 +206,23 @@ class Helipilot_F {// Pilot
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
+  uniform[] = {"CUP_U_B_BAF_DDPM_Tshirt","CUP_U_B_BAF_DDPM_S1_RolledUp"};
+  backpack[] = {"B_AssaultPack_cbr"};
+  vest[] = {"CUP_V_BAF_Osprey_Mk2_DDPM_Crewman"};
+  headgear[] = {"CUP_H_BAF_Crew_Helmet_DDPM"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_WEST,RADIO_LR};
+  backpackItems[] = {RADIO_LR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,BINOS};
-  items[] += {BASE_MEDICAL};
+  items[] += {BASE_MEDICAL,KEY_WEST};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
-  backpack[] = {"UK3CB_BAF_B_Carryall_DDPM"};
-  backpackItems[] = {"Toolkit",RADIO_MR,KEY_WEST};
+  items[] += {RADIO_MR,KEY_WEST};
+  backpackItems[] = {"Toolkit"};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
-class Fic_eng: soldier_repair_F {
-  items[] += {BASE_ENG};
-  backpackItems[] = {};
+class Fic_eng: Fic_Soldier_Carbine {
+  backpack[] = {"B_Kitbag_cbr"};
+  items[] += {BASE_MEDICAL,BASE_ENG};
 };
 class soldier_exp_F: Fic_eng {// Explosive Specialist
   magazines[] += {BASE_EXP};

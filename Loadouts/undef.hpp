@@ -91,11 +91,17 @@
 #ifdef SNIPER_MAG
   #undef SNIPER_MAG
 #endif
+#ifdef SNIPER_ATTACHMENTS
+  #undef SNIPER_ATTACHMENTS
+#endif
 #ifdef SPOTTER
   #undef SPOTTER
 #endif
 #ifdef SPOTTER_MAG
   #undef SPOTTER_MAG
+#endif
+#ifdef SPOTTER_ATTACHMENTS
+  #undef SPOTTER_ATTACHMENTS
 #endif
 #ifdef SMG
   #undef SMG
@@ -108,12 +114,6 @@
 #endif
 #ifdef PISTOL_MAG
   #undef PISTOL_MAG
-#endif
-#ifdef BASE_FRAG
-  #undef BASE_FRAG
-#endif
-#ifdef BASE_GRENADES
-  #undef BASE_GRENADES
 #endif
 #ifdef LEADER_GRENADES
   #undef LEADER_GRENADES
@@ -154,9 +154,9 @@
 #ifdef MARKSMAN_ATTACHMENTS
   #undef MARKSMAN_ATTACHMENTS
 #endif
+#ifdef MARKSMAN_ALT_OPTICS
+  #undef MARKSMAN_ALT_OPTICS
+#endif
 #ifdef MSV_EXP
   #undef MSV_EXP
-#endif
-#ifdef MSV_OPTIX
-  #undef MSV_OPTIX
 #endif
