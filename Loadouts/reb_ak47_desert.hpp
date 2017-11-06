@@ -52,7 +52,7 @@
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_green:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
-#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_IND
+#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY
 #define BASE_LINKED COMMON_LINKED
 #define LEADER_LINKED COMMON_LEADER_LINKED
 
@@ -206,13 +206,13 @@ class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
   vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_IND,RADIO_LR};
+  backpackItems[] = {KEY,RADIO_LR};
   linkedItems[] += {LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
 };
 class Soldier_repair_F: crew_F {// Repair Specialist
   backpack[] = {"B_Carryall_khk"};
-  backpackItems[] = {"Toolkit",RADIO_MR,KEY_IND};
+  backpackItems[] = {"Toolkit",RADIO_MR,KEY};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
 class Fic_Eng: soldier_repair_F {
