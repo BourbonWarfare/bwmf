@@ -51,7 +51,7 @@
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
-#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST,"H_HelmetLeaderO_ghex_F"
+#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY,"H_HelmetLeaderO_ghex_F"
 #define BASE_LINKED COMMON_LINKED,"O_NVGoggles_ghex_F"
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
 
@@ -90,7 +90,7 @@ class potato_msv_sr: potato_msv_rifleman {// FTL
   vest[] = {"V_HarnessOGL_ghex_F"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
-  items[] += {COMMON_LEADER_TOOLS,KEY_EAST};
+  items[] += {COMMON_LEADER_TOOLS,KEY};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class potato_msv_sl: potato_msv_sr { // SL
@@ -205,7 +205,7 @@ class potato_msv_cc: potato_msv_pilot {// Crew Chief
 class fic_vehicle_crewman: potato_msv_rifleman {// Vehicle crew base
   headgear[] = {"H_HelmetCrew_O_ghex_F"};
   magazines[] = {RIFLE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST};
+  backpackItems[] = {KEY};
   linkedItems[] += {BASE_LINKED,LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
@@ -227,7 +227,7 @@ class potato_msv_eng: potato_msv_rifleman {// Demoman
   linkedItems[] = {BASE_LINKED};
 };
 class potato_msv_engl: potato_msv_eng {// Demoman Leader
-  backpackItems[] += {RADIO_MR,KEY_EAST};
+  backpackItems[] += {RADIO_MR,KEY};
   linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
@@ -244,7 +244,7 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   opticChoices[] = {};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
-  items[] += {COMMON_LEADER_TOOLS,KEY_EAST}; // Avoid using leader linked because it adds double headgear (viper is not mechanized)
+  items[] += {COMMON_LEADER_TOOLS,KEY}; // Avoid using leader linked because it adds double headgear (viper is not mechanized)
   linkedItems[] += {COMMON_LEADER_TOOLS,BINOS};
 };
 class potato_msv_sf_sl: potato_msv_sf_ftl {// Recon Squad Leader
