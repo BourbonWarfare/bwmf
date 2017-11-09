@@ -108,8 +108,8 @@ class officer_F: Soldier_SL_F {// CO and DC
 };
 class soldier_UAV_F: Soldier_F {
   vest[] = {"MNP_Vest_UKR_B","MNP_Vest_6co_A","MNP_Vest_6co_B"};
-  backpack[] = {"I_UAV_01_backpack_F"};
-  linkedItems[] += {"I_uavterminal"};
+  backpack[] = {SIDE_ITEM(_uav_01_backpack_f)};
+  linkedItems[] += {SIDE_ITEM(_uavterminal)};
 };
 class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
