@@ -32,3 +32,4 @@
 // FUNCTIONS
 #define SAM_GEAR(BACKPACK,MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
 #define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {"ACE_RangeTable_82mm"};
+#define SIDE_ITEM(ITEM) #SIDE_PREFIX##ITEM
