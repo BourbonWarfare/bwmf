@@ -48,7 +48,7 @@
 #define PISTOL "hgun_Rook40_F"
 #define PISTOL_MAG "16Rnd_9x21_Mag:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
+#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY,"H_HelmetLeaderO_ghex_F"
