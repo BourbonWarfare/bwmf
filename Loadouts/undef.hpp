@@ -1,3 +1,16 @@
+// UNDEF
+#ifdef KEY
+  #undef KEY
+#endif
+#ifdef CHEM_LIGHT
+  #undef CHEM_LIGHT
+#endif
+#ifdef UAV_BACKPACK
+  #undef UAV_BACKPACK
+#endif
+#ifdef UAV_TERMINAL
+  #undef UAV_TERMINAL
+#endif
 #ifdef CAMO_UNIFORM
   #undef CAMO_UNIFORM
 #endif
@@ -160,3 +173,5 @@
 #ifdef MSV_EXP
   #undef MSV_EXP
 #endif
+
+#include "side_gear.hpp"

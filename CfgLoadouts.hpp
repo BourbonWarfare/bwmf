@@ -45,14 +45,25 @@ class CfgLoadouts {
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
+
+  // West factions
+  #define SIDE_WEST
   class blu_f { // BluFor
     #include "Loadouts\us_m4_ucp.hpp"
   };
+  #undef SIDE_WEST
 
+
+  // Indy factions
+  #define SIDE_INDY
   class ind_f { // Indy
     #include "Loadouts\ukr_ak74_ttsko.hpp"
   };
+  #undef SIDE_INDY
 
+
+  // East Factions
+  #define SIDE_EAST
   class opf_f { // OpFor
     #include "Loadouts\ru_ak74_floral.hpp"
   };
@@ -60,7 +71,11 @@ class CfgLoadouts {
   class potato_msv { // MSV
     #include "Loadouts\msv_ak74_emr.hpp"
   };
+  #undef SIDE_EAST
+
 
   // Civilians (mainly for RP missions)
+  #define SIDE_CIV
   #include "Loadouts\civilians.hpp" // Bare example of doing civilian loadouts
+  #undef SIDE_CIV
 };
