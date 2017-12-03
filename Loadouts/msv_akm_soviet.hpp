@@ -49,10 +49,10 @@
 #define PISTOL "rhs_weap_pya"
 #define PISTOL_MAG "rhs_mag_9x19_17:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,"Chemlight_red:2"
+#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
-#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY_EAST
+#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY
 #define BASE_LINKED COMMON_LINKED,"rhs_1PN138" // To be moved to tools if loadout bug is fixed
 #define LEADER_LINKED COMMON_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
@@ -206,7 +206,7 @@ class potato_msv_cc: potato_msv_pilot {};// Crew Chief
 class fic_vehicle_crewman: potato_msv_rifleman {// Vehicle crew base
   headgear[] = {"rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"};
   magazines[] = {RIFLE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY_EAST};
+  backpackItems[] = {KEY};
   linkedItems[] += {BASE_LINKED,LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
@@ -227,7 +227,7 @@ class potato_msv_eng: potato_msv_rifleman {// Demoman
   magazines[] += {MSV_EXP};
 };
 class potato_msv_engl: potato_msv_eng {// Demoman Leader
-  backpackItems[] += {RADIO_MR,KEY_EAST};
+  backpackItems[] += {RADIO_MR,KEY};
   linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman

@@ -27823,48 +27823,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={729.23315,5.0014391,626.03186};
-					};
-					side="East";
-					flags=4;
-					class Attributes
-					{
-						rank="CORPORAL";
-						name="UNIT_MSV_C_VD";
-						description="Russian Charlie Squad Vehicle Driver";
-						isPlayable=1;
-					};
-					id=1973;
-					type="potato_msv_vicd";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="potato_teamColors_teamColor";
-							expression="[_this,_value] call potato_teamColors_fnc_setColor";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="YELLOW";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={728.01282,5.0014391,626.08417};
 					};
 					side="East";
@@ -27876,7 +27834,7 @@ class Mission
 						description="Russian Charlie Squad Vehicle Gunner";
 						isPlayable=1;
 					};
-					id=1974;
+					id=1973;
 					type="potato_msv_vicc";
 					class CustomAttributes
 					{
@@ -27919,6 +27877,48 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={729.23315,5.0014391,626.03186};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_MSV_C_VD";
+						description="Russian Charlie Squad Vehicle Driver";
+						isPlayable=1;
+					};
+					id=1974;
+					type="potato_msv_vicd";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_teamColors_teamColor";
+							expression="[_this,_value] call potato_teamColors_fnc_setColor";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						nAttributes=1;
 					};
 				};
 				class Item3

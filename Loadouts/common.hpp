@@ -5,11 +5,6 @@
 #define RADIO_MR "ACRE_PRC148"
 #define RADIO_LR "ACRE_PRC117F"
 
-// KEYS
-#define KEY_WEST "ACE_key_west"
-#define KEY_EAST "ACE_key_east"
-#define KEY_IND "ACE_key_indp"
-
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:4","ACE_packingBandage:2","ACE_tourniquet","ACE_morphine"
 #define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6"
