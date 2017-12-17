@@ -142,8 +142,6 @@ class support_MG_F: Soldier_AR_F {// MMG
   backpack[] = {"B_Kitbag_rgr"};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
-  attachments[] = {};
-  opticChoices[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpack[] = {"B_Kitbag_rgr"};
