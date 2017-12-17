@@ -4,21 +4,23 @@
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "CUP_arifle_AK74"
-#define RIFLE_MAG "CUP_30Rnd_545x39_AK_M:8","CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M:2"
-#define RIFLE_ATTACHMENTS "CUP_optic_Kobra"
+#define RIFLE "rhs_weap_ak74n"
+#define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
+#define RIFLE_ATTACHMENTS "rhs_acc_dtk","rhs_acc_perst1ik"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS WARSAW_OPTICS
 // GL Rifle
-#define GLRIFLE "CUP_arifle_AK74_GL"
+#define GLRIFLE "rhs_weap_ak74n_gp25","rhs_weap_aks74n_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
-#define GLRIFLE_MAG_SMOKE "CUP_1Rnd_SMOKE_GP25_M:2","CUP_1Rnd_SmokeRed_GP25_M:2"
-#define GLRIFLE_MAG_HE "CUP_1Rnd_HE_GP25_M:5"
+#define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
+#define GLRIFLE_MAG_HE "rhs_VOG25:5"
 // Carbine
-#define CARBINE "CUP_arifle_AKS74"
+#define CARBINE "rhs_weap_aks74n"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "CUP_arifle_RPK74_45"
-#define AR_MAG "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:9"
+#define AR "CUP_arifle_RPK74"
+#define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
+#define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:1"
@@ -84,6 +86,7 @@ class Soldier_F {// rifleman
   items[] = {BASE_TOOLS};
   linkedItems[] = {BASE_LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
+  opticChoices[] = {ALT_OPTICS};
 };
 class Fic_Soldier_Carbine: Soldier_F {// carbine-man
   weapons[] = {CARBINE};
@@ -113,6 +116,8 @@ class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
+  attachments[] = {AR_ATTACHMENTS};
+  opticChoices[] = {};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};

@@ -4,22 +4,24 @@
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_akm"
+#define RIFLE "rhs_weap_akmn"
 #define RIFLE_MAG "30Rnd_762x39_Mag_F:8","30Rnd_762x39_Mag_Tracer_Green_F:2"
-#define RIFLE_ATTACHMENTS "rhs_acc_dtk1l"
+#define RIFLE_ATTACHMENTS "rhs_acc_dtkakm","rhs_acc_perst1ik"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
+#define ALT_OPTICS WARSAW_OPTICS,"rhs_acc_1p29","rhs_acc_1p78","rhs_acc_1pn93_1"
 // GL Rifle
-#define GLRIFLE "rhs_weap_akm_gp25","rhs_weap_akms_gp25"
+#define GLRIFLE "rhs_weap_akmn_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
 #define GLRIFLE_MAG_HE "rhs_VOG25:5"
 #define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
 // Carbine
-#define CARBINE "rhs_weap_akms"
+#define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "potato_arifle_RPK"
 #define AR_MAG "potato_75Rnd_762x39mm_tracer:6"
+#define AR_ATTACHMENTS "CUP_optic_Kobra"
 // Recon Rifle Attachments
 #define RECON_RIFLE_ATTACHMENTS "rhs_acc_pbs1"
 // AT
@@ -123,7 +125,8 @@ class potato_msv_AR: potato_msv_rifleman {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
-  attachments[] = {};
+  attachments[] = {AR_ATTACHMENTS};
+  opticChoices[] = {};
 };
 class potato_msv_g: potato_msv_rifleman {// Grenadier
   magazines[] += {AT_MAG};
