@@ -6,10 +6,9 @@
 // Rifle
 #define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag"
 #define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
-#define RIFLE_ATTACHMENTS "rhs_acc_1p63","rhs_acc_dtk","rhs_acc_perst1ik"
+#define RIFLE_ATTACHMENTS "rhs_acc_dtk","rhs_acc_perst1ik"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define AR_ATTACHMENTS "CUP_optic_Kobra"
-#define ALT_OPTICS "rhs_acc_ekp1","rhs_acc_pkas"
+#define ALT_OPTICS WARSAW_OPTICS
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
@@ -22,6 +21,7 @@
 // AR
 #define AR "CUP_arifle_RPK74"
 #define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
+#define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
 #define AT "rhs_weap_rpg26"
 // MMG
@@ -119,6 +119,7 @@ class Soldier_AR_F: Soldier_F {// AR
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
   attachments[] = {AR_ATTACHMENTS};
+  opticChoices[] = {};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpack[] = {"B_Kitbag_sgg"};

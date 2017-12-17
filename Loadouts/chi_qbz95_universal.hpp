@@ -6,9 +6,9 @@
 // Rifle
 #define RIFLE "arifle_CTAR_blk_F"
 #define RIFLE_MAG "30Rnd_580x42_Mag_F:8","30Rnd_580x42_Mag_Tracer_F:2"
-#define RIFLE_ATTACHMENTS "optic_ACO_grn","acc_pointer_IR"
+#define RIFLE_ATTACHMENTS "acc_pointer_IR"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
+#define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "arifle_CTAR_GL_blk_F"
 #define GLRIFLE_MAG RIFLE_MAG

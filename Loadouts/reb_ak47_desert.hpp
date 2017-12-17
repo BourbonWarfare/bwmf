@@ -19,6 +19,7 @@
 // AR
 #define AR "potato_arifle_RPK"
 #define AR_MAG "potato_75Rnd_762x39mm_tracer:5"
+#define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:1"
@@ -115,7 +116,8 @@ class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
-  attachments[] = {};
+  attachments[] = {AR_ATTACHMENTS};
+  opticChoices[] = {};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
@@ -140,6 +142,8 @@ class support_MG_F: Soldier_AR_F {// MMG
   backpack[] = {"B_Kitbag_rgr"};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  attachments[] = {};
+  opticChoices[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpack[] = {"B_Kitbag_rgr"};

@@ -49,7 +49,7 @@ class CfgLoadouts {
   // West factions
   #include "Loadouts\west_gear.hpp"
   class blu_f { // BluFor
-    #include "Loadouts\us_m4_ucp.hpp"
+    #include "Loadouts\us_m4_ocp.hpp"
   };
 
   // Indy factions
