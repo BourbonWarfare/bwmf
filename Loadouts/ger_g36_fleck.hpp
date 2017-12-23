@@ -1,5 +1,5 @@
 // Author: AACO
-// Description: German: G38 - Flecktarn Camo
+// Description: German: G36 - Flecktarn Camo
 
 #include "undef.hpp" // Reset defines
 
