@@ -1,5 +1,5 @@
 // Author: SovietOnion, AACO
-// Description: German: G38 - Troppentarn Camo
+// Description: German: G36 - Troppentarn Camo
 
 #include "undef.hpp" // Reset defines
 
