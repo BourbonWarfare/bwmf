@@ -1,22 +1,22 @@
-// Author: AACO
-// Description: German: G38 - Flecktarn Camo
+// Author: SovietOnion, AACO
+// Description: German: G36 - Troppentarn Camo
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_hk416d145"
-#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
+#define RIFLE "hlc_rifle_G36V"
+#define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8","hlc_30rnd_556x45_Tracers_G36:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_hk416d145_m320"
+#define GLRIFLE "hlc_rifle_G36VAG36"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
-#define CARBINE "rhs_weap_hk416d10"
+#define CARBINE "hlc_rifle_G36CV"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_arifle_MG36"
@@ -75,10 +75,10 @@ class Plane {};
 class Ship_F {};
 
 class Soldier_F {// rifleman
-  uniform[] = {"CUP_U_B_GER_Flecktarn_1","CUP_U_B_GER_Flecktarn_2"};
-  vest[] = {"CUP_V_B_GER_Carrier_Vest_3"};
-  headgear[] = {"rhsusf_opscore_fg_pelt","rhsusf_opscore_fg_pelt_cam"};
-  backpack[] = {"CUP_B_GER_Pack_Flecktarn"};
+  uniform[] = {"CUP_U_B_GER_Tropentarn_1","CUP_U_B_GER_Tropentarn_2"};
+  vest[] = {"CUP_V_I_RACS_Carrier_Vest_3"};
+  headgear[] = {"rhsusf_opscore_ut_pelt","rhsusf_opscore_ut_pelt_cam"};
+  backpack[] = {"CUP_B_GER_Pack_Tropentarn"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};

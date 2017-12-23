@@ -24,8 +24,8 @@
 // AT
 #define AT "rhs_weap_M136"
 // MMG
-#define MMG "rhs_weap_m240B"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "hlc_lmg_MG3KWS_b"
+#define MMG_MAG "hlc_100Rnd_762x51_M_MG3:5"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
