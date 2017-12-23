@@ -30,6 +30,8 @@ class CfgLoadouts {
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"
   // British: L85 - Woodland "Loadouts\brit_l85_wdpm.hpp"
   // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal.hpp" (apex)
+  // German: G36 - Flecktarn Camo "Loadouts\ger_g36_fleck.hpp"
+  // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
   // German: G38 - Flecktarn Camo "Loadouts\ger_g38_fleck.hpp"
   // German: G38 - Tropentarn Camo "Loadouts\ger_g38_tropen.hpp"
   // Ukraine: AK74 - TTskO "Loadouts\ukr_ak74_ttsko.hpp"
