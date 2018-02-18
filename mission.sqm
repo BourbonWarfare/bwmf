@@ -12,13 +12,13 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={653.41669,99.807922,1059.6511};
+		pos[]={681.00555,91.308769,1032.2285};
 		dir[]={0.044078793,-0.46208301,-0.88581848};
 		up[]={0.022972254,0.88676476,-0.4616352};
 		aside[]={-0.99882543,-3.9188308e-008,-0.049701821};
 	};
 };
-binarizationWanted=1;
+binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
@@ -30,13 +30,14 @@ addons[]=
 	"ace_mk6mortar",
 	"A3_Modules_F_Curator_Curator",
 	"ace_refuel",
-	"potato_units"
+	"potato_units",
+	"Desert"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -98,6 +99,11 @@ class AddonsMetaData
 			className="potato_units";
 			name="potato_units";
 			author="Potato";
+		};
+		class Item9
+		{
+			className="Desert";
+			name="Desert";
 		};
 	};
 };
@@ -404,6 +410,30 @@ class CustomAttributes
 	};
 	class Category1
 	{
+		name="potato_briefing_briefings";
+		class Attribute0
+		{
+			property="potato_briefing_briefingSettingsValue";
+			expression="[nil,_value] call potato_briefing_fnc_briefingSettingsAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="true,true";
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category2
+	{
 		name="Multiplayer";
 		class Attribute0
 		{
@@ -633,7 +663,7 @@ class CustomAttributes
 		};
 		nAttributes=11;
 	};
-	class Category2
+	class Category3
 	{
 		name="Scenario";
 		class Attribute0
@@ -681,7 +711,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=6;
+									items=8;
 									class Item0
 									{
 										class data
@@ -766,6 +796,34 @@ class CustomAttributes
 											value="acre_sys_core_terrainloss";
 										};
 									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="potato_missionmodules_aiskill_set";
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="potato_safestart_enabled";
+										};
+									};
 								};
 							};
 						};
@@ -782,7 +840,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=6;
+									items=8;
 									class Item0
 									{
 										class data
@@ -1034,6 +1092,96 @@ class CustomAttributes
 															};
 														};
 														value=0.25289679;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 												class Item1
