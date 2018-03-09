@@ -26,6 +26,7 @@ class CfgLoadouts {
   // For use with exporter - "Loadouts\blankForArsenal.hpp"
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
+  // NATO: MX - Tan "Loadouts\nato_mx_mcam.hpp"
   // British: L85 - Desert "Loadouts\brit_l85_ddpm.hpp"
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"
   // British: L85 - Woodland "Loadouts\brit_l85_wdpm.hpp"
@@ -36,9 +37,12 @@ class CfgLoadouts {
   // German: G38 - Tropentarn Camo "Loadouts\ger_g38_tropen.hpp"
   // Ukraine: AK74 - TTskO "Loadouts\ukr_ak74_ttsko.hpp"
   // "Ukraine": AK74 - Desert DPM "Loadouts\ukr_ak74_ddpm.hpp"
+  // AAF: F2000 - Green Hex ("Combat") "Loadouts\aaf_f2000_combat.hpp"
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
   // Russian: AK74 - Floral "Loadouts\ru_ak74_floral.hpp"
   // Russian: AK74 - Desert "Loadouts\ru_ak74_desert.hpp"
+  // CSAT: Katiba - Red Hex ("Ocamo") "Loadouts\csat_katiba_ocamo.hpp"
+  // CSAT: Katiba - Urban Hex "Loadouts\csat_katiba_urban.hpp"
   // Russian: AK74 - Digital "Loadouts\msv_ak74_emr.hpp" (msv)
   // Russian: AK74 - Desert "Loadouts\msv_ak74_emrd.hpp" (msv)
   // Russian: AK74 - Floral "Loadouts\msv_ak74_flora.hpp" (msv)
