@@ -4,7 +4,7 @@ class CfgLoadouts {
 
   // Fast, Easy Settings to change loadouts without touching the arrays.  For TVT Balancing.
   // Allow Zoomed Optics (1 is true, 0 is false) <Anything like a HAMR (4x) optic won't be added, "red dot" would be fine>
-  allowMagnifiedOptics = 1;
+  allowMagnifiedOptics = 0;
 
   // Allow changeable optics on a global level, note: optic options obey allowMagnifiedOptics rules
   allowChangeableOptics = 1;
