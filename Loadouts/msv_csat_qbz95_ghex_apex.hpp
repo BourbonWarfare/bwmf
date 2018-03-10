@@ -240,7 +240,7 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   weapons[] = {RECON_RIFLE};
   handguns[] = {PISTOL};
   magazines[] = {RECON_RIFLE_MAGS,BASE_GRENADES,PISTOL_MAG};
-  linkedItems[] = {BASE_LINKED};
+  linkedItems[] = {COMMON_LINKED};
   attachments[] = {RECON_RIFLE_ATTACHMENTS};
   handgunAttachments[] = {"muzzle_snds_L"};
   opticChoices[] = {};
@@ -250,7 +250,7 @@ class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class potato_msv_sf_sl: potato_msv_sf_ftl {// Recon Squad Leader
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {COMMON_LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
 class potato_msv_sf_g: potato_msv_sf_rifleman {//Recon Grenadier WARNING: REDUCED ROCKETS FOR VIPER TEAM
