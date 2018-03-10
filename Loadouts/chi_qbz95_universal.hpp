@@ -190,6 +190,7 @@ class Helipilot_F {// Pilot
   items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
+class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};

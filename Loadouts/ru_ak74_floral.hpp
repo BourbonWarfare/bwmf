@@ -200,6 +200,7 @@ class Helipilot_F {// Pilot
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
   attachments[] = {"rhs_acc_dtk"};
 };
+class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
   backpack[] = {"rhs_assault_umbts_engineer_empty"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};

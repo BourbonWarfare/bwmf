@@ -1,5 +1,5 @@
 // Author: Raeth
-// Description: CSAT: Pacific Mechanized with QBZ-95 rifles
+// Description: CSAT: QBZ-95 - Green Hex
 // WARNING: Spez is replaced with VIPER team, reducing role varity. Verify slot names correct before play
 
 #include "undef.hpp" // Reset defines
@@ -53,6 +53,7 @@
 #define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY,"H_HelmetLeaderO_ghex_F"
 #define BASE_LINKED COMMON_LINKED,"O_NVGoggles_ghex_F"
+#define LEADER_LINKED COMMON_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
 
 class Car {
@@ -118,7 +119,7 @@ class potato_msv_pol: potato_msv_rifleman { // Political Officer
   magazines[] = {"6Rnd_45ACP_Cylinder:3"};
   items[] += {RADIO_MR,RADIO_MR,BASE_MEDICAL}; // 2 radios
 };
-class potato_msv_AR: potato_msv_rifleman {// AR
+class potato_msv_ar: potato_msv_rifleman {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
