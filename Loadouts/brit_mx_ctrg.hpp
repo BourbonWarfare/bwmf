@@ -1,5 +1,5 @@
 // Author: BWMF
-// Description: NATO: MX (Black) - CTRG
+// Description: British: MX (Black) - CTRG
 
 #include "undef.hpp" // Reset defines
 
