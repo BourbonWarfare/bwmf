@@ -204,6 +204,7 @@ class soldier_repair_F: crew_F {// Repair Specialist
 };
 class Fic_eng: soldier_repair_F {
   headgear[] = {"H_HelmetO_ghex_F"};
+  vest[] = {"V_TacVest_oli"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };

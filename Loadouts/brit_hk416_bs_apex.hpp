@@ -1,24 +1,24 @@
 // Author: BWMF
-// Description: British: MX (Black) - CTRG
+// Description: British: HK416 - Brown Splinter
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "arifle_MX_Black_F"
-#define RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+#define RIFLE "arifle_SPAR_01_blk_F"
+#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "acc_pointer_IR"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "arifle_MX_GL_Black_F"
+#define GLRIFLE "arifle_SPAR_01_GL_blk_F"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "arifle_MXC_Black_F"
+#define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "arifle_MX_SW_Black_F"
-#define AR_MAG "100Rnd_65x39_caseless_mag_Tracer:4"
+#define AR "arifle_SPAR_02_blk_F"
+#define AR_MAG "150Rnd_556x45_Drum_Mag_Tracer_F:3"
 #define AR_ATTACHMENTS "acc_pointer_IR","bipod_01_F_snd"
 // AT
 #define AT "launch_NLAW_F"
@@ -34,11 +34,11 @@
 #define SAM_MAG "Titan_AA:3"
 #define SAM_MAG2 "Titan_AA:2"
 // Sniper Rifle
-#define SNIPER "srifle_EBR_F"
+#define SNIPER "arifle_SPAR_03_blk_F"
 #define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","acc_pointer_IR","bipod_01_F_snd"
 // Spotter Rifle
-#define SPOTTER "arifle_MXM_Black_F"
+#define SPOTTER RIFLE
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "optic_Arco","acc_pointer_IR","bipod_01_F_snd"
 // SMG
@@ -193,7 +193,6 @@ class Helipilot_F {// Pilot
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
-  uniform[] = {"U_B_CombatUniform_mcam_vest"};
   vest[] = {"V_Chestrig_khk"};
   headgear[] = {"H_HelmetCrew_B"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
@@ -208,6 +207,7 @@ class soldier_repair_F: crew_F {// Repair Specialist
 };
 class Fic_eng: soldier_repair_F {
   headgear[] = {"H_HelmetB"};
+  vest[] = {"V_PlateCarrierL_CTRG"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };

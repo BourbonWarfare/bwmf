@@ -183,12 +183,12 @@ class potato_msv_msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
   SAM_GEAR("B_Carryall_ocamo", SAM_MAG2)
 };
 class potato_msv_msaml: potato_msv_msamag {// SAM Leader
-  items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,RADIO_MR};
+  items[] += {LEADER_TOOLS,RADIO_MR};
+  linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_mtrl: Fic_Spotter { // Mortar Leader
-  items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,RANGE_FINDER,RADIO_LR};
+  items[] += {LEADER_TOOLS,RADIO_LR};
+  linkedItems[] += {LEADER_LINKED,RANGE_FINDER};
 };
 class potato_msv_mtrg: potato_msv_rifleman {// Mortar Gunner
   MORTAR_GEAR("O_Mortar_01_weapon_F")
@@ -242,16 +242,16 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   weapons[] = {RIFLE};
   handguns[] = {PISTOL};
   magazines[] = {RIFLE_MAG,BASE_GRENADES,PISTOL_MAG};
-  linkedItems[] = {COMMON_LINKED};
+  linkedItems[] = {BASE_LINKED};
   attachments[] = {RECON_RIFLE_ATTACHMENTS};
   handgunAttachments[] = {"muzzle_snds_L"};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
-  items[] += {COMMON_LEADER_TOOLS,KEY}; // Avoid using leader linked because it adds double headgear (viper is not mechanized)
-  linkedItems[] += {COMMON_LEADER_TOOLS,BINOS};
+  items[] += {COMMON_LEADER_TOOLS,KEY}; // Avoid using leader linked because it adds double headgear
+  linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class potato_msv_sf_sl: potato_msv_sf_ftl {// Recon Squad Leader
-  linkedItems[] = {COMMON_LINKED,COMMON_LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
 class potato_msv_sf_g: potato_msv_sf_rifleman {

@@ -25,10 +25,13 @@ class CfgLoadouts {
   // Available loadouts (configured for BluFor, Indy, and OpFor)
   // For use with exporter - "Loadouts\blankForArsenal.hpp"
   // AAF: F2000 - Green Digital "Loadouts\aaf_f2000_digi.hpp"
+  // British: HK416 - Brown Splinter "Loadouts\brit_hk416_bs_apex.hpp" (apex)
+  // British: HK416 - Green Splinter "Loadouts\brit_hk416_gs_apex.hpp" (apex)
   // British: L85 - Desert "Loadouts\brit_l85_ddpm.hpp"
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"
   // British: L85 - Woodland "Loadouts\brit_l85_wdpm.hpp"
-  // British: MX - CTRG "Loadouts\brit_mx_ctrg.hpp"
+  // British: MX - Brown Splinter "Loadouts\brit_mx_bs.hpp"
+  // British: MX - Green Splinter "Loadouts\brit_mx_gs_apex.hpp" (apex)
   // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal.hpp" (apex)
   // CSAT: QBZ95 - Green Hex "Loadouts\csat_qbz95_ghex_apex.hpp" (apex)
   // CSAT: QBZ95 - Hex "Loadouts\csat_qbz95_hex_apex.hpp" (apex)
