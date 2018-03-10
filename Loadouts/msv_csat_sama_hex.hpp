@@ -121,6 +121,7 @@ class potato_msv_pol: potato_msv_rifleman { // Political Officer
   vest[] = {"V_BandollierB_cbr"};
   headgear[] = {"H_MilCap_ocamo"};
   backpack[] = {}; // This loadout looks stupid with a backpack
+  weapons[] = {};
   handguns[] = {"hgun_Pistol_heavy_02_Yorris_F"};
   magazines[] = {"6Rnd_45ACP_Cylinder:3"};
   items[] += {RADIO_MR,RADIO_MR,BASE_MEDICAL}; // 2 radios
