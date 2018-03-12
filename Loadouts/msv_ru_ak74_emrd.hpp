@@ -60,7 +60,7 @@
 // Gear
 #define BASE_TOOLS COMMON_TOOLS
 #define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY
-#define BASE_LINKED COMMON_LINKED,"rhs_1PN138" // To be moved to tools if loadout bug is fixed
+#define BASE_LINKED COMMON_LINKED,"rhs_1PN138"
 #define LEADER_LINKED COMMON_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
 
@@ -123,11 +123,12 @@ class potato_msv_pol: potato_msv_rifleman { // Political Officer
   vest[] = {"rhs_vest_commander"};
   headgear[] = {"rhs_beret_mp1"};
   backpack[] = {}; // This loadout looks stupid with a backpack
-  weapons[] = {"rhs_weap_makarov_pm"};
+  weapons[] = {};
+  handguns[] = {"rhs_weap_makarov_pm"};
   magazines[] = {"rhs_mag_9x18_8_57N181S:3"};
   items[] += {RADIO_MR,RADIO_MR,BASE_MEDICAL}; // 2 radios
 };
-class potato_msv_AR: potato_msv_rifleman {// AR
+class potato_msv_ar: potato_msv_rifleman {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
@@ -186,12 +187,12 @@ class potato_msv_msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
   SAM_GEAR("B_Carryall_oli", SAM_MAG2)
 };
 class potato_msv_msaml: potato_msv_msamag {// SAM Leader
-  items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,RADIO_MR};
+  items[] += {LEADER_TOOLS,RADIO_MR};
+  linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_mtrl: Fic_Spotter { // Mortar Leader
-  items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,RANGE_FINDER,RADIO_LR};
+  items[] += {LEADER_TOOLS,RADIO_LR};
+  linkedItems[] += {LEADER_LINKED,RANGE_FINDER};
 };
 class potato_msv_mtrg: potato_msv_rifleman {// Mortar Gunner
   MORTAR_GEAR("O_Mortar_01_weapon_F")
@@ -207,8 +208,8 @@ class potato_msv_pilot {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {RADIO_LR};
-  items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR,"rhsusf_ANPVS_15"}; // Theres no double tube NVGs for pilots in RHS yet
-  linkedItems[] = {COMMON_LINKED,LEADER_LINKED,"rhsusf_ANPVS_15"};
+  items[] = {BASE_MEDICAL,COMMON_TOOLS,LEADER_TOOLS,RADIO_MR};
+  linkedItems[] = {COMMON_LINKED,LEADER_LINKED,"rhsusf_ANPVS_15"}; // Theres no double tube NVGs for pilots in RHS yet
   attachments[] = {"rhs_acc_dtk"};
 };
 class potato_msv_cc: potato_msv_pilot {};// Crew Chief
