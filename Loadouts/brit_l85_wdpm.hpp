@@ -1,4 +1,4 @@
-// Author: SovietOnion, AACO
+// Author: SovietOnion
 // Description: British: L85 - Disruptive Woodland
 
 #include "undef.hpp" // Reset defines

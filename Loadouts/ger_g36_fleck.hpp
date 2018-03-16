@@ -1,4 +1,4 @@
-// Author: AACO
+// Author: BWMF
 // Description: German: G36 - Flecktarn Camo
 
 #include "undef.hpp" // Reset defines

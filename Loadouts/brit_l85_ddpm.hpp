@@ -1,4 +1,4 @@
-// Author: SovietOnion, AACO
+// Author: SovietOnion
 // Description: British: L85 - Disruptive Desert
 
 #include "undef.hpp" // Reset defines
