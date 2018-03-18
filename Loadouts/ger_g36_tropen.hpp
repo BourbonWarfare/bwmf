@@ -7,14 +7,12 @@
 #define RIFLE "hlc_rifle_G36V"
 #define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8","hlc_30rnd_556x45_Tracers_G36:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "hlc_rifle_G36VAG36"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
 #define CARBINE "hlc_rifle_G36CV"
 #define CARBINE_MAG RIFLE_MAG
@@ -117,7 +115,6 @@ class Soldier_AR_F: Soldier_F {// AR
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
-  attachments[] = {AAR_ATTACHMENTS};
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT

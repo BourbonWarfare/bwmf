@@ -96,7 +96,6 @@ class Soldier_AR_F: Soldier_F {// AR
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
-  attachments[] = {AAR_ATTACHMENTS};
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT

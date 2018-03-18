@@ -8,14 +8,12 @@
 #define RIFLE "arifle_CTAR_ghex_F"
 #define RIFLE_MAG "30Rnd_580x42_Mag_F:8","30Rnd_580x42_Mag_Tracer_F:2"
 #define RIFLE_ATTACHMENTS "acc_pointer_IR"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "arifle_CTAR_GL_ghex_F"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareRed_F:4"
 // AR
 #define AR "arifle_CTARS_ghex_F"
 #define AR_MAG "100Rnd_580x42_Mag_F:4"
