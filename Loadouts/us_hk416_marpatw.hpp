@@ -1,52 +1,52 @@
 // Author: BWMF
-// Description: Czechia: Bren 805 - M95
+// Description: US: HK416 - Marine Pattern Woodland
 
-#include "undef.hpp"
+#include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "CUP_arifle_CZ805_A1"
-#define RIFLE_MAG "30Rnd_556x45_Stanag_green:8","30Rnd_556x45_Stanag_Tracer_Green:2"
-#define RIFLE_ATTACHMENTS "CUP_acc_ANPEQ_2"
+#define RIFLE "rhs_weap_hk416d145"
+#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
+#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "CUP_arifle_CZ805_GL"
+#define GLRIFLE "rhs_weap_hk416d145_m320"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "CUP_arifle_CZ805_A2"
+#define CARBINE "rhs_weap_hk416d10"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "CUP_lmg_minimi_railed"
-#define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
+#define AR "rhs_weap_m249_pip_L"
+#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "rhs_weap_M136"
 // MMG
-#define MMG "CUP_lmg_Pecheneg"
-#define MMG_MAG "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M:5"
+#define MMG "rhs_weap_m240B"
+#define MMG_MAG "rhsusf_100Rnd_762x51:5"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "rhs_weap_smaw"
+#define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
+#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
+#define MAT_OPTIC "rhs_weap_optic_smaw"
 // SAM
-#define SAM "rhs_weap_igla"
-#define SAM_MAG "rhs_mag_9k38_rocket:3"
-#define SAM_MAG2 "rhs_mag_9k38_rocket:2"
+#define SAM "rhs_weap_fim92"
+#define SAM_MAG "rhs_fim92_mag:3"
+#define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_svdp_npz"
-#define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:20"
-#define SNIPER_ATTACHMENTS "optic_LRPS"
+#define SNIPER "rhs_weap_m14ebrri"
+#define SNIPER_MAG "20Rnd_762x51_Mag:10"
+#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
 // Spotter Rifle
-#define SPOTTER RIFLE
+#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "CUP_acc_ANPEQ_2","CUP_optic_RCO"
+#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG
-#define SMG "CUP_smg_EVO"
-#define SMG_MAG "CUP_30Rnd_9x19_EVO:6"
+#define SMG "CUP_smg_MP5A5"
+#define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "CUP_hgun_Duty"
-#define PISTOL_MAG "16Rnd_9x21_Mag:3"
+#define PISTOL "rhsusf_weap_m9"
+#define PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
 // Gear
@@ -73,10 +73,10 @@ class Plane {};
 class Ship_F {};
 
 class Soldier_F {// rifleman
-  uniform[] = {"MNP_CombatUniform_CZ_A","MNP_CombatUniform_CZ_B"};
-  vest[] = {"MNP_Vest_CZ_1","MNP_Vest_CZ_2"};
-  headgear[] = {"MNP_Helmet_CZ"};
-  backpack[] = {"B_AssaultPack_rgr"};
+  uniform[] = {"CUP_U_B_USMC_FROG1_WMARPAT","CUP_U_B_USMC_FROG2_WMARPAT","CUP_U_B_USMC_FROG3_WMARPAT","CUP_U_B_USMC_FROG4_WMARPAT"};
+  vest[] = {"CUP_V_B_MTV_LegPouch","CUP_V_B_MTV_Pouches"};
+  headgear[] = {"CUP_H_USMC_MICH2000_WDL"};
+  backpack[] = {"B_FieldPack_khk"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
@@ -112,7 +112,6 @@ class Soldier_AR_F: Soldier_F {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
-  attachments[] = {};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
@@ -131,14 +130,13 @@ class Fic_Spotter: Soldier_F {
 class support_MG_F: Soldier_AR_F {// MMG
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
-  opticChoices[] = {};
+  attachments[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"B_Kitbag_rgr"};
   backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-  backpack[] = {"B_Carryall_oli"};
+  backpack[] = {"B_Carryall_khk"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
@@ -146,17 +144,17 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   secondaryAttachments[] = {MAT_OPTIC};
 };
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  backpack[] = {"B_Carryall_oli"};
+  backpack[] = {"B_Carryall_khk"};
   backpackItems[] = {};
-  magazines[] += {MAT_MAG2};
+  magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
-  SAM_GEAR("B_Carryall_oli", SAM_MAG)
+  SAM_GEAR("B_Carryall_khk", SAM_MAG)
   launchers[] = {SAM};
 };
 class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  SAM_GEAR("B_Carryall_oli", SAM_MAG2)
+  SAM_GEAR("B_Carryall_khk", SAM_MAG2)
 };
 class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("B_Mortar_01_weapon_F")
@@ -165,7 +163,7 @@ class support_AMort_F: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter_F: Fic_Spotter {// Spotter
-  headgear[] = {"MNP_Boonie_CZ"};
+  headgear[] = {"CUP_H_USMC_BOONIE_WDL"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
@@ -198,12 +196,12 @@ class crew_F: Fic_Soldier_Carbine {// Crew
   items[] += {BASE_MEDICAL};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
-  backpack[] = {"B_Carryall_oli"};
+  backpack[] = {"B_Carryall_khk"};
   backpackItems[] = {"Toolkit",RADIO_MR,KEY};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
 class Fic_eng: soldier_repair_F {
-  headgear[] = {"MNP_Helmet_CZ"};
+  headgear[] = {"CUP_H_USMC_MICH2000_WDL"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
