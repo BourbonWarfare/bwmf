@@ -1,34 +1,34 @@
-// Author: Rispetto
-// Description: Canada: M16 - CadPat Desert
+// Author: BWMF
+// Description: US: HK416 - Marine Pattern Desert
 
-#include "undef.hpp"
+#include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_m16a4_carryhandle"
+#define RIFLE "rhs_weap_hk416d145"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_compm4"
+#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m16a4_carryhandle_M203"
+#define GLRIFLE "rhs_weap_hk416d145_m320"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m16a4"
+#define CARBINE "rhs_weap_hk416d10"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "rhs_weap_m249_pip_L"
 #define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "rhs_weap_M136"
 // MMG
 #define MMG "rhs_weap_m240B"
 #define MMG_MAG "rhsusf_100Rnd_762x51:5"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "rhs_weap_smaw"
+#define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
+#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
+#define MAT_OPTIC "rhs_weap_optic_smaw"
 // SAM
 #define SAM "rhs_weap_fim92"
 #define SAM_MAG "rhs_fim92_mag:3"
@@ -38,15 +38,15 @@
 #define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m16a4"
+#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "rhsusf_weap_m1911a1"
-#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+#define PISTOL "rhsusf_weap_m9"
+#define PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
 // Gear
@@ -73,9 +73,9 @@ class Plane {};
 class Ship_F {};
 
 class Soldier_F {// rifleman
-  uniform[] = {"MNP_CombatUniform_Canada_D","MNP_CombatUniform_Canada_DS"};
-  vest[] = {"MNP_Vest_Canada_D","MNP_Vest_Canada_D2"};
-  headgear[] = {"MNP_Helmet_Canada_D"};
+  uniform[] = {"CUP_U_B_USMC_FROG1_DMARPAT","CUP_U_B_USMC_FROG2_DMARPAT","CUP_U_B_USMC_FROG3_DMARPAT","CUP_U_B_USMC_FROG4_DMARPAT"};
+  vest[] = {"CUP_V_B_MTV_LegPouch","CUP_V_B_MTV_Pouches"};
+  headgear[] = {"CUP_H_USMC_MICH2000_DES"};
   backpack[] = {"B_FieldPack_cbr"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -133,7 +133,6 @@ class support_MG_F: Soldier_AR_F {// MMG
   attachments[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
@@ -147,7 +146,7 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
   backpack[] = {"B_Carryall_cbr"};
   backpackItems[] = {};
-  magazines[] += {MAT_MAG2};
+  magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_Soldier_Carbine {// SAM Gunner
@@ -164,7 +163,7 @@ class support_AMort_F: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter_F: Fic_Spotter {// Spotter
-  headgear[] = {"MNP_Boonie_CAN_D"};
+  headgear[] = {"CUP_H_USMC_BOONIE_DES"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
@@ -202,7 +201,7 @@ class soldier_repair_F: crew_F {// Repair Specialist
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
 class Fic_eng: soldier_repair_F {
-  headgear[] = {"MNP_Helmet_Canada_D"};
+  headgear[] = {"CUP_H_USMC_MICH2000_DES"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };

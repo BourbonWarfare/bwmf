@@ -34,12 +34,14 @@ class CfgLoadouts {
   // British: MX - Green Splinter "Loadouts\brit_mx_gs_apex.hpp" (apex)
   // Canadian: M16 - CadPat Desert "Loadouts\can_m16_cpd.hpp"
   // Canadian: M16 - CadPat Tropical Woodland "Loadouts\can_m16_cptw.hpp"
-  // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal.hpp" (apex)
+  // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal_apex.hpp" (apex)
   // CSAT: QBZ95 - Green Hex "Loadouts\csat_qbz95_ghex_apex.hpp" (apex)
   // CSAT: QBZ95 - Hex "Loadouts\csat_qbz95_hex_apex.hpp" (apex)
   // CSAT: QBZ95 - Urban Hex "Loadouts\csat_qbz95_uhex_apex.hpp" (apex)
   // CSAT: Sama - Hex "Loadouts\csat_sama_hex.hpp"
   // CSAT: Sama - Urban Hex "Loadouts\csat_sama_uhex.hpp"
+  // Czechia: Bren 805 - M95 "Loadouts\cz_B805_m95.hpp"
+  // Czechoslovakia: vz. 58 - M95 "Loadouts\cz_vz58_m95.hpp"
   // FIA: Tar-21 - Guerilla "Loadouts\fia_tar21_gur.hpp"
   // German: G36 - Flecktarn Camo "Loadouts\ger_g36_fleck.hpp"
   // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
@@ -51,16 +53,20 @@ class CfgLoadouts {
   // Russian: AK74 - Floral "Loadouts\msv_ru_ak74_flora.hpp" (msv)
   // Russian: AKM - Soviet Uniforms "Loadouts\msv_sov_akm_ttsko.hpp" (msv)
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
-  // Russian: AK74 - Desert "Loadouts\ru_ak74_desert.hpp"
+  // Russian: AK74 - Uniform Camouflage Coloring Desert "Loadouts\ru_ak74_desert.hpp"
+  // Russian: AK74 - Uniform Camouflage Coloring Summer "Loadouts\ru_ak74_emr.hpp"
   // Russian: AK74 - Floral "Loadouts\ru_ak74_floral.hpp"
   // Ukraine: AK74 - TTskO "Loadouts\ukr_ak74_ttsko.hpp"
   // "Ukraine": AK74 - Desert DPM "Loadouts\ukr_ak74_ddpm.hpp"
-  // US: HK416 - Multi-Terrain Pattern "Loadouts\us_hk416_mtp.hpp"
-  // US: HK416 - Tropical "Loadouts\us_hk416_trop.hpp"
+  // US: HK416 - Marine Pattern Desert "Loadouts\us_hk416_marpatd.hpp"
+  // US: HK416 - Marine Pattern Woodland "Loadouts\us_hk416_marpatw.hpp"
+  // US: HK416 - Multi-Terrain Pattern "Loadouts\us_hk416_mtp_apex.hpp" (apex)
+  // US: HK416 - Tropical "Loadouts\us_hk416_trop_apex.hpp" (apex)
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
+  // US: M16 - M81 "Loadouts\us_m16_m81.hpp"
   // US: MX - Multi-Terrain Pattern "Loadouts\us_mx_mtp.hpp"
-  // US: MX - Tropical "Loadouts\us_mx_trop.hpp"
+  // US: MX - Tropical "Loadouts\us_mx_trop_apex.hpp" (apex)
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)

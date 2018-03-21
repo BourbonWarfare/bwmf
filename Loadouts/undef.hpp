@@ -19,9 +19,6 @@
 #ifdef RIFLE_ATTACHMENTS
   #undef RIFLE_ATTACHMENTS
 #endif
-#ifdef AAR_ATTACHMENTS
-  #undef AAR_ATTACHMENTS
-#endif
 #ifdef GLRIFLE
   #undef GLRIFLE
 #endif
@@ -33,9 +30,6 @@
 #endif
 #ifdef GLRIFLE_MAG_HE
   #undef GLRIFLE_MAG_HE
-#endif
-#ifdef GLRIFLE_MAG_FLARE
-  #undef GLRIFLE_MAG_FLARE
 #endif
 #ifdef CARBINE
   #undef CARBINE

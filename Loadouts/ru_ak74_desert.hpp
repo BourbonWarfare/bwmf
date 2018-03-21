@@ -1,22 +1,20 @@
 // Author: SovietOnion
-// Description: Russian: AK74 - Desert Digital
+// Description: Russian: AK74 - Uniform camouflage coloring desert
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "rhs_weap_ak74m","rhs_weap_ak74m_2mag","rhs_weap_ak74m_desert"
-#define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
+#define RIFLE_MAG "30Rnd_545x39_Mag_Green_F:8","30Rnd_545x39_Mag_Tracer_Green_F:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_dtk","rhs_acc_perst1ik"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS WARSAW_OPTICS
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
-#define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
-#define GLRIFLE_MAG_HE "rhs_VOG25:5"
-#define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
+#define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE RIFLE
+#define CARBINE "rhs_weap_ak105"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_arifle_RPK74"
@@ -30,7 +28,7 @@
 // MAT
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
-#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
+#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:1","rhs_rpg7_PG7VL_mag:2"
 #define MAT_OPTIC "rhs_acc_pgo7v3"
 // SAM
 #define SAM "rhs_weap_igla"
@@ -77,9 +75,9 @@ class Ship_F {};
 
 class Soldier_F { // rifleman
   uniform[] = {"rhs_uniform_emr_des_patchless"};
-  vest[] = {"rhs_6b23_6sh116","rhs_6b23_digi_rifleman","rhs_6b23_6sh92","rhs_6b23_digi_6sh92_headset","rhs_6b23_6sh92_radio"};
-  headgear[] = {"rhs_6b27m_green_ess","rhs_6b27m_green","rhs_6b27m_green_bala","rhs_6b27m_green_ess_bala","rhs_6b26_ess_green","rhs_6b26_ess_bala_green"};
-  backpack[] = {"rhs_assault_umbts","rhs_sidor"};
+  vest[] = {"rhs_6b23_6sh116","rhs_6b23_6sh92","rhs_6b23_digi_6sh92_headset"};
+  headgear[] = {"rhs_6b27m_green","rhs_6b27m_green_bala"};
+  backpack[] = {"B_AssaultPack_cbr"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
@@ -100,6 +98,7 @@ class Soldier_TL_F: Soldier_F {// FTL
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class soldier_SL_F: Soldier_TL_F { // SL
+  backpack[] = {"B_Kitbag_cbr"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -121,16 +120,15 @@ class Soldier_AR_F: Soldier_F {// AR
   opticChoices[] = {};
 };
 class Soldier_AAR_F: Soldier_F {// AAR
-  backpack[] = {"B_Kitbag_sgg"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] += {AR_MAG};
-  attachments[] = {AAR_ATTACHMENTS};
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
- vest[] = {"rhs_6b23_digi_medic"};
+  vest[] = {"rhs_6b23_digi_medic"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -138,17 +136,17 @@ class Fic_Spotter: Soldier_F {
   linkedItems[] += {RANGE_FINDER};
 };
 class support_MG_F: Soldier_AR_F {// MMG
-  backpack[] = {"B_Kitbag_sgg"};
+  backpack[] = {"B_Kitbag_cbr"};
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
 };
 class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"B_Kitbag_sgg"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] += {MMG_MAG};
 };
 class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
-  backpack[] = {"rhs_rpg_empty"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
@@ -156,17 +154,17 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   secondaryAttachments[] = {MAT_OPTIC};
 };
 class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  backpack[] = {"rhs_rpg_empty"};
+  backpack[] = {"B_Carryall_cbr"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
 };
 class soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
-  SAM_GEAR("B_Carryall_oli", SAM_MAG)
+  SAM_GEAR("B_Carryall_cbr", SAM_MAG)
   launchers[] = {SAM};
 };
 class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
-  SAM_GEAR("B_Carryall_oli", SAM_MAG)
+  SAM_GEAR("B_Carryall_cbr", SAM_MAG)
 };
 class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("O_Mortar_01_weapon_F")
@@ -202,6 +200,7 @@ class Helipilot_F {// Pilot
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
+  headgear[] = {"rhs_tsh4","rhs_tsh4_bala"};
   backpack[] = {"rhs_assault_umbts_engineer_empty"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] += {KEY,RADIO_LR};
@@ -213,7 +212,8 @@ class soldier_repair_F: crew_F {// Repair Specialist
   linkedItems[] = {BASE_LINKED,LEADER_LINKED};
 };
 class Fic_eng: soldier_repair_F {
-  backpack[] = {"B_Carryall_oli"};
+  headgear[] = {"rhs_6b27m_green","rhs_6b27m_green_bala"};
+  backpack[] = {"B_Carryall_cbr"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };

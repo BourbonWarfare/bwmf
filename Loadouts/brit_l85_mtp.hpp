@@ -7,14 +7,12 @@
 #define RIFLE "CUP_arifle_L85A2_G","CUP_arifle_L85A2_NG"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "CUP_acc_ANPEQ_2"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "CUP_arifle_L85A2_GL"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
@@ -38,7 +36,7 @@
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
 #define SNIPER "CUP_srifle_L129A1"
-#define SNIPER_MAG "CUP_20Rnd_762x51_DMR:10"
+#define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","CUP_acc_ANPEQ_2","CUP_bipod_Harris_1A2_L"
 // Spotter Rifle
 #define SPOTTER "CUP_arifle_L85A2_G"
@@ -121,7 +119,6 @@ class Soldier_AR_F: Soldier_F {// AR
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
-  attachments[] = {AAR_ATTACHMENTS};
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT

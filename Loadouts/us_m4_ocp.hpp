@@ -5,16 +5,14 @@
 
 // Rifle
 #define RIFLE "rhs_weap_m4a1_carryhandle_grip2"
-#define RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red:2"
+#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
-#define GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
 #define CARBINE "rhs_weap_m4a1_carryhandle_grip"
 #define CARBINE_MAG RIFLE_MAG
@@ -37,7 +35,7 @@
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
 #define SNIPER "rhs_weap_m14ebrri"
-#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"
+#define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
 // Spotter Rifle
 #define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
@@ -121,7 +119,6 @@ class Soldier_AR_F: Soldier_F {// AR
 };
 class Soldier_AAR_F: Soldier_F {// AAR
   backpackItems[] += {AR_MAG};
-  attachments[] = {AAR_ATTACHMENTS};
   linkedItems[] += {BINOS};
 };
 class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT

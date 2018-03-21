@@ -5,16 +5,14 @@
 
 // Rifle
 #define RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_2mag"
-#define RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
+#define RIFLE_MAG "30Rnd_545x39_Mag_Green_F:8","30Rnd_545x39_Mag_Tracer_Green_F:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_dtk","rhs_acc_perst1ik"
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS WARSAW_OPTICS,"rhs_acc_1p29","rhs_acc_1p78","rhs_acc_1pn93_1"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
-#define GLRIFLE_MAG_SMOKE "rhs_GRD40_White:2","rhs_GRD40_Red:2"
-#define GLRIFLE_MAG_HE "rhs_VOG25:5"
-#define GLRIFLE_MAG_FLARE "rhs_VG40OP_red:4"
+#define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
+#define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // AR
 #define AR "CUP_arifle_RPK74M"
 #define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
@@ -30,7 +28,7 @@
 // MAT
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
-#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_OG7V_mag:1"
+#define MAT_MAG2 "rhs_rpg7_PG7VR_mag:1","rhs_rpg7_PG7VL_mag:2"
 #define MAT_OPTIC "rhs_acc_pgo7v3"
 // SAM
 #define SAM "rhs_weap_igla"
