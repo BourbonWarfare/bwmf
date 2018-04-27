@@ -43,6 +43,8 @@ class CfgLoadouts {
   // Czechia: Bren 805 - M95 "Loadouts\cz_B805_m95.hpp"
   // Czechoslovakia: vz. 58 - M95 "Loadouts\cz_vz58_m95.hpp"
   // FIA: Tar-21 - Guerilla "Loadouts\fia_tar21_gur.hpp"
+  // Finland: AK103 - M05 (Snow) "Loadouts\fin_ak103_m05s.hpp"
+  // Finland: AK103 - M05 (Woodland) "Loadouts\fin_ak103_m05w.hpp"
   // German: G36 - Flecktarn Camo "Loadouts\ger_g36_fleck.hpp"
   // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
   // German: G38 - Flecktarn Camo "Loadouts\ger_g38_fleck.hpp"
