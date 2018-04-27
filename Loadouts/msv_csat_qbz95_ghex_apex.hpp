@@ -46,12 +46,12 @@
 #define PISTOL "hgun_Rook40_F"
 #define PISTOL_MAG "16Rnd_9x21_Mag:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
+#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
-#define BASE_TOOLS COMMON_TOOLS
-#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY,"H_HelmetLeaderO_ghex_F"
-#define BASE_LINKED COMMON_LINKED,"O_NVGoggles_ghex_F"
-#define LEADER_LINKED COMMON_LEADER_LINKED
+#define TOOLS BASE_TOOLS
+#define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY,"H_HelmetLeaderO_ghex_F"
+#define LINKED BASE_LINKED,"O_NVGoggles_ghex_F"
+#define LEADER_LINKED BASE_LEADER_LINKED
 #define MSV_EXP "DemoCharge_Remote_Mag:2"
 
 class Car {
@@ -80,8 +80,8 @@ class potato_msv_rifleman { // rifleman
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS};
-  linkedItems[] = {BASE_LINKED};
+  items[] = {TOOLS};
+  linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {ALT_OPTICS};
 };
@@ -89,14 +89,14 @@ class potato_msv_sr: potato_msv_rifleman {// FTL
   vest[] = {"V_HarnessOGL_ghex_F"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
-  items[] += {COMMON_LEADER_TOOLS,KEY};
+  items[] += {BASE_LEADER_TOOLS,SIDE_KEY};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class potato_msv_sl: potato_msv_sr { // SL
   headgear[] = {"H_HelmetCrew_O_ghex_F"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
 class potato_msv_plt: potato_msv_sl { // PLT
@@ -195,8 +195,8 @@ class potato_msv_pilot {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {RADIO_LR};
-  items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  linkedItems[] = {LINKED,LEADER_LINKED};
   attachments[] = {};
 };
 class potato_msv_cc: potato_msv_pilot {// Crew Chief
@@ -205,7 +205,7 @@ class potato_msv_cc: potato_msv_pilot {// Crew Chief
 class fic_vehicle_crewman: potato_msv_rifleman {// Vehicle crew base
   headgear[] = {"H_HelmetCrew_O_ghex_F"};
   magazines[] = {RIFLE_MAG,CREW_GRENADES};
-  backpackItems[] = {KEY};
+  backpackItems[] = {SIDE_KEY};
   linkedItems[] += {LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
@@ -224,10 +224,10 @@ class potato_msv_eng: potato_msv_rifleman {// Demoman
   items[] += {BASE_ENG,BASE_MEDICAL};
   backpackItems[] = {"Toolkit"};
   magazines[] += {MSV_EXP};
-  linkedItems[] = {BASE_LINKED};
+  linkedItems[] = {LINKED};
 };
 class potato_msv_engl: potato_msv_eng {// Demoman Leader
-  backpackItems[] += {RADIO_MR,KEY};
+  backpackItems[] += {RADIO_MR,SIDE_KEY};
   linkedItems[] += {LEADER_LINKED};
 };
 class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
@@ -238,17 +238,17 @@ class potato_msv_sf_rifleman: potato_msv_rifleman {// Recon Rifleman
   weapons[] = {RECON_RIFLE};
   handguns[] = {PISTOL};
   magazines[] = {RECON_RIFLE_MAGS,BASE_GRENADES,PISTOL_MAG};
-  linkedItems[] = {COMMON_LINKED};
+  linkedItems[] = {BASE_LINKED};
   attachments[] = {RECON_RIFLE_ATTACHMENTS};
   handgunAttachments[] = {"muzzle_snds_L"};
   opticChoices[] = {};
 };
 class potato_msv_sf_ftl: potato_msv_sf_rifleman {// Recon Senior Rifleman
-  items[] += {COMMON_LEADER_TOOLS,KEY}; // Avoid using leader tools because it adds double headgear (viper is not mechanized)
+  items[] += {BASE_LEADER_TOOLS,SIDE_KEY}; // Avoid using leader tools because it adds double headgear (viper is not mechanized)
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class potato_msv_sf_sl: potato_msv_sf_ftl {// Recon Squad Leader
-  linkedItems[] = {COMMON_LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
 class potato_msv_sf_g: potato_msv_sf_rifleman {//Recon Grenadier WARNING: REDUCED ROCKETS FOR VIPER TEAM

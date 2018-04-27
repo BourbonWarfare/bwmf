@@ -112,14 +112,14 @@
 #ifdef LEADER_GRENADES
   #undef LEADER_GRENADES
 #endif
-#ifdef BASE_TOOLS
-  #undef BASE_TOOLS
+#ifdef TOOLS
+  #undef TOOLS
 #endif
 #ifdef LEADER_TOOLS
   #undef LEADER_TOOLS
 #endif
-#ifdef BASE_LINKED
-  #undef BASE_LINKED
+#ifdef LINKED
+  #undef LINKED
 #endif
 #ifdef LEADER_LINKED
   #undef LEADER_LINKED

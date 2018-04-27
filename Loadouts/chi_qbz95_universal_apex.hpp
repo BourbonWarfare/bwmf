@@ -48,12 +48,12 @@
 #define PISTOL "rhs_weap_pya"
 #define PISTOL_MAG "rhs_mag_9x19_17:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,CHEM_LIGHT
+#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
-#define BASE_TOOLS COMMON_TOOLS
-#define LEADER_TOOLS COMMON_LEADER_TOOLS,KEY
-#define BASE_LINKED COMMON_LINKED
-#define LEADER_LINKED COMMON_LEADER_LINKED
+#define TOOLS BASE_TOOLS
+#define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
+#define LINKED BASE_LINKED
+#define LEADER_LINKED BASE_LEADER_LINKED
 
 class Car {
   TransportWeapons[] = {AT};
@@ -80,8 +80,8 @@ class Soldier_F { // rifleman
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS};
-  linkedItems[] = {BASE_LINKED};
+  items[] = {TOOLS};
+  linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {ALT_OPTICS};
 };
@@ -98,15 +98,15 @@ class Soldier_TL_F: Soldier_F {// FTL
 class soldier_SL_F: Soldier_TL_F { // SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
 class officer_F: Soldier_SL_F { // CO and DC
   items[] += {RADIO_LR};
 };
 class soldier_UAV_F: Soldier_F {
-  backpack[] = {UAV_BACKPACK};
-  linkedItems[] += {UAV_TERMINAL};
+  backpack[] = {SIDE_UAV_BACKPACK};
+  linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class soldier_GL_F: Soldier_TL_F {}; // GP Dude
 class Soldier_AR_F: Soldier_F {// AR
@@ -172,8 +172,8 @@ class spotter_F: Fic_Spotter {// Spotter
 class sniper_F: spotter_F {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
-  items[] = {BASE_TOOLS,"ACE_RangeCard"};
-  linkedItems[] = {BASE_LINKED};
+  items[] = {TOOLS,"ACE_RangeCard"};
+  linkedItems[] = {LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};
 };
 class Helipilot_F {// Pilot
@@ -184,20 +184,20 @@ class Helipilot_F {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {RADIO_LR};
-  items[] = {BASE_MEDICAL,BASE_TOOLS,LEADER_TOOLS,RADIO_MR};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class helicrew_F: Helipilot_F {}; // Pilot
 class crew_F: Fic_Soldier_Carbine {// Crew
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] += {KEY,RADIO_LR};
+  backpackItems[] += {SIDE_KEY,RADIO_LR};
   linkedItems[] += {LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
 };
 class soldier_repair_F: crew_F {// Repair Specialist
-  backpackItems[] = {"Toolkit",RADIO_MR,KEY};
-  linkedItems[] = {BASE_LINKED,LEADER_LINKED};
+  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
+  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class Fic_eng: soldier_repair_F {
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};

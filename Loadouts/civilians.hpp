@@ -12,7 +12,7 @@ class CIV_F {
     handguns[] = {};
     magazines[] = {};
     items[] = {BASE_MEDICAL};
-    linkedItems[] = {BASE_LINKED};
+    linkedItems[] = {LINKED};
     attachments[] = {};
   };
   class C_journalist_F: C_man_1 {
