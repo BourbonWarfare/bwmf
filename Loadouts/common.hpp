@@ -8,10 +8,10 @@
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:4","ACE_packingBandage:2","ACE_tourniquet","ACE_morphine"
 #define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6"
-#define COMMON_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
-#define COMMON_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
-#define COMMON_LINKED "ItemMap","ItemCompass","ItemWatch"
-#define COMMON_LEADER_LINKED "ItemGPS"
+#define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item","ACE_earplugs"
+#define BASE_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
+#define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
+#define BASE_LEADER_LINKED "ItemGPS"
 #define BASE_FRAG "HandGrenade:2"
 #define BASE_SMOKES "SmokeShell:2"
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
@@ -22,7 +22,7 @@
 #define BASE_EXP "DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define BINOS "Binocular"
-#define RANGE_FINDER "ACE_Vector"
+#define RANGE_FINDER "ACE_VectorDay"
 
 // OPTIX
 #define WARSAW_OPTICS "rhs_acc_1p63", "rhs_acc_ekp1", "rhs_acc_ekp8_02", "rhs_acc_pkas" // note RHS and CUP mount optics differently, not cross compatible

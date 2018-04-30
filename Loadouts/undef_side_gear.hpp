@@ -1,13 +1,13 @@
 // Reset side defines
-#ifdef KEY
-  #undef KEY
+#ifdef SIDE_KEY
+  #undef SIDE_KEY
 #endif
-#ifdef CHEM_LIGHT
-  #undef CHEM_LIGHT
+#ifdef SIDE_CHEM_LIGHT
+  #undef SIDE_CHEM_LIGHT
 #endif
-#ifdef UAV_BACKPACK
-  #undef UAV_BACKPACK
+#ifdef SIDE_UAV_BACKPACK
+  #undef SIDE_UAV_BACKPACK
 #endif
-#ifdef UAV_TERMINAL
-  #undef UAV_TERMINAL
+#ifdef SIDE_UAV_TERMINAL
+  #undef SIDE_UAV_TERMINAL
 #endif
