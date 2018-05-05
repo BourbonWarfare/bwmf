@@ -40,8 +40,10 @@ class CfgLoadouts {
   // CSAT: QBZ95 - Urban Hex "Loadouts\csat_qbz95_uhex_apex.hpp" (apex)
   // CSAT: Sama - Hex "Loadouts\csat_sama_hex.hpp"
   // CSAT: Sama - Urban Hex "Loadouts\csat_sama_uhex.hpp"
-  // Czechia: Bren 805 - M95 "Loadouts\cz_B805_m95.hpp"
-  // Czechoslovakia: vz. 58 - M95 "Loadouts\cz_vz58_m95.hpp"
+  // Czechia: Bren 805 - M95 Desert "Loadouts\cz_B805_m95d.hpp"
+  // Czechia: Bren 805 - M95 Woodland "Loadouts\cz_B805_m95w.hpp"
+  // Czechoslovakia: vz. 58 Desert - M95 "Loadouts\cz_vz58_m95d.hpp"
+  // Czechoslovakia: vz. 58 Woodland - M95 "Loadouts\cz_vz58_m95w.hpp"
   // FIA: Tar-21 - Guerilla "Loadouts\fia_tar21_gur.hpp"
   // Finland: AK103 - M05 (Snow) "Loadouts\fin_ak103_m05s.hpp"
   // Finland: AK103 - M05 (Woodland) "Loadouts\fin_ak103_m05w.hpp"
@@ -54,12 +56,14 @@ class CfgLoadouts {
   // Russian: AK74 - Desert "Loadouts\msv_ru_ak74_emrd.hpp" (msv)
   // Russian: AK74 - Floral "Loadouts\msv_ru_ak74_flora.hpp" (msv)
   // Russian: AKM - Soviet Uniforms "Loadouts\msv_sov_akm_ttsko.hpp" (msv)
+  // Norwegian: HK416 - M/03 Desert Desert "Loadouts\no_hk416_m03.hpp"
+  // Norwegian: HK416 - M/98 Woodland "Loadouts\no_hk416_m98.hpp"
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
   // Russian: AK74 - Uniform Camouflage Coloring Desert "Loadouts\ru_ak74_desert.hpp"
   // Russian: AK74 - Uniform Camouflage Coloring Summer "Loadouts\ru_ak74_emr.hpp"
   // Russian: AK74 - Floral "Loadouts\ru_ak74_floral.hpp"
   // Ukraine: AK74 - TTskO "Loadouts\ukr_ak74_ttsko.hpp"
-  // "Ukraine": AK74 - Desert DPM "Loadouts\ukr_ak74_ddpm.hpp"
+  // Ukraine: AK74 - Desert DPM "Loadouts\ukr_ak74_ddpm.hpp"
   // US: HK416 - Marine Pattern Desert "Loadouts\us_hk416_marpatd.hpp"
   // US: HK416 - Marine Pattern Woodland "Loadouts\us_hk416_marpatw.hpp"
   // US: HK416 - Multi-Terrain Pattern "Loadouts\us_hk416_mtp_apex.hpp" (apex)
