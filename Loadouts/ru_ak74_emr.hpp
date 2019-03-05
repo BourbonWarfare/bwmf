@@ -98,7 +98,7 @@ class Soldier_TL_F: Soldier_F {// FTL
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class soldier_SL_F: Soldier_TL_F { // SL
-  backpack[] = {"B_Kitbag_rgr"};
+  backpack[] = {"B_Kitbag_sgg"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
