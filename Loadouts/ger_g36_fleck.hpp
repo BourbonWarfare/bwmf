@@ -73,9 +73,9 @@ class Plane {};
 class Ship_F {};
 
 class Soldier_F {// rifleman
-  uniform[] = {"CUP_U_B_GER_Flecktarn_1","CUP_U_B_GER_Flecktarn_2"};
-  vest[] = {"CUP_V_B_GER_Carrier_Vest_3"};
-  headgear[] = {"rhsusf_opscore_fg_pelt","rhsusf_opscore_fg_pelt_cam"};
+  uniform[] = {"CUP_U_B_GER_Fleck_Crye","CUP_U_B_GER_Fleck_Crye2"};
+  vest[] = {"CUP_V_B_GER_PVest_Fleck_RFL"};
+  headgear[] = {"CUP_H_Ger_M92_Cover","CUP_H_Ger_M92_Cover_GG_CF"};
   backpack[] = {"CUP_B_GER_Pack_Flecktarn"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -96,6 +96,7 @@ class Soldier_TL_F: Soldier_F {// FTL
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class Soldier_SL_F: Soldier_TL_F {// SL
+  vest[] = {"CUP_V_B_GER_PVest_Fleck_TL"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -109,6 +110,7 @@ class soldier_UAV_F: Soldier_F {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class Soldier_AR_F: Soldier_F {// AR
+  vest[] = {"CUP_V_B_GER_PVest_Fleck_MG"};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
@@ -121,6 +123,7 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
+  vest[] = {"CUP_V_B_GER_PVest_Fleck_Med"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
