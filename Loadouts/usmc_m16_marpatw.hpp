@@ -1,5 +1,5 @@
 // Author: BWMF
-// Description: US: HK416 - Marine Pattern Desert
+// Description: US: M16 - Marine Pattern Desert
 
 #include "undef.hpp" // Reset defines
 
@@ -193,7 +193,7 @@ class Helipilot_F {// Pilot
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class helicrew_F: Helipilot_F {}; // Pilot
-class crew_F: Fic_Soldier_Carbine {// Crew 
+class crew_F: Fic_Soldier_Carbine {// Crew
   vest[] = {"rhsusf_spc_crewman"};
   headgear[] = {"H_HelmetCrew_I"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
