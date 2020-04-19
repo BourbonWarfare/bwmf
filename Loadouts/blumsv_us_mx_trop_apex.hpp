@@ -286,7 +286,7 @@ class Fic_eng: Fic_Soldier_Carbine {
 };
 //Use one of Explosive Specialist or Mine Specialist for the engineer team.
 class potato_usmc_eod: Fic_eng {// Explosive Specialist
-  backpackItems[] = {"Toolkit"};
+  backpackItems[] += {"Toolkit"};
   magazines[] += {BASE_EXP};
 };
 class potato_usmc_eodl: potato_usmc_sl {// Explosive Specialist leader
@@ -298,14 +298,14 @@ class potato_usmc_eodl: potato_usmc_sl {// Explosive Specialist leader
   magazines[] += {BASE_EXP};
 };
 //class potato_usmc_eod: Fic_eng {// Mine Specialist
-//  backpackItems[] = {"Toolkit"};
+//  backpackItems[] += {"Toolkit"};
 //  magazines[] += {BASE_MINE};
 //};
 //class potato_usmc_eodl: potato_usmc_sl {// Mine Specialist leader
 //  headgear[] = {"H_HelmetB_tna_F"};
 //  vest[] = {"V_PlateCarrier1_tna_F"};
 //  backpack[] = {"B_Carryall_oli"};
-//  backpackItems[] = {"Toolkit"};
+//  backpackItems[] += {"Toolkit"};
 //  items[] += {BASE_ENG};
 //  magazines[] += {BASE_MINE};
 //};
