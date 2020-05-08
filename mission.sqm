@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14889.056,282.83334,16429.463};
-		dir[]={0.0077129533,-0.99994999,-0.0063644289};
-		up[]={0.77127379,0.00999978,-0.63642514};
-		aside[]={-0.63645691,0,-0.77131236};
+		pos[]={14948.196,101.6174,16409.945};
+		dir[]={-0.46769571,-0.73858041,0.48555413};
+		up[]={-0.51238298,0.67416114,0.53194809};
+		aside[]={0.72022754,-2.2572931e-007,0.69373763};
 	};
 };
 binarizationWanted=1;
@@ -412,6 +412,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -443,25 +462,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -2267,7 +2267,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14738.306,17.911438,16819.393};
-						angles[]={-0,5.5470233,0};
+						angles[]={0,5.5470233,0};
 					};
 					side="West";
 					flags=6;
@@ -2288,7 +2288,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14736.633,17.911438,16815.354};
-						angles[]={-0,5.5470243,0};
+						angles[]={0,5.5470243,0};
 					};
 					side="West";
 					flags=4;
@@ -2331,7 +2331,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14739.427,17.911438,16815.215};
-						angles[]={-0,5.5470243,0};
+						angles[]={0,5.5470243,0};
 					};
 					side="West";
 					flags=4;
@@ -2351,7 +2351,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14742.629,17.911438,16820.555};
-						angles[]={-0,5.5470243,0};
+						angles[]={0,5.5470243,0};
 					};
 					side="West";
 					flags=4;
@@ -2371,7 +2371,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14742.391,17.911438,16817.754};
-						angles[]={-0,5.5470243,0};
+						angles[]={0,5.5470243,0};
 					};
 					side="West";
 					flags=4;
@@ -20242,7 +20242,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Company";
+							value="EMC Company";
 						};
 					};
 				};
@@ -37535,7 +37535,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor First Platoon";
+							value="EMC First Platoon";
 						};
 					};
 				};
@@ -38019,7 +38019,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Second Platoon";
+							value="EMC Second Platoon";
 						};
 					};
 				};
@@ -38960,7 +38960,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Alpha";
+							value="EMC Alpha";
 						};
 					};
 				};
@@ -39977,7 +39977,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Blufor Bravo";
+							value="EMC Bravo";
 						};
 					};
 				};
@@ -40918,7 +40918,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Charlie";
+							value="EMC Charlie";
 						};
 					};
 				};
@@ -41867,7 +41867,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Delta";
+							value="EMC Delta";
 						};
 					};
 				};
@@ -42811,7 +42811,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Echo";
+							value="EMC Echo";
 						};
 					};
 				};
@@ -43753,7 +43753,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Foxtrot";
+							value="EMC Foxtrot";
 						};
 					};
 				};
@@ -44698,7 +44698,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Golf";
+							value="EMC Golf";
 						};
 					};
 				};
@@ -45641,7 +45641,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Hotel";
+							value="EMC Hotel";
 						};
 					};
 				};
@@ -45859,7 +45859,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor India";
+							value="EMC India";
 						};
 					};
 				};
@@ -45996,7 +45996,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor HMG 1";
+							value="EMC HMG 1";
 						};
 					};
 				};
@@ -46148,7 +46148,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor HMG 2";
+							value="EMC HMG 2";
 						};
 					};
 				};
@@ -46301,7 +46301,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor HAT 1";
+							value="EMC HAT 1";
 						};
 					};
 				};
@@ -46453,7 +46453,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor HAT 2";
+							value="EMC HAT 2";
 						};
 					};
 				};
@@ -46605,7 +46605,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Mortar";
+							value="EMC Mortar";
 						};
 					};
 				};
@@ -46757,7 +46757,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor SAM";
+							value="EMC SAM";
 						};
 					};
 				};
@@ -46890,7 +46890,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Sniper Team 1";
+							value="EMC Sniper Team 1";
 						};
 					};
 				};
@@ -47156,7 +47156,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Engineer Team";
+							value="EMC Engineer Team";
 						};
 					};
 				};
@@ -47379,7 +47379,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Tank 1";
+							value="EMC Tank 1";
 						};
 					};
 				};
@@ -47602,7 +47602,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Tank 2";
+							value="EMC Tank 2";
 						};
 					};
 				};
@@ -47825,7 +47825,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Tank 3";
+							value="EMC Tank 3";
 						};
 					};
 				};
@@ -48049,7 +48049,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor Tank 4";
+							value="EMC Tank 4";
 						};
 					};
 				};
@@ -48223,7 +48223,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor TH 1";
+							value="EMC TH 1";
 						};
 					};
 				};
@@ -48401,7 +48401,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor TH 2";
+							value="EMC TH 2";
 						};
 					};
 				};
@@ -48577,7 +48577,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor TH 3";
+							value="EMC TH 3";
 						};
 					};
 				};
@@ -48756,7 +48756,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor TH 4";
+							value="EMC TH 4";
 						};
 					};
 				};
@@ -48890,7 +48890,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor AH 1";
+							value="EMC AH 1";
 						};
 					};
 				};
@@ -49024,7 +49024,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor AH 2";
+							value="EMC AH 2";
 						};
 					};
 				};
@@ -49756,7 +49756,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="BluFor MSV JIP";
+							value="EMC JIP";
 						};
 					};
 				};
@@ -49787,11 +49787,12 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={14873.783,17.803345,16479.564};
+				position[]={14873.783,17.802999,16479.564};
 				angles[]={0.0066592805,0,0.013332055};
 			};
-			title="Marine Units";
+			title="Enhanced Mechanized Company Units";
 			id=3924;
+			atlOffset=-0.0003452301;
 		};
 	};
 };
