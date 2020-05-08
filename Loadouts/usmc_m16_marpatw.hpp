@@ -1,5 +1,5 @@
 // Author: BWMF
-// Description: US: M16 - Marine Pattern Desert
+// Description: US: M16 - Marine Pattern Woodland
 
 #include "undef.hpp" // Reset defines
 
