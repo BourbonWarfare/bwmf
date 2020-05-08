@@ -18,7 +18,7 @@ class EditorData
 		aside[]={-0.63645691,0,-0.77131236};
 	};
 };
-binarizationWanted=0;
+binarizationWanted=1;
 addons[]=
 {
 	"A3_Characters_F",
