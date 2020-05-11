@@ -12,13 +12,13 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14945.003,49.555325,16457.027};
-		dir[]={-0.81736004,-0.56822443,-0.095845483};
-		up[]={-0.56439084,0.82286006,-0.066180818};
-		aside[]={-0.11646935,4.1385647e-008,0.99326098};
+		pos[]={14947.054,599.34424,16244.748};
+		dir[]={-0.35044816,-0.75516438,0.55415559};
+		up[]={-0.40363133,0.65554094,0.63825446};
+		aside[]={0.845245,6.7381188e-007,0.53453201};
 	};
 };
-binarizationWanted=1;
+binarizationWanted=0;
 addons[]=
 {
 	"A3_Characters_F",
@@ -35412,6 +35412,29 @@ class Mission
 				name="GROUP_CIV_P2";
 			};
 			id=3927;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Press Team 2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item177
 		{
@@ -35462,6 +35485,29 @@ class Mission
 				name="GROUP_CIV_P3";
 			};
 			id=3930;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Press Team 3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item178
 		{
@@ -35585,6 +35631,29 @@ class Mission
 				name="GROUP_CIV_C1";
 			};
 			id=3933;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Civilians";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item179
 		{
@@ -35635,6 +35704,29 @@ class Mission
 				name="GROUP_CIV_P1";
 			};
 			id=3940;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Press Team 1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item180
 		{
@@ -35699,6 +35791,29 @@ class Mission
 					};
 					id=4180;
 					type="potato_usmc_sm";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="COM,16,white,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item3
 				{
@@ -35974,7 +36089,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14871.54,17.903364,16469.51};
+						position[]={14871.54,17.903357,16469.512};
 					};
 					side="West";
 					flags=5;
@@ -35987,6 +36102,29 @@ class Mission
 					};
 					id=4189;
 					type="potato_usmc_sm";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this,_value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1PM,16,white,\z\potato\addons\markers\data\medical.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item3
 				{
