@@ -28,9 +28,9 @@ class CfgLoadouts {
   // British: HK416 - Brown Splinter "Loadouts\brit_hk416_bs_apex.hpp" (apex)
   // British: HK416 - Green Splinter "Loadouts\brit_hk416_gs_apex.hpp" (apex)
   // British: L85 - Desert "Loadouts\brit_l85_ddpm.hpp"
-  // British: L85 - Desert "Loadouts\blumsv_brit_l85_ddpm.hpp" (msv)
+  // British: L85 - Desert "Loadouts\emc_brit_l85_ddpm.hpp" (emc)
   // British: L85 - Multi-Terrain Pattern "Loadouts\brit_l85_mtp.hpp"
-  // British: L85 - Multi-Terrain Pattern "Loadouts\blumsv_brit_l85_mtp.hpp" (msv)
+  // British: L85 - Multi-Terrain Pattern "Loadouts\emc_brit_l85_mtp.hpp" (emc)
   // British: L85 - Woodland "Loadouts\brit_l85_wdpm.hpp"
   // British: MX - Brown Splinter "Loadouts\brit_mx_bs.hpp"
   // British: MX - Green Splinter "Loadouts\brit_mx_gs_apex.hpp" (apex)
@@ -71,18 +71,18 @@ class CfgLoadouts {
   // US: HK416 - Multi-Terrain Pattern "Loadouts\us_hk416_mtp_apex.hpp" (apex)
   // US: HK416 - Tropical "Loadouts\us_hk416_trop_apex.hpp" (apex)
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
-  // US: M4 - Gray/Green "Loadouts\blumsv_us_m4_ucp.hpp" (msv)
+  // US: M4 - Gray/Green "Loadouts\emc_us_m4_ucp.hpp" (emc)
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
-  // US: M4 - Tan "Loadouts\blumsv_us_m4_ocp.hpp" (msv)
+  // US: M4 - Tan "Loadouts\emc_us_m4_ocp.hpp" (emc)
   // US: M16 - M81 "Loadouts\us_m16_m81.hpp"
   // US: M16 - Marine Pattern Desert "Loadouts\usmc_m16_marpatd.hpp"
-  // US: M16 - Marine Pattern Desert "Loadouts\blumsv_usmc_m16_marpatd.hpp" (msv)
+  // US: M16 - Marine Pattern Desert "Loadouts\emc_usmc_m16_marpatd.hpp" (emc)
   // US: M16 - Marine Pattern Woodland "Loadouts\usmc_m16_marpatw.hpp"
-  // US: M16 - Marine Pattern Woodland "Loadouts\blumsv_usmc_m16_marpatw.hpp" (msv)
+  // US: M16 - Marine Pattern Woodland "Loadouts\emc_usmc_m16_marpatw.hpp" (emc)
   // US: MX - Multi-Terrain Pattern "Loadouts\us_mx_mtp.hpp"
-  // US: MX - Multi-Terrain Pattern "Loadouts\blumsv_us_mx_mtp.hpp" (msv)
+  // US: MX - Multi-Terrain Pattern "Loadouts\emc_us_mx_mtp.hpp" (emc)
   // US: MX - Tropical "Loadouts\us_mx_trop_apex.hpp" (apex)
-  // US: MX - Tropical "Loadouts\blumsv_us_mx_trop_apex.hpp" (msv)(apex)
+  // US: MX - Tropical "Loadouts\emc_us_mx_trop_apex.hpp" (emc)(apex)
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
@@ -93,9 +93,10 @@ class CfgLoadouts {
     #include "Loadouts\us_mx_mtp.hpp"
   };
 
-  class potato_usmc { // Blufor MSV
-    #include "Loadouts\blumsv_us_mx_mtp.hpp"
+  class potato_usmc { // Blufor EMC
+    #include "Loadouts\emc_us_mx_mtp.hpp"
   };
+
   // Indy factions
   #include "Loadouts\indy_gear.hpp"
   class ind_f { // Indy
@@ -111,6 +112,7 @@ class CfgLoadouts {
   class potato_msv { // Opfor MSV
     #include "Loadouts\msv_csat_sama_hex.hpp"
   };
+
   // Civilians (mainly for RP missions)
   #include "Loadouts\civ_gear.hpp"
   #include "Loadouts\civilians.hpp" // Bare example of doing civilian loadouts
