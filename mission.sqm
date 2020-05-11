@@ -18,23 +18,20 @@ class EditorData
 		aside[]={0.845245,6.7381188e-007,0.53453201};
 	};
 };
-binarizationWanted=0;
+binarizationWanted=1;
 addons[]=
 {
 	"A3_Characters_F",
-	"ace_explosives",
 	"A3_Modules_F_Curator_Curator",
 	"potato_units",
-	"Desert",
 	"potato_spectate",
-	"cba_xeh",
 	"A3_Characters_F_Exp_Civil"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=5;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -44,10 +41,10 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
@@ -64,28 +61,16 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="Desert";
-			name="Desert";
-		};
-		class Item5
-		{
 			className="potato_spectate";
 			name="potato_spectate";
 			author="Potato";
-		};
-		class Item6
-		{
-			className="A3_Characters_F_Exp";
-			name="Arma 3 Apex - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
 		};
 	};
 };
 randomSeed=10562329;
 class ScenarioData
 {
-	author="Alablm";
+	author="*** Insert author name here. ***";
 	onLoadMission="Made with the BW Mission Framework";
 	loadScreen="\z\potato\addons\missionModules\images\bwbanner01.jpg";
 	saving=0;
