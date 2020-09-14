@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2924;
+		nextID=2941;
 	};
 	class Camera
 	{
-		pos[]={627.14044,250.03777,1073.9941};
-		dir[]={0.0093867658,-0.72748893,-0.6861648};
-		up[]={0.0099533107,0.68602955,-0.72749609};
-		aside[]={-0.99997205,9.8206783e-008,-0.013679621};
+		pos[]={514.68805,41.438641,964.11505};
+		dir[]={0.86439449,-0.49855989,-0.067231417};
+		up[]={0.49723688,0.86676097,-0.03867561};
+		aside[]={-0.077553228,9.2061237e-007,-0.99709862};
 	};
 };
 binarizationWanted=1;
@@ -2238,14 +2238,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=180;
+		items=182;
 		class Item0
 		{
 			dataType="Group";
 			side="West";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -2387,6 +2387,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={752.03448,5.0014391,970.82007};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_COY_FAC";
+						description="Blufor Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2927;
+					type="B_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -10191,7 +10209,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -10907,6 +10925,23 @@ class Mission
 					id=783;
 					type="B_engineer_F";
 				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={749.992,5.0014391,884.06201};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2929;
+					type="B_support_GMG_F";
+				};
 			};
 			class Attributes
 			{
@@ -10943,7 +10978,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -11048,7 +11083,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={561.87006,5.0014391,971.95099};
+						position[]={561.87,5.0014391,971.95099};
 					};
 					side="Independent";
 					flags=4;
@@ -11084,6 +11119,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={559.97583,5.0014391,970.70013};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						name="UNIT_IND_COY_FAC";
+						description="Indy Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2926;
+					type="I_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -18193,7 +18246,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -18909,6 +18962,23 @@ class Mission
 					id=1036;
 					type="I_engineer_F";
 				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={557.97803,5.0014391,884.07697};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2931;
+					type="I_support_GMG_F";
+				};
 			};
 			class Attributes
 			{
@@ -18945,7 +19015,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -19050,7 +19120,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={754.00031,5.0014391,844.35651};
+						position[]={754,5.0014391,844.35699};
 					};
 					side="East";
 					flags=4;
@@ -19086,6 +19156,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={751.9715,5.0014391,843.28967};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_COY_FAC";
+						description="Opfor Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2928;
+					type="O_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -26195,7 +26283,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -26910,6 +26998,23 @@ class Mission
 					};
 					id=1289;
 					type="O_engineer_F";
+				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={750.09698,5.0014391,756.479};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2930;
+					type="O_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -35500,6 +35605,248 @@ class Mission
 			description="Spectator";
 			id=2923;
 			type="potato_spectate_playableSpectator";
+		};
+		class Item180
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={625.97198,5.0014391,852.42902};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="ZEUS_1";
+						description="Zeus @Zeus";
+						isPlayable=1;
+					};
+					id=2935;
+					type="C_man_1";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={624.01099,5.0014391,852.48199};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						name="ZEUS_2";
+						description="Zeus";
+						isPlayable=1;
+					};
+					id=2937;
+					type="C_man_1";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={621.98499,5.0014391,852.323};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						name="ZEUS_3";
+						description="Zeus";
+						isPlayable=1;
+					};
+					id=2939;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+				name="CIV_ZEUS";
+			};
+			id=2934;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item181
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={618.02765,5,850.04907};
+			};
+			name="bwmf_placedZeus_5";
+			id=2940;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=3;
+		};
+		class Links
+		{
+			items=3;
+			class Item0
+			{
+				linkID=0;
+				item0=708;
+				item1=2939;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=707;
+				item1=2937;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=705;
+				item1=2935;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
