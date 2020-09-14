@@ -6,8 +6,8 @@
 #define RADIO_LR "ACRE_PRC117F"
 
 // GEAR
-#define BASE_MEDICAL "ACE_elasticBandage:4","ACE_packingBandage:2","ACE_tourniquet","ACE_morphine"
-#define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6"
+#define BASE_MEDICAL "ACE_elasticBandage:4","ACE_packingBandage:2","ACE_tourniquet","ACE_splint:2"
+#define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:20","ACE_tourniquet:6","ACE_splint:12","ACE_adenosine:10"
 #define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item"
 #define BASE_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
