@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2924;
+		nextID=2977;
 	};
 	class Camera
 	{
-		pos[]={627.14044,250.03777,1073.9941};
-		dir[]={0.0093867658,-0.72748893,-0.6861648};
-		up[]={0.0099533107,0.68602955,-0.72749609};
-		aside[]={-0.99997205,9.8206783e-008,-0.013679621};
+		pos[]={794.15643,48.194801,702.33917};
+		dir[]={-0.21359177,-0.60430169,0.7677601};
+		up[]={-0.16200179,0.79666948,0.58232296};
+		aside[]={0.9635036,4.6601053e-007,0.26805115};
 	};
 };
 binarizationWanted=1;
@@ -2238,14 +2238,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=180;
+		items=182;
 		class Item0
 		{
 			dataType="Group";
 			side="West";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -2387,6 +2387,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={752.03448,5.0014391,970.82007};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_COY_FAC";
+						description="Blufor Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2927;
+					type="B_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -3112,8 +3130,8 @@ class Mission
 						description="BluFor Alpha 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=87;
-					type="B_Soldier_F";
+					id=2941;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -3388,8 +3406,8 @@ class Mission
 						description="BluFor Alpha 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=94;
-					type="B_Soldier_F";
+					id=2942;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -3804,8 +3822,8 @@ class Mission
 						description="BluFor Bravo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=104;
-					type="B_Soldier_F";
+					id=2943;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -4080,8 +4098,8 @@ class Mission
 						description="BluFor Bravo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=111;
-					type="B_Soldier_F";
+					id=2944;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -4496,8 +4514,8 @@ class Mission
 						description="BluFor Charlie 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=121;
-					type="B_Soldier_F";
+					id=2945;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -4772,8 +4790,8 @@ class Mission
 						description="BluFor Charlie 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=128;
-					type="B_Soldier_F";
+					id=2946;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -7759,8 +7777,8 @@ class Mission
 						description="BluFor Delta 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=473;
-					type="B_Soldier_F";
+					id=2947;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -8035,8 +8053,8 @@ class Mission
 						description="BluFor Delta 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=480;
-					type="B_Soldier_F";
+					id=2948;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -8451,8 +8469,8 @@ class Mission
 						description="BluFor Echo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=490;
-					type="B_Soldier_F";
+					id=2949;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -8727,8 +8745,8 @@ class Mission
 						description="BluFor Echo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=497;
-					type="B_Soldier_F";
+					id=2950;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -9143,8 +9161,8 @@ class Mission
 						description="BluFor Foxtrot 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=507;
-					type="B_Soldier_F";
+					id=2951;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -9419,8 +9437,8 @@ class Mission
 						description="BluFor Foxtrot 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=514;
-					type="B_Soldier_F";
+					id=2952;
+					type="B_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -10191,7 +10209,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -10907,6 +10925,23 @@ class Mission
 					id=783;
 					type="B_engineer_F";
 				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={749.992,5.0014391,884.06201};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2929;
+					type="B_support_GMG_F";
+				};
 			};
 			class Attributes
 			{
@@ -10943,7 +10978,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -11048,7 +11083,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={561.87006,5.0014391,971.95099};
+						position[]={561.87,5.0014391,971.95099};
 					};
 					side="Independent";
 					flags=4;
@@ -11084,6 +11119,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={559.97583,5.0014391,970.70013};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						name="UNIT_IND_COY_FAC";
+						description="Indy Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2926;
+					type="I_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -11809,8 +11862,8 @@ class Mission
 						description="Indy Alpha 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=822;
-					type="I_soldier_F";
+					id=2963;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -12085,8 +12138,8 @@ class Mission
 						description="Indy Alpha 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=829;
-					type="I_soldier_F";
+					id=2964;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -12501,8 +12554,8 @@ class Mission
 						description="Indy Bravo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=839;
-					type="I_soldier_F";
+					id=2962;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -12777,8 +12830,8 @@ class Mission
 						description="Indy Bravo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=846;
-					type="I_soldier_F";
+					id=2961;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -13193,8 +13246,8 @@ class Mission
 						description="Indy Charlie 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=856;
-					type="I_soldier_F";
+					id=2959;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -13469,8 +13522,8 @@ class Mission
 						description="Indy Charlie 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=863;
-					type="I_soldier_F";
+					id=2960;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -16456,8 +16509,8 @@ class Mission
 						description="Indy Delta 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=951;
-					type="I_soldier_F";
+					id=2957;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -16732,8 +16785,8 @@ class Mission
 						description="Indy Delta 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=958;
-					type="I_soldier_F";
+					id=2958;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -17148,8 +17201,8 @@ class Mission
 						description="Indy Echo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=968;
-					type="I_soldier_F";
+					id=2955;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -17424,8 +17477,8 @@ class Mission
 						description="Indy Echo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=975;
-					type="I_soldier_F";
+					id=2956;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -17840,8 +17893,8 @@ class Mission
 						description="Indy Foxtrot 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=985;
-					type="I_soldier_F";
+					id=2953;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -18116,8 +18169,8 @@ class Mission
 						description="Indy Foxtrot 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=992;
-					type="I_soldier_F";
+					id=2954;
+					type="I_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -18193,7 +18246,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -18909,6 +18962,23 @@ class Mission
 					id=1036;
 					type="I_engineer_F";
 				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={557.97803,5.0014391,884.07697};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2931;
+					type="I_support_GMG_F";
+				};
 			};
 			class Attributes
 			{
@@ -18945,7 +19015,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
@@ -19050,7 +19120,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={754.00031,5.0014391,844.35651};
+						position[]={754,5.0014391,844.35699};
 					};
 					side="East";
 					flags=4;
@@ -19086,6 +19156,24 @@ class Mission
 						};
 						nAttributes=1;
 					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={751.9715,5.0014391,843.28967};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_COY_FAC";
+						description="Opfor Forward Air Controller";
+						isPlayable=1;
+					};
+					id=2928;
+					type="O_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -19811,8 +19899,8 @@ class Mission
 						description="OpFor Alpha 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1075;
-					type="O_Soldier_F";
+					id=2965;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -20087,8 +20175,8 @@ class Mission
 						description="OpFor Alpha 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1082;
-					type="O_Soldier_F";
+					id=2966;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -20503,8 +20591,8 @@ class Mission
 						description="OpFor Bravo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1092;
-					type="O_Soldier_F";
+					id=2967;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -20779,8 +20867,8 @@ class Mission
 						description="OpFor Bravo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1099;
-					type="O_Soldier_F";
+					id=2968;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -21195,8 +21283,8 @@ class Mission
 						description="OpFor Charlie 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1109;
-					type="O_Soldier_F";
+					id=2969;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -21471,8 +21559,8 @@ class Mission
 						description="OpFor Charlie 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1116;
-					type="O_Soldier_F";
+					id=2970;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -24458,8 +24546,8 @@ class Mission
 						description="OpFor Delta 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1204;
-					type="O_Soldier_F";
+					id=2971;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -24734,8 +24822,8 @@ class Mission
 						description="OpFor Delta 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1211;
-					type="O_Soldier_F";
+					id=2972;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -25150,8 +25238,8 @@ class Mission
 						description="OpFor Echo 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1221;
-					type="O_Soldier_F";
+					id=2973;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -25426,8 +25514,8 @@ class Mission
 						description="OpFor Echo 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1228;
-					type="O_Soldier_F";
+					id=2974;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -25842,8 +25930,8 @@ class Mission
 						description="OpFor Foxtrot 1 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1238;
-					type="O_Soldier_F";
+					id=2975;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -26118,8 +26206,8 @@ class Mission
 						description="OpFor Foxtrot 2 Rifleman 2";
 						isPlayable=1;
 					};
-					id=1245;
-					type="O_Soldier_F";
+					id=2976;
+					type="O_Soldier_lite_F";
 				};
 			};
 			class Attributes
@@ -26195,7 +26283,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=38;
+				items=39;
 				class Item0
 				{
 					dataType="Object";
@@ -26910,6 +26998,23 @@ class Mission
 					};
 					id=1289;
 					type="O_engineer_F";
+				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={750.09698,5.0014391,756.479};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="JIP FAC";
+						isPlayable=1;
+					};
+					id=2930;
+					type="O_support_GMG_F";
 				};
 			};
 			class Attributes
@@ -35500,6 +35605,248 @@ class Mission
 			description="Spectator";
 			id=2923;
 			type="potato_spectate_playableSpectator";
+		};
+		class Item180
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={625.97198,5.0014391,852.42902};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="ZEUS_1";
+						description="Zeus @Zeus";
+						isPlayable=1;
+					};
+					id=2935;
+					type="C_man_1";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={624.01099,5.0014391,852.48199};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						name="ZEUS_2";
+						description="Zeus";
+						isPlayable=1;
+					};
+					id=2937;
+					type="C_man_1";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={621.98499,5.0014391,852.323};
+					};
+					side="Civilian";
+					flags=5;
+					class Attributes
+					{
+						name="ZEUS_3";
+						description="Zeus";
+						isPlayable=1;
+					};
+					id=2939;
+					type="C_man_1";
+				};
+			};
+			class Attributes
+			{
+				name="CIV_ZEUS";
+			};
+			id=2934;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zeus";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item181
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={618.02765,5,850.04907};
+			};
+			name="bwmf_placedZeus_5";
+			id=2940;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=3;
+		};
+		class Links
+		{
+			items=3;
+			class Item0
+			{
+				linkID=0;
+				item0=708;
+				item1=2939;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=707;
+				item1=2937;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=705;
+				item1=2935;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
