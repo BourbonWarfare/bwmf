@@ -106,11 +106,6 @@ class officer_F: Soldier_SL_F {// CO and DC
   backpack[] = {"B_FieldPack_ocamo"};
   items[] += {RADIO_LR};
 };
-class support_GMG_F: officer_F {// FAC
-  items[] += {RADIO_LR};
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
-  linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
-};
 class soldier_UAV_F: Soldier_F {
   backpack[] = {SIDE_UAV_BACKPACK};
   linkedItems[] += {SIDE_UAV_TERMINAL};
@@ -129,7 +124,6 @@ class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class medic_F: Fic_Soldier_Carbine {// Medic
-  backpack[] = {"B_Carryall_ocamo"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
