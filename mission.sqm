@@ -2344,7 +2344,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=68;
-					type="B_Soldier_UAV_F";
+					type="potato_USMC_uav";
 				};
 				class Item4
 				{
@@ -11076,7 +11076,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=803;
-					type="I_Soldier_UAV_F";
+					type="potato_airborne_uav";
 				};
 				class Item4
 				{
@@ -19113,7 +19113,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=1056;
-					type="O_Soldier_UAV_F";
+					type="potato_MSV_uav";
 				};
 				class Item4
 				{
@@ -27149,7 +27149,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=3199;
-					type="O_Soldier_UAV_F";
+					type="potato_MSV_uav";
 				};
 				class Item4
 				{
