@@ -24,8 +24,8 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Modules_F_Curator_Curator",
-	"potato_units",
-	"potato_spectate"
+	"potato_spectate,
+	"potato_units"
 };
 class AddonsMetaData
 {
