@@ -24,13 +24,14 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Characters_F_Exp_Civil",
 	"A3_Modules_F_Curator_Curator",
+	"potato_units",
 	"potato_spectate"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -56,6 +57,12 @@ class AddonsMetaData
 		{
 			className="potato_spectate";
 			name="potato_spectate";
+			author="Potato";
+		};
+		class Item4
+		{
+			className="potato_units";
+			name="potato_units";
 			author="Potato";
 		};
 	};
