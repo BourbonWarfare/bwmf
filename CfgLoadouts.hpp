@@ -17,7 +17,7 @@ class CfgLoadouts {
   useFallback = 1;
 
   // prefixes to strip from the units classnames
-  prefixes[] = {"b_", "o_", "i_"};
+  prefixes[] = {"potato_w_", "potato_e_", "potato_i_"};
 
   // Shared defines
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
@@ -79,24 +79,20 @@ class CfgLoadouts {
 
   // West factions
   #include "Loadouts\west_gear.hpp"
-  class blu_f { // BluFor
+  class potato_w { // BluFor
     #include "Loadouts\us_mx_mtp.hpp"
   };
 
   // Indy factions
   #include "Loadouts\indy_gear.hpp"
-  class ind_f { // Indy
+  class potato_i { // Indy
     #include "Loadouts\aaf_f2000_digi.hpp"
   };
 
   // East Factions
   #include "Loadouts\east_gear.hpp"
-  class opf_f { // OpFor
+  class potato_e { // OpFor
     #include "Loadouts\csat_sama_hex.hpp"
-  };
-
-  class potato_msv { // MSV
-    #include "Loadouts\msv_csat_sama_hex.hpp"
   };
 
   // Civilians (mainly for RP missions)

@@ -72,7 +72,7 @@ class Helicopter {
 class Plane {};
 class Ship_F {};
 
-class Soldier_F { // rifleman
+class rifleman { // rifleman
   uniform[] = {"MNP_CombatUniform_China"};
   vest[] = {"MNP_Vest_ChinaH_T2","MNP_Vest_ChinaH_T"};
   headgear[] = {"MNP_Helmet_China"};
@@ -85,57 +85,57 @@ class Soldier_F { // rifleman
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {ALT_OPTICS};
 };
-class Fic_Soldier_Carbine: Soldier_F {// carbine-man
+class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
-class Soldier_TL_F: Soldier_F {// FTL
+class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
-class soldier_SL_F: Soldier_TL_F { // SL
+class sl: ftl { // SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
   items[] += {RADIO_MR};
 };
-class officer_F: Soldier_SL_F { // CO and DC
+class coy: sl { // CO and DC
   items[] += {RADIO_LR};
 };
-class soldier_UAV_F: Soldier_F {
+class uav: rifleman {
   backpack[] = {SIDE_UAV_BACKPACK};
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
-class soldier_GL_F: Soldier_TL_F {}; // GP Dude
-class Soldier_AR_F: Soldier_F {// AR
+class soldier_GL_F: ftl {}; // GP Dude
+class ar: rifleman {// AR
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
-class Soldier_AAR_F: Soldier_F {// AAR
+class aar: rifleman {// AAR
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
-class Soldier_LAT_F: Fic_Soldier_Carbine {// RAT
+class lat: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
-class medic_F: Fic_Soldier_Carbine {// Medic
+class cm: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
-class Fic_Spotter: Soldier_F {
+class Fic_Spotter: rifleman {
   linkedItems[] += {RANGE_FINDER};
 };
-class support_MG_F: Soldier_AR_F { // MMG Gunner
+class mmgg: ar { // MMG Gunner
   weapons[] = {MMG};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
 };
-class Soldier_A_F: Fic_Spotter {// MMG Spotter/Ammo Bearer
+class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
 };
-class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
+class matg: Fic_Soldier_Carbine {// MAT Gunner
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG};
@@ -143,40 +143,40 @@ class soldier_AT_F: Fic_Soldier_Carbine {// MAT Gunner
   launchers[] = {MAT};
   secondaryAttachments[] = {MAT_OPTIC};
 };
-class Soldier_AAT_F: Fic_Spotter {// MAT Spotter/Ammo Bearer
+class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   backpackItems[] = {};
   magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
 };
-class soldier_AA_F: Fic_soldier_Carbine {// SAM Gunner
+class msamg: Fic_soldier_Carbine {// SAM Gunner
   SAM_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
   launchers[] = {SAM};
 };
-class Soldier_AAA_F: Fic_Spotter {// SAM Spotter/Ammo Bearer
+class msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
   SAM_GEAR("MNP_B_Carryall_PLA_Basic", SAM_MAG)
 };
-class support_Mort_F: Fic_Soldier_Carbine {// Mortar Gunner
+class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("O_Mortar_01_weapon_F")
 };
-class support_AMort_F: Fic_Spotter {// Assistant Mortar
+class mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("O_Mortar_01_support_F")
 };
-class spotter_F: Fic_Spotter {// Spotter
+class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
-class sniper_F: spotter_F {// Sniper
+class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};
 };
-class Helipilot_F {// Pilot
+class pilot {// Pilot
   uniform[] = {"rhs_uniform_df15"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"rhs_zsh7a_mike"};
@@ -187,28 +187,28 @@ class Helipilot_F {// Pilot
   items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
-class helicrew_F: Helipilot_F {}; // Pilot
-class crew_F: Fic_Soldier_Carbine {// Crew
+class cc: pilot {}; // Pilot
+class vicc: Fic_Soldier_Carbine {// Crew
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] += {SIDE_KEY,RADIO_LR};
   linkedItems[] += {LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
 };
-class soldier_repair_F: crew_F {// Repair Specialist
+class vicd: vicc {// Repair Specialist
   backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
-class Fic_eng: soldier_repair_F {
+class Fic_eng: vicd {
   backpack[] = {"MNP_B_Carryall_PLA_Basic"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
-class soldier_exp_F: Fic_eng {// Mines Specialist
+class eng: Fic_eng {// Mines Specialist
   magazines[] += {BASE_EXP};
   backpackItems[] = {"Toolkit"};
 };
-class engineer_F: Fic_eng {// Explosive Specialist
+class demo: Fic_eng {// Explosive Specialist
   magazines[] += {BASE_MINE};
 };
-class fallback: Soldier_F {}; // This means any faction member who doesn't match something will use this loadout
+class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout
