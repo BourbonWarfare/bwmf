@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=16119;
+		nextID=16149;
 	};
 	class Camera
 	{
-		pos[]={748.17609,38.551167,666.36096};
+		pos[]={569.71515,35.475182,880.29156};
 		dir[]={-0.013212754,-0.75313288,0.6577549};
 		up[]={-0.015126705,0.65780574,0.75303572};
 		aside[]={0.99980807,1.133958e-008,0.020083521};
@@ -2245,7 +2245,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=186;
+		items=190;
 		class Item0
 		{
 			dataType="Logic";
@@ -3183,7 +3183,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={699.8244,5.0014391,960.04926};
-						angles[]={-0,8.9990099e-005,0};
+						angles[]={0,8.9990099e-005,0};
 					};
 					side="West";
 					flags=6;
@@ -11498,7 +11498,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={699.92572,5.0014391,832.41577};
-						angles[]={-0,8.9990099e-005,0};
+						angles[]={0,8.9990099e-005,0};
 					};
 					side="East";
 					flags=6;
@@ -28243,7 +28243,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={507.79547,5.0014391,960.01025};
-						angles[]={-0,8.9990099e-005,0};
+						angles[]={0,8.9990099e-005,0};
 					};
 					side="Independent";
 					flags=6;
@@ -36765,6 +36765,670 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item186
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={730.323,5.0014391,773.30164};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_OPF_ARTY_FTL";
+						description="OpFor Artillery Leader@OpFor Artillery Team";
+						isPlayable=1;
+					};
+					id=16120;
+					type="potato_e_artl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={734.28796,5.0014391,771.18665};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_ARTY_G1";
+						description="OpFor Gun 1";
+						isPlayable=1;
+					};
+					id=16121;
+					type="potato_e_artg";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={726.31299,5.0014391,771.28668};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_ARTY_G2";
+						description="OpFor Gun 2";
+						isPlayable=1;
+					};
+					id=16122;
+					type="potato_e_artg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={732.30597,5.0014391,769.24066};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_ARTY_G3";
+						description="OpFor Gun 3";
+						isPlayable=1;
+					};
+					id=16123;
+					type="potato_e_artg";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={728.33301,5.0014391,769.28064};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_OPF_ARTY_G4";
+						description="OpFor Gun 4";
+						isPlayable=1;
+					};
+					id=16124;
+					type="potato_e_artg";
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_OPF_ARTY1";
+			};
+			id=16119;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Arty,24,orange,\z\potato\addons\markers\data\artillery.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="OpFor Arty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="15,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item187
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={733.86377,5.0014391,902.06622};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_BLU_ARTY_FTL";
+						description="BluFor Artillery Leader@BluFor Artillery Team";
+						isPlayable=1;
+					};
+					id=16126;
+					type="potato_w_artl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={737.82874,5.0014391,899.95123};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_ARTY_G1";
+						description="BluFor Gun 1";
+						isPlayable=1;
+					};
+					id=16127;
+					type="potato_w_artg";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={729.85376,5.0014391,900.05127};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_ARTY_G2";
+						description="BluFor Gun 2";
+						isPlayable=1;
+					};
+					id=16128;
+					type="potato_w_artg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={735.84674,5.0014391,898.00525};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_ARTY_G3";
+						description="BluFor Gun 3";
+						isPlayable=1;
+					};
+					id=16129;
+					type="potato_w_artg";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={731.87378,5.0014391,898.04523};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_BLU_ARTY_G4";
+						description="BluFor Gun 4";
+						isPlayable=1;
+					};
+					id=16130;
+					type="potato_w_artg";
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_BLU_ARTY1";
+			};
+			id=16125;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Arty,24,orange,\z\potato\addons\markers\data\artillery.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BluFor Arty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="15,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item188
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={725.92981,5.0014391,680.16809};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_MSV_ARTY_FTL";
+						description="OpFor Artillery Leader@Mechanized Artillery Team";
+						isPlayable=1;
+					};
+					id=16132;
+					type="potato_e_artl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={729.89478,5.0014391,678.0531};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G1";
+						description="OpFor Gun 1";
+						isPlayable=1;
+					};
+					id=16133;
+					type="potato_e_artg";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={721.9198,5.0014391,678.15314};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G2";
+						description="OpFor Gun 2";
+						isPlayable=1;
+					};
+					id=16134;
+					type="potato_e_artg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={727.91278,5.0014391,676.10712};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G3";
+						description="OpFor Gun 3";
+						isPlayable=1;
+					};
+					id=16135;
+					type="potato_e_artg";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={723.93982,5.0014391,676.14709};
+					};
+					side="East";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G4";
+						description="OpFor Gun 4";
+						isPlayable=1;
+					};
+					id=16136;
+					type="potato_e_artg";
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_ARTY1";
+			};
+			id=16131;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Arty,24,orange,\z\potato\addons\markers\data\artillery.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MSV Arty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="15,3,3";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item189
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={567.95398,5.0014391,897.95209};
+					};
+					side="Independent";
+					flags=6;
+					class Attributes
+					{
+						rank="CORPORAL";
+						name="UNIT_MSV_ARTY_FTL_1";
+						description="Indy Artillery Leader@Indy Artillery Team";
+						isPlayable=1;
+					};
+					id=16144;
+					type="potato_i_artl";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={571.91895,5.0014391,895.8371};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G1_1";
+						description="Indy Gun 1";
+						isPlayable=1;
+					};
+					id=16145;
+					type="potato_i_artg";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={563.94397,5.0014391,895.93713};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G2_1";
+						description="Indy Gun 2";
+						isPlayable=1;
+					};
+					id=16146;
+					type="potato_i_artg";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={569.93695,5.0014391,893.89111};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G3_1";
+						description="Indy Gun 3";
+						isPlayable=1;
+					};
+					id=16147;
+					type="potato_i_artg";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={565.96399,5.0014391,893.93109};
+					};
+					side="Independent";
+					flags=4;
+					class Attributes
+					{
+						name="UNIT_MSV_ARTY_G4_1";
+						description="Indy Gun 4";
+						isPlayable=1;
+					};
+					id=16148;
+					type="potato_i_artg";
+				};
+			};
+			class Attributes
+			{
+				name="GROUP_MSV_ARTY1_1";
+			};
+			id=16143;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Arty,24,orange,\z\potato\addons\markers\data\artillery.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Indy Arty";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="potato_radios_radio";
+					expression="[_this, _value] call potato_radios_fnc_setChannels";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="15,3,3";
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 	};
