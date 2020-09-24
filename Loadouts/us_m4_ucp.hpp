@@ -195,7 +195,6 @@ class pilot {// Pilot
   items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
-class cc: pilot {}; // Pilot
 class vicc: Fic_Soldier_Carbine {// Crew
   vest[] = {"rhsusf_iotv_ucp"};
   headgear[] = {"rhsusf_cvc_green_ess"};
@@ -216,11 +215,67 @@ class Fic_eng: vicd {
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
-class eng: Fic_eng {// Explosive Specialist
+class demo: Fic_eng {// Explosive Specialist
   magazines[] += {BASE_EXP};
-  backpackItems[] = {"Toolkit"};
 };
-class demo: Fic_eng {// Mine Specialist
+class mine: Fic_eng {// Mine Specialist
   magazines[] += {BASE_MINE};
+};
+class engl: Fic_eng {
+  magazines[] += {BASE_EXP};
+  backpackItems[] = {RADIO_MR,"Toolkit"};
+};
+class fac: coy {// FAC
+  items[] += {RADIO_LR};
+  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
+  linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
+};
+class rifleman_02: rifleman {// Rifleman 2
+};
+class artl: sl {// Artillery Leader
+  backpackItems[] += {BASE_ARTILLERY,RADIO_LR};
+};
+class artg: rifleman {// Artillery Gunner
+  backpackItems[] += {BASE_ARTILLERY};
+};
+class plm: sm {// Platoon Medic
+};
+class cm: sm {// Company Medic
+};
+class xo: coy {// XO
+};
+class plt: coy {// Platoon Leader
+};
+class sgt: plt {// Platoon Sergeant
+};
+class vicl: vicc {// Vehicle Commander
+};
+class mmgl: sl {// MMG Lead
+};
+class matl: sl {// MAT Lead
+};
+class hmgl: sl {// HMG Lead
+};
+class hmgg: rifleman {// HMG Gunner
+};
+class hmgag: rifleman {// HMG Spotter
+};
+class hatl: sl {// HAT Lead
+};
+class hatg: rifleman {// HAT Gunner
+};
+class hatag: rifleman {// HAT Spotter
+};
+class msaml: sl {// MSAM Lead
+};
+class mtrl: sl {// Mortar Lead
+};
+class helicrew: pilot {// Aircrew
+  backpack[] = {"B_Carryall_oli"};
+  backpackItems[] = {"Toolkit",SIDE_KEY};
+  linkedItems[] = {LINKED,LEADER_LINKED};
+};
+class cc: helicrew {// Crew Chief
+  backpackItems[] += {RADIO_MR};
 };
 class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout

@@ -23,6 +23,7 @@
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_VectorDay"
+#define BASE_ARTILLERY "ACE_artilleryTable","ACE_ATragMX","ACE_Kestrel4500"
 
 // OPTIX
 #define WARSAW_OPTICS "rhs_acc_1p63", "rhs_acc_ekp1", "rhs_acc_ekp8_02", "rhs_acc_pkas" // note RHS and CUP mount optics differently, not cross compatible

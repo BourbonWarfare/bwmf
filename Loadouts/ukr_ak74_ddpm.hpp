@@ -195,7 +195,7 @@ class pilot {// Pilot
   backpackItems[] += {RADIO_LR};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
-class cc: pilot {}; // Pilot
+
 class vicc: Fic_Soldier_Carbine {// Crew
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] += {SIDE_KEY,RADIO_LR};
