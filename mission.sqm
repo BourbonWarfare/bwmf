@@ -13957,7 +13957,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15462;
-					type="potato_e_eng";
+					type="potato_e_cc";
 				};
 				class Item3
 				{
@@ -14112,7 +14112,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15467;
-					type="potato_e_eng";
+					type="potato_e_cc";
 				};
 				class Item3
 				{
@@ -14558,7 +14558,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15481;
-					type="potato_e_eng";
+					type="potato_e_helicrew";
 				};
 			};
 			class Attributes
@@ -14670,7 +14670,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15485;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 			};
 			class Attributes
@@ -14801,7 +14801,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15489;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 			};
 			class Attributes
@@ -19320,7 +19320,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15624;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 				class Item27
 				{
@@ -19338,7 +19338,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15625;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 				class Item28
 				{
@@ -19356,7 +19356,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15626;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 				class Item29
 				{
@@ -19517,7 +19517,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15635;
-					type="potato_e_eng";
+					type="potato_e_mine";
 				};
 				class Item38
 				{
@@ -27607,7 +27607,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15837;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 				class Item2
 				{
@@ -27662,7 +27662,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15840;
-					type="potato_e_eng";
+					type="potato_e_vicd";
 				};
 				class Item5
 				{
@@ -36065,7 +36065,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=16086;
-					type="potato_i_eng";
+					type="potato_i_vicd";
 				};
 				class Item27
 				{
@@ -36083,7 +36083,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=16087;
-					type="potato_i_eng";
+					type="potato_i_vicd";
 				};
 				class Item28
 				{
@@ -36101,7 +36101,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=16088;
-					type="potato_i_eng";
+					type="potato_i_vicd";
 				};
 				class Item29
 				{
@@ -36262,7 +36262,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=16097;
-					type="potato_i_eng";
+					type="potato_i_mine";
 				};
 				class Item38
 				{
