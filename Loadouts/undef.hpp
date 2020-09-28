@@ -154,3 +154,30 @@
 #ifdef MSV_EXP
   #undef MSV_EXP
 #endif
+#ifdef CARRYALL
+  #undef CARRYALL
+#endif
+#ifdef HMG
+  #undef HMG
+#endif
+#ifdef HMG_TRI_HI
+  #undef HMG_TRI_HI
+#endif
+#ifdef HMG_TRI_LO
+  #undef HMG_TRI_LO
+#endif
+#ifdef HMG_MAG
+  #undef HMG_MAG
+#endif
+#ifdef HAT
+  #undef HMG
+#endif
+#ifdef HAT_TRI_HI
+  #undef HAT_TRI_HI
+#endif
+#ifdef HAT_TRI_LO
+  #undef HAT_TRI_LO
+#endif
+#ifdef HAT_MAG
+  #undef HAT_MAG
+#endif

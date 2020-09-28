@@ -54,6 +54,7 @@
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
 #define LINKED BASE_LINKED
 #define LEADER_LINKED BASE_LEADER_LINKED
+#define CARRYALL "B_Carryall_oli"
 
 class Car {
   TransportWeapons[] = {AT};
@@ -182,7 +183,7 @@ class sniper: spotter {// Sniper
 };
 class pilot {// Pilot
   uniform[] = {"U_B_HeliPilotCoveralls"};
-  backpack[] = {"B_AssaultPack_blk"};
+  backpack[] = {"B_assaultpack_sgg"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
@@ -266,9 +267,7 @@ class msaml: sl {// MSAM Lead
 class mtrl: sl {// Mortar Lead
 };
 class helicrew: pilot {// Aircrew
-  backpack[] = {"B_Carryall_oli"};
   backpackItems[] = {"Toolkit",SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class cc: helicrew {// Crew Chief
   backpackItems[] += {RADIO_MR};

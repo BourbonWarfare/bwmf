@@ -270,9 +270,7 @@ class msaml: sl {// MSAM Lead
 class mtrl: sl {// Mortar Lead
 };
 class helicrew: pilot {// Aircrew
-  backpack[] = {"B_Carryall_oli"};
   backpackItems[] = {"Toolkit",SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class cc: helicrew {// Crew Chief
   backpackItems[] += {RADIO_MR};

@@ -193,7 +193,7 @@ class sniper: spotter {// Sniper
 };
 class pilot {// Pilot
   uniform[] = {"U_B_HeliPilotCoveralls"};
-  backpack[] = {"B_AssaultPack_blk"};
+  backpack[] = {"B_assaultpack_sgg"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
@@ -271,34 +271,34 @@ class matl: sl {// MAT Lead
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
   magazines[] += {HMG_MAG};
-  launcher[] = {HMG_TRI_LO};
+  launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS};
 };
 class hmgg: rifleman {// HMG Gunner
   backpack[] = {CARRYALL};
   magazines[] += {HMG_MAG};
-  launcher[] = {HMG};
+  launchers[] = {HMG};
 };
 class hmgag: rifleman {// HMG Spotter
   backpack[] = {CARRYALL};
   magazines[] += {HMG_MAG};
-  launcher[] = {HMG_TRI_HI};
+  launchers[] = {HMG_TRI_HI};
   items[] += {BASE_BALLISTICS};
 };
 class hatl: sl {// HAT Lead
   backpack[] = {CARRYALL};
   magazines[] += {HAT_MAG};
-  launcher[] = {HAT_TRI_LO};
+  launchers[] = {HAT_TRI_LO};
 };
 class hatg: rifleman {// HAT Gunner
   backpack[] = {CARRYALL};
   magazines[] += {HAT_MAG};
-  launcher[] = {HAT_TRI_LO};
+  launchers[] = {HAT};
 };
 class hatag: rifleman {// HAT Spotter
   backpack[] = {CARRYALL};
   magazines[] += {HAT_MAG};
-  launcher[] = {HAT_TRI_LO};
+  launchers[] = {HAT_TRI_HI};
 };
 class msaml: sl {// MSAM Lead
   backpack[] = {CARRYALL};
@@ -308,9 +308,7 @@ class mtrl: sl {// Mortar Lead
   items[] += {BASE_ARTILLERY};
 };
 class helicrew: pilot {// Aircrew
-  backpack[] = {"B_Carryall_oli"};
   backpackItems[] = {"Toolkit",SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class cc: helicrew {// Crew Chief
   backpackItems[] += {RADIO_MR};

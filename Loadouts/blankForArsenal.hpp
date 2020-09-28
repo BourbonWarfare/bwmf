@@ -158,7 +158,7 @@ class sniper: spotter {// Sniper
 };
 class pilot {// Pilot
   uniform[] = {"U_B_HeliPilotCoveralls"};
-  backpack[] = {"B_AssaultPack_blk"};
+  backpack[] = {"B_assaultpack_sgg"};
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
