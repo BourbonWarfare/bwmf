@@ -210,7 +210,6 @@ class engl: Fic_eng {
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
 class fac: coy {// FAC
-  items[] += {RADIO_LR};
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
