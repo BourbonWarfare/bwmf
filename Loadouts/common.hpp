@@ -7,23 +7,25 @@
 
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:4","ACE_packingBandage:2","ACE_tourniquet","ACE_splint"
-#define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:20","ACE_tourniquet:6","ACE_splint:12"
-#define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item"
-#define BASE_LEADER_TOOLS "ACE_microDAGR","ACE_Flashlight_KSF1"
+#define MEDIC_MEDICAL "ACE_elasticBandage:25","ACE_packingBandage:15","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6","ACE_splint:12","ACE_adenosine:10"
+#define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item:2","ACE_Flashlight_KSF1","ACE_CableTie:2"
+#define BASE_LEADER_TOOLS "ACE_microDAGR"
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
 #define BASE_LEADER_LINKED "ItemGPS"
 #define BASE_FRAG "HandGrenade:2"
 #define BASE_SMOKES "SmokeShell:2"
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
 #define LEADER_SMOKES "SmokeShell:4","SmokeShellGreen:2"
-#define MEDIC_GRENADES "SmokeShell:6","SmokeShellGreen:2"
-#define CREW_GRENADES "SmokeShell:4"
-#define BASE_ENG "ACE_DefusalKit","ACE_Clacker","MineDetector"
-#define BASE_EXP "DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"
+#define MEDIC_GRENADES "SmokeShell:6","SmokeShellPurple:2"
+#define CREW_GRENADES "SmokeShell:4","SmokeShellGreen:2"
+#define BASE_ENG "ACE_DefusalKit"
+#define BASE_EXP "DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2","ACE_Clacker"
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
+#define MINE_DETECTOR "ACE_VMM3"
 #define BINOS "Binocular"
-#define RANGE_FINDER "ACE_VectorDay"
-#define BASE_ARTILLERY "ACE_artilleryTable","ACE_ATragMX","ACE_Kestrel4500"
+#define RANGE_FINDER "ACE_Vector"
+#define BASE_BALLISTICS "ACE_ATragMX","ACE_Kestrel4500"
+#define BASE_ARTILLERY "ACE_artilleryTable",BASE_BALLISTICS
 
 // OPTIX
 #define WARSAW_OPTICS "rhs_acc_1p63", "rhs_acc_ekp1", "rhs_acc_ekp8_02", "rhs_acc_pkas" // note RHS and CUP mount optics differently, not cross compatible
@@ -31,4 +33,4 @@
 
 // FUNCTIONS
 #define SAM_GEAR(BACKPACK,MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
-#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {"ACE_RangeTable_82mm"};
+#define MORTAR_GEAR(BACKPACK) backpack[] = {BACKPACK}; items[] += {BASE_ARTILLERY};
