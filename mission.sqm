@@ -32719,7 +32719,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=15987;
-					type="potato_i_hatg";
+					type="potato_i_hatag";
 				};
 			};
 			class Attributes
