@@ -209,9 +209,12 @@ class demo: Fic_eng {// Explosive Specialist
 class mine: Fic_eng {// Mine Specialist
   magazines[] += {BASE_MINE};
 };
-class engl: Fic_eng {
+class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
+};
+class eng: fic_eng {// Logistics Engineer
+  backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
@@ -261,6 +264,13 @@ class helicrew: pilot {// Aircrew
   backpackItems[] = {"Toolkit",SIDE_KEY};
 };
 class cc: helicrew {// Crew Chief
+  backpackItems[] += {RADIO_MR};
+};
+class engl: eng {// Logistics Leader
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  items[] += {LEADER_TOOLS};
+  linkedItems[] += {LEADER_LINKED,BINOS};
   backpackItems[] += {RADIO_MR};
 };
 class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout
