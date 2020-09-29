@@ -211,109 +211,11 @@ class Fic_Eng: vicd {
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
-class demo: Fic_eng {// Explosive Specialist
+class eng: Fic_Eng {// Explosive Specialist
   magazines[] += {BASE_EXP};
+  backpackItems[] = {"Toolkit"};
 };
-class mine: Fic_eng {// Mine Specialist
+class demo: Fic_Eng {// Mine Specialist
   magazines[] += {BASE_MINE};
-  handguns[] = {MINE_DETECTOR};
-};
-class demol: Fic_eng {// Demolitions Leader
-  magazines[] += {BASE_EXP};
-  backpackItems[] = {RADIO_MR,"Toolkit"};
-};
-class eng: fic_eng {// Logistics Engineer
-  backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
-};
-class fac: coy {// FAC
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
-  linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
-};
-class rifleman_02: rifleman {// Rifleman 2
-};
-class artl: sl {// Artillery Leader
-  backpack[] = {"B_Kitbag_mcamo"};
-  backpackItems[] += {BASE_ARTILLERY,RADIO_LR};
-};
-class artg: rifleman {// Artillery Gunner
-  backpackItems[] += {BASE_ARTILLERY};
-};
-class plm: sm {// Platoon Medic
-};
-class cm: sm {// Company Medic
-};
-class xo: coy {// XO
-};
-class plt: coy {// Platoon Leader
-};
-class sgt: plt {// Platoon Sergeant
-};
-class vicl: vicc {// Vehicle Commander
-  items[] += {RADIO_MR};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-};
-class mmgl: sl {// MMG Lead
-  backpack[] = {CARRYALL};
-  magazines[] += {MMG_MAG};
-};
-class matl: sl {// MAT Lead
-  backpack[] = {CARRYALL};
-  magazines[] += {MAT_MAG};
-};
-class hmgl: sl {// HMG Lead
-  weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
-  backpack[] = {CARRYALL};
-  launchers[] = {HMG_TRI_LO};
-  items[] += {BASE_BALLISTICS};
-};
-class hmgg: rifleman {// HMG Gunner
-  backpack[] = {CARRYALL};
-  magazines[] += {HMG_MAG};
-  launchers[] = {HMG};
-};
-class hmgag: rifleman {// HMG Spotter
-  backpack[] = {CARRYALL};
-  magazines[] += {HMG_MAG};
-  launchers[] = {HMG_TRI_HI};
-  items[] += {BASE_BALLISTICS};
-};
-class hatl: sl {// HAT Lead
-  weapons[] = {RIFLE};
-  backpackItems[] = {};
-  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG};
-  backpack[] = {CARRYALL};
-  launchers[] = {HAT_TRI_LO};
-  items[] += {BASE_MEDICAL};
-};
-class hatg: rifleman {// HAT Gunner
-  backpack[] = {CARRYALL};
-  magazines[] += {HAT_MAG};
-  launchers[] = {HAT};
-};
-class hatag: rifleman {// HAT Spotter
-  backpack[] = {CARRYALL};
-  magazines[] += {HAT_MAG};
-  launchers[] = {HAT_TRI_HI};
-};
-class msaml: sl {// MSAM Lead
-  backpack[] = {CARRYALL};
-  magazines[] += {SAM_MAG2};
-};
-class mtrl: sl {// Mortar Lead
-  items[] += {BASE_ARTILLERY};
-};
-class helicrew: pilot {// Aircrew
-  backpackItems[] = {"Toolkit",SIDE_KEY};
-};
-class cc: helicrew {// Crew Chief
-  backpackItems[] += {RADIO_MR};
-};
-class engl: eng {// Logistics Leader
-  weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
-  items[] += {LEADER_TOOLS};
-  linkedItems[] += {LEADER_LINKED,BINOS};
-  backpackItems[] += {RADIO_MR};
 };
 class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout
