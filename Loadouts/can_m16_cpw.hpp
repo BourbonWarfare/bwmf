@@ -1,20 +1,20 @@
-// Author: Rispetto
-// Description: Canada: M16 - CadPat Temperate Woodland
+// Author: Alablm
+// Description: Canada: M16 - Cadpat Woodland
 
 #include "undef.hpp"
 
 // Rifle
-#define RIFLE "rhs_weap_m16a4_carryhandle"
+#define RIFLE "rhs_weap_m16a4_imod"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_compm4"
+#define RIFLE_ATTACHMENTS ""
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m16a4_carryhandle_M203"
+#define GLRIFLE "rhs_weap_m16a4_imod_M203"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m16a4"
+#define CARBINE "rhs_weap_m4"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "rhs_weap_m249_pip_L"
@@ -44,19 +44,19 @@
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14ebrri"
-#define SNIPER_MAG "20Rnd_762x51_Mag:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
+#define SNIPER "CUP_srifle_AWM_wdl"
+#define SNIPER_MAG "ACE_10Rnd_338_300gr_HPBT_Mag:10","ACE_10Rnd_338_API526_Mag:5"
+#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_harris_bipod"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m16a4"
+#define SPOTTER CARBINE
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "rhsusf_weap_m1911a1"
-#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+#define PISTOL "CUP_hgun_Browning_HP"
+#define PISTOL_MAG "CUP_13Rnd_9x19_Browning_HP:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -261,13 +261,14 @@ class mmgl: sl {// MMG Lead
 };
 class matl: sl {// MAT Lead
   backpack[] = {CARRYALL};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG2};
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
+  backpackItems[] = {};
   magazines[] += {HMG_MAG};
   launchers[] = {HMG_TRI_LO};
-  items[] += {BASE_BALLISTICS};
+  items[] += {BASE_BALLISTICS,BASE_MEDICAL};
 };
 class hmgg: rifleman {// HMG Gunner
   backpack[] = {CARRYALL};
