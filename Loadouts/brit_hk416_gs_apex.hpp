@@ -133,7 +133,7 @@ class aar: rifleman {// AAR
 class lat: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
-class cm: Fic_Soldier_Carbine {// Medic
+class sm: Fic_Soldier_Carbine {// Medic
   vest[] = {"V_PlateCarrier2_rgr_noflag_F"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};

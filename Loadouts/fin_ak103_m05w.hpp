@@ -125,7 +125,7 @@ class lat: Fic_Soldier_Carbine {// RAT
   backpackItems[] += {AT};
   launchers[] = {AT};
 };
-class cm: Fic_Soldier_Carbine {// Medic
+class sm: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
