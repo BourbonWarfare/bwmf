@@ -50,7 +50,7 @@
 #define SAM_MAG "rhs_fim92_mag:3"
 #define SAM_MAG2 "rhs_fim92_mag:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14ebrri"
+#define SNIPER "rhs_weap_m14_ris"
 #define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
 // Spotter Rifle
