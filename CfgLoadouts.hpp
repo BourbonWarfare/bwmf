@@ -33,7 +33,7 @@ class CfgLoadouts {
   // British: MX - Brown Splinter "Loadouts\brit_mx_bs.hpp"
   // British: MX - Green Splinter "Loadouts\brit_mx_gs_apex.hpp" (apex)
   // Canadian: M16 - CadPat Desert "Loadouts\can_m16_cpd.hpp"
-  // Canadian: M16 - CadPat Tropical Woodland "Loadouts\can_m16_cptw.hpp"
+  // Canadian: M16 - CadPat Tropical Woodland "Loadouts\can_m16_cpw.hpp"
   // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal_apex.hpp" (apex)
   // CSAT: QBZ95 - Green Hex "Loadouts\csat_qbz95_ghex_apex.hpp" (apex)
   // CSAT: QBZ95 - Hex "Loadouts\csat_qbz95_hex_apex.hpp" (apex)
