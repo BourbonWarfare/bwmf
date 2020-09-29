@@ -72,7 +72,7 @@ class Plane {};
 class Ship_F {};
 
 class rifleman {// rifleman
-  uniform[] = {"U_O_T_rifleman"};
+  uniform[] = {"U_O_T_soldier_F"};
   vest[] = {"V_TacVest_oli"};
   headgear[] = {"H_HelmetO_ghex_F"};
   backpack[] = {"B_FieldPack_ghex_F"};

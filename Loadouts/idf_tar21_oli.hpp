@@ -2,8 +2,6 @@
 // Description: paste your loadout config from the arseanal exporter
 #include "undef.hpp" // Reset defines
 
-// ------------------- PASTE BELOW THIS LINE
-
 // Camo set
 #define CAMO_UNIFORM "MNP_CombatUniform_ISR"
 #define CAMO_VEST "MNP_Vest_Olive_2"
@@ -38,9 +36,6 @@
 #define MAT_MAG "MRAWS_HEAT_F:4"
 #define MAT_MAG2 "MRAWS_HEAT_F:3"
 #define MAT_OPTIC ""
-
-// -------------------- PASTE ABOVE THIS LINE
-
 // SAM
 #define SAM "rhs_weap_fim92"
 #define SAM_MAG "rhs_fim92_mag:3"
