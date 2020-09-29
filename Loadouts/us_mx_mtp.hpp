@@ -115,6 +115,7 @@ class sl: ftl {// SL
   items[] += {RADIO_MR};
 };
 class coy: sl {// CO
+  backpack[] = {"B_Kitbag_mcamo"};
   items[] += {RADIO_LR};
 };
 class uav: rifleman {
@@ -136,6 +137,7 @@ class lat: Fic_Soldier_Carbine {// RAT
 };
 class sm: Fic_Soldier_Carbine {// Medic
   vest[] = {"V_PlateCarrierSpec_mtp"};
+  backpack[] = {"B_Kitbag_mcamo"};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -241,6 +243,7 @@ class fac: coy {// FAC
 class rifleman_02: rifleman {// Rifleman 2
 };
 class artl: sl {// Artillery Leader
+  backpack[] = {"B_Kitbag_mcamo"};
   backpackItems[] += {BASE_ARTILLERY,RADIO_LR};
 };
 class artg: rifleman {// Artillery Gunner
@@ -269,8 +272,9 @@ class matl: sl {// MAT Lead
   magazines[] += {MAT_MAG};
 };
 class hmgl: sl {// HMG Lead
+  weapons[] = {RIFLE};
+  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
   backpack[] = {CARRYALL};
-  magazines[] += {HMG_MAG};
   launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS};
 };
@@ -286,9 +290,12 @@ class hmgag: rifleman {// HMG Spotter
   items[] += {BASE_BALLISTICS};
 };
 class hatl: sl {// HAT Lead
+  weapons[] = {RIFLE};
+  backpackItems[] = {};
+  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG};
   backpack[] = {CARRYALL};
-  magazines[] += {HAT_MAG};
   launchers[] = {HAT_TRI_LO};
+  items[] += {BASE_MEDICAL};
 };
 class hatg: rifleman {// HAT Gunner
   backpack[] = {CARRYALL};
