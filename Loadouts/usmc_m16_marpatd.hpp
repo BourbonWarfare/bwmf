@@ -271,9 +271,10 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
+  backpackItems[] = {};
   magazines[] += {HMG_MAG};
   launchers[] = {HMG_TRI_LO};
-  items[] += {BASE_BALLISTICS};
+  items[] += {BASE_BALLISTICS,BASE_MEDICAL};
 };
 class hmgg: rifleman {// HMG Gunner
   backpack[] = {CARRYALL};
