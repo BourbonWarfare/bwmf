@@ -115,7 +115,7 @@ class ar: rifleman {// AR
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
   attachments[] = {AR_ATTACHMENTS};
-  opticChoices[] = {};
++opticChoices[] = {};
 };
 class aar: rifleman {// AAR
   backpack[] = {"B_Kitbag_cbr"};
@@ -151,7 +151,9 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
   secondaryAttachments[] = {MAT_OPTIC};
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  backpack[] = {"B_Carryall_cbr"};
+  backpack[] = {"B_Carryall_cbr"}; -*/
+
+
   backpackItems[] = {};
   magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
