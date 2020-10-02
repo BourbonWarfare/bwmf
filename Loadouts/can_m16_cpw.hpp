@@ -35,10 +35,10 @@
 #define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
 #define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
 //HAT
-#define HAT "ace_cswCompatCUP_cup_tow"
+#define HAT "ace_compat_rhs_usf3_tow_carry"
 #define HAT_TRI_HI "ace_csw_m220CarryTripod"
 #define HAT_TRI_LO ""
-#define HAT_MAG "ace_cswCompatCUP_cup_tow_at:6"
+#define HAT_MAG "ace_compat_rhs_usf3_mag_ITOW"
 // SAM
 #define SAM "rhs_weap_fim92"
 #define SAM_MAG "rhs_fim92_mag:3"
