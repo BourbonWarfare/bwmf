@@ -215,7 +215,8 @@ class vicc: Fic_Soldier_Carbine {// Crew
   headgear[] = {"rhs_tsh4","rhs_tsh4_bala"};
   backpack[] = {"rhs_assault_umbts_engineer_empty"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] += {"Toolkit",RADIO_MR,SIDE_KEY};
+  backpackItems[] = {SIDE_KEY,RADIO_MR,"Toolkit"};
+  items[] += {BASE_MEDICAL};
   linkedItems[] += {LEADER_LINKED};
 };
 class vicd: vicc {// Repair Specialist
@@ -241,7 +242,7 @@ class eng: fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
+  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
 class rifleman_02: rifleman {// Rifleman 2

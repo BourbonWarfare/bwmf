@@ -210,15 +210,13 @@ class pilot {// Pilot
 };
 
 class vicc: Fic_Soldier_Carbine {// Crew
+  backpack[] = {"B_Carryall_cbr"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] += {SIDE_KEY,RADIO_LR};
-  linkedItems[] += {LEADER_LINKED,BINOS};
+  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
+  linkedItems[] += {LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
 class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_cbr"};
-  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class Fic_Eng: vicd {
   items[] += {BASE_ENG};
@@ -239,7 +237,7 @@ class eng: fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries"};
+  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
 class rifleman_02: rifleman {// Rifleman 2
@@ -263,6 +261,7 @@ class sgt: plt {// Platoon Sergeant
 class vicl: vicc {// Vehicle Commander
   items[] += {RADIO_MR};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
+  linkedItems[] += {BINOS}
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};
