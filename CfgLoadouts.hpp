@@ -51,11 +51,7 @@ class CfgLoadouts {
   // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
   // German: G38 - Flecktarn Camo "Loadouts\ger_g38_fleck.hpp"
   // German: G38 - Tropentarn Camo "Loadouts\ger_g38_tropen.hpp"
-  // CSAT: QBZ95 - Green Hex "Loadouts\msv_csat_qbz95_ghex_apex.hpp" (msv, apex)
-  // Russian: AK74 - Digital "Loadouts\msv_ru_ak74_emr.hpp" (msv)
-  // Russian: AK74 - Desert "Loadouts\msv_ru_ak74_emrd.hpp" (msv)
-  // Russian: AK74 - Floral "Loadouts\msv_ru_ak74_flora.hpp" (msv)
-  // Russian: AKM - Soviet Uniforms "Loadouts\msv_sov_akm_ttsko.hpp" (msv)
+  // Israeli: Tar-21 - Olive Drab "Loadouts\idf_tar21_oli.hpp"
   // Norwegian: HK416 - M/03 Desert Desert "Loadouts\no_hk416_m03.hpp"
   // Norwegian: HK416 - M/98 Woodland "Loadouts\no_hk416_m98.hpp"
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
@@ -71,8 +67,11 @@ class CfgLoadouts {
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
   // US: M16 - M81 "Loadouts\us_m16_m81.hpp"
+  // US: M16a2 - M81 "Loadouts\us_m16a2_m81.hpp"
   // US: MX - Multi-Terrain Pattern "Loadouts\us_mx_mtp.hpp"
   // US: MX - Tropical "Loadouts\us_mx_trop_apex.hpp" (apex)
+  // US: M16 - Marine Pattern Desert "Loadouts\usmc_m16_marpatd.hpp"
+  // US: M16 - Marine Pattern Woodland "Loadouts\usmc_m16_marpatw.hpp"
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
