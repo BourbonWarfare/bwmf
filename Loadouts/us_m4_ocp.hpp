@@ -211,15 +211,11 @@ class vicc: Fic_Soldier_Carbine {// Crew
   headgear[] = {"rhsusf_cvc_green_ess"};
   backpack[] = {"B_Carryall_mcamo"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
-  items[] += {BASE_MEDICAL};
-};
-class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_mcamo"};
   backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  vest[] = {"rhsusf_iotv_ocp_repair"};
-  linkedItems[] = {LINKED,LEADER_LINKED};
+  linkedItems[] += {LEADER_LINKED};
+  items[] += {BASE_MEDICAL};
+  };
+  class vicd: vicc {// Repair Specialist
 };
 class Fic_eng: vicd {
   headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"};
@@ -265,6 +261,7 @@ class sgt: plt {// Platoon Sergeant
 class vicl: vicc {// Vehicle Commander
   items[] += {RADIO_MR};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
+  linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};

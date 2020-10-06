@@ -205,17 +205,15 @@ class pilot {// Pilot
 class vicc: Fic_Soldier_Carbine {// Crew
   vest[] = {"V_Chestrig_oli"};
   headgear[] = {"H_HelmetCrew_B"};
-  magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
-  items[] += {BASE_MEDICAL};
-};
-class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_oli"};
+  mmagazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
+  linkedItems[] += {LEADER_LINKED};
+  items[] += {BASE_MEDICAL};
+  };
+class vicd: vicc {// Repair Specialist
 };
 class Fic_eng: vicd {
+  backpack[] = {CARRYALL};
   headgear[] = {"H_HelmetB_TI_tna_F"};
   vest[] = {"V_PlateCarrier1_rgr_noflag_F"};
   items[] += {BASE_ENG};

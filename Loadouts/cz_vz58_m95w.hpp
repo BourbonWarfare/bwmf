@@ -30,6 +30,18 @@
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
 #define MAT_MAG2 "rhs_rpg7_PG7VR_mag:1","rhs_rpg7_PG7VL_mag:2"
 #define MAT_OPTIC "rhs_acc_pgo7v3"
+//HMG
+#define HMG "CUP_DSHKM_carry"
+#define HMG_TRI_HI "ace_csw_kordCarryTripod"
+#define HMG_TRI_LO "ace_csw_kordCarryTripodLow"
+#define HMG_MAG "ace_csw_50Rnd_127x108_mag:6"
+#define HMG_MAG2 "ace_csw_50Rnd_127x108_mag:5"
+//HAT
+#define HAT "ace_compat_rhs_afrf3_kornet_carry"
+#define HAT_TRI_HI ""
+#define HAT_TRI_LO ""
+#define HAT_MAG "ace_compat_rhs_afrf3_mag_9m133f:3","ace_compat_rhs_afrf3_mag_9m133m2:2"
+#define HAT_MAG2 "ace_compat_rhs_afrf3_mag_9m133f:2","ace_compat_rhs_afrf3_mag_9m133m2:2"
 // SAM
 #define SAM "rhs_weap_igla"
 #define SAM_MAG "rhs_mag_9k38_rocket:3"
@@ -55,6 +67,7 @@
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
 #define LINKED BASE_LINKED
 #define LEADER_LINKED BASE_LEADER_LINKED
+#define CARRYALL "B_Carryall_oli"
 
 class Car {
   TransportWeapons[] = {AT};
@@ -202,16 +215,14 @@ class vicc: Fic_Soldier_Carbine {// Crew
   vest[] = {"CUP_V_CZ_vest19"};
   headgear[] = {"CUP_H_CZ_Helmet05"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
+  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
+  linkedItems[] += {LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
 class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_oli"};
-  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class Fic_eng: vicd {
+  backpack[] = {B_Kitbag_sgg};
   uniform[] = {"CUP_U_B_CZ_WDL_NoKneepads","CUP_U_B_CZ_WDL_Kneepads","CUP_U_B_CZ_WDL_Kneepads_Gloves"};
   vest[] = {"CUP_V_CZ_vest03","CUP_V_CZ_vest04"};
   headgear[] = {"CUP_H_CZ_Helmet03"};
@@ -223,6 +234,7 @@ class demo: Fic_eng {// Explosive Specialist
 };
 class mine: Fic_eng {// Mine Specialist
   magazines[] += {BASE_MINE};
+  handguns[] = {MINE_DETECTOR};
 };
 class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
@@ -238,6 +250,7 @@ class fac: coy {// FAC
 class rifleman_02: rifleman {// Rifleman 2
 };
 class artl: sl {// Artillery Leader
+  backpack[] = {B_Kitbag_sgg};
   backpackItems[] += {BASE_ARTILLERY,RADIO_LR};
 };
 class artg: rifleman {// Artillery Gunner
@@ -254,26 +267,62 @@ class plt: coy {// Platoon Leader
 class sgt: plt {// Platoon Sergeant
 };
 class vicl: vicc {// Vehicle Commander
+  items[] += {RADIO_MR};
+  backpackItems[] = {SIDE_KEY,RADIO_LR};
+  linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
+  backpack[] = {CARRYALL};
+  backpackItems[] = {};
+  items[] += {BASE_MEDICAL};
+  magazines[] += {MMG_MAG};
 };
 class matl: sl {// MAT Lead
+  backpack[] = {CARRYALL};
+  magazines[] += {MAT_MAG2};
 };
 class hmgl: sl {// HMG Lead
+  backpack[] = {CARRYALL};
+  backpackItems[] = {};
+  magazines[] += {HMG_MAG2};
+  launchers[] = {HMG_TRI_LO};
+  items[] += {BASE_BALLISTICS,BASE_MEDICAL};
 };
 class hmgg: rifleman {// HMG Gunner
+  backpack[] = {CARRYALL};
+  magazines[] += {HMG_MAG};
+  launchers[] = {HMG};
 };
 class hmgag: rifleman {// HMG Spotter
+  backpack[] = {CARRYALL};
+  magazines[] += {HMG_MAG};
+  launchers[] = {HMG_TRI_HI};
+  items[] += {BASE_BALLISTICS};
 };
 class hatl: sl {// HAT Lead
+  backpack[] = {CARRYALL};
+  backpackItems[] = {};
+  handguns[] = {};
+  items[] += {BASE_MEDICAL};
+  magazines[] = {HAT_MAG,GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  launchers[] = {HAT_TRI_LO};
 };
 class hatg: rifleman {// HAT Gunner
+  backpack[] = {CARRYALL};
+  magazines[] += {HAT_MAG};
+  launchers[] = {HAT};
 };
 class hatag: rifleman {// HAT Spotter
+  backpack[] = {CARRYALL};
+  magazines[] += {HAT_MAG};
+  launchers[] = {HAT_TRI_HI};
 };
 class msaml: sl {// MSAM Lead
+  backpack[] = {CARRYALL};
+  magazines[] += {SAM_MAG2};
 };
 class mtrl: sl {// Mortar Lead
+  items[] += {BASE_ARTILLERY};
 };
 class helicrew: pilot {// Aircrew
   backpackItems[] = {"Toolkit",SIDE_KEY};

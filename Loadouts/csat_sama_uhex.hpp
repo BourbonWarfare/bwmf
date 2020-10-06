@@ -207,18 +207,16 @@ class vicc: Fic_Soldier_Carbine {// Crew
   vest[] = {"V_TacVest_blk"};
   headgear[] = {"H_HelmetCrew_O"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
+  backpackItems[] = {SIDE_KEY,RADIO_MR,"Toolkit"};
   items[] += {BASE_MEDICAL};
+  linkedItems[] += {LEADER_LINKED};
 };
 class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_oucamo"};
-  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class Fic_eng: vicd {
   headgear[] = {"H_HelmetO_oucamo"};
   vest[] = {"V_TacVest_blk"};
+  backpack[] = {CARRYALL};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
@@ -238,6 +236,7 @@ class eng: fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
+  backpack[] = {"MNP_B_ROK_KB"};
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
@@ -263,6 +262,7 @@ class sgt: plt {// Platoon Sergeant
 class vicl: vicc {// Vehicle Commander
   items[] += {RADIO_MR};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
+  linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};

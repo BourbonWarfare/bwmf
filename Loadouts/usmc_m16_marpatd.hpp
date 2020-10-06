@@ -26,7 +26,7 @@
 #define MMG_MAG "rhsusf_100Rnd_762x51:5"
 // MAT
 #define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
+#define MAT_MAG "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:2","rhs_mag_smaw_SR:2"
 #define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
 #define MAT_OPTIC "rhs_weap_optic_smaw"
 //HMG
@@ -207,17 +207,14 @@ class vicc: Fic_Soldier_Carbine {// Crew
   vest[] = {"rhsusf_spc_crewman"};
   headgear[] = {"H_HelmetCrew_I"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
+  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
+  linkedItems[] += {LEADER_LINKED};
   items[] += {BASE_MEDICAL};
 };
 class vicd: vicc {// Repair Specialist
-  backpack[] = {"B_Carryall_cbr"};
-  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
-  linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class Fic_eng: vicd {
-  headgear[] = {"H_HelmetCrew_I"};
+  headgear[] = {"rhs_uniform_FROG01_d"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
@@ -260,6 +257,7 @@ class sgt: plt {// Platoon Sergeant
 class vicl: vicc {// Vehicle Commander
   items[] += {RADIO_MR};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
+  linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};
@@ -267,7 +265,7 @@ class mmgl: sl {// MMG Lead
 };
 class matl: sl {// MAT Lead
   backpack[] = {CARRYALL};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG2};
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
