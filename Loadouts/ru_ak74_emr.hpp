@@ -107,6 +107,7 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 class ftl: rifleman {// FTL
   vest[] = {"rhs_6b23_digi_6sh92_vog_headset"};
   weapons[] = {GLRIFLE};
+  attachments[] = {"rhs_acc_dtk"};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};

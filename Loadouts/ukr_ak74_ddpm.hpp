@@ -106,6 +106,7 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 };
 class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
+  attachments[] = {"rhs_acc_dtk"};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
@@ -275,9 +276,8 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
-  weapons[] = {RIFLE};
   backpackItems[] = {};
-  magazines[] = {HMG_MAG,RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG};
+  magazines[] += {HMG_MAG2};
   launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS,BASE_MEDICAL};
 };
