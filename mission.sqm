@@ -8341,7 +8341,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=20645;
-					type="potato_w_engl";
+					type="potato_w_demol";
 				};
 				class Item1
 				{
@@ -8438,7 +8438,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DEMO,24,orange,\z\potato\addons\markers\data\maintenance.paa";
+							value="DEMO,24,orange,\z\potato\addons\markers\data\engineer.paa";
 						};
 					};
 				};
@@ -16988,7 +16988,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=20901;
-					type="potato_e_engl";
+					type="potato_e_demol";
 				};
 				class Item1
 				{
@@ -17085,7 +17085,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DEMO,24,orange,\z\potato\addons\markers\data\maintenance.paa";
+							value="DEMO,24,orange,\z\potato\addons\markers\data\engineer.paa";
 						};
 					};
 				};
@@ -26434,7 +26434,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=21152;
-					type="potato_e_engl";
+					type="potato_e_demol";
 				};
 				class Item1
 				{
@@ -26531,7 +26531,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ENG,24,orange,\z\potato\addons\markers\data\maintenance.paa";
+							value="ENG,24,orange,\z\potato\addons\markers\data\engineer.paa";
 						};
 					};
 				};
@@ -34397,7 +34397,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=21387;
-					type="potato_i_engl";
+					type="potato_i_demol";
 				};
 				class Item1
 				{
@@ -34494,7 +34494,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="DEMO,24,orange,\z\potato\addons\markers\data\maintenance.paa";
+							value="DEMO,24,orange,\z\potato\addons\markers\data\engineer.paa";
 						};
 					};
 				};
