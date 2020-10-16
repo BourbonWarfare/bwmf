@@ -4999,7 +4999,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TH1_G1";
-						description="BluFor Transport Helo 1 Crew Chief (Repair)";
+						description="BluFor Transport Helo 1 Crew Chief";
 						isPlayable=1;
 					};
 					id=26834;
@@ -5154,7 +5154,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TH2_G1";
-						description="BluFor Transport Helo 2 Crew Chief (Repair)";
+						description="BluFor Transport Helo 2 Crew Chief";
 						isPlayable=1;
 					};
 					id=26839;
@@ -5309,7 +5309,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TH3_G1";
-						description="BluFor Transport Helo 3 Crew Chief (Repair)";
+						description="BluFor Transport Helo 3 Crew Chief";
 						isPlayable=1;
 					};
 					id=26844;
@@ -5464,7 +5464,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TH4_G1";
-						description="BluFor Transport Helo 4 Crew Chief (Repair)";
+						description="BluFor Transport Helo 4 Crew Chief";
 						isPlayable=1;
 					};
 					id=26849;
@@ -5600,7 +5600,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_BLU_AH1_CP";
-						description="BluFor Attack Helo 1 Gunner (Repair)";
+						description="BluFor Attack Helo 1 Gunner";
 						isPlayable=1;
 					};
 					id=26853;
@@ -5712,7 +5712,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_IFV1_D";
-						description="BluFor IFV 1 Driver (Repair)";
+						description="BluFor IFV 1 Driver";
 						isPlayable=1;
 					};
 					id=26857;
@@ -5843,7 +5843,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_IFV2_D";
-						description="BluFor IFV 2 Driver (Repair)";
+						description="BluFor IFV 2 Driver";
 						isPlayable=1;
 					};
 					id=26861;
@@ -5974,7 +5974,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_IFV3_D";
-						description="BluFor IFV 3 Driver (Repair)";
+						description="BluFor IFV 3 Driver";
 						isPlayable=1;
 					};
 					id=26865;
@@ -6105,7 +6105,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_IFV4_D";
-						description="BluFor IFV 4 Driver (Repair)";
+						description="BluFor IFV 4 Driver";
 						isPlayable=1;
 					};
 					id=26869;
@@ -6217,7 +6217,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_SPV1_D";
-						description="BluFor Support Vehicle 1 Driver (Repair)";
+						description="BluFor Support Vehicle 1 Driver";
 						isPlayable=1;
 					};
 					id=26872;
@@ -6348,7 +6348,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_TNK1_D";
-						description="BluFor Tank 1 Driver (Repair)";
+						description="BluFor Tank 1 Driver";
 						isPlayable=1;
 					};
 					id=26876;
@@ -10927,7 +10927,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27018;
@@ -10945,7 +10945,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27019;
@@ -10963,7 +10963,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27020;
@@ -11264,7 +11264,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_BLU_TH3_G1_1";
-						description="JIP Crew Chief (Repair)";
+						description="JIP Crew Chief";
 						isPlayable=1;
 					};
 					id=27036;
@@ -14186,7 +14186,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TH1_G1";
-						description="OpFor Transport Helo 1 Crew Chief (Repair)";
+						description="OpFor Transport Helo 1 Crew Chief";
 						isPlayable=1;
 					};
 					id=27116;
@@ -14341,7 +14341,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TH2_G1";
-						description="OpFor Transport Helo 2 Crew Chief (Repair)";
+						description="OpFor Transport Helo 2 Crew Chief";
 						isPlayable=1;
 					};
 					id=27121;
@@ -14496,7 +14496,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TH3_G1";
-						description="OpFor Transport Helo 3 Crew Chief (Repair)";
+						description="OpFor Transport Helo 3 Crew Chief";
 						isPlayable=1;
 					};
 					id=27126;
@@ -14651,7 +14651,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TH4_G1";
-						description="OpFor Transport Helo 4 Crew Chief (Repair)";
+						description="OpFor Transport Helo 4 Crew Chief";
 						isPlayable=1;
 					};
 					id=27131;
@@ -14787,7 +14787,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_OPF_AH1_CP";
-						description="OpFor Attack Helo 1 Gunner (Repair)";
+						description="OpFor Attack Helo 1 Gunner";
 						isPlayable=1;
 					};
 					id=27135;
@@ -14899,7 +14899,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_IFV1_D";
-						description="OpFor IFV 1 Driver (Repair)";
+						description="OpFor IFV 1 Driver";
 						isPlayable=1;
 					};
 					id=27139;
@@ -15030,7 +15030,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_IFV2_D";
-						description="OpFor IFV 2 Driver (Repair)";
+						description="OpFor IFV 2 Driver";
 						isPlayable=1;
 					};
 					id=27143;
@@ -15161,7 +15161,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_IFV3_D";
-						description="OpFor IFV 3 Driver (Repair)";
+						description="OpFor IFV 3 Driver";
 						isPlayable=1;
 					};
 					id=27147;
@@ -15292,7 +15292,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_IFV4_D";
-						description="OpFor IFV 4 Driver (Repair)";
+						description="OpFor IFV 4 Driver";
 						isPlayable=1;
 					};
 					id=27151;
@@ -15404,7 +15404,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_SPV1_D";
-						description="OpFor Support Vehicle 1 Driver (Repair)";
+						description="OpFor Support Vehicle 1 Driver";
 						isPlayable=1;
 					};
 					id=27154;
@@ -15535,7 +15535,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_TNK1_D";
-						description="OpFor Tank 1 Driver (Repair)";
+						description="OpFor Tank 1 Driver";
 						isPlayable=1;
 					};
 					id=27158;
@@ -20114,7 +20114,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27300;
@@ -20132,7 +20132,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27301;
@@ -20150,7 +20150,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27302;
@@ -20451,7 +20451,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_OPF_TH3_G1_1";
-						description="JIP Crew Chief (Repair)";
+						description="JIP Crew Chief";
 						isPlayable=1;
 					};
 					id=27318;
@@ -20847,7 +20847,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_COY_VD";
-						description="OpFor Company Vehicle Driver (Repair)";
+						description="OpFor Company Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27336;
@@ -21483,7 +21483,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_A_VD";
-						description="OpFor Alpha Squad Vehicle Driver (Repair)";
+						description="OpFor Alpha Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27352;
@@ -21947,7 +21947,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_B_VD";
-						description="OpFor Bravo Squad Vehicle Driver (Repair)";
+						description="OpFor Bravo Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27362;
@@ -22430,7 +22430,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_C_VD";
-						description="OpFor Charlie Squad Vehicle Driver (Repair)";
+						description="OpFor Charlie Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27372;
@@ -22913,7 +22913,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_D_VD";
-						description="OpFor Delta Squad Vehicle Driver (Repair)";
+						description="OpFor Delta Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27382;
@@ -23396,7 +23396,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_E_VD";
-						description="OpFor Echo Squad Vehicle Driver (Repair)";
+						description="OpFor Echo Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27392;
@@ -23879,7 +23879,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_F_VD";
-						description="OpFor Foxtrot Squad Vehicle Driver (Repair)";
+						description="OpFor Foxtrot Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27402;
@@ -24361,7 +24361,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_G_VD";
-						description="OpFor Golf Squad Vehicle Driver (Repair)";
+						description="OpFor Golf Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27412;
@@ -24843,7 +24843,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_H_VD";
-						description="OpFor Hotel Squad Vehicle Driver (Repair)";
+						description="OpFor Hotel Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27422;
@@ -25326,7 +25326,7 @@ class Mission
 					{
 						rank="CORPORAL";
 						name="UNIT_MSV_I_VD";
-						description="OpFor India Squad Vehicle Driver (Repair)";
+						description="OpFor India Squad Vehicle Driver";
 						isPlayable=1;
 					};
 					id=27432;
@@ -27328,7 +27328,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_W1_VD";
-						description="OpFor IFV1 Driver (Repair)";
+						description="OpFor IFV1 Driver";
 						isPlayable=1;
 					};
 					id=27492;
@@ -27458,7 +27458,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_W2_VD";
-						description="OpFor IFV2 Driver (Repair)";
+						description="OpFor IFV2 Driver";
 						isPlayable=1;
 					};
 					id=27496;
@@ -27589,7 +27589,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_TNK1_D";
-						description="OpFor Tank 1 Driver (Repair)";
+						description="OpFor Tank 1 Driver";
 						isPlayable=1;
 					};
 					id=27500;
@@ -27720,7 +27720,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_TNK2_D";
-						description="OpFor Tank 2 Driver (Repair)";
+						description="OpFor Tank 2 Driver";
 						isPlayable=1;
 					};
 					id=27504;
@@ -27851,7 +27851,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_TNK3_D";
-						description="OpFor Tank 3 Driver (Repair)";
+						description="OpFor Tank 3 Driver";
 						isPlayable=1;
 					};
 					id=27508;
@@ -27982,7 +27982,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_TNK4_D";
-						description="OpFor Tank 4 Driver (Repair)";
+						description="OpFor Tank 4 Driver";
 						isPlayable=1;
 					};
 					id=27512;
@@ -28160,7 +28160,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_TH1_CC";
-						description="OpFor Transport Helo 1 Crew Chief (Repair)";
+						description="OpFor Transport Helo 1 Crew Chief";
 						isPlayable=1;
 					};
 					id=27516;
@@ -28338,7 +28338,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_TH2_CC";
-						description="OpFor Transport Helo 2 Crew Chief (Repair)";
+						description="OpFor Transport Helo 2 Crew Chief";
 						isPlayable=1;
 					};
 					id=27521;
@@ -28516,7 +28516,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_TH3_CC";
-						description="OpFor Transport Helo 3 Crew Chief (Repair)";
+						description="OpFor Transport Helo 3 Crew Chief";
 						isPlayable=1;
 					};
 					id=27526;
@@ -28694,7 +28694,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_TH4_CC";
-						description="OpFor Transport Helo 4 Crew Chief (Repair)";
+						description="OpFor Transport Helo 4 Crew Chief";
 						isPlayable=1;
 					};
 					id=27531;
@@ -28830,7 +28830,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_AH1_CP";
-						description="OpFor Attack Helo 1 Gunner (Repair)";
+						description="OpFor Attack Helo 1 Gunner";
 						isPlayable=1;
 					};
 					id=27535;
@@ -28947,7 +28947,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_MSV_AH2_CP";
-						description="OpFor Attack Helo 2 Gunner (Repair)";
+						description="OpFor Attack Helo 2 Gunner";
 						isPlayable=1;
 					};
 					id=27538;
@@ -29440,7 +29440,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_MSV_TH3_G1_1";
-						description="JIP Crew Chief (Repair)";
+						description="JIP Crew Chief";
 						isPlayable=1;
 					};
 					id=27564;
@@ -29646,7 +29646,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27573;
@@ -29664,7 +29664,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27574;
@@ -29682,7 +29682,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27575;
@@ -32901,7 +32901,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TH1_G1";
-						description="Indy Transport Helo 1 Crew Chief (Repair)";
+						description="Indy Transport Helo 1 Crew Chief";
 						isPlayable=1;
 					};
 					id=27671;
@@ -33056,7 +33056,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TH2_G1";
-						description="Indy Transport Helo 2 Crew Chief (Repair)";
+						description="Indy Transport Helo 2 Crew Chief";
 						isPlayable=1;
 					};
 					id=27676;
@@ -33211,7 +33211,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TH3_G1";
-						description="Indy Transport Helo 3 Crew Chief (Repair)";
+						description="Indy Transport Helo 3 Crew Chief";
 						isPlayable=1;
 					};
 					id=27681;
@@ -33366,7 +33366,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TH4_G1";
-						description="Indy Transport Helo 4 Crew Chief (Repair)";
+						description="Indy Transport Helo 4 Crew Chief";
 						isPlayable=1;
 					};
 					id=27686;
@@ -33497,7 +33497,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_IFV1_D";
-						description="Indy IFV 1 Driver (Repair)";
+						description="Indy IFV 1 Driver";
 						isPlayable=1;
 					};
 					id=27691;
@@ -33628,7 +33628,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_IFV2_D";
-						description="Indy IFV 2 Driver (Repair)";
+						description="Indy IFV 2 Driver";
 						isPlayable=1;
 					};
 					id=27695;
@@ -33759,7 +33759,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_IFV3_D";
-						description="Indy IFV 3 Driver (Repair)";
+						description="Indy IFV 3 Driver";
 						isPlayable=1;
 					};
 					id=27699;
@@ -33890,7 +33890,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_IFV4_D";
-						description="Indy IFV 4 Driver (Repair)";
+						description="Indy IFV 4 Driver";
 						isPlayable=1;
 					};
 					id=27703;
@@ -34002,7 +34002,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_TNK1_D_1";
-						description="Indy Support Vehicle 1 Driver (Repair)";
+						description="Indy Support Vehicle 1 Driver";
 						isPlayable=1;
 					};
 					id=27706;
@@ -34133,7 +34133,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_TNK1_D";
-						description="Indy Tank 1 Driver (Repair)";
+						description="Indy Tank 1 Driver";
 						isPlayable=1;
 					};
 					id=27710;
@@ -34269,7 +34269,7 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="UNIT_IND_AH1_CP";
-						description="Indy Attack Helo 1 Gunner (Repair)";
+						description="Indy Attack Helo 1 Gunner";
 						isPlayable=1;
 					};
 					id=27713;
@@ -38627,7 +38627,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						name="UNIT_IND_TH3_G1_1";
-						description="JIP Crew Chief (Repair)";
+						description="JIP Crew Chief";
 						isPlayable=1;
 					};
 					id=27846;
@@ -38871,7 +38871,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27857;
@@ -38889,7 +38889,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27858;
@@ -38907,7 +38907,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="JIP Driver (Repair)";
+						description="JIP Driver";
 						isPlayable=1;
 					};
 					id=27859;
