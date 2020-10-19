@@ -19497,7 +19497,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27267;
-					type="potato_w_coy";
+					type="potato_e_coy";
 				};
 				class Item1
 				{
@@ -19515,7 +19515,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27268;
-					type="potato_w_coy";
+					type="potato_e_coy";
 				};
 				class Item2
 				{
@@ -19533,7 +19533,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27269;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item3
 				{
@@ -19551,7 +19551,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27270;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item4
 				{
@@ -19569,7 +19569,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27271;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item5
 				{
@@ -19587,7 +19587,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27272;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item6
 				{
@@ -19605,7 +19605,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27273;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item7
 				{
@@ -19623,7 +19623,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27274;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item8
 				{
@@ -19640,7 +19640,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27275;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item9
 				{
@@ -19657,7 +19657,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27276;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item10
 				{
@@ -19674,7 +19674,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27277;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item11
 				{
@@ -19691,7 +19691,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27278;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item12
 				{
@@ -19708,7 +19708,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27279;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item13
 				{
@@ -19725,7 +19725,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27280;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item14
 				{
@@ -19742,7 +19742,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27281;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item15
 				{
@@ -19759,7 +19759,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27282;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item16
 				{
@@ -19776,7 +19776,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27283;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item17
 				{
@@ -19793,7 +19793,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27284;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item18
 				{
@@ -19810,7 +19810,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27285;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item19
 				{
@@ -19827,7 +19827,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27286;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item20
 				{
@@ -19844,7 +19844,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27287;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item21
 				{
@@ -19861,7 +19861,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27288;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item22
 				{
@@ -19879,7 +19879,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27289;
-					type="potato_w_pilot";
+					type="potato_e_pilot";
 				};
 				class Item23
 				{
@@ -19897,7 +19897,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27290;
-					type="potato_w_pilot";
+					type="potato_e_pilot";
 				};
 				class Item24
 				{
@@ -19914,7 +19914,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27291;
-					type="potato_w_mmgag";
+					type="potato_e_mmgag";
 				};
 				class Item25
 				{
@@ -19931,7 +19931,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27292;
-					type="potato_w_mmgg";
+					type="potato_e_mmgg";
 				};
 				class Item26
 				{
@@ -19949,7 +19949,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27293;
-					type="potato_w_matag";
+					type="potato_e_matag";
 				};
 				class Item27
 				{
@@ -19967,7 +19967,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27294;
-					type="potato_w_matg";
+					type="potato_e_matg";
 				};
 				class Item28
 				{
@@ -19984,7 +19984,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27295;
-					type="potato_w_demo";
+					type="potato_e_demo";
 				};
 				class Item29
 				{
@@ -20001,7 +20001,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27296;
-					type="potato_w_mine";
+					type="potato_e_mine";
 				};
 				class Item30
 				{
@@ -20018,7 +20018,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27297;
-					type="potato_w_fac";
+					type="potato_e_fac";
 				};
 				class Item31
 				{
@@ -20036,7 +20036,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27298;
-					type="potato_w_sm";
+					type="potato_e_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20077,7 +20077,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27299;
-					type="potato_w_sm";
+					type="potato_e_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20118,7 +20118,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27300;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item34
 				{
@@ -20136,7 +20136,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27301;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item35
 				{
@@ -20154,7 +20154,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27302;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item36
 				{
@@ -20173,7 +20173,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27303;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item37
 				{
@@ -20192,7 +20192,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27304;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item38
 				{
@@ -20211,7 +20211,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27305;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item39
 				{
@@ -20230,7 +20230,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27306;
-					type="potato_w_engl";
+					type="potato_e_engl";
 				};
 				class Item40
 				{
@@ -20249,7 +20249,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27307;
-					type="potato_w_demol";
+					type="potato_e_demol";
 				};
 				class Item41
 				{
@@ -20267,7 +20267,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27308;
-					type="potato_w_eng";
+					type="potato_e_eng";
 				};
 				class Item42
 				{
@@ -20286,7 +20286,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27309;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item43
 				{
@@ -20305,7 +20305,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27310;
-					type="potato_w_mtrl";
+					type="potato_e_mtrl";
 				};
 				class Item44
 				{
@@ -20323,7 +20323,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27311;
-					type="potato_w_sniper";
+					type="potato_e_sniper";
 				};
 				class Item45
 				{
@@ -20342,7 +20342,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27312;
-					type="potato_w_mmgl";
+					type="potato_e_mmgl";
 				};
 				class Item46
 				{
@@ -20361,7 +20361,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27313;
-					type="potato_w_matl";
+					type="potato_e_matl";
 				};
 				class Item47
 				{
@@ -20380,7 +20380,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27314;
-					type="potato_w_artl";
+					type="potato_e_artl";
 				};
 				class Item48
 				{
@@ -20398,7 +20398,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27315;
-					type="potato_w_artg";
+					type="potato_e_artg";
 				};
 				class Item49
 				{
@@ -20417,7 +20417,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27316;
-					type="potato_w_spotter";
+					type="potato_e_spotter";
 				};
 				class Item50
 				{
@@ -20436,7 +20436,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27317;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item51
 				{
@@ -20455,7 +20455,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27318;
-					type="potato_w_cc";
+					type="potato_e_cc";
 				};
 				class Item52
 				{
@@ -20474,7 +20474,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27319;
-					type="potato_w_helicrew";
+					type="potato_e_helicrew";
 				};
 				class Item53
 				{
@@ -20493,7 +20493,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27320;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item54
 				{
@@ -20511,7 +20511,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27321;
-					type="potato_w_mtrag";
+					type="potato_e_mtrag";
 				};
 				class Item55
 				{
@@ -20529,7 +20529,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27322;
-					type="potato_w_mtrg";
+					type="potato_e_mtrg";
 				};
 				class Item56
 				{
@@ -20548,7 +20548,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27323;
-					type="potato_w_hmgl";
+					type="potato_e_hmgl";
 				};
 				class Item57
 				{
@@ -20566,7 +20566,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27324;
-					type="potato_w_hmgg";
+					type="potato_e_hmgg";
 				};
 				class Item58
 				{
@@ -20584,7 +20584,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27325;
-					type="potato_w_hmgag";
+					type="potato_e_hmgag";
 				};
 				class Item59
 				{
@@ -20602,7 +20602,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27326;
-					type="potato_w_hatg";
+					type="potato_e_hatg";
 				};
 				class Item60
 				{
@@ -20621,7 +20621,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27327;
-					type="potato_w_hatl";
+					type="potato_e_hatl";
 				};
 				class Item61
 				{
@@ -20639,7 +20639,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27328;
-					type="potato_w_hatag";
+					type="potato_e_hatag";
 				};
 			};
 			class Attributes
@@ -29025,7 +29025,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27540;
-					type="potato_w_coy";
+					type="potato_e_coy";
 				};
 				class Item1
 				{
@@ -29043,7 +29043,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27541;
-					type="potato_w_coy";
+					type="potato_e_coy";
 				};
 				class Item2
 				{
@@ -29061,7 +29061,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27542;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item3
 				{
@@ -29079,7 +29079,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27543;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item4
 				{
@@ -29097,7 +29097,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27544;
-					type="potato_w_sl";
+					type="potato_e_sl";
 				};
 				class Item5
 				{
@@ -29115,7 +29115,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27545;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item6
 				{
@@ -29133,7 +29133,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27546;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item7
 				{
@@ -29151,7 +29151,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27547;
-					type="potato_w_ftl";
+					type="potato_e_ftl";
 				};
 				class Item8
 				{
@@ -29168,7 +29168,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27548;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item9
 				{
@@ -29185,7 +29185,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27549;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item10
 				{
@@ -29202,7 +29202,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27550;
-					type="potato_w_aar";
+					type="potato_e_aar";
 				};
 				class Item11
 				{
@@ -29219,7 +29219,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27551;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item12
 				{
@@ -29236,7 +29236,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27552;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item13
 				{
@@ -29253,7 +29253,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27553;
-					type="potato_w_ar";
+					type="potato_e_ar";
 				};
 				class Item14
 				{
@@ -29270,7 +29270,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27554;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item15
 				{
@@ -29287,7 +29287,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27555;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item16
 				{
@@ -29304,7 +29304,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27556;
-					type="potato_w_lat";
+					type="potato_e_lat";
 				};
 				class Item17
 				{
@@ -29321,7 +29321,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27557;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item18
 				{
@@ -29338,7 +29338,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27558;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item19
 				{
@@ -29355,7 +29355,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27559;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item20
 				{
@@ -29372,7 +29372,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27560;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item21
 				{
@@ -29389,7 +29389,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27561;
-					type="potato_w_rifleman";
+					type="potato_e_rifleman";
 				};
 				class Item22
 				{
@@ -29407,7 +29407,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27562;
-					type="potato_w_pilot";
+					type="potato_e_pilot";
 				};
 				class Item23
 				{
@@ -29425,7 +29425,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27563;
-					type="potato_w_pilot";
+					type="potato_e_pilot";
 				};
 				class Item24
 				{
@@ -29444,7 +29444,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27564;
-					type="potato_w_cc";
+					type="potato_e_cc";
 				};
 				class Item25
 				{
@@ -29463,7 +29463,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27565;
-					type="potato_w_helicrew";
+					type="potato_e_helicrew";
 				};
 				class Item26
 				{
@@ -29480,7 +29480,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27566;
-					type="potato_w_mmgag";
+					type="potato_e_mmgag";
 				};
 				class Item27
 				{
@@ -29497,7 +29497,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27567;
-					type="potato_w_mmgg";
+					type="potato_e_mmgg";
 				};
 				class Item28
 				{
@@ -29515,7 +29515,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27568;
-					type="potato_w_matag";
+					type="potato_e_matag";
 				};
 				class Item29
 				{
@@ -29533,7 +29533,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27569;
-					type="potato_w_matg";
+					type="potato_e_matg";
 				};
 				class Item30
 				{
@@ -29550,7 +29550,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27570;
-					type="potato_w_fac";
+					type="potato_e_fac";
 				};
 				class Item31
 				{
@@ -29568,7 +29568,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27571;
-					type="potato_w_sm";
+					type="potato_e_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29609,7 +29609,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27572;
-					type="potato_w_sm";
+					type="potato_e_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29650,7 +29650,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27573;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item34
 				{
@@ -29668,7 +29668,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27574;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item35
 				{
@@ -29686,7 +29686,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27575;
-					type="potato_w_vicd";
+					type="potato_e_vicd";
 				};
 				class Item36
 				{
@@ -29705,7 +29705,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27576;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item37
 				{
@@ -29724,7 +29724,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27577;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item38
 				{
@@ -29743,7 +29743,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27578;
-					type="potato_w_vicl";
+					type="potato_e_vicl";
 				};
 				class Item39
 				{
@@ -29762,7 +29762,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27579;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item40
 				{
@@ -29781,7 +29781,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27580;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item41
 				{
@@ -29800,7 +29800,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27581;
-					type="potato_w_vicc";
+					type="potato_e_vicc";
 				};
 				class Item42
 				{
@@ -29819,7 +29819,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27582;
-					type="potato_w_engl";
+					type="potato_e_engl";
 				};
 				class Item43
 				{
@@ -29837,7 +29837,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27583;
-					type="potato_w_eng";
+					type="potato_e_eng";
 				};
 				class Item44
 				{
@@ -29856,7 +29856,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27584;
-					type="potato_w_demol";
+					type="potato_e_demol";
 				};
 				class Item45
 				{
@@ -29873,7 +29873,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27585;
-					type="potato_w_demo";
+					type="potato_e_demo";
 				};
 				class Item46
 				{
@@ -29890,7 +29890,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27586;
-					type="potato_w_mine";
+					type="potato_e_mine";
 				};
 				class Item47
 				{
@@ -29908,7 +29908,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27587;
-					type="potato_w_sniper";
+					type="potato_e_sniper";
 				};
 				class Item48
 				{
@@ -29927,7 +29927,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27588;
-					type="potato_w_spotter";
+					type="potato_e_spotter";
 				};
 				class Item49
 				{
@@ -29946,7 +29946,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27589;
-					type="potato_w_mmgl";
+					type="potato_e_mmgl";
 				};
 				class Item50
 				{
@@ -29965,7 +29965,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27590;
-					type="potato_w_matl";
+					type="potato_e_matl";
 				};
 				class Item51
 				{
@@ -29984,7 +29984,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27591;
-					type="potato_w_artl";
+					type="potato_e_artl";
 				};
 				class Item52
 				{
@@ -30002,7 +30002,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27592;
-					type="potato_w_artg";
+					type="potato_e_artg";
 				};
 				class Item53
 				{
@@ -30021,7 +30021,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27593;
-					type="potato_w_mtrl";
+					type="potato_e_mtrl";
 				};
 				class Item54
 				{
@@ -30039,7 +30039,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27594;
-					type="potato_w_mtrag";
+					type="potato_e_mtrag";
 				};
 				class Item55
 				{
@@ -30057,7 +30057,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27595;
-					type="potato_w_mtrg";
+					type="potato_e_mtrg";
 				};
 				class Item56
 				{
@@ -30076,7 +30076,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27596;
-					type="potato_w_hmgl";
+					type="potato_e_hmgl";
 				};
 				class Item57
 				{
@@ -30094,7 +30094,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27597;
-					type="potato_w_hmgg";
+					type="potato_e_hmgg";
 				};
 				class Item58
 				{
@@ -30112,7 +30112,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27598;
-					type="potato_w_hmgag";
+					type="potato_e_hmgag";
 				};
 				class Item59
 				{
@@ -30130,7 +30130,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27599;
-					type="potato_w_hatg";
+					type="potato_e_hatg";
 				};
 				class Item60
 				{
@@ -30149,7 +30149,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27600;
-					type="potato_w_hatl";
+					type="potato_e_hatl";
 				};
 				class Item61
 				{
@@ -30167,7 +30167,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27601;
-					type="potato_w_hatag";
+					type="potato_e_hatag";
 				};
 			};
 			class Attributes
@@ -38212,7 +38212,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27822;
-					type="potato_w_coy";
+					type="potato_i_coy";
 				};
 				class Item1
 				{
@@ -38230,7 +38230,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27823;
-					type="potato_w_coy";
+					type="potato_i_coy";
 				};
 				class Item2
 				{
@@ -38248,7 +38248,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27824;
-					type="potato_w_sl";
+					type="potato_i_sl";
 				};
 				class Item3
 				{
@@ -38266,7 +38266,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27825;
-					type="potato_w_sl";
+					type="potato_i_sl";
 				};
 				class Item4
 				{
@@ -38284,7 +38284,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27826;
-					type="potato_w_sl";
+					type="potato_i_sl";
 				};
 				class Item5
 				{
@@ -38302,7 +38302,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27827;
-					type="potato_w_ftl";
+					type="potato_i_ftl";
 				};
 				class Item6
 				{
@@ -38320,7 +38320,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27828;
-					type="potato_w_ftl";
+					type="potato_i_ftl";
 				};
 				class Item7
 				{
@@ -38338,7 +38338,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27829;
-					type="potato_w_ftl";
+					type="potato_i_ftl";
 				};
 				class Item8
 				{
@@ -38355,7 +38355,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27830;
-					type="potato_w_aar";
+					type="potato_i_aar";
 				};
 				class Item9
 				{
@@ -38372,7 +38372,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27831;
-					type="potato_w_aar";
+					type="potato_i_aar";
 				};
 				class Item10
 				{
@@ -38389,7 +38389,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27832;
-					type="potato_w_aar";
+					type="potato_i_aar";
 				};
 				class Item11
 				{
@@ -38406,7 +38406,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27833;
-					type="potato_w_ar";
+					type="potato_i_ar";
 				};
 				class Item12
 				{
@@ -38423,7 +38423,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27834;
-					type="potato_w_ar";
+					type="potato_i_ar";
 				};
 				class Item13
 				{
@@ -38440,7 +38440,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27835;
-					type="potato_w_ar";
+					type="potato_i_ar";
 				};
 				class Item14
 				{
@@ -38457,7 +38457,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27836;
-					type="potato_w_lat";
+					type="potato_i_lat";
 				};
 				class Item15
 				{
@@ -38474,7 +38474,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27837;
-					type="potato_w_lat";
+					type="potato_i_lat";
 				};
 				class Item16
 				{
@@ -38491,7 +38491,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27838;
-					type="potato_w_lat";
+					type="potato_i_lat";
 				};
 				class Item17
 				{
@@ -38508,7 +38508,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27839;
-					type="potato_w_rifleman";
+					type="potato_i_rifleman";
 				};
 				class Item18
 				{
@@ -38525,7 +38525,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27840;
-					type="potato_w_rifleman";
+					type="potato_i_rifleman";
 				};
 				class Item19
 				{
@@ -38542,7 +38542,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27841;
-					type="potato_w_rifleman";
+					type="potato_i_rifleman";
 				};
 				class Item20
 				{
@@ -38559,7 +38559,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27842;
-					type="potato_w_rifleman";
+					type="potato_i_rifleman";
 				};
 				class Item21
 				{
@@ -38576,7 +38576,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27843;
-					type="potato_w_rifleman";
+					type="potato_i_rifleman";
 				};
 				class Item22
 				{
@@ -38594,7 +38594,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27844;
-					type="potato_w_pilot";
+					type="potato_i_pilot";
 				};
 				class Item23
 				{
@@ -38612,7 +38612,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27845;
-					type="potato_w_pilot";
+					type="potato_i_pilot";
 				};
 				class Item24
 				{
@@ -38631,7 +38631,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27846;
-					type="potato_w_cc";
+					type="potato_i_cc";
 				};
 				class Item25
 				{
@@ -38650,7 +38650,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27847;
-					type="potato_w_helicrew";
+					type="potato_i_helicrew";
 				};
 				class Item26
 				{
@@ -38669,7 +38669,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27848;
-					type="potato_w_mmgl";
+					type="potato_i_mmgl";
 				};
 				class Item27
 				{
@@ -38686,7 +38686,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27849;
-					type="potato_w_mmgag";
+					type="potato_i_mmgag";
 				};
 				class Item28
 				{
@@ -38703,7 +38703,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27850;
-					type="potato_w_mmgg";
+					type="potato_i_mmgg";
 				};
 				class Item29
 				{
@@ -38722,7 +38722,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27851;
-					type="potato_w_matl";
+					type="potato_i_matl";
 				};
 				class Item30
 				{
@@ -38740,7 +38740,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27852;
-					type="potato_w_matag";
+					type="potato_i_matag";
 				};
 				class Item31
 				{
@@ -38758,7 +38758,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27853;
-					type="potato_w_matg";
+					type="potato_i_matg";
 				};
 				class Item32
 				{
@@ -38775,7 +38775,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27854;
-					type="potato_w_fac";
+					type="potato_i_fac";
 				};
 				class Item33
 				{
@@ -38793,7 +38793,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27855;
-					type="potato_w_sm";
+					type="potato_i_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38834,7 +38834,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27856;
-					type="potato_w_sm";
+					type="potato_i_sm";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38875,7 +38875,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27857;
-					type="potato_w_vicd";
+					type="potato_i_vicd";
 				};
 				class Item36
 				{
@@ -38893,7 +38893,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27858;
-					type="potato_w_vicd";
+					type="potato_i_vicd";
 				};
 				class Item37
 				{
@@ -38911,7 +38911,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27859;
-					type="potato_w_vicd";
+					type="potato_i_vicd";
 				};
 				class Item38
 				{
@@ -38930,7 +38930,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27860;
-					type="potato_w_vicl";
+					type="potato_i_vicl";
 				};
 				class Item39
 				{
@@ -38949,7 +38949,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27861;
-					type="potato_w_vicl";
+					type="potato_i_vicl";
 				};
 				class Item40
 				{
@@ -38968,7 +38968,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27862;
-					type="potato_w_vicl";
+					type="potato_i_vicl";
 				};
 				class Item41
 				{
@@ -38987,7 +38987,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27863;
-					type="potato_w_vicc";
+					type="potato_i_vicc";
 				};
 				class Item42
 				{
@@ -39006,7 +39006,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27864;
-					type="potato_w_vicc";
+					type="potato_i_vicc";
 				};
 				class Item43
 				{
@@ -39025,7 +39025,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27865;
-					type="potato_w_vicc";
+					type="potato_i_vicc";
 				};
 				class Item44
 				{
@@ -39044,7 +39044,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27866;
-					type="potato_w_engl";
+					type="potato_i_engl";
 				};
 				class Item45
 				{
@@ -39062,7 +39062,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27867;
-					type="potato_w_eng";
+					type="potato_i_eng";
 				};
 				class Item46
 				{
@@ -39081,7 +39081,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27868;
-					type="potato_w_demol";
+					type="potato_i_demol";
 				};
 				class Item47
 				{
@@ -39098,7 +39098,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27869;
-					type="potato_w_demo";
+					type="potato_i_demo";
 				};
 				class Item48
 				{
@@ -39115,7 +39115,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27870;
-					type="potato_w_mine";
+					type="potato_i_mine";
 				};
 				class Item49
 				{
@@ -39134,7 +39134,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27871;
-					type="potato_w_artl";
+					type="potato_i_artl";
 				};
 				class Item50
 				{
@@ -39152,7 +39152,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27872;
-					type="potato_w_artg";
+					type="potato_i_artg";
 				};
 				class Item51
 				{
@@ -39170,7 +39170,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27873;
-					type="potato_w_sniper";
+					type="potato_i_sniper";
 				};
 				class Item52
 				{
@@ -39189,7 +39189,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27874;
-					type="potato_w_spotter";
+					type="potato_i_spotter";
 				};
 				class Item53
 				{
@@ -39208,7 +39208,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27875;
-					type="potato_w_mtrl";
+					type="potato_i_mtrl";
 				};
 				class Item54
 				{
@@ -39226,7 +39226,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27876;
-					type="potato_w_mtrag";
+					type="potato_i_mtrag";
 				};
 				class Item55
 				{
@@ -39244,7 +39244,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27877;
-					type="potato_w_mtrg";
+					type="potato_i_mtrg";
 				};
 				class Item56
 				{
@@ -39263,7 +39263,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27878;
-					type="potato_w_hmgl";
+					type="potato_i_hmgl";
 				};
 				class Item57
 				{
@@ -39281,7 +39281,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27879;
-					type="potato_w_hmgg";
+					type="potato_i_hmgg";
 				};
 				class Item58
 				{
@@ -39299,7 +39299,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27880;
-					type="potato_w_hmgag";
+					type="potato_i_hmgag";
 				};
 				class Item59
 				{
@@ -39318,7 +39318,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27881;
-					type="potato_w_hatl";
+					type="potato_i_hatl";
 				};
 				class Item60
 				{
@@ -39336,7 +39336,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27882;
-					type="potato_w_hatg";
+					type="potato_i_hatg";
 				};
 				class Item61
 				{
@@ -39354,7 +39354,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=27883;
-					type="potato_w_hatag";
+					type="potato_i_hatag";
 				};
 			};
 			class Attributes
