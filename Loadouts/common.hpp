@@ -15,7 +15,7 @@
 #define BASE_FRAG "HandGrenade:2"
 #define BASE_SMOKES "SmokeShell:2"
 #define BASE_GRENADES BASE_FRAG,BASE_SMOKES
-#define LEADER_SMOKES "SmokeShell:4","SmokeShellGreen:2"
+#define LEADER_SMOKES "SmokeShell:4","SmokeShellGreen:2","SmokeShellPurple"
 #define MEDIC_GRENADES "SmokeShell:6","SmokeShellPurple:2"
 #define CREW_GRENADES "SmokeShell:4","SmokeShellGreen:2"
 #define BASE_ENG "ACE_DefusalKit"
