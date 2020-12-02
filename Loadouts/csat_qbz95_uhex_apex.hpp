@@ -147,7 +147,6 @@ class mmgg: ar {// MMG
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpack[] = {"B_Kitbag_cbr"};
   backpackItems[] += {MMG_MAG};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
@@ -227,6 +226,7 @@ class mine: Fic_eng {// Mine Specialist
   handguns[] = {MINE_DETECTOR};
 };
 class demol: Fic_eng {// Demolitions Leader
+  backpack[] = {CARRYALL};
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };

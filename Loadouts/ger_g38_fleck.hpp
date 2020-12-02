@@ -218,8 +218,10 @@ class mine: Fic_eng {// Mine Specialist
   handguns[] = {MINE_DETECTOR};
 };
 class demol: Fic_eng {// Demolitions Leader
+  backpack[] = {CARRYALL};
+  items[] += {RADIO_MR};
+  backpackItems[] = {"Toolkit"};
   magazines[] += {BASE_EXP};
-  backpackItems[] = {RADIO_MR,"Toolkit"};
 };
 class eng: fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};

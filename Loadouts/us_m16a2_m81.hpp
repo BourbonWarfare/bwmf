@@ -3,7 +3,7 @@
 #include "undef.hpp" // Reset defines
 // Camo set
 #define CAMO_UNIFORM "CUP_U_B_US_BDU"
-#define CAMO_VEST "CUP_V_B_Interceptor_Rifleman_M81"
+#define CAMO_VEST "CUP_V_B_Interceptor_Grenadier_M81"
 #define CAMO_BACKPACK "CUP_B_AlicePack_OD"
 #define CAMO_HEADGEAR "CUP_H_US_H_PASGT_WDL"
 // Rifle

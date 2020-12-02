@@ -214,7 +214,8 @@ class vicc: Fic_Soldier_Carbine {// Crew
 class vicd: vicc {// Repair Specialist
 };
 class Fic_eng: vicd {
-  headgear[] = {"rhs_uniform_FROG01_d"};
+  vest[] = {"rhsusf_spc_squadleader"};
+  headgear[] = {"rhsusf_lwh_helmet_marpatd"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
@@ -226,6 +227,7 @@ class mine: Fic_eng {// Mine Specialist
   handguns[] = {MINE_DETECTOR};
 };
 class demol: Fic_eng {// Demolitions Leader
+  backpack[] = {CARRYALL};
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };

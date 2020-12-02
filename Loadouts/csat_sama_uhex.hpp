@@ -114,6 +114,7 @@ class sl: ftl {// SL
   items[] += {RADIO_MR};
 };
 class coy: sl {// CO and DC
+  backpack[] = {MNP_B_ROK_KB};
   items[] += {RADIO_LR};
 };
 class uav: rifleman {

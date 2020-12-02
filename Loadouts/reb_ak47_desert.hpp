@@ -264,9 +264,10 @@ class vicl: vicc {// Vehicle Commander
   linkedItems[] = {BINOS};
 };
 class mmgl: sl {// MMG Lead
+  handguns[] = {};
   vest[] = {"MNP_V_HarnessO_brn_GL"};
   backpack[] = {CARRYALL};
-  magazines[] += {MMG_MAG2};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,MMG_MAG2};
 };
 class matl: sl {// MAT Lead
   backpack[] = {CARRYALL};

@@ -110,6 +110,7 @@ class ftl: rifleman {// FTL
 };
 class sl: ftl {// SL
   headgear[] = {"rhsusf_ach_helmet_headset_ocp"};
+  vest[] = {"rhsusf_iotv_ocp_Squadleader"};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -207,7 +208,7 @@ class pilot {// Pilot
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class vicc: Fic_Soldier_Carbine {// Crew
-  vest[] = {"rhsusf_iotv_ocp"};
+  vest[] = {"rhsusf_iotv_ocp_repair"};
   headgear[] = {"rhsusf_cvc_green_ess"};
   backpack[] = {"B_Carryall_mcamo"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
@@ -273,7 +274,6 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
-  backpackItems[] = {};
   magazines[] += {HMG_MAG};
   launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS,BASE_MEDICAL};

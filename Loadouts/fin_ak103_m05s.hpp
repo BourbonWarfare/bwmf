@@ -242,6 +242,7 @@ class fac: coy {// FAC
 class rifleman_02: rifleman {// Rifleman 2
 };
 class artl: sl {// Artillery Leader
+  backpack[] = {MNP_B_RU2_FP};
   backpackItems[] += {BASE_ARTILLERY,RADIO_LR};
 };
 class artg: rifleman {// Artillery Gunner
@@ -266,11 +267,12 @@ class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};
   backpackItems[] = {};
   items[] += {BASE_MEDICAL};
-  magazines[] += {MMG_MAG2};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,MMG_MAG2};
 };
 class matl: sl {// MAT Lead
+  handguns[] = {};
   backpack[] = {CARRYALL};
-  magazines[] += {MAT_MAG2};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,MAT_MAG2};
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
