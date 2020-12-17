@@ -17,7 +17,7 @@ class CfgLoadouts {
   useFallback = 1;
 
   // prefixes to strip from the units classnames
-  prefixes[] = {"b_", "o_", "i_"};
+  prefixes[] = {"potato_w_", "potato_e_", "potato_i_"};
 
   // Shared defines
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
@@ -33,7 +33,7 @@ class CfgLoadouts {
   // British: MX - Brown Splinter "Loadouts\brit_mx_bs.hpp"
   // British: MX - Green Splinter "Loadouts\brit_mx_gs_apex.hpp" (apex)
   // Canadian: M16 - CadPat Desert "Loadouts\can_m16_cpd.hpp"
-  // Canadian: M16 - CadPat Tropical Woodland "Loadouts\can_m16_cptw.hpp"
+  // Canadian: M16 - CadPat Tropical Woodland "Loadouts\can_m16_cpw.hpp"
   // Chinese: QBZ95 - Universal "Loadouts\chi_qbz95_universal_apex.hpp" (apex)
   // CSAT: QBZ95 - Green Hex "Loadouts\csat_qbz95_ghex_apex.hpp" (apex)
   // CSAT: QBZ95 - Hex "Loadouts\csat_qbz95_hex_apex.hpp" (apex)
@@ -51,11 +51,7 @@ class CfgLoadouts {
   // German: G36 - Tropentarn Camo "Loadouts\ger_g36_tropen.hpp"
   // German: G38 - Flecktarn Camo "Loadouts\ger_g38_fleck.hpp"
   // German: G38 - Tropentarn Camo "Loadouts\ger_g38_tropen.hpp"
-  // CSAT: QBZ95 - Green Hex "Loadouts\msv_csat_qbz95_ghex_apex.hpp" (msv, apex)
-  // Russian: AK74 - Digital "Loadouts\msv_ru_ak74_emr.hpp" (msv)
-  // Russian: AK74 - Desert "Loadouts\msv_ru_ak74_emrd.hpp" (msv)
-  // Russian: AK74 - Floral "Loadouts\msv_ru_ak74_flora.hpp" (msv)
-  // Russian: AKM - Soviet Uniforms "Loadouts\msv_sov_akm_ttsko.hpp" (msv)
+  // Israeli: Tar-21 - Olive Drab "Loadouts\idf_tar21_oli.hpp"
   // Norwegian: HK416 - M/03 Desert Desert "Loadouts\no_hk416_m03.hpp"
   // Norwegian: HK416 - M/98 Woodland "Loadouts\no_hk416_m98.hpp"
   // Rebel: AK47 - Mixed Desert "Loadouts\reb_ak47_desert.hpp"
@@ -71,32 +67,31 @@ class CfgLoadouts {
   // US: M4 - Gray/Green "Loadouts\us_m4_ucp.hpp"
   // US: M4 - Tan "Loadouts\us_m4_ocp.hpp"
   // US: M16 - M81 "Loadouts\us_m16_m81.hpp"
+  // US: M16a2 - M81 "Loadouts\us_m16a2_m81.hpp"
   // US: MX - Multi-Terrain Pattern "Loadouts\us_mx_mtp.hpp"
   // US: MX - Tropical "Loadouts\us_mx_trop_apex.hpp" (apex)
+  // US: M16 - Marine Pattern Desert "Loadouts\usmc_m16_marpatd.hpp"
+  // US: M16 - Marine Pattern Woodland "Loadouts\usmc_m16_marpatw.hpp"
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
 
   // West factions
   #include "Loadouts\west_gear.hpp"
-  class blu_f { // BluFor
+  class potato_w { // BluFor
     #include "Loadouts\us_mx_mtp.hpp"
   };
 
   // Indy factions
   #include "Loadouts\indy_gear.hpp"
-  class ind_f { // Indy
+  class potato_i { // Indy
     #include "Loadouts\aaf_f2000_digi.hpp"
   };
 
   // East Factions
   #include "Loadouts\east_gear.hpp"
-  class opf_f { // OpFor
+  class potato_e { // OpFor
     #include "Loadouts\csat_sama_hex.hpp"
-  };
-
-  class potato_msv { // MSV
-    #include "Loadouts\msv_csat_sama_hex.hpp"
   };
 
   // Civilians (mainly for RP missions)

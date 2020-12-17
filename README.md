@@ -1,3 +1,11 @@
+## BWMF Version 5.3 ##
+* Rework framework to use Potato units
+* Rework MSV to be compatible with all standard loadouts
+* Update base medical loadouts (Add splints remove morphine on GI, addition of adenosine for medics)
+* Addition of FAC, Artillery, HAT, HMG, and Logistics teams
+* Addition of dedicated slots for weapons team leads, medics (Squad, Pl, Coy), Rifleman 2, executive officers (Pl, Coy), vehicle crews (Leader, Gunner, Driver), and aircrews (Pilot, Crew Chief, Gunner)
+* Many minor fixes to issues discovered in the process of the update
+
 ## BWMF Version 5.2 ##
 * Moved to Advanced Medical
 * Add group names for slotting
