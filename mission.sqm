@@ -6877,7 +6877,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_HMG1_AG";
-						description="BluFor Heavy MG Team 1 Spotter";
+						description="BluFor Heavy MG Team 1 Loader";
 						isPlayable=1;
 					};
 					id=26891;
@@ -7267,7 +7267,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_HAT1_AG";
-						description="BluFor Heavy AT Team 1 Spotter";
+						description="BluFor Heavy AT Team 1 Loader";
 						isPlayable=1;
 					};
 					id=26903;
@@ -11393,7 +11393,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_HMG1_AG_1";
-						description="JIP HMG Spotter";
+						description="JIP HMG Loader";
 						isPlayable=1;
 					};
 					id=27043;
@@ -11448,7 +11448,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_HAT1_AG_1";
-						description="JIP HAT Spotter";
+						description="JIP HAT Loader";
 						isPlayable=1;
 					};
 					id=27046;
@@ -16064,7 +16064,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_HMG1_AG";
-						description="OpFor Heavy MG Team 1 Spotter";
+						description="OpFor Heavy MG Team 1 Loader";
 						isPlayable=1;
 					};
 					id=27173;
@@ -16454,7 +16454,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_HAT1_AG";
-						description="OpFor Heavy AT Team 1 Spotter";
+						description="OpFor Heavy AT Team 1 Loader";
 						isPlayable=1;
 					};
 					id=27185;
@@ -20580,7 +20580,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_HMG1_AG_1";
-						description="JIP HMG Spotter";
+						description="JIP HMG Loader";
 						isPlayable=1;
 					};
 					id=27325;
@@ -20635,7 +20635,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_HAT1_AG_1";
-						description="JIP HAT Spotter";
+						description="JIP HAT Loader";
 						isPlayable=1;
 					};
 					id=27328;
@@ -26179,7 +26179,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_HAT1_AG";
-						description="OpFor HAT Spotter";
+						description="OpFor HAT Loader";
 						isPlayable=1;
 					};
 					id=27454;
@@ -26569,7 +26569,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_HMG1_AG";
-						description="OpFor HMG Spotter";
+						description="OpFor HMG Loader";
 						isPlayable=1;
 					};
 					id=27466;
@@ -30108,7 +30108,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_HMG1_AG_1";
-						description="JIP HMG Spotter";
+						description="JIP HMG Loader";
 						isPlayable=1;
 					};
 					id=27598;
@@ -30163,7 +30163,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_HAT1_AG_1";
-						description="JIP HAT Spotter";
+						description="JIP HAT Loader";
 						isPlayable=1;
 					};
 					id=27601;
@@ -34622,7 +34622,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_HMG1_AG";
-						description="Indy Heavy MG Team 1 Spotter";
+						description="Indy Heavy MG Team 1 Loader";
 						isPlayable=1;
 					};
 					id=27724;
@@ -35030,7 +35030,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_HAT1_AG";
-						description="Indy Heavy AT Team 1 Spotter";
+						description="Indy Heavy AT Team 1 Loader";
 						isPlayable=1;
 					};
 					id=27737;
@@ -39295,7 +39295,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_HMG1_AG_1";
-						description="JIP HMG Spotter";
+						description="JIP HMG Loader";
 						isPlayable=1;
 					};
 					id=27880;
@@ -39350,7 +39350,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_HAT1_AG_1";
-						description="JIP HAT Spotter";
+						description="JIP HAT Loader";
 						isPlayable=1;
 					};
 					id=27883;
