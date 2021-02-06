@@ -2,6 +2,8 @@
 
 #include "undef.hpp" // Reset defines
 
+#define LINKED BASE_LINKED
+
 class CIV_F {
   class C_man_1 {
     uniform[] = {"U_C_Poloshirt_blue","U_C_Poloshirt_burgundy","U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite"};
