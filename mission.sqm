@@ -21,7 +21,6 @@ class EditorData
 binarizationWanted=1;
 addons[]=
 {
-	"Desert",
 	"potato_units",
 	"A3_Characters_F",
 	"cba_xeh",
@@ -33,40 +32,35 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=5;
 		class Item0
-		{
-			className="Desert";
-			name="Desert";
-		};
-		class Item1
 		{
 			className="potato_units";
 			name="potato_units";
 			author="Potato";
 		};
-		class Item2
+		class Item1
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item2
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="potato_spectate";
 			name="potato_spectate";
