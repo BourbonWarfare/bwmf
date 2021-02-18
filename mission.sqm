@@ -117,6 +117,290 @@ class CustomAttributes
 	};
 	class Category1
 	{
+		name="potato_radios_configureAcre";
+		class Attribute0
+		{
+			property="potato_radios_acreGlobalConfig";
+			expression="[nil, _value] call potato_radios_fnc_acreGlobalAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="true,Negotiations,9,false,false";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="potato_radios_acreSideConfig";
+			expression="[nil, _value] call potato_radios_fnc_acreSideAttributeLoad";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=17;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="false,false,false,false,false,false,false,false";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item4
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item5
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item6
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item7
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item8
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item9
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item10
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item11
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item12
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item13
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item14
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item15
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+						class Item16
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category2
+	{
 		name="Multiplayer";
 		class Attribute0
 		{
@@ -175,7 +459,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category2
+	class Category3
 	{
 		name="Scenario";
 		class Attribute0
