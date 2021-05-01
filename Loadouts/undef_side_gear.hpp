@@ -11,3 +11,6 @@
 #ifdef SIDE_UAV_TERMINAL
   #undef SIDE_UAV_TERMINAL
 #endif
+#ifdef SIDE_FAC_GRENADES
+  #undef SIDE_FAC_GRENADES
+#endif
