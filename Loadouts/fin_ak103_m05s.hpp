@@ -19,6 +19,7 @@ description = "Finland: AK103 - M05 (Snow)";
 // AR
 #define AR "CUP_arifle_RPK74M_railed"
 #define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
+#define AR_ATTACHMENTS "acc_pointer_IR","bipod_02_F_tan"
 // AT
 #define AT "rhs_weap_m72a7"
 // MMG
