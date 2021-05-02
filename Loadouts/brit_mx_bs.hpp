@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: British: MX - Brown Splinter
+author = "BWMF";
+description = "British: MX - Brown Splinter";
 
 #include "undef.hpp" // Reset defines
 

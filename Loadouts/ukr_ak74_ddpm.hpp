@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: "Ukraine": AK74 - Desert DPM
+author = "BWMF";
+description = ""Ukraine": AK74 - Desert DPM";
 
 #include "undef.hpp" // Reset defines
 

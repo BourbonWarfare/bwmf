@@ -1,5 +1,5 @@
-// Author: You
-// Description: paste your loadout config from the arseanal exporter
+author = "You";
+description = "paste your loadout config from the arseanal exporter";
 #include "undef.hpp" // Reset defines
 
 // ------------------- PASTE BELOW THIS LINE

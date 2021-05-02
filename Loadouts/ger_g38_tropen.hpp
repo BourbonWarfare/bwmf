@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: German: G38 - Troppentarn Camo
+author = "SovietOnion";
+description = "German: G38 - Troppentarn Camo";
 
 #include "undef.hpp" // Reset defines
 

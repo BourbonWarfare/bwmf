@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Czechoslovakia: vz.58 - M95 Desert
+author = "BWMF";
+description = "Czechoslovakia: vz.58 - M95 Desert";
 
 #include "undef.hpp"
 

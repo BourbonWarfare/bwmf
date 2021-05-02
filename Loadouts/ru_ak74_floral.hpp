@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Russian: AK74 - Floral
+author = "BWMF";
+description = "Russian: AK74 - Floral";
 
 #include "undef.hpp" // Reset defines
 

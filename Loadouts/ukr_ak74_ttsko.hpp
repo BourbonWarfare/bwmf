@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Ukraine: AK74 - TTskO (Green)
+author = "BWMF";
+description = "Ukraine: AK74 - TTskO (Green)";
 
 #include "undef.hpp" // Reset defines
 

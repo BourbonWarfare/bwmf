@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Rebel: M70/AKM - Mixed Desert
+author = "BWMF";
+description = "Rebel: M70/AKM - Mixed Desert";
 
 #include "undef.hpp" // Reset defines
 

@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: AAF: F2000 - Green digital
+author = "BWMF";
+description = "AAF: F2000 - Green digital";
 
 #include "undef.hpp" // Reset defines
 

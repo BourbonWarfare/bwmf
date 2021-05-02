@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: FIA: TAR-21 - Guerilla
+author = "BWMF";
+description = "FIA: TAR-21 - Guerilla";
 
 #include "undef.hpp" // Reset defines
 

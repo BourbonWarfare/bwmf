@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: HK416 - Tropical
+author = "BWMF";
+description = "US: HK416 - Tropical";
 
 #include "undef.hpp" // Reset defines
 

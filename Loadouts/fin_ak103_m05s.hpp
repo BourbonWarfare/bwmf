@@ -1,5 +1,5 @@
-// Author: Mozaik
-// Description: Finland: AK103 - M05 (Snow)
+author = "Mozaik";
+description = "Finland: AK103 - M05 (Snow)";
 
 #include "undef.hpp" // Reset defines
 

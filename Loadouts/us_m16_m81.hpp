@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: M16 - M81
+author = "BWMF";
+description = "US: M16 - M81";
 
 #include "undef.hpp" // Reset defines
 

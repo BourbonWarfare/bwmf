@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: HK416 - Marine Pattern Desert
+author = "BWMF";
+description = "US: HK416 - Marine Pattern Desert";
 
 #include "undef.hpp" // Reset defines
 

@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: Chinese Universal camo with QBZ-95 rifles
+author = "SovietOnion";
+description = "Chinese Universal camo with QBZ-95 rifles";
 
 #include "undef.hpp" // Reset defines
 
