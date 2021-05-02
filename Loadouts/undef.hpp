@@ -170,7 +170,7 @@
   #undef HMG_MAG
 #endif
 #ifdef HAT
-  #undef HMG
+  #undef HAT
 #endif
 #ifdef HAT_TRI_HI
   #undef HAT_TRI_HI
