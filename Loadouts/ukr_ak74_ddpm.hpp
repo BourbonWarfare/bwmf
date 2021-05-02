@@ -1,5 +1,5 @@
 author = "BWMF";
-description = ""Ukraine": AK74 - Desert DPM";
+description = "Ukraine: AK74 - Desert DPM";
 
 #include "undef.hpp" // Reset defines
 
