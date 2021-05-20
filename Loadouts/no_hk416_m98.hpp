@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Norwegian: HK416 - M/98 Woodland
+author = "BWMF";
+description = "Norwegian: HK416 - M/98 Woodland";
 
 #include "undef.hpp" // Reset defines
 

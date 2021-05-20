@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: German: G38 - Flecktarn Camo
+author = "BWMF";
+description = "German: G38 - Flecktarn Camo";
 
 #include "undef.hpp" // Reset defines
 

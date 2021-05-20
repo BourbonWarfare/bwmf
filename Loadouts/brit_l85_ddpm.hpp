@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: British: L85 - Disruptive Desert
+author = "SovietOnion";
+description = "British: L85 - Disruptive Desert";
 
 #include "undef.hpp" // Reset defines
 

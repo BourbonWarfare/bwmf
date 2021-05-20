@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: HK416 - Marine Pattern Woodland
+author = "BWMF";
+description = "US: HK416 - Marine Pattern Woodland";
 
 #include "undef.hpp" // Reset defines
 

@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: Russian: AK74 - Uniform camouflage coloring desert
+author = "SovietOnion";
+description = "Russian: AK74 - Uniform camouflage coloring desert";
 
 #include "undef.hpp" // Reset defines
 

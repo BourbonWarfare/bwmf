@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: CSAT: KH-2002 Sama - Urban Hex
+author = "BWMF";
+description = "CSAT: KH-2002 Sama - Urban Hex";
 
 #include "undef.hpp" // Reset defines
 

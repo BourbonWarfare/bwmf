@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: MX - Tropical
+author = "BWMF";
+description = "US: MX - Tropical";
 
 #include "undef.hpp" // Reset defines
 

@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: British: L85 - Multi-Terrain Pattern
+author = "SovietOnion";
+description = "British: L85 - Multi-Terrain Pattern";
 
 #include "undef.hpp" // Reset defines
 

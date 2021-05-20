@@ -169,6 +169,9 @@
 #ifdef HMG_MAG
   #undef HMG_MAG
 #endif
+#ifdef HMG_MAG2
+  #undef HMG_MAG2
+#endif
 #ifdef HAT
   #undef HAT
 #endif
@@ -180,4 +183,7 @@
 #endif
 #ifdef HAT_MAG
   #undef HAT_MAG
+#endif
+#ifdef HAT_MAG2
+  #undef HAT_MAG2
 #endif

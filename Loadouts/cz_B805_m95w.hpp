@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Czechia: Bren 805 - M95 Woodland
+author = "BWMF";
+description = "Czechia: Bren 805 - M95 Woodland";
 
 #include "undef.hpp"
 

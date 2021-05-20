@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: CSAT: QBZ-95-1 - Urban Hex
+author = "BWMF";
+description = "CSAT: QBZ-95-1 - Urban Hex";
 
 #include "undef.hpp" // Reset defines
 

@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: Russian: AK74 - Uniform camouflage coloring summer
+author = "BWMF";
+description = "Russian: AK74 - Uniform camouflage coloring summer";
 
 #include "undef.hpp" // Reset defines
 

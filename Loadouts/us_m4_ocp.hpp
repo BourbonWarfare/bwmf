@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: M4 - Tan
+author = "BWMF";
+description = "US: M4 - Tan";
 
 #include "undef.hpp" // Reset defines
 

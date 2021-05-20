@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: British: HK416 - Green Splinter
+author = "BWMF";
+description = "British: HK416 - Green Splinter";
 
 #include "undef.hpp" // Reset defines
 

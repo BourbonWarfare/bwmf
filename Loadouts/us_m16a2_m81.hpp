@@ -1,5 +1,5 @@
-// Author: You
-// Description: paste your loadout config from the arseanal exporter
+author = "You";
+description = "paste your loadout config from the arseanal exporter";
 #include "undef.hpp" // Reset defines
 // Camo set
 #define CAMO_UNIFORM "CUP_U_B_US_BDU"
@@ -10,14 +10,12 @@
 #define RIFLE "CUP_arifle_M16A2"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS
 // GL Rifle
 #define GLRIFLE "CUP_arifle_M16A2_GL"
 #define GLRIFLE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
 #define CARBINE "CUP_arifle_M4A1"
 #define CARBINE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"

@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: HK416 - Multi-Terrain Pattern
+author = "BWMF";
+description = "US: HK416 - Multi-Terrain Pattern";
 
 #include "undef.hpp" // Reset defines
 

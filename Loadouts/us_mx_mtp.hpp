@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: MX - Multi-Terrain Pattern
+author = "BWMF";
+description = "US: MX - Multi-Terrain Pattern";
 
 #include "undef.hpp" // Reset defines
 

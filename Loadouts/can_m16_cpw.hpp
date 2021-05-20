@@ -1,5 +1,5 @@
-// Author: Alablm
-// Description: Canada: M16 - Cadpat Woodland
+author = "Alablm";
+description = "Canada: M16 - Cadpat Woodland";
 
 #include "undef.hpp"
 
