@@ -10,12 +10,11 @@ onLoadName = "*** Insert mission name here. ***";
 // Parameters
 #include "cfg\Params.hpp"
 
-// ACE/Potato settings
-#include "cfg\ACE_Settings.hpp"
-
 respawnDelay = 5; // wait 5 seconds to go to spec
 
-bwmfDate = "2021/02/18"; //Framework date
+
+bwmfDate = "2021/05/24"; //Framework date
+
 
 class CfgDebriefingSections {
   class acex_killTracker {
