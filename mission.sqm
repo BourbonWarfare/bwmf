@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=40787;
+		nextID=40800;
 	};
 	class Camera
 	{
@@ -11839,25 +11839,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="AM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -11872,6 +11853,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -12316,25 +12316,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -12349,6 +12330,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -12816,25 +12816,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -12849,6 +12830,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="CM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -13211,25 +13211,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="DM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -13244,6 +13225,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="DM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -15772,25 +15772,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="EM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -15805,6 +15786,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="EM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -16249,25 +16249,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="FM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -16282,6 +16263,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="FM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -16726,25 +16726,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -16759,6 +16740,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -17121,25 +17121,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="HM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -17154,6 +17135,25 @@ class Mission
 										};
 									};
 									value="GREEN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="HM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -17558,7 +17558,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=62;
+				items=63;
 				class Item0
 				{
 					dataType="Object";
@@ -18756,6 +18756,23 @@ class Mission
 					};
 					id=39996;
 					type="potato_w_hatag";
+				};
+				class Item62
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={495.957,5.0014391,844.04498};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="JIP UAV Operator";
+						isPlayable=1;
+					};
+					id=40787;
+					type="potato_w_uav";
 				};
 			};
 			class Attributes
@@ -27966,25 +27983,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="AM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -27999,6 +27997,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -28449,25 +28466,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="BM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -28482,6 +28480,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="BM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -28951,25 +28968,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="CM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -28984,6 +28982,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="CM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -29453,25 +29470,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="DM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -29486,6 +29484,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="DM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -29955,25 +29972,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="EM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -29988,6 +29986,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="EM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -30456,25 +30473,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="FM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -30489,6 +30487,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="FM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -30957,25 +30974,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="GM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -30990,6 +30988,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -31459,25 +31476,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="HM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -31492,6 +31490,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="HM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -31961,25 +31978,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="potato_markers_addMarker";
-							expression="[_this, _value] call potato_markers_fnc_setMarker;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="IM,16,white,\z\potato\addons\markers\data\medical.paa";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -31994,6 +31992,25 @@ class Mission
 										};
 									};
 									value="MAIN";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="IM,16,white,\z\potato\addons\markers\data\medical.paa";
 								};
 							};
 						};
@@ -35570,7 +35587,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=62;
+				items=63;
 				class Item0
 				{
 					dataType="Object";
@@ -36768,6 +36785,23 @@ class Mission
 					};
 					id=40488;
 					type="potato_e_hatag";
+				};
+				class Item62
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={495.931,5.0014391,812.099};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="JIP UAV Operator";
+						isPlayable=1;
+					};
+					id=40792;
+					type="potato_e_uav";
 				};
 			};
 			class Attributes
@@ -44985,7 +45019,7 @@ class Mission
 			side="Independent";
 			class Entities
 			{
-				items=62;
+				items=63;
 				class Item0
 				{
 					dataType="Object";
@@ -46183,6 +46217,23 @@ class Mission
 					};
 					id=40770;
 					type="potato_i_hatag";
+				};
+				class Item62
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={495.98499,5.0014391,780.052};
+					};
+					side="Independent";
+					flags=5;
+					class Attributes
+					{
+						description="JIP UAV Operator";
+						isPlayable=1;
+					};
+					id=40793;
+					type="potato_i_uav";
 				};
 			};
 			class Attributes
