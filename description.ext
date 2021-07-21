@@ -13,7 +13,7 @@ onLoadName = "*** Insert mission name here. ***";
 respawnDelay = 5; // wait 5 seconds to go to spec
 
 
-bwmfDate = "2021/05/24"; //Framework date
+bwmfDate = "2021/07/21"; //Framework date
 
 
 class CfgDebriefingSections {
