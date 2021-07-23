@@ -23,7 +23,6 @@ class CfgLoadouts {
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
 
   // Available loadouts (configured for BluFor, Indy, and OpFor)
-  // For use with exporter - "Loadouts\blankForArsenal.hpp"
   // AAF: F2000 - Green Digital "Loadouts\aaf_f2000_digi.hpp"
   // British: HK416 - Brown Splinter "Loadouts\brit_hk416_bs_apex.hpp" (apex)
   // British: HK416 - Green Splinter "Loadouts\brit_hk416_gs_apex.hpp" (apex)
@@ -72,6 +71,10 @@ class CfgLoadouts {
   // US: MX - Tropical "Loadouts\us_mx_trop_apex.hpp" (apex)
   // US: M16 - Marine Pattern Desert "Loadouts\usmc_m16_marpatd.hpp"
   // US: M16 - Marine Pattern Woodland "Loadouts\usmc_m16_marpatw.hpp"
+
+  //Non-standard Loadouts
+  // For use with exporter - "Loadouts\blankForArsenal.hpp"
+  // US 1963: M14 - Woodland BDU "Loadouts\us63_M14_erdl.hpp" - Rifleman 2 is a dedicated grenadier, MAT uses Light Antitank
 
   // Note: please delete any factions you're not using
   // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
