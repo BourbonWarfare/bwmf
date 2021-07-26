@@ -70,6 +70,7 @@ class AddonsMetaData
 randomSeed=10562329;
 class ScenarioData
 {
+	author="*** Insert author name here. ***";
 	onLoadMission="Made with the BW Mission Framework";
 	loadScreen="\z\potato\addons\missionModules\images\bwbanner01.jpg";
 	saving=0;
