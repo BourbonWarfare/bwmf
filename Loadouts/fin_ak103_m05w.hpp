@@ -126,8 +126,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  attachments[] = {};
-  opticChoices[] = {AR_ATTACHMENTS};
+  attachments[] = {AR_ATTACHMENTS};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
