@@ -205,7 +205,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
 };
 class vicd: vicc {// Repair Specialist
 };
-class Fic_Eng: vicd {
+class Fic_eng: vicd {
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
@@ -222,7 +222,7 @@ class demol: Fic_eng {// Demolitions Leader
   backpackItems[] = {"Toolkit"};
   magazines[] += {BASE_EXP};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
