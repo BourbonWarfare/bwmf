@@ -219,7 +219,7 @@ class mine: Fic_eng {// Mine Specialist
 };
 class demol: Fic_eng {// Demolitions Leader
   backpack[] = {CARRYALL};
-  tems[] += {RADIO_MR};
+  items[] += {RADIO_MR};
   backpackItems[] = {"Toolkit"};
   magazines[] += {BASE_EXP};
 };
@@ -238,9 +238,10 @@ class artl: sl {// Artillery Leader
 class artg: rifleman {// Artillery Gunner
   backpackItems[] += {BASE_ARTILLERY};
 };
-class plm: sm {// Platoon Medic
+class plm: sm {//Platoon Medic
+  backpackItems[] = {PL_MEDIC_MEDICAL};
 };
-class cm: sm {// Company Medic
+class cm: plm {// Company Medic
 };
 class xo: coy {// XO
 };

@@ -1,3 +1,20 @@
+# BWMF
+
+A mission framework from the members of Bourbon Warfare.
+
+<p align="center">
+    <a href="https://github.com/BourbonWarfare/bwmf/issues">
+        <img src="https://img.shields.io/github/issues/BourbonWarfare/bwmf" alt="Potato Issues">
+    </a>
+    <a href="https://discord.gg/sW8CT2m">
+        <img src="https://img.shields.io/discord/681656029758488619?color=%237289da&label=Discord&logo=discord&style=flat-square" alt="Bourbon Warfare Discord">
+    </a>
+    <a href="http://www.bourbonwarfare.com/">
+        <img src="https://img.shields.io/badge/Website-Bourbon%20Warfare-red" alt="Bourbon Warfare Website">
+    </a>
+</p>
+
+
 ## BWMF Version 5.3 ##
 * Rework framework to use Potato units
 * Rework MSV to be compatible with all standard loadouts

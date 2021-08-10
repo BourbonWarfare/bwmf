@@ -254,9 +254,10 @@ class artl: sl {// Artillery Leader
 class artg: rifleman {// Artillery Gunner
   backpackItems[] += {BASE_ARTILLERY};
 };
-class plm: sm {// Platoon Medic
+class plm: sm {//Platoon Medic
+  backpackItems[] = {PL_MEDIC_MEDICAL};
 };
-class cm: sm {// Company Medic
+class cm: plm {// Company Medic
 };
 class xo: coy {// XO
 };
@@ -267,7 +268,7 @@ class sgt: plt {// Platoon Sergeant
 class vicl: vicc {// Vehicle Commander
   items[] += {RADIO_MR};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
-  linkedItems[] = {BINOS};
+  linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};

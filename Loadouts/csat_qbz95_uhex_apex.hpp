@@ -147,6 +147,7 @@ class mmgg: ar {// MMG
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
+  backpack[] = {"B_Kitbag_cbr"};
   backpackItems[] += {MMG_MAG};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
@@ -245,9 +246,10 @@ class artl: sl {// Artillery Leader
 class artg: rifleman {// Artillery Gunner
   backpackItems[] += {BASE_ARTILLERY};
 };
-class plm: sm {// Platoon Medic
+class plm: sm {//Platoon Medic
+  backpackItems[] = {PL_MEDIC_MEDICAL};
 };
-class cm: sm {// Company Medic
+class cm: plm {// Company Medic
 };
 class xo: coy {// XO
 };

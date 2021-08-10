@@ -249,9 +249,10 @@ class artl: sl {// Artillery Leader
 class artg: rifleman {// Artillery Gunner
   backpackItems[] += {BASE_ARTILLERY};
 };
-class plm: sm {// Platoon Medic
+class plm: sm {//Platoon Medic
+  backpackItems[] = {PL_MEDIC_MEDICAL};
 };
-class cm: sm {// Company Medic
+class cm: plm {// Company Medic
 };
 class xo: coy {// XO
 };
@@ -274,6 +275,7 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   backpack[] = {CARRYALL};
+  backpackItems[] = {};
   magazines[] += {HMG_MAG};
   launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS,BASE_MEDICAL};
