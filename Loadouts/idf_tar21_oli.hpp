@@ -1,5 +1,5 @@
-// Author: You
-// Description: paste your loadout config from the arseanal exporter
+author = "You";
+description = "paste your loadout config from the arseanal exporter";
 #include "undef.hpp" // Reset defines
 
 // Camo set
@@ -11,14 +11,12 @@
 #define RIFLE "arifle_TRG21_F"
 #define RIFLE_MAG  "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
-#define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "arifle_TRG21_GL_F"
 #define GLRIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
-#define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
 #define CARBINE "arifle_TRG20_F"
 #define CARBINE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
@@ -215,7 +213,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
 };
 class vicd: vicc {// Repair Specialist
 };
-class Fic_Eng: vicd {
+class Fic_eng: vicd {
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
@@ -230,7 +228,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

@@ -1,5 +1,5 @@
-// Author: Mozaik
-// Description: Finland: AK103 - M05 (Snow)
+author = "Mozaik";
+description = "Finland: AK103 - M05 (Snow)";
 
 #include "undef.hpp" // Reset defines
 
@@ -19,6 +19,7 @@
 // AR
 #define AR "CUP_arifle_RPK74M_railed"
 #define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
+#define AR_ATTACHMENTS "acc_pointer_IR","bipod_02_F_tan"
 // AT
 #define AT "rhs_weap_m72a7"
 // MMG
@@ -126,8 +127,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  attachments[] = {};
-  opticChoices[] = {AR_ATTACHMENTS};
+  attachments[] = {AR_ATTACHMENTS};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -232,7 +232,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

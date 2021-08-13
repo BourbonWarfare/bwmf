@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: CSAT: KH-2002 Sama - Hex
+author = "BWMF";
+description = "CSAT: KH-2002 Sama - Hex";
 
 #include "undef.hpp" // Reset defines
 
@@ -39,18 +39,6 @@
 #define HAT_TRI_HI "ace_csw_m3CarryTripod"
 #define HAT_TRI_LO ""
 #define HAT_MAG "Titan_AT:3"
-//HMG
-#define HMG "CUP_KORD_carry"
-#define HMG_TRI_HI "ace_csw_kordCarryTripod"
-#define HMG_TRI_LO "ace_csw_kordCarryTripodLow"
-#define HMG_MAG "ace_csw_50Rnd_127x108_mag:6"
-#define HMG_MAG2 "ace_csw_50Rnd_127x108_mag:5"
-//HAT
-#define HAT "ace_compat_rhs_afrf3_kornet_carry"
-#define HAT_TRI_HI ""
-#define HAT_TRI_LO ""
-#define HAT_MAG "ace_compat_rhs_afrf3_mag_9m133f:3","ace_compat_rhs_afrf3_mag_9m133m2:2"
-#define HAT_MAG2 "ace_compat_rhs_afrf3_mag_9m133f:2","ace_compat_rhs_afrf3_mag_9m133m2:2"
 // SAM
 #define SAM "launch_O_Titan_F"
 #define SAM_MAG "Titan_AA:3"
@@ -246,7 +234,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

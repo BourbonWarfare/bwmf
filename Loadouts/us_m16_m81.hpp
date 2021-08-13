@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: US: M16 - M81
+author = "BWMF";
+description = "US: M16 - M81";
 
 #include "undef.hpp" // Reset defines
 
@@ -224,7 +224,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

@@ -1,5 +1,6 @@
-// Author: Urist
-// Description: paste your loadout config from the arseanal exporter
+author = "Urist";
+description = "us63 m14 edrl";
+
 #include "undef.hpp" // Reset defines
 // Camo set
 #define CAMO_UNIFORM "rhs_uniform_bdu_erdl"
@@ -241,7 +242,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] = {BASE_EXP,"rhsusf_20Rnd_762x51_m80_Mag:9",CREW_GRENADES};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

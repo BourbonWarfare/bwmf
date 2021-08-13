@@ -1,5 +1,5 @@
-// Author: BWMF
-// Description: CSAT: QBZ-95-1 - Urban Hex
+author = "BWMF";
+description = "CSAT: QBZ-95-1 - Urban Hex";
 
 #include "undef.hpp" // Reset defines
 
@@ -19,6 +19,7 @@
 // AR
 #define AR "arifle_CTARS_blk_F"
 #define AR_MAG "100Rnd_580x42_Mag_F:4"
+#define AR_ATTACHMENTS RIFLE_ATTACHMENTS
 // AT
 #define AT "launch_NLAW_F"
 // MMG
@@ -231,7 +232,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC

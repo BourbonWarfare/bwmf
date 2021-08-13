@@ -1,5 +1,5 @@
-// Author: SovietOnion
-// Description: Russian: AK74 - Uniform camouflage coloring desert
+author = "SovietOnion";
+description = "Russian: AK74 - Uniform camouflage coloring desert";
 
 #include "undef.hpp" // Reset defines
 
@@ -174,7 +174,7 @@ class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   magazines[] += {MAT_MAG2};
   items[] += {BASE_MEDICAL};
 };
-class msamg: Fic_soldier_Carbine {// SAM Gunner
+class msamg: Fic_Soldier_Carbine {// SAM Gunner
   SAM_GEAR("B_Carryall_cbr", SAM_MAG)
   launchers[] = {SAM};
 };
@@ -240,7 +240,7 @@ class demol: Fic_eng {// Demolitions Leader
   magazines[] += {BASE_EXP};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
-class eng: fic_eng {// Logistics Engineer
+class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
