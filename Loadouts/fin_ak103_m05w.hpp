@@ -27,9 +27,9 @@ description = "Finland: AK103 - M05 (Woodland)";
 #define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
 #define MMG_MAG2 "rhs_100Rnd_762x54mmR_green:4"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
+#define MAT "CUP_launch_MAAWS"
+#define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
+#define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
 #define MAT_OPTIC "rhs_optic_maaws"
 //HMG
 #define HMG "CUP_DSHKM_carry"
