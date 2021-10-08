@@ -58,8 +58,8 @@ description = "Finland: AK103 - M05 (Snow)";
 #define SMG "rhs_weap_aks74u"
 #define SMG_MAG "rhs_30Rnd_545x39_AK:6"
 // Pistol
-#define PISTOL "rhs_weap_makarov_pmm"
-#define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
+#define PISTOL "CUP_hgun_Makarov"
+#define PISTOL_MAG "CUP_8Rnd_9x18_Makarov_M:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
