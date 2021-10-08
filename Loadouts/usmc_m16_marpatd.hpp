@@ -25,9 +25,9 @@ description = "US: HK416 - Marine Pattern Desert";
 #define MMG "rhs_weap_m240g"
 #define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:2","rhs_mag_smaw_SR:2"
-#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
+#define MAT "CUP_launch_Mk153Mod0"
+#define MAT_MAG "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:2","CUP_SMAW_Spotting:2"
+#define MAT_MAG2 "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:2"
 #define MAT_OPTIC "rhs_weap_optic_smaw"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"

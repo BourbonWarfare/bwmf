@@ -25,9 +25,9 @@ description = "German: G38 - Troppentarn Camo";
 #define MMG "hlc_lmg_MG3KWS_b"
 #define MMG_MAG "hlc_100Rnd_762x51_M_MG3:5"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
-#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
+#define MAT "CUP_launch_Mk153Mod0"
+#define MAT_MAG "CUP_SMAW_HEAA_M:3","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:3"
+#define MAT_MAG2 "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:2"
 #define MAT_OPTIC "rhs_weap_optic_smaw"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"
