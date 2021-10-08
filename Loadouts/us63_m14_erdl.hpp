@@ -3,29 +3,29 @@ description = "us63 m14 edrl";
 
 #include "undef.hpp" // Reset defines
 // Camo set
-#define CAMO_UNIFORM "rhs_uniform_bdu_erdl"
+#define CAMO_UNIFORM "CUP_U_B_BDUv2_ERDL_highland"
 #define CAMO_VEST "PLOT_ARMOR_V_TacChestrig_grn_F"
 #define CAMO_BACKPACK "B_Kitbag_rgr"
-#define CAMO_HEADGEAR "rhsgref_helmet_M1_erdl"
+#define CAMO_HEADGEAR "CUP_H_USArmy_Helmet_M1_plain_Vine"
 // Rifle
-#define RIFLE "rhs_weap_m14"
-#define RIFLE_MAG "rhsusf_20Rnd_762x51_m80_Mag:10"
+#define RIFLE "CUP_srifle_M14"
+#define RIFLE_MAG "CUP_20Rnd_762x51_DMR:10"
 #define RIFLE_ATTACHMENTS ""
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m14"
-#define GLRIFLE_MAG "rhsusf_20Rnd_762x51_m80_Mag:10"
-// WARNING - Unknown GL Muzzle [rhs_weap_m14->SAFE]
+#define GLRIFLE "CUP_srifle_M14"
+#define GLRIFLE_MAG "CUP_20Rnd_762x51_DMR:10"
+// WARNING - Unknown GL Muzzle
 #define GLRIFLE_MAG_SMOKE ""
 #define GLRIFLE_MAG_HE ""
 #define GLRIFLE_MAG_FLARE ""
 // Carbine
-#define CARBINE "rhs_weap_m14"
-#define CARBINE_MAG "rhsusf_20Rnd_762x51_m80_Mag:10"
+#define CARBINE RIFLE
+#define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "rhs_weap_m14"
-#define AR_MAG "rhsusf_20Rnd_762x51_m80_Mag:15"
+#define AR_MAG "CUP_20Rnd_762x51_DMR:15"
 // AT
 #define AT "CUP_launch_M72A6"
 #define AT_MAG "CUP_M72A6_M:1"
