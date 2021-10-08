@@ -181,12 +181,12 @@ class msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
 class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
   MORTAR_GEAR("B_Mortar_01_weapon_F")
   vest[] = {"MNP_V_M81_Harness"};
-  magazines[] = {"rhsusf_20Rnd_762x51_m80_Mag:9",BASE_GRENADES};
+  magazines[] = {"20Rnd_762x51_Mag:9",BASE_GRENADES};
 };
 class mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
   vest[] = {"MNP_V_M81_Harness"};
-  magazines[] = {"rhsusf_20Rnd_762x51_m80_Mag:9",BASE_GRENADES};
+  magazines[] = {"20Rnd_762x51_Mag:9",BASE_GRENADES};
 };
 class spotter: Fic_Spotter {// Spotter
   headgear[] = {"PLOT_ARMOR_H_Booniehat_oli"};
@@ -239,7 +239,7 @@ class mine: Fic_eng {// Mine Specialist
 };
 class demol: Fic_eng {// Demolitions Leader
   backpack[] = {CARRYALL};
-  magazines[] = {BASE_EXP,"rhsusf_20Rnd_762x51_m80_Mag:9",CREW_GRENADES};
+  magazines[] = {BASE_EXP,"20Rnd_762x51_Mag:9",CREW_GRENADES};
   backpackItems[] = {RADIO_MR,"Toolkit"};
 };
 class eng: Fic_eng {// Logistics Engineer
