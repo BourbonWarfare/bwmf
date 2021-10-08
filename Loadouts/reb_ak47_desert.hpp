@@ -16,7 +16,7 @@ description = "Rebel: M70/AKM - Mixed Desert";
 #define CARBINE "rhs_weap_m70ab2"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "potato_arifle_RPK"
+#define AR "CUP_arifle_RPK74"
 #define AR_MAG "potato_75Rnd_762x39mm_tracer:5"
 #define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
