@@ -56,8 +56,8 @@ description = "Norwegian: HK416 - M/98 Woodland";
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "rhsusf_weap_m9"
-#define PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:3"
+#define PISTOL "CUP_hgun_M9A1"
+#define PISTOL_MAG "CUP_15Rnd_9x19_M9:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

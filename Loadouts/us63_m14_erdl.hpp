@@ -65,8 +65,8 @@ description = "us63 m14 edrl";
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "rhsusf_weap_m1911a1"
-#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:7"
+#define PISTOL "CUP_hgun_Colt1911"
+#define PISTOL_MAG "CUP_7Rnd_45ACP_1911:7"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

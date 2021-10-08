@@ -60,8 +60,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "rhsusf_weap_glock17g4"
-#define PISTOL_MAG "rhsusf_mag_17Rnd_9x19_JHP:3"
+#define PISTOL "CUP_hgun_Glock17_blk"
+#define PISTOL_MAG "CUP_17Rnd_9x19_glock17:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
