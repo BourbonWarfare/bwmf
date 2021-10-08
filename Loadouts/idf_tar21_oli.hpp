@@ -24,8 +24,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define AR "LMG_Zafir_F"
 #define AR_MAG "100Rnd_762x54_Box_Tracer_Red:5"
 // AT
-#define AT "rhs_weap_m72a7"
-#define AT_MAG "rhs_m72a7_mag:1"
+#define AT "CUP_launch_M72A6"
+#define AT_MAG ""
 // MMG
 #define MMG "LMG_Zafir_F"
 #define MMG_MAG "100Rnd_762x54_Box_Tracer_Red:5"

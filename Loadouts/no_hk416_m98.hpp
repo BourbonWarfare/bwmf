@@ -20,7 +20,7 @@ description = "Norwegian: HK416 - M/98 Woodland";
 #define AR "CUP_lmg_m249_pip1"
 #define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
 #define MMG "rhs_weap_m240B"
 #define MMG_MAG "rhsusf_100Rnd_762x51:5"

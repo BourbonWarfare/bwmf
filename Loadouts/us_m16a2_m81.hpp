@@ -23,8 +23,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define AR "CUP_lmg_M249_E2"
 #define AR_MAG "CUP_200Rnd_TE4_Red_Tracer_556x45_M249:3"
 // AT
-#define AT "rhs_weap_m72a7"
-#define AT_MAG "rhs_m72a7_mag:1"
+#define AT "CUP_launch_M72A6"
+#define AT_MAG ""
 // MMG
 #define MMG "CUP_lmg_M60E4_norail"
 #define MMG_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:5"

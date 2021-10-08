@@ -21,7 +21,7 @@ description = "Finland: AK103 - M05 (Woodland)";
 #define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
 #define AR_ATTACHMENTS "acc_pointer_IR","bipod_02_F_tan"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
 #define MMG "rhs_weap_pkm"
 #define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
