@@ -6,7 +6,7 @@ description = "German: G36 - Flecktarn Camo";
 // Rifle
 #define RIFLE "hlc_rifle_G36V"
 #define RIFLE_MAG "hlc_30rnd_556x45_EPR_G36:8","hlc_30rnd_556x45_Tracers_G36:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15side_bk"
+#define RIFLE_ATTACHMENTS "cup_acc_anpeq_15_black"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "hlc_rifle_G36VAG36"
@@ -52,7 +52,7 @@ description = "German: G36 - Flecktarn Camo";
 // Spotter Rifle
 #define SPOTTER RIFLE
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","cup_acc_anpeq_15_black","rhsusf_acc_grip1"
 // SMG
 #define SMG "rhsusf_weap_MP7A2_grip1"
 #define SMG_MAG "rhsusf_mag_40Rnd_46x30_FMJ:6"

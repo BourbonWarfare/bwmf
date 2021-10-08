@@ -6,7 +6,7 @@ description = "US: HK416 - Marine Pattern Desert";
 // Rifle
 #define RIFLE "CUP_arifle_M16A4_Base"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
+#define RIFLE_ATTACHMENTS "cup_acc_anpeq_15_black"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
 #define GLRIFLE "CUP_arifle_M16A4_GL"
@@ -46,11 +46,11 @@ description = "US: HK416 - Marine Pattern Desert";
 // Sniper Rifle
 #define SNIPER "rhs_weap_sr25"
 #define SNIPER_MAG "rhsusf_20Rnd_762x51_SR25_m118_special_Mag:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
+#define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","rhsusf_acc_harris_bipod"
 // Spotter Rifle
 #define SPOTTER "CUP_arifle_M4A3_black"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","cup_acc_anpeq_15_black","rhsusf_acc_grip1"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
