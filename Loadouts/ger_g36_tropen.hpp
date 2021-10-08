@@ -37,10 +37,10 @@ description = "German: G36 - Troppentarn Camo";
 #define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
 #define HMG_MAG2 "ace_csw_100Rnd_127x99_mag:2"
 //HAT
-#define HAT "ace_compat_rhs_usf3_tow_carry"
+#define HAT "CUP_TOW_carry"
 #define HAT_TRI_HI "ace_csw_m220CarryTripod"
 #define HAT_TRI_LO ""
-#define HAT_MAG "ace_compat_rhs_usf3_mag_ITOW"
+#define HAT_MAG "CUP_compats_TOW_M"
 // SAM
 #define SAM "rhs_weap_fim92"
 #define SAM_MAG "rhs_fim92_mag:3"
