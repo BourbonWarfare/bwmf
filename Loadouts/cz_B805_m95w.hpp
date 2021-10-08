@@ -5,7 +5,7 @@ description = "Czechia: Bren 805 - M95 Woodland";
 
 // Rifle
 #define RIFLE "CUP_arifle_CZ805_A1"
-#define RIFLE_MAG "30Rnd_556x45_Stanag_green:8","30Rnd_556x45_Stanag_Tracer_Green:2"
+#define RIFLE_MAG "CUP_30Rnd_556x45_CZ805:8","CUP_30Rnd_TE1_Green_Tracer_556x45_CZ805:2"
 #define RIFLE_ATTACHMENTS "CUP_acc_ANPEQ_2"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
