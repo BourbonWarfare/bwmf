@@ -4,17 +4,17 @@ description = "US: M4 - Tan";
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_m4a1_carryhandle_grip2"
+#define RIFLE "CUP_arifle_M4A3_black"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
+#define GLRIFLE "CUP_arifle_M4A1_BUIS_GL"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m4a1_carryhandle_grip"
+#define CARBINE "CUP_arifle_M4A3_black"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_lmg_m249_pip1"
@@ -22,8 +22,8 @@ description = "US: M4 - Tan";
 // AT
 #define AT "rhs_weap_M136"
 // MMG
-#define MMG "rhs_weap_m240B"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "CUP_lmg_M240_B"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
 #define MAT "rhs_weap_smaw"
 #define MAT_MAG "rhs_mag_smaw_HEAA:3","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:3"
@@ -48,7 +48,7 @@ description = "US: M4 - Tan";
 #define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
+#define SPOTTER "CUP_arifle_M4A3_black"
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG

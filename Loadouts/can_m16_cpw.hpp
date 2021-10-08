@@ -14,7 +14,7 @@ description = "Canada: M16 - Cadpat Woodland";
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m4"
+#define CARBINE "CUP_arifle_M4A1_black"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_lmg_m249_pip1"
@@ -22,8 +22,8 @@ description = "Canada: M16 - Cadpat Woodland";
 // AT
 #define AT "CUP_launch_M72A6"
 // MMG
-#define MMG "rhs_weap_m240B"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "CUP_lmg_M240_B"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
 #define MAT "rhs_weap_maaws"
 #define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
