@@ -17,7 +17,7 @@ description = "Ukraine: AK74 - TTskO (Green)";
 #define CARBINE "rhs_weap_aks74n"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "CUP_arifle_RPK74"
+#define AR "CUP_arifle_RPK74_45"
 #define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
 #define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
