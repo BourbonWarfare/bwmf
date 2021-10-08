@@ -28,7 +28,7 @@ description = "Canada: M16 - Cadpat Woodland";
 #define MAT "CUP_launch_MAAWS"
 #define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
 #define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT_OPTIC "cup_optic_maaws_scope"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
