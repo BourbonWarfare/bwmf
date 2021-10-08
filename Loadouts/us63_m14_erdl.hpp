@@ -246,14 +246,14 @@ class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
-  weapons[] = {"rhs_weap_m79"};
+  weapons[] = {"CUP_glaunch_M79"};
   magazines[] = {SIDE_FAC_GRENADES,SIDE_FAC_GRENADES,PISTOL_MAG,PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
 class rifleman_02: rifleman {// Rifleman 2
   handguns[] = {PISTOL};
-  weapons[] = {"rhs_weap_m79"};
-  magazines[] = {"rhs_mag_M441_HE:20","rhs_mag_m714_White:5",BASE_GRENADES,PISTOL_MAG,PISTOL_MAG};
+  weapons[] = {"CUP_glaunch_M79"};
+  magazines[] = {"CUP_20Rnd_762x51_DMR:20","rhs_mag_m714_White:5",BASE_GRENADES,PISTOL_MAG,PISTOL_MAG};
 };
 class artl: sl {// Artillery Leader
   backpack[] = {"B_Kitbag_mcamo"};

@@ -4,17 +4,17 @@ description = "German: G38 - Troppentarn Camo";
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_hk416d145"
+#define RIFLE "CUP_arifle_HK416_Black"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS "cup_acc_anpeq_15_black"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_hk416d145_m320"
+#define GLRIFLE "CUP_arifle_HK416_AGL_Black"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_hk416d10"
+#define CARBINE "CUP_arifle_HK416_CQB_Black"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_arifle_MG36"
