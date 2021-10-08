@@ -54,8 +54,8 @@ description = "German: G36 - Flecktarn Camo";
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","cup_acc_anpeq_15_black","rhsusf_acc_grip1"
 // SMG
-#define SMG "rhsusf_weap_MP7A2_grip1"
-#define SMG_MAG "rhsusf_mag_40Rnd_46x30_FMJ:6"
+#define SMG "CUP_smg_MP7"
+#define SMG_MAG "CUP_40Rnd_46x30_MP7:6"
 // Pistol
 #define PISTOL "CUP_hgun_Glock17_tan"
 #define PISTOL_MAG "CUP_17Rnd_9x19_glock17:3"
