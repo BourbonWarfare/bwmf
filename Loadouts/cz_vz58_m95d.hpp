@@ -18,7 +18,7 @@ description = "Czechoslovakia: vz.58 - M95 Desert";
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_arifle_RPK74"
-#define AR_MAG "potato_75Rnd_762x39mm_tracer:6"
+#define AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_762x39_RPK_M:6"
 // AT
 #define AT "rhs_weap_rpg7"
 #define AT_MAG "rhs_rpg7_PG7VL_mag:1"

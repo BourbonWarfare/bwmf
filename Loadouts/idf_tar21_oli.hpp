@@ -11,7 +11,7 @@ description = "paste your loadout config from the arseanal exporter";
 #define RIFLE "arifle_TRG21_F"
 #define RIFLE_MAG  "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
-#define ALT_OPTICS "optic_Aco","rhsusf_acc_compm4","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
+#define ALT_OPTICS "optic_Aco","rhsusf_acc_eotech_xps3","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad"
 // GL Rifle
 #define GLRIFLE "arifle_TRG21_GL_F"
 #define GLRIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
