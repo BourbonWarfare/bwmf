@@ -55,8 +55,8 @@ description = "Czechoslovakia: vz.58 - M95 Desert";
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "CUP_acc_ANPEQ_2","CUP_optic_RCO"
 // SMG
-#define SMG "rhs_weap_savz61"
-#define SMG_MAG "rhsgref_20rnd_765x17_vz61:6"
+#define SMG "CUP_smg_SA61"
+#define SMG_MAG "CUP_20Rnd_B_765x17_Ball_M:6"
 // Pistol
 #define PISTOL "CUP_hgun_Duty"
 #define PISTOL_MAG "16Rnd_9x21_Mag:3"
