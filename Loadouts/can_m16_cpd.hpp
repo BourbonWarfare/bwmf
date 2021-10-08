@@ -4,12 +4,12 @@ description = "Canada: M16 - Cadpat Desert";
 #include "undef.hpp"
 
 // Rifle
-#define RIFLE "rhs_weap_m16a4_imod"
+#define RIFLE "CUP_arifle_M16A4_Base"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m16a4_imod_M203"
+#define GLRIFLE "CUP_arifle_M16A4_GL"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
