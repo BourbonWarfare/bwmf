@@ -49,8 +49,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define SAM_MAG "CUP_Stinger_M:3"
 #define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14_ris"
-#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"
+#define SNIPER "CUP_srifle_M14_DMR"
+#define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
 // Spotter Rifle
 #define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"

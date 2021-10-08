@@ -17,8 +17,8 @@ description = "US: HK416 - Marine Pattern Desert";
 #define CARBINE "rhs_weap_hk416d10"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "rhs_weap_m249_pip_L"
-#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
+#define AR "CUP_lmg_m249_pip1"
+#define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
 // AT
 #define AT "rhs_weap_M136"
 // MMG
@@ -44,7 +44,7 @@ description = "US: HK416 - Marine Pattern Desert";
 #define SAM_MAG "CUP_Stinger_M:3"
 #define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14_ris"
+#define SNIPER "CUP_srifle_M14_DMR"
 #define SNIPER_MAG "20Rnd_762x51_Mag:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
 // Spotter Rifle
