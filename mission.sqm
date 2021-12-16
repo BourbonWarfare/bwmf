@@ -3083,7 +3083,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="2,7,0";
+									value="1,7,0";
 								};
 							};
 						};
@@ -3794,7 +3794,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="3,7,0";
+									value="2,7,0";
 								};
 							};
 						};
