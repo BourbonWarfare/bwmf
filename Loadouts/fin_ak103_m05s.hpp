@@ -61,7 +61,7 @@ description = "Finland: AK103 - M05 (Snow)";
 #define PISTOL "rhs_weap_makarov_pmm"
 #define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
+#define LEADER_GRENADES SIDE_LEADER_GRENADES
 // Gear
 #define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
@@ -93,7 +93,7 @@ class rifleman {// rifleman
   backpack[] = {"MNP_B_WB_AP"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,BASE_GRENADES};
+  magazines[] = {RIFLE_MAG,SIDE_BASE_GRENADES};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
@@ -101,7 +101,7 @@ class rifleman {// rifleman
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,BASE_GRENADES};
+  magazines[] = {CARBINE_MAG,SIDE_BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
@@ -128,7 +128,7 @@ class uav: rifleman {
 class ar: rifleman {// AR
   weapons[] = {AR};
   attachments[] = {AR_ATTACHMENTS};
-  magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {AR_MAG,PISTOL_MAG,SIDE_BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
@@ -147,7 +147,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  magazines[] = {MMG_MAG2,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {MMG_MAG2,PISTOL_MAG,SIDE_BASE_GRENADES};
   attachments[] = {};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -184,7 +184,7 @@ class mtrag: Fic_Spotter {// Assistant Mortar
 class spotter: Fic_Spotter {// Spotter
   headgear[] = {"CUP_H_PMC_Beanie_Headphones_Winter"};
   weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
+  magazines[] = {SPOTTER_MAG,SIDE_BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_RangeCard"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
@@ -192,7 +192,7 @@ class spotter: Fic_Spotter {// Spotter
 class sniper: spotter {// Sniper
   headgear[] = {"CUP_H_PMC_Beanie_Winter"};
   weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
+  magazines[] = {SNIPER_MAG,SIDE_BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED,LEADER_LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};

@@ -58,7 +58,7 @@ description = "British: HK416 - Green Splinter";
 #define PISTOL "hgun_Pistol_heavy_01_F"
 #define PISTOL_MAG "11Rnd_45ACP_Mag:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
+#define LEADER_GRENADES SIDE_LEADER_GRENADES
 // Gear
 #define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
@@ -90,7 +90,7 @@ class rifleman {// rifleman
   backpack[] = {"B_FieldPack_oli"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,BASE_GRENADES};
+  magazines[] = {RIFLE_MAG,SIDE_BASE_GRENADES};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
@@ -98,7 +98,7 @@ class rifleman {// rifleman
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,BASE_GRENADES};
+  magazines[] = {CARBINE_MAG,SIDE_BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
   vest[] = {"V_PlateCarrier2_rgr_noflag_F"};
@@ -122,7 +122,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {AR_MAG,PISTOL_MAG,SIDE_BASE_GRENADES};
   attachments[] = {AR_ATTACHMENTS};
   handguns[] = {PISTOL};
 };
@@ -143,7 +143,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {MMG_MAG,PISTOL_MAG,SIDE_BASE_GRENADES};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
@@ -177,14 +177,14 @@ class mtrag: Fic_Spotter {// Assistant Mortar
 class spotter: Fic_Spotter {// Spotter
   headgear[] = {"H_Booniehat_oli"};
   weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
+  magazines[] = {SPOTTER_MAG,SIDE_BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
+  magazines[] = {SNIPER_MAG,SIDE_BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};
