@@ -44,7 +44,6 @@ description = "paste your loadout config from the arseanal exporter";
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
 #define LINKED BASE_LINKED
 #define LEADER_LINKED BASE_LEADER_LINKED
-#define CARRYALL "B_Carryall_mcamo"
 
 class Car {
   TransportWeapons[] = {AT};
