@@ -23,8 +23,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define AR "CUP_lmg_M249_E2"
 #define AR_MAG "CUP_200Rnd_TE4_Red_Tracer_556x45_M249:3"
 // AT
-#define AT "rhs_weap_m72a7"
-#define AT_MAG "rhs_m72a7_mag:1"
+#define AT "cwr3_launch_m72a3_Loaded"
+#define AT_MAG "cwr3_m72a3_m:1"
 // MMG
 #define MMG "CUP_lmg_M60E4_norail"
 #define MMG_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:5"
@@ -59,8 +59,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "rhsusf_weap_m1911a1"
-#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+#define PISTOL "CUP_hgun_Colt1911"
+#define PISTOL_MAG "CUP_7Rnd_45ACP_1911:3"
 // Grenades
 #define LEADER_GRENADES SIDE_LEADER_GRENADES
 // Gear
