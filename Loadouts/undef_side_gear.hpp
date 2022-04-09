@@ -14,3 +14,10 @@
 #ifdef SIDE_FAC_GRENADES
   #undef SIDE_FAC_GRENADES
 #endif
+#ifdef SIDE_BASE_GRENADES
+  #undef SIDE_BASE_GRENADES
+#endif
+#ifdef SIDE_LEADER_GRENADES
+  #undef SIDE_LEADER_GRENADES
+#endif
+
