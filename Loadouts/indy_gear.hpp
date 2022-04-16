@@ -5,6 +5,6 @@
 #define SIDE_UAV_BACKPACK "I_UAV_01_backpack_F"
 #define SIDE_UAV_TERMINAL "I_uavterminal"
 #define SIDE_FAC_GRENADES "SmokeShell:2","HandGrenade:2","1Rnd_SmokeBlue_Grenade_shell:4","1Rnd_SmokeYellow_Grenade_shell:3","1Rnd_SmokeOrange_Grenade_shell:3","1Rnd_SmokeGreen_Grenade_shell:5"
-#define SIDE_BASE_GRENADES SIDE_BASE_GRENADES
+#define SIDE_BASE_GRENADES BASE_GRENADES
 #define SIDE_LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 
