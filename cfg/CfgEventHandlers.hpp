@@ -17,4 +17,7 @@ class Extended_InitPost_EventHandlers {
   class Ship_F {
     class BWMF_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
   };
+  class ACE_medicalSupplyCrate {
+    class BWMF_MedicCrate { init = "(_this select 0) TransportItems[] = {MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY,MEDIC_SUPPLY};"; };
+  };
 };
