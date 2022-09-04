@@ -103,7 +103,6 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,SIDE_BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {"V_PlateCarrierIAGL_oli"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
