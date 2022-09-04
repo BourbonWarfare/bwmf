@@ -84,8 +84,8 @@ class Plane {};
 class Ship_F {};
 
 class rifleman {// rifleman
-  uniform[] = {"U_I_CombatUniform","U_I_CombatUniform","U_I_CombatUniform","U_I_CombatUniform_shortsleeve"};
-  vest[] = {"V_PlateCarrierIA1_dgtl","V_PlateCarrierIA1_dgtl","V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl"};
+  uniform[] = {"U_I_CombatUniform","U_I_CombatUniform_shortsleeve"};
+  vest[] = {"V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl"};
   headgear[] = {"H_HelmetIA"};
   backpack[] = {"B_AssaultPack_dgtl"};
   backpackItems[] = {BASE_MEDICAL};
@@ -101,7 +101,6 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,SIDE_BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {"V_PlateCarrierIAGL_dgtl"};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
