@@ -39,6 +39,39 @@ sub RemoveUnusedLoadouts()
             objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
         end if
     next
+    set objFolder = objFSO.GetFolder(objShell.CurrentDirectory & "\Loadouts" & "\Blufor")
+    set colFiles = objFolder.Files
+    for Each objFile in colFiles
+        loadoutName = objFile.name
+        if ((InStr(loadouts, objFile.name) <> 0) Or (objFile.name = "undef.hpp") Or (objFile.name = "undef_side_gear.hpp")) then
+            Wscript.Echo "Loadout: " & objFile.name & " used, leaving in mission folder"
+        else
+            Wscript.Echo "Loadout: " & objFile.name & " not used, deleting from mission folder"
+            objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
+        end if
+    next
+    set objFolder = objFSO.GetFolder(objShell.CurrentDirectory & "\Loadouts" & "\Indfor")
+    set colFiles = objFolder.Files
+    for Each objFile in colFiles
+        loadoutName = objFile.name
+        if ((InStr(loadouts, objFile.name) <> 0) Or (objFile.name = "undef.hpp") Or (objFile.name = "undef_side_gear.hpp")) then
+            Wscript.Echo "Loadout: " & objFile.name & " used, leaving in mission folder"
+        else
+            Wscript.Echo "Loadout: " & objFile.name & " not used, deleting from mission folder"
+            objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
+        end if
+    next
+    set objFolder = objFSO.GetFolder(objShell.CurrentDirectory & "\Loadouts" & "\Opfor")
+    set colFiles = objFolder.Files
+    for Each objFile in colFiles
+        loadoutName = objFile.name
+        if ((InStr(loadouts, objFile.name) <> 0) Or (objFile.name = "undef.hpp") Or (objFile.name = "undef_side_gear.hpp")) then
+            Wscript.Echo "Loadout: " & objFile.name & " used, leaving in mission folder"
+        else
+            Wscript.Echo "Loadout: " & objFile.name & " not used, deleting from mission folder"
+            objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
+        end if
+    next
 end sub
 
 sub ShowSubFolders(fFolder)
