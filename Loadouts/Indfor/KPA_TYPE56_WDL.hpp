@@ -75,7 +75,7 @@
 #define SMG "rhs_weap_aks74un"
 #define SMG_MAG "potato_magazine_545x39_30rnd:5"
 // Pistol
-#define PISTOL "rhs_weap_makarov_pm"
+#define PISTOL "CUP_hgun_Makarov"
 #define PISTOL_MAG "potato_magazine_9x18_8rnd:3"
 #define PISTOL_ATTACHMENTS ""
 // Grenades

@@ -197,14 +197,14 @@ class spotter: Fic_Spotter {// Spotter
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
-  attachments[] = {SPOTTER_ATTACHMENTS};
+  // attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
-  attachments[] = {SNIPER_ATTACHMENTS};
+  // attachments[] = {SNIPER_ATTACHMENTS};
 };
 class pilot {// Pilot
   uniform[] = {CAMO_UNIFORM_PILOT};

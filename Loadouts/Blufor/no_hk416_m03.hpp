@@ -4,31 +4,31 @@
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_hk416d145"
+#define RIFLE "CUP_arifle_HK416_Black"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
+#define RIFLE_ATTACHMENTS "cup_acc_anpeq_15_black"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_hk416d145_m320"
+#define GLRIFLE "CUP_arifle_HK416_AGL_Black"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_hk416d10"
+#define CARBINE "CUP_arifle_HK416_CQB_Black"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "rhs_weap_m249_pip_L"
-#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
+#define AR "CUP_lmg_m249_pip1"
+#define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
-#define MMG "rhs_weap_m240B"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "CUP_lmg_M240_B"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "CUP_launch_MAAWS"
+#define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
+#define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
+#define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 //HMG
 #define HMG "CUP_DSHKM_carry"
 #define HMG_TRI_HI "ace_csw_kordCarryTripod"
@@ -41,23 +41,23 @@
 #define HAT_TRI_LO ""
 #define HAT_MAG "CUP_compats_TOW_M"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG "CUP_Stinger_M:3"
+#define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14_ris"
+#define SNIPER "CUP_srifle_M14_DMR"
 #define SNIPER_MAG "20Rnd_762x51_Mag:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
+#define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","cup_bipod_harris_1a2_l_blk"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
+#define SPOTTER "CUP_arifle_M4A3_black"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "cup_optic_acog2","cup_acc_anpeq_15_black"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "rhsusf_weap_m9"
-#define PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:3"
+#define PISTOL "CUP_hgun_M9"
+#define PISTOL_MAG "potato_magazine_9x19_15rnd:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

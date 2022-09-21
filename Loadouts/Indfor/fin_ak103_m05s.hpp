@@ -20,16 +20,16 @@
 #define AR "CUP_arifle_RPK74M_railed"
 #define AR_MAG "hlc_60Rnd_545x39_t_rpk:7"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
 #define MMG "rhs_weap_pkm"
 #define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
 #define MMG_MAG2 "rhs_100Rnd_762x54mmR_green:4"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "CUP_launch_MAAWS"
+#define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
+#define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
+#define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 //HMG
 #define HMG "CUP_DSHKM_carry"
 #define HMG_TRI_HI "ace_csw_kordCarryTripod"
@@ -42,9 +42,9 @@
 #define HAT_TRI_LO ""
 #define HAT_MAG "CUP_compats_TOW_M"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG "CUP_Stinger_M:3"
+#define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
 #define SNIPER "rhs_weap_svds_npz"
 #define SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:20"
@@ -57,8 +57,8 @@
 #define SMG "rhs_weap_aks74u"
 #define SMG_MAG "rhs_30Rnd_545x39_AK:6"
 // Pistol
-#define PISTOL "rhs_weap_makarov_pmm"
-#define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
+#define PISTOL "CUP_hgun_Makarov"
+#define PISTOL_MAG "CUP_8Rnd_9x18_Makarov_M:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -268,7 +268,7 @@ class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};
   backpackItems[] = {};
   items[] += {BASE_MEDICAL};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,MMG_MAG2};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,MMG_MAG2,PISTOL_MAG};
 };
 class matl: sl {// MAT Lead
   handguns[] = {};

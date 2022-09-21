@@ -20,23 +20,23 @@ description = "paste your loadout config from the arseanal exporter";
 #define HAT_TRI_LO ""
 #define HAT_MAG "CUP_compats_TOW_M"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG "CUP_Stinger_M:3"
+#define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
-#define SNIPER "rhs_weap_m14_ris"
-#define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_swivel"
+#define SNIPER "CUP_srifle_M14_DMR"
+#define SNIPER_MAG "20Rnd_762x51_Mag:10"
+#define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","cup_bipod_harris_1a2_l_blk"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
+#define SPOTTER "CUP_arifle_M4A3_black"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "cup_optic_acog2","cup_acc_anpeq_15_black"
 // SMG
 #define SMG CARBINE
 #define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "rhsusf_weap_m1911a1"
-#define PISTOL_MAG "rhsusf_mag_7x45acp_MHP:3"
+#define PISTOL "CUP_hgun_Colt1911"
+#define PISTOL_MAG "potato_magazine_45_acp_7rnd:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

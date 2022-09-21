@@ -4,31 +4,31 @@
 #include "undef.hpp"
 
 // Rifle
-#define RIFLE "rhs_weap_m16a4_imod"
+#define RIFLE "CUP_arifle_M16A4_Base"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m16a4_imod_M203"
+#define GLRIFLE "CUP_arifle_M16A4_GL"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m4"
+#define CARBINE "CUP_arifle_M4A1_black"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "rhs_weap_m249_pip_L"
-#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
+#define AR "CUP_lmg_m249_pip1"
+#define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
-#define MMG "rhs_weap_m240B"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "CUP_lmg_M240_B"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "CUP_launch_MAAWS"
+#define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
+#define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
+#define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
@@ -40,17 +40,17 @@
 #define HAT_TRI_LO ""
 #define HAT_MAG "CUP_compats_TOW_M"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG "CUP_Stinger_M:3"
+#define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
 #define SNIPER "CUP_srifle_AWM_wdl"
 #define SNIPER_MAG "ACE_10Rnd_338_300gr_HPBT_Mag:10","ACE_10Rnd_338_API526_Mag:5"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_harris_bipod"
+#define SNIPER_ATTACHMENTS "optic_LRPS","cup_bipod_harris_1a2_l_blk"
 // Spotter Rifle
 #define SPOTTER CARBINE
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "cup_optic_acog2","cup_acc_anpeq_15_black"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"

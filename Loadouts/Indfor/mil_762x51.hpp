@@ -299,11 +299,11 @@ class matl: sl {// MAT Lead
 class hmgl: sl {// HMG Lead
   weapons[] = {RIFLE};
   magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
-  backpack[] = {HMG_TRI_LO};
+  launcher[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS};
 };
 class hmgg: rifleman {// HMG Gunner
-  backpack[] = {HMG};
+  launcher[] = {HMG};
 };
 class hmgag: rifleman {// HMG Spotter
   backpack[] = {CARRYALL};
@@ -314,11 +314,11 @@ class hatl: sl {// HAT Lead
   weapons[] = {RIFLE};
   backpackItems[] = {};
   magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG};
-  backpack[] = {HAT_TRI_LO};
+  launcher[] = {HAT_TRI_LO};
   items[] += {BASE_MEDICAL};
 };
 class hatg: rifleman {// HAT Gunner
-  backpack[] = {HAT};
+  launcher[] = {HAT};
 };
 class hatag: rifleman {// HAT Spotter
   backpack[] = {CARRYALL};

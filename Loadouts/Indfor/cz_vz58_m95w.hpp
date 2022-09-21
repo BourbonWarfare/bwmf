@@ -17,7 +17,7 @@
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "potato_arifle_RPK"
+#define AR "CUP_arifle_RPK74"
 #define AR_MAG "potato_magazine_762x39_75rnd_tracer_Red:6"
 // AT
 #define AT "rhs_weap_rpg7"

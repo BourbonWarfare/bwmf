@@ -69,7 +69,7 @@
 #define SNIPER_ATTACHMENTS "CUP_optic_LeupoldMk4","CUP_bipod_Harris_1A2_L_BLK"
 // Spotter Rifle
 #define SPOTTER RIFLE
-#define SPOTTER_MAG RIFLE_ATTACHMENTS
+#define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "CUP_optic_ACOG2"
 // SMG
 #define SMG "CUP_smg_MP5A5"

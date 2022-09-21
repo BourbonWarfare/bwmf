@@ -1,10 +1,10 @@
 // Author: BWMF
-// Description: Rebel: M70/AKM - Mixed Desert
+// Description: Rebel: AKM/AKM - Mixed Desert
 
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_m70b1"
+#define RIFLE "CUP_arifle_AKM"
 #define RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
 #define RIFLE_ATTACHMENTS "rhs_acc_dtk1l"
 // GL Rifle
@@ -13,11 +13,11 @@
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m70ab2"
+#define CARBINE "CUP_arifle_AKMS"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "potato_arifle_RPK"
-#define AR_MAG "potato_75Rnd_762x39mm_tracer:5"
+#define AR "CUP_arifle_RPK74"
+#define AR_MAG "potato_magazine_762x39_75rnd_tracer_Yellow:5"
 #define AR_ATTACHMENTS "CUP_optic_Kobra"
 // AT
 #define AT "rhs_weap_rpg7"
@@ -56,11 +56,11 @@
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhs_acc_1p78","rhs_acc_perst1ik","rhs_acc_dtk3"
 // SMG
-#define SMG "rhs_weap_m92"
-#define SMG_MAG "rhs_30Rnd_762x39mm:8"
+#define SMG CARBINE
+#define SMG_MAG CARBINE_MAG
 // Pistol
-#define PISTOL "rhs_weap_makarov_pmm"
-#define PISTOL_MAG "rhs_mag_9x18_12_57N181S:3"
+#define PISTOL "CUP_hgun_Makarov"
+#define PISTOL_MAG "CUP_8Rnd_9x18_Makarov_M:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

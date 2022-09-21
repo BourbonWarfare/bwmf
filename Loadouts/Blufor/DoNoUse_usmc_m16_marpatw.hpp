@@ -4,31 +4,31 @@
 #include "undef.hpp" // Reset defines
 
 // Rifle
-#define RIFLE "rhs_weap_m16a4_carryhandle"
+#define RIFLE "CUP_arifle_M16A4_Base"
 #define RIFLE_MAG "30Rnd_556x45_Stanag_red:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-#define RIFLE_ATTACHMENTS "rhsusf_acc_anpeq15A"
+#define RIFLE_ATTACHMENTS "cup_acc_anpeq_15_black"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
-#define GLRIFLE "rhs_weap_m16a4_carryhandle_M203"
+#define GLRIFLE "CUP_arifle_M16A4_GL"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 // Carbine
-#define CARBINE "rhs_weap_m4_carryhandle"
+#define CARBINE "CUP_arifle_M4A1_black_carryhandle"
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "rhs_weap_m249_pip_L"
-#define AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
+#define AR "CUP_lmg_m249_pip1"
+#define AR_MAG "CUP_100Rnd_TE4_Green_Tracer_556x45_M249:4"
 // AT
-#define AT "rhs_weap_M136"
+#define AT "CUP_launch_M136"
 // MMG
-#define MMG "rhs_weap_m240g"
-#define MMG_MAG "rhsusf_100Rnd_762x51:5"
+#define MMG "CUP_lmg_M240_B"
+#define MMG_MAG "CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M:5"
 // MAT
-#define MAT "rhs_weap_smaw"
-#define MAT_MAG "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:2","rhs_mag_smaw_SR:2"
-#define MAT_MAG2 "rhs_mag_smaw_HEAA:2","rhs_mag_smaw_HEDP:1","rhs_mag_smaw_SR:2"
-#define MAT_OPTIC "rhs_weap_optic_smaw"
+#define MAT "CUP_launch_Mk153Mod0"
+#define MAT_MAG "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:2","CUP_SMAW_Spotting:2"
+#define MAT_MAG2 "CUP_SMAW_HEAA_M:2","CUP_SMAW_HEDP_M:1","CUP_SMAW_Spotting:2"
+#define MAT_OPTIC "cup_optic_smaw_scope"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
@@ -40,23 +40,23 @@
 #define HAT_TRI_LO ""
 #define HAT_MAG "CUP_compats_TOW_M"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG "CUP_Stinger_M:3"
+#define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
 #define SNIPER "rhs_weap_sr25"
 #define SNIPER_MAG "rhsusf_20Rnd_762x51_SR25_m118_special_Mag:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","rhsusf_acc_anpeq15side_bk","rhsusf_acc_harris_bipod"
+#define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","cup_bipod_harris_1a2_l_blk"
 // Spotter Rifle
-#define SPOTTER "rhs_weap_m4a1_blockII_grip_KAC_bk"
+#define SPOTTER "CUP_arifle_M4A3_black"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
+#define SPOTTER_ATTACHMENTS "cup_optic_acog2","cup_acc_anpeq_15_black"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "CUP_30Rnd_9x19_MP5:6"
 // Pistol
-#define PISTOL "rhsusf_weap_m9"
-#define PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:3"
+#define PISTOL "CUP_hgun_M9"
+#define PISTOL_MAG "potato_magazine_9x19_15rnd:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -84,9 +84,9 @@ class Plane {};
 class Ship_F {};
 
 class rifleman {// rifleman
-  uniform[] = {"rhs_uniform_FROG01_d"};
+  uniform[] = {"rhs_uniform_FROG01_wd"};
   vest[] = {"rhsusf_spc_rifleman"};
-  headgear[] = {"rhsusf_lwh_helmet_marpatd"};
+  headgear[] = {"rhsusf_lwh_helmet_marpatwd"};
   backpack[] = {"rhsusf_assault_eagleaiii_coy"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -178,7 +178,7 @@ class mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter: Fic_Spotter {// Spotter
-  headgear[] = {"rhs_booniehat2_marpatd"};
+  headgear[] = {"rhs_booniehat2_marpatwd"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
