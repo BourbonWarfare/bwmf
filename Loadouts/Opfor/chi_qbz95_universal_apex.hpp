@@ -5,7 +5,7 @@
 
 // Rifle
 #define RIFLE "arifle_CTAR_blk_F"
-#define RIFLE_MAG "30Rnd_580x42_Mag_F:8","30Rnd_580x42_Mag_Tracer_F:2"
+#define RIFLE_MAG "potato_magazine_580x42_30rnd:8","potato_magazine_580x42_30rnd_tracer_Red:2"
 #define RIFLE_ATTACHMENTS "acc_pointer_IR"
 #define ALT_OPTICS STANAG_OPTICS
 // GL Rifle
@@ -18,13 +18,13 @@
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "arifle_CTARS_blk_F"
-#define AR_MAG "100Rnd_580x42_Mag_F:4"
+#define AR_MAG "potato_magazine_580x42_100rnd:4"
 // AT
 #define AT "rhs_weap_rpg26"
 // MMG
 #define MMG "rhs_weap_pkp"
-#define MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
-#define MMG_MAG2 "rhs_100Rnd_762x54mmR_green:4"
+#define MMG_MAG "potato_box_762x54_100rnd_tracer_Green:5"
+#define MMG_MAG2 "potato_box_762x54_100rnd_tracer_Green:4"
 // MAT
 #define MAT "rhs_weap_rpg7"
 #define MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1","rhs_rpg7_OG7V_mag:1"
@@ -48,7 +48,7 @@
 #define SAM_MAG2 "rhs_mag_9k38_rocket:2"
 // Sniper Rifle
 #define SNIPER "srifle_DMR_07_blk_F"
-#define SNIPER_MAG "20Rnd_650x39_Cased_Mag_F:10"
+#define SNIPER_MAG "potato_magazine_65x39_20rnd:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","acc_pointer_IR"
 // Spotter Rifle
 #define SPOTTER RIFLE
@@ -56,10 +56,10 @@
 #define SPOTTER_ATTACHMENTS "optic_Hamr","acc_pointer_IR"
 // SMG
 #define SMG "SMG_02_F"
-#define SMG_MAG "30Rnd_9x21_Mag_SMG_02:5"
+#define SMG_MAG "potato_magazine_9x19_30rnd:5"
 // Pistol
 #define PISTOL "rhs_weap_pya"
-#define PISTOL_MAG "rhs_mag_9x19_17:3"
+#define PISTOL_MAG "potato_magazine_9x19_17rnd:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

@@ -8,27 +8,27 @@
 #define CAMO_HEADGEAR "CUP_H_US_H_PASGT_WDL"
 // Rifle
 #define RIFLE "CUP_arifle_M16A2"
-#define RIFLE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"
+#define RIFLE_MAG "potato_magazine_556x45_30rnd_reload_tracer_Red:8", "potato_magazine_556x45_30rnd_tracer_Red:2"
 #define RIFLE_ATTACHMENTS ""
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS
 // GL Rifle
 #define GLRIFLE "CUP_arifle_M16A2_GL"
-#define GLRIFLE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"
+#define GLRIFLE_MAG "potato_magazine_556x45_30rnd_reload_tracer_Red:8", "potato_magazine_556x45_30rnd_tracer_Red:2"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
 #define CARBINE "CUP_arifle_M4A1"
-#define CARBINE_MAG "30Rnd_556x45_Stanag_red:8", "30Rnd_556x45_Stanag_Tracer_Red:2"
+#define CARBINE_MAG "potato_magazine_556x45_30rnd_reload_tracer_Red:8", "potato_magazine_556x45_30rnd_tracer_Red:2"
 // AR
 #define AR "CUP_lmg_M249_E2"
-#define AR_MAG "CUP_200Rnd_TE4_Red_Tracer_556x45_M249:3"
+#define AR_MAG "potato_box_556x45_200rnd_tracer_Red:3"
 // AT
 #define AT "CUP_launch_M72A6"
 // MMG
 #define MMG "CUP_lmg_M60E4_norail"
-#define MMG_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:5"
+#define MMG_MAG "potato_box_762x51_100rnd_tracer_Red:5"
 // MAT
 #define MAT "launch_MRAWS_green_rail_F"
 #define MAT_MAG "MRAWS_HEAT_F:5"
@@ -50,7 +50,7 @@
 #define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
 #define SNIPER "CUP_srifle_M14_DMR"
-#define SNIPER_MAG "20Rnd_762x51_Mag:10"
+#define SNIPER_MAG "potato_magazine_762x51_20rnd:10"
 #define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","cup_bipod_harris_1a2_l_blk"
 // Spotter Rifle
 #define SPOTTER "CUP_arifle_M4A3_black"

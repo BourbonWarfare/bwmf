@@ -36,7 +36,7 @@
 #define CARBINE_MAG "potato_magazine_303_b_10rnd_reload_tracer_Red:13","potato_magazine_303_b_10rnd_tracer_Red:3"
 // AR
 #define AR "cwr3_lmg_bren"
-#define AR_MAG "CUP_30Rnd_TE1_Red_Tracer_762x51_FNFAL_M:13"
+#define AR_MAG "potato_magazine_762x51_30rnd_tracer_Red:13"
 // AT
 #define AT "CUP_launch_Mk153Mod0_blk"
 #define AT_MAG "CUP_SMAW_HEAA_M"

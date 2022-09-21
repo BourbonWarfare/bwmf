@@ -71,7 +71,7 @@
 #define SAM_MAG2 "CUP_Igla_M:2"
 // Sniper Rifle
 #define SNIPER "srifle_DMR_07_blk_F"
-#define SNIPER_MAG "ACE_10Rnd_580x42_DBP88_Mag:10"
+#define SNIPER_MAG "potato_magazine_65x39_20rnd:10"
 #define SNIPER_ATTACHMENTS "hlc_optic_zf95base","acc_pointer_ir"
 // Spotter Rifle
 #define SPOTTER RIFLE

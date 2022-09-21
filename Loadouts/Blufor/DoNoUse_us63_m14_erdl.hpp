@@ -30,8 +30,8 @@
 #define AT_MAG "CUP_M72A6_M:1"
 // MMG
 #define MMG "CUP_lmg_M60"
-#define MMG_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:5"
-#define MMG_MAG2 "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:4"
+#define MMG_MAG "potato_box_762x51_100rnd_tracer_Red:5"
+#define MMG_MAG2 "potato_box_762x51_100rnd_tracer_Red:4"
 // MAT
 #define MAT "CUP_launch_M72A6"
 #define MAT_MAG ""
@@ -54,7 +54,7 @@
 #define SAM_MAG2 "CUP_Stinger_M:2"
 // Sniper Rifle
 #define SNIPER "CUP_srifle_M21"
-#define SNIPER_MAG "20Rnd_762x51_Mag:10"
+#define SNIPER_MAG "potato_magazine_762x51_20rnd:10"
 #define SNIPER_ATTACHMENTS "CUP_optic_artel_m14"
 // Spotter Rifle
 #define SPOTTER RIFLE
