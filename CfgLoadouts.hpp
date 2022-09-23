@@ -22,8 +22,13 @@ class CfgLoadouts {
   // Shared defines
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
 
-  // Note: please delete any factions you're not using
-  // (i.e. delete the OpFor and Civ classes in a BluFor vs Indy fight)
+
+  // cleanup.bat will delete any loadouts not in active use (so make sure to include before running)
+
+  // Blufor/Indfor/Opfor folders are just for organization, they can be used with any faction 
+  // e.g. Blufor\us_mx_mtp.hpp for potato_e is fine
+  
+  // Loadouts can be either kept in the Loadouts\Blufor\ folders or moved up to Loadouts\
 
   // West factions
   #include "Loadouts\west_gear.hpp"
