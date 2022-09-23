@@ -14,6 +14,8 @@ A mission framework from the members of Bourbon Warfare.
     </a>
 </p>
 
+## BWMF Version 5.4 ##
+* Loadouts overhaul
 
 ## BWMF Version 5.3 ##
 * Rework framework to use Potato units
