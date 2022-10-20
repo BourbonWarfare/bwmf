@@ -2,7 +2,11 @@ BW shared toolbox to contain scripts, loadouts, templates, etc. in a distributed
 
 
 
-Examples: Loadouts worth sharing but not worth adding to the framework Scripts like `argo_fnc_setId`, `diw_acre_fnc_createRadioJammer` Templates for images like intel documents and map boards.
+Examples: Loadouts worth sharing but not worth adding to the framework 
+
+Scripts like `argo_fnc_setId`, `diw_acre_fnc_createRadioJammer` 
+
+Templates for images like intel documents and map boards.
 
 
 
