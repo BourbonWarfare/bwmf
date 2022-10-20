@@ -6,6 +6,7 @@ set objFSO = CreateObject("Scripting.FileSystemObject")
 set objSuperFolder = objFSO.GetFolder(objShell.CurrentDirectory)
 call ShowSubfolders (objSuperFolder)
 call RemoveUnusedLoadouts
+call RemoveToolbox
 Wscript.Echo "end."
 
 WScript.Quit 0
@@ -72,6 +73,11 @@ sub RemoveUnusedLoadouts()
             objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
         end if
     next
+end sub
+
+sub RemoveToolbox()
+	set objFolder = objFSO.GetFolder(objShell.CurrentDirectory & "\Toolbox")
+    objFSO.DeleteFolder(objFolder), False
 end sub
 
 sub ShowSubFolders(fFolder)
