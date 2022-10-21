@@ -5,46 +5,10 @@ description = "paste your loadout config from the arseanal exporter";
 // ------------------- PASTE BELOW THIS LINE
 
 
-// hello im here again
+
 
 
 // -------------------- PASTE ABOVE THIS LINE
-//HMG
-#define HMG "ace_cswCompatCUP_cup_m2"
-#define HMG_TRI_HI "ace_csw_m3CarryTripod"
-#define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
-#define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
-//HAT
-#define HAT "CUP_TOW_carry"
-#define HAT_TRI_HI "ace_csw_m220CarryTripod"
-#define HAT_TRI_LO ""
-#define HAT_MAG "CUP_compats_TOW_M"
-// SAM
-#define SAM "CUP_launch_FIM92Stinger"
-#define SAM_MAG "CUP_Stinger_M:3"
-#define SAM_MAG2 "CUP_Stinger_M:2"
-// Sniper Rifle
-#define SNIPER "CUP_srifle_M14_DMR"
-#define SNIPER_MAG "potato_magazine_762x51_20rnd:10"
-#define SNIPER_ATTACHMENTS "optic_LRPS","cup_acc_anpeq_15_black","cup_bipod_harris_1a2_l_blk"
-// Spotter Rifle
-#define SPOTTER "CUP_arifle_M4A3_black"
-#define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "cup_optic_acog2","cup_acc_anpeq_15_black"
-// SMG
-#define SMG CARBINE
-#define SMG_MAG CARBINE_MAG
-// Pistol
-#define PISTOL "CUP_hgun_Colt1911"
-#define PISTOL_MAG "potato_magazine_45_acp_7rnd:3"
-// Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
-// Gear
-#define TOOLS BASE_TOOLS
-#define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
-#define LINKED BASE_LINKED
-#define LEADER_LINKED BASE_LEADER_LINKED
-
 class Car {
   TransportWeapons[] = {AT};
   TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
@@ -156,14 +120,14 @@ class spotter: Fic_Spotter {// Spotter
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
-  attachments[] = {SPOTTER_ATTACHMENTS};
+  attachments[] = {SPOTTER_OPTIC};
 };
 class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
-  attachments[] = {SNIPER_ATTACHMENTS};
+  attachments[] = {SNIPER_OPTIC};
 };
 class pilot {// Pilot
   uniform[] = {"U_B_HeliPilotCoveralls"};
