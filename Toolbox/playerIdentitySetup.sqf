@@ -1,4 +1,4 @@
-// Player identity script created by kORIN and Mozaik
+// Player identity script created by Pabst Mirror, ArgoChris, kORIN and Mozaik
 // file created and modified by watermelon
 
 /**
