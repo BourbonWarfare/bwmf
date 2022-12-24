@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_Fin_A"
-#define CAMO_VEST "CUP_Vest_RUS_6B45_Sh117_Green"
-#define CAMO_BACKPACK "B_Battle_Belt_XL_F"
-#define CARRYALL "CUP_O_RUS_Patrol_bag_Green_Shovel"
-#define CAMO_HEADGEAR "MNP_Helmet_FIN_T"
-#define CAMO_HEADGEAR_SPECIAL "MNP_Boonie_FIN"
+#define CAMO_UNIFORM "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia","acp_FI_M05_Relish_lite_U_B_CombatUniform_vest_FI_M05_Relish_insignia"
+#define CAMO_VEST "acp_FI_M05_Relish_lite_V_CF_CarrierRig_lite_FI_M05_Relish"
+#define CAMO_BACKPACK "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
+#define CARRYALL "acp_FI_M05_Relish_lite_B_Carryall_FI_M05_Relish"
+#define CAMO_HEADGEAR "acp_FI_M05_Relish_lite_H_HelmetEAST_Cover_FI_M05_Relish_F"
+#define CAMO_HEADGEAR_SPECIAL "acp_FI_M05_Relish_lite_H_Booniehat_FI_M05_Relish_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "MNP_CombatUniform_Fin_A"
-#define CAMO_VEST_PILOT "V_TacVest_oli"
-#define CAMO_BACKPACK_PILOT "B_AssaultPack_rgr"
+#define CAMO_UNIFORM_PILOT "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
+#define CAMO_VEST_PILOT "acp_FI_M05_Relish_lite_V_CF_CarrierRig_FI_M05_Relish"
+#define CAMO_BACKPACK_PILOT "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
 #define CAMO_HEADGEAR_PILOT "rhs_zsh7a_mike"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "MNP_CombatUniform_Fin_A"
-#define CAMO_VEST_VICC "V_TacVest_oli"
-#define CAMO_BACKPACK_VICC "B_AssaultPack_rgr"
+#define CAMO_UNIFORM_VICC "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
+#define CAMO_VEST_VICC "acp_FI_M05_Relish_lite_V_CF_CarrierRig_FI_M05_Relish"
+#define CAMO_BACKPACK_VICC "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "CUP_arifle_Sa58RIS2"
@@ -123,7 +123,6 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 };
 class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
-  vest[] = {"CUP_Vest_RUS_6B45_Sh117_VOG_Green"};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
@@ -144,13 +143,12 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"CUP_Vest_RUS_6B45_Sh117_PKP_Green"};
+  vest[] = "acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
   backpackItems[] += {AR_MAG};
-  vest[] = {"CUP_Vest_RUS_6B45_Sh117_PKP_Green"};
   linkedItems[] += {BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
@@ -166,14 +164,13 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"CUP_Vest_RUS_6B45_Sh117_PKP_Green"};
+  vest[] = "acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG};
-  vest[] = {"CUP_Vest_RUS_6B45_Sh117_PKP_Green"};
   backpack[] = {CARRYALL};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
