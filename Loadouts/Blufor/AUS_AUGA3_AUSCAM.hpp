@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_Australia","MNP_CombatUniform_Australia_S"
-#define CAMO_VEST "MNP_Vest_Australia_B"
-#define CAMO_BACKPACK "B_Battle_Belt_XL_F"
-#define CARRYALL "B_Carryall_khk"
-#define CAMO_HEADGEAR "MNP_Helmet_Australia"
-#define CAMO_HEADGEAR_SPECIAL "MNP_Boonie_AUS"
+#define CAMO_UNIFORM "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia","acp_AUS_AUSCAM_lite_U_B_CombatUniform_vest_AUS_AUSCAM_insignia"
+#define CAMO_VEST "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_lite_AUS_AUSCAM"
+#define CAMO_BACKPACK "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
+#define CARRYALL "acp_AUS_AUSCAM_lite_B_Carryall_AUS_AUSCAM"
+#define CAMO_HEADGEAR "acp_AUS_AUSCAM_lite_H_HelmetB_light_basic_AUS_AUSCAM","acp_AUS_AUSCAM_lite_H_HelmetB_light_AUS_AUSCAM"
+#define CAMO_HEADGEAR_SPECIAL "acp_AUS_AUSCAM_lite_H_Booniehat_AUS_AUSCAM_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "MNP_CombatUniform_Australia"
-#define CAMO_VEST_PILOT "V_TacVest_khk"
-#define CAMO_BACKPACK_PILOT "B_AssaultPack_cbr"
+#define CAMO_UNIFORM_PILOT "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia"
+#define CAMO_VEST_PILOT "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_AUS_AUSCAM"
+#define CAMO_BACKPACK_PILOT "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_khaki_visor"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "MNP_CombatUniform_Australia"
-#define CAMO_VEST_VICC "V_TacVest_khk"
-#define CAMO_BACKPACK_VICC "B_AssaultPack_cbr"
+#define CAMO_UNIFORM_VICC "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia"
+#define CAMO_VEST_VICC "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_AUS_AUSCAM"
+#define CAMO_BACKPACK_VICC "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "hlc_rifle_auga3_b"
@@ -129,7 +129,6 @@ class ftl: rifleman {// FTL
 };
 class sl: ftl {// SL
   handguns[] = {PISTOL};
-  vest[] = {"MNP_Vest_Australia"};
   magazines[] += {PISTOL_MAG};
   handgunAttachments[] = {PISTOL_ATTACHMENTS};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -144,6 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
+  vest[] = {"acp_AUS_AUSCAM_lite_V_CF_CarrierRig_MG_AUS_AUSCAM"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,6 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
+  vest[] = {"acp_AUS_AUSCAM_lite_V_CF_CarrierRig_MG_AUS_AUSCAM"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};

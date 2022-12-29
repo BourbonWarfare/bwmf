@@ -3,36 +3,36 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia","acp_CA_CADPAT_lite_U_B_CombatUniform_vest_CA_CADPAT_insignia"
-#define CAMO_VEST "acp_CA_CADPAT_lite_V_CF_CarrierRig_lite_CA_CADPAT"
-#define CAMO_BACKPACK "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
-#define CARRYALL "acp_CA_CADPAT_lite_B_Carryall_CA_CADPAT"
-#define CAMO_HEADGEAR "acp_CA_CADPAT_lite_H_HelmetSpecter_cover_CA_CADPAT_F"
-#define CAMO_HEADGEAR_SPECIAL "acp_CA_CADPAT_lite_H_Booniehat_CA_CADPAT_hs"
+#define CAMO_UNIFORM "acp_LV_LATPAT_lite_U_I_CombatUniform_LV_LATPAT_insignia","acp_LV_LATPAT_lite_U_I_CombatUniform_shortsleeve_LV_LATPAT_insignia"
+#define CAMO_VEST "acp_LV_LATPAT_lite_V_CF_CarrierRig_lite_LV_LATPAT"
+#define CAMO_BACKPACK "acp_LV_LATPAT_lite_B_AssaultPackEnhanced_LV_LATPAT_insignia"
+#define CARRYALL "acp_LV_LATPAT_lite_B_Carryall_LV_LATPAT"
+#define CAMO_HEADGEAR "acp_LV_LATPAT_lite_H_HelmetSpecter_cover_LV_LATPAT_F"
+#define CAMO_HEADGEAR_SPECIAL "acp_LV_LATPAT_lite_H_Booniehat_LV_LATPAT_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia"
-#define CAMO_VEST_PILOT "acp_CA_CADPAT_lite_V_CF_CarrierRig_CA_CADPAT"
-#define CAMO_BACKPACK_PILOT "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
+#define CAMO_UNIFORM_PILOT "acp_LV_LATPAT_lite_U_I_CombatUniform_LV_LATPAT_insignia"
+#define CAMO_VEST_PILOT "acp_LV_LATPAT_lite_V_CF_CarrierRig_LV_LATPAT"
+#define CAMO_BACKPACK_PILOT "acp_LV_LATPAT_lite_B_AssaultPackEnhanced_LV_LATPAT_insignia"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_green"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia"
-#define CAMO_VEST_VICC "acp_CA_CADPAT_lite_V_CF_CarrierRig_CA_CADPAT"
-#define CAMO_BACKPACK_VICC "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
+#define CAMO_UNIFORM_VICC "acp_LV_LATPAT_lite_U_I_CombatUniform_LV_LATPAT_insignia"
+#define CAMO_VEST_VICC "acp_LV_LATPAT_lite_V_CF_CarrierRig_LV_LATPAT"
+#define CAMO_BACKPACK_VICC "acp_LV_LATPAT_lite_B_AssaultPackEnhanced_LV_LATPAT_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
-#define RIFLE "CUP_arifle_M16A4_Grip"
+#define RIFLE "hlc_rifle_G36V"
 #define RIFLE_MAG "potato_magazine_556x45_30rnd:7","potato_magazine_556x45_30rnd_tracer_Red:3"
-#define RIFLE_ATTACHMENTS "CUP_optic_Eotech553_OD"
+#define RIFLE_ATTACHMENTS ""
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "CUP_optic_AC11704_Black","CUP_optic_CompM4","CUP_optic_HoloBlack","CUP_optic_CompM2_Black","CUP_optic_TrijiconRx01_black","CUP_optic_MRad","CUP_optic_MicroT1_low","CUP_optic_MEPRO_moa_clear"
 // GL Rifle
-#define GLRIFLE "CUP_arifle_M4A1_GL_carryhandle"
+#define GLRIFLE "hlc_rifle_G36VAG36"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
 // Carbine
-#define CARBINE "CUP_arifle_M16A4_Base"
+#define CARBINE "hlc_rifle_G36KV"
 #define CARBINE_MAG RIFLE_MAG
 // AR
 #define AR "CUP_lmg_minimi_railed"
@@ -68,15 +68,15 @@
 #define SNIPER_MAG "potato_magazine_338_lm_5rnd:7","potato_magazine_338_lm_5rnd_tracer_Red:3"
 #define SNIPER_ATTACHMENTS "CUP_optic_LeupoldMk4","CUP_bipod_VLTOR_Modpod_black"
 // Spotter Rifle
-#define SPOTTER "CUP_arifle_M16A4_Grip"
+#define SPOTTER RIFLE
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS "CUP_acc_ANPEQ_15_OD_Top","CUP_optic_ACOG_TA01NSN_OD"
+#define SPOTTER_ATTACHMENTS "CUP_optic_ACOG2","CUP_bipod_Harris_1A2_L_BLK"
 // SMG
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "potato_magazine_9x19_30rnd:5"
 // Pistol
-#define PISTOL "CUP_hgun_Browning_HP"
-#define PISTOL_MAG "potato_magazine_9x19_13rnd:3"
+#define PISTOL "CUP_hgun_Glock17_blk"
+#define PISTOL_MAG "potato_magazine_9x19_17rnd:3"
 #define PISTOL_ATTACHMENTS ""
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"acp_CA_CADPAT_lite_V_CF_CarrierRig_MG_CA_CADPAT"};
+  vest[] = {"acp_LV_LATPAT_lite_V_CF_CarrierRig_MG_LV_LATPAT"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"acp_CA_CADPAT_lite_V_CF_CarrierRig_MG_CA_CADPAT"};
+  vest[] = {"acp_LV_LATPAT_lite_V_CF_CarrierRig_MG_LV_LATPAT"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
