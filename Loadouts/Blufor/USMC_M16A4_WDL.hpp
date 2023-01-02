@@ -49,7 +49,7 @@
 #define MAT_OPTIC "CUP_optic_SMAW_Scope"
 
 //HMG
-#define HMG "ace_cswCompatCUP_cup_m2"
+#define HMG "CUP_m2_carry"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
 #define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
 #define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
