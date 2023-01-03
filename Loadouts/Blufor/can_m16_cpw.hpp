@@ -84,9 +84,9 @@ class Plane {};
 class Ship_F {};
 
 class rifleman {// rifleman
-  uniform[] = {"MNP_CombatUniform_Canada","MNP_CombatUniform_Canada_S"};
-  vest[] = {"MNP_Vest_Canada_T","MNP_Vest_Canada_T2"};
-  headgear[] = {"MNP_Helmet_Canada_T"};
+  uniform[] = {"acp_CA_CADPAT_lite_U_I_CombatUniform_CA_CADPAT","acp_CA_CADPAT_lite_U_I_CombatUniform_shortsleeve_CA_CADPAT"};
+  vest[] = {"acp_CA_CADPAT_lite_V_PlateCarrier2_CA_CADPAT_insignia"};
+  headgear[] = {"acp_CA_CADPAT_lite_H_HelmetEAST_Cover_CA_CADPAT_F"};
   backpack[] = {"B_FieldPack_oli"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -174,7 +174,7 @@ class mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("B_Mortar_01_support_F")
 };
 class spotter: Fic_Spotter {// Spotter
-  headgear[] = {"MNP_Boonie_CAN"};
+  headgear[] = {"acp_CA_CADPAT_lite_H_HelmetB_camo_CA_CADPAT"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
@@ -209,7 +209,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
 };
 class Fic_eng: vicd {
   backpack[] = {CARRYALL};
-  headgear[] = {"MNP_Helmet_Canada_T"};
+  headgear[] = {"acp_CA_CADPAT_lite_H_HelmetHBK_F_CA_CADPAT"};
   items[] += {BASE_ENG};
   backpackItems[] = {};
 };
