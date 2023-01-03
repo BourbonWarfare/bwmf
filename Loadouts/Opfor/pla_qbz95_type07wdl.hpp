@@ -3,18 +3,18 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_China_J"
-#define CAMO_VEST "MNP_Vest_ChinaH_J"
+#define CAMO_UNIFORM "acp_CN_Xingkong_W_lite_U_Aegis_O_Soldier_03_CN_Xingkong_W"
+#define CAMO_VEST "acp_CN_Xingkong_W_lite_V_PlateCarrier2_CN_Xingkong_W"
 #define FTL_VEST CAMO_VEST
 #define SL_VEST CAMO_VEST
 #define AR_VEST CAMO_VEST
 #define M_VEST CAMO_VEST
 #define CAMO_BACKPACK "B_Battle_Belt_F"
-#define ARPACK "MNP_B_FieldPack_PLA_Basic_T"
-#define MEDICPACK "MNP_B_FieldPack_PLA_Basic_T"
-#define CARRYALL "MNP_B_Carryall_PLA_Basic_T"
-#define CAMO_HEADGEAR "MNP_Helmet_PAGST_CNJ"
-#define CAMO_HEADGEAR_SPECIAL "MNP_MilCap_CN_A"
+#define ARPACK "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
+#define MEDICPACK "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
+#define CARRYALL "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
+#define CAMO_HEADGEAR "acp_CN_Xingkong_W_lite_H_HelmetEAST_Cover_CN_Xingkong_W_F"
+#define CAMO_HEADGEAR_SPECIAL "acp_CN_Xingkong_W_lite_H_HelmetSpecB_CN_Xingkong_W"
 //Pilot camo Set
 #define CAMO_UNIFORM_PILOT "rhs_uniform_df15"
 #define CAMO_VEST_PILOT "PLOT_ARMOR_V_Pockets_F"

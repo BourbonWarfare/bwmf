@@ -114,7 +114,7 @@ class sl: ftl {// SL
   items[] += {RADIO_MR};
 };
 class coy: sl {// CO and DC
-  backpack[] = {MNP_B_ROK_KB};
+  backpack[] = {"acp_CN_Xingkong_W_lite_B_Kitbag_rgr_CN_Xingkong_W"};
   items[] += {RADIO_LR};
 };
 class uav: rifleman {
@@ -237,7 +237,7 @@ class eng: fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
-  backpack[] = {"MNP_B_ROK_KB"};
+  backpack[] = {"acp_CN_Xingkong_W_lite_B_Kitbag_rgr_CN_Xingkong_W"};
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };

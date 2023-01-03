@@ -88,9 +88,9 @@ class Plane {};
 class Ship_F {};
 
 class rifleman {// rifleman
-  uniform[] = {"MNP_CombatUniform_DDPMR"};
-  vest[] = {"MNP_Vest_Light_DPM_D"};
-  headgear[] = {"MNP_Helmet_RU_LD"};
+  uniform[] = {"CUP_U_B_BDUv2_DDPM"};
+  vest[] = {"CUP_V_B_BAF_DDPM_Osprey_Mk3_Empty"};
+  headgear[] = {"CUP_H_BAF_DDPM_Mk6_EMPTY"};
   backpack[] = {"B_Kitbag_cbr"};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
@@ -184,7 +184,7 @@ class mtrag: Fic_Spotter {// Assistant Mortar
   MORTAR_GEAR("I_Mortar_01_support_F")
 };
 class spotter: Fic_Spotter {// Spotter
-  headgear[] = {"MNP_Boonie_DDPM"};
+  headgear[] = {"CUP_H_BAF_DDPM_Mk6_NETTING_PRR"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};

@@ -8,7 +8,7 @@ description = "paste your loadout config from the arseanal exporter";
 #define CAMO_VEST "CUP_V_PMC_CIRAS_Black_Patrol"
 #define CAMO_BACKPACK "B_AssaultPack_blk"
 #define CARRYALL "CUP_B_USPack_Black"
-#define CAMO_HEADGEAR "MNP_Helmet_BLK"
+#define CAMO_HEADGEAR "CUP_H_USArmy_MICH_UCP"
 #define CAMO_HEADGEAR_SPECIAL "CUP_H_US_patrol_cap_urban"
 // Pilot Camo set
 #define CAMO_UNIFORM_PILOT "CUP_U_O_SLA_Overalls_Pilot"
