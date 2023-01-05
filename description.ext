@@ -12,7 +12,7 @@ onLoadName = "*** Insert mission name here. ***";
 
 respawnDelay = 5; // wait 5 seconds to go to spec
 
-bwmfDate = "2022/9/21"; //Framework date
+bwmfDate = "2023/1/5"; //Framework date
 
 class CfgDebriefingSections {
   class acex_killTracker {
