@@ -3,19 +3,19 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_AMerc_4"
+#define CAMO_UNIFORM "acp_LV_LATPAT_lite_U_I_E_Uniform_LV_LATPAT_01_F"
 #define CAMO_VEST "CUP_V_B_PASGT_OD"
 #define CAMO_BACKPACK "B_Battle_Belt_XL_F"
 #define CARRYALL "CUP_B_AlicePack_OD"
 #define CAMO_HEADGEAR "CUP_H_LWHv2_OD"
 #define CAMO_HEADGEAR_SPECIAL "H_Booniehat_oli"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "MNP_CombatUniform_AMerc_4"
+#define CAMO_UNIFORM_PILOT "acp_LV_LATPAT_lite_U_I_E_Uniform_LV_LATPAT_01_F"
 #define CAMO_VEST_PILOT "V_TacVest_oli"
 #define CAMO_BACKPACK_PILOT "B_AssaultPack_rgr"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_khaki_visor"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "MNP_CombatUniform_AMerc_4"
+#define CAMO_UNIFORM_VICC "acp_LV_LATPAT_lite_U_I_E_Uniform_LV_LATPAT_01_F"
 #define CAMO_VEST_VICC "V_TacVest_oli"
 #define CAMO_BACKPACK_VICC "B_AssaultPack_rgr"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
@@ -50,7 +50,7 @@
 #define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 
 //HMG
-#define HMG "ace_cswCompatCUP_cup_m2"
+#define HMG "CUP_m2_carry"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
 #define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
 #define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"

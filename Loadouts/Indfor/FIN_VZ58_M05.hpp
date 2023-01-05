@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = "acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
+  vest[] = {"acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = "acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
+  vest[] = {"acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};

@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_NOR_A","MNP_CombatUniform_NOR_B"
-#define CAMO_VEST "CUP_V_JPC_Fastbelt_coy"
+#define CAMO_UNIFORM "MNP_CombatUniform_AMerc_4"
+#define CAMO_VEST "CUP_V_MBSS_PACA_Green"
 #define CAMO_BACKPACK "B_Battle_Belt_XL_F"
 #define CARRYALL "B_Carryall_khk"
-#define CAMO_HEADGEAR "CUP_H_OpsCore_Tan_NoHS"
-#define CAMO_HEADGEAR_SPECIAL "MNP_Boonie_NOR"
+#define CAMO_HEADGEAR "H_HelmetB"
+#define CAMO_HEADGEAR_SPECIAL "H_Booniehat_khk_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "MNP_CombatUniform_NOR_A"
-#define CAMO_VEST_PILOT "CUP_V_B_JPC_Tan_Light"
-#define CAMO_BACKPACK_PILOT "B_AssaultPack_cbr"
+#define CAMO_UNIFORM_PILOT "MNP_CombatUniform_AMerc_4"
+#define CAMO_VEST_PILOT "V_TacVest_oli"
+#define CAMO_BACKPACK_PILOT "B_AssaultPack_rgr"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_khaki_visor"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "MNP_CombatUniform_NOR_A"
-#define CAMO_VEST_VICC "CUP_V_B_JPC_Tan_Light"
-#define CAMO_BACKPACK_VICC "B_AssaultPack_cbr"
+#define CAMO_UNIFORM_VICC "MNP_CombatUniform_AMerc_4"
+#define CAMO_VEST_VICC "V_TacVest_oli"
+#define CAMO_BACKPACK_VICC "B_AssaultPack_rgr"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "CUP_arifle_HK416_Black"
@@ -50,7 +50,7 @@
 #define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 
 //HMG
-#define HMG "ace_cswCompatCUP_cup_m2"
+#define HMG "CUP_m2_carry"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"
 #define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
 #define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
@@ -75,8 +75,8 @@
 #define SMG "CUP_smg_MP5A5"
 #define SMG_MAG "potato_magazine_9x19_30rnd:5"
 // Pistol
-#define PISTOL "CUP_hgun_Glock17"
-#define PISTOL_MAG "potato_magazine_9x19_17rnd:3"
+#define PISTOL "CUP_hgun_M9"
+#define PISTOL_MAG "potato_magazine_9x19_15rnd:3"
 #define PISTOL_ATTACHMENTS ""
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
@@ -123,15 +123,12 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 };
 class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
-  vest[] = {"CUP_V_JPC_weaponsbelt_coy"};
-  headgear[] = {"CUP_H_OpsCore_Tan"};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
   handguns[] = {PISTOL};
-  vest[] = {"CUP_V_JPC_tlbelt_coy"};
   magazines[] += {PISTOL_MAG};
   handgunAttachments[] = {PISTOL_ATTACHMENTS};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -139,7 +136,6 @@ class sl: ftl {// SL
 };
 class coy: sl {// CO and DC
   items[] += {RADIO_LR};
-  vest[] = {"CUP_V_JPC_communicationsbelt_coy"};
 };
 class uav: rifleman {
   backpack[] = {SIDE_UAV_BACKPACK};
@@ -160,7 +156,6 @@ class lat: Fic_Soldier_Carbine {// RAT
 };
 class sm: Fic_Soldier_Carbine {// Medic
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  vest[] = {"CUP_V_JPC_medicalbelt_coy"};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {
