@@ -1,23 +1,23 @@
-// author = "koriN";
-// description = "paste your loadout config from the arseanal exporter";
+// author = "koriN, AChesheireCat";
+// description = "Australian Defense Force, Modern";
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia","acp_AUS_AUSCAM_lite_U_B_CombatUniform_vest_AUS_AUSCAM_insignia"
-#define CAMO_VEST "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_lite_AUS_AUSCAM"
-#define CAMO_BACKPACK "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
-#define CARRYALL "acp_AUS_AUSCAM_lite_B_Carryall_AUS_AUSCAM"
-#define CAMO_HEADGEAR "acp_AUS_AUSCAM_lite_H_HelmetB_light_basic_AUS_AUSCAM","acp_AUS_AUSCAM_lite_H_HelmetB_light_AUS_AUSCAM"
-#define CAMO_HEADGEAR_SPECIAL "acp_AUS_AUSCAM_lite_H_Booniehat_AUS_AUSCAM_hs"
+#define CAMO_UNIFORM "acp_AUS_AUSCAM_core_lite_U_B_CombatUniform_AUS_AUSCAM_insignia","acp_AUS_AUSCAM_core_lite_U_B_CombatUniform_vest_AUS_AUSCAM_insignia"
+#define CAMO_VEST "acp_AUS_AUSCAM_core_lite_V_PlateCarrier1_AUS_AUSCAM_insignia","acp_AUS_AUSCAM_core_lite_V_PlateCarrier_Kerry_AUS_AUSCAM_insignia"
+#define CAMO_BACKPACK "acp_AUS_AUSCAM_core_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
+#define CARRYALL "acp_AUS_AUSCAM_core_lite_B_Carryall_AUS_AUSCAM"
+#define CAMO_HEADGEAR "acp_AUS_AUSCAM_core_lite_H_HelmetB_light_basic_AUS_AUSCAM","acp_AUS_AUSCAM_core_lite_H_HelmetB_light_AUS_AUSCAM"
+#define CAMO_HEADGEAR_SPECIAL "acp_AUS_AUSCAM_core_lite_H_Booniehat_AUS_AUSCAM_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia"
-#define CAMO_VEST_PILOT "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_AUS_AUSCAM"
-#define CAMO_BACKPACK_PILOT "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
+#define CAMO_UNIFORM_PILOT "acp_AUS_AUSCAM_core_lite_U_B_CombatUniform_AUS_AUSCAM_insignia"
+#define CAMO_VEST_PILOT "acp_AUS_AUSCAM_core_lite_V_TacVestIR_AUS_AUSCAM"
+#define CAMO_BACKPACK_PILOT "acp_AUS_AUSCAM_core_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_khaki_visor"
 //Vehicle camo set
 #define CAMO_UNIFORM_VICC "acp_AUS_AUSCAM_lite_U_B_CombatUniform_AUS_AUSCAM_insignia"
-#define CAMO_VEST_VICC "acp_AUS_AUSCAM_lite_V_CF_CarrierRig_AUS_AUSCAM"
-#define CAMO_BACKPACK_VICC "acp_AUS_AUSCAM_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
+#define CAMO_VEST_VICC "acp_AUS_AUSCAM_core_lite_V_TacVestIR_AUS_AUSCAM"
+#define CAMO_BACKPACK_VICC "acp_AUS_AUSCAM_core_lite_B_AssaultPackEnhanced_AUS_AUSCAM_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "hlc_rifle_auga3_b"
@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"acp_AUS_AUSCAM_lite_V_CF_CarrierRig_MG_AUS_AUSCAM"};
+  vest[] = {CAMO_VEST};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"acp_AUS_AUSCAM_lite_V_CF_CarrierRig_MG_AUS_AUSCAM"};
+  vest[] = {CAMO_VEST};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
