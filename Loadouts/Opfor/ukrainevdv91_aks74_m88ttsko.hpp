@@ -89,7 +89,7 @@ description = "Ukrainian VDV Airborne c. 1995. Includes a complete SF class sect
 #define OPF_SMOKE "vn_rdg2_mag:2"
 #define OFF_FRAG "rhs_mag_rgn:2"
 #define DEF_FRAG "rhs_mag_rgo:2"
-#defome BASE_GRENADES OPF_FRAG,OPF_SMOKE
+#define BASE_GRENADES OPF_FRAG,OPF_SMOKE
 // Gear
 #define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
