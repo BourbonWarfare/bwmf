@@ -3,7 +3,7 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_TUR_TLF_lite_U_B_CombatUniform_TUR_TLF_insignia","acp_TUR_TLF_lite_U_B_CombatUniform_vest_TUR_TLF_insignia"
+#define CAMO_UNIFORM "acp_TUR_TLF_lite_U_B_CombatUniform_TUR_TLF_insignia","acp_TUR_TLF_lite_U_B_CombatUniforCAMO_VEST_MEDIC_TUR_TLF_insignia"
 #define CAMO_VEST "acp_TUR_TLF_lite_V_CF_CarrierRig_lite_TUR_TLF"
 #define CAMO_BACKPACK "acp_TUR_TLF_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
 #define CARRYALL "acp_TUR_TLF_lite_B_Carryall_TUR_TLF"

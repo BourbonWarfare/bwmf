@@ -67,18 +67,18 @@ description = "SF Section is the relevant section; Green Berets (SFOD-A) c. 2020
 // Sniper
 #define SNIPER "CUP_srifle_M2010_dsrt"
 #define SNIPER_MAG "CUP_5Rnd_762x67_M2010_M:10"
-#define SNIPER_OPTIC "muzzle_snds_B_snd_F", "ACE_optic_LRPS_PIP", "CUP_bipod_Harris_1A2_L_BLK"
+#define SNIPER_ATTACHMENTS "muzzle_snds_B_snd_F", "ACE_optic_LRPS_PIP", "CUP_bipod_Harris_1A2_L_BLK"
 // Spotter
 #define SPOTTER "CUP_arifle_M4A1_SOMMOD_black"
 #define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_OPTIC "hlc_muzzle_556NATO_rotexiiic_tan", "CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L", "CUP_optic_Elcan_SpecterDR_coyote", "CUP_bipod_Harris_1A2_L_BLK"
+#define SPOTTER_ATTACHMENTS "hlc_muzzle_556NATO_rotexiiic_tan", "CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L", "CUP_optic_Elcan_SpecterDR_coyote", "CUP_bipod_Harris_1A2_L_BLK"
 // SMG
 #define SMG "CUP_arifle_mk18_black"
 #define SMG_MAG "ACE_30Rnd_556x45_Stanag_Mk318_mag:5"
 // Pistol
 #define PISTOL "CUP_hgun_Glock17_blk"
 #define PISTOL_MAG "CUP_17Rnd_9x19_glock17:2"
-#define PISTOL_OPTIC "hlc_acc_tlr1"
+#define PISTOL_ATTACHMENTS "hlc_acc_tlr1"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -90,14 +90,14 @@ description = "SF Section is the relevant section; Green Berets (SFOD-A) c. 2020
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST "acp_main_Crye_AVS_2_base"
-#define FTL_VEST CAMO_VEST
-#define SL_VEST CAMO_VEST
-#define M_VEST CAMO_VEST
-#define LATPACK CAMO_BACKPACK
-#define ARPACK "B_AssaultPack_mcamo"
-#define FTLPACK "B_AssaultPack_mcamo"
-#define MPACK "B_Kitbag_mcamo"
+#define CAMO_VEST_AR "acp_main_Crye_AVS_2_base"
+#define CAMO_VEST_FTL CAMO_VEST
+#define CAMO_VEST_SL CAMO_VEST
+#define CAMO_VEST_MEDIC CAMO_VEST
+#define CAMO_BACKPACK_LAT CAMO_BACKPACK
+#define CAMO_BACKPACK_AR "B_AssaultPack_mcamo"
+#define CAMO_BACKPACK_FTL "B_AssaultPack_mcamo"
+#define CAMO_BACKPACK_MEDIC "B_Kitbag_mcamo"
 #define MMG_ATTACHMENTS "cup_optic_acog_ta648_308_rds_black","cup_acc_anpeq_15"
 #define DMR "CUP_srifle_M110","CUP_srifle_m110_kac"
 #define DMR_MAG "CUP_20Rnd_762x51_L129_M:10"
@@ -138,15 +138,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -158,27 +158,27 @@ class coy: sl {// CO and DC
 };
 
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {"cup_acc_anpeq_15","CUP_optic_Elcan_SpecterDR_coyote"};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
-  backpack[] = {ARPACK};
+  backpack[] = {CAMO_BACKPACK_AR};
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {
@@ -191,7 +191,7 @@ class mmgg: ar {// MMG
   backpack[] = {CARRYALL};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  vest[] = {AR_VEST};
+  vest[] = {CAMO_VEST_AR};
   magazines[] = {CARBINE_MAG_REDUCED,BASE_GRENADES,MMG_MAG};
   backpack[] = {CARRYALL};
 };

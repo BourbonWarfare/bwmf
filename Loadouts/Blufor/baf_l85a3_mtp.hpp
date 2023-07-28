@@ -61,23 +61,23 @@ description = "British Armed Forces c. 2023";
 #define HAT_TRI_LO 
 #define HAT_MAG "ace_spike_lr:2"
 // SAM
-#define SAM 
-#define SAM_MAG 
+#define SAM ""
+#define SAM_MAG ""
 // Sniper
 #define SNIPER "CUP_srifle_AWM_wdl"
 #define SNIPER_MAG "CUP_5Rnd_86x70_L115A1:10"
-#define SNIPER_OPTIC "CUP_muzzle_snds_AWM", "ACE_optic_LRPS_2D", "CUP_bipod_Harris_1A2_L_BLK"
+#define SNIPER_ATTACHMENTS "CUP_muzzle_snds_AWM", "ACE_optic_LRPS_2D", "CUP_bipod_Harris_1A2_L_BLK"
 // Spotter
 #define SPOTTER "arifle_SPAR_01_blk_F"
 #define SPOTTER_MAG "hlc_30rnd_556x45_MDim_PMAG:10"
-#define SPOTTER_OPTIC "CUP_acc_LLM_black", "CUP_optic_Elcan_reflex"
+#define SPOTTER_ATTACHMENTS "CUP_acc_LLM_black", "CUP_optic_Elcan_reflex"
 // SMG
 #define SMG "CUP_smg_MP5A5_Rail"
 #define SMG_MAG "CUP_30Rnd_Red_Tracer_9x19_MP5:5"
 // Pistol
 #define PISTOL "CUP_hgun_Glock17_blk"
 #define PISTOL_MAG "CUP_17Rnd_9x19_glock17:3"
-#define PISTOL_OPTIC "hlc_acc_TLR1"
+#define PISTOL_ATTACHMENTS "hlc_acc_TLR1"
 // Grenades
 #define LEADER_GRENADES BAF_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Authentic Grenade Defines
@@ -93,15 +93,15 @@ description = "British Armed Forces c. 2023";
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST "CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman"
-#define FTL_VEST "CUP_V_B_BAF_MTP_Osprey_Mk4_Grenadier"
-#define SL_VEST "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"
-#define M_VEST "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic"
-#define LATPACK CAMO_BACKPACK
-#define ARPACK "CUP_B_Motherlode_MTP"
-#define FTLPACK CAMO_BACKPACK
-#define SLPACK "CUP_B_Motherlode_Radio_MTP"
-#define MPACK "B_Kitbag_mcamo"
+#define CAMO_VEST_AR "CUP_V_B_BAF_MTP_Osprey_Mk4_AutomaticRifleman"
+#define CAMO_VEST_FTL "CUP_V_B_BAF_MTP_Osprey_Mk4_Grenadier"
+#define CAMO_VEST_SL "CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"
+#define CAMO_VEST_MEDIC "CUP_V_B_BAF_MTP_Osprey_Mk4_Medic"
+#define CAMO_BACKPACK_LAT CAMO_BACKPACK
+#define CAMO_BACKPACK_AR "CUP_B_Motherlode_MTP"
+#define CAMO_BACKPACK_FTL CAMO_BACKPACK
+#define CAMO_BACKPACK_SL "CUP_B_Motherlode_Radio_MTP"
+#define CAMO_BACKPACK_MEDIC "B_Kitbag_mcamo"
 #define MMG_ATTACHMENTS "cup_optic_acog_ta648_308_rds_black"
 #define DMR "CUP_srifle_L129A1","CUP_srifle_L129A1_HG"
 #define DMR_MAG "CUP_20Rnd_762x51_L129_M:10"
@@ -142,16 +142,16 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,NVG_BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
-  backpack[] = {SLPACK};
+  vest[] = {CAMO_VEST_SL};
+  backpack[] = {CAMO_BACKPACK_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -166,26 +166,26 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
-  backpack[] = {ARPACK};
+  backpack[] = {CAMO_BACKPACK_AR};
   backpackItems[] += {AR_MAG};
   linkedItems[] += {NVG_BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {
@@ -409,7 +409,7 @@ class fallback: rifleman {}; // This means any faction member who doesn't match 
 
 #define SF_CARBINE SF_RIFLE
 #define SF_CARBINE_MAG SF_RIFLE_MAG
-#define SF_RIFLE_ATTACHMENTS SF_RIFLE_ATTACHMENTS
+
 
 #define SF_GLRIFLE
 #define SF_GLRIFLE_MAG

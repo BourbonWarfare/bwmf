@@ -67,18 +67,18 @@ description = "Little Green Men c. 2014 (aka the Invasion of Crimea)";
 // Sniper
 #define SNIPER "rhs_weap_svdp","rhs_weap_svds"
 #define SNIPER_MAG "10Rnd_762x54_Mag:15"
-#define SNIPER_OPTIC "rhs_acc_pso1m21"
+#define SNIPER_ATTACHMENTS "rhs_acc_pso1m21"
 // Spotter
 #define SPOTTER "rhs_weap_asval_grip"
 #define SPOTTER_MAG "rhs_20rnd_9x39mm_SP6:10"
-#define SPOTTER_OPTIC "rhs_acc_2dpZenit_ris", "rhs_acc_pso1m21"
+#define SPOTTER_ATTACHMENTS "rhs_acc_2dpZenit_ris", "rhs_acc_pso1m21"
 // SMG
 #define SMG "rhs_weap_aks74un"
 #define SMG_MAG "CUP_30Rnd_545x39_AK74M_M:5"
 // Pistol
 #define PISTOL "hgun_Rook40_F"
 #define PISTOL_MAG "16Rnd_9x21_Mag:2"
-#define PISTOL_OPTIC 
+#define PISTOL_ATTACHMENTS 
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -90,16 +90,16 @@ description = "Little Green Men c. 2014 (aka the Invasion of Crimea)";
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST CAMO_VEST
-#define FTL_VEST "rhs_6sh117_grn","rhs_6sh117_nco"
-#define SL_VEST "rhs_6sh117_nco_azart"
-#define M_VEST CAMO_VEST
-#define SNIPER_VEST "rhs_6sh117_svd"
-#define SPOTTER_VEST CAMO_VEST
-#define LATPACK "rhs_rpg_2"
-#define ARPACK "B_CivilianBackpack_01_Everyday_Black_F"
-#define FTLPACK "rhs_rk_sht_30_emr"
-#define MPACK CARRYALL
+#define CAMO_VEST_AR CAMO_VEST
+#define CAMO_VEST_FTL "rhs_6sh117_grn","rhs_6sh117_nco"
+#define CAMO_VEST_SL "rhs_6sh117_nco_azart"
+#define CAMO_VEST_MEDIC CAMO_VEST
+#define CAMO_VEST_SNIPER "rhs_6sh117_svd"
+#define CAMO_VEST_SPOTTER CAMO_VEST
+#define CAMO_BACKPACK_LAT "rhs_rpg_2"
+#define CAMO_BACKPACK_AR "B_CivilianBackpack_01_Everyday_Black_F"
+#define CAMO_BACKPACK_FTL "rhs_rk_sht_30_emr"
+#define CAMO_BACKPACK_MEDIC CARRYALL
 #define MMG_ATTACHMENTS 
 #define FACEWEAR "CUP_G_RUS_Balaclava_Ratnik","CUP_G_RUS_Balaclava_Ratnik_v2","G_Bandanna_khk","G_Balaclava_blk","rhs_facewear_6m2","rhs_facewear_6m2_1","rhs_balaclava","rhs_balaclava1_olive"
 
@@ -139,15 +139,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -162,26 +162,26 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
-  backpack[] = {ARPACK};
+  backpack[] = {CAMO_BACKPACK_AR};
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {
@@ -229,7 +229,7 @@ class mtrag: Fic_Spotter {// Assistant Mortar
   magazines[] += {"potato_vz99_HE_multi:2","potato_vz99_smokeWhite:4","potato_vz99_flare:2"};
 };
 class spotter: Fic_Spotter {// Spotter
-  vest[] = {SPOTTER_VEST};
+  vest[] = {CAMO_VEST_SPOTTER};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500","ACE_SpottingScope"};
@@ -237,7 +237,7 @@ class spotter: Fic_Spotter {// Spotter
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper: spotter {// Sniper
-  vest[] = {SNIPER_VEST};
+  vest[] = {CAMO_VEST_SNIPER};
   weapons[] = {SNIPER};
   magazines[] = {SNIPER_MAG,BASE_GRENADES};
   items[] = {TOOLS,"ACE_RangeCard","ACE_Tripod"};
@@ -401,7 +401,7 @@ class fallback: rifleman {}; // This means any faction member who doesn't match 
 
 #define SF_CARBINE SF_RIFLE
 #define SF_CARBINE_MAG SF_RIFLE_MAG
-#define SF_RIFLE_ATTACHMENTS SF_RIFLE_ATTACHMENTS
+
 
 #define SF_GLRIFLE
 #define SF_GLRIFLE_MAG

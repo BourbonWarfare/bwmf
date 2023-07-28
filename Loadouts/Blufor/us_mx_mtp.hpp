@@ -205,7 +205,7 @@ class pilot {// Pilot
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class vicc: Fic_Soldier_Carbine {// Crew
-  uniform[] = {"U_B_CombatUniform_mcam_vest"};
+  uniform[] = {"U_B_CombatUniform_mcam_vestC"};
   vest[] = {"V_Chestrig_khk"};
   headgear[] = {"H_HelmetCrew_B"};
   backpack[] = {CARRYALL};

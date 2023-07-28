@@ -62,22 +62,22 @@ description = "paste your loadout config from the arseanal exporter";
 #define HAT_MAG 
 // SAM
 #define SAM "NotSet"
-#define SAM_MAG 
+#define SAM_MAG ""
 // Sniper
 #define SNIPER "CUP_srifle_Mosin_Nagant"
 #define SNIPER_MAG "CUP_5Rnd_762x54_Mosin_M:20"
-#define SNIPER_OPTIC "CUP_optic_PEM"
+#define SNIPER_ATTACHMENTS "CUP_optic_PEM"
 // Spotter
 #define SPOTTER "NotSet"
 #define SPOTTER_MAG 
-#define SPOTTER_OPTIC 
+#define SPOTTER_ATTACHMENTS 
 // SMG
 #define SMG "NotSet"
 #define SMG_MAG 
 // Pistol
 #define PISTOL "CUP_hgun_PMM"
 #define PISTOL_MAG "CUP_12Rnd_9x18_PMM_M:3"
-#define PISTOL_OPTIC ""
+#define PISTOL_ATTACHMENTS ""
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
@@ -89,14 +89,14 @@ description = "paste your loadout config from the arseanal exporter";
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST 
-#define FTL_VEST 
-#define SL_VEST 
-#define M_VEST 
-#define LATPACK 
-#define ARPACK 
-#define FTLPACK 
-#define MPACK 
+#define CAMO_VEST_AR 
+#define CAMO_VEST_FTL 
+#define CAMO_VEST_SL 
+#define CAMO_VEST_MEDIC 
+#define CAMO_BACKPACK_LAT 
+#define CAMO_BACKPACK_AR 
+#define CAMO_BACKPACK_FTL 
+#define CAMO_BACKPACK_MEDIC 
 #define MMG_ATTACHMENTS 
 
 class Car {
@@ -134,15 +134,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
@@ -157,8 +157,8 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
@@ -168,14 +168,14 @@ class aar: rifleman {// AAR
   linkedItems[] += {BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {

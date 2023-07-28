@@ -69,8 +69,8 @@ description = "United States Marine Corps c.1950 w/ alternate AR loadouts (BAR v
 #define HAT_TRI_LO 
 #define HAT_MAG 
 // SAM
-#define SAM 
-#define SAM_MAG 
+#define SAM ""
+#define SAM_MAG ""
 // Sniper
 #define SNIPER "vn_m1903"
 #define SNIPER_MAG "vn_m1903_mag:15"
@@ -88,7 +88,7 @@ description = "United States Marine Corps c.1950 w/ alternate AR loadouts (BAR v
 // Pistol
 #define PISTOL "vn_m1911"
 #define PISTOL_MAG "vn_m1911_mag:5"
-#define PISTOL_OPTIC 
+#define PISTOL_ATTACHMENTS 
 // Pistol (Night)
 #define PISTOL_ALT "vn_mx991_m1911"
 // Melee
@@ -107,16 +107,16 @@ description = "United States Marine Corps c.1950 w/ alternate AR loadouts (BAR v
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST CAMO_VEST
-#define FTL_VEST CAMO_BACKPACK
-#define SL_VEST "vn_b_vest_usarmy_09"
-#define M_VEST "vn_b_vest_usarmy_07"
-#define MMG_VEST "vn_b_vest_usarmy_06"
-#define LATPACK CAMO_BACKPACK
-#define ARPACK CAMO_BACKPACK
-#define FTLPACK "vn_b_pack_lw_01"
-#define SLPACK "vn_b_pack_m41_05"
-#define MPACK "vn_b_pack_m5_01"
+#define CAMO_VEST_AR CAMO_VEST
+#define CAMO_VEST_FTL CAMO_BACKPACK
+#define CAMO_VEST_SL "vn_b_vest_usarmy_09"
+#define CAMO_VEST_MEDIC "vn_b_vest_usarmy_07"
+#define CAMO_VEST_MMG "vn_b_vest_usarmy_06"
+#define CAMO_BACKPACK_LAT CAMO_BACKPACK
+#define CAMO_BACKPACK_AR CAMO_BACKPACK
+#define CAMO_BACKPACK_FTL "vn_b_pack_lw_01"
+#define CAMO_BACKPACK_SL "vn_b_pack_m41_05"
+#define CAMO_BACKPACK_MEDIC "vn_b_pack_m5_01"
 #define MMGPACK "vn_b_pack_lw_02"
 #define MMGPACK2 "vn_b_pack_lw_05"
 #define MMG_ATTACHMENTS 
@@ -156,8 +156,8 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,WEST_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   handguns[] = {PISTOL};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,PISTOL_MAG,LEADER_GRENADES};
@@ -165,8 +165,8 @@ class ftl: rifleman {// FTL
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
-  backpack[] = {SLPACK};
+  vest[] = {CAMO_VEST_SL};
+  backpack[] = {CAMO_BACKPACK_SL};
   weapons[] = {CARBINE};
   handguns[] = {PISTOL};
   magazines[] = {CARBINE_MAG,PISTOL_MAG,LEADER_GRENADES};
@@ -182,34 +182,34 @@ class coy: sl {// CO and DC
 class uav: rifleman {
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,WEST_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: Fic_Soldier_Carbine {// AAR
-  backpack[] = {ARPACK};
+  backpack[] = {CAMO_BACKPACK_AR};
   backpackItems[] += {AAR_MAG};
   linkedItems[] += {BINOS};
 };
 class lat: Fic_Soldier_Carbine {// RAT
   weapons[] = {GLRIFLE};
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_AT,GLRIFLE_MAG_SMOKE,WEST_GRENADES};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   handguns[] = {PISTOL};
   magazines[] = {CARBINE_MAG,PISTOL_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: Fic_Soldier_Carbine {
   linkedItems[] += {BINOS};
 };
 class mmgg: ar {// MMG
-  vest[] = {MMG_VEST};
+  vest[] = {CAMO_VEST_MMG};
   launchers[] = {MMG};
   backpack[] = {MMGPACK};
   weapons[] = {CARBINE};
@@ -430,7 +430,7 @@ class fallback: rifleman {}; // This means any faction member who doesn't match 
 
 #define SF_CARBINE SF_RIFLE
 #define SF_CARBINE_MAG SF_RIFLE_MAG
-#define SF_RIFLE_ATTACHMENTS SF_RIFLE_ATTACHMENTS
+
 
 #define SF_GLRIFLE
 #define SF_GLRIFLE_MAG

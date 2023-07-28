@@ -91,14 +91,14 @@ description = "United States Marine Corps c.2020";
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST "CUP_V_B_Eagle_SPC_AR"
-#define FTL_VEST "CUP_V_B_Eagle_SPC_GL"
-#define SL_VEST "CUP_V_B_Eagle_SPC_TL"
-#define M_VEST "CUP_V_B_Eagle_SPC_Corpsman"
-#define LATPACK "B_Kitbag_cbr"
-#define ARPACK "B_Kitbag_cbr"
-#define FTLPACK "B_Kitbag_cbr"
-#define MPACK "B_Kitbag_cbr"
+#define CAMO_VEST_AR "CUP_V_B_Eagle_SPC_AR"
+#define CAMO_VEST_FTL "CUP_V_B_Eagle_SPC_GL"
+#define CAMO_VEST_SL "CUP_V_B_Eagle_SPC_TL"
+#define CAMO_VEST_MEDIC "CUP_V_B_Eagle_SPC_Corpsman"
+#define CAMO_BACKPACK_LAT "B_Kitbag_cbr"
+#define CAMO_BACKPACK_AR "B_Kitbag_cbr"
+#define CAMO_BACKPACK_FTL "B_Kitbag_cbr"
+#define CAMO_BACKPACK_MEDIC "B_Kitbag_cbr"
 #define MMG_ATTACHMENTS "cup_optic_acog_ta648_308_rds_black","cup_acc_anpeq_15"
 
 class Car {
@@ -136,15 +136,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   secondaryAttachments[] = {PISTOL_ATTACHMENTS};
   magazines[] += {PISTOL_MAG,GLRIFLE_MAG_HUNTIR};
@@ -160,8 +160,8 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
@@ -173,14 +173,14 @@ class aar: rifleman {// AAR
   linkedItems[] += {BINOS};
 };
 class lat: rifleman {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {

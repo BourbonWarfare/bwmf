@@ -91,14 +91,14 @@ description = "United States Marine Corps c.2023";
 
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
-#define AR_VEST CAMO_VEST
-#define FTL_VEST CAMO_VEST
-#define SL_VEST CAMO_VEST
-#define M_VEST CAMO_VEST
-#define LATPACK "acp_Solid_CoyoteBrown_lite_B_Kitbag_rgr_Solid_CoyoteBrown"
-#define ARPACK "acp_Solid_CoyoteBrown_lite_B_AssaultPack_Solid_CoyoteBrown"
-#define FTLPACK "acp_Solid_CoyoteBrown_lite_B_AssaultPackEnhanced_Solid_CoyoteBrown"
-#define MPACK "B_Kitbag_cbr"
+#define CAMO_VEST_AR CAMO_VEST
+#define CAMO_VEST_FTL CAMO_VEST
+#define CAMO_VEST_SL CAMO_VEST
+#define CAMO_VEST_MEDIC CAMO_VEST
+#define CAMO_BACKPACK_LAT "acp_Solid_CoyoteBrown_lite_B_Kitbag_rgr_Solid_CoyoteBrown"
+#define CAMO_BACKPACK_AR "acp_Solid_CoyoteBrown_lite_B_AssaultPack_Solid_CoyoteBrown"
+#define CAMO_BACKPACK_FTL "acp_Solid_CoyoteBrown_lite_B_AssaultPackEnhanced_Solid_CoyoteBrown"
+#define CAMO_BACKPACK_MEDIC "B_Kitbag_cbr"
 #define MMG_ATTACHMENTS "cup_optic_acog_ta648_308_rds_black","cup_acc_anpeq_15"
 
 class Car {
@@ -136,15 +136,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
-  backpack[] = {FTLPACK};
+  vest[] = {CAMO_VEST_FTL};
+  backpack[] = {CAMO_BACKPACK_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  vest[] = {SL_VEST};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   secondaryAttachments[] = {PISTOL_ATTACHMENTS};
   magazines[] += {PISTOL_MAG,GLRIFLE_MAG_HUNTIR};
@@ -160,8 +160,8 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
@@ -173,14 +173,14 @@ class aar: rifleman {// AAR
   linkedItems[] += {BINOS};
 };
 class lat: rifleman {// RAT
-  backpack[] = {LATPACK};
+  backpack[] = {CAMO_BACKPACK_LAT};
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  vest[] = {M_VEST};
+  vest[] = {CAMO_VEST_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
-  backpack[] = {MPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class Fic_Spotter: rifleman {
@@ -409,7 +409,7 @@ class fallback: rifleman {}; // This means any faction member who doesn't match 
 
 #define SF_CARBINE SF_RIFLE
 #define SF_CARBINE_MAG SF_RIFLE_MAG
-#define SF_RIFLE_ATTACHMENTS SF_RIFLE_ATTACHMENTS
+
 
 #define SF_GLRIFLE "arifle_SPAR_01_GL_blk_F"
 #define SF_GLRIFLE_MAG SF_RIFLE_MAG
