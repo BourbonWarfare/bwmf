@@ -51,9 +51,8 @@ description = "paste your loadout config from the arseanal exporter";
 #define HAT_TRI_LO ""
 #define HAT_MAG "ace_compat_rhs_usf3_mag_ITOW"
 // SAM
-#define SAM "rhs_weap_fim92"
-#define SAM_MAG "rhs_fim92_mag:3"
-#define SAM_MAG2 "rhs_fim92_mag:2"
+#define SAM "CUP_launch_FIM92Stinger"
+#define SAM_MAG ""
 // Sniper Rifle
 #define SNIPER "rhs_weap_m14_ris"
 #define SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:10"

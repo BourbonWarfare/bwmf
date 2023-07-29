@@ -16,7 +16,7 @@ description = "paste your loadout config from the arseanal exporter";
 #define CAMO_UNIFORM_PILOT "CUP_U_B_USArmy_PilotOverall"
 #define CAMO_VEST_PILOT "V_TacVest_oli"
 #define CAMO_BACKPACK_PILOT "B_Battle_Belt_XL_F"
-#define CAMO_HEADGEAR_PILOT "H_CrewHelmetHeli_B","MNP_Helmet_STPilot","MNP_Helmet_Dslyecxi"
+#define CAMO_HEADGEAR_PILOT "H_CrewHelmetHeli_B"
 // Vic Crew Camo set
 #define CAMO_UNIFORM_VICC CAMO_UNIFORM
 #define CAMO_VEST_VICC "CUP_V_B_Eagle_SPC_Crew"

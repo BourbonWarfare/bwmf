@@ -194,14 +194,14 @@ class mmgg: ar {// MMG
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   weapons[] = {SMG};
-  magazines[] = {SMG_MAG,EAST_GRENADES};
+  magazines[] = {SMG_MAG,BASE_GRENADES};
   attachments[] = {SMG_ATTACHMENTS};
   backpack[] = {CARRYALL};
   backpackItems[] += {MMG_MAG};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
   weapons[] = {SMG};
-  magazines[] = {SMG_MAG,EAST_GRENADES,MAT_MAG};
+  magazines[] = {SMG_MAG,BASE_GRENADES,MAT_MAG};
   attachments[] = {SMG_ATTACHMENTS};
   backpack[] = {CARRYALL};
   backpackItems[] = {};
@@ -211,7 +211,7 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   weapons[] = {SMG};
-  magazines[] = {SMG_MAG,EAST_GRENADES,MAT_MAG};
+  magazines[] = {SMG_MAG,BASE_GRENADES,MAT_MAG};
   attachments[] = {SMG_ATTACHMENTS};
   backpack[] = {CARRYALL};
   backpackItems[] = {};

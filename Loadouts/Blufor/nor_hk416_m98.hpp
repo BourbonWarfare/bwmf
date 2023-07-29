@@ -20,15 +20,15 @@ description = "Norwegian: HK416 - M/98 Woodland";
 #define AR "CUP_lmg_Mk48_nohg"
 #define AR_MAG "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M:15"
 // AT
-#define AT "rhs_weap_m72a7"
+#define AT "CUP_launch_M72A6"
 // MMG
 #define MMG "hlc_lmg_MG3KWS_b"
 #define MMG_MAG "hlc_100Rnd_762x51_M_MG3:5"
 // MAT
-#define MAT "rhs_weap_maaws"
-#define MAT_MAG "rhs_mag_maaws_HEAT:3","rhs_mag_maaws_HEDP:1"
-#define MAT_MAG2 "rhs_mag_maaws_HEAT:2","rhs_mag_maaws_HEDP:1"
-#define MAT_OPTIC "rhs_optic_maaws"
+#define MAT "CUP_launch_MAAWS"
+#define MAT_MAG "CUP_MAAWS_HEAT_M:3","CUP_MAAWS_HEDP_M:1"
+#define MAT_MAG2 "CUP_MAAWS_HEAT_M:2","CUP_MAAWS_HEDP_M:1"
+#define MAT_OPTIC "CUP_optic_MAAWS_Scope"
 //HMG
 #define HMG "ace_cswCompatCUP_cup_m2"
 #define HMG_TRI_HI "ace_csw_m3CarryTripod"

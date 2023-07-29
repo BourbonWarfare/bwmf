@@ -54,15 +54,15 @@ description = "paste your loadout config from the arseanal exporter";
 #define HMG "ace_compat_rhs_afrf3_ags30_carry"
 #define HMG_TRI_HI "ace_csw_sag30CarryTripod"
 #define HMG_TRI_LO "ace_csw_sag30CarryTripod"
-#define HMG_MAG "ERROR_no_valid_mags"
+#define HMG_MAG "ace_compat_rhs_afrf3_mag_VOG30_30:2"
 // HAT
 #define HAT "ace_compat_rhs_afrf3_kornet_carry"
 #define HAT_TRI_HI "ace_compat_rhs_afrf3_kornet_carry"
 #define HAT_TRI_LO "ace_compat_rhs_afrf3_kornet_carry"
-#define HAT_MAG "ERROR_no_valid_mags"
+#define HAT_MAG "ace_compat_rhs_afrf3_mag_9m133f:2","ace_compat_rhs_afrf3_mag_9m133m2:1"
 // SAM
 #define SAM "CUP_launch_Igla"
-#define SAM_MAG "ERROR_no_valid_mags"
+#define SAM_MAG "ace_manpad_stinger_man"
 // Sniper
 #define SNIPER "rhs_weap_t5000"
 #define SNIPER_MAG "rhs_5Rnd_338lapua_t5000:20"

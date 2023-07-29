@@ -30,7 +30,6 @@ description = "Russian Federation VDV c. 2022 (aka the Invasion of Ukraine - spe
 #define RIFLE_ATTACHMENTS "cup_acc_flashlight", "rhs_acc_1p87"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "rhs_acc_rakurspm","cup_optic_microt1","rhs_acc_okp7_picatinny"
-#define NVG_OPTICS "cup_optic_cws_nv"
 // GL Rifle
 #define GLRIFLE "CUP_arifle_AK12_GP34_black"
 #define GLRIFLE_MAG RIFLE_MAG

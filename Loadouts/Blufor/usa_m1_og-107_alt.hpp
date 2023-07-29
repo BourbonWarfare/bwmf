@@ -108,7 +108,7 @@ description = "United States Marine Corps c.1950 w/ alternate AR loadouts (BAR v
 // -------------------- PASTE ABOVE THIS LINE
 //Custom Defines
 #define CAMO_VEST_AR CAMO_VEST
-#define CAMO_VEST_FTL CAMO_BACKPACK
+#define CAMO_VEST_FTL CAMO_VEST
 #define CAMO_VEST_SL "vn_b_vest_usarmy_09"
 #define CAMO_VEST_MEDIC "vn_b_vest_usarmy_07"
 #define CAMO_VEST_MMG "vn_b_vest_usarmy_06"

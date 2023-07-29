@@ -16,7 +16,7 @@ description = "paste your loadout config from the arseanal exporter";
 #define CAMO_UNIFORM_PILOT "U_B_HeliPilotCoveralls"
 #define CAMO_VEST_PILOT "CUP_V_B_PilotVest"
 #define CAMO_BACKPACK_PILOT "B_Battle_Belt_XL_F"
-#define CAMO_HEADGEAR_PILOT "H_CrewHelmetHeli_B","MNP_Helmet_Dslyecxi","MNP_Helmet_STPilot"
+#define CAMO_HEADGEAR_PILOT "H_CrewHelmetHeli_B"
 // Vic Crew Camo set
 #define CAMO_UNIFORM_VICC CAMO_UNIFORM
 #define CAMO_VEST_VICC "V_CarrierRigKBT_01_Olive_F"
@@ -69,7 +69,7 @@ description = "paste your loadout config from the arseanal exporter";
 #define SNIPER_ATTACHMENTS "muzzle_snds_B_snd_F", "ACE_optic_LRPS_PIP", "CUP_bipod_Harris_1A2_L_BLK"
 // Spotter
 #define SPOTTER "CUP_arifle_M4A1_SOMMOD_black"
-#define SPOTTER_MAG RIFLE_MAG
+#define SPOTTER_MAG "potato_magazine_556x45_30rnd:7","potato_magazine_556x45_30rnd_tracer_Red:3"
 #define SPOTTER_ATTACHMENTS "hlc_muzzle_556NATO_rotexiiic_tan", "CUP_acc_ANPEQ_15_Top_Flashlight_Tan_L", "CUP_optic_Elcan_SpecterDR_coyote", "CUP_bipod_Harris_1A2_L_BLK"
 // SMG
 #define SMG "CUP_arifle_mk18_black"

@@ -30,7 +30,6 @@ description = "Russian Federation VDV Spetsnaz/Recon c. 2023";
 #define RIFLE_ATTACHMENTS "rhs_acc_2dpzenit", "cup_optic_1p63", "rhs_acc_dtk4short"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
 #define ALT_OPTICS "rhs_acc_okp7_dovetail"
-#define NVG_OPTICS "cup_optic_cws_nv"
 // GL Rifle
 #define GLRIFLE "rhs_weap_ak74m_gp25"
 #define GLRIFLE_MAG RIFLE_MAG
