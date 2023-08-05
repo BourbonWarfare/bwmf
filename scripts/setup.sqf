@@ -9,7 +9,7 @@ LOG("Starting script setup", __FILE__);
 // #if __has_include("template\fn_main.sqf")
 // #define SCRIPT template
 // private _func = compileScript["scripts\template\fn_main.sqf"];
-// SET_MISSION_FUNC(main, _func);
+// SET_MISSION_FUNC(_func);
 // LOG("Function found", FUNC);
 // call FUNC;
 // #endif
@@ -22,9 +22,18 @@ LOG("Function found", FUNC);
 call FUNC;
 #endif
 
+#if __has_include("kilo_hq\fn_main.sqf")
+#define SCRIPT kilo_hq
+private _func = compileScript["scripts\kilo_hq\fn_main.sqf"];
+SET_MISSION_FUNC(_func);
+LOG("Function found", FUNC);
+call FUNC;
+#endif
+
 #if __has_include("vic_part_kill\fn_main.sqf")
 #define SCRIPT vic_part_kill
 private _func = compileScript["scripts\vic_part_kill\fn_main.sqf"];
 SET_MISSION_FUNC(_func);
 LOG("Function found", FUNC);
+call FUNC;
 #endif

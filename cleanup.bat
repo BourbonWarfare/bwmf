@@ -4,6 +4,7 @@ Wscript.Echo "begin."
 set objShell = CreateObject("WScript.Shell")
 set objFSO = CreateObject("Scripting.FileSystemObject")
 set objSuperFolder = objFSO.GetFolder(objShell.CurrentDirectory)
+call RemoveScriptsIfUnused
 call ShowSubfolders (objSuperFolder)
 call RemoveUnusedLoadouts
 Wscript.Echo "end."
@@ -74,7 +75,7 @@ sub RemoveUnusedLoadouts()
     next
 end sub
 
-sub RemoveScriptsIfUnsed()
+sub RemoveScriptsIfUnused()
     Dim initFilePath, initFile, initContent
     initFilePath = objFSO.OpenTextFile(objShell.CurrentDirectory & "\init.sqf")
 
