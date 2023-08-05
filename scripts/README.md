@@ -45,3 +45,16 @@ Settings should be defined in a way that makes the script as flexible as possibl
 within reason. 
 
 Follow the template folder for reference.
+
+## Add script to `setup.sqf`
+
+You will need to add the script to the `setup.sqf` file. 
+In doing this you also need to specifiy when this script is going to be called. 
+
+In the case of inspect you can see `call FUNC`. This will mean that the code is 
+called at the start of the mission. 
+
+If you want to setup a particular condition or eventhandler for starting the script
+then this would be the place to do it. 
+
+This has the advantage of keeping all the script setup in one place.
