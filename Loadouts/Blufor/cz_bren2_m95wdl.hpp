@@ -238,7 +238,7 @@ class pilot {// Pilot
 class vicc: Fic_Soldier_Carbine {// Crew
   uniform[] = {CAMO_UNIFORM};
   backpack[] = {"B_Battle_Belt_XL_F"};
-  vest[] = {"potato_vz99_flare"};
+  vest[] = {"V_TacVest_blk"};
   headgear[] = {"CUP_H_CZ_Helmet05"};
   magazines[] = {CARBINE_MAG,CREW_GRENADES};
   backpackItems[] = {SIDE_KEY,RADIO_LR};

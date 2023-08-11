@@ -459,7 +459,7 @@ class sf_ar: sf_rifleman {// AR
 };
 class sf_aar: sf_rifleman {// AAR
   weapons[] = {SF_CARBINE};
-  magazines[] = {SF_CARBINE_MAG,SF_GRENADES};
+  magazines[] = {SF_CARBINE_MAG,SF_PISTOL_MAG,SF_GRENADES};
   backpackItems[] += {SF_AR_MAG};
   linkedItems[] += {BINOS};
 };

@@ -34,7 +34,7 @@ description = "Russian Federation VDV Spetsnaz c. 2022 (aka the Invasion of Ukra
 #define RIFLE_2 "rhs_weap_vss","rhs_weap_vss_grip"
 // GL Rifle
 #define GLRIFLE "CUP_arifle_AK12_GP34_black"
-#define GLRIFLE_MAG RIFLE_MAG
+#define GLRIFLE_MAG "potato_magazine_545x39_30rnd_black:8"
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "rhs_VOG25P:5"
 #define GLRIFLE_MAG_FLARE "UGL_FlareYellow_F:4"
@@ -287,6 +287,7 @@ class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
+  weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
@@ -408,7 +409,7 @@ class fallback: rifleman {}; // This means any faction member who doesn't match 
 
 
 #define SF_GLRIFLE GLRIFLE
-#define SF_GLRIFLE_MAG RIFLE_MAG
+#define SF_GLRIFLE_MAG GLRIFLE_MAG
 #define SF_GLRIFLE_MAG_HE GLRIFLE_MAG_HE
 #define SF_GLRIFLE_MAG_SMOKE GLRIFLE_MAG_SMOKE
 #define SF_GLRIFLE_MAG_ILLUM GLRIFLE_MAG_FLARE

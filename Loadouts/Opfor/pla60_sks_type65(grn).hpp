@@ -166,6 +166,7 @@ class sl: ftl {// SL
   vest[] = {CAMO_VEST_SL};
   backpack[] = {CAMO_BACKPACK_SL};
   handguns[] = {PISTOL};
+  magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {RADIO_MR};
 };
@@ -276,7 +277,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
   headgear[] = {CAMO_HEADGEAR_VICC};
   backpack[] = {CAMO_BACKPACK_VICC};
   handguns[] = {PISTOL};
-  magazines[] = {PISTOL_MAG,PISTOL_MAG,CREW_GRENADES};
+  magazines[] = {CARBINE_MAG,PISTOL_MAG,PISTOL_MAG,CREW_GRENADES};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};

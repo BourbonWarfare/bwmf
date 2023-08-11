@@ -172,7 +172,7 @@ class aar: Fic_Soldier_Carbine {// AAR
 class lat: Fic_Soldier_Carbine {// RAT
   backpack[] = {CAMO_BACKPACK_LAT};
   weapons[] = {GLRIFLE};
-  magazines[] += {GLRIFLE_MAG_AT};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_AT,BASE_GRENADES};
 };
 class sm: Fic_Soldier_Carbine {// Medic
   vest[] = {CAMO_VEST_MEDIC};

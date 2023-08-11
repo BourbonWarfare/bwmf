@@ -7,7 +7,7 @@ description = "paste your loadout config from the arseanal exporter";
 
 // Camo set
 #define CAMO_UNIFORM "CUP_U_B_HIL_ACU_Kneepad_Gloves_CCE","CUP_U_B_HIL_ACU_Gloves_CCE","CUP_U_B_HIL_ACU_Kneepad_Rolled_Gloves_CCE","CUP_U_B_HIL_ACU_Rolled_Gloves_CCE"
-#define CAMO_VEST "MNP_Vest_NZ_1"
+#define CAMO_VEST "V_PlateCarrier1_blk"
 #define CAMO_BACKPACK "B_AssaultPack_cbr"
 #define CARRYALL "B_Carryall_cbr"
 #define CAMO_HEADGEAR "CUP_H_HIL_HelmetACH_GCovered_CCE","CUP_H_HIL_HelmetACH_CCE","CUP_H_HIL_HelmetACH_ESS_CCE"
@@ -322,6 +322,7 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   weapons[] = {RIFLE};
+  handguns[] = {};
   magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
   backpack[] = {CARRYALL};
   launchers[] = {HMG_TRI_LO};
@@ -341,6 +342,7 @@ class hmgag: rifleman {// HMG Spotter
 class hatl: sl {// HAT Lead
   weapons[] = {RIFLE};
   backpackItems[] = {};
+  handguns[] = {};
   magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG};
   backpack[] = {CARRYALL};
   launchers[] = {HAT_TRI_LO};

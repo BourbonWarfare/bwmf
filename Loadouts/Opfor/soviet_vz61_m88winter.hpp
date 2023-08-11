@@ -109,16 +109,16 @@ description = "paste your loadout config from the arseanal exporter";
 
 class Car {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,SMG_MAG,SMG_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,,SMG_MAG,SMG_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,,SMG_MAG,SMG_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
@@ -152,7 +152,6 @@ class ftl: rifleman {// FTL
 };
 class sl: ftl {// SL
   vest[] = {CAMO_VEST_SL};
-  handguns[] = {FLARE_PISTOL};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {RADIO_MR};
 };
@@ -184,7 +183,7 @@ class lat: Fic_Soldier_Carbine {// RAT
 };
 class sm: Fic_Soldier_Carbine {// Medic
   vest[] = {CAMO_VEST_MEDIC};
-  magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  magazines[] = {SMG_MAG,MEDIC_GRENADES};
   backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] = {MEDIC_MEDICAL};
 };
@@ -292,7 +291,7 @@ class eng: Fic_eng {// Logistics Engineer
   backpackItems[] = {"Toolkit","ACE_EntrenchingTool","ACE_Fortify","ACE_wirecutter"};
 };
 class fac: coy {// FAC
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,"Laserbatteries",PISTOL_MAG};
+  magazines[] = {SMG_MAG,SIDE_FAC_GRENADES,"Laserbatteries",FLARE_PISTOL_SIGNAL};
   linkedItems[] = {LINKED,LEADER_LINKED,"CUP_LRTV"};
 };
 class rifleman_02: rifleman {// Rifleman 2
@@ -330,7 +329,7 @@ class matl: sl {// MAT Lead
 };
 class hmgl: sl {// HMG Lead
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
+  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG,FLARE_PISTOL_ILLUM,FLARE_PISTOL_SIGNAL};
   backpack[] = {CARRYALL};
   launchers[] = {HMG_TRI_LO};
   items[] += {BASE_BALLISTICS};
@@ -349,7 +348,7 @@ class hmgag: rifleman {// HMG Spotter
 class hatl: sl {// HAT Lead
   weapons[] = {RIFLE};
   backpackItems[] = {};
-  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG};
+  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HAT_MAG,FLARE_PISTOL_ILLUM,FLARE_PISTOL_SIGNAL};
   backpack[] = {CARRYALL};
   launchers[] = {HAT_TRI_LO};
   items[] += {BASE_MEDICAL};

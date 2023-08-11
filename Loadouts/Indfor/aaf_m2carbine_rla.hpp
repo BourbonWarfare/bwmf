@@ -247,8 +247,9 @@ class pilot {// Pilot
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
   items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
-  linkedItems[] = {LINKED,LEADER_LINKED,"vn_o_acc_km32_01"};
+  linkedItems[] = {LINKED,LEADER_LINKED};
 };
+//,"vn_o_acc_km32_01" googles can't be added right now without scripting
 class vicc: Fic_Soldier_Carbine {// Crew
   uniform[] = {CAMO_UNIFORM_VICC};
   vest[] = {CAMO_VEST_VICC};

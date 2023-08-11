@@ -13,10 +13,10 @@ description = "paste your loadout config from the arseanal exporter";
 #define CAMO_HEADGEAR "vn_c_headband_03","vn_o_pl_cap_01_01","cwr3_o_fia_headgear_cap_khaki","rhs_ushanka","vn_c_headband_03","vn_c_headband_03"
 #define CAMO_HEADGEAR_SPECIAL 
 // Pilot Camo set
-#define CAMO_UNIFORM_PILOT "NotSet"
-#define CAMO_VEST_PILOT "NotSet"
-#define CAMO_BACKPACK_PILOT "NotSet"
-#define CAMO_HEADGEAR_PILOT "NotSet"
+#define CAMO_UNIFORM_PILOT ""
+#define CAMO_VEST_PILOT ""
+#define CAMO_BACKPACK_PILOT ""
+#define CAMO_HEADGEAR_PILOT ""
 // Vic Crew Camo set
 #define CAMO_UNIFORM_VICC CAMO_UNIFORM
 #define CAMO_VEST_VICC CAMO_VEST
@@ -105,16 +105,16 @@ description = "paste your loadout config from the arseanal exporter";
 
 class Car {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
-  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
