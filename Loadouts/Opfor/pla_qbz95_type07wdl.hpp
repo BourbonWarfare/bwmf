@@ -5,13 +5,13 @@
 // Camo set
 #define CAMO_UNIFORM "acp_CN_Xingkong_W_lite_U_Aegis_O_Soldier_03_CN_Xingkong_W"
 #define CAMO_VEST "acp_CN_Xingkong_W_lite_V_PlateCarrier2_CN_Xingkong_W"
-#define FTL_VEST CAMO_VEST
-#define SL_VEST CAMO_VEST
-#define AR_VEST CAMO_VEST
-#define M_VEST CAMO_VEST
+#define CAMO_VEST_FTL CAMO_VEST
+#define CAMO_VEST_SL CAMO_VEST
+#define CAMO_VEST_AR CAMO_VEST
+#define CAMO_VEST_MEDIC CAMO_VEST
 #define CAMO_BACKPACK "B_Battle_Belt_F"
-#define ARPACK "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
-#define MEDICPACK "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
+#define CAMO_BACKPACK_AR "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
+#define CAMO_BACKPACK_MEDIC "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
 #define CARRYALL "acp_CN_Xingkong_W_lite_B_Carryall_CN_Xingkong_W"
 #define CAMO_HEADGEAR "acp_CN_Xingkong_W_lite_H_HelmetEAST_Cover_CN_Xingkong_W_F"
 #define CAMO_HEADGEAR_SPECIAL "acp_CN_Xingkong_W_lite_H_HelmetSpecB_CN_Xingkong_W"
@@ -128,15 +128,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
+  vest[] = {CAMO_VEST_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  backpack[] = {MEDICPACK};
-  vest[] = {SL_VEST};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   handgunAttachments[] = {PISTOL_ATTACHMENTS};
@@ -151,14 +151,14 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
-  backpack[] = {MEDICPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
@@ -167,7 +167,7 @@ class lat: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  backpack[] = {MEDICPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };

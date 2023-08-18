@@ -29,11 +29,6 @@
 #define MAT "launch_RPG32_F"
 #define MAT_MAG "RPG32_F:3","RPG32_HE_F:1"
 #define MAT_MAG2 "RPG32_F:2","RPG32_HE_F:1"
-//HMG
-#define HMG "ace_csw_staticHMGCarry"
-#define HMG_TRI_HI "ace_csw_m3CarryTripod"
-#define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
-#define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
 //HAT
 #define HAT "ace_csw_staticATCarry"
 #define HAT_TRI_HI "ace_csw_m3CarryTripod"
@@ -45,12 +40,6 @@
 #define HMG_TRI_LO "ace_csw_kordCarryTripodLow"
 #define HMG_MAG "ace_csw_50Rnd_127x108_mag:6"
 #define HMG_MAG2 "ace_csw_50Rnd_127x108_mag:5"
-//HAT
-#define HAT "ace_compat_rhs_afrf3_kornet_carry"
-#define HAT_TRI_HI ""
-#define HAT_TRI_LO ""
-#define HAT_MAG "ace_compat_rhs_afrf3_mag_9m133f:3","ace_compat_rhs_afrf3_mag_9m133m2:2"
-#define HAT_MAG2 "ace_compat_rhs_afrf3_mag_9m133f:2","ace_compat_rhs_afrf3_mag_9m133m2:2"
 // SAM
 #define SAM "launch_O_Titan_F"
 #define SAM_MAG "Titan_AA:3"

@@ -5,13 +5,13 @@
 // Camo set
 #define CAMO_UNIFORM "MNP_CombatUniform_China_D"
 #define CAMO_VEST "MNP_Vest_ChinaH_D"
-#define FTL_VEST CAMO_VEST
-#define SL_VEST CAMO_VEST
-#define AR_VEST CAMO_VEST
-#define M_VEST CAMO_VEST
+#define CAMO_VEST_FTL CAMO_VEST
+#define CAMO_VEST_SL CAMO_VEST
+#define CAMO_VEST_AR CAMO_VEST
+#define CAMO_VEST_MEDIC CAMO_VEST
 #define CAMO_BACKPACK "B_Battle_Belt_F"
-#define ARPACK "MNP_B_FieldPack_PLA_Basic_D"
-#define MEDICPACK "MNP_B_FieldPack_PLA_Basic_D"
+#define CAMO_BACKPACK_AR "MNP_B_FieldPack_PLA_Basic_D"
+#define CAMO_BACKPACK_MEDIC "MNP_B_FieldPack_PLA_Basic_D"
 #define CARRYALL "MNP_B_Carryall_PLA_Basic_D"
 #define CAMO_HEADGEAR "MNP_Helmet_PAGST_CN_D"
 #define CAMO_HEADGEAR_SPECIAL "MNP_Boonie_CN_D"
@@ -128,15 +128,15 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
   magazines[] = {CARBINE_MAG,BASE_GRENADES};
 };
 class ftl: rifleman {// FTL
-  vest[] = {FTL_VEST};
+  vest[] = {CAMO_VEST_FTL};
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
 class sl: ftl {// SL
-  backpack[] = {MEDICPACK};
-  vest[] = {SL_VEST};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
+  vest[] = {CAMO_VEST_SL};
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   handgunAttachments[] = {PISTOL_ATTACHMENTS};
@@ -151,14 +151,14 @@ class uav: rifleman {
   linkedItems[] += {SIDE_UAV_TERMINAL};
 };
 class ar: rifleman {// AR
-  vest[] = {AR_VEST};
-  backpack[] = {ARPACK};
+  vest[] = {CAMO_VEST_AR};
+  backpack[] = {CAMO_BACKPACK_AR};
   weapons[] = {AR};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
-  backpack[] = {MEDICPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
@@ -167,7 +167,7 @@ class lat: Fic_Soldier_Carbine {// RAT
   launchers[] = {AT};
 };
 class sm: Fic_Soldier_Carbine {// Medic
-  backpack[] = {MEDICPACK};
+  backpack[] = {CAMO_BACKPACK_MEDIC};
   magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
   backpackItems[] = {MEDIC_MEDICAL};
 };
