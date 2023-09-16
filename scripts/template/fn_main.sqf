@@ -4,4 +4,4 @@
 //START YOUR CODE HERE
 if (!isServer) exitWith {false};
 
-hintSilent "Look at me. I loaded a script";
+LOG("This is not a script.... this is just a template.", scriptName);

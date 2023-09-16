@@ -30,6 +30,14 @@ LOG("Function found", FUNC);
 call FUNC;
 #endif
 
+#if __has_include("set_unit_face\fn_main.sqf")
+#define SCRIPT set_unit_face
+private _func = compileScript["scripts\set_unit_face\fn_main.sqf"];
+SET_MISSION_FUNC(_func);
+LOG("Function found", FUNC);
+call FUNC;
+#endif
+
 #if __has_include("vic_part_kill\fn_main.sqf")
 #define SCRIPT vic_part_kill
 private _func = compileScript["scripts\vic_part_kill\fn_main.sqf"];
