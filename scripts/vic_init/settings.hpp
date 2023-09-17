@@ -27,10 +27,12 @@ SET_MISSION_VAR(vic_mass, VIC_MASS);
 #define ENABLE_HANDLE_VIC_DAMAGE true
 #define DAMAGE_TARGET_CLASS "I_C_Heli_Light_01_civil_F"
 #define DAMAGE_SHOOTER_CLASS ["potato_e_sniper"]
-#define DAMAGE_TARGET_PART ["HitVRotor"]
+#define DAMAGE_TARGET_DETECT_LOCATIONS ["hitvrotor", "hitvstabilizer1"]
+#define DAMAGE_TARGET_PART "HitVRotor"
 #define DAMAGE_VALUE 1
 // VARIABLES
 SET_MISSION_VAR(damage_target_class, DAMAGE_TARGET_CLASS);
 SET_MISSION_VAR(damage_shooter_class, DAMAGE_SHOOTER_CLASS);
-SET_MISSION_VAR(damade_target_part, DAMAGE_TARGET_PART);
+SET_MISSION_VAR(damage_target_detect_locations, DAMAGE_TARGET_DETECT_LOCATIONS);
+SET_MISSION_VAR(damage_target_part, DAMAGE_TARGET_PART);
 SET_MISSION_VAR(damage_value, DAMAGE_VALUE);

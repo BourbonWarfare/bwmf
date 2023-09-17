@@ -37,17 +37,18 @@ private _trigger_activation = "
   private _inspect_from_vic = thisTrigger getVariable ['inspect_from_vic', true];
   private _hold_action_time = thisTrigger getVariable ['hold_action_time', 5];
   private _hold_action_added = thisTrigger getVariable ['hold_action_added', false];
+  private _inspector_units = thisTrigger getVariable ['inspector_units', ['CAManBase']];
   private _hold_action = [
     nil,
     'Inspect',
     '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
     '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
     'true',
-    'true',
-    {
-      params ['_target', '_caller', '_actionId', '_arguments'];
-      _caller distance (_arguments select 0) < _arguments select 1;
-    },
+    '
+      _caller distance (_arguments select 0) < (_arguments select 1)
+      && (typeOf _caller) in (_arguments select 2)
+    ',
+    {},
     {
       params ['_target', '_caller', '_actionId', '_arguments', '_progress', '_maxProgress'];
       'Inspecting, hold still' remoteExec ['hint', _caller];
@@ -67,12 +68,17 @@ private _trigger_activation = "
       _marker setMarkerText format ['%1', _bwmf_investiage_counter];
       private _trigger = _arguments select 0;
       _trigger setVariable ['inspect_is_not_complete', false];
+      'Successfully inspected' remoteExec ['hint',  _caller]
     },
     {
       params ['_target', '_caller', '_actionId', '_arguments'];
-      'Inspection interupted' remoteExec ['hint',  _caller]
+      if ((typeOf _caller) in (_arguments select 2)) then {
+        'Inspection interupted \n You might need to get closer to the target.' remoteExec ['hint',  _caller]
+      } else {
+        'You are not authorized to inspect' remoteExec ['hint',  _caller]
+      };
     },
-    [thisTrigger, _radius],
+    [thisTrigger, _radius, _inspector_units],
     _hold_action_time,
     0,
     true,
@@ -80,6 +86,7 @@ private _trigger_activation = "
     true
   ];
   private _unit = thisList select 0;
+  thisTrigger setVariable ['activating_unit', _unit];
   private _id = -1;
   if(_inspect_from_vic && !_hold_action_added) then {
     private _vic_obj = vehicle _unit;
@@ -130,8 +137,10 @@ if (INSPECT_AREA) then {
     _pos#1 + INSPECT_OBJECT_OFFSET#1,
     _pos#2 + INSPECT_OBJECT_OFFSET#2
   ];
-  LOG("trigger pos", _pos_trigger);
-  private _trigger = createTrigger ["EmptyDetector", _pos_trigger, true];
+  LOG("init trigger pos", _pos);
+  private _trigger = createTrigger ["EmptyDetector", _pos, true];
+  _trigger setPos _pos_trigger;
+  LOG("final trigger pos", getPos _trigger);
   _trigger setVariable ["hold_action_added", false];
   _trigger setVariable ["target_object", _x];
   _trigger setVariable ["inspect_is_not_complete", true];
@@ -141,6 +150,7 @@ if (INSPECT_AREA) then {
   _trigger setVariable ["side", INSPECT_SIDE];
   _trigger setVariable ["radius", INSPECT_RADIUS];
   _trigger setVariable ["hold_action_time", _hold_action_time];
+  _trigger setVariable ["inspector_units", INSPECTOR_UNITS];
   _trigger setTriggerActivation ["ANYPLAYER", "PRESENT", true];
   _trigger setTriggerArea [
     TRIGGER_RADIUS,

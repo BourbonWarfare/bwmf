@@ -25,9 +25,12 @@ if (ENABLE_HANDLE_VIC_DAMAGE && isServer) then {
       {
         _this params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
         _thisArgs params [];
+        LOG("Damage to", _hitPoint);
+        LOG("Damage from", _shooter);
         // TODO: Expand this out to handle hashmap with part for key and value for damage value
-        if (_hitPoint in GET_MISSION_VAR(damage_target_part, DAMAGE_TARGET_PART)) then {
-          _unit setHitPointDamage [_hitPoint, GET_MISSION_VAR(damage_value, DAMAGE_VALUE)];
+        if (_hitPoint in (GET_MISSION_VAR(damage_target_detect_locations, DAMAGE_TARGET_DETECT_LOCATIONS))) then {
+          LOG("Setting damage to part with value", (GET_MISSION_VAR(damage_value, DAMAGE_VALUE)));
+          _unit setHitPointDamage [(GET_MISSION_VAR(damage_target_part ,DAMAGE_TARGET_PART)), (GET_MISSION_VAR(damage_value, DAMAGE_VALUE))];
         };
       },
       []
