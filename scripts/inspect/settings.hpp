@@ -7,7 +7,7 @@
 #define INSPECT_FROM_VIC FALSE                    		// Insepect from a vehicle?
 #define INSPECT_VIC "B_Heli_Light_01_armed_F"     		// Vehicle to inspect from
 #define INSPECT_OBJECT "Land_Laptop_unfolded_F"   		// Object to inspect
-#define INSPECT_SIDE west                         		// Inspecting side
+#define INSPECT_SIDE [west]                         	// Inspecting side
 #define INSPECTOR_UNITS ["C_IDAP_Man_AidWorker_01_F"]	// Inspector class
 #define INSPECT_OBJECT_OFFSET [0,0,0]             		// Inspect offset from center of object
 #define INSPECT_AREA TRUE                         		// Multiple objects in given area?
