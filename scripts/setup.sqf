@@ -38,9 +38,9 @@ LOG("Function found", FUNC);
 call FUNC;
 #endif
 
-#if __has_include("vic_part_kill\fn_main.sqf")
-#define SCRIPT vic_part_kill
-private _func = compileScript["scripts\vic_part_kill\fn_main.sqf"];
+#if __has_include("vic_init\fn_main.sqf")
+#define SCRIPT vic_init
+private _func = compileScript["scripts\vic_init\fn_main.sqf"];
 SET_MISSION_FUNC(_func);
 LOG("Function found", FUNC);
 call FUNC;

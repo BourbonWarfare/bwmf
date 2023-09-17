@@ -1,5 +1,5 @@
 // Edit the following line to represent the name of your script
-#define SCRIPT set_ai_face
+#define SCRIPT set_unit_face
 // !!! DO NOT EDIT THE LINE BELOW !!!
 #include "..\common.hpp"
 
@@ -8,11 +8,11 @@
 // for ref https://community.bistudio.com/wiki/PreProcessor_Commands
 // #define SETTING_NAME value
 
-#define FACE_LIST ["TanoanHead_A3_06","TanoanHead_A3_07","TanoanHead_A3_05","TanoanHead_A3_04","TanoanHead_A3_03"]
+#define FACE_LIST ["CamoHead_White_01_F"]
 #define VOICE_LIST ["Male01FRE","Male02FRE","Male03FRE"]
-#define TARGET_CLASSES ["SoldierEB"]
+#define TARGET_CLASSES ["potato_w_sl"]
 #define INCLUDE_PLAYERS true
-#define PLAYER_FACE_LIST ["AfricanHead_01","AfricanHead_02","AfricanHead_03","CamoHead_African_01_F","CamoHead_African_02_F","CamoHead_African_03_F","AfricanHead_01_sick","AfricanHead_02_sick","AfricanHead_03_sick"]
+#define PLAYER_FACE_LIST ["CamoHead_White_01_F"]
 
 // VARIABLES
 // Declare your mission namespace variables here
