@@ -17,7 +17,8 @@ if (ENABLE_VIC_INIT && isServer) then {
 // HANDLE DAMAGE
 //
 // Only handle damage if selection enabled and on the server
-if (ENABLE_HANDLE_VIC_DAMAGE && isServer) then {
+// WARN: This is currently WIP. Will test fine but fail as soon as an AI or player takes owership of the vehicle
+if (ENABLE_HANDLE_VIC_DAMAGE) then {
   [GET_MISSION_VAR(damage_target_class, DAMAGE_TARGET_CLASS), "init", {
     [
       _this select 0,
@@ -28,9 +29,16 @@ if (ENABLE_HANDLE_VIC_DAMAGE && isServer) then {
         LOG("Damage to", _hitPoint);
         LOG("Damage from", _shooter);
         // TODO: Expand this out to handle hashmap with part for key and value for damage value
-        if (_hitPoint in (GET_MISSION_VAR(damage_target_detect_locations, DAMAGE_TARGET_DETECT_LOCATIONS))) then {
-          LOG("Setting damage to part with value", (GET_MISSION_VAR(damage_value, DAMAGE_VALUE)));
-          _unit setHitPointDamage [(GET_MISSION_VAR(damage_target_part ,DAMAGE_TARGET_PART)), (GET_MISSION_VAR(damage_value, DAMAGE_VALUE))];
+        if (_hitPoint in (GET_MISSION_VAR(damage_target_detect_locations, DAMAGE_TARGET_DETECT_LOCATIONS))
+            && typeof _shooter in (GET_MISSION_VAR(damage_shooter_class, DAMAGE_SHOOTER_CLASS))
+        ) then {
+            LOG("Setting damage to part with value", (GET_MISSION_VAR(damage_value, DAMAGE_VALUE)));
+            [
+                _unit,
+                (GET_MISSION_VAR(damage_target_part ,DAMAGE_TARGET_PART)),
+                (GET_MISSION_VAR(damage_value, DAMAGE_VALUE)),
+                (GET_MISSION_VAR(damage_damage_dependant_parts, DAMAGE_DAMAGE_DEPENDANT_PARTS))
+            ] remoteExecCall ["BIS_fnc_setHitPointDamage", 0, true];
         };
       },
       []

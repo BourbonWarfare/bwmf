@@ -29,10 +29,12 @@ SET_MISSION_VAR(vic_mass, VIC_MASS);
 #define DAMAGE_SHOOTER_CLASS ["potato_e_sniper"]
 #define DAMAGE_TARGET_DETECT_LOCATIONS ["hitvrotor", "hitvstabilizer1"]
 #define DAMAGE_TARGET_PART "HitVRotor"
-#define DAMAGE_VALUE 1
+#define DAMAGE_VALUE 0.75
+#define DAMAGE_DAMAGE_DEPENDANT_PARTS false
 // VARIABLES
 SET_MISSION_VAR(damage_target_class, DAMAGE_TARGET_CLASS);
 SET_MISSION_VAR(damage_shooter_class, DAMAGE_SHOOTER_CLASS);
 SET_MISSION_VAR(damage_target_detect_locations, DAMAGE_TARGET_DETECT_LOCATIONS);
 SET_MISSION_VAR(damage_target_part, DAMAGE_TARGET_PART);
 SET_MISSION_VAR(damage_value, DAMAGE_VALUE);
+SET_MISSION_VAR(damage_damage_dependant_parts, DAMAGE_DAMAGE_DEPENDANT_PARTS);
