@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_TUR_TLF_lite_U_B_CombatUniform_TUR_TLF_insignia","acp_TUR_TLF_lite_U_B_CombatUniform_vest_TUR_TLF_insignia"
-#define CAMO_VEST "acp_TUR_TLF_lite_V_CF_CarrierRig_lite_TUR_TLF"
-#define CAMO_BACKPACK "acp_TUR_TLF_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
-#define CARRYALL "acp_TUR_TLF_lite_B_Carryall_TUR_TLF"
-#define CAMO_HEADGEAR "acp_TUR_TLF_lite_H_HelmetB_TUR_TLF"
-#define CAMO_HEADGEAR_SPECIAL "acp_TUR_TLF_lite_H_Booniehat_TUR_TLF_hs"
+#define CAMO_UNIFORM "acp_TUR_TLF_core_lite_U_B_CombatUniform_TUR_TLF_insignia","acp_TUR_TLF_core_lite_U_B_CombatUniform_vest_TUR_TLF_insignia"
+#define CAMO_VEST "acp_TUR_TLF_modern_east_lite_V_CF_CarrierRig_lite_TUR_TLF"
+#define CAMO_BACKPACK "acp_TUR_TLF_core_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
+#define CARRYALL "acp_TUR_TLF_core_lite_B_Carryall_TUR_TLF"
+#define CAMO_HEADGEAR "acp_TUR_TLF_modern_east_lite_H_HelmetSpecter_cover_TUR_TLF_F"
+#define CAMO_HEADGEAR_SPECIAL "acp_TUR_TLF_core_lite_H_Booniehat_TUR_TLF_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_TUR_TLF_lite_U_B_CombatUniform_TUR_TLF_insignia"
-#define CAMO_VEST_PILOT "acp_TUR_TLF_lite_V_CF_CarrierRig_TUR_TLF"
-#define CAMO_BACKPACK_PILOT "acp_TUR_TLF_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
+#define CAMO_UNIFORM_PILOT "acp_TUR_TLF_core_lite_U_B_CombatUniform_TUR_TLF_insignia"
+#define CAMO_VEST_PILOT "acp_TUR_TLF_modern_east_lite_V_CF_CarrierRig_TUR_TLF"
+#define CAMO_BACKPACK_PILOT "acp_TUR_TLF_core_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_khaki_visor"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_TUR_TLF_lite_U_B_CombatUniform_TUR_TLF_insignia"
-#define CAMO_VEST_VICC "acp_TUR_TLF_lite_V_CF_CarrierRig_TUR_TLF"
-#define CAMO_BACKPACK_VICC "acp_TUR_TLF_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
+#define CAMO_UNIFORM_VICC "acp_TUR_TLF_core_lite_U_B_CombatUniform_TUR_TLF_insignia"
+#define CAMO_VEST_VICC "acp_TUR_TLF_modern_east_lite_V_CF_CarrierRig_TUR_TLF"
+#define CAMO_BACKPACK_VICC "acp_TUR_TLF_core_lite_B_AssaultPackEnhanced_TUR_TLF_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "CUP_arifle_HK416_Black"
@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"acp_TUR_TLF_lite_V_CF_CarrierRig_MG_TUR_TLF"};
+  vest[] = {"acp_TUR_TLF_modern_east_lite_V_CF_CarrierRig_MG_TUR_TLF"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"acp_TUR_TLF_lite_V_CF_CarrierRig_MG_TUR_TLF"};
+  vest[] = {"acp_TUR_TLF_modern_east_lite_V_CF_CarrierRig_MG_TUR_TLF"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
