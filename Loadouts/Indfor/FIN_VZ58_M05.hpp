@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia","acp_FI_M05_Relish_lite_U_B_CombatUniform_vest_FI_M05_Relish_insignia"
-#define CAMO_VEST "acp_FI_M05_Relish_lite_V_CF_CarrierRig_lite_FI_M05_Relish"
-#define CAMO_BACKPACK "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
-#define CARRYALL "acp_FI_M05_Relish_lite_B_Carryall_FI_M05_Relish"
-#define CAMO_HEADGEAR "acp_FI_M05_Relish_lite_H_HelmetEAST_Cover_FI_M05_Relish_F"
-#define CAMO_HEADGEAR_SPECIAL "acp_FI_M05_Relish_lite_H_Booniehat_FI_M05_Relish_hs"
+#define CAMO_UNIFORM "acp_FI_M05_Relish_core_lite_U_B_CombatUniform_FI_M05_Relish_insignia","acp_FI_M05_Relish_core_lite_U_B_CombatUniform_vest_FI_M05_Relish_insignia"
+#define CAMO_VEST "acp_FI_M05_Relish_modern_east_lite_V_CF_CarrierRig_lite_FI_M05_Relish"
+#define CAMO_BACKPACK "acp_FI_M05_Relish_core_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
+#define CARRYALL "acp_FI_M05_Relish_core_lite_B_Carryall_FI_M05_Relish"
+#define CAMO_HEADGEAR "acp_FI_M05_Relish_modern_east_lite_H_HelmetEAST_Cover_FI_M05_Relish_F"
+#define CAMO_HEADGEAR_SPECIAL "acp_FI_M05_Relish_core_lite_H_Booniehat_FI_M05_Relish_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
-#define CAMO_VEST_PILOT "acp_FI_M05_Relish_lite_V_CF_CarrierRig_FI_M05_Relish"
-#define CAMO_BACKPACK_PILOT "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
+#define CAMO_UNIFORM_PILOT "acp_FI_M05_Relish_core_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
+#define CAMO_VEST_PILOT "acp_FI_M05_Relish_modern_east_lite_V_CF_CarrierRig_FI_M05_Relish"
+#define CAMO_BACKPACK_PILOT "acp_FI_M05_Relish_core_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
 #define CAMO_HEADGEAR_PILOT "rhs_zsh7a_mike"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_FI_M05_Relish_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
-#define CAMO_VEST_VICC "acp_FI_M05_Relish_lite_V_CF_CarrierRig_FI_M05_Relish"
-#define CAMO_BACKPACK_VICC "acp_FI_M05_Relish_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
+#define CAMO_UNIFORM_VICC "acp_FI_M05_Relish_core_lite_U_B_CombatUniform_FI_M05_Relish_insignia"
+#define CAMO_VEST_VICC "acp_FI_M05_Relish_modern_east_lite_V_CF_CarrierRig_FI_M05_Relish"
+#define CAMO_BACKPACK_VICC "acp_FI_M05_Relish_core_lite_B_AssaultPackEnhanced_FI_M05_Relish_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "CUP_arifle_Sa58RIS2"
@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
+  vest[] = {"acp_FI_M05_Relish_modern_east_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"acp_FI_M05_Relish_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
+  vest[] = {"acp_FI_M05_Relish_modern_east_lite_V_CF_CarrierRig_MG_FI_M05_Relish"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
