@@ -65,18 +65,18 @@ description = "paste your loadout config from the arseanal exporter";
 // Sniper
 #define SNIPER "hlc_rifle_psg1"
 #define SNIPER_MAG "potato_magazine_762x51_20rnd_reload_tracer_Red:5"
-#define SNIPER_OPTIC "cup_bipod_harris_1a2_l_blk"
+#define SNIPER_ATTACHMENTS "cup_bipod_harris_1a2_l_blk"
 // Spotter
 #define SPOTTER "CUP_arifle_AK103"
 #define SPOTTER_MAG "potato_magazine_762x39_20rnd_reload_tracer_Red:15"
-#define SPOTTER_OPTIC "CUP_optic_PSO_1_AK_open"
+#define SPOTTER_ATTACHMENTS "CUP_optic_PSO_1_AK_open"
 // SMG
 #define SMG "CUP_smg_UZI"
 #define SMG_MAG "potato_magazine_9x19_30rnd_reload_tracer_Red:5"
 // Pistol
 #define PISTOL "CUP_hgun_Glock17_blk"
 #define PISTOL_MAG "potato_magazine_9x19_17rnd:3"
-#define PISTOL_OPTIC ""
+#define PISTOL_ATTACHMENTS ""
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear

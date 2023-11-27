@@ -1,38 +1,38 @@
-// author = "Chesheire";
+// author = "You";
 // description = "paste your loadout config from the arseanal exporter";
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "MNP_CombatUniform_China"
-#define CAMO_VEST "MNP_Vest_ChinaH_T"
-#define CAMO_VEST_FTL CAMO_VEST
-#define CAMO_VEST_SL CAMO_VEST
+#define CAMO_UNIFORM "CUP_U_B_USMC_MCCUU","CUP_U_B_USMC_MCCUU_gloves","CUP_U_B_USMC_MCCUU_pads","CUP_U_B_USMC_MCCUU_pads_gloves","CUP_U_B_USMC_MCCUU_roll","CUP_U_B_USMC_MCCUU_roll_gloves","CUP_U_B_USMC_MCCUU_roll_pads","CUP_U_B_USMC_MCCUU_roll_pads_gloves"
+#define CAMO_VEST "CUP_V_PMC_CIRAS_Coyote_Patrol"
+#define CAMO_VEST_FTL "CUP_V_PMC_CIRAS_Coyote_Grenadier"
+#define CAMO_VEST_SL "CUP_V_PMC_CIRAS_Coyote_TL"
 #define CAMO_VEST_AR CAMO_VEST
 #define CAMO_VEST_MEDIC CAMO_VEST
 #define CAMO_BACKPACK "B_Battle_Belt_F"
-#define CAMO_BACKPACK_AR "MNP_B_FieldPack_PLA_Basic"
-#define CAMO_BACKPACK_MEDIC "MNP_B_FieldPack_PLA_Basic"
-#define CARRYALL "MNP_B_Carryall_PLA_Basic"
-#define CAMO_HEADGEAR "MNP_Helmet_PAGST_CN"
-#define CAMO_HEADGEAR_SPECIAL "MNP_Boonie_CN_T"
+#define CAMO_BACKPACK_AR "B_FieldPack_khk"
+#define CAMO_BACKPACK_MEDIC "cwr3_b_backpack_alice_medic_empty"
+#define CARRYALL "cwr3_b_backpack_alice"
+#define CAMO_HEADGEAR "PLOT_ARMOR_H_Bandanna_cbr","PLOT_ARMOR_H_Bandanna_khk"
+#define CAMO_HEADGEAR_SPECIAL CAMO_HEADGEAR
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "rhs_uniform_df15"
-#define CAMO_VEST_PILOT "PLOT_ARMOR_V_Pockets_F"
+#define CAMO_UNIFORM_PILOT CAMO_UNIFORM
+#define CAMO_VEST_PILOT "cwr3_b_vest_pilot"
 #define CAMO_BACKPACK_PILOT "B_Battle_Belt_XL_F"
-#define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_green_visor"
+#define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_visor"
 //Vehicle camo set
 #define CAMO_UNIFORM_VICC CAMO_UNIFORM
-#define CAMO_VEST_VICC "rhs_vest_commander"
+#define CAMO_VEST_VICC "CUP_V_PMC_CIRAS_Coyote_Veh"
 #define CAMO_BACKPACK_VICC "B_Battle_Belt_XL_F"
-#define CAMO_HEADGEAR_VICC "rhs_tsh4","rhs_tsh4_ess"
+#define CAMO_HEADGEAR_VICC "cwr3_o_headgear_tsh4"
 // Rifle
-#define RIFLE "arifle_CTAR_blk_F"
-#define RIFLE_MAG "potato_magazine_580x42_30rnd_reload_tracer_Green:7","potato_magazine_580x42_30rnd_tracer_Green:3"
-#define RIFLE_ATTACHMENTS "acc_flashlight"
+#define RIFLE "rhs_weap_akmn_npz"
+#define RIFLE_MAG "CUP_30Rnd_762x39_AK47_M:7","CUP_30Rnd_TE1_Yellow_Tracer_762x39_AK47_M:3"
+#define RIFLE_ATTACHMENTS "cup_optic_zddot","rhs_acc_2dpzenit","rhs_acc_dtkakm"
 #define AAR_ATTACHMENTS RIFLE_ATTACHMENTS
-#define ALT_OPTICS "rhs_acc_rakurspm","cup_optic_microt1_low","cup_optic_ac11704_black","cup_optic_mepro","cup_optic_vortexrazor_uh1_black"
+#define ALT_OPTICS "cup_optic_ac11704_black","cup_optic_microt1_low","hlc_optic_docterr","optic_aco_grn"
 // GL Rifle
-#define GLRIFLE "arifle_CTAR_GL_blk_F"
+#define GLRIFLE "rhs_weap_akmn_gp25_npz"
 #define GLRIFLE_MAG RIFLE_MAG
 #define GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:2"
 #define GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:5"
@@ -41,48 +41,48 @@
 #define CARBINE RIFLE
 #define CARBINE_MAG RIFLE_MAG
 // AR
-#define AR "arifle_CTARS_blk_F"
-#define AR_MAG "potato_magazine_580x42_100rnd_tracer_Green:4"
-// AT - APILAS is a stand in for the DJZ-08 which has the same proportions, sorta.
-#define AT "CUP_launch_APILAS"
-#define AT_MAG "CUP_APILAS_M"
+#define AR "CUP_lmg_PKM_top_rail"
+#define AR_MAG "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M:5"
+// AT
+#define AT "CUP_launch_RPG7V"
+#define AT_MAG "CUP_PG7VM_M"
 // MMG
-#define MMG "CUP_lmg_PKM_top_rail"
-#define MMG_MAG "potato_box_762x54_100rnd_reload_tracer_Green:5"
+#define MMG AR
+#define MMG_MAG AR_MAG
 // MAT
-#define MAT "launch_RPG32_green_F"
-#define MAT_MAG "RPG32_F:2","RPG32_HE_F:1"
-#define MAT_MAG2 "RPG32_F:1","RPG32_HE_F:2"
-#define MAT_OPTIC 
+#define MAT "CUP_launch_RPG7V"
+#define MAT_MAG "CUP_PG7VM_M:2","rhs_rpg7_type69_airburst_mag:1"
+#define MAT_MAG2 "CUP_PG7VM_M:2","rhs_rpg7_type69_airburst_mag:1"
+#define MAT_OPTIC "cup_optic_pgo7v3"
 
 //HMG
-#define HMG "CUP_DSHKM_carry"
-#define HMG_TRI_HI "ace_csw_kordCarryTripod"
-#define HMG_TRI_LO "ace_csw_kordCarryTripodLow"
-#define HMG_MAG "ace_csw_50Rnd_127x108_mag:4"
-//HAT - stand in for HJ-12, which is described as similar to the Javelin.
-#define HAT "CUP_launch_Javelin"
-#define HAT_TRI_HI 
-#define HAT_TRI_LO 
-#define HAT_MAG "CUP_Javelin_M"
+#define HMG "ace_cswCompatCUP_cup_m2"
+#define HMG_TRI_HI "ace_csw_m3CarryTripod"
+#define HMG_TRI_LO "ace_csw_m3CarryTripodLow"
+#define HMG_MAG "ace_csw_100Rnd_127x99_mag:3"
+//HAT
+#define HAT "CUP_TOW2_carry"
+#define HAT_TRI_HI "ace_csw_m220CarryTripod"
+#define HAT_TRI_LO "ace_csw_m220CarryTripod"
+#define HAT_MAG "CUP_compats_TOW2_M"
 // SAM
-#define SAM "CUP_launch_Igla"
-#define SAM_MAG "CUP_Igla_M:2"
-#define SAM_MAG2 "CUP_Igla_M:2"
+#define SAM "launch_B_Titan_F"
+#define SAM_MAG "ace_manpad_stinger_man:2"
+#define SAM_MAG2 "ace_manpad_stinger_man:2"
 // Sniper Rifle
-#define SNIPER "srifle_DMR_07_blk_F"
-#define SNIPER_MAG "potato_magazine_65x39_20rnd:10"
-#define SNIPER_ATTACHMENTS "hlc_optic_zf95base","acc_pointer_ir"
+#define SNIPER "CUP_srifle_SVD_top_rail"
+#define SNIPER_MAG "10Rnd_762x54_Mag:10"
+#define SNIPER_ATTACHMENTS "hlc_optic_leupoldm3a"
 // Spotter Rifle
-#define SPOTTER RIFLE
-#define SPOTTER_MAG RIFLE_MAG
-#define SPOTTER_ATTACHMENTS RIFLE_ATTACHMENTS
+#define SPOTTER "CUP_arifle_M16A2"
+#define SPOTTER_MAG "ACE_30Rnd_556x45_Stanag_Mk318_mag:10"
+#define SPOTTER_ATTACHMENTS "cup_optic_zddot","acc_flashlight"
 // SMG
-#define SMG CARBINE
-#define SMG_MAG "potato_magazine_580x42_30rnd_reload_tracer_Green:5"
+#define SMG "CUP_smg_M3A1"
+#define SMG_MAG "CUP_30Rnd_45ACP_M3A1_BLK_M:5"
 // Pistol
-#define PISTOL "hgun_Rook40_F"
-#define PISTOL_MAG "potato_magazine_9x19_17rnd:4"
+#define PISTOL "CUP_hgun_Browning_HP"
+#define PISTOL_MAG "CUP_13Rnd_9x19_Browning_HP:4"
 #define PISTOL_ATTACHMENTS 
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
@@ -95,16 +95,16 @@
 
 class Car {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Tank {
   TransportWeapons[] = {AT};
-  TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Helicopter {
-  TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };
 class Plane {};
@@ -206,13 +206,14 @@ class msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
   SAM_GEAR(CARRYALL, SAM_MAG2)
 };
 class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
-  launchers[] = {"potato_vz99_carryWeapon"};
+  launchers[] = {"ace_csw_staticMortarCarry"};
   MORTAR_GEAR(CARRYALL)
-  magazines[] += {"potato_vz99_HE_multi:9"};
+  magazines[] += {"ACE_1Rnd_82mm_Mo_HE:6"};
 };
 class mtrag: Fic_Spotter {// Assistant Mortar
+  launchers[] = {"ace_csw_carryMortarBaseplate"};
   MORTAR_GEAR(CARRYALL)
-  magazines[] += {"potato_vz99_HE_multi:2","potato_vz99_smokeWhite:4","potato_vz99_flare:3"};
+  magazines[] += {"ACE_1Rnd_82mm_Mo_HE:2","ACE_1Rnd_82mm_Mo_Smoke:2","ACE_1Rnd_82mm_Mo_Illum:2"};
 };
 class spotter: Fic_Spotter {// Spotter
   headgear[] = {CAMO_HEADGEAR_SPECIAL};
