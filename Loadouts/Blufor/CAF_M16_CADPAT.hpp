@@ -3,21 +3,21 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia","acp_CA_CADPAT_lite_U_B_CombatUniform_vest_CA_CADPAT_insignia"
-#define CAMO_VEST "acp_CA_CADPAT_lite_V_CF_CarrierRig_lite_CA_CADPAT"
-#define CAMO_BACKPACK "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
-#define CARRYALL "acp_CA_CADPAT_lite_B_Carryall_CA_CADPAT"
-#define CAMO_HEADGEAR "acp_CA_CADPAT_lite_H_HelmetSpecter_cover_CA_CADPAT_F"
-#define CAMO_HEADGEAR_SPECIAL "acp_CA_CADPAT_lite_H_Booniehat_CA_CADPAT_hs"
+#define CAMO_UNIFORM "acp_CA_CADPAT_core_lite_U_I_CombatUniform_CA_CADPAT_insignia","acp_CA_CADPAT_core_lite_U_I_CombatUniform_shortsleeve_CA_CADPAT_insignia"
+#define CAMO_VEST "acp_CA_CADPAT_core_lite_V_PlateCarrier1_CA_CADPAT_insignia","acp_CA_CADPAT_core_lite_V_PlateCarrier_Kerry_CA_CADPAT_insignia"
+#define CAMO_BACKPACK "acp_CA_CADPAT_core_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
+#define CARRYALL "acp_CA_CADPAT_core_lite_B_Carryall_CA_CADPAT"
+#define CAMO_HEADGEAR "acp_CA_CADPAT_contact_lite_H_HelmetIA_CA_CADPAT"
+#define CAMO_HEADGEAR_SPECIAL "acp_CA_CADPAT_core_lite_H_Booniehat_CA_CADPAT_hs"
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia"
-#define CAMO_VEST_PILOT "acp_CA_CADPAT_lite_V_CF_CarrierRig_CA_CADPAT"
-#define CAMO_BACKPACK_PILOT "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
+#define CAMO_UNIFORM_PILOT "acp_CA_CADPAT_core_lite_U_I_CombatUniform_CA_CADPAT_insignia"
+#define CAMO_VEST_PILOT "acp_CA_CADPAT_core_lite_V_PlateCarrier1_CA_CADPAT_insignia"
+#define CAMO_BACKPACK_PILOT "acp_CA_CADPAT_core_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4_green"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_CA_CADPAT_lite_U_B_CombatUniform_CA_CADPAT_insignia"
-#define CAMO_VEST_VICC "acp_CA_CADPAT_lite_V_CF_CarrierRig_CA_CADPAT"
-#define CAMO_BACKPACK_VICC "acp_CA_CADPAT_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
+#define CAMO_UNIFORM_VICC "acp_CA_CADPAT_core_lite_U_I_CombatUniform_CA_CADPAT_insignia"
+#define CAMO_VEST_VICC "acp_CA_CADPAT_core_lite_V_PlateCarrier1_CA_CADPAT_insignia"
+#define CAMO_BACKPACK_VICC "acp_CA_CADPAT_core_lite_B_AssaultPackEnhanced_CA_CADPAT_insignia"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
 // Rifle
 #define RIFLE "CUP_arifle_M16A4_Grip"
@@ -143,7 +143,7 @@ class uav: rifleman {
 };
 class ar: rifleman {// AR
   weapons[] = {AR};
-  vest[] = {"acp_CA_CADPAT_lite_V_CF_CarrierRig_MG_CA_CADPAT"};
+  vest[] = {"acp_CA_CADPAT_core_lite_V_PlateCarrier1_CA_CADPAT_insignia"};
   magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
   handguns[] = {PISTOL};
 };
@@ -164,7 +164,7 @@ class Fic_Spotter: rifleman {
 };
 class mmgg: ar {// MMG
   weapons[] = {MMG};
-  vest[] = {"acp_CA_CADPAT_lite_V_CF_CarrierRig_MG_CA_CADPAT"};
+  vest[] = {"acp_CA_CADPAT_core_lite_V_PlateCarrier1_CA_CADPAT_insignia"};
   magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
   backpack[] = {CARRYALL};
