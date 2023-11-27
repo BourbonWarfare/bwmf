@@ -3,7 +3,7 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_Solid_CoyoteBrown_lite_U_O_officer_noInsignia_Solid_CoyoteBrown_F"
+#define CAMO_UNIFORM "acp_Solid_CoyoteBrown_core_lite_U_O_officer_noInsignia_Solid_CoyoteBrown_F"
 #define CAMO_VEST "CUP_V_RUS_Smersh_New_Buttpack"
 #define CAMO_BACKPACK "rhs_rd54"
 #define CARRYALL "cwr3_i_bergen_backpack_khaki"
@@ -15,7 +15,7 @@
 #define CAMO_BACKPACK_PILOT "B_Battle_Belt_XL_F"
 #define CAMO_HEADGEAR_PILOT "cwr3_c_headgear_camelpilot_hat"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_Solid_CoyoteBrown_lite_U_Aegis_O_Soldier_04_Solid_CoyoteBrown"
+#define CAMO_UNIFORM_VICC "acp_Solid_CoyoteBrown_core_lite_U_Aegis_O_Soldier_03_Solid_CoyoteBrown"
 #define CAMO_VEST_VICC "CUP_V_RUS_Smersh_New_Buttpack"
 #define CAMO_BACKPACK_VICC "rhs_rd54"
 #define CAMO_HEADGEAR_VICC "CUP_H_BAF_MTP_Mk7_PRR_SCRIM_B"
