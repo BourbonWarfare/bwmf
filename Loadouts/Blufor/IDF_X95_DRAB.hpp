@@ -3,19 +3,19 @@
 #include "undef.hpp" // Reset defines
 
 // Camo set
-#define CAMO_UNIFORM "acp_Solid_Olive_lite_U_I_E_Uniform_Solid_Olive_01_F","acp_Solid_Olive_lite_U_I_E_Uniform_shortsleeve_Solid_Olive_01_F"
+#define CAMO_UNIFORM "acp_Solid_Olive_core_lite_U_I_E_Uniform_Solid_Olive_01_F","acp_Solid_Olive_core_lite_U_I_E_Uniform_shortsleeve_Solid_Olive_01_F"
 #define CAMO_VEST "CUP_V_IDF_Vest"
 #define CAMO_BACKPACK "CUP_B_IDF_Backpack"
 #define CARRYALL "B_Carryall_oli"
 #define CAMO_HEADGEAR "rhs_6b7_1m_olive"
 #define CAMO_HEADGEAR_SPECIAL CAMO_HEADGEAR
 //Pilot camo Set
-#define CAMO_UNIFORM_PILOT "acp_Solid_Olive_lite_U_I_E_Uniform_Solid_Olive_01_F"
+#define CAMO_UNIFORM_PILOT "acp_Solid_Olive_core_lite_U_I_E_Uniform_Solid_Olive_01_F"
 #define CAMO_VEST_PILOT "V_TacVest_oli"
 #define CAMO_BACKPACK_PILOT "CUP_B_IDF_Backpack"
 #define CAMO_HEADGEAR_PILOT "CUP_H_SPH4"
 //Vehicle camo set
-#define CAMO_UNIFORM_VICC "acp_Solid_Olive_lite_U_I_E_Uniform_Solid_Olive_01_F"
+#define CAMO_UNIFORM_VICC "acp_Solid_Olive_core_lite_U_I_E_Uniform_Solid_Olive_01_F"
 #define CAMO_VEST_VICC "V_TacVest_oli"
 #define CAMO_BACKPACK_VICC "CUP_B_IDF_Backpack"
 #define CAMO_HEADGEAR_VICC "CUP_H_CVC"
