@@ -45406,7 +45406,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_ZEUS_2";
-						description="Zeus 2BluFor Zeuses";
+						description="Zeus 2";
 						isPlayable=1;
 						stance="Up";
 					};
@@ -45426,7 +45426,7 @@ class Mission
 					{
 						rank="COLONEL";
 						name="UNIT_BLU_ZEUS_3";
-						description="Zeus 3@BluFor Zeuses";
+						description="Zeus 3";
 						isPlayable=1;
 					};
 					id=40803;
