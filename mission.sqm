@@ -976,7 +976,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=225;
+		items=238;
 		class Item0
 		{
 			dataType="Comment";
