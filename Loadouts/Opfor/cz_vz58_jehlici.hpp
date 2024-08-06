@@ -88,7 +88,7 @@ description = "Czechoslovakian People's Army c. 1980";
 #define SIDE_SMOKE "SmokeShell:2"
 #define BASE_GRENADES SIDE_FRAG,SIDE_SMOKE
 // Gear
-#define TOOLS EAST_TOOLS
+#define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY,"ACE_Clacker"
 #define LINKED BASE_LINKED
 #define LEADER_LINKED BASE_LEADER_LINKED

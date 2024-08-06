@@ -90,7 +90,7 @@ description = "Australian Defense Force c.2023 w/ SF section (2nd Commando Reg.)
 #define OFF_FRAG "ptv_mag_frag01:2"
 #define BASE_GRENADES SIDE_FRAG,SIDE_SMOKE
 // Gear
-#define TOOLS WEST_TOOLS,"ACE_EntrenchingTool"
+#define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
 #define LINKED BASE_LINKED
 #define LEADER_LINKED BASE_LEADER_LINKED
