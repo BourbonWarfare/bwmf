@@ -31,7 +31,8 @@
 // OPTIX
 #define WARSAW_OPTICS "CUP_optic_1p63", "rhs_acc_ekp8_02", "CUP_optic_Kobra", "rhs_acc_okp7_dovetail", "rhs_acc_pkas" // RHS and CUP optics now compatible
 #define STANAG_OPTICS "optic_Aco", "ptv_compm4s", "CUP_optic_MicroT1", "ptv_rmr", "CUP_optic_Eotech553_Black", "ptv_xps3", "CUP_optic_ZDDot", "CUP_optic_MRad"
-#define BAD_OPTICS "rhs_acc_rakursPM", "rhs_acc_1p87", "CUP_optic_AC11704_Black", "CUP_optic_MARS", "CUP_optic_MEPRO", "CUP_optic_TrijiconRx01_black", "CUP_optic_ZeissZPoint" //These are alternate optics that kinda suck, but are unique
+//These are alternate optics that kinda suck, but are unique
+#define BAD_OPTICS "rhs_acc_rakursPM", "rhs_acc_1p87", "CUP_optic_AC11704_Black", "CUP_optic_MARS", "CUP_optic_MEPRO", "CUP_optic_TrijiconRx01_black", "CUP_optic_ZeissZPoint"
 
 // FUNCTIONS
 #define SAM_GEAR(BACKPACK,MAG) backpack[] = {BACKPACK}; backpackItems[] = {}; magazines[] += {MAG}; items[] += {BASE_MEDICAL};
