@@ -45388,7 +45388,7 @@ class Mission
 					{
 						rank="COLONEL";
 						name="UNIT_BLU_ZEUS_1";
-						description="Zeus 1@BluFor Zeuses";
+						description="Zeus 1@BluFor Zanes";
 						isPlayable=1;
 					};
 					id=40801;
