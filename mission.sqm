@@ -45468,7 +45468,7 @@ class Mission
 			{
 				position[]={626.05499,5,824.461};
 			};
-			title="Zeuses";
+			title="Zanes";
 			id=40804;
 		};
 		class Item222
@@ -45692,7 +45692,7 @@ class Mission
 					{
 						rank="COLONEL";
 						name="UNIT_OPF_ZEUS_1";
-						description="Zeus 1@OpFor Zeuses";
+						description="Zeus 1@OpFor Zanes";
 						isPlayable=1;
 					};
 					id=40801;
@@ -45779,7 +45779,7 @@ class Mission
 					{
 						rank="COLONEL";
 						name="UNIT_IND_ZEUS_1";
-						description="Zeus 1@IndFor Zeuses";
+						description="Zeus 1@IndFor Zanes";
 						isPlayable=1;
 					};
 					id=40805;
