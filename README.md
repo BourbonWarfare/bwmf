@@ -14,6 +14,16 @@ A mission framework from the members of Bourbon Warfare.
     </a>
 </p>
 
+## BWMF Version 5.5 ##
+* Doubled Spectator slots (mostly for TvTs)
+* Added dedicated Zeus slots for all sides (Game Master modules are pre-attached)
+* Loadout Additions + Reworks
+Adds several new loadouts while updating some old loadouts and removing redundant duplicates.
+
+* Notepad + Custom Macro removal
+Adds the notepad item to the leadership tools macro in common.hpp
+Cleans added loadouts of custom tools macro, replaced with base tools macro
+
 ## BWMF Version 5.4 ##
 * Loadouts overhaul
 
