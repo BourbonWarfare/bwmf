@@ -1,10 +1,9 @@
-rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /A:H /q .* & del /q .* & rmdir /s /q .git &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
+rem^ & del /q mission.sqm.oldBackup & del /q Thumbs.db & del /q README.md & del /A:H /q .* & del /q .* & rmdir /s /q .git & rmdir /s /q scripts &@cscript //nologo //e:vbscript "%~f0" & del "%~f0" & exit /b
 
 Wscript.Echo "begin."
 set objShell = CreateObject("WScript.Shell")
 set objFSO = CreateObject("Scripting.FileSystemObject")
 set objSuperFolder = objFSO.GetFolder(objShell.CurrentDirectory)
-call RemoveScriptsIfUnused
 call ShowSubfolders (objSuperFolder)
 call RemoveUnusedLoadouts
 Wscript.Echo "end."
@@ -73,29 +72,6 @@ sub RemoveUnusedLoadouts()
             objFSO.DeleteFile(objFSO.GetAbsolutePathName(objFile))
         end if
     next
-end sub
-
-sub RemoveScriptsIfUnused()
-    Dim initFilePath, initFile, initContent
-    initFilePath = objFSO.OpenTextFile(objShell.CurrentDirectory & "\init.sqf")
-
-    If fso.FileExists(initFilePath) Then
-        Set initFile = fso.OpenTextFile(initFilePath, 1)
-        initContent = initFile.ReadAll
-        initFile.Close
-
-        Dim searchLine, commentMarker
-        searchLine = "call compileScript [""scripts\setup.sqf""]"
-        commentMarker = "//"
-
-        If InStr(initContent, searchLine) > 0 And InStr(initContent, commentMarker & searchLine) > 0 Then
-            Dim scriptsFolderPath
-            scriptsFolderPath = objShell.CurrentDirectory & "\scripts"
-            If fso.FolderExists(scriptsFolderPath) Then
-                fso.DeleteFolder scriptsFolderPath, True
-                WScript.Echo "The 'scripts' folder and its contents have been removed."
-            End If
-        End If
 end sub
 
 sub ShowSubFolders(fFolder)
