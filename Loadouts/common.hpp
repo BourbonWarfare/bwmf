@@ -7,8 +7,8 @@
 
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:6","ACE_tourniquet:2","ACE_splint"
-#define MEDIC_MEDICAL RADIO_MR,"ACE_elasticBandage:40","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6","ACE_splint:12","ACE_adenosine:10"
-#define PL_MEDIC_MEDICAL RADIO_MR,"ACE_elasticBandage:25","ACE_epinephrine:10","ACE_salineIV:8","ACE_salineIV_500:8","ACE_salineIV_250:8","ACE_morphine:5","ACE_tourniquet:3","ACE_splint:6","ACE_adenosine:10"
+#define MEDIC_MEDICAL RADIO_MR,"ACE_elasticBandage:40","ACE_epinephrine:10","ACE_salineIV:2","ACE_salineIV_500:4","ACE_salineIV_250:8","ACE_morphine:16","ACE_tourniquet:6","ACE_splint:12","ACE_adenosine:10","potato_naloxone:10"
+#define PL_MEDIC_MEDICAL RADIO_MR,"ACE_elasticBandage:25","ACE_epinephrine:10","ACE_salineIV:8","ACE_salineIV_500:8","ACE_salineIV_250:8","ACE_morphine:5","ACE_tourniquet:3","ACE_splint:6","ACE_adenosine:10","potato_naloxone:10"
 #define BASE_TOOLS RADIO_SR,"ACE_MapTools","ACE_IR_Strobe_item:2","ACE_Flashlight_KSF1","ACE_CableTie:2"
 #define BASE_LEADER_TOOLS "ACE_microDAGR","acex_intelitems_notepad"
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
@@ -26,7 +26,7 @@
 #define BINOS "Binocular"
 #define RANGE_FINDER "ACE_Vector"
 #define BASE_BALLISTICS "ACE_ATragMX","ACE_Kestrel4500"
-#define BASE_ARTILLERY "ACE_artilleryTable",BASE_BALLISTICS
+#define BASE_ARTILLERY "ACE_artilleryTable",BASE_BALLISTICS,"ACE_PlottingBoard"
 
 // OPTIX
 #define WARSAW_OPTICS "CUP_optic_1p63", "rhs_acc_ekp8_02", "CUP_optic_Kobra", "rhs_acc_okp7_dovetail", "rhs_acc_pkas" // RHS and CUP optics now compatible
