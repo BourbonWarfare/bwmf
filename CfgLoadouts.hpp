@@ -13,7 +13,7 @@ class CfgLoadouts {
   // -1. Clear and leave inventories empty empty
   //  0. Leave them to vanilla defaults
   //  1. Defined supplies are put into vehicle's inventory
-  //  2. Store supplies from vehicle inventory into ammo boxes in vehicle cargo
+  //  2. Store supplies from vehicle inventory into ammo boxes in vehicle ACE cargo
   //  3. Use ammo box definitions to create ammo boxes in vehicle's ACE cargo and clear inventory
   setVehicleLoadouts = -1;
 
