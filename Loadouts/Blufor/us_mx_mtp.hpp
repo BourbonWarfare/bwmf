@@ -66,6 +66,10 @@
 #define LEADER_LINKED BASE_LEADER_LINKED
 #define CARRYALL "B_Carryall_mcamo"
 
+//***** See setVehicleLoadouts on line 18 of the BWMF (pre-cleanup) *****//
+/// Example of setVehicleLoadouts = 1
+// Load weapons into vehicle inventory
+// Enabled by default
 class Car {
   TransportWeapons[] = {AT};
   TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
@@ -82,6 +86,41 @@ class Helicopter {
 };
 class Plane {};
 class Ship_F {};
+
+/// Example of setVehicleLoadouts = 2
+// Create ammo boxes out of items in vehicle inventory, greedy sort
+/*
+class B_Truck_01_ammo_F {
+  AmmoBox = "Box_NATO_Wps_F"; // type of box,
+  AmmoBoxCapacity = 200; // Box capacity in lbs
+  TransportWeapons[] = {AT};
+  TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
+};
+class Car { // this version uses the default box and default weight of 75 lbs
+  TransportWeapons[] = {AT};
+  TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+  TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
+};*/
+
+/// Example of setVehicleLoadoutse = 3
+// Creates filled ammo boxes in the vehicle's cargo, or default to mode 1 if no boxes are defined
+/*
+class Car {
+  minVehicleBoxSpace = 6; // set a minimum for the number of storage slots in a vehicles (used by wheels/tracks/fuel)
+  class Box_NATO_Ammo_F { // Add two boxes similiar to the resupply modes
+    boxCustomName = "Resupply Box"; // The name the boxes will have in inventory (enumerated if more than one)
+    boxCount = 2; // Add two of these boxes
+    // Box contents:
+    TransportWeapons[] = {AT};
+    TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+    TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
+  };
+};
+class Ship_F { // you can also fill the normal inventory if no boxes are defined:
+    TransportWeapons[] = {AT};
+    TransportMagazines[] = {RIFLE_MAG,GLRIFLE_MAG,CARBINE_MAG,AR_MAG,AR_MAG,GLRIFLE_MAG_HE};
+}; // See discord for more advanced applications */
 
 class rifleman {// rifleman
   uniform[] = {"U_B_CombatUniform_mcam"};
