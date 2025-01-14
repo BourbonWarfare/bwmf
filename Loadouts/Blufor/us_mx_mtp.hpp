@@ -103,7 +103,7 @@ class Car { // this version uses the default box and default weight of 75 lbs
   TransportItems[] = {BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL,BASE_MEDICAL};
 };*/
 
-/// Example of setVehicleLoadoutse = 3
+/// Example of setVehicleLoadouts = 3
 // Creates filled ammo boxes in the vehicle's cargo, or default to mode 1 if no boxes are defined
 /*
 class Car {
