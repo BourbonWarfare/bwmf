@@ -1784,8 +1784,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						name="UNIT_BLU_COY_FAC";
-						description="Blufor Forward Air Controller";
+						name="UNIT_BLU_COY_JFO";
+						description="Blufor Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=39552;
@@ -6120,7 +6120,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MMG1_AG";
-						description="BluFor Medium MG Team 1 Spotter";
+						description="BluFor Medium MG Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39666;
@@ -6250,7 +6250,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MMG2_AG";
-						description="BluFor Medium MG Team 2 Spotter";
+						description="BluFor Medium MG Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39670;
@@ -6510,7 +6510,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MAT1_AG";
-						description="BluFor Medium AT Team 1 Spotter";
+						description="BluFor Medium AT Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39678;
@@ -6640,7 +6640,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MAT2_AG";
-						description="BluFor Medium AT Team 2 Spotter ";
+						description="BluFor Medium AT Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39682;
@@ -6900,7 +6900,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MTR1_AG";
-						description="BluFor Mortar Team 1 Spotter";
+						description="BluFor Mortar Team 1 Loader";
 						isPlayable=1;
 					};
 					id=39690;
@@ -7030,7 +7030,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MSAM1_AG";
-						description="BluFor Medium SAM Team 1 Spotter";
+						description="BluFor Medium SAM Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39694;
@@ -9964,8 +9964,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						name="UNIT_CMN_COY_FAC";
-						description="Blufor Forward Air Controller";
+						name="UNIT_CMN_COY_JFO";
+						description="Blufor Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=39771;
@@ -16726,7 +16726,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="JIP MMG Spotter";
+						description="JIP MMG Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39959;
@@ -16761,7 +16761,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MAT1_AG_1";
-						description="JIP MAT Spotter";
+						description="JIP MAT Assistant Gunner";
 						isPlayable=1;
 					};
 					id=39961;
@@ -16830,7 +16830,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="JIP FAC";
+						description="JIP Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=39965;
@@ -17361,7 +17361,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_BLU_MTR1_AG_1";
-						description="JIP Mortar Team Spotter";
+						description="JIP Mortar Team Loader";
 						isPlayable=1;
 					};
 					id=39989;
@@ -17659,8 +17659,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						name="UNIT_OPF_COY_FAC";
-						description="OpFor Forward Air Controller";
+						name="UNIT_OPF_COY_JFO";
+						description="OpFor Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=40001;
@@ -21995,7 +21995,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MMG1_AG";
-						description="OpFor Medium MG Team 1 Spotter";
+						description="OpFor Medium MG Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40115;
@@ -22125,7 +22125,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MMG2_AG";
-						description="OpFor Medium MG Team 2 Spotter";
+						description="OpFor Medium MG Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40119;
@@ -22385,7 +22385,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MAT1_AG";
-						description="OpFor Medium AT Team 1 Spotter";
+						description="OpFor Medium AT Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40127;
@@ -22515,7 +22515,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MAT2_AG";
-						description="OpFor Medium AT Team 2 Spotter ";
+						description="OpFor Medium AT Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40131;
@@ -22775,7 +22775,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MTR1_AG";
-						description="OpFor Mortar Team 1 Spotter";
+						description="OpFor Mortar Team 1 Loader";
 						isPlayable=1;
 					};
 					id=40139;
@@ -22905,7 +22905,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_OPF_MSAM1_AG";
-						description="OpFor Medium SAM Team 1 Spotter";
+						description="OpFor Medium SAM Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40143;
@@ -25838,8 +25838,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						name="UNIT_MSV_COY_FAC";
-						description="OpFor Forward Air Controller";
+						name="UNIT_MSV_COY_JFO";
+						description="OpFor Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=40220;
@@ -31236,7 +31236,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MAT1_AG";
-						description="OpFor MAT Spotter";
+						description="OpFor MAT Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40333;
@@ -31366,7 +31366,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MAT2_AG";
-						description="OpFor MAT Spotter";
+						description="OpFor MAT Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40337;
@@ -31626,7 +31626,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MMG1_AG";
-						description="OpFor MMG Spotter";
+						description="OpFor MMG Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40345;
@@ -31756,7 +31756,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MMG2_AG";
-						description="OpFor MMG Spotter";
+						description="OpFor MMG Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40349;
@@ -34793,7 +34793,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="JIP MMG Spotter";
+						description="JIP MMG Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40453;
@@ -34828,7 +34828,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MAT1_AG_1";
-						description="JIP MAT Spotter";
+						description="JIP MAT Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40455;
@@ -34863,7 +34863,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="JIP FAC";
+						description="JIP Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=40457;
@@ -35390,7 +35390,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_MSV_MTR1_AG_1";
-						description="JIP Mortar Team Spotter";
+						description="JIP Mortar Team Loader";
 						isPlayable=1;
 					};
 					id=40481;
@@ -35688,8 +35688,8 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						name="UNIT_IND_COY_FAC";
-						description="Indy Forward Air Controller";
+						name="UNIT_IND_COY_JFO";
+						description="Indy Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=40493;
@@ -39866,7 +39866,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MMG1_AG";
-						description="Indy Medium MG Team 1 Spotter";
+						description="Indy Medium MG Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40604;
@@ -39996,7 +39996,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MMG2_AG";
-						description="Indy Medium MG Team 2 Spotter";
+						description="Indy Medium MG Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40608;
@@ -40256,7 +40256,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MAT1_AG";
-						description="Indy Medium AT Team 1 Spotter";
+						description="Indy Medium AT Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40616;
@@ -40386,7 +40386,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MAT2_AG";
-						description="Indy Medium AT Team 2 Spotter ";
+						description="Indy Medium AT Team 2 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40620;
@@ -40646,7 +40646,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MTR1_AG";
-						description="Indy Mortar Team 1 Spotter";
+						description="Indy Mortar Team 1 Loader";
 						isPlayable=1;
 					};
 					id=40628;
@@ -40776,7 +40776,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MSAM1_AG";
-						description="Indy Medium SAM Team 1 Spotter";
+						description="Indy Medium SAM Team 1 Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40632;
@@ -44244,7 +44244,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						description="JIP MMG Spotter";
+						description="JIP MMG Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40736;
@@ -44298,7 +44298,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MAT1_AG_1";
-						description="JIP MAT Spotter";
+						description="JIP MAT Assistant Gunner";
 						isPlayable=1;
 					};
 					id=40739;
@@ -44333,7 +44333,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="JIP FAC";
+						description="JIP Joint Fires Observer";
 						isPlayable=1;
 					};
 					id=40741;
@@ -44822,7 +44822,7 @@ class Mission
 					class Attributes
 					{
 						name="UNIT_IND_MTR1_AG_1";
-						description="JIP Mortar Team Spotter";
+						description="JIP Mortar Team Loader";
 						isPlayable=1;
 					};
 					id=40763;
