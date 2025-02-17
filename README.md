@@ -14,6 +14,20 @@ A mission framework from the members of Bourbon Warfare.
     </a>
 </p>
 
+## BWMF Version 5.6 ##
+* Loadouts - Add description for new supply box and vehicle loadout systems (check `Loadouts.cfg`)
+* Unit Renaming:
+	* Forward Air Controller (FAC) -> Joint Fires Observer (JFO)
+  * Mortar Team Spotter -> Mortar Team Loader
+  * Medium Machine Gun Spotter -> Medium Machine Gun Assistant Gunner
+  * Medium AT Team Spotter -> Medium AT Team Assistant Gunner
+  * Medium SAM Team Spotter -> Medium SAM Team Assistant Gunner
+* Unit marker for JFO
+* Loadout changes:
+	* Base Riflemen: +1 TQ, +1 PK Blister (2 uses of pk)
+	* All Medics: + naloxone, +bottle of painkillers (2 for SM, 4 for PM)
+	* Base Artillery: +ACE plotting board
+
 ## BWMF Version 5.5 ##
 * Doubled Spectator slots (mostly for TvTs)
 * Added dedicated Zeus slots for all sides (Game Master modules are pre-attached)
