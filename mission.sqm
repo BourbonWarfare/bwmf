@@ -1790,6 +1790,29 @@ class Mission
 					};
 					id=39552;
 					type="potato_w_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -9970,6 +9993,29 @@ class Mission
 					};
 					id=39771;
 					type="potato_w_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -16835,6 +16881,29 @@ class Mission
 					};
 					id=39965;
 					type="potato_w_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item31
 				{
@@ -17665,6 +17734,29 @@ class Mission
 					};
 					id=40001;
 					type="potato_e_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -25844,6 +25936,29 @@ class Mission
 					};
 					id=40220;
 					type="potato_e_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -34868,6 +34983,29 @@ class Mission
 					};
 					id=40457;
 					type="potato_e_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item31
 				{
@@ -35694,6 +35832,29 @@ class Mission
 					};
 					id=40493;
 					type="potato_i_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item4
 				{
@@ -44338,6 +44499,29 @@ class Mission
 					};
 					id=40741;
 					type="potato_i_fac";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="potato_markers_addMarker";
+							expression="[_this, _value] call potato_markers_fnc_setMarker;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="JFO,24,orange,\z\potato\addons\markers\data\hq.paa";
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item33
 				{
