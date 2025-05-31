@@ -56,7 +56,7 @@ class CfgLoadouts {
   useFallback = 1;
 
   // prefixes to strip from the units classnames
-  prefixes[] = {"potato_w_", "potato_e_", "potato_i_"};
+  prefixes[] = {"potato_w_", "potato_e_", "potato_i_", "potato_nolambs_w_", "potato_nolambs_e_", "potato_nolambs_i_"};
 
   // Shared defines
   #include "Loadouts\common.hpp" // DO NOT COMMENT OUT, WILL BREAK EVERYTHING
