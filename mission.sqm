@@ -2003,19 +2003,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -2027,7 +2014,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -2303,122 +2290,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -2430,7 +2301,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -2670,122 +2541,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -2797,7 +2552,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -2879,19 +2634,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -2903,7 +2645,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -3192,122 +2934,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -3319,7 +2945,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -3559,122 +3185,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -3686,7 +3196,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -3768,19 +3278,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -3792,7 +3289,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -4081,122 +3578,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -4208,7 +3589,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -4448,122 +3829,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -4575,7 +3840,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -5963,19 +5228,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -5987,7 +5239,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -7551,19 +6803,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -7575,7 +6814,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -7864,122 +7103,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -7991,7 +7114,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -8231,122 +7354,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -8358,7 +7365,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -8440,19 +7447,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -8464,7 +7458,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -8753,122 +7747,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -8880,7 +7758,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -9120,122 +7998,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -9247,7 +8009,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -9329,19 +8091,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -9353,7 +8102,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -9642,122 +8391,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -9769,7 +8402,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -10009,122 +8642,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -10136,7 +8653,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -17462,19 +15979,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -17486,7 +15990,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -17762,122 +16266,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -17889,7 +16277,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -18129,122 +16517,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -18256,7 +16528,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -18338,19 +16610,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -18362,7 +16621,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -18651,122 +16910,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -18778,7 +16921,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -19018,122 +17161,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -19145,7 +17172,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -19227,19 +17254,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -19251,7 +17265,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -19540,122 +17554,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -19667,7 +17565,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -19907,122 +17805,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -20034,7 +17816,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -21422,19 +19204,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -21446,7 +19215,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -23010,19 +20779,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -23034,7 +20790,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -23323,122 +21079,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -23450,7 +21090,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -23690,122 +21330,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -23817,7 +21341,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -23899,19 +21423,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -23923,7 +21434,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -24212,122 +21723,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -24339,7 +21734,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -24579,122 +21974,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -24706,7 +21985,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -24788,19 +22067,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -24812,7 +22078,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -25101,122 +22367,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -25228,7 +22378,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -25468,122 +22618,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -25595,7 +22629,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -34673,19 +31707,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -34697,7 +31718,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -34986,122 +32007,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -35353,122 +32258,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -35480,7 +32269,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -35562,19 +32351,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -35586,7 +32362,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -35875,122 +32651,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -36002,7 +32662,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -36242,122 +32902,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -36369,7 +32913,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -36451,19 +32995,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -36475,7 +33006,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -36764,122 +33295,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -36891,7 +33306,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -37131,122 +33546,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -37258,7 +33557,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -39542,19 +35841,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -39566,7 +35852,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=;
 					};
 				};
 				class Item1
@@ -40234,19 +36520,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -40258,7 +36531,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -40547,122 +36820,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -40674,7 +36831,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -40914,122 +37071,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -41041,7 +37082,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -41123,19 +37164,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -41147,7 +37175,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -41436,122 +37464,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -41563,7 +37475,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -41803,122 +37715,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -41930,7 +37726,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -42012,19 +37808,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="[[""ACRE_PRC343"",[1,1]],[""ACRE_PRC152"",1],[""ACRE_PRC117F"",1]]";
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_markers_addMarker";
 							expression="[_this, _value] call potato_markers_fnc_setMarker;";
 							class Value
@@ -42036,7 +37819,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item1
@@ -42325,122 +38108,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -42452,7 +38119,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -42692,122 +38359,6 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="acre_sys_radio_edenSetup";
-							expression="_this setVariable [""acre_sys_radio_setup"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									singleType="ARRAY";
-									class value
-									{
-										items=3;
-										class Item0
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC343";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="ARRAY";
-															class value
-															{
-																items=2;
-																class Item0
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-																class Item1
-																{
-																	class data
-																	{
-																		singleType="SCALAR";
-																		value=1;
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Item1
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC152";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-										class Item2
-										{
-											class data
-											{
-												singleType="ARRAY";
-												class value
-												{
-													items=2;
-													class Item0
-													{
-														class data
-														{
-															singleType="STRING";
-															value="ACRE_PRC117F";
-														};
-													};
-													class Item1
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=1;
-														};
-													};
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-						class Attribute1
-						{
 							property="potato_teamColors_teamColor";
 							expression="[_this, _value] call potato_teamColors_fnc_setColor";
 							class Value
@@ -42819,7 +38370,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
