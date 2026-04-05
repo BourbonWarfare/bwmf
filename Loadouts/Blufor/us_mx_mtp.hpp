@@ -151,7 +151,7 @@ class sl: ftl {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR};
+  backpackItems[] += {RADIO_MR};
 };
 class coy: sl {// CO
   backpack[] = {"B_Kitbag_mcamo"};
@@ -221,7 +221,8 @@ class spotter: Fic_Spotter {// Spotter
   headgear[] = {"H_Booniehat_mcamo"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,BASE_BALLISTICS,"ACE_RangeCard"};
+  backpackItems[] += {RADIO_MR};
+  items[] = += {BASE_BALLISTICS,"ACE_RangeCard"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
@@ -239,8 +240,8 @@ class pilot {// Pilot
   headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {RADIO_LR};
-  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  backpackItems[] = {RADIO_LR,RADIO_MR};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class vicc: Fic_Soldier_Carbine {// Crew
@@ -300,8 +301,7 @@ class plt: coy {// Platoon Leader
 class sgt: plt {// Platoon Sergeant
 };
 class vicl: vicc {// Vehicle Commander
-  items[] += {RADIO_MR};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
+  backpackItems[] = {SIDE_KEY,RADIO_LR,RADIO_MR};
   linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
