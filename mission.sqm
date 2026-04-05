@@ -78,7 +78,7 @@ class AddonsMetaData
 randomSeed=10562329;
 class ScenarioData
 {
-	author="Lambda.Tiger";
+	author="";
 	onLoadMission="Made with the BW Mission Framework";
 	loadScreen="\z\potato\addons\missionModules\images\bwbanner01.jpg";
 	saving=0;
