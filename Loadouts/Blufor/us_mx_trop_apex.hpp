@@ -1,7 +1,7 @@
 // Author: BWMF
 // Description: US: MX - Tropical
 
-#include "undef.hpp" // Reset defines
+#include "..\undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "arifle_MX_khk_F"
