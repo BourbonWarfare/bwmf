@@ -1,7 +1,7 @@
 // Author: BWMF
 // Description: US: MX - Multi-Terrain Pattern
 
-#include "undef.hpp" // Reset defines
+#include "..\undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "arifle_MX_F"
