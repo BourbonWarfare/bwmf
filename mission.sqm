@@ -12,17 +12,16 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={618.04919,30,796.31635};
-		dir[]={0.034277424,-0.39034674,0.92003006};
-		up[]={0.014533005,0.92066777,0.39007601};
-		aside[]={0.99930704,-4.3946784e-09,-0.037231024};
+		pos[]={744.16315,64.07431,932.84497};
+		dir[]={0.18232219,-0.56320274,0.80596286};
+		up[]={0.1242673,0.82631445,0.54932892};
+		aside[]={0.97536331,-1.3201497e-07,-0.22064391};
 	};
 };
 binarizationWanted=1;
 sourceName="bwmf";
 addons[]=
 {
-	"Desert",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
 	"potato_spectate",
@@ -78,7 +77,6 @@ class AddonsMetaData
 randomSeed=10562329;
 class ScenarioData
 {
-	author="";
 	onLoadMission="Made with the BW Mission Framework";
 	loadScreen="\z\potato\addons\missionModules\images\bwbanner01.jpg";
 	saving=0;
@@ -355,19 +353,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -387,6 +372,19 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
 				};
 			};
 		};
@@ -2076,6 +2074,19 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ASL,24,red,\z\potato\addons\markers\data\hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
@@ -2087,7 +2098,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -2100,7 +2111,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item21
@@ -6563,7 +6574,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={761.95312,5.0014391,898.12006};
+						position[]={761.95313,5.0014391,898.12006};
 					};
 					side="West";
 					flags=4;
@@ -8305,7 +8316,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={823.92841,5.0014391,930.01562};
+						position[]={823.92841,5.0014391,930.01563};
 					};
 					side="West";
 					flags=4;
@@ -15990,7 +16001,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -16039,7 +16050,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=3;
 					};
 				};
 			};
@@ -16052,6 +16063,19 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="potato_markers_addMarker";
+					expression="[_this, _value] call potato_markers_fnc_setMarker;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ASL,24,red,\z\potato\addons\markers\data\hq.paa";
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="groupID";
 					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
@@ -16063,7 +16087,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
+				class Attribute2
 				{
 					property="potato_radios_radio";
 					expression="[_this, _value] call potato_radios_fnc_setChannels";
@@ -16076,7 +16100,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=2;
+				nAttributes=3;
 			};
 		};
 		class Item92
@@ -32018,7 +32042,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 			};
@@ -38963,7 +38987,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={523.94629,5.0014391,783.95312};
+						position[]={523.94629,5.0014391,783.95313};
 					};
 					side="Independent";
 					flags=4;
