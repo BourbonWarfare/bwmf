@@ -222,7 +222,7 @@ class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
   backpackItems[] += {RADIO_MR};
-  items[] = += {BASE_BALLISTICS,"ACE_RangeCard"};
+  items[] += {BASE_BALLISTICS,"ACE_RangeCard"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };

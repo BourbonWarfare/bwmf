@@ -1,7 +1,7 @@
 // Author: BWMF
 // Description: CSAT: KH-2002 Sama - Urban Hex
 
-#include "undef.hpp" // Reset defines
+#include "..\undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "arifle_Katiba_F"
