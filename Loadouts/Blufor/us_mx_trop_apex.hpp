@@ -1,7 +1,7 @@
 // Author: BWMF
 // Description: US: MX - Tropical
 
-#include "undef.hpp" // Reset defines
+#include "..\undef.hpp" // Reset defines
 
 // Rifle
 #define RIFLE "arifle_MX_khk_F"
@@ -112,7 +112,7 @@ class sl: ftl {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
-  items[] += {RADIO_MR};
+  backpackItems[] += {RADIO_MR};
 };
 class coy: sl {// CO and DC
   backpack[] = {"B_Kitbag_rgr"};
@@ -182,7 +182,8 @@ class spotter: Fic_Spotter {// Spotter
   headgear[] = {"H_Booniehat_tna_F"};
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
+  backpackItems[] += {RADIO_MR};
+  items[] += {"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
@@ -200,8 +201,8 @@ class pilot {// Pilot
   headgear[] = {"H_PilotHelmetHeli_B"};
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
-  backpackItems[] = {RADIO_LR};
-  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  backpackItems[] = {RADIO_LR,RADIO_MR};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class vicc: Fic_Soldier_Carbine {// Crew
@@ -260,8 +261,7 @@ class plt: coy {// Platoon Leader
 class sgt: plt {// Platoon Sergeant
 };
 class vicl: vicc {// Vehicle Commander
-  items[] += {RADIO_MR};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
+  backpackItems[] = {SIDE_KEY,RADIO_LR,RADIO_MR};
   linkedItems[] += {BINOS};
 };
 class mmgl: sl {// MMG Lead
@@ -332,8 +332,8 @@ class cc: helicrew {// Crew Chief
 class engl: eng {// Logistics Leader
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  backpackItems[] += {RADIO_MR};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
-  backpackItems[] += {RADIO_MR};
 };
 class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout
