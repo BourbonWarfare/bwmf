@@ -149,128 +149,128 @@ class CustomAttributes
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="en";
 							};
 						};
 						class Item2
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="ru";
 							};
 						};
 						class Item3
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="ar";
 							};
 						};
 						class Item4
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="ar,en,ru";
 							};
 						};
 						class Item5
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
 							};
 						};
 						class Item6
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item7
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item8
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
 							};
 						};
 						class Item9
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item10
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item11
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
 							};
 						};
 						class Item12
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item13
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item14
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="Alpha,Bravo,Charlie,1st Platoon,Delta,Echo,Foxtrot,2nd Platoon,Golf,Hotel,India,3rd Platoon,COY,Air,Armor,Fire Support";
 							};
 						};
 						class Item15
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 						class Item16
 						{
 							class data
 							{
-								nil=1;
 								singleType="STRING";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
 							};
 						};
 					};
