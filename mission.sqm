@@ -8196,7 +8196,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -22185,7 +22185,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -37282,7 +37282,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="ESL,24,blue,\z\potato\addons\markers\data\unknown.paa";
+							value="ESL,24,blue,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -37926,7 +37926,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
