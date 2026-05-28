@@ -3383,7 +3383,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -17372,7 +17372,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -33113,7 +33113,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
