@@ -367,19 +367,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -399,6 +386,19 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
 				};
 			};
 		};
@@ -2764,8 +2764,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="1,0,0";
 						};
 					};
 				};
@@ -3383,7 +3383,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -3408,8 +3408,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="2,0,0";
 						};
 					};
 				};
@@ -5357,8 +5357,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="15,3,3";
 						};
 					};
 				};
@@ -6588,7 +6588,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={761.95313,5.0014391,898.12006};
+						position[]={761.95312,5.0014391,898.12006};
 					};
 					side="West";
 					flags=4;
@@ -6933,8 +6933,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="4,1,0";
 						};
 					};
 				};
@@ -7577,8 +7577,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="5,1,0";
 						};
 					};
 				};
@@ -8196,7 +8196,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -8221,8 +8221,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="6,1,0";
 						};
 					};
 				};
@@ -8330,7 +8330,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={823.92841,5.0014391,930.01563};
+						position[]={823.92841,5.0014391,930.01562};
 					};
 					side="West";
 					flags=4;
@@ -16753,8 +16753,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="1,0,0";
 						};
 					};
 				};
@@ -17372,7 +17372,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -17397,8 +17397,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="2,0,0";
 						};
 					};
 				};
@@ -19346,8 +19346,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="15,3,3";
 						};
 					};
 				};
@@ -20922,8 +20922,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="4,1,0";
 						};
 					};
 				};
@@ -21566,8 +21566,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="5,1,0";
 						};
 					};
 				};
@@ -22185,7 +22185,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -22210,8 +22210,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="6,1,0";
 						};
 					};
 				};
@@ -32494,8 +32494,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="1,0,0";
 						};
 					};
 				};
@@ -33113,7 +33113,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="CSL,24,green,\z\potato\addons\markers\data\unknown.paa";
+							value="CSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -33138,8 +33138,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="2,0,0";
 						};
 					};
 				};
@@ -35983,8 +35983,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="15,3,3";
 						};
 					};
 				};
@@ -36663,8 +36663,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="4,1,0";
 						};
 					};
 				};
@@ -37282,7 +37282,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="ESL,24,blue,\z\potato\addons\markers\data\unknown.paa";
+							value="ESL,24,blue,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -37307,8 +37307,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="5,1,0";
 						};
 					};
 				};
@@ -37926,7 +37926,7 @@ class Mission
 						class data
 						{
 							singleType="STRING";
-							value="FSL,24,white,\z\potato\addons\markers\data\hq.paa";
+							value="FSL,24,green,\z\potato\addons\markers\data\hq.paa";
 						};
 					};
 				};
@@ -37951,8 +37951,8 @@ class Mission
 					{
 						class data
 						{
-							singleType="BOOL";
-							value=1;
+							singleType="STRING";
+							value="6,1,0";
 						};
 					};
 				};
@@ -39001,7 +39001,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={523.94629,5.0014391,783.95313};
+						position[]={523.94629,5.0014391,783.95312};
 					};
 					side="Independent";
 					flags=4;
