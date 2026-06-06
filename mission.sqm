@@ -317,7 +317,7 @@ class CustomAttributes
 				class data
 				{
 					singleType="STRING";
-					value="bd8d1fdb-efc2-414e-b646-eeea41270bbb";
+					value="";
 				};
 			};
 		};
