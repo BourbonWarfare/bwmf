@@ -367,19 +367,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -399,6 +386,19 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
 				};
 			};
 		};
@@ -434,7 +434,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=14;
+									items=13;
 									class Item0
 									{
 										class data
@@ -536,14 +536,6 @@ class CustomAttributes
 										class data
 										{
 											singleType="STRING";
-											value="ace_weather_enabled";
-										};
-									};
-									class Item13
-									{
-										class data
-										{
-											singleType="STRING";
 											value="ace_weather_windsimulation";
 										};
 									};
@@ -557,7 +549,7 @@ class CustomAttributes
 								singleType="ARRAY";
 								class value
 								{
-									items=14;
+									items=13;
 									class Item0
 									{
 										class data
@@ -883,33 +875,6 @@ class CustomAttributes
 										};
 									};
 									class Item12
-									{
-										class data
-										{
-											singleType="ARRAY";
-											class value
-											{
-												items=2;
-												class Item0
-												{
-													class data
-													{
-														singleType="BOOL";
-														value=0;
-													};
-												};
-												class Item1
-												{
-													class data
-													{
-														singleType="SCALAR";
-														value=1;
-													};
-												};
-											};
-										};
-									};
-									class Item13
 									{
 										class data
 										{
