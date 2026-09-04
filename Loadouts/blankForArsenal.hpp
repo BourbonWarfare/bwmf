@@ -55,7 +55,7 @@ class sl: ftl {// SL
   magazines[] += {PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
   handgunAttachments[] = {PISTOL_ATTACHMENTS};
-  items[] += {RADIO_MR};
+  backpackItems[] += {RADIO_MR};
 };
 class coy: sl {// CO and DC
   backpack[] = {CARRYALL};
@@ -131,7 +131,8 @@ class mtrag: Fic_Spotter {// Assistant Mortar
 class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,BASE_GRENADES};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
+  items[] += {"ACE_ATragMX","ACE_Kestrel4500"};
+  backpackItems[] += {RADIO_MR};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
@@ -150,7 +151,8 @@ class pilot {// Pilot
   weapons[] = {SMG};
   magazines[] = {SMG_MAG,CREW_GRENADES};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
-  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS};
+  backpackItems[] += {RADIO_MR};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 
@@ -215,8 +217,7 @@ class plt: coy {// Platoon Leader
 class sgt: plt {// Platoon Sergeant
 };
 class vicl: vicc {// Vehicle Commander
-  items[] += {RADIO_MR};
-  backpackItems[] = {SIDE_KEY,RADIO_LR};
+  backpackItems[] = {RADIO_MR,SIDE_KEY,RADIO_LR};
 };
 class mmgl: sl {// MMG Lead
   backpack[] = {CARRYALL};
