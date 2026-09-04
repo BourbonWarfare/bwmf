@@ -190,7 +190,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES,MEDICAL";
 							};
 						};
 						class Item7
@@ -367,6 +367,19 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -386,19 +399,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
 				};
 			};
 		};
@@ -9456,9 +9456,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_A2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39788;
@@ -9856,9 +9856,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_B2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39799;
@@ -10273,9 +10273,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_C2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39810;
@@ -10673,9 +10673,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_D2IC_SM";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39821;
@@ -12823,9 +12823,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_E2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39896;
@@ -13223,9 +13223,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_F2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39907;
@@ -13623,9 +13623,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_G2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39918;
@@ -14023,9 +14023,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_CMN_H2IC_SL";
 						description="BluFor Section 2IC";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=39929;
@@ -23530,9 +23530,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_A_SR";
 						description="OpFor Alpha Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40240;
@@ -23930,9 +23930,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_B_SR";
 						description="OpFor Bravo Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40250;
@@ -24343,9 +24343,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_C_SR";
 						description="OpFor Charlie Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40260;
@@ -24756,9 +24756,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_D_SR";
 						description="OpFor Delta Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40270;
@@ -25169,9 +25169,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_E_SR";
 						description="OpFor Echo Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40280;
@@ -25581,9 +25581,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_F_SR";
 						description="OpFor Foxtrot Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40290;
@@ -25993,9 +25993,9 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_G_SR";
 						description="OpFor Golf Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40300;
@@ -26406,9 +26406,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_H_SR";
 						description="OpFor Hotel Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40310;
@@ -26819,9 +26819,9 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						name="UNIT_MSV_I_SR";
 						description="OpFor India Squad Senior Rifleman";
-						init="this setVariable [""diwako_dui_radar_customIcon"", ""\a3\ui_f\data\map\vehicleicons\iconmancommander_ca.paa""]";
 						isPlayable=1;
 					};
 					id=40320;
