@@ -190,7 +190,7 @@ class CustomAttributes
 							class data
 							{
 								singleType="STRING";
-								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES";
+								value="PLTNET 1,PLTNET 2,PLTNET 3,COY,CAS,ARMOR,FIRES,MEDICAL";
 							};
 						};
 						class Item7
@@ -367,6 +367,19 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="SCALAR";
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -386,19 +399,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="SCALAR";
-					value=1;
 				};
 			};
 		};
